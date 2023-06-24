@@ -1,0 +1,37 @@
+---
+services:
+  dev:
+    build:
+      args:
+        USERNAME: wizard
+        USER_UID: 1000
+        USER_GID: 1000
+      context: .
+      dockerfile: ./ubuntu.dockerfile
+    # Overrides default command so things don't shut down after the process ends.
+    # This is suggested by the example template provided in the VSCode
+    #   devcontainers GitHub repository here:
+    # https://github.com/devcontainers/templates/blob/main/src/docker-existing-docker-compose/.devcontainer/docker-compose.yml
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    networks:
+      dev-net:
+    stdin_open: true
+    tty: true
+    volumes:
+      - ..:/workspaces/wizard:rw
+
+  plantuml:
+    image: plantuml/plantuml-server:jetty
+    environment:
+      ALLOW_PLANTUML_INCLUDE: "true"
+      PLANTUML_CONFIG_FILE: /wizard/uml/plantuml.conf
+    networks:
+      dev-net:
+        aliases:
+          - plantuml.dev.net
+    volumes:
+      - ../plantuml:/wizard/uml:ro
+
+networks:
+  dev-net:
+...

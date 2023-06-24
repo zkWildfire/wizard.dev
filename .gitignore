@@ -670,3 +670,6 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,vim,visualstudiocode,python,c++,csharp
 
+# Checking in the .code-workspace file is desirable since it sets up the in-IDE
+#   layout of the repository and specifies repo-wide settings
+!wizard.code-workspace

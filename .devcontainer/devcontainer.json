@@ -1,0 +1,37 @@
+{
+	"name": "Linux Dev Container",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "dev",
+	"workspaceFolder": "/workspaces/wizard",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"eamodio.gitlens",
+				"EditorConfig.EditorConfig",
+				"FordLabs.copyrighter",
+				"formulahendry.dotnet-test-explorer",
+				"github.vscode-github-actions",
+				"jebbs.plantuml",
+				"ms-azuretools.vscode-docker",
+				"ms-dotnettools.csharp",
+				"ms-python.python",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.makefile-tools",
+				"ryanluker.vscode-coverage-gutters",
+				"streetsidesoftware.code-spell-checker",
+				"timonwong.shellcheck",
+				"yzhang.markdown-all-in-one"
+			]
+		}
+	},
+	"forwardPorts": [
+		8000
+	],
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+		"source=/usr/bin/docker,target=/usr/bin/docker,type=bind"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"files.exclude": {
+		// Autogenerate entries
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		// Exclude folders that are workspace folders
+		"projects": true
+	}
+}
