@@ -10,7 +10,7 @@ repo_url: https://github.com/zkWildfire/wizard.dev
 theme:
   name: material
   favicon: img/favicon.ico
-  logo: img/wizard-256.png
+  logo: img/wizard-hat-full.png
   icon:
     admonition:
       note: octicons/tag-16
