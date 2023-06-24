@@ -8,6 +8,7 @@
 		"**/.DS_Store": true,
 		"**/Thumbs.db": true,
 		// Exclude folders that are workspace folders
+		"docs": true,
 		"projects": true
 	}
 }
