@@ -23,5 +23,6 @@ jobs:
           EXTRA_PACKAGES: >
             cairo-dev
             gcc
+            libc-dev
             pkgconf
           REQUIREMENTS: docs/requirements.txt
