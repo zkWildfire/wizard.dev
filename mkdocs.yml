@@ -46,6 +46,8 @@ theme:
 # Extensions
 markdown_extensions:
   - admonition
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -75,3 +77,21 @@ plugins:
       num_workers: 8
       puml_keyword: plantuml
   - search
+
+# Scripts
+extra_javascript:
+  # MathJax
+  - js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # KaTeX
+  - js/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+# Stylesheets
+extra_css:
+  # Custom CSS
+  - css/mkdocs_theme.css
+  # KaTeX
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css

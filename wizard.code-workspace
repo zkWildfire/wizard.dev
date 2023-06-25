@@ -24,7 +24,7 @@
 		"cmake.ignoreCMakeListsMissing": true,
 		"copyrighter.author": "Zach Wilson",
 		"copyrighter.license": "none",
-		"copyrighter.newFilesOnly": false,
+		"copyrighter.newFilesOnly": true,
 		"cSpell.customDictionaries": {
 			"custom-dictionary-workspace": {
 				"name": "custom-dictionary-workspace",
