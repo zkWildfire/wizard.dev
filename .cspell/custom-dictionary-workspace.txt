@@ -19,6 +19,7 @@ Duolingo
 Flurl
 frontends
 gtest
+Hana
 helgrind
 implib
 interprocedural
