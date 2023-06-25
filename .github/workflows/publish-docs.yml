@@ -21,6 +21,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EXTRA_PACKAGES: >
-            cairo
+            cairo-dev
             pkgconf
           REQUIREMENTS: docs/requirements.txt
