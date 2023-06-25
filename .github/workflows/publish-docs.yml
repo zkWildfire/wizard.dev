@@ -23,6 +23,7 @@ jobs:
           EXTRA_PACKAGES: >
             cairo-dev
             gcc
+            gobject-introspection-dev
             libc-dev
             pkgconf
           REQUIREMENTS: docs/requirements.txt
