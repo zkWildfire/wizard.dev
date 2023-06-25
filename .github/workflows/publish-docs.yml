@@ -26,5 +26,6 @@ jobs:
             gcc
             gobject-introspection-dev
             libc-dev
+            make
             pkgconf
           REQUIREMENTS: docs/requirements.txt
