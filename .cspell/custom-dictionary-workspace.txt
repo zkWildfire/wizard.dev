@@ -15,6 +15,7 @@ DEPFILE
 devcontainer
 dockerfiles
 Doxygen
+Duolingo
 Flurl
 frontends
 gtest

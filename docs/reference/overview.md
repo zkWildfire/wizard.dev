@@ -16,3 +16,14 @@ mathematics during the UW CSE311: Foundations of Computing I course.
 
 
 ### Probability and Statistics
+
+
+### Japanese
+This section contains the notes I've created while studying Japanese via
+Duolingo. Notes are sorted by the Duolingo unit that they correspond to.
+
+Note that I began creating these notes after reaching section 2 unit 11, so
+the pages for previous units may not be complete as many of them were created
+by pulling material from each unit's guidebook. Since the guidebook does not
+list all the vocabulary and kanji that are taught in each unit, the notes for
+those units may be missing some information.
