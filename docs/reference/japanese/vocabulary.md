@@ -6,8 +6,8 @@ will be added to the Kanji section only once the word has been introduced with
 one or more Kanji characters.
 
 ## Words
-| English | Kana | Kanji | Origin |
-|:-------:|:----:|:-----:|:------:|
+| English | Kana | Kanji | Introduced In |
+|:-------:|:----:|:-----:|:-------------:|
 | about | ごろ | | | Section 1 Unit 5 |
 | airport | くうこう | | Section 1 Unit 5 |
 | America | アメリカ | | Section 1 Unit 3 |
@@ -88,14 +88,14 @@ one or more Kanji characters.
 
 
 ## Honorifics
-| Character | Origin |
-|:---------:|:------:|
+| Character | Introduced In |
+|:---------:|:-------------:|
 | さん | Section 1 Unit 2 |
 
 
 ## Particles
-| Type | Usage | Character | Origin |
-|:----:|:-----:|:---------:|:------:|
+| Type | Usage | Character | Introduced In |
+|:----:|:-----:|:---------:|:-------------:|
 | Subject | General | は | Section 1 Unit 2 |
 | Question | General | か | Section 1 Unit 2 |
 
