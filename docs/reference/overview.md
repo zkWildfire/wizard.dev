@@ -26,7 +26,9 @@ Duolingo. Notes are sorted by the Duolingo unit that they correspond to.
     I began creating these notes after reaching section 2 unit 11, so the pages
     for previous units may not be complete. This is because I created the pages
     for the earlier units by using the guidebook for the unit, which does not
-    cover all the vocabulary and kanji that are taught in the unit. For units
-    after I started creating these notes, the notes were updated any time new
-    vocabulary or kanji were introduced within the unit, so the notes for those
-    units should be complete.
+    cover all the vocabulary and kanji that are taught in the unit. Where
+    possible, I also added additional terms from memory that I guessed were
+    from the unit, but this may result in some terms showing up in the wrong
+    unit or some terms being missing from these lists. Starting with section 2
+    unit 12, I've attempted to create these lists as I go through the unit,
+    so these lists should be more complete.

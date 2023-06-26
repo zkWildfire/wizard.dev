@@ -2,7 +2,7 @@
 ## Order Food
 ### Vocabulary
 | English | Japanese |
-| ------- | -------- |
+|:-------:|:--------:|
 | sushi  | すし |
 | green tea | おちゃ |
 | water | みず |
@@ -12,7 +12,7 @@
 
 ### Examples
 | English | Japanese |
-| ------- | -------- |
+|:-------:|:--------:|
 | Sushi, please. | すし、ください。 |
 | Green tea, please! | おちゃ、ください！ |
 | Rice and water, please! | ごはんとみず、ください！ |
@@ -21,7 +21,7 @@
 ## Describe People
 ### Vocabulary
 | English | Japanese |
-| ------- | -------- |
+|:-------:|:--------:|
 | doctor | いしゃ |
 | teacher | せんせい |
 | student | がくせい |
@@ -32,7 +32,7 @@
 
 ### Examples
 | English | Japanese |
-| ------- | -------- |
+|:-------:|:--------:|
 | She's a doctor. | いしゃです。 |
 | He's a teacher. | せんせいです。 |
 | She's a cool lawyer. | かっこいいべんごしです。 |

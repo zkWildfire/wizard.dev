@@ -2,11 +2,12 @@
 ## Introduce Yourself
 ### Vocabulary
 | English | Japanese |
-| ------- | -------- |
+|:-------:|:--------:|
 | hello | こんにちは |
 | I'm | です |
 | Hana | はな |
 | Ken | けん |
+| Naomi | なおみ |
 | nice to meet you | どうぞよろしく |
 | good evening | こんばんは |
 | bye | じゃあね |
@@ -14,7 +15,7 @@
 
 ### Examples
 | English | Japanese |
-| ------- | -------- |
+|:-------:|:--------:|
 | Hello, I'm Hana. | こんにちは、はなです。 |
 | I'm Ken, nice to meet you. | けんです、どうぞよろしく。 |
 | Good evening. | こんばんは。 |
@@ -23,18 +24,19 @@
 ## Order Food and Drink
 ### Vocabulary
 | English | Japanese |
-| ------- | -------- |
+|:-------:|:--------:|
 | this | これ |
 | that | それ |
 | curry | カレー |
 | ramen | ラーメン |
 | tasty | おいしい |
 | yes | はい |
-| *participle* | は |
+| *particle* | は |
+| *particle* | か |
 
 ### Examples
 | English | Japanese |
-| ------- | -------- |
+|:-------:|:--------:|
 | This is curry. | これはカレーです。 |
 | That's ramen. | それはラーメンです。 |
 | Is that tasty? | それはおいしいですか。 |
