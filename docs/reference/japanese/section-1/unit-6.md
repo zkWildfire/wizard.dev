@@ -7,8 +7,12 @@
 | from | しゅっしん | |
 | Kyoto | きょうと | 京都 |
 | Tokyo | とうきょう | 東京 |
+| New York | ニューヨーク | |
+| Toronto | トロント | |
 | lively | にぎやか | |
 | quiet | しずか | |
+| town | まち | |
+| city | とし | |
 | nice to meet you | はじめまして | |
 | what is your name? | おなまえは？ | |
 | what is your name? | おなまえわなんですか？ | |

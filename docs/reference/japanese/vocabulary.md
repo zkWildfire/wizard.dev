@@ -30,6 +30,7 @@ one or more Kanji characters.
 | Canada | カナダ | | Section 1 Unit 3 |
 | Canadian | カナダじん | | Section 1 Unit 3 |
 | cheerful | あかるい | | Section 1 Unit 4 |
+| city | とし | | Section 1 Unit 6 |
 | coat | コート | | Section 1 Unit 4 |
 | coffee | コーヒー | | Section 1 Unit 7 |
 | college student | だいがくせい | | Section 1 Unit 6 |
@@ -85,6 +86,7 @@ one or more Kanji characters.
 | my | わたしの | 私の | Section 1 Unit 4 |
 | Nakayama | なかやま | 中山 | Section 1 Unit 4 |
 | Naomi | なおみ | | Section 1 Unit 1 |
+| New York | ニューヨーク | | Section 1 Unit 6 |
 | nice | やさしい | | Section 1 Unit 1 |
 | nice to meet you | どうぞよろしく | | Section 1 Unit 2 |
 | nice to meet you | はじめまして | | Section 1 Unit 6 |
@@ -114,7 +116,7 @@ one or more Kanji characters.
 | seven o'clock | しちじ | 七時 | Section 1 Unit 7 |
 | shoe | くつ | | Section 1 Unit 4 |
 | six | ろく | 六 | Section 1 Unit 6 |
-| small | ちいさい | | Section 1 Unit 3 |
+| small | ちいさい | 小さい | Section 1 Unit 3 |
 | smart | あたまがい | | Section 1 Unit 6 |
 | smartphone | スマホ | | Section 1 Unit 5 |
 | soccer | サッカー | | Section 1 Unit 7 |
@@ -144,6 +146,8 @@ one or more Kanji characters.
 | to read | よみます | 読みます | Section 1 Unit 7 |
 | to watch | みます | 見ます | Section 1 Unit 7 |
 | Tokyo | とうきょう | 東京 | Section 1 Unit 6 |
+| Toronto | トロント | | Section 1 Unit 6 |
+| town | まち | | Section 1 Unit 6 |
 | train station | えき | | Section 1 Unit 3 |
 | twelve | じゅうに | 十二 | Section 1 Unit 7 |
 | two | に | 二 | Section 1 Unit 5 |
