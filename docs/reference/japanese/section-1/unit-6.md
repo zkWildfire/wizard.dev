@@ -40,9 +40,12 @@
 | daughter | むすめ | |
 | noisy | うるさい | |
 | smart | あたまがい | |
+| busy | いそがしい | |
 | famous | ゆうめい | |
 | fashionable | おしゃれ | |
 | stylish | おしゃれ | |
+| office worker | かいしゃいん | |
+| college student | だいがくせい | |
 | four | よん | 四 |
 | five | ご | 五 |
 | six | ろく | 六 |

@@ -36,6 +36,7 @@
 | department store | デパート |
 | hotel | ホテル |
 | train station | えき |
+| university | だいがく |
 
 ### Examples
 | English | Japanese |

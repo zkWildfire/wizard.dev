@@ -9,6 +9,7 @@
 | rice | ごはん |
 | please | ください |
 | it's | です |
+| and | と |
 
 ### Examples
 | English | Japanese |

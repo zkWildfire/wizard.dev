@@ -23,14 +23,15 @@
 
 ## Get Help While Traveling
 ### Vocabulary
-| English | Japanese |
-|:-------:|:--------:|
-| airport | くうこう |
-| subway | ちかてつ |
-| passport | パスポート |
-| smartphone | スマホ |
-| ticket | きっぷ |
-| not | じゃない |
+| English | Kana | Kanji |
+|:-------:|:----:|:-----:|
+| airport | くうこう | |
+| subway | ちかてつ | |
+| passport | パスポート | |
+| smartphone | スマホ | |
+| ticket | きっぷ | |
+| I | わたし | 私 |
+| not | じゃない | |
 
 ### Examples
 | English | Japanese |
