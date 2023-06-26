@@ -6,7 +6,7 @@
 | America | アメリカ |
 | American | アメリカじん |
 | Japan | にほん |
-| Japanese | にほんじん |
+| Japanese (person) | にほんじん |
 | Canada | カナダ |
 | Canadian | カナダじん |
 | Britain | イギリス |

@@ -8,6 +8,9 @@
 | three | さん | 三 |
 | thirty/half (time) | はん | |
 | o'clock | じ | |
+| one o'clock | いちじ | 一時 |
+| two o'clock | にじ | 二時 |
+| three o'clock | さんじ | 三時 |
 | excuse me | すみません | |
 | now | いま | |
 | about | ごろ | |

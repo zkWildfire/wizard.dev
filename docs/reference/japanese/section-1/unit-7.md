@@ -13,6 +13,7 @@
 | book | ほん | 本 |
 | magazine | ざっし | |
 | game | ゲーム | |
+| drama | ドラマ | |
 | baseball | やきゅう | |
 | basketball | バスケットボール | |
 | tennis | テニス | |

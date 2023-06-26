@@ -17,6 +17,7 @@
 | cheap | やすい | |
 | cute | かわいい | |
 | expensive | たかい | |
+| lovely | すてき | |
 | hideous | ダサい | |
 | nice | いい | |
 | that over there | あの | |
