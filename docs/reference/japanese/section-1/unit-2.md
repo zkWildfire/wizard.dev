@@ -42,6 +42,9 @@
 | Is that tasty? | それはおいしいですか。 |
 | Yes, this is tasty. | はい、これはおいしいです。 |
 
-## は Participle
+## は Particle
 Using は after a word makes it the topic of the sentence. The rest of the
 sentence is a comment about it.
+
+## か Particle
+The か particle is used to ask a question. It is placed at the end of the sentence and is sometimes referred to as the Japanese question mark.
