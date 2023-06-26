@@ -3,7 +3,7 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| good morning | おはようございます | |
+| good morning (formal) | おはようございます | |
 | from | しゅっしん | |
 | Kyoto | きょうと | 京都 |
 | Tokyo | とうきょう | 東京 |

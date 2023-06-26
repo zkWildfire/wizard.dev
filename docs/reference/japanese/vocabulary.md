@@ -18,6 +18,8 @@ one or more Kanji characters.
 | baseball | やきゅう | | Section 1 Unit 7 |
 | basketball | バスケットボール | | Section 1 Unit 7 |
 | big | おおきい | 大きい | Section 1 Unit 3 |
+| black | くろい | | Section 1 Unit 8 |
+| blue | あおい | | Section 1 Unit 8 |
 | book | ほん | 本 | Section 1 Unit 7 |
 | Brazil | ブラジル | | Section 1 Unit 3 |
 | Brazilian | ブラジルじん | | Section 1 Unit 3 |
@@ -29,25 +31,31 @@ one or more Kanji characters.
 | bye | じゃあね | | Section 1 Unit 2 |
 | Canada | カナダ | | Section 1 Unit 3 |
 | Canadian | カナダじん | | Section 1 Unit 3 |
+| cheap | やすい | | Section 1 Unit 8 |
 | cheerful | あかるい | | Section 1 Unit 4 |
 | city | とし | | Section 1 Unit 6 |
+| clothes | ふく | | Section 1 Unit 8 |
 | coat | コート | | Section 1 Unit 4 |
 | coffee | コーヒー | | Section 1 Unit 7 |
 | college student | だいがくせい | | Section 1 Unit 6 |
 | convenience store | コンビニ | | Section 1 Unit 3 |
 | cool | かっこいい | | Section 1 Unit 1 |
 | curry | カレー | | Section 1 Unit 2 |
+| cute | かわいい | | Section 1 Unit 8 |
 | dad | ちち | 父 | Section 1 Unit 6 |
 | daughter | むすめ | | Section 1 Unit 6 |
 | department store | デパート | | Section 1 Unit 3 |
 | dinner | ばんごはん | | Section 1 Unit 7 |
 | doctor | いしゃ | | Section 1 Unit 1 |
+| don't really like | はちょっと | | Section 1 Unit 8 |
+| dress | ドレス | | Section 1 Unit 8 |
 | eight | はち | 八 | Section 1 Unit 7 |
 | eleven | じゅういち | 十一 | Section 1 Unit 7 |
 | every day | まいにち | | Section 1 Unit 7 |
 | every morning | まいあさ | | Section 1 Unit 7 |
 | every night | まいばん | | Section 1 Unit 7 |
 | excuse me | すみません | | Section 1 Unit 5 |
+| expensive | たかい | | Section 1 Unit 8 |
 | family | かぞく | | Section 1 Unit 6 |
 | famous | ゆうめい | | Section 1 Unit 6 |
 | fashionable | おしゃれ | | Section 1 Unit 6 |
@@ -58,18 +66,23 @@ one or more Kanji characters.
 | funny | おもしろい | | Section 1 Unit 4 |
 | game | ゲーム | | Section 1 Unit 7 |
 | good evening | こんばんは | | Section 1 Unit 2 |
-| good morning | おはようございます | | Section 1 Unit 6 |
+| good morning (formal) | おはようございます | | Section 1 Unit 6 |
 | green tea | おちゃ | | Section 1 Unit 1 |
 | Hana | はな | | Section 1 Unit 2 |
 | hat | ぼうし | | Section 1 Unit 4 |
 | hello | こんにちは | | Section 1 Unit 2 |
 | here | ここ | | Section 1 Unit 3 |
+| hideous | ダサい | | Section 1 Unit 8 |
 | hotel | ホテル | | Section 1 Unit 3 |
+| how much | いくら | | Section 1 Unit 8 |
+| hundred | ひゃく | 百 | Section 1 Unit 8 |
 | husband | おっと | | Section 1 Unit 6 |
 | I | わたし | 私 | Section 1 Unit 5 |
 | I'm | です | | Section 1 Unit 2 |
+| isn't it | ですね | | Section 1 Unit 8 |
 | it's | です | | Section 1 Unit 1 |
 | J-pop | Jポップ | | Section 1 Unit 7 |
+| jacket | ジャケット | | Section 1 Unit 8 |
 | Japan | にほん | 日本 | Section 1 Unit 3 |
 | Japanese | にほんじん | 日本人 | Section 1 Unit 3 |
 | jazz | ジャズ | | Section 1 Unit 7 |
@@ -86,7 +99,10 @@ one or more Kanji characters.
 | my | わたしの | 私の | Section 1 Unit 4 |
 | Nakayama | なかやま | 中山 | Section 1 Unit 4 |
 | Naomi | なおみ | | Section 1 Unit 1 |
+| necktie | ネクタイ | | Section 1 Unit 8 |
+| new | あたらしい | 新しい | Section 1 Unit 8 |
 | New York | ニューヨーク | | Section 1 Unit 6 |
+| nice | いい | | Section 1 Unit 8 |
 | nice | やさしい | | Section 1 Unit 1 |
 | nice to meet you | どうぞよろしく | | Section 1 Unit 2 |
 | nice to meet you | はじめまして | | Section 1 Unit 6 |
@@ -99,6 +115,7 @@ one or more Kanji characters.
 | o'clock | じ | | Section 1 Unit 5 |
 | office worker | かいしゃいん | | Section 1 Unit 6 |
 | often | よく | | Section 1 Unit 7 |
+| old | ふるい | 古い | Section 1 Unit 8 |
 | older brother | あに | | Section 1 Unit 6 |
 | older sister | あね | | Section 1 Unit 6 |
 | one | いち | 一 | Section 1 Unit 5 |
@@ -116,27 +133,33 @@ one or more Kanji characters.
 | seven o'clock | しちじ | 七時 | Section 1 Unit 7 |
 | shoe | くつ | | Section 1 Unit 4 |
 | six | ろく | 六 | Section 1 Unit 6 |
+| skirt | スカート | | Section 1 Unit 8 |
 | small | ちいさい | 小さい | Section 1 Unit 3 |
 | smart | あたまがい | | Section 1 Unit 6 |
 | smartphone | スマホ | | Section 1 Unit 5 |
 | soccer | サッカー | | Section 1 Unit 7 |
 | sometimes | ときどき | | Section 1 Unit 7 |
 | son | むすこ | | Section 1 Unit 6 |
+| store | みせ | | Section 1 Unit 8 |
 | student | がくせい | | Section 1 Unit 1 |
 | stylish | おしゃれ | | Section 1 Unit 6 |
 | subway | ちかてつ | | Section 1 Unit 5 |
 | sushi | すし | | Section 1 Unit 1 |
+| T-shirt | Tシャツ | | Section 1 Unit 8 |
 | Tanaka | たなか | 田中 | Section 1 Unit 4 |
 | tasty | おいしい | | Section 1 Unit 2 |
 | teacher | せんせい | | Section 1 Unit 1 |
 | ten | じゅう | 十 | Section 1 Unit 7 |
 | tennis | テニス | | Section 1 Unit 7 |
+| thank you (formal) | ありがとうございます | | Section 1 Unit 8 |
 | that | それ | | Section 1 Unit 2 |
+| that over there | あの | | Section 1 Unit 8 |
 | there | そこ | | Section 1 Unit 3 |
 | these | これら | | Section 1 Unit 4 |
 | thirty/half (time) | はん | | Section 1 Unit 5 |
 | this | これ | | Section 1 Unit 2 |
 | those | それら | | Section 1 Unit 4 |
+| thousand | せん | 千 | Section 1 Unit 8 |
 | three | さん | 三 | Section 1 Unit 5 |
 | ticket | きっぷ | | Section 1 Unit 5 |
 | to drink | のみます | 飲みます | Section 1 Unit 7 |
@@ -153,6 +176,8 @@ one or more Kanji characters.
 | two | に | 二 | Section 1 Unit 5 |
 | umbrella | かさ | | Section 1 Unit 4 |
 | university | だいがく | | Section 1 Unit 3 |
+| wallet | さいふ | | Section 1 Unit 8 |
+| want | ほしい | | Section 1 Unit 8 |
 | water | みず | 水 | Section 1 Unit 1 |
 | what is your name? | おなまえは？ | | Section 1 Unit 6 |
 | what is your name? | おなまえわなんですか？ | | Section 1 Unit 6 |
@@ -163,6 +188,7 @@ one or more Kanji characters.
 | with | と | | Section 1 Unit 7 |
 | Yamaguchi | やまぐち | 山口 | Section 1 Unit 4 |
 | years old | さい | | Section 1 Unit 6 |
+| yen | えん | | Section 1 Unit 8 |
 | yes | はい | | Section 1 Unit 2 |
 | younger brother | おとうと | | Section 1 Unit 6 |
 | younger sister | いもうと | | Section 1 Unit 6 |
@@ -182,6 +208,7 @@ one or more Kanji characters.
 | Possessive | の | Section 1 Unit 4 |
 | Movement | に | Section 1 Unit 7 |
 | Action | を | Section 1 Unit 7 |
+| Confirmation | ね | Section 1 Unit 8 |
 
 !!! info
     The information displayed in the above table is partially taken from this
