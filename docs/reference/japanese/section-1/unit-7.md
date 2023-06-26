@@ -24,6 +24,7 @@
 | to play | します | |
 | friend | ともだち | |
 | with | と | |
+| *particle* | を | |
 
 ### Examples
 | English | Japanese |
