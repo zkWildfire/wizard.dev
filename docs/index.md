@@ -12,6 +12,11 @@ This website will continuously be a work in progress as I add more projects and
 learn new subjects. The status of each section of the website is tracked in
 the following tables, which will be updated as I make progress on each section.
 
+!!! warning
+    Links to sections listed as "Not Started" may return 404 errors. Sections
+    that are marked as "Complete" or "Work in Progress" should not return 404
+    errors.
+
 ### Projects
 | Section | Status |
 | ------- | ------ |
