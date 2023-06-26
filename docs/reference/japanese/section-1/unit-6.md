@@ -32,8 +32,8 @@
 | dad | ちち | 父 |
 | older brother | あに | |
 | older sister | あね | |
-| younger brother | おとうと | 弟 |
-| younger sister | いもうと | 妹 |
+| younger brother | おとうと | |
+| younger sister | いもうと | |
 | husband | おっと | |
 | wife | つま | |
 | son | むすこ | |

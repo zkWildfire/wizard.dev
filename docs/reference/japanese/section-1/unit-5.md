@@ -6,7 +6,7 @@
 | one | いち | 一 |
 | two | に | 二 |
 | three | さん | 三 |
-| thirty (time) | はん | |
+| thirty/half (time) | はん | |
 | o'clock | じ | |
 | excuse me | すみません | |
 | now | いま | |
