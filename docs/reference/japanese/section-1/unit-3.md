@@ -35,6 +35,7 @@
 | convenience store | コンビニ |
 | department store | デパート |
 | hotel | ホテル |
+| train station | えき |
 
 ### Examples
 | English | Japanese |

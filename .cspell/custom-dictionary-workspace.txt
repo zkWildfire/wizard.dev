@@ -30,6 +30,7 @@ memcheck
 mkdocs
 msan
 msvc
+Nakayama
 omnisharp
 plantuml
 Posix
@@ -40,6 +41,7 @@ pytest
 rpath
 rpaths
 subcomponents
+Tanaka
 toolset
 tparam
 tqdm
@@ -47,3 +49,4 @@ tsan
 unsanitized
 valgrind
 vcpkg
+Yamaguchi

@@ -8,6 +8,8 @@ one or more Kanji characters.
 ## Words
 | English | Kana | Kanji | Origin |
 |:-------:|:----:|:-----:|:------:|
+| about | ごろ | | | Section 1 Unit 5 |
+| airport | くうこう | | Section 1 Unit 5 |
 | America | アメリカ | | Section 1 Unit 3 |
 | American | アメリカじん | | Section 1 Unit 3 |
 | big | おおきい | | Section 1 Unit 3 |
@@ -26,6 +28,7 @@ one or more Kanji characters.
 | curry | カレー | | Section 1 Unit 2 |
 | department store | デパート | | Section 1 Unit 3 |
 | doctor | いしゃ | | Section 1 Unit 1 |
+| excuse me | すみません | | | Section 1 Unit 5 |
 | funny | おもしろい | | Section 1 Unit 4 |
 | good evening | こんばんは | | Section 1 Unit 2 |
 | green tea | おちゃ | | Section 1 Unit 1 |
@@ -45,6 +48,11 @@ one or more Kanji characters.
 | Naomi | なおみ | | Section 1 Unit 1 |
 | nice | やさしい | | Section 1 Unit 1 |
 | nice to meet you | どうぞよろしく | | Section 1 Unit 2 |
+| not | じゃない | | Section 1 Unit 5 |
+| now | いま | | | Section 1 Unit 5 |
+| o'clock | じ | | | Section 1 Unit 5 |
+| one | いち | 一 | | Section 1 Unit 5 |
+| passport | パスポート | | Section 1 Unit 5 |
 | person | ひと | | Section 1 Unit 1 |
 | please | ください | | Section 1 Unit 1 |
 | ramen | ラーメン | | Section 1 Unit 2 |
@@ -53,7 +61,9 @@ one or more Kanji characters.
 | see you tomorrow | またあした | | Section 1 Unit 2 |
 | shoe | くつ | | Section 1 Unit 4 |
 | small | ちいさい | | Section 1 Unit 3 |
+| smartphone | スマホ | | Section 1 Unit 5 |
 | student | がくせい | | Section 1 Unit 1 |
+| subway | ちかてつ | | Section 1 Unit 5 |
 | sushi | すし | | Section 1 Unit 1 |
 | Tanaka | たなか | | Section 1 Unit 4 |
 | tasty | おいしい | | Section 1 Unit 2 |
@@ -61,10 +71,16 @@ one or more Kanji characters.
 | that | それ | | Section 1 Unit 2 |
 | there | そこ | | Section 1 Unit 3 |
 | these | これら | | Section 1 Unit 4 |
+| thirty (time) | はん | | | Section 1 Unit 5 |
 | this | これ | | Section 1 Unit 2 |
 | those | それら | | Section 1 Unit 4 |
+| three | さん | 三 | | Section 1 Unit 5 |
+| ticket | きっぷ | | Section 1 Unit 5 |
+| train station | えき | | Section 1 Unit 3 |
+| two | に | 二 | | Section 1 Unit 5 |
 | umbrella | かさ | | Section 1 Unit 4 |
 | water | みず | | Section 1 Unit 1 |
+| what time | なんじ | | | Section 1 Unit 5 |
 | where | どこ | | Section 1 Unit 3 |
 | white | しろい | | Section 1 Unit 4 |
 | Yamaguchi | やまぐち | | Section 1 Unit 4 |
