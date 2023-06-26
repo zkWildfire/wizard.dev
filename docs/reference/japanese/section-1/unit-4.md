@@ -23,13 +23,13 @@
 
 ## Talk About Neighbors
 ### Vocabulary
-| English | Japanese |
-|:-------:|:--------:|
-| Tanaka | たなか |
-| Nakayama | なかやま |
-| Yamaguchi | やまぐち |
-| cheerful | あかるい |
-| funny | おもしろい |
+| English | Kana | Kanji |
+|:-------:|:----:|:-----:|
+| Tanaka | たなか | 田中 |
+| Nakayama | なかやま | 中山 |
+| Yamaguchi | やまぐち | 山口 |
+| cheerful | あかるい | |
+| funny | おもしろい | |
 
 ### Examples
 | English | Japanese |
