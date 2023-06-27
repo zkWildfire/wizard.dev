@@ -30,6 +30,7 @@
 |:-------:|:----:|:-----:|
 | airport | くうこう | |
 | subway | ちかてつ | |
+| map | ちず | |
 | passport | パスポート | |
 | smartphone | スマホ | |
 | ticket | きっぷ | |

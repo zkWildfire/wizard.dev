@@ -47,6 +47,7 @@ toolset
 tparam
 tqdm
 tsan
+udon
 unsanitized
 valgrind
 vcpkg

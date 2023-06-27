@@ -113,6 +113,7 @@ one or more Kanji characters.
 | lunch | ひるごはん | Section 1 Unit 7 |
 | magazine | ざっし | | Section 1 Unit 7 |
 | manga | まんが | | Section 1 Unit 7 |
+| map | ちず | | Section 1 Unit 5 |
 | meal set | ていしょく | | Section 2 Unit 1 |
 | miso soup | みそしる | | Section 2 Unit 1 |
 | mom | はは | 母 | Section 1 Unit 6 |
