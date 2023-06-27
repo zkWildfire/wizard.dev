@@ -26,6 +26,7 @@ interprocedural
 iwyu
 Kymira
 makefiles
+matcha
 memcheck
 mkdocs
 msan
