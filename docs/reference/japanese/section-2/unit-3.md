@@ -3,7 +3,29 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| Andrew | アンドリュー | |
+| Erika | エリカ | |
+| girlfriend | かのじょ | |
+| boyfriend | かれし | |
+| Australia | オーストラリア | |
+| China | ちゅうごく | |
+| Korea | かんこく | |
+| Malaysia | マレーシア | |
+| American (thing) | アメリカの | |
+| British (thing) | イギリスの | |
+| Japanese (thing) | にほんの | 日本の |
+| action | アクション | |
+| comedy | コメディ | |
+| fantasy | ファンタジー | |
+| K-pop | Kポップ | |
+| horror | ホラー | |
+| hobby | しゅみ | |
+| video | どうが | |
+| this | こちら | |
+| probably | たぶん | |
+| really? | ほんとうですか。 | |
+| to like | すき | |
+| my name is | と言います | |
 
 ### Examples
 | English | Japanese |
@@ -19,7 +41,26 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| apartment | アパート | |
+| house | いえ | |
+| kitchen | キッチン | |
+| living room | リビング | |
+| air conditioner | エアコン | |
+| bed | ベッド | |
+| bookshelf | ほんだな | |
+| chair | いす | |
+| desk | つくえ | |
+| futon | ふとん | |
+| microwave | でんきれんき | |
+| refrigerator | れいぞうこ | |
+| table | テーブル | |
+| washing machine | せんたくき | |
+| vacuum cleaner | そうじき | |
+| to move | ひっこします | |
+| still | まだ | |
+| cramped | せまい | |
+| spacious | ひろい | |
+| well-lit | あかるい | |
 
 ### Examples
 | English | Japanese |

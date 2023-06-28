@@ -7,6 +7,10 @@ projects on this site's [GitHub repository](https://www.github.com/zkWildfire/wi
 and interactive demos of these projects on my blog at [whattf.how](https://www.whattf.how).
 You can also learn more about who I am on the [About Me](./about-me.md) page.
 
+> Disclaimer: I am currently employed by Nvidia as a software engineer.
+> However, this blog is not affiliated with Nvidia in any way. All opinions
+> expressed on this blog are my own and do not reflect the opinions of Nvidia.
+
 ## Website Status
 This website will continuously be a work in progress as I add more projects and
 learn new subjects. The status of each section of the website is tracked in

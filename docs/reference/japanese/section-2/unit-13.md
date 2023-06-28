@@ -3,6 +3,8 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| to | へ | |
+| midnight | れいじ | 零時 |
 
 ### Examples
 | English | Japanese |

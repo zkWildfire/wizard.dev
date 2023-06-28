@@ -16,6 +16,7 @@
 | nice to meet you | はじめまして | |
 | what is your name? | おなまえは？ | |
 | what is your name? | おなまえわなんですか？ | |
+| to live in | にすんでいます | |
 | no | いいえ | |
 
 ### Examples
@@ -48,8 +49,9 @@
 | famous | ゆうめい | |
 | fashionable | おしゃれ | |
 | stylish | おしゃれ | |
-| office worker | かいしゃいん | |
+| engineer |  | |
 | college student | だいがくせい | |
+| office worker | かいしゃいん | |
 | four | よん | 四 |
 | five | ご | 五 |
 | six | ろく | 六 |

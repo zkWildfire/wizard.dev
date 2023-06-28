@@ -3,15 +3,26 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| ticket gate | かいさつ | |
 | over there | あそこ | |
+| close | ちかい | |
+| far | とおい | |
+| underground | ちか | |
 | first floor | いっかい | |
 | second floor | にかい | |
 | elevator | エレベーター | |
+| exit | でぐち | |
+| cafe | カフェ | |
+| outlet | コンセント | |
+| platforms | ホーム | |
+| restroom | おてあらい | |
 | stairs | かいだん | |
-| bathroom | おてあらい | |
-| vending machine | じはんき | |
 | storage locker | コインロッカー | |
+| taxi | タクシー | |
+| ticket gate | かいさつ | |
+| transfer | のりかえ | |
+| trash can | ゴミばこ | |
+| phone | でんわ | |
+| vending machine | じはんき | |
 | to have | あります | |
 | don't have | ありません | |
 
@@ -31,6 +42,16 @@
 | get up | おきます | |
 | next week | らいしゅう | |
 | always | いつも | |
+| to get up | おきます | |
+| to make | つくります | |
+| to sleep | ねます | |
+| to take | あびます | |
+| emails | メール | |
+| pasta | パスタ | |
+| radio | ラジオ | |
+| shower | シャワー | |
+| sports | スポーツ | |
+| volleyball | バレーボール | |
 
 ### Examples
 | English | Japanese |
