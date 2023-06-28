@@ -1,0 +1,281 @@
+/*
+ *   Copyright (c) 2023 Zach Wilson
+ *   All rights reserved.
+ */
+
+/*
+  Default variables and values are taken from here:
+  https://github.com/squidfunk/mkdocs-material/blob/master/src/assets/stylesheets/main/_colors.scss
+*/
+
+[data-md-color-scheme="wizard-dark"] {
+	/*
+		Color used for the title bar at the top of all mkdocs pages.
+		This is the dark purple color used in the dark theme UML theme.
+	*/
+	--md-primary-fg-color: #4a348f;
+
+	/*
+		Color used for links that are not hovered over.
+		This is the purple color used in the dark theme UML theme.
+	*/
+	--md-accent-fg-color: #6495ed;
+
+	/*
+		Color used when hovering over links.
+		This is the cornflower blue color from PlantUML.
+	*/
+	--md-typeset-a-color: #7050d2;
+
+	/*
+		Color used for text on the page.
+		This will override the title text and header/regular text colors if
+		  both this and the other color variables are set.
+		This color is the dirty white color from the dark theme UML theme, which
+		  is a bit easier on the eyes than the default white due to being a bit
+		  darker.
+	*/
+	--md-primary-bg-color: #d6d0c6;
+
+	/*
+		Color used for inline code text.
+	*/
+	--md-code-fg-color: var(--md-accent-fg-color);
+
+	/*
+		Background color used for inline code text.
+		This is the color normally used for inline code text in the default
+		  mkdocs theme. For the dark theme, it's being used as the background
+		  color so that each inline code block is a bit more distinct from the
+		  surrounding text.
+	*/
+	--md-code-bg-color: #2c313e;
+
+	/*
+		Color used for the lines used as the border of table cells.
+	*/
+	--md-typeset-table-color: var(--md-code-bg-color);
+
+	/***************************************************************************
+	 *
+	 * Colors used by the Dark Reader extension when applied to the default
+	 * mkdocs theme.
+	 *
+	 **************************************************************************/
+
+	/*
+		Color used for the page's background.
+	*/
+	--md-default-bg-color: #181a1b;
+
+	/*
+		Color used for the title text on each page.
+		If this not set, the default color will be used for the title text
+		  even if `--md-primary-bg-color` is set.
+	*/
+	--md-default-fg-color: #e8e6e3;
+
+	/*
+		Color used for the bar to the left of block quotes.
+	*/
+	--md-default-fg-color--lighter: var(--md-default-fg-color);
+
+	/*
+		For some reason, setting `--md-default-fg-color` only applies to the
+		  text in the search bar. Without setting this, text on the page itself
+		  is not modified.
+		If this is set without setting `--md-default-fg-color`, the text that
+		  appears when typing in the search bar will use the default dark color
+		  instead of the color set by `--md-default-fg-color`.
+	*/
+	--md-default-fg-color--light: var(--md-default-fg-color);
+
+	/*
+		Color used for headers and regular text on the page.
+		If this not set, the default color will be used for headers and regular
+		  text even if `--md-primary-bg-color` is set.
+	*/
+	--md-typeset-color: var(--md-primary-bg-color);
+
+	/*
+		Color used for admonition boxes' text.
+	*/
+	--md-admonition-fg-color: var(--md-typeset-color);
+
+	/*
+		Color used for admonition boxes' background.
+	*/
+	--md-admonition-bg-color: var(--md-default-bg-color);
+
+	/***************************************************************************
+	 *
+	 * Colors used within syntax highlighted code blocks.
+	 * This must be defined after the other styles since these variables rely
+	 *   on other variables that are modified above.
+	 * All colors defined in this section are based on VSCode's default dark
+	 *   theme. Note that an exact match of VSCode's dark theme is not possible
+	 *   since syntax highlighting in code blocks does not use language servers
+	 *   or similar for parsing. Variables whose use is unknown are colored
+	 *   red to make it obvious if they are used.
+	 *
+	 **************************************************************************/
+
+	/*
+		Color used for method names in VSCode's dark theme.
+	*/
+	--vscode-dark-theme-method-color: #dcdcaa;
+
+	/*
+		Color used by VSCode's dark theme for generic keywords.
+	*/
+	--vscode-dark-theme-keywords-color: #569cd6;
+
+	/*
+		Color used by VSCode's dark theme for identifiers.
+	*/
+	--vscode-dark-theme-identifier-color: #9cdcfe;
+
+	/*
+		Color used by VSCode's dark theme for class names.
+	*/
+	--vscode-dark-theme-class-color: #4ec9b0;
+
+	/*
+		Color used by VSCode's dark theme for punctuation (e.g. =, :, etc).
+	*/
+	--vscode-dark-theme-punctuation-color: #d4d4d4;
+
+	/*
+		Color used by VSCode's dark theme for comments.
+	*/
+	--vscode-dark-theme-comments-color: #6a9955;
+
+	/*
+		Color used by VSCode's dark theme for methods' paired punctuation.
+		Note that not all paired punctuation uses this color; for example,
+		  method parameter parentheses and curly braces use this color, but
+		  curly braces and square brackets for arrays do not (e.g. in
+		  `var foo = new int[] { 1 }`.
+	*/
+	--vscode-dark-theme-method-punctuation-color: rgb(218, 85, 131);
+
+	/*
+		Color used by VSCode's dark theme for numeric constants.
+	*/
+	--vscode-dark-theme-constants-color: #b5c078;
+
+	/*
+		Color used by VSCode's dark theme for strings.
+	*/
+	--vscode-dark-theme-strings-color: #ce9178;
+
+	/*
+		Color used by VSCode's dark theme for end of line backslashes.
+		This is used when using a backslash to continue a line of code onto the
+		  next line.
+	*/
+	--vscode-dark-theme-eol-backslash-color: #d7ba5f;
+
+	/*
+		Unknown
+	*/
+	--md-code-hl-color: red;
+
+	/*
+		Color used for numerical constants.
+	*/
+	--md-code-hl-number-color: var(--vscode-dark-theme-constants-color);
+
+	/*
+		Used for special punctuation, e.g. the backslash at the end of a line.
+	*/
+	--md-code-hl-special-color: var(--vscode-dark-theme-eol-backslash-color);
+
+	/*
+		Color used for class names.
+		Technically, this is also used for standalone function names (but not
+		  member functions). However, standalone function names are also colored
+		  by the `--md-code-hl-name-color` variable, which takes precedence over
+		  this variable. As a result, this variable ends up only getting used
+		  for class names.
+	*/
+	--md-code-hl-function-color: var(--vscode-dark-theme-class-color);
+
+	/*
+		Color used for certain keywords, e.g. Python's `print()` method.
+	*/
+	--md-code-hl-constant-color: var(--vscode-dark-theme-method-color);
+
+	/*
+		Color used for keywords.
+	*/
+	--md-code-hl-keyword-color: var(--vscode-dark-theme-keywords-color);
+
+	/*
+		Color used for strings.
+	*/
+	--md-code-hl-string-color: var(--vscode-dark-theme-strings-color);
+
+	/*
+		Color used for identifiers.
+		This is used for method names, return types, method parameters (both
+		  the type and the parameter name), generic type parameters (only C#),
+		  and variable names. It is *not* used for class names, standalone
+		  function names, or C++ template parameter identifiers.
+	*/
+	--md-code-hl-name-color: var(--vscode-dark-theme-identifier-color);
+
+	/*
+		Color used for operators (e.g. =, *, +, etc) and some <> symbols.
+		This color also affects the <> used in C# generic type parameters and
+		  C++ template parameter lists.
+	*/
+	--md-code-hl-operator-color: var(--vscode-dark-theme-punctuation-color);
+
+	/*
+		Color used for {}, [], (), :, ;, etc.
+		Note that unlike VSCode's dark theme, this color is used for all
+		  instances of these characters. In VSCode's dark theme, some of these
+		  characters do not use this color (e.g. the curly braces and square
+		  brackets used in array declarations like `new int[] { 1 }`). Also,
+		  VSCode doesn't use this color for line ending semicolons or colons
+		  used in places like C# generic type constraints.
+	*/
+	--md-code-hl-punctuation-color: var(--vscode-dark-theme-punctuation-color);
+
+	/*
+		Color used for comments.
+	*/
+	--md-code-hl-comment-color: var(--vscode-dark-theme-comments-color);
+
+	/*
+		Unknown
+	*/
+	--md-code-hl-generic-color: red;
+
+	/*
+		Applies to variable names in specific contexts, e.g. shell scripts.
+		Despite its name, this CSS style does not apply to all variable names.
+	*/
+	--md-code-hl-variable-color: var(--vscode-dark-theme-identifier-color);
+}
+
+[data-md-color-scheme="wizard-light"] {
+	/*
+		Color used for the title bar at the top of all mkdocs pages.
+		This is the dark purple color used in the dark theme UML theme.
+	*/
+	--md-primary-fg-color: #4a348f;
+
+	/*
+		Color used for links that are not hovered over.
+		This is the purple color used in the dark theme UML theme.
+	*/
+	--md-accent-fg-color: #6495ed;
+
+	/*
+		Color used when hovering over links.
+		This is the cornflower blue color from PlantUML.
+	*/
+	--md-typeset-a-color: #7050d2;
+}
