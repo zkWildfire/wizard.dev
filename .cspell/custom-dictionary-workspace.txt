@@ -7,6 +7,7 @@ Blazor
 chainload
 classlib
 codegen
+Componentized
 copyrighter
 cppcheck
 cpplint
@@ -51,4 +52,5 @@ udon
 unsanitized
 valgrind
 vcpkg
+whattf
 Yamaguchi

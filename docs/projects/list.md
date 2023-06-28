@@ -1,6 +1,6 @@
 # List of Projects
 ## Machine Learning
-### Matrix Cache Simulator
+### [Matrix Cache Simulator](./matrix-cache-sim/overview.md)
 The Matrix Cache Simulator is a small project that I originally wrote back in
 2018 while taking classes at UW Seattle. The lab I was working on required me
 to implement a matrix transpose algorithm that would read from one matrix and
