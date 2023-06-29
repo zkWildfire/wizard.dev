@@ -119,7 +119,7 @@ class SectionUnit:
 		Processes the English-Japanese table in the unit's file.
 		@param file File to read from. Must not be at the end of the file.
 		@pre The file is at the first line in the table.
-		@post The file's position will be on the line after the table.
+		@post The file's position will be on the second line after the table.
 		@returns Each vocabulary entry in the table.
 		"""
 		# Figure out what kind of table is in the file
@@ -155,7 +155,7 @@ class SectionUnit:
 		Processes the Kana-only table in the unit's file.
 		@param file File to read from. Must not be at the end of the file.
 		@pre The file is at the first line in the table.
-		@post The file's position will be on the line after the table.
+		@post The file's position will be on the second line after the table.
 		@returns Each vocabulary entry in the table.
 		"""
 		# Regex used to process the table
@@ -198,7 +198,7 @@ class SectionUnit:
 		Processes the English-Kana-Kanji table in the unit's file.
 		@param file File to read from. Must not be at the end of the file.
 		@pre The file is at the first line in the table.
-		@post The file's position will be on the line after the table.
+		@post The file's position will be on the second line after the table.
 		@returns Each vocabulary entry in the table.
 		"""
 		# Regex used to process the table
@@ -241,8 +241,8 @@ class SectionUnit:
 		This method will consume lines until either the entire file has been
 		  read or a vocabulary section header is found.
 		@param file File to read from.
-		@post The file's position will be at the end of the file or on the first
-		  line after a vocabulary section header.
+		@post The file's position will be at the end of the file or on the
+		  second line after a vocabulary section header.
 		@returns True if a vocabulary section header was found, False if the
 		  entire file was read.
 		"""
@@ -275,7 +275,7 @@ class VocabularyFile:
 		with vocab_file_path.open("r") as file:
 			self._pre_vocab_table_lines = \
 				VocabularyFile._get_pre_vocab_table_lines(file)
-			VocabularyFile._skip_vocab_table(file)
+			self._vocab_entries = VocabularyFile._skip_vocab_table(file)
 			self._post_vocab_table_lines = \
 				VocabularyFile._get_post_vocab_table_lines(file)
 
@@ -285,6 +285,21 @@ class VocabularyFile:
 		Writes the new vocabulary to the vocabulary file.
 		@param new_vocab New vocabulary to write to the file.
 		"""
+		# Merge the vocab entries from the vocabulary files with the vocab
+		#   entries read from the vocab file
+		# This is necessary because the vocab file may contain entries that
+		#   have kanji added, whereas the unit files may not contain the kanji
+		#   characters for those entries since many words are introduced via
+		#   kana only.
+		# Note that both the vocab entries from the vocabulary file and the
+		#   vocab entries from the unit files are sorted by English word, but
+		#   the from-units vocab entries may have extra entries not present in
+		#   the vocabulary file.
+		merged_vocab = VocabularyFile._merge_vocab_entries(
+			self._vocab_entries,
+			new_vocab
+		)
+
 		# Open the file and overwrite its contents
 		with self._file_path.open("w") as file:
 			# Write all lines before the vocabulary table
@@ -295,7 +310,7 @@ class VocabularyFile:
 			file.write("|:-------:|:----:|:-----:|:-------------:|")
 
 			# Write the vocabulary table
-			file.writelines(new_vocab)
+			file.writelines(merged_vocab)
 
 			# Write all lines after the vocabulary table
 			file.writelines(self._post_vocab_table_lines)
@@ -326,22 +341,50 @@ class VocabularyFile:
 
 
 	@staticmethod
-	def _skip_vocab_table(file: TextIO) -> None:
+	def _process_vocab_table(file: TextIO) -> List[VocabularyEntry]:
 		"""
-		Skips all lines belonging to the vocabulary table.
+		Processes each line belonging to the vocabulary table.
 		@param file File to read from.
 		@pre The file is at the first line in the vocabulary table.
-		@post The file's position will be on the first line after the
+		@post The file's position will be on the second line after the
 		  vocabulary table.
+		@returns A list of vocabulary entries read in from the file.
 		"""
 		# Regex used to match each vocabulary table line
-		regex = re.compile(r"^\|.*\|$")
+		# Each entry in the vocabulary table will look like this:
+		# ```
+		# | [English] | [Kana] | [Kanji] | [Introduced in] |
+		# ```
+		regex = re.compile(
+			r"^\|\s+(.*)\s+\|\s+(.*)\s+\|\s+(.*)\s+\|\s+Section (\d+) Unit (\d+)\s+\|$"
+		)
 
-		# Consume lines from the file until the end of the file is reached or
-		#   the vocabulary table line regex does not match the line
+		entries: List[VocabularyEntry] = []
 		line = file.readline()
 		while line and regex.match(line):
+			match = regex.match(line)
+
+			# Extract the English, Kana, and Kanji words from the line
+			english = match.group(1)
+			kana = match.group(2)
+			kanji = match.group(3)
+
+			# Extract the section and unit numbers from the line
+			section_number = int(match.group(4))
+			unit_number = int(match.group(5))
+
+			# Create the vocabulary entry
+			entries.append(VocabularyEntry(
+				english,
+				kana,
+				kanji,
+				section_number,
+				unit_number
+			))
+
 			line = file.readline()
+
+		return entries
 
 
 	@staticmethod
@@ -362,6 +405,59 @@ class VocabularyFile:
 
 		return lines
 
+
+	@staticmethod
+	def _merge_vocab_entries(
+		existing_vocab: Sequence[VocabularyEntry],
+		new_vocab: Sequence[VocabularyEntry]) -> List[VocabularyEntry]:
+		"""
+		Merges the new vocabulary entries with the existing vocabulary entries.
+		This method will keep all data from the new vocabulary entries except
+		  the kanji field, which allows kanji to be added to the vocabulary
+		  file as new kanji characters are introduced.
+		@param existing_vocab Vocabulary entries generated from the vocabulary
+		  file.
+		@param new_vocab Vocabulary entries generated from the unit files. This
+		  sequence may be longer than the existing vocabulary entries since
+		  the unit files may contain entries that are not present in the
+		  vocabulary file yet.
+		"""
+		merged_vocab: List[VocabularyEntry] = []
+
+		# Keep track of the index of the next entry in the existing vocabulary
+		#   to compare against
+		existing_vocab_index = 0
+
+		# Process each entry in the new vocabulary
+		for new_entry in new_vocab:
+			existing_entry = existing_vocab[existing_vocab_index]
+
+			# If the new entry is the same as the existing entry, keep the
+			#   kanji from the existing entry but keep the other data from the
+			#   new entry
+			# Note that since the new vocabulary entry's kanji field may be
+			#   overwritten, it is not used in the comparison to decide whether
+			#   the existing entry is a match for the new entry
+			merged_entry = new_entry
+			if new_entry.english == existing_entry.english and \
+				new_entry.kana == existing_entry.kana:
+				merged_entry = VocabularyEntry(
+					new_entry.english,
+					new_entry.kana,
+					existing_entry.kanji,
+					new_entry.section_number,
+					new_entry.unit_number
+				)
+
+				# Move to the next entry in the existing vocabulary since
+				#   the existing entry was used
+				existing_vocab_index += 1
+
+			merged_vocab.append(merged_entry)
+
+		# All entries in the existing vocabulary should have been used
+		assert existing_vocab_index == len(existing_vocab)
+		return merged_vocab
 
 #
 # Primary Script Logic
@@ -407,7 +503,7 @@ def main() -> int:
 			vocabulary_entries.extend(unit.get_vocabulary())
 
 	# Sort the vocabulary entries by English word
-	vocabulary_entries.sort(key=lambda entry: entry.english)
+	vocabulary_entries.sort(key=lambda entry: entry.english.lower())
 
 	# Convert each vocabulary entry to a string
 	vocabulary_entries = [
