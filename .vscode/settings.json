@@ -9,6 +9,7 @@
 		"**/Thumbs.db": true,
 		// Exclude folders that are workspace folders
 		"docs": true,
+		"scripts": true,
 		"projects": true
 	}
 }
