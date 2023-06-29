@@ -12,6 +12,7 @@ copyrighter
 cppcheck
 cpplint
 ctest
+customizability
 DEPFILE
 devcontainer
 dockerfiles
