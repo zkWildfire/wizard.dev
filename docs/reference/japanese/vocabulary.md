@@ -293,12 +293,13 @@ one or more Kanji characters.
 ## Particles
 | Type | Character | Introduced In |
 |:----:|:---------:|:-------------:|
-| Subject | は | Section 1 Unit 2 |
+| Subject (General) | は | Section 1 Unit 2 |
 | Question | か | Section 1 Unit 2 |
 | Possessive | の | Section 1 Unit 4 |
-| Movement | に | Section 1 Unit 7 |
+| Movement (To, At) | に | Section 1 Unit 7 |
 | Action | を | Section 1 Unit 7 |
 | Confirmation | ね | Section 1 Unit 8 |
+| Movement (Towards, To) | へ | Section 2 Unit 13 |
 
 !!! info
     The information displayed in the above table is partially taken from this
