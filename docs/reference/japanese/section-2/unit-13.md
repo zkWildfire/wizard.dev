@@ -5,6 +5,7 @@
 |:-------:|:----:|:-----:|
 | to | へ | |
 | midnight | れいじ | 零時 |
+| office | かいしゃ | 会社 |
 
 ### Examples
 | English | Japanese |

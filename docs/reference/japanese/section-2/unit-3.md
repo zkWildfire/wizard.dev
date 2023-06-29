@@ -4,6 +4,7 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | Andrew | アンドリュー | |
+| Daniel | ダニエル | |
 | Erika | エリカ | |
 | girlfriend | かのじょ | |
 | boyfriend | かれし | |
@@ -11,6 +12,7 @@
 | China | ちゅうごく | |
 | Korea | かんこく | |
 | Malaysia | マレーシア | |
+| Vietnam | ベトナム | |
 | American (thing) | アメリカの | |
 | British (thing) | イギリスの | |
 | Japanese (thing) | にほんの | 日本の |
@@ -20,6 +22,8 @@
 | K-pop | Kポップ | |
 | horror | ホラー | |
 | hobby | しゅみ | |
+| mystery | ミステリー | |
+| romance | れんあい | |
 | video | どうが | |
 | this | こちら | |
 | probably | たぶん | |
@@ -51,12 +55,13 @@
 | chair | いす | |
 | desk | つくえ | |
 | futon | ふとん | |
-| microwave | でんきれんき | |
+| microwave | でんしレンジ | |
 | refrigerator | れいぞうこ | |
 | table | テーブル | |
 | washing machine | せんたくき | |
 | vacuum cleaner | そうじき | |
 | to move | ひっこします | |
+| this week | こんしゅう | |
 | still | まだ | |
 | cramped | せまい | |
 | spacious | ひろい | |
