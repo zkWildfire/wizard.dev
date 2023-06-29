@@ -3,7 +3,7 @@
 ### Vocabulary
 | English | Japanese |
 |:-------:|:--------:|
-| sushi  | すし |
+| sushi | すし |
 | green tea | おちゃ |
 | water | みず |
 | rice | ごはん |
