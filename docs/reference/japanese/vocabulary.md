@@ -304,3 +304,4 @@ one or more Kanji characters.
 !!! info
     The information displayed in the above table is partially taken from this
     site: https://www.busuu.com/en/japanese/particles
+| English | Kana | Kanji | Introduced In ||:-------:|:----:|:-----:|:-------------:|
