@@ -7,6 +7,7 @@
 #   vocabulary file, the script will keep the kanji from the existing entry but
 #   use the data from the per-unit entry for all other table columns.
 from helpers import get_units
+from pathlib import Path
 from paths import Paths
 import sys
 from typing import List
@@ -20,7 +21,8 @@ def main() -> int:
 	"""
 	# Get the vocabulary entries from each unit
 	vocabulary_entries: List[VocabularyEntry] = []
-	for section_number, section_path in enumerate(Paths.section_paths, start=1):
+	paths = Paths(Path(__file__).parent)
+	for section_number, section_path in enumerate(paths.section_paths, start=1):
 		for unit in get_units(section_number, section_path):
 			print(f"Processing {unit.unit_name}...")
 			vocabulary_entries.extend(unit.get_vocabulary())
@@ -31,7 +33,7 @@ def main() -> int:
 
 	# Write the vocabulary entries to the vocabulary file
 	print(f"Updating {Paths.vocabulary_file_path}...")
-	vocab_file = VocabularyFile(Paths.vocabulary_file_path)
+	vocab_file = VocabularyFile(paths.vocabulary_file_path)
 	vocab_file.write(vocabulary_entries)
 
 	print("Successfully updated the vocabulary file.")

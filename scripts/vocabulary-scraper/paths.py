@@ -4,40 +4,47 @@ from typing import Generator
 
 class Paths:
 	"""
-	"Static" class used to get various paths.
+	Helper class used to get various paths.
 	"""
-	@classmethod
+	def __init__(self, starting_path: Path) -> None:
+		"""
+		Initializes the class.
+		@param starting_path Path to derive all other paths from. This should
+		  be the path of the folder containing this script when running this
+		  set of scripts normally but will be set to a different path when using
+		  this class in tests.
+		"""
+		self._starting_path = starting_path
+
+
 	@property
-	def repo_root(cls) -> Path:
+	def repo_root(self) -> Path:
 		"""
 		Gets the path to the repository's root.
 		"""
-		return Path(__file__).parent.parent.parent.resolve()
+		return Path(self._starting_path).parent.parent.resolve()
 
 
-	@classmethod
 	@property
-	def japanese_root(cls) -> Path:
+	def japanese_root(self) -> Path:
 		"""
 		Gets the path to the Japanese section of the docs.
 		"""
-		return cls.repo_root / "docs" / "reference" / "japanese"
+		return self.repo_root / "docs" / "reference" / "japanese"
 
 
-	@classmethod
 	@property
-	def vocabulary_file_path(cls) -> Path:
+	def vocabulary_file_path(self) -> Path:
 		"""
 		Gets the path to the vocabulary file to update.
 		"""
-		return cls.japanese_root / "vocabulary.md"
+		return self.japanese_root / "vocabulary.md"
 
 
-	@classmethod
 	@property
-	def section_paths(cls) -> Generator[Path, None, None]:
+	def section_paths(self) -> Generator[Path, None, None]:
 		"""
 		Gets the path to each section folder in the Japanese docs.
 		"""
 		for i in range(NUM_SECTIONS):
-			yield cls.japanese_root / f"section-{i + 1}"
+			yield self.japanese_root / f"section-{i + 1}"
