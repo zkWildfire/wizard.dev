@@ -29,7 +29,7 @@ class Paths:
 		"""
 		Gets the path to the repository's root.
 		"""
-		return Path(__file__).parent.parent.resolve()
+		return Path(__file__).parent.parent.parent.resolve()
 
 
 	@classmethod
@@ -80,6 +80,16 @@ class VocabularyEntry(NamedTuple):
 	unit_number: int
 
 
+def vocabulary_entry_to_string(entry: VocabularyEntry) -> str:
+	"""
+	Converts a vocabulary entry to a string.
+	@param entry Vocabulary entry to convert.
+	@returns The vocabulary entry as a string.
+	"""
+	return f"| {entry.english} | {entry.kana} | {entry.kanji} | " + \
+		f"Section {entry.section_number} Unit {entry.unit_number} |"
+
+
 class SectionUnit:
 	"""
 	Represents a unit within a section.
@@ -102,6 +112,14 @@ class SectionUnit:
 			raise FileNotFoundError(f"Unit file not found: {self._file_path}")
 
 
+	@property
+	def unit_name(self) -> str:
+		"""
+		Gets the name of the unit.
+		"""
+		return f"Section {self._section_number} Unit {self._unit_number}"
+
+
 	def get_vocabulary(self) -> Generator[VocabularyEntry, None, None]:
 		"""
 		Iterates over the unit's file and yields each vocabulary entry.
@@ -109,11 +127,11 @@ class SectionUnit:
 		"""
 		with open(self._file_path, "r", encoding="utf-8") as f:
 			# Loop until the end of the file is reached
-			while SectionUnit._skip_to_vocabulary_section(f):
-				yield from SectionUnit._process_english_japanese_table(f)
+			while self._skip_to_vocabulary_section(f):
+				yield from self._process_english_japanese_table(f)
 
 
-	def _process_english_japanese_table(self, file: TextIO[str]) -> \
+	def _process_english_japanese_table(self, file: TextIO) -> \
 		Generator[VocabularyEntry, None, None]:
 		"""
 		Processes the English-Japanese table in the unit's file.
@@ -142,14 +160,14 @@ class SectionUnit:
 		file.readline()
 
 		if "Japanese" in header:
-			yield from SectionUnit._process_kana_only_table(file)
+			yield from self._process_kana_only_table(file)
 		elif "Kanji" in header:
-			yield from SectionUnit._process_kana_kanji_table(file)
+			yield from self._process_kana_kanji_table(file)
 		else:
 			raise RuntimeError("Invalid table header")
 
 
-	def _process_kana_only_table(self, file: TextIO[str]) -> \
+	def _process_kana_only_table(self, file: TextIO) -> \
 		Generator[VocabularyEntry, None, None]:
 		"""
 		Processes the Kana-only table in the unit's file.
@@ -192,7 +210,7 @@ class SectionUnit:
 			)
 
 
-	def _process_kana_kanji_table(self, file: TextIO[str]) -> \
+	def _process_kana_kanji_table(self, file: TextIO) -> \
 		Generator[VocabularyEntry, None, None]:
 		"""
 		Processes the English-Kana-Kanji table in the unit's file.
@@ -235,7 +253,7 @@ class SectionUnit:
 			)
 
 
-	def _skip_to_vocabulary_section(self, file: TextIO[str]) -> bool:
+	def _skip_to_vocabulary_section(self, file: TextIO) -> bool:
 		"""
 		Consumes lines until a vocabulary section is reached.
 		This method will consume lines until either the entire file has been
@@ -275,12 +293,12 @@ class VocabularyFile:
 		with vocab_file_path.open("r") as file:
 			self._pre_vocab_table_lines = \
 				VocabularyFile._get_pre_vocab_table_lines(file)
-			self._vocab_entries = VocabularyFile._skip_vocab_table(file)
+			self._vocab_entries = VocabularyFile._process_vocab_table(file)
 			self._post_vocab_table_lines = \
 				VocabularyFile._get_post_vocab_table_lines(file)
 
 
-	def write(self, new_vocab: Sequence[str]) -> None:
+	def write(self, new_vocab: Sequence[VocabularyEntry]) -> None:
 		"""
 		Writes the new vocabulary to the vocabulary file.
 		@param new_vocab New vocabulary to write to the file.
@@ -310,7 +328,9 @@ class VocabularyFile:
 			file.write("|:-------:|:----:|:-----:|:-------------:|")
 
 			# Write the vocabulary table
-			file.writelines(merged_vocab)
+			file.writelines([
+				vocabulary_entry_to_string(e) for e in merged_vocab
+			])
 
 			# Write all lines after the vocabulary table
 			file.writelines(self._post_vocab_table_lines)
@@ -331,7 +351,7 @@ class VocabularyFile:
 
 		# Consume lines from the file until the end of the file is reached or
 		#   the vocabulary header regex matches the line
-		lines = []
+		lines: List[str] = []
 		line = file.readline()
 		while line and not regex.match(line):
 			lines.append(line)
@@ -361,8 +381,10 @@ class VocabularyFile:
 
 		entries: List[VocabularyEntry] = []
 		line = file.readline()
-		while line and regex.match(line):
+		while line:
 			match = regex.match(line)
+			if not match:
+				break
 
 			# Extract the English, Kana, and Kanji words from the line
 			english = match.group(1)
@@ -397,7 +419,7 @@ class VocabularyFile:
 		@returns The lines after the vocabulary table.
 		"""
 		# Consume lines from the file until the end of the file is reached
-		lines = []
+		lines: List[str] = []
 		line = file.readline()
 		while line:
 			lines.append(line)
@@ -463,19 +485,13 @@ class VocabularyFile:
 # Primary Script Logic
 #
 
-def vocabulary_entry_to_string(entry: VocabularyEntry) -> str:
-	"""
-	Converts a vocabulary entry to a string.
-	@param entry Vocabulary entry to convert.
-	@returns The vocabulary entry as a string.
-	"""
-	return f"| {entry.english} | {entry.kana} | {entry.kanji} | " + \
-		f"Section {entry.section_number} Unit {entry.unit_number} |"
-
-
-def get_units(section_path: Path) -> Generator[SectionUnit, None, None]:
+def get_units(section_number: int, section_path: Path) -> \
+	Generator[SectionUnit, None, None]:
 	"""
 	Gets the units in a section.
+	@param section_number The number of the section.
+	@param section_path The path to the section folder.
+	@returns Each unit in the section.
 	"""
 	# Each section folder will be composed of some number of unit files starting
 	#   from unit 1 and going to some number n.
@@ -484,7 +500,7 @@ def get_units(section_path: Path) -> Generator[SectionUnit, None, None]:
 	i = 1
 	try:
 		while True:
-			yield SectionUnit(section_path, i)
+			yield SectionUnit(section_path, section_number, i)
 			i += 1
 	except FileNotFoundError:
 		# If the file is not found, then there are no more units
@@ -498,21 +514,22 @@ def main() -> int:
 	"""
 	# Get the vocabulary entries from each unit
 	vocabulary_entries: List[VocabularyEntry] = []
-	for section_path in Paths.section_paths:
-		for unit in get_units(section_path):
+	for section_number, section_path in enumerate(Paths.section_paths, start=1):
+		for unit in get_units(section_number, section_path):
+			print(f"Processing {unit.unit_name}...")
 			vocabulary_entries.extend(unit.get_vocabulary())
+	print(f"Found {len(vocabulary_entries)} vocabulary entries.")
 
 	# Sort the vocabulary entries by English word
 	vocabulary_entries.sort(key=lambda entry: entry.english.lower())
 
-	# Convert each vocabulary entry to a string
-	vocabulary_entries = [
-		vocabulary_entry_to_string(entry) for entry in vocabulary_entries
-	]
-
 	# Write the vocabulary entries to the vocabulary file
-	vocab_file = VocabularyFile(Paths.vocab_file_path)
+	print(f"Updating {Paths.vocabulary_file_path}...")
+	vocab_file = VocabularyFile(Paths.vocabulary_file_path)
 	vocab_file.write(vocabulary_entries)
+
+	print("Successfully updated the vocabulary file.")
+	return 0
 
 
 if __name__ == "__main__":
