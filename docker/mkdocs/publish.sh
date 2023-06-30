@@ -37,4 +37,4 @@ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
 # Publish the documentation
 cd "${REPO_ROOT}"
-mkdocs gh-deploy "${FORCE_FLAG}"
+mkdocs gh-deploy ${FORCE_FLAG}
