@@ -30,11 +30,13 @@ git config --global user.email "gh-actions@wizard.dev"
 # This is necessary when running the script via GitHub Actions
 git config --global --add safe.directory "${REPO_ROOT}"
 
-
 # Add the GitHub remote as a trusted SSH host
 mkdir -p ~/.ssh
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
-# Publish the documentation
+# Pull the latest changes to make sure that the gh-pages branch is up to date
 cd "${REPO_ROOT}"
+git pull
+
+# Publish the documentation
 mkdocs gh-deploy ${FORCE_FLAG}
