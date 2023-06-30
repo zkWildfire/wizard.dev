@@ -173,12 +173,12 @@ class SectionUnit:
 		  read or a vocabulary section header is found.
 		@param file File to read from.
 		@post The file's position will be at the end of the file or on the
-		  second line after a vocabulary section header.
+		  first line after a vocabulary section header.
 		@returns True if a vocabulary section header was found, False if the
 		  entire file was read.
 		"""
 		# Regex used to match vocabulary section headers
-		regex = re.compile(r"^#+Vocabulary$")
+		regex = re.compile(r"^#+\s+Vocabulary$")
 
 		# Consume lines from the file until the end of the file is reached or
 		#   the vocabulary header regex matches the line
