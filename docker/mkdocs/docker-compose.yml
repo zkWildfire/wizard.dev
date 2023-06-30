@@ -15,7 +15,7 @@ services:
     volumes:
       # Use a different directory than what would be used in the devcontainer
       #   to make sure paths aren't hardcoded in any of the documentation scripts
-      - ../..:/home/wizard:ro
+      - ../..:/home/wizard:rw
 
   plantuml:
     image: plantuml/plantuml-server:jetty
