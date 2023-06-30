@@ -44,7 +44,7 @@ others.
 ## Symbols
 ### $A = B$
 Using a standard equals sign means that the two sides are **character for
-character** equivalent, or "stringly equivalent".
+character equivalent**, or "stringly equivalent".
 
 For example, both sides of $p \land q = q \land p$ have the same truth tables.
 However, the statement $p \land q = q \land p$ is not true because the two sides
@@ -121,3 +121,7 @@ each of these equivalences can be found in appendix 1.
 * $p \iff q \equiv \neg p \iff \neg q$
 * $p \iff q \equiv (p \land q) \lor (\neg p \land \neg q)$
 * $\neg (p \iff q) \equiv p \iff \neg q$
+
+### Equivalences Involving XOR
+* $p \oplus q \equiv (p \lor q) \land \neg (p \land q)$
+* $p \oplus q \equiv (p \land \neg q) \lor (\neg p \land q)$
