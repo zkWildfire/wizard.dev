@@ -34,7 +34,7 @@ jobs:
         #   the mkdocs commands
         run: >
           docker exec publish_docs ash -c
-          "cd /home/wizard && mkdocs gh-deploy"
+          "cd /home/wizard/docker/mkdocs && ./publish.sh"
 
       - name: Stop docker containers
         working-directory: docker/mkdocs
