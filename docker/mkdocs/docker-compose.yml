@@ -1,0 +1,34 @@
+---
+services:
+  dev:
+    build:
+      dockerfile: ./dockerfile
+      context: .
+    container_name: publish_docs
+    environment:
+      - FORCE_PUBLISH=${FORCE_PUBLISH}
+      - PUBLISH_SSH_KEY=${PUBLISH_SSH_KEY}
+    networks:
+      dev-net:
+    stdin_open: true
+    tty: true
+    volumes:
+      # Use a different directory than what would be used in the devcontainer
+      #   to make sure paths aren't hardcoded in any of the documentation scripts
+      - ../..:/home/wizard:ro
+
+  plantuml:
+    image: plantuml/plantuml-server:jetty
+    environment:
+      ALLOW_PLANTUML_INCLUDE: "true"
+      PLANTUML_CONFIG_FILE: /wizard/uml/plantuml.conf
+    networks:
+      dev-net:
+        aliases:
+          - plantuml.dev.net
+    volumes:
+      - ../../common/uml:/wizard/uml:ro
+
+networks:
+  dev-net:
+...

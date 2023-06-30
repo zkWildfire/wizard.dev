@@ -4,6 +4,11 @@ on:
     branches:
       - master
   workflow_dispatch:
+    inputs:
+      force_publish:
+        description: Whether to publish docs regardless of whether any changes were made.
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -16,16 +21,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+      - name: Start docker containers
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EXTRA_PACKAGES: >
-            cairo-dev
-            dbus-dev
-            gcc
-            gobject-introspection-dev
-            libc-dev
-            make
-            pkgconf
-          REQUIREMENTS: docs/requirements.txt
+          FORCE_PUBLISH: ${{ inputs.force_publish }}
+          PUBLISH_SSH_KEY: ${{ secrets.PUBLISH_SSH_KEY }}
+        working-directory: docker/mkdocs
+        run: docker compose up -d
+
+      - name: Build and publish docs
+        # The container name listed here must match the name in the
+        #   `docker-compose.yml` file for the container that will run
+        #   the mkdocs commands
+        run: >
+          docker exec publish_docs ash -c
+          "cd /home/wizard && mkdocs gh-deploy"
+
+      - name: Stop docker containers
+        working-directory: docker/mkdocs
+        run: docker compose down

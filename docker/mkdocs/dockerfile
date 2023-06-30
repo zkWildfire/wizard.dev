@@ -1,0 +1,29 @@
+FROM python:3.11-alpine
+
+# Add required apk packages
+RUN apk add --no-cache \
+	cairo-dev \
+	dbus-dev \
+	doxygen \
+	gcc \
+	git \
+	gobject-introspection-dev \
+	libc-dev \
+	make \
+	openssh-client \
+	pkgconf \
+	python3 \
+	py3-pip
+
+# Install pip packages
+RUN python3 -m pip install \
+	# Primary mkdocs package
+	mkdocs \
+	# Packages used to enable the material mkdocs theme
+	mkdocs-material \
+	mkdocs-git-revision-date-localized-plugin \
+	pygments \
+	# Packages for documentation generation
+	mkdocs-awesome-pages-plugin \
+	doxypypy \
+	mkdocs_puml
