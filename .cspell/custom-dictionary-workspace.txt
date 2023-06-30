@@ -7,6 +7,7 @@ Blazor
 chainload
 classlib
 codegen
+combinational
 Componentized
 copyrighter
 cppcheck
@@ -23,6 +24,7 @@ frontends
 gtest
 Hana
 helgrind
+idempotency
 implib
 interprocedural
 iwyu
