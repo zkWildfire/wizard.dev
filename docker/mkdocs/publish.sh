@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 # Usage: ./publish.sh
 # Helper script used to deploy the documentation to GitHub pages.
 set -e
@@ -8,8 +8,8 @@ SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 readonly SCRIPT_DIR
 
 # Get the repository root directory
-REPO_DIR=$(realpath "${SCRIPT_DIR}/../..")
-readonly REPO_DIR
+REPO_ROOT=$(realpath "${SCRIPT_DIR}/../..")
+readonly REPO_ROOT
 
 # Check if force publishing was requested
 if [ -z "${FORCE_PUBLISH}" ]; then
@@ -36,4 +36,4 @@ mkdir -p ~/.ssh
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
 # Publish the documentation
-mkdocs gh-deploy
+mkdocs gh-deploy "${FORCE_FLAG}"
