@@ -27,7 +27,7 @@ services:
         aliases:
           - plantuml.dev.net
     volumes:
-      - ../../common/uml:/wizard/uml:ro
+      - ../../plantuml:/wizard/uml:ro
 
 networks:
   dev-net:
