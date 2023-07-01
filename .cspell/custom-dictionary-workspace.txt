@@ -1,5 +1,7 @@
 # Custom Dictionary Words
+Akihabara
 arity
+Asakusa
 asan
 biconditional
 biconditionals
@@ -23,6 +25,7 @@ Flurl
 frontends
 gtest
 Hana
+Harajuku
 helgrind
 idempotency
 implib
@@ -45,6 +48,7 @@ pyright
 pytest
 rpath
 rpaths
+Shibuya
 subcomponents
 Tanaka
 toolset
@@ -52,6 +56,7 @@ tparam
 tqdm
 tsan
 udon
+Ueno
 unsanitized
 valgrind
 vcpkg

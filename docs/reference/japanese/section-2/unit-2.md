@@ -47,6 +47,7 @@
 | to sleep | ねます | |
 | to take | あびます | |
 | emails | メール | |
+| dessert | デザート | |
 | pasta | パスタ | |
 | radio | ラジオ | |
 | shower | シャワー | |

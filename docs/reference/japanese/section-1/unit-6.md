@@ -49,7 +49,7 @@
 | famous | ゆうめい | |
 | fashionable | おしゃれ | |
 | stylish | おしゃれ | |
-| engineer |  | |
+| engineer | エンジニア | |
 | college student | だいがくせい | |
 | office worker | かいしゃいん | |
 | four | よん | 四 |

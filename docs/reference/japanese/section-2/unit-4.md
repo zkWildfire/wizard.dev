@@ -3,6 +3,29 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| about | ぐらい | |
+| how long | どの | |
+| next | つぎ | |
+| fast | はやい | |
+| long | ながい | |
+| soon | もうすぐ | |
+| minute | ふん | 分 |
+| hour | じかん | 時間 |
+| Akihabara | あきはばら | |
+| Asakusa | あさくさ | |
+| Harajuku | はらじゅく | |
+| Mt Fuji | ふじさん | |
+| Osaka | おおさか | |
+| Shibuya | しぶや | |
+| Ueno Park | うえのこうえん | |
+| Yokohama | よこはま | |
+| final stop | しゅうてん | |
+| bus | バス | |
+| train | でんしゃ | |
+| to come | きます | 来ます |
+| to go to | いきます | 行きます |
+| to take (time) | かかります | |
+| this | ここ | |
 
 
 ### Examples
@@ -19,6 +42,20 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| building | たてもの | |
+| mountain | やま | 山 |
+| pizza shop | ピザや | |
+| place | ところ | |
+| ramen shop | ラーメンや | |
+| shrine | じんじゃ | |
+| temple | おてら | |
+| postcard | ポストカード | |
+| snack | おかし | |
+| souvenir | おみやげ | |
+| pretty | きれい | |
+| tall | たかい | 高い |
+| what kind of | どんな | |
+| that over there | あれ | |
 
 
 ### Examples

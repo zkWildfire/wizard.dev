@@ -29,7 +29,7 @@
 | probably | たぶん | |
 | really? | ほんとうですか。 | |
 | to like | すき | |
-| my name is | と言います | |
+| my name is | といいます | と言います |
 
 ### Examples
 | English | Japanese |
@@ -66,6 +66,7 @@
 | cramped | せまい | |
 | spacious | ひろい | |
 | well-lit | あかるい | |
+| when | いつ | |
 
 ### Examples
 | English | Japanese |
