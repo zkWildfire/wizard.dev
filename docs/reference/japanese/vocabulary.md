@@ -10,16 +10,23 @@ one or more Kanji characters.
 |:-------:|:----:|:-----:|:-------------:|
 | a bit | すこし | | Section 2 Unit 1 |
 | about | ごろ | | Section 1 Unit 5 |
+| action | アクション | | Section 2 Unit 3 |
+| air conditioner | エアコン | | Section 2 Unit 3 |
 | airport | くうこう | | Section 1 Unit 5 |
 | always | いつも | | Section 2 Unit 2 |
 | America | アメリカ | | Section 1 Unit 3 |
+| American (thing) | アメリカの | | Section 2 Unit 3 |
 | American | アメリカじん | | Section 1 Unit 3 |
 | and | と | | Section 1 Unit 1 |
+| Andrew | アンドリュー | | Section 2 Unit 3 |
 | anime | アニメ | | Section 1 Unit 7 |
+| apartment | アパート | | Section 2 Unit 3 |
 | at | に | | Section 1 Unit 7 |
+| Australia | オーストラリア | | Section 2 Unit 3 |
 | baseball | やきゅう | | Section 1 Unit 7 |
 | basketball | バスケットボール | | Section 1 Unit 7 |
 | bathtub | ふろ | 風呂 | Section 2 Unit 13 |
+| bed | ベッド | | Section 2 Unit 3 |
 | bedroom | しんしつ | 寝室 | Section 2 Unit 13 |
 | big | おおきい | 大きい | Section 1 Unit 3 |
 | bird | とり | 鳥 | Section 2 Unit 13 |
@@ -27,12 +34,15 @@ one or more Kanji characters.
 | black tea | こうちゃ | | Section 2 Unit 1 |
 | blue | あおい | | Section 1 Unit 8 |
 | book | ほん | 本 | Section 1 Unit 7 |
+| bookshelf | ほんだな | | Section 2 Unit 3 |
 | boxed lunch | べんとう | | Section 2 Unit 1 |
+| boyfriend | かれし | | Section 2 Unit 3 |
 | Brazil | ブラジル | | Section 1 Unit 3 |
 | Brazilian | ブラジルじん | | Section 1 Unit 3 |
 | bread | パン | | Section 2 Unit 1 |
 | breakfast | あさごはん | | Section 1 Unit 7 |
 | Britain | イギリス | | Section 1 Unit 3 |
+| British (thing) | イギリスの | | Section 2 Unit 3 |
 | British | イギリスじん | | Section 1 Unit 3 |
 | bus stop | バスてい | | Section 1 Unit 3 |
 | busy | いそがしい | | Section 1 Unit 6 |
@@ -43,21 +53,27 @@ one or more Kanji characters.
 | Canada | カナダ | | Section 1 Unit 3 |
 | Canadian | カナダじん | | Section 1 Unit 3 |
 | cat | ねこ | 猫 | Section 2 Unit 13 |
+| chair | いす | | Section 2 Unit 3 |
 | cheap | やすい | | Section 1 Unit 8 |
 | cheerful | あかるい | | Section 1 Unit 4 |
+| China | ちゅうごく | | Section 2 Unit 3 |
 | city | とし | | Section 1 Unit 6 |
 | close | ちかい | | Section 2 Unit 2 |
 | clothes | ふく | | Section 1 Unit 8 |
 | coat | コート | | Section 1 Unit 4 |
 | coffee | コーヒー | | Section 1 Unit 7 |
 | college student | だいがくせい | | Section 1 Unit 6 |
+| comedy | コメディ | | Section 2 Unit 3 |
 | convenience store | コンビニ | | Section 1 Unit 3 |
 | cool | かっこいい | | Section 1 Unit 1 |
+| cramped | せまい | | Section 2 Unit 3 |
 | curry | カレー | | Section 1 Unit 2 |
 | cute | かわいい | | Section 1 Unit 8 |
 | dad | ちち | 父 | Section 1 Unit 6 |
+| Daniel | ダニエル | | Section 2 Unit 3 |
 | daughter | むすめ | | Section 1 Unit 6 |
 | department store | デパート | | Section 1 Unit 3 |
+| desk | つくえ | | Section 2 Unit 3 |
 | dinner | ばんごはん | | Section 1 Unit 7 |
 | doctor | いしゃ | | Section 1 Unit 1 |
 | dog | いぬ | 犬 | Section 2 Unit 13 |
@@ -71,6 +87,7 @@ one or more Kanji characters.
 | eleven | じゅういち | 十一 | Section 1 Unit 7 |
 | eleven o'clock | じゅういちじ | 十一時 | Section 2 Unit 1 |
 | emails | メール | | Section 2 Unit 2 |
+| Erika | エリカ | | Section 2 Unit 3 |
 | every day | まいにち | | Section 1 Unit 7 |
 | every morning | まいあさ | | Section 1 Unit 7 |
 | every night | まいばん | | Section 1 Unit 7 |
@@ -80,6 +97,7 @@ one or more Kanji characters.
 | expensive | たかい | | Section 1 Unit 8 |
 | family | かぞく | | Section 1 Unit 6 |
 | famous | ゆうめい | | Section 1 Unit 6 |
+| fantasy | ファンタジー | | Section 2 Unit 3 |
 | far | とおい | | Section 2 Unit 2 |
 | fashionable | おしゃれ | | Section 1 Unit 6 |
 | first floor | いっかい | | Section 2 Unit 2 |
@@ -91,8 +109,10 @@ one or more Kanji characters.
 | friend | ともだち | | Section 1 Unit 7 |
 | from | しゅっしん | | Section 1 Unit 6 |
 | funny | おもしろい | | Section 1 Unit 4 |
+| futon | ふとん | | Section 2 Unit 3 |
 | game | ゲーム | | Section 1 Unit 7 |
 | get up | おきます | | Section 2 Unit 2 |
+| girlfriend | かのじょ | | Section 2 Unit 3 |
 | good evening | こんばんは | | Section 1 Unit 2 |
 | good morning (formal) | おはようございます | | Section 1 Unit 6 |
 | green tea | おちゃ | お茶 | Section 1 Unit 1 |
@@ -101,7 +121,10 @@ one or more Kanji characters.
 | hello | こんにちは | | Section 1 Unit 2 |
 | here | ここ | | Section 1 Unit 3 |
 | hideous | ダサい | | Section 1 Unit 8 |
+| hobby | しゅみ | | Section 2 Unit 3 |
+| horror | ホラー | | Section 2 Unit 3 |
 | hotel | ホテル | | Section 1 Unit 3 |
+| house | いえ | | Section 2 Unit 3 |
 | how is | どう | | Section 2 Unit 1 |
 | how much | いくら | | Section 1 Unit 8 |
 | hundred | ひゃく | 百 | Section 1 Unit 8 |
@@ -117,28 +140,37 @@ one or more Kanji characters.
 | jacket | ジャケット | | Section 1 Unit 8 |
 | Japan | にほん | 日本 | Section 1 Unit 3 |
 | Japanese (person) | にほんじん | 日本人 | Section 1 Unit 3 |
+| Japanese (thing) | にほんの | 日本の | Section 2 Unit 3 |
 | jazz | ジャズ | | Section 1 Unit 7 |
 | judo | じゅうどう | | Section 2 Unit 1 |
 | juice | ジュース | | Section 2 Unit 1 |
+| K-pop | Kポップ | | Section 2 Unit 3 |
 | karate | からて | | Section 2 Unit 1 |
 | Ken | けん | | Section 1 Unit 2 |
+| kitchen | キッチン | | Section 2 Unit 3 |
 | kitchen | だいどころ | 台所 | Section 2 Unit 13 |
 | kitten | こねこ | 子猫 | Section 2 Unit 13 |
+| Korea | かんこく | | Section 2 Unit 3 |
 | Kyoto | きょうと | 京都 | Section 1 Unit 6 |
 | lawyer | べんごし | | Section 1 Unit 1 |
 | lively | にぎやか | | Section 1 Unit 6 |
+| living room | リビング | | Section 2 Unit 3 |
 | lovely | すてき | | Section 1 Unit 8 |
 | lunch | ひるごはん | Section 1 Unit 7 |
 | magazine | ざっし | | Section 1 Unit 7 |
+| Malaysia | マレーシア | | Section 2 Unit 3 |
 | manga | まんが | | Section 1 Unit 7 |
 | map | ちず | | Section 1 Unit 5 |
 | meal set | ていしょく | | Section 2 Unit 1 |
+| microwave | でんしレンジ | | Section 2 Unit 3 |
 | midnight | れいじ | 零時 | Section 2 Unit 13 |
 | miso soup | みそしる | | Section 2 Unit 1 |
 | mom | はは | 母 | Section 1 Unit 6 |
 | movie | えいが | | Section 1 Unit 7 |
 | music | おんがく | | Section 1 Unit 7 |
 | my | わたしの | 私の | Section 1 Unit 4 |
+| my name is | と言います | | Section 2 Unit 3 |
+| mystery | ミステリー | | Section 2 Unit 3 |
 | Nakayama | なかやま | 中山 | Section 1 Unit 4 |
 | Naomi | なおみ | | Section 1 Unit 1 |
 | necktie | ネクタイ | | Section 1 Unit 8 |
@@ -178,16 +210,20 @@ one or more Kanji characters.
 | pizza | ピザ | | Section 1 Unit 7 |
 | platforms | ホーム | | Section 2 Unit 2 |
 | please | ください | | Section 1 Unit 1 |
+| probably | たぶん | | Section 2 Unit 3 |
 | puppy | こいぬ | 子犬 | Section 2 Unit 13 |
 | quiet | しずか | | Section 1 Unit 6 |
 | radio | ラジオ | | Section 2 Unit 2 |
 | ramen | ラーメン | | Section 1 Unit 2 |
+| really? | ほんとうですか。 | | Section 2 Unit 3 |
 | red | あかい | | Section 1 Unit 4 |
+| refrigerator | れいぞうこ | | Section 2 Unit 3 |
 | restaurant | レストラン | | Section 2 Unit 1 |
 | restroom | おてあらい | | Section 2 Unit 2 |
 | rice | ごはん | ご飯 | Section 1 Unit 1 |
 | rice balls | おにぎり | | Section 2 Unit 1 |
 | rock | ロック | | Section 1 Unit 7 |
+| romance | れんあい | | Section 2 Unit 3 |
 | room | へや | 部屋 | Section 2 Unit 13 |
 | salad | サラダ | | Section 2 Unit 1 |
 | sandwich | サンドイッチ | | Section 2 Unit 1 |
@@ -209,8 +245,10 @@ one or more Kanji characters.
 | sofa | ソファー | | Section 2 Unit 13 |
 | sometimes | ときどき | | Section 1 Unit 7 |
 | son | むすこ | | Section 1 Unit 6 |
+| spacious | ひろい | | Section 2 Unit 3 |
 | sports | スポーツ | | Section 2 Unit 2 |
 | stairs | かいだん | | Section 2 Unit 2 |
+| still | まだ | | Section 2 Unit 3 |
 | storage locker | コインロッカー | | Section 2 Unit 2 |
 | store | みせ | | Section 1 Unit 8 |
 | student | がくせい | 学生 | Section 1 Unit 1 |
@@ -219,6 +257,7 @@ one or more Kanji characters.
 | Sunday | にちようび | 日曜日 | Section 2 Unit 1 |
 | sushi | すし | | Section 1 Unit 1 |
 | T-shirt | Tシャツ | | Section 1 Unit 8 |
+| table | テーブル | | Section 2 Unit 3 |
 | Tanaka | たなか | 田中 | Section 1 Unit 4 |
 | tasty | おいしい | | Section 1 Unit 2 |
 | taxi | タクシー | | Section 2 Unit 2 |
@@ -233,7 +272,9 @@ one or more Kanji characters.
 | there | そこ | | Section 1 Unit 3 |
 | these | これら | | Section 1 Unit 4 |
 | thirty/half (time) | はん | | Section 1 Unit 5 |
+| this | こちら | | Section 2 Unit 3 |
 | this | これ | | Section 1 Unit 2 |
+| this week | こんしゅう | | Section 2 Unit 3 |
 | those | それら | | Section 1 Unit 4 |
 | thousand | せん | 千 | Section 1 Unit 8 |
 | three (birds, rabbits, etc) | さんば | 三羽 | Section 2 Unit 13 |
@@ -252,9 +293,11 @@ one or more Kanji characters.
 | to hang out | あそびます | | Section 2 Unit 1 |
 | to have | あります | | Section 2 Unit 2 |
 | to have | います | | Section 2 Unit 13 |
+| to like | すき | | Section 2 Unit 3 |
 | to listen | ききます | | Section 1 Unit 7 |
 | to live in | にすんでいます | | Section 1 Unit 6 |
 | to make | つくります | | Section 2 Unit 2 |
+| to move | ひっこします | | Section 2 Unit 3 |
 | to not have | いません | | Section 2 Unit 13 |
 | to play | します | | Section 1 Unit 7 |
 | to read | よみます | 読みます | Section 1 Unit 7 |
@@ -282,14 +325,19 @@ one or more Kanji characters.
 | umbrella | かさ | | Section 1 Unit 4 |
 | underground | ちか | | Section 2 Unit 2 |
 | university | だいがく | | Section 1 Unit 3 |
+| vacuum cleaner | そうじき | | Section 2 Unit 3 |
 | vending machine | じはんき | | Section 2 Unit 2 |
 | very | とても | | Section 2 Unit 1 |
+| video | どうが | | Section 2 Unit 3 |
 | videos | どうが | | Section 2 Unit 1 |
+| Vietnam | ベトナム | | Section 2 Unit 3 |
 | volleyball | バレーボール | | Section 2 Unit 2 |
 | wallet | さいふ | | Section 1 Unit 8 |
 | want | ほしい | | Section 1 Unit 8 |
+| washing machine | せんたくき | | Section 2 Unit 3 |
 | water | みず | 水 | Section 1 Unit 1 |
 | weekend | しゅうまつ | | Section 2 Unit 1 |
+| well-lit | あかるい | | Section 2 Unit 3 |
 | what is your name? | おなまえは？ | | Section 1 Unit 6 |
 | what is your name? | おなまえわなんですか？ | | Section 1 Unit 6 |
 | what time | なんじ | 何時 | Section 1 Unit 5 |
