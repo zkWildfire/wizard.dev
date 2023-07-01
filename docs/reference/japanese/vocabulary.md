@@ -19,7 +19,10 @@ one or more Kanji characters.
 | at | に | | Section 1 Unit 7 |
 | baseball | やきゅう | | Section 1 Unit 7 |
 | basketball | バスケットボール | | Section 1 Unit 7 |
+| bathtub | ふろ | 風呂 | Section 2 Unit 13 |
+| bedroom | しんしつ | 寝室 | Section 2 Unit 13 |
 | big | おおきい | 大きい | Section 1 Unit 3 |
+| bird | とり | 鳥 | Section 2 Unit 13 |
 | black | くろい | | Section 1 Unit 8 |
 | black tea | こうちゃ | | Section 2 Unit 1 |
 | blue | あおい | | Section 1 Unit 8 |
@@ -39,6 +42,7 @@ one or more Kanji characters.
 | cake | ケーキ | | Section 2 Unit 1 |
 | Canada | カナダ | | Section 1 Unit 3 |
 | Canadian | カナダじん | | Section 1 Unit 3 |
+| cat | ねこ | 猫 | Section 2 Unit 13 |
 | cheap | やすい | | Section 1 Unit 8 |
 | cheerful | あかるい | | Section 1 Unit 4 |
 | city | とし | | Section 1 Unit 6 |
@@ -56,6 +60,7 @@ one or more Kanji characters.
 | department store | デパート | | Section 1 Unit 3 |
 | dinner | ばんごはん | | Section 1 Unit 7 |
 | doctor | いしゃ | | Section 1 Unit 1 |
+| dog | いぬ | 犬 | Section 2 Unit 13 |
 | don't have | ありません | | Section 2 Unit 2 |
 | don't really like | はちょっと | | Section 1 Unit 8 |
 | drama | ドラマ | | Section 1 Unit 7 |
@@ -105,6 +110,7 @@ one or more Kanji characters.
 | I'm | です | | Section 1 Unit 2 |
 | ice cream | アイスクリーム | | Section 2 Unit 1 |
 | iced coffee | アイスコーヒー | | Section 2 Unit 1 |
+| is in/at | にあります | | Section 2 Unit 13 |
 | isn't it | ですね | | Section 1 Unit 8 |
 | it's | です | | Section 1 Unit 1 |
 | J-pop | Jポップ | | Section 1 Unit 7 |
@@ -116,6 +122,8 @@ one or more Kanji characters.
 | juice | ジュース | | Section 2 Unit 1 |
 | karate | からて | | Section 2 Unit 1 |
 | Ken | けん | | Section 1 Unit 2 |
+| kitchen | だいどころ | 台所 | Section 2 Unit 13 |
+| kitten | こねこ | 子猫 | Section 2 Unit 13 |
 | Kyoto | きょうと | 京都 | Section 1 Unit 6 |
 | lawyer | べんごし | | Section 1 Unit 1 |
 | lively | にぎやか | | Section 1 Unit 6 |
@@ -125,6 +133,7 @@ one or more Kanji characters.
 | manga | まんが | | Section 1 Unit 7 |
 | map | ちず | | Section 1 Unit 5 |
 | meal set | ていしょく | | Section 2 Unit 1 |
+| midnight | れいじ | 零時 | Section 2 Unit 13 |
 | miso soup | みそしる | | Section 2 Unit 1 |
 | mom | はは | 母 | Section 1 Unit 6 |
 | movie | えいが | | Section 1 Unit 7 |
@@ -147,6 +156,7 @@ one or more Kanji characters.
 | not | じゃない | | Section 1 Unit 5 |
 | now | いま | | Section 1 Unit 5 |
 | o'clock | じ | | Section 1 Unit 5 |
+| office | かいしゃ | 会社 | Section 2 Unit 13 |
 | office worker | かいしゃいん | | Section 1 Unit 6 |
 | often | よく | | Section 1 Unit 7 |
 | oh | あ | | Section 2 Unit 1 |
@@ -154,6 +164,7 @@ one or more Kanji characters.
 | old | ふるい | 古い | Section 1 Unit 8 |
 | older brother | あに | | Section 1 Unit 6 |
 | older sister | あね | | Section 1 Unit 6 |
+| one (birds, rabbits, etc) | いちわ | 一羽 | Section 2 Unit 13 |
 | one (object) | ひとつ | | Section 2 Unit 1 |
 | one | いち | 一 | Section 1 Unit 5 |
 | one o'clock | いちじ | 一時 | Section 1 Unit 5 |
@@ -162,10 +173,12 @@ one or more Kanji characters.
 | passport | パスポート | | Section 1 Unit 5 |
 | pasta | パスタ | | Section 2 Unit 2 |
 | person | ひと | | Section 1 Unit 1 |
+| pet | ペット | | Section 2 Unit 13 |
 | phone | でんわ | | Section 2 Unit 2 |
 | pizza | ピザ | | Section 1 Unit 7 |
 | platforms | ホーム | | Section 2 Unit 2 |
 | please | ください | | Section 1 Unit 1 |
+| puppy | こいぬ | 子犬 | Section 2 Unit 13 |
 | quiet | しずか | | Section 1 Unit 6 |
 | radio | ラジオ | | Section 2 Unit 2 |
 | ramen | ラーメン | | Section 1 Unit 2 |
@@ -175,6 +188,7 @@ one or more Kanji characters.
 | rice | ごはん | ご飯 | Section 1 Unit 1 |
 | rice balls | おにぎり | | Section 2 Unit 1 |
 | rock | ロック | | Section 1 Unit 7 |
+| room | へや | 部屋 | Section 2 Unit 13 |
 | salad | サラダ | | Section 2 Unit 1 |
 | sandwich | サンドイッチ | | Section 2 Unit 1 |
 | Saturday | どようび | 土曜日 | Section 2 Unit 1 |
@@ -192,6 +206,7 @@ one or more Kanji characters.
 | smartphone | スマホ | | Section 1 Unit 5 |
 | soba | そば | | Section 2 Unit 1 |
 | soccer | サッカー | | Section 1 Unit 7 |
+| sofa | ソファー | | Section 2 Unit 13 |
 | sometimes | ときどき | | Section 1 Unit 7 |
 | son | むすこ | | Section 1 Unit 6 |
 | sports | スポーツ | | Section 2 Unit 2 |
@@ -221,11 +236,14 @@ one or more Kanji characters.
 | this | これ | | Section 1 Unit 2 |
 | those | それら | | Section 1 Unit 4 |
 | thousand | せん | 千 | Section 1 Unit 8 |
+| three (birds, rabbits, etc) | さんば | 三羽 | Section 2 Unit 13 |
 | three (objects) | みっつ | | Section 2 Unit 1 |
 | three | さん | 三 | Section 1 Unit 5 |
 | three o'clock | さんじ | 三時 | Section 1 Unit 5 |
 | ticket | きっぷ | | Section 1 Unit 5 |
 | ticket gate | かいさつ | | Section 2 Unit 2 |
+| to | へ | | Section 2 Unit 13 |
+| to be at | にいます | | Section 2 Unit 13 |
 | to buy | かいます | 買います | Section 2 Unit 1 |
 | to drink | のみます | 飲みます | Section 1 Unit 7 |
 | to eat | たべます | 食べます | Section 1 Unit 7 |
@@ -233,9 +251,11 @@ one or more Kanji characters.
 | to go out | でかけます | | Section 2 Unit 1 |
 | to hang out | あそびます | | Section 2 Unit 1 |
 | to have | あります | | Section 2 Unit 2 |
+| to have | います | | Section 2 Unit 13 |
 | to listen | ききます | | Section 1 Unit 7 |
 | to live in | にすんでいます | | Section 1 Unit 6 |
 | to make | つくります | | Section 2 Unit 2 |
+| to not have | いません | | Section 2 Unit 13 |
 | to play | します | | Section 1 Unit 7 |
 | to read | よみます | 読みます | Section 1 Unit 7 |
 | to run | はしります | | Section 2 Unit 1 |
@@ -244,6 +264,7 @@ one or more Kanji characters.
 | to take | あびます | | Section 2 Unit 2 |
 | to talk | はなします | 話します | Section 2 Unit 1 |
 | to watch | みます | 見ます | Section 1 Unit 7 |
+| toilet | トイレ | | Section 2 Unit 13 |
 | Tokyo | とうきょう | 東京 | Section 1 Unit 6 |
 | Toronto | トロント | | Section 1 Unit 6 |
 | town | まち | | Section 1 Unit 6 |
@@ -252,6 +273,7 @@ one or more Kanji characters.
 | trash can | ゴミばこ | | Section 2 Unit 2 |
 | twelve | じゅうに | 十二 | Section 1 Unit 7 |
 | twelve o'clock | じゅうにじ | 十二時 | Section 2 Unit 1 |
+| two (birds, rabbits, etc) | にわ | 二羽 | Section 2 Unit 13 |
 | two (objects) | ふたつ | | Section 2 Unit 1 |
 | two | に | 二 | Section 1 Unit 5 |
 | two o'clock | にじ | 二時 | Section 1 Unit 5 |
@@ -274,8 +296,10 @@ one or more Kanji characters.
 | where | どこ | | Section 1 Unit 3 |
 | white | しろい | | Section 1 Unit 4 |
 | wife | つま | | Section 1 Unit 6 |
+| window | まど | 窓 | Section 2 Unit 13 |
 | with | と | | Section 1 Unit 7 |
 | Yamaguchi | やまぐち | 山口 | Section 1 Unit 4 |
+| yard | にわ | 庭 | Section 2 Unit 13 |
 | years old | さい | | Section 1 Unit 6 |
 | yen | えん | | Section 1 Unit 8 |
 | yes | はい | | Section 1 Unit 2 |

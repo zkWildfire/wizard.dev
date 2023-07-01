@@ -19,6 +19,27 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| bird | とり | 鳥 |
+| cat | ねこ | 猫 |
+| dog | いぬ | 犬 |
+| kitten | こねこ | 子猫 |
+| pet | ペット | |
+| puppy | こいぬ | 子犬 |
+| bathtub | ふろ | 風呂 |
+| bedroom | しんしつ | 寝室 |
+| kitchen | だいどころ | 台所 |
+| room | へや | 部屋 |
+| sofa | ソファー | |
+| toilet | トイレ | |
+| window | まど | 窓 |
+| yard | にわ | 庭 |
+| one (birds, rabbits, etc) | いちわ | 一羽 |
+| two (birds, rabbits, etc) | にわ | 二羽 |
+| three (birds, rabbits, etc) | さんば | 三羽 |
+| is in/at | にあります | |
+| to be at | にいます | |
+| to have | います | |
+| to not have | いません | |
 
 ### Examples
 | English | Japanese |
