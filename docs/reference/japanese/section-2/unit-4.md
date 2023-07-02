@@ -27,7 +27,6 @@
 | to take (time) | かかります | |
 | this | ここ | |
 
-
 ### Examples
 | English | Japanese |
 |:-------:|:--------:|
@@ -56,7 +55,6 @@
 | tall | たかい | 高い |
 | what kind of | どんな | |
 | that over there | あれ | |
-
 
 ### Examples
 | English | Japanese |

@@ -3,7 +3,33 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| allergy | アレルギー | |
+| alright/okay | だいじょうぶ | |
+| ambulance | きゅうきゅうしゃ | |
+| dangerous | あぶない | |
+| feeling sick | ぐあいがわるい | |
+| hospital | びょういん | |
+| make sure to | ちゃんと | |
+| medicine | くすり | |
+| nearby | ちかく | |
+| phone number | でんわばんごう | |
+| police | けいさつ | |
+| your family | ごかぞく | |
+| parents | りょうしん | |
+| your parents | ごりょうしん | |
+| to rest | やすみます | 休みます |
+| to sit down | すわります | |
+| zero | ゼロ | |
+| one minute | いっぷん | 一分 |
+| two minutes | にふん | 二分 |
+| three minutes | さんぷん | 三分 |
+| four minutes | よんぷん | 四分 |
+| five minutes | ごふん | 五分 |
+| six minutes | ろっぷん | 六分 |
+| seven minutes | ななふん | 七分 |
+| eight minutes | はっぷん | 八分 |
+| nine minutes | きゅうふん | 九分 |
+| ten minutes | じゅっぷん | 十分 |
 
 ### Examples
 | English | Japanese |
@@ -19,7 +45,31 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| sunny | はれ | |
+| rainy | あめ | |
+| snowy | ゆき | |
+| cloudy | くもり | |
+| weather | てんき | |
+| hot | あつい | |
+| warm | あたたかい | |
+| cold | さむい | |
+| days | ひ | 日 |
+| spring | はる | |
+| summer | なつ | |
+| fall | あき | |
+| winter | ふゆ | |
+| July | しちがつ | 七月 |
+| September | くがつ | 九月 |
+| today | きょう | |
+| this evening | こんばん | |
+| summer break | なつやすみ | |
+| beach | うみ | |
+| concert | コンサート | |
+| fireworks | はなび | |
+| hot spring | おんせん | |
+| park | こうえん | |
+| pool | プール | |
+| cocoa | ココア | |
 
 ### Examples
 | English | Japanese |
