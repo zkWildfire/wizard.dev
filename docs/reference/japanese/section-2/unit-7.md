@@ -3,7 +3,22 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| art museum | びじゅつかん | |
+| Australia | オーストラリア | |
+| castle | しろ | |
+| France | フランス | |
+| French food | フランスりょうり | |
+| garden | にわ | |
+| lion | ライオン | |
+| meat | にく | |
+| next month | らいげつ | |
+| painting | え | |
+| plane | ひこうき | |
+| plane ticket | ひこうきのチケット | |
+| short | みじかい | |
+| ticket | チケット | |
+| trip | りょこう | |
+| zoo | どうぶつえん | |
 
 ### Examples
 | English | Japanese |
@@ -18,7 +33,27 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| at | で | |
+| bullet train | しんかんせん | |
+| coach | コーチ | |
+| convenient | べんり | |
+| lobby | ロビー | |
+| looking forward to | たのしみです | |
+| Monday | げつようび | 月曜日 | 
+| Friday | きんようび | 金曜日 |
+| miso pork cutlets | みそかつ | |
+| Nagoya | なごや | |
+| photo | しゃしん | |
+| plaza | ひろば | |
+| seat | せき | |
+| sightseeing | かんこう | |
+| suitcases | スーツケース | |
+| to know | ができます | |
+| to meet | あいます | 会います |
+| to take (a photo) | とります | |
+| to ride | のります | |
+| to wait for | まちます | |
+| who | だれ | |
 
 ### Examples
 | English | Japanese |
