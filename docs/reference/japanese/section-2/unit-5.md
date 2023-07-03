@@ -14,11 +14,12 @@
 | nearby | ちかく | |
 | phone number | でんわばんごう | |
 | police | けいさつ | |
-| your family | ごかぞく | |
 | parents | りょうしん | |
+| to need | おねがいします | |
+| your family | ごかぞく | |
 | your parents | ごりょうしん | |
 | to rest | やすみます | 休みます |
-| to sit down | すわります | |
+| to sit (down) | すわります | |
 | zero | ゼロ | |
 | one minute | いっぷん | 一分 |
 | two minutes | にふん | 二分 |

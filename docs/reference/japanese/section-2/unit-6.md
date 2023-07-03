@@ -3,7 +3,15 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| kid(s) | こども | |
+| siblings | きょうだい | |
+| Seoul | ソウル | |
+| Taiwan | たいわん | |
+| your kid | おこさん | |
+| your older brother | おにいさん | |
+| your older sister | おねえさん | |
+| your younger brother | おとうとさん | |
+| your younger sister | いもうとさん | |
 
 ### Examples
 | English | Japanese |
@@ -19,7 +27,29 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| all sorts of (things) | いろいろ | |
+| after | あと | |
+| bath | おふろ | |
+| chores | かじ | |
+| cleaning | そうじ | |
+| cooking | りょうり | |
+| days off | やすみのひ | 休みの日 |
+| easy | やさしい | |
+| English | えいご | |
+| fun | たのしい | |
+| gardening | ガーデニング | |
+| home | うち | |
+| homework | しゅくだい | |
+| laundry | せんたく | |
+| school | がっこう | |
+| shopping | かいもの | |
+| stretches | ストレッチ | |
+| then | そして | |
+| tough | たいへん | |
+| to help with | てつだいます | |
+| to return | かえります | |
+| to take a | にはいります | |
+| work | しごと | |
 
 ### Examples
 | English | Japanese |
