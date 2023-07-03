@@ -112,7 +112,7 @@ one or more Kanji characters.
 | eleven | じゅういち | 十一 | Section 1 Unit 7 |
 | eleven o'clock | じゅういちじ | 十一時 | Section 2 Unit 1 |
 | emails | メール | | Section 2 Unit 2 |
-| engineer | エンジニア | Section 1 Unit 6 |
+| engineer | エンジニア | | Section 1 Unit 6 |
 | English | えいご | | Section 2 Unit 6 |
 | Erika | エリカ | | Section 2 Unit 3 |
 | every day | まいにち | | Section 1 Unit 7 |
@@ -204,7 +204,7 @@ one or more Kanji characters.
 | living room | リビング | | Section 2 Unit 3 |
 | long | ながい | | Section 2 Unit 4 |
 | lovely | すてき | | Section 1 Unit 8 |
-| lunch | ひるごはん | Section 1 Unit 7 |
+| lunch | ひるごはん | | Section 1 Unit 7 |
 | magazine | ざっし | | Section 1 Unit 7 |
 | make sure to | ちゃんと | | Section 2 Unit 5 |
 | Malaysia | マレーシア | | Section 2 Unit 3 |
