@@ -3,7 +3,28 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| class(es) | じゅぎょう | |
+| classroom | きょうしつ | |
+| deadline | しめきり | |
+| early | はやく | |
+| gym | ジム | |
+| library | としょかん | |
+| interesting | おもしろい | |
+| Chinese (language) | ちゅうごくご | |
+| Japanese (language) | にほんご | |
+| professor | せんせい | |
+| question(s) | しつもん | |
+| Smith | スミス | |
+| Spanish (language) | スペインご | |
+| test | テスト | |
+| to ask | ききます | |
+| to end | おわります | |
+| to exercise | うんどうします | |
+| what day | なんようび | 何曜日 |
+| Yamada | やまだ | 山田 |
+| five (objects) | いつつ | 五つ |
+| six (objects) | むっつ | 六つ |
+| seven (objects) | ななつ | 七つ |
 
 ### Examples
 | English | Japanese |
@@ -19,7 +40,26 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| a.m. | ごぜん | |
+| p.m. | ごご | |
+| camera | カメラ | |
+| coworker(s) | どうりょう | |
+| dictionary | じしょ | |
+| driver | うんてんしゅ | |
+| event | イベント | |
+| GPS | ナビ | |
+| manager | マネージャー | |
+| photographer | しゃしんか | |
+| player | せんしゅ | |
+| pro | プロ | |
+| pro sports team | プロのスポーツチーム | |
+| project | プロジェクト | |
+| team | チーム | |
+| to drive | うんてんします | |
+| to translate | ほんやくします | |
+| to wash | あらいます | |
+| to work | しごとします | |
+| translator | ほんやくか | |
 
 ### Examples
 | English | Japanese |
