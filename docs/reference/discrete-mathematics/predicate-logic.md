@@ -116,9 +116,27 @@ $Q(x)$ is true.
     the same value simultaneously.
 
 ## Nested Quantifiers
-Quantifiers can be nested to express more complex statements. **Order is
-important** in expressions containing nested quantifiers. For example,
-$\forall x \exists y P(x, y)$ is not equivalent to $\exists y \forall x P(x, y)$.
-However, it is sometimes possible to move quantifiers around without changing
-the meaning of the expression. For example,
-$\foreach x(P(x) \land \exists y Q(x, y)) \equiv \forall x \exists y (P(x) \land Q(x, y))$.
+Quantifiers can be nested to express more complex statements. A quantifier is
+said to be **nested** if it sits within the scope of another quantifier.
+
+## Order of Quantifiers
+**Order is important** in expressions containing nested quantifiers. Quantifiers
+may only be reordered if they are of the same type, e.g. both universal or both
+existential. For example:
+$$
+\forall x \forall y P(x, y) \equiv \forall y \forall x P(x, y)
+$$
+$$
+\exists x \exists y P(x, y) \equiv \exists y \exists x P(x, y)
+$$
+
+However, different types of quantifiers cannot be reordered:
+$$
+\forall x \exists y P(x, y) \not\equiv \exists y \forall x P(x, y)
+$$
+
+Also, quantifiers can *sometimes* be moved around without changing the meaning
+of the expression. For example:
+$$
+\forall x(P(x) \land \exists y Q(x, y)) \equiv \forall x \exists y (P(x) \land Q(x, y))
+$$
