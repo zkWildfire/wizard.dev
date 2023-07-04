@@ -3,7 +3,21 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| cheesecake | チーズケーキ | |
+| chocolate | チョコレート | |
+| cookie | クッキー | |
+| cupcake | カップケーキ | |
+| donuts | ドーナツ | |
+| free (not busy) | ひま | |
+| Japanese food | にほんりょうり | 日本りょうり |
+| matcha | まっちゃ | |
+| pie | パイ | |
+| pastry shop | おかしや | |
+| Tuesday | かようび | 火曜日 |
+| Wednesday | すいようび | 水曜日 |
+| Thursday | もくようび | 木曜日 |
+| green | みどり | |
+| your | あなたの | |
 
 ### Examples
 | English | Japanese |
@@ -19,7 +33,30 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| beef bowls | ぎゅうどん | |
+| beer | ビール | |
+| cola | コーラ | |
+| eggs | たまご | 卵 |
+| fish | さかな | 魚 |
+| more | もっと | |
+| pork | ぶたにく | |
+| pork cutlets | とんかつ | |
+| raw | なま | |
+| salt | しお | |
+| salty | しょっぱい | |
+| sauce | ソース | |
+| soy sauce | しょうゆ | |
+| strawberry | いちご | |
+| stuff | もの | |
+| supermarket | スーパー | |
+| sweet | あまい | |
+| to love | だいすき | |
+| to use | つかいます | |
+| tofu | とうふ | |
+| together | いっしょに | |
+| though | でも | |
+| which | どの | |
+| vegetables | やさい | |
 
 ### Examples
 | English | Japanese |

@@ -47,7 +47,7 @@
 | plaza | ひろば | |
 | seat | せき | |
 | sightseeing | かんこう | |
-| suitcases | スーツケース | |
+| suitcase | スーツケース | |
 | to know | ができます | |
 | to meet | あいます | 会います |
 | to take (a photo) | とります | |
