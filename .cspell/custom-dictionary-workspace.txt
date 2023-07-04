@@ -34,11 +34,14 @@ iwyu
 Kymira
 makefiles
 matcha
+maxterm
 memcheck
+minterm
 mkdocs
 msan
 msvc
 Nakayama
+NAND
 omnisharp
 plantuml
 Posix
