@@ -722,6 +722,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#order-of-quantifiers" class="md-nav__link">
+    Order of Quantifiers
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1445,6 +1452,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#order-of-quantifiers" class="md-nav__link">
+    Order of Quantifiers
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1621,23 +1635,38 @@ and <span class="arithmatex">\(y\)</span> are allowed to vary independently, but
 the same value simultaneously.</p>
 </div>
 <h2 id="nested-quantifiers">Nested Quantifiers<a class="headerlink" href="#nested-quantifiers" title="Permanent link">&para;</a></h2>
-<p>Quantifiers can be nested to express more complex statements. <strong>Order is
-important</strong> in expressions containing nested quantifiers. For example,
-<span class="arithmatex">\(\forall x \exists y P(x, y)\)</span> is not equivalent to <span class="arithmatex">\(\exists y \forall x P(x, y)\)</span>.
-However, it is sometimes possible to move quantifiers around without changing
-the meaning of the expression. For example,
-<span class="arithmatex">\(\foreach x(P(x) \land \exists y Q(x, y)) \equiv \forall x \exists y (P(x) \land Q(x, y))\)</span>.</p>
+<p>Quantifiers can be nested to express more complex statements. A quantifier is
+said to be <strong>nested</strong> if it sits within the scope of another quantifier.</p>
+<h2 id="order-of-quantifiers">Order of Quantifiers<a class="headerlink" href="#order-of-quantifiers" title="Permanent link">&para;</a></h2>
+<p><strong>Order is important</strong> in expressions containing nested quantifiers. Quantifiers
+may only be reordered if they are of the same type, e.g. both universal or both
+existential. For example:
+$$
+\forall x \forall y P(x, y) \equiv \forall y \forall x P(x, y)
+$$
+$$
+\exists x \exists y P(x, y) \equiv \exists y \exists x P(x, y)
+$$</p>
+<p>However, different types of quantifiers cannot be reordered:
+$$
+\forall x \exists y P(x, y) \not\equiv \exists y \forall x P(x, y)
+$$</p>
+<p>Also, quantifiers can <em>sometimes</em> be moved around without changing the meaning
+of the expression. For example:
+$$
+\forall x(P(x) \land \exists y Q(x, y)) \equiv \forall x \exists y (P(x) \land Q(x, y))
+$$</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 5, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 5, 2023</span>
       
     
   </small>
