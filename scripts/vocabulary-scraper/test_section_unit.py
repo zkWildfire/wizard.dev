@@ -160,6 +160,45 @@ def test_get_vocabulary_from_unit_with_single_kana_kanji_table(tmp_path: Path):
 	assert vocabulary[0].unit_number == unit_number
 
 
+def test_get_vocabulary_from_unit_with_single_kana_kanji_table_with_no_kanji(tmp_path: Path):
+	"""
+	Verifies that the section unit class can extract vocabulary entries from
+	  a unit file that contains a single table with columns for kana and kanji.
+	"""
+	section_number = 1
+	unit_number = 1
+	english = "foo"
+	kana = "bar"
+
+	# Set up the repository
+	repo = MockRepository(tmp_path, section_number, unit_number)
+	section_path = repo.japanese_dir / f"section-{section_number}"
+	unit_path = section_path / f"unit-{unit_number}.md"
+	file_contents = dedent(f"""
+		# Section 1 Unit 1
+		## Not a Vocab Header
+		lore ipsum dolor sit amet
+
+		## Vocabulary
+		| English | Kana | Kanji |
+		|:-------:|:----:|:-----:|
+		| {english} | {kana} | |
+	""")
+	unit_path.write_text(file_contents)
+
+	# Process the unit file
+	unit = SectionUnit(section_path, section_number, unit_number)
+	vocabulary = list(unit.get_vocabulary())
+
+	# Verify that the vocabulary contains the expected entries
+	assert len(vocabulary) == 1
+	assert vocabulary[0].english == english
+	assert vocabulary[0].kana == kana
+	assert vocabulary[0].kanji == None
+	assert vocabulary[0].section_number == section_number
+	assert vocabulary[0].unit_number == unit_number
+
+
 def test_get_vocabulary_from_unit_with_multiple_kana_only_tables(tmp_path: Path):
 	"""
 	Verifies that the section unit class can extract vocabulary entries from

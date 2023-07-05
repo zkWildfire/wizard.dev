@@ -31,5 +31,6 @@ def vocabulary_entry_to_string(entry: VocabularyEntry) -> str:
 	@param entry Vocabulary entry to convert.
 	@returns The vocabulary entry as a string.
 	"""
-	return f"| {entry.english} | {entry.kana} | {entry.kanji} | " + \
+	kanji = f" {entry.kanji} " if entry.kanji else " "
+	return f"| {entry.english} | {entry.kana} |{kanji}| " + \
 		f"Section {entry.section_number} Unit {entry.unit_number} |"

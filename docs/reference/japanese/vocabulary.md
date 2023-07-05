@@ -133,7 +133,7 @@ one or more Kanji characters.
 | deadline | しめきり | | Section 2 Unit 9 |
 | department store | デパート | | Section 1 Unit 3 |
 | desk | つくえ | | Section 2 Unit 3 |
-| dessert | デザート | Section 2 Unit 2|
+| dessert | デザート | | Section 2 Unit 2 |
 | dictionary | じしょ | | Section 2 Unit 9 |
 | difficult | むずかしい | | Section 2 Unit 10 |
 | dinner | ばんごはん | | Section 1 Unit 7 |
@@ -691,4 +691,3 @@ one or more Kanji characters.
 !!! info
     The information displayed in the above table is partially taken from this
     site: https://www.busuu.com/en/japanese/particles
-| English | Kana | Kanji | Introduced In ||:-------:|:----:|:-----:|:-------------:|

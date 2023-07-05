@@ -1,6 +1,13 @@
 {
 	"configurations": [
 		{
+			"name": "Debug vocabulary scraper",
+			"type": "python",
+			"request": "launch",
+			"cwd": "${workspaceFolder:Scripts}/vocabulary-scraper",
+			"program": "vocab.py"
+		},
+		{
 			"name": "Debug vocabulary scraper tests",
 			"type": "python",
 			"request": "launch",
@@ -12,6 +19,6 @@
 				// https://pytest-cov.readthedocs.io/en/latest/debuggers.html
 				"--no-cov"
 			]
-		},
+		}
 	]
 }

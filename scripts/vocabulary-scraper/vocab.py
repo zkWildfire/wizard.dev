@@ -21,18 +21,23 @@ def main() -> int:
 	"""
 	# Get the vocabulary entries from each unit
 	vocabulary_entries: List[VocabularyEntry] = []
-	paths = Paths(Path(__file__).parent)
+	paths = Paths(Path(__file__).resolve().parent)
 	for section_number, section_path in enumerate(paths.section_paths, start=1):
 		for unit in get_units(section_number, section_path):
 			print(f"Processing {unit.unit_name}...")
-			vocabulary_entries.extend(unit.get_vocabulary())
+			unit_vocabulary = list(unit.get_vocabulary())
+			print(
+				f"Found {len(unit_vocabulary)} vocabulary entries " +
+				f"in {unit.unit_name}."
+			)
+			vocabulary_entries.extend(unit_vocabulary)
 	print(f"Found {len(vocabulary_entries)} vocabulary entries.")
 
 	# Sort the vocabulary entries by English word
 	vocabulary_entries.sort(key=lambda entry: entry.english.lower())
 
 	# Write the vocabulary entries to the vocabulary file
-	print(f"Updating {Paths.vocabulary_file_path}...")
+	print(f"Updating {paths.vocabulary_file_path}...")
 	vocab_file = VocabularyFile(paths.vocabulary_file_path)
 	vocab_file.write(vocabulary_entries)
 

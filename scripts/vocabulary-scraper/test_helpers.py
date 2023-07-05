@@ -83,3 +83,22 @@ def test_vocabulary_entry_to_string():
 	assert KANJI in entry_str
 	assert str(SECTION_NUMBER) in entry_str
 	assert str(UNIT_NUMBER) in entry_str
+
+
+def test_vocabulary_entry_to_string_with_no_kanji():
+	"""
+	Makes sure that the string contains an empty string for kanji.
+	"""
+	ENGLISH = "foo"
+	KANA = "bar"
+	KANJI = None
+	SECTION_NUMBER = 3
+	UNIT_NUMBER = 5
+	entry = VocabularyEntry(ENGLISH, KANA, KANJI, SECTION_NUMBER, UNIT_NUMBER)
+
+	entry_str = vocabulary_entry_to_string(entry)
+	assert ENGLISH in entry_str
+	assert KANA in entry_str
+	assert str(KANJI) not in entry_str
+	assert str(SECTION_NUMBER) in entry_str
+	assert str(UNIT_NUMBER) in entry_str

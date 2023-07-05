@@ -135,7 +135,10 @@ class SectionUnit:
 		# Regex used to process the table
 		# Each table line will be in the format:
 		# | [one or more english words] | [kana characters] | [kanji characters] |
-		regex = re.compile(r"\|\s+(.+?)\s+\|\s+(.+?)\s+\|\s+(.+?)\s+\|")
+		# Note that for the kanji section, the second "\s" is optional since if
+		#   the Kanji characters aren't present, all whitespace will have been
+		#   consumed by the first "\s+".
+		regex = re.compile(r"\|\s+(.+?)\s+\|\s+(.+?)\s+\|\s+(.+?)?\s*\|")
 
 		# Loop until the end of the table is reached
 		while True:
