@@ -3,7 +3,20 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| cafeteria | しょくどう | |
+| computer | パソコン | |
+| french fries | フライドポテト | |
+| front desk | うけつけ | |
+| fried rice | チャーハン | |
+| from | から | |
+| job training | トレーニング | |
+| last | さいご | |
+| lunch break | ひるやすみ | ひる休み |
+| meeting | ミーティング | |
+| presentation | プレゼン | |
+| until | まで | |
+| to begin | はじまります | |
+| what floor | なんかい | 何階 |
 
 ### Examples
 | English | Japanese |
@@ -19,7 +32,25 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| ballet | バレエ | |
+| badminton | バドミントン | |
+| blog | ブログ | |
+| game | しあい | |
+| guitar | ギター | |
+| hiragana | ひらがな | |
+| instrument | がっき | |
+| how many hours | なんじかん | 何時間 |
+| kanji | かんじ | |
+| performance | パフォーマンス | |
+| piano | ピアノ | |
+| printer | プリンター | |
+| (blog) post | きじ | |
+| study | べんきょう | |
+| to dance | おどります | |
+| to play (an instrument) | ひきます | |
+| to sing | うたいます | |
+| to write | かきます | 書きます |
+| tonight | こんや | |
 
 ### Examples
 | English | Japanese |
