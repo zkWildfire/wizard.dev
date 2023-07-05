@@ -279,3 +279,22 @@
 	*/
 	--md-typeset-a-color: #7050d2;
 }
+
+td {
+	/*
+		The default setting is to top-align text in table cells. Override this
+		to center the text instead.
+	*/
+	vertical-align: middle !important;
+}
+
+.kanji {
+	/*
+		Use a larger font size so that kanji characters are easier to read.
+		A font size of 150% should be enough to make the kanji characters
+		  readable; however, using 200% makes them extremely large and greatly
+		  improves how easy it is to see each individual stroke, which is
+		  important when first learning how to write each character.
+	*/
+	font-size: 200%;
+}
