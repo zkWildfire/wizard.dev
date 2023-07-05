@@ -3,7 +3,25 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| admission fee | にゅうじょうりょう | |
+| adults | おとな | |
+| attraction | アトラクション | |
+| boring | つまらない | |
+| entrance | いりぐち | |
+| face | かお | |
+| favorite | すき | |
+| flavor | あじ | |
+| go-cart | ゴーカート | |
+| mascot | キャラクター | |
+| mint chocolate chip | チョコミント | |
+| museum | はくぶつかん | |
+| rollercoaster | ジェットコースター | |
+| scary | こわい | |
+| show | ショー | |
+| vanilla | バニラ | |
+| yellow | きいろい | |
+| large | Lサイズ | |
+| small | Sサイズ | |
 
 ### Examples
 | English | Japanese |
@@ -19,7 +37,26 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-
+| actor | はいゆう | |
+| album | アルバム | |
+| anime music | アニソン | |
+| band | バンド | |
+| bookstore | ほんや | |
+| card game | カードゲーム | |
+| difficult | むずかしい | |
+| documentary | ドキュメンタリー | |
+| don't really | あまり | |
+| karaoke | カラオケ | |
+| fiction | フィクション | |
+| non-fiction | ノンフィクション | |
+| poster | ポスター | |
+| pop (music) | ポップス | |
+| puzzle | パズル | |
+| sale | セール | |
+| section | コーナー | |
+| story | はなし | 話 |
+| theme park | ゆうえんち | |
+| three thousand | さんぜん | 三千 |
 
 ### Examples
 | English | Japanese |
