@@ -9,10 +9,13 @@ one or more Kanji characters.
 | English | Kana | Kanji | Introduced In |
 |:-------:|:----:|:-----:|:-------------:|
 | (blog) post | きじ | | Section 2 Unit 11 |
+| *particle* | は | | Section 1 Unit 2 |
+| *particle* | か | | Section 1 Unit 2 |
+| *particle* | を | | Section 1 Unit 7 |
 | a bit | すこし | | Section 2 Unit 1 |
-| a.m. | ごぜん | | Section 2 Unit 9 |
-| about | ぐらい | | Section 2 Unit 4 |
+| a.m. | ごぜん | 午前 | Section 2 Unit 9 |
 | about | ごろ | | Section 1 Unit 5 |
+| about | ぐらい | | Section 2 Unit 4 |
 | action | アクション | | Section 2 Unit 3 |
 | actor | はいゆう | | Section 2 Unit 10 |
 | admission fee | にゅうじょうりょう | | Section 2 Unit 10 |
@@ -28,17 +31,18 @@ one or more Kanji characters.
 | always | いつも | | Section 2 Unit 2 |
 | ambulance | きゅうきゅうしゃ | | Section 2 Unit 5 |
 | America | アメリカ | | Section 1 Unit 3 |
-| American (thing) | アメリカの | | Section 2 Unit 3 |
 | American | アメリカじん | | Section 1 Unit 3 |
+| American (thing) | アメリカの | | Section 2 Unit 3 |
 | and | と | | Section 1 Unit 1 |
 | Andrew | アンドリュー | | Section 2 Unit 3 |
 | anime | アニメ | | Section 1 Unit 7 |
 | anime music | アニソン | | Section 2 Unit 10 |
 | apartment | アパート | | Section 2 Unit 3 |
+| apple | りんご | | Section 2 Unit 12 |
 | art museum | びじゅつかん | | Section 2 Unit 7 |
 | Asakusa | あさくさ | | Section 2 Unit 4 |
-| at | で | | Section 2 Unit 7 |
 | at | に | | Section 1 Unit 7 |
+| at | で | | Section 2 Unit 7 |
 | attraction | アトラクション | | Section 2 Unit 10 |
 | Australia | オーストラリア | | Section 2 Unit 3 |
 | Australia | オーストラリア | | Section 2 Unit 7 |
@@ -71,8 +75,8 @@ one or more Kanji characters.
 | bread | パン | | Section 2 Unit 1 |
 | breakfast | あさごはん | | Section 1 Unit 7 |
 | Britain | イギリス | | Section 1 Unit 3 |
-| British (thing) | イギリスの | | Section 2 Unit 3 |
 | British | イギリスじん | | Section 1 Unit 3 |
+| British (thing) | イギリスの | | Section 2 Unit 3 |
 | building | たてもの | | Section 2 Unit 4 |
 | bullet train | しんかんせん | | Section 2 Unit 7 |
 | bus | バス | | Section 2 Unit 4 |
@@ -162,13 +166,14 @@ one or more Kanji characters.
 | entrance | いりぐち | | Section 2 Unit 10 |
 | Erika | エリカ | | Section 2 Unit 3 |
 | event | イベント | | Section 2 Unit 9 |
-| every day | まいにち | | Section 1 Unit 7 |
-| every morning | まいあさ | | Section 1 Unit 7 |
-| every night | まいばん | | Section 1 Unit 7 |
+| every day | まいにち | 毎日 | Section 1 Unit 7 |
+| every morning | まいあさ | 毎朝 | Section 1 Unit 7 |
+| every night | まいばん | 毎晩 | Section 1 Unit 7 |
 | every week | まいしゅう | | Section 2 Unit 1 |
+| exactly | ちょうど | | Section 2 Unit 12 |
 | excuse me | すみません | | Section 1 Unit 5 |
 | exit | でぐち | | Section 2 Unit 2 |
-| expensive | たかい | | Section 1 Unit 8 |
+| expensive | たかい | 高い | Section 1 Unit 8 |
 | face | かお | | Section 2 Unit 10 |
 | fall | あき | | Section 2 Unit 5 |
 | family | かぞく | | Section 1 Unit 6 |
@@ -184,13 +189,13 @@ one or more Kanji characters.
 | fireworks | はなび | | Section 2 Unit 5 |
 | first floor | いっかい | | Section 2 Unit 2 |
 | fish | さかな | 魚 | Section 2 Unit 8 |
-| five (objects) | いつつ | 五つ | Section 2 Unit 9 |
 | five | ご | 五 | Section 1 Unit 6 |
+| five (objects) | いつつ | 五つ | Section 2 Unit 9 |
 | five minutes | ごふん | 五分 | Section 2 Unit 5 |
 | five o'clock | ごじ | 五時 | Section 2 Unit 1 |
 | flavor | あじ | | Section 2 Unit 10 |
-| four (objects) | よっつ | | Section 2 Unit 1 |
 | four | よん | 四 | Section 1 Unit 6 |
+| four (objects) | よっつ | 四つ | Section 2 Unit 1 |
 | four minutes | よんぷん | 四分 | Section 2 Unit 5 |
 | four o'clock | よじ | 四時 | Section 2 Unit 1 |
 | France | フランス | | Section 2 Unit 7 |
@@ -202,6 +207,7 @@ one or more Kanji characters.
 | friend | ともだち | | Section 1 Unit 7 |
 | from | から | | Section 2 Unit 11 |
 | from | しゅっしん | | Section 1 Unit 6 |
+| from | から | | Section 2 Unit 11 |
 | front desk | うけつけ | | Section 2 Unit 11 |
 | fun | たのしい | | Section 2 Unit 6 |
 | funny | おもしろい | | Section 1 Unit 4 |
@@ -255,7 +261,7 @@ one or more Kanji characters.
 | J-pop | Jポップ | | Section 1 Unit 7 |
 | jacket | ジャケット | | Section 1 Unit 8 |
 | Japan | にほん | 日本 | Section 1 Unit 3 |
-| Japanese (language) | にほんご | | Section 2 Unit 9 |
+| Japanese (language) | にほんご | 日本語 | Section 2 Unit 9 |
 | Japanese (person) | にほんじん | 日本人 | Section 1 Unit 3 |
 | Japanese (thing) | にほんの | 日本の | Section 2 Unit 3 |
 | Japanese food | にほんりょうり | 日本りょうり | Section 2 Unit 8 |
@@ -298,17 +304,18 @@ one or more Kanji characters.
 | mascot | キャラクター | | Section 2 Unit 10 |
 | matcha | まっちゃ | | Section 2 Unit 8 |
 | meal set | ていしょく | | Section 2 Unit 1 |
-| meat | にく | | Section 2 Unit 7 |
+| meat | にく | 肉 | Section 2 Unit 7 |
 | medicine | くすり | | Section 2 Unit 5 |
 | meeting | ミーティング | | Section 2 Unit 11 |
 | microwave | でんしレンジ | | Section 2 Unit 3 |
 | midnight | れいじ | 零時 | Section 2 Unit 13 |
+| milk | ぎゅうにゅう | 牛乳 | Section 2 Unit 12 |
 | mint chocolate chip | チョコミント | | Section 2 Unit 10 |
 | minute | ふん | 分 | Section 2 Unit 4 |
 | miso pork cutlets | みそかつ | | Section 2 Unit 7 |
 | miso soup | みそしる | | Section 2 Unit 1 |
 | mom | はは | 母 | Section 1 Unit 6 |
-| Monday | げつようび | 月曜日 |  Section 2 Unit 7 |
+| Monday | げつようび | 月曜日 | Section 2 Unit 7 |
 | more | もっと | | Section 2 Unit 8 |
 | mountain | やま | 山 | Section 2 Unit 4 |
 | movie | えいが | | Section 1 Unit 7 |
@@ -316,20 +323,21 @@ one or more Kanji characters.
 | museum | はくぶつかん | | Section 2 Unit 10 |
 | music | おんがく | | Section 1 Unit 7 |
 | my | わたしの | 私の | Section 1 Unit 4 |
+| my | ぼくの | 僕の | Section 2 Unit 12 |
 | my name is | といいます | と言います | Section 2 Unit 3 |
 | mystery | ミステリー | | Section 2 Unit 3 |
 | Nagoya | なごや | | Section 2 Unit 7 |
 | Nakayama | なかやま | 中山 | Section 1 Unit 4 |
-| Naomi | なおみ | | Section 1 Unit 1 |
+| Naomi | なおみ | | Section 1 Unit 2 |
 | nearby | ちかく | | Section 2 Unit 5 |
 | necktie | ネクタイ | | Section 1 Unit 8 |
 | new | あたらしい | 新しい | Section 1 Unit 8 |
 | New York | ニューヨーク | | Section 1 Unit 6 |
 | next | つぎ | | Section 2 Unit 4 |
-| next month | らいげつ | | Section 2 Unit 7 |
+| next month | らいげつ | 来月 | Section 2 Unit 7 |
 | next week | らいしゅう | | Section 2 Unit 2 |
-| nice | いい | | Section 1 Unit 8 |
 | nice | やさしい | | Section 1 Unit 1 |
+| nice | いい | | Section 1 Unit 8 |
 | nice to meet you | どうぞよろしく | | Section 1 Unit 2 |
 | nice to meet you | はじめまして | | Section 1 Unit 6 |
 | nine | きゅう | 九 | Section 1 Unit 7 |
@@ -339,8 +347,8 @@ one or more Kanji characters.
 | noisy | うるさい | | Section 1 Unit 6 |
 | non-fiction | ノンフィクション | | Section 2 Unit 10 |
 | not | じゃない | | Section 1 Unit 5 |
-| now | いま | | Section 1 Unit 5 |
-| o'clock | じ | | Section 1 Unit 5 |
+| now | いま | 今 | Section 1 Unit 5 |
+| o'clock | じ | 時 | Section 1 Unit 5 |
 | office | かいしゃ | 会社 | Section 2 Unit 13 |
 | office worker | かいしゃいん | | Section 1 Unit 6 |
 | often | よく | | Section 1 Unit 7 |
@@ -349,15 +357,15 @@ one or more Kanji characters.
 | old | ふるい | 古い | Section 1 Unit 8 |
 | older brother | あに | | Section 1 Unit 6 |
 | older sister | あね | | Section 1 Unit 6 |
-| one (birds, rabbits, etc) | いちわ | 一羽 | Section 2 Unit 13 |
-| one (object) | ひとつ | | Section 2 Unit 1 |
 | one | いち | 一 | Section 1 Unit 5 |
+| one (birds, rabbits, etc) | いちわ | 一羽 | Section 2 Unit 13 |
+| one (object) | ひとつ | 一つ | Section 2 Unit 1 |
 | one minute | いっぷん | 一分 | Section 2 Unit 5 |
 | one o'clock | いちじ | 一時 | Section 1 Unit 5 |
 | Osaka | おおさか | | Section 2 Unit 4 |
 | outlet | コンセント | | Section 2 Unit 2 |
 | over there | あそこ | | Section 2 Unit 2 |
-| p.m. | ごご | | Section 2 Unit 9 |
+| p.m. | ごご | 午後 | Section 2 Unit 9 |
 | painting | え | | Section 2 Unit 7 |
 | parents | りょうしん | | Section 2 Unit 5 |
 | park | こうえん | | Section 2 Unit 5 |
@@ -365,7 +373,7 @@ one or more Kanji characters.
 | pasta | パスタ | | Section 2 Unit 2 |
 | pastry shop | おかしや | | Section 2 Unit 8 |
 | performance | パフォーマンス | | Section 2 Unit 11 |
-| person | ひと | | Section 1 Unit 1 |
+| person | ひと | 人 | Section 1 Unit 1 |
 | pet | ペット | | Section 2 Unit 13 |
 | phone | でんわ | | Section 2 Unit 2 |
 | phone number | でんわばんごう | | Section 2 Unit 5 |
@@ -395,7 +403,7 @@ one or more Kanji characters.
 | pro | プロ | | Section 2 Unit 9 |
 | pro sports team | プロのスポーツチーム | | Section 2 Unit 9 |
 | probably | たぶん | | Section 2 Unit 3 |
-| professor | せんせい | | Section 2 Unit 9 |
+| professor | せんせい | 先生 | Section 2 Unit 9 |
 | project | プロジェクト | | Section 2 Unit 9 |
 | puppy | こいぬ | 子犬 | Section 2 Unit 13 |
 | puzzle | パズル | | Section 2 Unit 10 |
@@ -432,8 +440,8 @@ one or more Kanji characters.
 | see you tomorrow | またあした | | Section 1 Unit 2 |
 | Seoul | ソウル | | Section 2 Unit 6 |
 | September | くがつ | 九月 | Section 2 Unit 5 |
-| seven (objects) | ななつ | 七つ | Section 2 Unit 9 |
 | seven | なな | 七 | Section 1 Unit 6 |
+| seven (objects) | ななつ | 七つ | Section 2 Unit 9 |
 | seven minutes | ななふん | 七分 | Section 2 Unit 5 |
 | seven o'clock | しちじ | 七時 | Section 1 Unit 7 |
 | Shibuya | しぶや | | Section 2 Unit 4 |
@@ -445,13 +453,13 @@ one or more Kanji characters.
 | shrine | じんじゃ | | Section 2 Unit 4 |
 | siblings | きょうだい | | Section 2 Unit 6 |
 | sightseeing | かんこう | | Section 2 Unit 7 |
-| six (objects) | むっつ | 六つ | Section 2 Unit 9 |
 | six | ろく | 六 | Section 1 Unit 6 |
+| six (objects) | むっつ | 六つ | Section 2 Unit 9 |
 | six minutes | ろっぷん | 六分 | Section 2 Unit 5 |
 | six o'clock | ろくじ | 六時 | Section 2 Unit 1 |
 | skirt | スカート | | Section 1 Unit 8 |
-| small | Sサイズ | | Section 2 Unit 10 |
 | small | ちいさい | 小さい | Section 1 Unit 3 |
+| small | Sサイズ | | Section 2 Unit 10 |
 | smart | あたまがい | | Section 1 Unit 6 |
 | smartphone | スマホ | | Section 1 Unit 5 |
 | Smith | スミス | | Section 2 Unit 9 |
@@ -506,6 +514,7 @@ one or more Kanji characters.
 | tennis | テニス | | Section 1 Unit 7 |
 | test | テスト | | Section 2 Unit 9 |
 | thank you (formal) | ありがとうございます | | Section 1 Unit 8 |
+| thank you (informal) | ありがとう | | Section 2 Unit 12 |
 | that | それ | | Section 1 Unit 2 |
 | that over there | あの | | Section 1 Unit 8 |
 | that over there | あれ | | Section 2 Unit 4 |
@@ -513,18 +522,18 @@ one or more Kanji characters.
 | then | そして | | Section 2 Unit 6 |
 | there | そこ | | Section 1 Unit 3 |
 | these | これら | | Section 1 Unit 4 |
-| thirty/half (time) | はん | | Section 1 Unit 5 |
-| this | ここ | | Section 2 Unit 4 |
-| this | こちら | | Section 2 Unit 3 |
+| thirty/half (time) | はん | 半 | Section 1 Unit 5 |
 | this | これ | | Section 1 Unit 2 |
+| this | こちら | | Section 2 Unit 3 |
+| this | ここ | | Section 2 Unit 4 |
 | this evening | こんばん | | Section 2 Unit 5 |
 | this week | こんしゅう | | Section 2 Unit 3 |
 | those | それら | | Section 1 Unit 4 |
 | though | でも | | Section 2 Unit 8 |
 | thousand | せん | 千 | Section 1 Unit 8 |
-| three (birds, rabbits, etc) | さんば | 三羽 | Section 2 Unit 13 |
-| three (objects) | みっつ | | Section 2 Unit 1 |
 | three | さん | 三 | Section 1 Unit 5 |
+| three (birds, rabbits, etc) | さんば | 三羽 | Section 2 Unit 13 |
+| three (objects) | みっつ | 三つ | Section 2 Unit 1 |
 | three minutes | さんぷん | 三分 | Section 2 Unit 5 |
 | three o'clock | さんじ | 三時 | Section 1 Unit 5 |
 | three thousand | さんぜん | 三千 | Section 2 Unit 10 |
@@ -563,6 +572,7 @@ one or more Kanji characters.
 | to not have | いません | | Section 2 Unit 13 |
 | to play (an instrument) | ひきます | | Section 2 Unit 11 |
 | to play | します | | Section 1 Unit 7 |
+| to play (an instrument) | ひきます | | Section 2 Unit 11 |
 | to read | よみます | 読みます | Section 1 Unit 7 |
 | to rest | やすみます | 休みます | Section 2 Unit 5 |
 | to return | かえります | | Section 2 Unit 6 |
@@ -572,9 +582,9 @@ one or more Kanji characters.
 | to sit (down) | すわります | | Section 2 Unit 5 |
 | to sleep | ねます | | Section 2 Unit 2 |
 | to swim | よぎます | | Section 2 Unit 1 |
+| to take | あびます | | Section 2 Unit 2 |
 | to take (a photo) | とります | | Section 2 Unit 7 |
 | to take (time) | かかります | | Section 2 Unit 4 |
-| to take | あびます | | Section 2 Unit 2 |
 | to take a | にはいります | | Section 2 Unit 6 |
 | to talk | はなします | 話します | Section 2 Unit 1 |
 | to translate | ほんやくします | | Section 2 Unit 9 |
@@ -602,9 +612,9 @@ one or more Kanji characters.
 | Tuesday | かようび | 火曜日 | Section 2 Unit 8 |
 | twelve | じゅうに | 十二 | Section 1 Unit 7 |
 | twelve o'clock | じゅうにじ | 十二時 | Section 2 Unit 1 |
-| two (birds, rabbits, etc) | にわ | 二羽 | Section 2 Unit 13 |
-| two (objects) | ふたつ | | Section 2 Unit 1 |
 | two | に | 二 | Section 1 Unit 5 |
+| two (birds, rabbits, etc) | にわ | 二羽 | Section 2 Unit 13 |
+| two (objects) | ふたつ | 二つ | Section 2 Unit 1 |
 | two minutes | にふん | 二分 | Section 2 Unit 5 |
 | two o'clock | にじ | 二時 | Section 1 Unit 5 |
 | udon | うどん | | Section 2 Unit 1 |
@@ -631,6 +641,7 @@ one or more Kanji characters.
 | weather | てんき | | Section 2 Unit 5 |
 | Wednesday | すいようび | 水曜日 | Section 2 Unit 8 |
 | weekend | しゅうまつ | | Section 2 Unit 1 |
+| well | では | | Section 2 Unit 12 |
 | well-lit | あかるい | | Section 2 Unit 3 |
 | what day | なんようび | 何曜日 | Section 2 Unit 9 |
 | what floor | なんかい | 何階 | Section 2 Unit 11 |
@@ -641,6 +652,7 @@ one or more Kanji characters.
 | when | いつ | | Section 2 Unit 3 |
 | where | どこ | | Section 1 Unit 3 |
 | which | どの | | Section 2 Unit 8 |
+| which one | どれ | | Section 2 Unit 12 |
 | white | しろい | | Section 1 Unit 4 |
 | who | だれ | | Section 2 Unit 7 |
 | wife | つま | | Section 1 Unit 6 |
@@ -667,7 +679,7 @@ one or more Kanji characters.
 | your parents | ごりょうしん | | Section 2 Unit 5 |
 | your younger brother | おとうとさん | | Section 2 Unit 6 |
 | your younger sister | いもうとさん | | Section 2 Unit 6 |
-| zero | ゼロ | | Section 2 Unit 5 |
+| zero | ゼロ | 〇 | Section 2 Unit 5 |
 | zoo | どうぶつえん | | Section 2 Unit 7 |
 
 
