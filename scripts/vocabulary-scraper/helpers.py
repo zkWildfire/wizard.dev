@@ -31,6 +31,13 @@ def vocabulary_entry_to_string(entry: VocabularyEntry) -> str:
 	@param entry Vocabulary entry to convert.
 	@returns The vocabulary entry as a string.
 	"""
+<<<<<<< Updated upstream
 	kanji = f" {entry.kanji} " if entry.kanji else " "
+=======
+	if entry.kanji:
+		kanji = f" <span class=\"kanji\">{entry.kanji}</span> "
+	else:
+		kanji = " "
+>>>>>>> Stashed changes
 	return f"| {entry.english} | {entry.kana} |{kanji}| " + \
 		f"Section {entry.section_number} Unit {entry.unit_number} |"
