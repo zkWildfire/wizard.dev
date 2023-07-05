@@ -19,10 +19,10 @@
 | udon | うどん | |
 | meal set | ていしょく | |
 | restaurant | レストラン | |
-| one (object) | ひとつ | |
-| two (objects) | ふたつ | |
-| three (objects) | みっつ | |
-| four (objects) | よっつ | |
+| one (object) | ひとつ | 一つ |
+| two (objects) | ふたつ | 二つ |
+| three (objects) | みっつ | 三つ |
+| four (objects) | よっつ | 四つ |
 | how is | どう | |
 | very | とても | |
 | a bit | すこし | |

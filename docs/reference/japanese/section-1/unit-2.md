@@ -1,17 +1,17 @@
 # Section 1 Unit 2
 ## Introduce Yourself
 ### Vocabulary
-| English | Japanese |
-|:-------:|:--------:|
-| hello | こんにちは |
-| I'm | です |
-| Hana | はな |
-| Ken | けん |
-| Naomi | なおみ |
-| nice to meet you | どうぞよろしく |
-| good evening | こんばんは |
-| bye | じゃあね |
-| see you tomorrow | またあした |
+| English | Kana | Kanji |
+|:-------:|:----:|:-----:|
+| hello | こんにちは | |
+| I'm | です | |
+| Hana | はな | |
+| Ken | けん | |
+| Naomi | なおみ | |
+| nice to meet you | どうぞよろしく | |
+| good evening | こんばんは | |
+| bye | じゃあね | |
+| see you tomorrow | またあした | |
 
 ### Examples
 | English | Japanese |
@@ -23,16 +23,16 @@
 
 ## Order Food and Drink
 ### Vocabulary
-| English | Japanese |
-|:-------:|:--------:|
-| this | これ |
-| that | それ |
-| curry | カレー |
-| ramen | ラーメン |
-| tasty | おいしい |
-| yes | はい |
-| *particle* | は |
-| *particle* | か |
+| English | Kana | Kanji |
+|:-------:|:----:|:-----:|
+| this | これ | |
+| that | それ | |
+| curry | カレー | |
+| ramen | ラーメン | |
+| tasty | おいしい | |
+| yes | はい | |
+| *particle* | は | |
+| *particle* | か | |
 
 ### Examples
 | English | Japanese |

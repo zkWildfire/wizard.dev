@@ -46,9 +46,9 @@
 | to eat | たべます | 食べます |
 | to drink | のみます | 飲みます |
 | sometimes | ときどき | |
-| every day | まいにち | |
-| every morning | まいあさ | |
-| every night | まいばん | |
+| every day | まいにち | 毎日 |
+| every morning | まいあさ | 毎朝 |
+| every night | まいばん | 毎晩 |
 | breakfast | あさごはん | |
 | lunch | ひるごはん | |
 | dinner | ばんごはん | |

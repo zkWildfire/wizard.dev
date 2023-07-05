@@ -1,17 +1,17 @@
 # Section 1 Unit 4
 ## Describe Belongings
 ### Vocabulary
-| English | Japanese |
-|:-------:|:--------:|
-| these | これら |
-| those | それら |
-| my | わたしの |
-| hat | ぼうし |
-| umbrella | かさ |
-| shoe | くつ |
-| coat | コート |
-| red | あかい |
-| white | しろい |
+| English | Kana | Kanji |
+|:-------:|:----:|:-----:|
+| these | これら | |
+| those | それら | |
+| my | わたしの | 私の |
+| hat | ぼうし | |
+| umbrella | かさ | |
+| shoe | くつ | |
+| coat | コート | |
+| red | あかい | |
+| white | しろい | |
 
 ### Examples
 | English | Japanese |

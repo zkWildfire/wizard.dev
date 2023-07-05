@@ -11,8 +11,8 @@
 | library | としょかん | |
 | interesting | おもしろい | |
 | Chinese (language) | ちゅうごくご | |
-| Japanese (language) | にほんご | |
-| professor | せんせい | |
+| Japanese (language) | にほんご | 日本語 |
+| professor | せんせい | 先生 |
 | question(s) | しつもん | |
 | Smith | スミス | |
 | Spanish (language) | スペインご | |
@@ -40,8 +40,8 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| a.m. | ごぜん | |
-| p.m. | ごご | |
+| a.m. | ごぜん | 午前 |
+| p.m. | ごご | 午後 |
 | camera | カメラ | |
 | coworker(s) | どうりょう | |
 | dictionary | じしょ | |

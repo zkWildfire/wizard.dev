@@ -10,8 +10,8 @@
 | French food | フランスりょうり | |
 | garden | にわ | |
 | lion | ライオン | |
-| meat | にく | |
-| next month | らいげつ | |
+| meat | にく | 肉 |
+| next month | らいげつ | 来月 |
 | painting | え | |
 | plane | ひこうき | |
 | plane ticket | ひこうきのチケット | |

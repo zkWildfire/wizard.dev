@@ -6,15 +6,15 @@
 | one | いち | 一 |
 | two | に | 二 |
 | three | さん | 三 |
-| thirty/half (time) | はん | |
-| o'clock | じ | |
+| thirty/half (time) | はん | 半 |
+| o'clock | じ | 時 |
 | one o'clock | いちじ | 一時 |
 | two o'clock | にじ | 二時 |
 | three o'clock | さんじ | 三時 |
 | excuse me | すみません | |
-| now | いま | |
+| now | いま | 今 |
 | about | ごろ | |
-| what time | なんじ | |
+| what time | なんじ | 何時 |
 
 ### Examples
 | English | Japanese |

@@ -16,7 +16,7 @@
 | old | ふるい | 古い |
 | cheap | やすい | |
 | cute | かわいい | |
-| expensive | たかい | |
+| expensive | たかい | 高い |
 | lovely | すてき | |
 | hideous | ダサい | |
 | nice | いい | |

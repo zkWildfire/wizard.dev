@@ -1,15 +1,15 @@
 # Section 1 Unit 1
 ## Order Food
 ### Vocabulary
-| English | Japanese |
-|:-------:|:--------:|
-| sushi | すし |
-| green tea | おちゃ |
-| water | みず |
-| rice | ごはん |
-| please | ください |
-| it's | です |
-| and | と |
+| English | Kana | Kanji |
+|:-------:|:----:|:-----:|
+| sushi | すし | |
+| green tea | おちゃ | お茶 |
+| water | みず | 水 |
+| rice | ごはん | ご飯 |
+| please | ください | |
+| it's | です | |
+| and | と | |
 
 ### Examples
 | English | Japanese |
@@ -21,15 +21,15 @@
 
 ## Describe People
 ### Vocabulary
-| English | Japanese |
-|:-------:|:--------:|
-| doctor | いしゃ |
-| teacher | せんせい |
-| student | がくせい |
-| lawyer | べんごし |
-| person | ひと |
-| cool | かっこいい |
-| nice | やさしい |
+| English | Kana | Kanji |
+|:-------:|:----:|:-----:|
+| doctor | いしゃ | |
+| teacher | せんせい | 先生 |
+| student | がくせい | 学生 |
+| lawyer | べんごし | |
+| person | ひと | 人 |
+| cool | かっこいい | |
+| nice | やさしい | |
 
 ### Examples
 | English | Japanese |

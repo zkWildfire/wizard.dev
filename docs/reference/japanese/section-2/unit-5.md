@@ -20,7 +20,7 @@
 | your parents | ごりょうしん | |
 | to rest | やすみます | 休みます |
 | to sit (down) | すわります | |
-| zero | ゼロ | |
+| zero | ゼロ | 〇 |
 | one minute | いっぷん | 一分 |
 | two minutes | にふん | 二分 |
 | three minutes | さんぷん | 三分 |
