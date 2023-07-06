@@ -56,7 +56,7 @@
 | together | いっしょに | |
 | though | でも | |
 | which | どの | |
-| vegetables | やさい | |
+| vegetables | やさい | 野菜 |
 
 ### Examples
 | English | Japanese |

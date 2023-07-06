@@ -18,6 +18,16 @@
 				//   the files to serve in the docs folder
 				"cwd": "${workspaceFolder:Root}"
 			}
+		},
+		{
+			"label": "Update vocabulary.md",
+			"type": "process",
+			"command": "python3",
+			"args": [
+				"${workspaceFolder:Scripts}/vocabulary-scraper/vocab.py"
+			],
+			"group": "none",
+			"problemMatcher": []
 		}
 	]
 }

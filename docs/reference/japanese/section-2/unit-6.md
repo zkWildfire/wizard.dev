@@ -35,7 +35,7 @@
 | cooking | りょうり | |
 | days off | やすみのひ | 休みの日 |
 | easy | やさしい | |
-| English (language) | えいご | |
+| English (language) | えいご | 英語 |
 | fun | たのしい | |
 | gardening | ガーデニング | |
 | home | うち | |
