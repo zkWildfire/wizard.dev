@@ -213,6 +213,8 @@ and the converse and inverse have the same truth values.
 * $p$ is necessary and sufficient for $q$
 
 ### Miscellaneous
+<div class="table-no-scrollbars"></div>
+
 | English | Propositional Logic |
 |:-------:|:------------------:|
 | $p$ only if $q$ or not $r$ | $p \implies (q \lor \neg r)$ |

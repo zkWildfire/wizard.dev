@@ -21,6 +21,7 @@ devcontainer
 dockerfiles
 Doxygen
 Duolingo
+elim
 Flurl
 frontends
 gtest
@@ -45,6 +46,7 @@ Nakayama
 NAND
 omnisharp
 plantuml
+ponens
 Posix
 pycache
 Pylance
@@ -52,6 +54,7 @@ pyright
 pytest
 rpath
 rpaths
+scrollbars
 Shibuya
 subcomponents
 Tanaka

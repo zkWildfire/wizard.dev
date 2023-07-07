@@ -4,5 +4,6 @@ nav:
   - Boolean Algebra: boolean-algebra.md
   - Canonical Forms: canonical-forms.md
   - Predicate Logic: predicate-logic.md
+  - Logical Inference: logical-inference.md
   - "Appendix 1: Proofs for Logical Equivalences": appendix-1.md
   - "Appendix 2: Truth Tables for Logical Equivalences": appendix-2.md
