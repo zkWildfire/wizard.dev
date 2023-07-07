@@ -8,7 +8,7 @@
 | castle | しろ | |
 | France | フランス | |
 | French food | フランスりょうり | |
-| garden | にわ | |
+| garden | にわ | 庭 |
 | lion | ライオン | |
 | meat | にく | 肉 |
 | next month | らいげつ | 来月 |

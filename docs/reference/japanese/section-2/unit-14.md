@@ -48,6 +48,13 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| four (birds, rabbits) | よんば | 四羽 |
+| five (birds, rabbits) | ごば | 五羽 |
+| six (birds, rabbits) | ろくば | 六羽 |
+| seven (birds, rabbits) | ななば | 七羽 |
+| eight (birds, rabbits) | はちば | 八羽 |
+| nine (birds, rabbits) | きゅうば | 九羽 |
+| ten (birds, rabbits) | じゅうば | 十羽 |
 
 ### Examples
 | English | Japanese |
