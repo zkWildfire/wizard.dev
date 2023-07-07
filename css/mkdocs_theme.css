@@ -298,3 +298,27 @@ td {
 	*/
 	font-size: 200%;
 }
+
+/*
+	Prevent scrollbars from appearing within a table element.
+	This is used with some markdown tables that contain LaTeX equations.
+	  Sometimes, these tables end up with a scrollbar on the page despite the
+	  entire table being visible. When this occurs, the only parts of the
+	  table off-screen are whitespace/padding/margin sections.
+	To use this class, place an empty element with this class before the table.
+	  This is necessary because if the table is placed within the element with
+	  no whitespace, then the markdown table is not rendered correctly.
+*/
+.table-no-scrollbars + .md-typeset__scrollwrap > .md-typeset__table > table {
+	overflow: hidden;
+}
+
+/*
+	On some MathJax elements, scrollbar(s) appear despite not actually being
+	  necessary. Because of the way the mkdocs Material theme handles the body
+	  of each page, it appears to be safe to simply hide the scrollbar(s) on
+	  these elements.
+*/
+.arithmatex {
+	overflow: hidden !important;
+}
