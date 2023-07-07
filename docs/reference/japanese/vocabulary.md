@@ -122,7 +122,7 @@ one or more Kanji characters.
 | coffee | コーヒー | | Section 1 Unit 7 |
 | cola | コーラ | | Section 2 Unit 8 |
 | cold | さむい | | Section 2 Unit 5 |
-| college student | だいがくせい | | Section 1 Unit 6 |
+| college student | だいがくせい | <span class="kanji">大学生</span> | Section 1 Unit 6 |
 | comedy | コメディ | | Section 2 Unit 3 |
 | computer | パソコン | | Section 2 Unit 11 |
 | concert | コンサート | | Section 2 Unit 5 |
@@ -147,8 +147,10 @@ one or more Kanji characters.
 | desk | つくえ | | Section 2 Unit 3 |
 | dessert | デザート | | Section 2 Unit 2 |
 | dictionary | じしょ | | Section 2 Unit 9 |
+| difference | ちがい | <span class="kanji">違い</span> | Section 2 Unit 14 |
 | difficult | むずかしい | | Section 2 Unit 10 |
 | dinner | ばんごはん | | Section 1 Unit 7 |
+| do not live in | にはすんでいません | <span class="kanji">には住んでいません</span> | Section 2 Unit 14 |
 | doctor | いしゃ | | Section 1 Unit 1 |
 | documentary | ドキュメンタリー | | Section 2 Unit 10 |
 | dog | いぬ | <span class="kanji">犬</span> | Section 2 Unit 13 |
@@ -165,6 +167,10 @@ one or more Kanji characters.
 | eight | はち | <span class="kanji">八</span> | Section 1 Unit 7 |
 | eight minutes | はっぷん | <span class="kanji">八分</span> | Section 2 Unit 5 |
 | eight o'clock | はちじ | <span class="kanji">八時</span> | Section 2 Unit 1 |
+| eight years old | はっさい | <span class="kanji">八歳</span> | Section 2 Unit 14 |
+| elementary school (grade) | しょうがく | <span class="kanji">小学</span> | Section 2 Unit 14 |
+| elementary school student | しょうがくせい | <span class="kanji">小学生</span> | Section 2 Unit 14 |
+| elementary school students | しょうがくせいたち | <span class="kanji">小学生たち</span> | Section 2 Unit 14 |
 | elevator | エレベーター | | Section 2 Unit 2 |
 | eleven | じゅういち | <span class="kanji">十一</span> | Section 1 Unit 7 |
 | eleven o'clock | じゅういちじ | <span class="kanji">十一時</span> | Section 2 Unit 1 |
@@ -194,6 +200,7 @@ one or more Kanji characters.
 | feeling sick | ぐあいがわるい | | Section 2 Unit 5 |
 | fiction | フィクション | | Section 2 Unit 10 |
 | final stop | しゅうてん | | Section 2 Unit 4 |
+| fine | いい | | Section 2 Unit 14 |
 | fireworks | はなび | | Section 2 Unit 5 |
 | first floor | いっかい | | Section 2 Unit 2 |
 | fish | さかな | <span class="kanji">魚</span> | Section 2 Unit 8 |
@@ -201,11 +208,15 @@ one or more Kanji characters.
 | five (objects) | いつつ | <span class="kanji">五つ</span> | Section 2 Unit 9 |
 | five minutes | ごふん | <span class="kanji">五分</span> | Section 2 Unit 5 |
 | five o'clock | ごじ | <span class="kanji">五時</span> | Section 2 Unit 1 |
+| five years old | ごさい | <span class="kanji">五歳</span> | Section 2 Unit 14 |
 | flavor | あじ | | Section 2 Unit 10 |
+| foreign exchange student | りゅうがくせい | <span class="kanji">留学性</span> | Section 2 Unit 14 |
+| foreigner | がいこくじん | <span class="kanji">外国人</span> | Section 2 Unit 14 |
 | four | よん | <span class="kanji">四</span> | Section 1 Unit 6 |
 | four (objects) | よっつ | <span class="kanji">四つ</span> | Section 2 Unit 1 |
 | four minutes | よんぷん | <span class="kanji">四分</span> | Section 2 Unit 5 |
 | four o'clock | よじ | <span class="kanji">四時</span> | Section 2 Unit 1 |
+| four years old | よんさい | <span class="kanji">四歳</span> | Section 2 Unit 14 |
 | France | フランス | | Section 2 Unit 7 |
 | free (not busy) | ひま | | Section 2 Unit 8 |
 | French food | フランスりょうり | | Section 2 Unit 7 |
@@ -229,6 +240,7 @@ one or more Kanji characters.
 | good evening | こんばんは | | Section 1 Unit 2 |
 | good morning (formal) | おはようございます | | Section 1 Unit 6 |
 | GPS | ナビ | | Section 2 Unit 9 |
+| grade, school year | ねんせい | <span class="kanji">年生</span> | Section 2 Unit 14 |
 | green | みどり | | Section 2 Unit 8 |
 | green tea | おちゃ | <span class="kanji">お茶</span> | Section 1 Unit 1 |
 | guitar | ギター | | Section 2 Unit 11 |
@@ -239,6 +251,8 @@ one or more Kanji characters.
 | hello | こんにちは | | Section 1 Unit 2 |
 | here | ここ | | Section 1 Unit 3 |
 | hideous | ダサい | | Section 1 Unit 8 |
+| high school student | こうこうせい | <span class="kanji">高校生</span> | Section 2 Unit 14 |
+| high school students | こうこうせいたち | <span class="kanji">高校生たち</span> | Section 2 Unit 14 |
 | hiragana | ひらがな | | Section 2 Unit 11 |
 | hobby | しゅみ | | Section 2 Unit 3 |
 | home | うち | | Section 2 Unit 6 |
@@ -263,6 +277,7 @@ one or more Kanji characters.
 | instrument | がっき | | Section 2 Unit 11 |
 | interesting | おもしろい | | Section 2 Unit 9 |
 | is in/at | にあります | | Section 2 Unit 13 |
+| is not right/correct | ちがいます | <span class="kanji">違います</span> | Section 2 Unit 14 |
 | isn't it | ですね | | Section 1 Unit 8 |
 | it's | です | | Section 1 Unit 1 |
 | J-pop | Jポップ | | Section 1 Unit 7 |
@@ -282,6 +297,7 @@ one or more Kanji characters.
 | karaoke | カラオケ | | Section 2 Unit 10 |
 | karate | からて | | Section 2 Unit 1 |
 | Ken | けん | | Section 1 Unit 2 |
+| Kenta | けんた | <span class="kanji">健太</span> | Section 2 Unit 14 |
 | kid(s) | こども | | Section 2 Unit 6 |
 | kitchen | キッチン | | Section 2 Unit 3 |
 | kitchen | だいどころ | <span class="kanji">台所</span> | Section 2 Unit 13 |
@@ -315,6 +331,8 @@ one or more Kanji characters.
 | medicine | くすり | | Section 2 Unit 5 |
 | meeting | ミーティング | | Section 2 Unit 11 |
 | microwave | でんしレンジ | | Section 2 Unit 3 |
+| middle school student | ちゅうがくせい | <span class="kanji">中学生</span> | Section 2 Unit 14 |
+| middle school students | ちゅうがくせいたち | <span class="kanji">中学生たち</span> | Section 2 Unit 14 |
 | midnight | れいじ | <span class="kanji">零時</span> | Section 2 Unit 13 |
 | milk | ぎゅうにゅう | <span class="kanji">牛乳</span> | Section 2 Unit 12 |
 | mint chocolate chip | チョコミント | | Section 2 Unit 10 |
@@ -332,10 +350,11 @@ one or more Kanji characters.
 | my | わたしの | <span class="kanji">私の</span> | Section 1 Unit 4 |
 | my | ぼくの | <span class="kanji">僕の</span> | Section 2 Unit 12 |
 | my name is | といいます | <span class="kanji">と言います</span> | Section 2 Unit 3 |
+| my name is | もうします | <span class="kanji">申します</span> | Section 2 Unit 14 |
 | mystery | ミステリー | | Section 2 Unit 3 |
 | Nagoya | なごや | | Section 2 Unit 7 |
 | Nakayama | なかやま | <span class="kanji">中山</span> | Section 1 Unit 4 |
-| Naomi | なおみ | | Section 1 Unit 2 |
+| Naomi | なおみ | <span class="kanji">直美</span> | Section 1 Unit 2 |
 | nearby | ちかく | | Section 2 Unit 5 |
 | necktie | ネクタイ | | Section 1 Unit 8 |
 | new | あたらしい | <span class="kanji">新しい</span> | Section 1 Unit 8 |
@@ -350,10 +369,12 @@ one or more Kanji characters.
 | nine | きゅう | <span class="kanji">九</span> | Section 1 Unit 7 |
 | nine minutes | きゅうふん | <span class="kanji">九分</span> | Section 2 Unit 5 |
 | nine o'clock | くじ | <span class="kanji">九時</span> | Section 1 Unit 7 |
+| nine years old | きゅうさい | <span class="kanji">九歳</span> | Section 2 Unit 14 |
 | no | いいえ | | Section 1 Unit 6 |
 | noisy | うるさい | | Section 1 Unit 6 |
 | non-fiction | ノンフィクション | | Section 2 Unit 10 |
 | not | じゃない | | Section 1 Unit 5 |
+| not at (place) | いません | | Section 2 Unit 14 |
 | now | いま | <span class="kanji">今</span> | Section 1 Unit 5 |
 | o'clock | じ | <span class="kanji">時</span> | Section 1 Unit 5 |
 | office | かいしゃ | <span class="kanji">会社</span> | Section 2 Unit 13 |
@@ -369,7 +390,8 @@ one or more Kanji characters.
 | one (object) | ひとつ | <span class="kanji">一つ</span> | Section 2 Unit 1 |
 | one minute | いっぷん | <span class="kanji">一分</span> | Section 2 Unit 5 |
 | one o'clock | いちじ | <span class="kanji">一時</span> | Section 1 Unit 5 |
-| Osaka | おおさか | | Section 2 Unit 4 |
+| one year old | いっさい | <span class="kanji">一歳</span> | Section 2 Unit 14 |
+| Osaka | おおさか | <span class="kanji">大阪</span> | Section 2 Unit 4 |
 | outlet | コンセント | | Section 2 Unit 2 |
 | over there | あそこ | | Section 2 Unit 2 |
 | p.m. | ごご | <span class="kanji">午後</span> | Section 2 Unit 9 |
@@ -428,6 +450,8 @@ one or more Kanji characters.
 | restroom | おてあらい | | Section 2 Unit 2 |
 | rice | ごはん | <span class="kanji">ご飯</span> | Section 1 Unit 1 |
 | rice balls | おにぎり | | Section 2 Unit 1 |
+| right/correct | そう | | Section 2 Unit 14 |
+| right? | よね | | Section 2 Unit 14 |
 | rock | ロック | | Section 1 Unit 7 |
 | rollercoaster | ジェットコースター | | Section 2 Unit 10 |
 | romance | れんあい | | Section 2 Unit 3 |
@@ -451,6 +475,7 @@ one or more Kanji characters.
 | seven (objects) | ななつ | <span class="kanji">七つ</span> | Section 2 Unit 9 |
 | seven minutes | ななふん | <span class="kanji">七分</span> | Section 2 Unit 5 |
 | seven o'clock | しちじ | <span class="kanji">七時</span> | Section 1 Unit 7 |
+| seven years old | ななさい | <span class="kanji">七歳</span> | Section 2 Unit 14 |
 | Shibuya | しぶや | | Section 2 Unit 4 |
 | shoe | くつ | | Section 1 Unit 4 |
 | shopping | かいもの | | Section 2 Unit 6 |
@@ -464,6 +489,7 @@ one or more Kanji characters.
 | six (objects) | むっつ | <span class="kanji">六つ</span> | Section 2 Unit 9 |
 | six minutes | ろっぷん | <span class="kanji">六分</span> | Section 2 Unit 5 |
 | six o'clock | ろくじ | <span class="kanji">六時</span> | Section 2 Unit 1 |
+| six years old | ろくさい | <span class="kanji">六歳</span> | Section 2 Unit 14 |
 | skirt | スカート | | Section 1 Unit 8 |
 | small | ちいさい | <span class="kanji">小さい</span> | Section 1 Unit 3 |
 | small | Sサイズ | | Section 2 Unit 10 |
@@ -518,6 +544,7 @@ one or more Kanji characters.
 | ten | じゅう | <span class="kanji">十</span> | Section 1 Unit 7 |
 | ten minutes | じゅっぷん | <span class="kanji">十分</span> | Section 2 Unit 5 |
 | ten o'clock | じゅうじ | <span class="kanji">十時</span> | Section 2 Unit 1 |
+| ten years old | じゅっさい | <span class="kanji">十歳</span> | Section 2 Unit 14 |
 | tennis | テニス | | Section 1 Unit 7 |
 | test | テスト | | Section 2 Unit 9 |
 | thank you (formal) | ありがとうございます | | Section 1 Unit 8 |
@@ -544,6 +571,7 @@ one or more Kanji characters.
 | three minutes | さんぷん | <span class="kanji">三分</span> | Section 2 Unit 5 |
 | three o'clock | さんじ | <span class="kanji">三時</span> | Section 1 Unit 5 |
 | three thousand | さんぜん | <span class="kanji">三千</span> | Section 2 Unit 10 |
+| three years old | さんさい | <span class="kanji">三歳</span> | Section 2 Unit 14 |
 | Thursday | もくようび | <span class="kanji">木曜日</span> | Section 2 Unit 8 |
 | ticket | きっぷ | | Section 1 Unit 5 |
 | ticket | チケット | | Section 2 Unit 7 |
@@ -570,7 +598,7 @@ one or more Kanji characters.
 | to know | ができます | | Section 2 Unit 7 |
 | to like | すき | | Section 2 Unit 3 |
 | to listen | ききます | | Section 1 Unit 7 |
-| to live in | にすんでいます | | Section 1 Unit 6 |
+| to live in | にすんでいます | <span class="kanji">に住んでいます</span> | Section 1 Unit 6 |
 | to love | だいすき | | Section 2 Unit 8 |
 | to make | つくります | | Section 2 Unit 2 |
 | to meet | あいます | <span class="kanji">会います</span> | Section 2 Unit 7 |
@@ -623,6 +651,7 @@ one or more Kanji characters.
 | two (objects) | ふたつ | <span class="kanji">二つ</span> | Section 2 Unit 1 |
 | two minutes | にふん | <span class="kanji">二分</span> | Section 2 Unit 5 |
 | two o'clock | にじ | <span class="kanji">二時</span> | Section 1 Unit 5 |
+| two years old | にさい | <span class="kanji">二歳</span> | Section 2 Unit 14 |
 | udon | うどん | | Section 2 Unit 1 |
 | Ueno Park | うえのこうえん | | Section 2 Unit 4 |
 | um | ええと | | Section 2 Unit 1 |
@@ -669,12 +698,13 @@ one or more Kanji characters.
 | Yamada | やまだ | <span class="kanji">山田</span> | Section 2 Unit 9 |
 | Yamaguchi | やまぐち | <span class="kanji">山口</span> | Section 1 Unit 4 |
 | yard | にわ | <span class="kanji">庭</span> | Section 2 Unit 13 |
-| years old | さい | | Section 1 Unit 6 |
+| years old | さい | <span class="kanji">歳</span> | Section 1 Unit 6 |
 | yellow | きいろい | | Section 2 Unit 10 |
 | yen | えん | | Section 1 Unit 8 |
 | yes | はい | | Section 1 Unit 2 |
 | yoga | ヨガ | | Section 2 Unit 1 |
 | Yokohama | よこはま | | Section 2 Unit 4 |
+| you know | よ | | Section 2 Unit 14 |
 | younger brother | おとうと | | Section 1 Unit 6 |
 | younger sister | いもうと | | Section 1 Unit 6 |
 | your | あなたの | | Section 2 Unit 8 |
@@ -688,6 +718,7 @@ one or more Kanji characters.
 | zero | ゼロ | <span class="kanji">〇</span> | Section 2 Unit 5 |
 | zoo | どうぶつえん | | Section 2 Unit 7 |
 <!-- End of autogenerated section -->
+
 
 
 
