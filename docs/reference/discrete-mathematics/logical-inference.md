@@ -148,15 +148,7 @@ Note that these rules are also known by these names:
 | $\forall$ | Universal Generalization | Universal Instantiation |
 | $\exists$ | Existential Generalization | Existential Instantiation |
 
-### De Morgan's Laws
-$$
-\begin{align}
-\neg \forall x P(x) &\equiv \exists x \neg P(x) \\
-\neg \exists x P(x) &\equiv \forall x \neg P(x)
-\end{align}
-$$
-
-### Universal Modus Ponens
+#### Universal Modus Ponens
 Modus Ponens is used with the Universal Instantiation so frequently that it
 has its own name. It is written as follows:
 
@@ -165,6 +157,21 @@ $$
 $$
 
 Where $a$ is a particular element in the domain of $P$ and $Q$.
+
+#### De Morgan's Laws
+!!! danger
+    De Morgan's Laws are a **equivalencies**, not inference rules. They are
+    listed here for completeness; however, the usage of equivalencies differs
+    from the usage of inference rules. See the
+    [Usage of Inference Rules](#usage-of-inference-rules) section for more
+    information.
+
+$$
+\begin{align}
+\neg \forall x P(x) &\equiv \exists x \neg P(x) \\
+\neg \exists x P(x) &\equiv \forall x \neg P(x)
+\end{align}
+$$
 
 ## Usage of Inference Rules
 | Expression Type | Inference Rules | Equivalencies |
