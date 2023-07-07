@@ -7,7 +7,7 @@
 | I'm | です | |
 | Hana | はな | |
 | Ken | けん | |
-| Naomi | なおみ | |
+| Naomi | なおみ | 直美 |
 | nice to meet you | どうぞよろしく | |
 | good evening | こんばんは | |
 | bye | じゃあね | |

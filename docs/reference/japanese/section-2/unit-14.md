@@ -3,6 +3,36 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| difference | ちがい | 違い |
+| elementary school student | しょうがくせい | 小学生 |
+| elementary school students | しょうがくせいたち | 小学生たち |
+| elementary school (grade) | しょうがく | 小学 |
+| fine | いい | |
+| foreign exchange student | りゅうがくせい | 留学性 |
+| foreigner | がいこくじん | 外国人 |
+| grade, school year | ねんせい | 年生 |
+| high school student | こうこうせい | 高校生 |
+| high school students | こうこうせいたち | 高校生たち |
+| is not right/correct | ちがいます | 違います |
+| Kenta | けんた | 健太 |
+| middle school student | ちゅうがくせい | 中学生 |
+| middle school students | ちゅうがくせいたち | 中学生たち |
+| my name is | もうします | 申します |
+| do not live in | にはすんでいません | には住んでいません |
+| not at (place) | いません | |
+| right/correct | そう | |
+| right? | よね | |
+| you know | よ | |
+| one year old | いっさい | 一歳 |
+| two years old | にさい | 二歳 |
+| three years old | さんさい | 三歳 |
+| four years old | よんさい | 四歳 |
+| five years old | ごさい | 五歳 |
+| six years old | ろくさい | 六歳 |
+| seven years old | ななさい | 七歳 |
+| eight years old | はっさい | 八歳 |
+| nine years old | きゅうさい | 九歳 |
+| ten years old | じゅっさい | 十歳 |
 
 ### Examples
 | English | Japanese |

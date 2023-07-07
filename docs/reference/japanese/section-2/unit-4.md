@@ -15,7 +15,7 @@
 | Asakusa | あさくさ | |
 | Harajuku | はらじゅく | |
 | Mt Fuji | ふじさん | |
-| Osaka | おおさか | |
+| Osaka | おおさか | 大阪 |
 | Shibuya | しぶや | |
 | Ueno Park | うえのこうえん | |
 | Yokohama | よこはま | |

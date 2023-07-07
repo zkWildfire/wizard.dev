@@ -31,6 +31,7 @@ idempotency
 implib
 interprocedural
 iwyu
+Kenta
 Kymira
 makefiles
 matcha

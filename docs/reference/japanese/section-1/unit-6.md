@@ -16,7 +16,7 @@
 | nice to meet you | はじめまして | |
 | what is your name? | おなまえは？ | |
 | what is your name? | おなまえわなんですか？ | |
-| to live in | にすんでいます | |
+| to live in | にすんでいます | に住んでいます |
 | no | いいえ | |
 
 ### Examples
@@ -50,13 +50,13 @@
 | fashionable | おしゃれ | |
 | stylish | おしゃれ | |
 | engineer | エンジニア | |
-| college student | だいがくせい | |
+| college student | だいがくせい | 大学生 |
 | office worker | かいしゃいん | |
 | four | よん | 四 |
 | five | ご | 五 |
 | six | ろく | 六 |
 | seven | なな | 七 |
-| years old | さい | |
+| years old | さい | 歳 |
 
 ### Examples
 | English | Japanese |
