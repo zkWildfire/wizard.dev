@@ -46,14 +46,14 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | apartment | アパート | |
-| house | いえ | |
+| house | いえ | 家 |
 | kitchen | キッチン | |
 | living room | リビング | |
 | air conditioner | エアコン | |
 | bed | ベッド | |
 | bookshelf | ほんだな | |
-| chair | いす | |
-| desk | つくえ | |
+| chair | いす | 椅子 |
+| desk | つくえ | 机 |
 | futon | ふとん | |
 | microwave | でんしレンジ | |
 | refrigerator | れいぞうこ | |

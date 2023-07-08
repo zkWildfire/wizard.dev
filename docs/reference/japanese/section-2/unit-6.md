@@ -41,8 +41,8 @@
 | home | うち | |
 | homework | しゅくだい | |
 | laundry | せんたく | |
-| school | がっこう | |
-| shopping | かいもの | |
+| school | がっこう | 学校 |
+| shopping | かいもの | 買い物 |
 | stretches | ストレッチ | |
 | then | そして | |
 | tough | たいへん | |

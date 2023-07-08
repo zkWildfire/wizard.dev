@@ -22,9 +22,9 @@
 | to exercise | うんどうします | |
 | what day | なんようび | 何曜日 |
 | Yamada | やまだ | 山田 |
-| five (objects) | いつつ | 五つ |
-| six (objects) | むっつ | 六つ |
-| seven (objects) | ななつ | 七つ |
+| five (objects, generic) | いつつ | 五つ |
+| six (objects, generic) | むっつ | 六つ |
+| seven (objects, generic) | ななつ | 七つ |
 
 ### Examples
 | English | Japanese |

@@ -42,9 +42,9 @@
 | get up | おきます | |
 | next week | らいしゅう | |
 | always | いつも | |
-| to get up | おきます | |
+| to get up | おきます | 起きます |
 | to make | つくります | |
-| to sleep | ねます | |
+| to sleep | ねます | 寝ます |
 | to take | あびます | |
 | emails | メール | |
 | dessert | デザート | |

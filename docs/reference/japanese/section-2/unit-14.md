@@ -55,6 +55,19 @@
 | eight (birds, rabbits) | はちば | 八羽 |
 | nine (birds, rabbits) | きゅうば | 九羽 |
 | ten (birds, rabbits) | じゅうば | 十羽 |
+| eight (objects, generic) | やっつ | 八つ |
+| nine (objects, generic) | ここのつ | 九つ |
+| how many (objects) | いくつ | |
+| one (objects) | いっこ | 一個 |
+| two (objects) | にこ | 二個 |
+| three (objects) | さんこ | 三個 |
+| four (objects) | よんこ | 四個 |
+| five (objects) | ごこ | 五個 |
+| six (objects) | ろっこ | 六個 |
+| seven (objects) | ななこ | 七個 |
+| eight (objects) | はっこ | 八個 |
+| nine (objects) | きゅうこ | 九個 |
+| ten (objects) | じゅっこ | 十個 |
 
 ### Examples
 | English | Japanese |
