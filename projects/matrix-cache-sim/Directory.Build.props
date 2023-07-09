@@ -1,0 +1,44 @@
+<!-- Build properties applied to all projects (src + test) -->
+<Project>
+	<PropertyGroup>
+		<!-- Use the latest .NET SDK version -->
+		<TargetFramework>net7.0</TargetFramework>
+
+		<!-- Use the latest C# version -->
+		<LangVersion>11</LangVersion>
+
+		<!-- C# configuration -->
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<WarningLevel>4</WarningLevel>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+		<!-- Code analysis configuration -->
+		<AnalysisMode>All</AnalysisMode>
+		<AnalysisLevel>latest</AnalysisLevel>
+		<CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+
+		<!-- Build configuration -->
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<Prefer32bit>false</Prefer32bit>
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<DebugType>Portable</DebugType>
+		<Copyright>© 2023 Zach Wilson</Copyright>
+		<NeutralLanguage>en</NeutralLanguage>
+	</PropertyGroup>
+
+	<!-- NuGet packages used by all projects -->
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+		<PackageReference Include="PolySharp" Version="1.13.1">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+</Project>

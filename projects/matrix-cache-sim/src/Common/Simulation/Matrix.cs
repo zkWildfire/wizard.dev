@@ -22,12 +22,12 @@ public interface IMatrix
 	/// Reads the value at the given coordinates into the given register.
 	/// @param x X coordinate of the value to read.
 	/// @param y Y coordinate of the value to read.
-	/// @param register Register to read the value into.
-	void Read(int x, int y, IRegister register);
+	/// @param reg Register to read the value into.
+	void Read(int x, int y, IRegister reg);
 
 	/// Writes the value from the given register into the given coordinates.
 	/// @param x X coordinate of the value to write.
 	/// @param y Y coordinate of the value to write.
-	/// @param register Register to write the value from.
-	void Write(int x, int y, IRegister register);
+	/// @param reg Register to write the value from.
+	void Write(int x, int y, IRegister reg);
 }
