@@ -2,12 +2,16 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using Mcs.Simulator.Events;
 using Mcs.Simulator.Memory;
 namespace Mcs.Simulator.CacheLines;
 
 /// Cache line that uses write-through caching.
 public class WriteThroughCacheLine : ICacheLine
 {
+	/// Event that is raised when a memory address in the cache line is accessed.
+	public event EventHandler<OnCacheLineAccessedEventArgs>? OnCacheLineAccessed;
+
 	/// Memory address that the cache line starts at.
 	public int StartingAddress { get; }
 
@@ -56,14 +60,28 @@ public class WriteThroughCacheLine : ICacheLine
 	/// @returns The value at the address.
 	public int Read(int address)
 	{
-		return Contains(address)
-			? _memory.Read(address)
-			: throw new ArgumentOutOfRangeException(
+		if (!Contains(address))
+		{
+			throw new ArgumentOutOfRangeException(
 				nameof(address),
 				address,
 				$"Expected address '{address}' to be in the range " +
 				$"[{StartingAddress}, {EndingAddress})."
 			);
+		}
+
+		var value = _memory.Read(address);
+		OnCacheLineAccessed?.Invoke(
+			this,
+			new OnCacheLineAccessedEventArgs()
+			{
+				Address = address,
+				IsRead = true,
+				NewValue = value,
+				OldValue = value
+			}
+		);
+		return value;
 	}
 
 	/// Writes a value to the cache line.
@@ -73,11 +91,7 @@ public class WriteThroughCacheLine : ICacheLine
 	///   address in the cache line.
 	public void Write(int address, int value)
 	{
-		if (Contains(address))
-		{
-			_memory.Write(address, value);
-		}
-		else
+		if (!Contains(address))
 		{
 			throw new ArgumentOutOfRangeException(
 				nameof(address),
@@ -86,5 +100,18 @@ public class WriteThroughCacheLine : ICacheLine
 				$"[{StartingAddress}, {EndingAddress})."
 			);
 		}
+
+		var oldValue = _memory.Read(address);
+		_memory.Write(address, value);
+		OnCacheLineAccessed?.Invoke(
+			this,
+			new OnCacheLineAccessedEventArgs()
+			{
+				Address = address,
+				IsRead = false,
+				NewValue = value,
+				OldValue = oldValue
+			}
+		);
 	}
 }

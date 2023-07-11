@@ -2,11 +2,15 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using Mcs.Simulator.Events;
 namespace Mcs.Simulator.CacheLines;
 
 /// Interface for classes that simulate a cache line.
 public interface ICacheLine
 {
+	/// Event that is raised when a memory address in the cache line is accessed.
+	event EventHandler<OnCacheLineAccessedEventArgs>? OnCacheLineAccessed;
+
 	/// Memory address that the cache line starts at.
 	int StartingAddress { get; }
 
