@@ -2,6 +2,7 @@
 ## Talk About Your Family
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| fine | いい | |
 
 ### Examples
 | English | Japanese |
