@@ -3,6 +3,7 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | fine | いい | |
+| this way | こちら | |
 
 ### Examples
 | English | Japanese |
