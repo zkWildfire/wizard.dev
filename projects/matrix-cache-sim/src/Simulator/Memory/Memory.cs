@@ -27,4 +27,9 @@ public interface IMemory
 	/// @throws ArgumentOutOfRangeException If the address is not a valid
 	///   address in the memory block.
 	void Write(int address, int value);
+
+	/// Checks if the address is a valid address in the memory block.
+	/// @throws ArgumentOutOfRangeException If the address is not a valid
+	///   address in the memory block.
+	void ValidateAddress(int address);
 }

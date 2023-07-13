@@ -42,7 +42,7 @@ public static class MatrixStatics
 	/// Converts the given memory address into a matrix coordinate.
 	/// @param memoryAddress Memory address to convert.
 	/// @param matrix Matrix to convert the address for.
-	/// @returns Matrix coordinate of the given memory address.
+	/// @returns The matrix coordinate of the given memory address.
 	public static (int, int) ToMatrixCoordinate(
 		int memoryAddress,
 		int startingOffset,
@@ -54,6 +54,36 @@ public static class MatrixStatics
 		return columnMajor
 			? (offset / ySize, offset % ySize)
 			: (offset % xSize, offset / xSize);
+	}
+
+	/// Converts the given memory address into a matrix coordinate.
+	/// @param matrix Matrix to convert the address for.
+	/// @param memoryAddress Memory address to convert.
+	/// @throws ArgumentOutOfRangeException If the memory address is not within
+	///   the matrix.
+	/// @returns The matrix coordinate of the given memory address.
+	public static (int, int) ToMatrixCoordinate(
+		this IMatrix matrix,
+		int memoryAddress)
+	{
+		// Make sure that the memory address is within the matrix
+		var beforeStart = memoryAddress < matrix.StartingAddress;
+		var afterEnd =
+			memoryAddress >= matrix.StartingAddress + (matrix.X * matrix.Y);
+
+		return beforeStart || afterEnd
+			? throw new ArgumentOutOfRangeException(
+				nameof(memoryAddress),
+				memoryAddress,
+				"Memory address is not within the matrix."
+			)
+			: ToMatrixCoordinate(
+				memoryAddress,
+				matrix.StartingAddress,
+				matrix.X,
+				matrix.Y,
+				matrix.IsColumnMajor
+			);
 	}
 
 	/// Generates a sequence of actions that will swap the two matrix cells.

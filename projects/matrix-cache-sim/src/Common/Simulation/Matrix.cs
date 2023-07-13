@@ -16,6 +16,12 @@ public interface IMatrix
 	/// Starting address of the matrix in memory.
 	int StartingAddress { get; }
 
+	/// Past-the-end address of the matrix in memory.
+	int EndingAddress { get; }
+
+	/// Checks whether the matrix is stored in column major order.
+	bool IsColumnMajor { get; }
+
 	/// Checks whether the matrix has been fully transposed.
 	bool IsTransposed { get; }
 

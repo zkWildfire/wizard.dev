@@ -14,15 +14,9 @@ public class SequentialMemoryValidator : IMemoryValidator
 
 	/// Initializes the data for the matrix.
 	/// @param memory Memory that the matrix is stored in.
-	/// @param startingAddress Starting address of the matrix in memory.
-	/// @param x Size of the matrix in the X dimension.
-	/// @param y Size of the matrix in the Y dimension.
-	public void Initialize(IMemory memory, int startingAddress, int x, int y)
+	/// @param matrix Matrix that will be used by the simulation.
+	public void Initialize(IMemory memory, IMatrix matrix)
 	{
-		// Figure out the range of addresses that the matrix occupies
-		var elementCount = x * y;
-		var endingAddress = startingAddress + elementCount;
-
 		// Initialize the memory elements
 		for (var i = 0; i < memory.Size; i++)
 		{
@@ -30,42 +24,40 @@ public class SequentialMemoryValidator : IMemoryValidator
 
 			// If the address is part of the matrix, initialize it to the
 			//   starting value for the cell
-			if (i >= startingAddress && i < endingAddress)
+			if (i >= matrix.StartingAddress && i < matrix.EndingAddress)
 			{
 				var (xCoord, yCoord) = MatrixStatics.ToMatrixCoordinate(
 					i,
-					startingAddress,
-					x,
-					y
+					matrix.StartingAddress,
+					matrix.X,
+					matrix.Y
 				);
-				memory.Write(i, GetInitialValue(xCoord, yCoord, x, y));
+				memory.Write(
+					i,
+					GetInitialValue(xCoord, yCoord, matrix)
+				);
 			}
 		}
 	}
 
 	/// Checks whether the matrix was transposed correctly.
 	/// @param memory Memory that the matrix is stored in.
-	/// @param startingAddress Starting address of the matrix in memory.
-	/// @param x Size of the matrix in the X dimension.
-	/// @param y Size of the matrix in the Y dimension.
-	public bool Validate(IMemory memory, int startingAddress, int x, int y)
+	/// @param matrix Matrix used by the simulation.
+	/// @returns Whether the matrix was transposed correctly.
+	public bool Validate(IMemory memory, IMatrix matrix)
 	{
-		// Figure out the range of addresses that the matrix occupies
-		var elementCount = x * y;
-		var endingAddress = startingAddress + elementCount;
-
 		// Iterate over each element in the matrix
-		for (var i = startingAddress; i < endingAddress; i++)
+		for (var i = matrix.StartingAddress; i < matrix.EndingAddress; i++)
 		{
 			var (xCoord, yCoord) = MatrixStatics.ToMatrixCoordinate(
 				i,
-				startingAddress,
-				x,
-				y
+				matrix.StartingAddress,
+				matrix.X,
+				matrix.Y
 			);
 
 			// Check that the value is correct
-			if (memory.Read(i) != GetExpectedValue(xCoord, yCoord, x, y))
+			if (memory.Read(i) != GetExpectedValue(xCoord, yCoord, matrix))
 			{
 				return false;
 			}
@@ -77,20 +69,18 @@ public class SequentialMemoryValidator : IMemoryValidator
 	/// Gets the value that the memory cell should be initialized to.
 	/// @param x X coordinate of the memory cell.
 	/// @param y Y coordinate of the memory cell.
-	/// @param sizeX Size of the matrix in the X dimension.
-	/// @param sizeY Size of the matrix in the Y dimension.
-	private static int GetInitialValue(int x, int y, int sizeX, int sizeY)
+	/// @param matrix Matrix that the memory cell is part of.
+	private static int GetInitialValue(int x, int y, IMatrix matrix)
 	{
-		return MatrixStatics.ToMemoryAddress(x, y, sizeX, sizeY) + 1;
+		return MatrixStatics.ToMemoryAddress(x, y, matrix.X, matrix.Y) + 1;
 	}
 
 	/// Gets the value that the memory cell is expected to be set to.
 	/// @param x X coordinate of the memory cell.
 	/// @param y Y coordinate of the memory cell.
-	/// @param sizeX Size of the matrix in the X dimension.
-	/// @param sizeY Size of the matrix in the Y dimension.
-	private static int GetExpectedValue(int x, int y, int sizeX, int sizeY)
+	/// @param matrix Matrix that the memory cell is part of.
+	private static int GetExpectedValue(int x, int y, IMatrix matrix)
 	{
-		return MatrixStatics.ToMemoryAddress(y, x, sizeX, sizeY) + 1;
+		return MatrixStatics.ToMemoryAddress(y, x, matrix.X, matrix.Y) + 1;
 	}
 }
