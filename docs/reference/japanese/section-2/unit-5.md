@@ -14,7 +14,7 @@
 | nearby | ちかく | |
 | phone number | でんわばんごう | |
 | police | けいさつ | |
-| parents | りょうしん | |
+| parents | りょうしん | 両親 |
 | to need | おねがいします | |
 | your family | ごかぞく | |
 | your parents | ごりょうしん | |

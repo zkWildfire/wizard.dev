@@ -1,9 +1,22 @@
 # Section 2 Unit 15
 ## Talk About Your Family
+### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| brothers | きょうだい | 兄弟 |
+| child | こども | 子供 |
+| children | こどもたち | 子供たち |
 | fine | いい | |
+| he | かれ | 彼 |
+| name | なまえ | 名前 |
+| our | うちの | |
+| she | かのじょ | 彼女 |
+| sisters | しまい | 姉妹 |
+| they | かれら | 彼ら |
 | this way | こちら | |
+| you | あなた | |
+| your | ご | |
+| we | わたしたち | 私たち |
 
 ### Examples
 | English | Japanese |
@@ -15,6 +28,7 @@
 | She is my older sister. | 彼女は私の姉です。 |
 
 ## Ask About Food
+### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 

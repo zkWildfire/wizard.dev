@@ -85,6 +85,7 @@ one or more Kanji characters.
 | Britain | イギリス | | Section 1 Unit 3 |
 | British | イギリスじん | | Section 1 Unit 3 |
 | British (thing) | イギリスの | | Section 2 Unit 3 |
+| brothers | きょうだい | <span class="kanji">兄弟</span> | Section 2 Unit 15 |
 | building | たてもの | | Section 2 Unit 4 |
 | bullet train | しんかんせん | | Section 2 Unit 7 |
 | bus | バス | | Section 2 Unit 4 |
@@ -105,6 +106,8 @@ one or more Kanji characters.
 | cheap | やすい | | Section 1 Unit 8 |
 | cheerful | あかるい | | Section 1 Unit 4 |
 | cheesecake | チーズケーキ | | Section 2 Unit 8 |
+| child | こども | <span class="kanji">子供</span> | Section 2 Unit 15 |
+| children | こどもたち | <span class="kanji">子供たち</span> | Section 2 Unit 15 |
 | China | ちゅうごく | | Section 2 Unit 3 |
 | Chinese (language) | ちゅうごくご | | Section 2 Unit 9 |
 | chocolate | チョコレート | | Section 2 Unit 8 |
@@ -193,7 +196,7 @@ one or more Kanji characters.
 | expensive | たかい | <span class="kanji">高い</span> | Section 1 Unit 8 |
 | face | かお | | Section 2 Unit 10 |
 | fall | あき | | Section 2 Unit 5 |
-| family | かぞく | | Section 1 Unit 6 |
+| family | かぞく | <span class="kanji">家族</span> | Section 1 Unit 6 |
 | famous | ゆうめい | | Section 1 Unit 6 |
 | fantasy | ファンタジー | | Section 2 Unit 3 |
 | far | とおい | | Section 2 Unit 2 |
@@ -204,6 +207,7 @@ one or more Kanji characters.
 | fiction | フィクション | | Section 2 Unit 10 |
 | final stop | しゅうてん | | Section 2 Unit 4 |
 | fine | いい | | Section 2 Unit 14 |
+| fine | いい | | Section 2 Unit 15 |
 | fireworks | はなび | | Section 2 Unit 5 |
 | first floor | いっかい | | Section 2 Unit 2 |
 | fish | さかな | <span class="kanji">魚</span> | Section 2 Unit 8 |
@@ -242,7 +246,7 @@ one or more Kanji characters.
 | garden | にわ | <span class="kanji">庭</span> | Section 2 Unit 7 |
 | gardening | ガーデニング | | Section 2 Unit 6 |
 | get up | おきます | | Section 2 Unit 2 |
-| girlfriend | かのじょ | | Section 2 Unit 3 |
+| girlfriend | かのじょ | <span class="kanji">彼女</span> | Section 2 Unit 3 |
 | go-cart | ゴーカート | | Section 2 Unit 10 |
 | good evening | こんばんは | | Section 1 Unit 2 |
 | good morning (formal) | おはようございます | | Section 1 Unit 6 |
@@ -255,6 +259,7 @@ one or more Kanji characters.
 | Hana | はな | | Section 1 Unit 2 |
 | Harajuku | はらじゅく | | Section 2 Unit 4 |
 | hat | ぼうし | | Section 1 Unit 4 |
+| he | かれ | <span class="kanji">彼</span> | Section 2 Unit 15 |
 | hello | こんにちは | | Section 1 Unit 2 |
 | here | ここ | | Section 1 Unit 3 |
 | hideous | ダサい | | Section 1 Unit 8 |
@@ -362,6 +367,7 @@ one or more Kanji characters.
 | mystery | ミステリー | | Section 2 Unit 3 |
 | Nagoya | なごや | | Section 2 Unit 7 |
 | Nakayama | なかやま | <span class="kanji">中山</span> | Section 1 Unit 4 |
+| name | なまえ | <span class="kanji">名前</span> | Section 2 Unit 15 |
 | Naomi | なおみ | <span class="kanji">直美</span> | Section 1 Unit 2 |
 | nearby | ちかく | | Section 2 Unit 5 |
 | necktie | ネクタイ | | Section 1 Unit 8 |
@@ -394,8 +400,8 @@ one or more Kanji characters.
 | oh | あ | | Section 2 Unit 1 |
 | okay then | じゃあ | | Section 2 Unit 1 |
 | old | ふるい | <span class="kanji">古い</span> | Section 1 Unit 8 |
-| older brother | あに | | Section 1 Unit 6 |
-| older sister | あね | | Section 1 Unit 6 |
+| older brother | あに | <span class="kanji">兄</span> | Section 1 Unit 6 |
+| older sister | あね | <span class="kanji">姉</span> | Section 1 Unit 6 |
 | one | いち | <span class="kanji">一</span> | Section 1 Unit 5 |
 | one (birds, rabbits, etc) | いちわ | <span class="kanji">一羽</span> | Section 2 Unit 13 |
 | one (object, generic) | ひとつ | <span class="kanji">一つ</span> | Section 2 Unit 1 |
@@ -404,11 +410,12 @@ one or more Kanji characters.
 | one o'clock | いちじ | <span class="kanji">一時</span> | Section 1 Unit 5 |
 | one year old | いっさい | <span class="kanji">一歳</span> | Section 2 Unit 14 |
 | Osaka | おおさか | <span class="kanji">大阪</span> | Section 2 Unit 4 |
+| our | うちの | | Section 2 Unit 15 |
 | outlet | コンセント | | Section 2 Unit 2 |
 | over there | あそこ | | Section 2 Unit 2 |
 | p.m. | ごご | <span class="kanji">午後</span> | Section 2 Unit 9 |
 | painting | え | | Section 2 Unit 7 |
-| parents | りょうしん | | Section 2 Unit 5 |
+| parents | りょうしん | <span class="kanji">両親</span> | Section 2 Unit 5 |
 | park | こうえん | | Section 2 Unit 5 |
 | passport | パスポート | | Section 1 Unit 5 |
 | pasta | パスタ | | Section 2 Unit 2 |
@@ -490,6 +497,7 @@ one or more Kanji characters.
 | seven minutes | ななふん | <span class="kanji">七分</span> | Section 2 Unit 5 |
 | seven o'clock | しちじ | <span class="kanji">七時</span> | Section 1 Unit 7 |
 | seven years old | ななさい | <span class="kanji">七歳</span> | Section 2 Unit 14 |
+| she | かのじょ | <span class="kanji">彼女</span> | Section 2 Unit 15 |
 | Shibuya | しぶや | | Section 2 Unit 4 |
 | shoe | くつ | | Section 1 Unit 4 |
 | shopping | かいもの | <span class="kanji">買い物</span> | Section 2 Unit 6 |
@@ -497,8 +505,9 @@ one or more Kanji characters.
 | show | ショー | | Section 2 Unit 10 |
 | shower | シャワー | | Section 2 Unit 2 |
 | shrine | じんじゃ | | Section 2 Unit 4 |
-| siblings | きょうだい | | Section 2 Unit 6 |
+| siblings | きょうだい | <span class="kanji">兄弟</span> | Section 2 Unit 6 |
 | sightseeing | かんこう | | Section 2 Unit 7 |
+| sisters | しまい | <span class="kanji">姉妹</span> | Section 2 Unit 15 |
 | six | ろく | <span class="kanji">六</span> | Section 1 Unit 6 |
 | six (birds, rabbits) | ろくば | <span class="kanji">六羽</span> | Section 2 Unit 14 |
 | six (objects) | ろっこ | <span class="kanji">六個</span> | Section 2 Unit 14 |
@@ -574,11 +583,13 @@ one or more Kanji characters.
 | then | そして | | Section 2 Unit 6 |
 | there | そこ | | Section 1 Unit 3 |
 | these | これら | | Section 1 Unit 4 |
+| they | かれら | <span class="kanji">彼ら</span> | Section 2 Unit 15 |
 | thirty/half (time) | はん | <span class="kanji">半</span> | Section 1 Unit 5 |
 | this | これ | | Section 1 Unit 2 |
 | this | こちら | | Section 2 Unit 3 |
 | this | ここ | | Section 2 Unit 4 |
 | this evening | こんばん | | Section 2 Unit 5 |
+| this way | こちら | | Section 2 Unit 15 |
 | this week | こんしゅう | | Section 2 Unit 3 |
 | those | それら | | Section 1 Unit 4 |
 | though | でも | | Section 2 Unit 8 |
@@ -693,6 +704,7 @@ one or more Kanji characters.
 | warm | あたたかい | | Section 2 Unit 5 |
 | washing machine | せんたくき | | Section 2 Unit 3 |
 | water | みず | <span class="kanji">水</span> | Section 1 Unit 1 |
+| we | わたしたち | <span class="kanji">私たち</span> | Section 2 Unit 15 |
 | weather | てんき | | Section 2 Unit 5 |
 | Wednesday | すいようび | <span class="kanji">水曜日</span> | Section 2 Unit 8 |
 | weekend | しゅうまつ | | Section 2 Unit 1 |
@@ -709,7 +721,7 @@ one or more Kanji characters.
 | which | どの | | Section 2 Unit 8 |
 | which one | どれ | | Section 2 Unit 12 |
 | white | しろい | | Section 1 Unit 4 |
-| who | だれ | | Section 2 Unit 7 |
+| who | だれ | <span class="kanji">誰</span> | Section 2 Unit 7 |
 | wife | つま | | Section 1 Unit 6 |
 | window | まど | <span class="kanji">窓</span> | Section 2 Unit 13 |
 | winter | ふゆ | | Section 2 Unit 5 |
@@ -724,20 +736,24 @@ one or more Kanji characters.
 | yes | はい | | Section 1 Unit 2 |
 | yoga | ヨガ | | Section 2 Unit 1 |
 | Yokohama | よこはま | | Section 2 Unit 4 |
+| you | あなた | | Section 2 Unit 15 |
 | you know | よ | | Section 2 Unit 14 |
-| younger brother | おとうと | | Section 1 Unit 6 |
-| younger sister | いもうと | | Section 1 Unit 6 |
+| younger brother | おとうと | <span class="kanji">弟</span> | Section 1 Unit 6 |
+| younger sister | いもうと | <span class="kanji">妹</span> | Section 1 Unit 6 |
 | your | あなたの | | Section 2 Unit 8 |
+| your | ご | | Section 2 Unit 15 |
 | your family | ごかぞく | | Section 2 Unit 5 |
 | your kid | おこさん | | Section 2 Unit 6 |
-| your older brother | おにいさん | | Section 2 Unit 6 |
-| your older sister | おねえさん | | Section 2 Unit 6 |
+| your older brother | おにいさん | <span class="kanji">お兄さん</span> | Section 2 Unit 6 |
+| your older sister | おねえさん | <span class="kanji">お姉さん</span> | Section 2 Unit 6 |
 | your parents | ごりょうしん | | Section 2 Unit 5 |
 | your younger brother | おとうとさん | | Section 2 Unit 6 |
 | your younger sister | いもうとさん | | Section 2 Unit 6 |
 | zero | ゼロ | <span class="kanji">〇</span> | Section 2 Unit 5 |
 | zoo | どうぶつえん | | Section 2 Unit 7 |
 <!-- End of autogenerated section -->
+
+
 
 
 

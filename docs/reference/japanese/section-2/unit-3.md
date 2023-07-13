@@ -6,7 +6,7 @@
 | Andrew | アンドリュー | |
 | Daniel | ダニエル | |
 | Erika | エリカ | |
-| girlfriend | かのじょ | |
+| girlfriend | かのじょ | 彼女 |
 | boyfriend | かれし | |
 | Australia | オーストラリア | |
 | China | ちゅうごく | |

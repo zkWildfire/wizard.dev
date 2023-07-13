@@ -32,13 +32,13 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| family | かぞく | |
+| family | かぞく | 家族 |
 | mom | はは | 母 |
 | dad | ちち | 父 |
-| older brother | あに | |
-| older sister | あね | |
-| younger brother | おとうと | |
-| younger sister | いもうと | |
+| older brother | あに | 兄 |
+| older sister | あね | 姉 |
+| younger brother | おとうと | 弟 |
+| younger sister | いもうと | 妹 |
 | husband | おっと | |
 | wife | つま | |
 | son | むすこ | |

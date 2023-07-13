@@ -53,7 +53,7 @@
 | to take (a photo) | とります | |
 | to ride | のります | |
 | to wait for | まちます | |
-| who | だれ | |
+| who | だれ | 誰 |
 
 ### Examples
 | English | Japanese |

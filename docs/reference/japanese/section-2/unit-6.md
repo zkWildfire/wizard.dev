@@ -4,12 +4,12 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | kid(s) | こども | |
-| siblings | きょうだい | |
+| siblings | きょうだい | 兄弟 |
 | Seoul | ソウル | |
 | Taiwan | たいわん | |
 | your kid | おこさん | |
-| your older brother | おにいさん | |
-| your older sister | おねえさん | |
+| your older brother | おにいさん | お兄さん |
+| your older sister | おねえさん | お姉さん |
 | your younger brother | おとうとさん | |
 | your younger sister | いもうとさん | |
 
