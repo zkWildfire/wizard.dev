@@ -12,10 +12,48 @@ public static class MatrixStatics
 	/// @param matrix Matrix to convert the coordinates for.
 	/// @param x X coordinate of the value to convert.
 	/// @param y Y coordinate of the value to convert.
-	/// @return Memory address of the given coordinates.
+	/// @returns Memory address of the given coordinates.
 	public static int ToMemoryAddress(this IMatrix matrix, int x, int y)
 	{
 		return matrix.StartingAddress + (y * matrix.X) + x;
+	}
+
+	/// Converts the given matrix coordinate into a memory address.
+	/// @param x X coordinate of the value to convert.
+	/// @param y Y coordinate of the value to convert.
+	/// @param xSize Size of the matrix in the X dimension.
+	/// @param ySize Size of the matrix in the Y dimension.
+	/// @param startingOffset Offset to add to the first memory address.
+	/// @param columnMajor Whether the matrix is stored in column major order.
+	/// @returns The memory address of the given coordinates.
+	public static int ToMemoryAddress(
+		int x,
+		int y,
+		int xSize,
+		int ySize,
+		int startingOffset = 0,
+		bool columnMajor = false)
+	{
+		return columnMajor
+			? (x * ySize) + y + startingOffset
+			: (y * xSize) + x + startingOffset;
+	}
+
+	/// Converts the given memory address into a matrix coordinate.
+	/// @param memoryAddress Memory address to convert.
+	/// @param matrix Matrix to convert the address for.
+	/// @returns Matrix coordinate of the given memory address.
+	public static (int, int) ToMatrixCoordinate(
+		int memoryAddress,
+		int startingOffset,
+		int xSize,
+		int ySize,
+		bool columnMajor = false)
+	{
+		var offset = memoryAddress - startingOffset;
+		return columnMajor
+			? (offset / ySize, offset % ySize)
+			: (offset % xSize, offset / xSize);
 	}
 
 	/// Generates a sequence of actions that will swap the two matrix cells.
@@ -26,6 +64,7 @@ public static class MatrixStatics
 	/// @param x2 X coordinate of the second cell to swap.
 	/// @param y2 Y coordinate of the second cell to swap.
 	/// @param r2 Index of the register to use for the second cell.
+	/// @returns The sequence of actions that will swap the two matrix cells.
 	public static IEnumerable<IAction> Swap(
 		this IMatrix matrix,
 		int x1,
