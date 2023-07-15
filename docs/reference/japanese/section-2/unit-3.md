@@ -28,7 +28,7 @@
 | this | こちら | |
 | probably | たぶん | |
 | really? | ほんとうですか。 | |
-| to like | すき | |
+| to like | すき | 好き |
 | my name is | といいます | と言います |
 
 ### Examples

@@ -49,7 +49,7 @@
 | strawberry | いちご | |
 | stuff | もの | |
 | supermarket | スーパー | |
-| sweet | あまい | |
+| sweet | あまい | 甘い |
 | to love | だいすき | |
 | to use | つかいます | |
 | tofu | とうふ | |

@@ -14,7 +14,7 @@
 | blue | あおい | |
 | new | あたらしい | 新しい |
 | old | ふるい | 古い |
-| cheap | やすい | |
+| cheap | やすい | 安い |
 | cute | かわいい | |
 | expensive | たかい | 高い |
 | lovely | すてき | |
@@ -28,7 +28,7 @@
 | how much | いくら | |
 | hundred | ひゃく | 百 |
 | thousand | せん | 千 |
-| yen | えん | |
+| yen | えん | 円 |
 | thank you (formal) | ありがとうございます | |
 
 ### Examples

@@ -81,7 +81,7 @@ one or more Kanji characters.
 | Brazil | ブラジル | | Section 1 Unit 3 |
 | Brazilian | ブラジルじん | | Section 1 Unit 3 |
 | bread | パン | | Section 2 Unit 1 |
-| breakfast | あさごはん | | Section 1 Unit 7 |
+| breakfast | あさごはん | <span class="kanji">朝ご飯</span> | Section 1 Unit 7 |
 | Britain | イギリス | | Section 1 Unit 3 |
 | British | イギリスじん | | Section 1 Unit 3 |
 | British (thing) | イギリスの | | Section 2 Unit 3 |
@@ -103,7 +103,7 @@ one or more Kanji characters.
 | castle | しろ | | Section 2 Unit 7 |
 | cat | ねこ | <span class="kanji">猫</span> | Section 2 Unit 13 |
 | chair | いす | <span class="kanji">椅子</span> | Section 2 Unit 3 |
-| cheap | やすい | | Section 1 Unit 8 |
+| cheap | やすい | <span class="kanji">安い</span> | Section 1 Unit 8 |
 | cheerful | あかるい | | Section 1 Unit 4 |
 | cheesecake | チーズケーキ | | Section 2 Unit 8 |
 | child | こども | <span class="kanji">子供</span> | Section 2 Unit 15 |
@@ -125,6 +125,7 @@ one or more Kanji characters.
 | coffee | コーヒー | | Section 1 Unit 7 |
 | cola | コーラ | | Section 2 Unit 8 |
 | cold | さむい | | Section 2 Unit 5 |
+| cold | つめたい | <span class="kanji">冷たい</span> | Section 2 Unit 15 |
 | college student | だいがくせい | <span class="kanji">大学生</span> | Section 1 Unit 6 |
 | comedy | コメディ | | Section 2 Unit 3 |
 | computer | パソコン | | Section 2 Unit 11 |
@@ -152,7 +153,9 @@ one or more Kanji characters.
 | dictionary | じしょ | | Section 2 Unit 9 |
 | difference | ちがい | <span class="kanji">違い</span> | Section 2 Unit 14 |
 | difficult | むずかしい | | Section 2 Unit 10 |
-| dinner | ばんごはん | | Section 1 Unit 7 |
+| dining room | しょくどう | <span class="kanji">食堂</span> | Section 2 Unit 15 |
+| dinner | ばんごはん | <span class="kanji">晩ご飯</span> | Section 1 Unit 7 |
+| do not like | きらい | <span class="kanji">嫌い</span> | Section 2 Unit 15 |
 | do not live in | にはすんでいません | <span class="kanji">には住んでいません</span> | Section 2 Unit 14 |
 | doctor | いしゃ | | Section 1 Unit 1 |
 | documentary | ドキュメンタリー | | Section 2 Unit 10 |
@@ -271,7 +274,7 @@ one or more Kanji characters.
 | homework | しゅくだい | | Section 2 Unit 6 |
 | horror | ホラー | | Section 2 Unit 3 |
 | hospital | びょういん | | Section 2 Unit 5 |
-| hot | あつい | | Section 2 Unit 5 |
+| hot | あつい | <span class="kanji">熱い</span> | Section 2 Unit 5 |
 | hot spring | おんせん | | Section 2 Unit 5 |
 | hotel | ホテル | | Section 1 Unit 3 |
 | hour | じかん | <span class="kanji">時間</span> | Section 2 Unit 4 |
@@ -329,7 +332,7 @@ one or more Kanji characters.
 | long | ながい | | Section 2 Unit 4 |
 | looking forward to | たのしみです | | Section 2 Unit 7 |
 | lovely | すてき | | Section 1 Unit 8 |
-| lunch | ひるごはん | | Section 1 Unit 7 |
+| lunch | ひるごはん | <span class="kanji">昼ご飯</span> | Section 1 Unit 7 |
 | lunch break | ひるやすみ | <span class="kanji">ひる休み</span> | Section 2 Unit 11 |
 | magazine | ざっし | | Section 1 Unit 7 |
 | make sure to | ちゃんと | | Section 2 Unit 5 |
@@ -343,6 +346,7 @@ one or more Kanji characters.
 | meat | にく | <span class="kanji">肉</span> | Section 2 Unit 7 |
 | medicine | くすり | | Section 2 Unit 5 |
 | meeting | ミーティング | | Section 2 Unit 11 |
+| menu | メニュー | | Section 2 Unit 15 |
 | microwave | でんしレンジ | | Section 2 Unit 3 |
 | middle school student | ちゅうがくせい | <span class="kanji">中学生</span> | Section 2 Unit 14 |
 | middle school students | ちゅうがくせいたち | <span class="kanji">中学生たち</span> | Section 2 Unit 14 |
@@ -533,9 +537,11 @@ one or more Kanji characters.
 | soy sauce | しょうゆ | | Section 2 Unit 8 |
 | spacious | ひろい | | Section 2 Unit 3 |
 | Spanish (language) | スペインご | | Section 2 Unit 9 |
+| spicy | からい | | Section 2 Unit 15 |
 | sports | スポーツ | | Section 2 Unit 2 |
 | spring | はる | | Section 2 Unit 5 |
 | stairs | かいだん | | Section 2 Unit 2 |
+| steak | ステーキ | | Section 2 Unit 15 |
 | still | まだ | | Section 2 Unit 3 |
 | storage locker | コインロッカー | | Section 2 Unit 2 |
 | store | みせ | | Section 1 Unit 8 |
@@ -554,12 +560,13 @@ one or more Kanji characters.
 | sunny | はれ | | Section 2 Unit 5 |
 | supermarket | スーパー | | Section 2 Unit 8 |
 | sushi | すし | | Section 1 Unit 1 |
-| sweet | あまい | | Section 2 Unit 8 |
+| sweet | あまい | <span class="kanji">甘い</span> | Section 2 Unit 8 |
 | T-shirt | Tシャツ | | Section 1 Unit 8 |
 | table | テーブル | | Section 2 Unit 3 |
 | Taiwan | たいわん | | Section 2 Unit 6 |
 | tall | たかい | <span class="kanji">高い</span> | Section 2 Unit 4 |
 | Tanaka | たなか | <span class="kanji">田中</span> | Section 1 Unit 4 |
+| tastes bad | まずい | | Section 2 Unit 15 |
 | tasty | おいしい | | Section 1 Unit 2 |
 | taxi | タクシー | | Section 2 Unit 2 |
 | teacher | せんせい | <span class="kanji">先生</span> | Section 1 Unit 1 |
@@ -571,6 +578,7 @@ one or more Kanji characters.
 | ten (objects) | じゅっこ | <span class="kanji">十個</span> | Section 2 Unit 14 |
 | ten minutes | じゅっぷん | <span class="kanji">十分</span> | Section 2 Unit 5 |
 | ten o'clock | じゅうじ | <span class="kanji">十時</span> | Section 2 Unit 1 |
+| ten thousand | いちまん | <span class="kanji">一万</span> | Section 2 Unit 15 |
 | ten years old | じゅっさい | <span class="kanji">十歳</span> | Section 2 Unit 14 |
 | tennis | テニス | | Section 1 Unit 7 |
 | test | テスト | | Section 2 Unit 9 |
@@ -626,7 +634,7 @@ one or more Kanji characters.
 | to have | います | | Section 2 Unit 13 |
 | to help with | てつだいます | | Section 2 Unit 6 |
 | to know | ができます | | Section 2 Unit 7 |
-| to like | すき | | Section 2 Unit 3 |
+| to like | すき | <span class="kanji">好き</span> | Section 2 Unit 3 |
 | to listen | ききます | | Section 1 Unit 7 |
 | to live in | にすんでいます | <span class="kanji">に住んでいます</span> | Section 1 Unit 6 |
 | to love | だいすき | | Section 2 Unit 8 |
@@ -732,7 +740,7 @@ one or more Kanji characters.
 | yard | にわ | <span class="kanji">庭</span> | Section 2 Unit 13 |
 | years old | さい | <span class="kanji">歳</span> | Section 1 Unit 6 |
 | yellow | きいろい | | Section 2 Unit 10 |
-| yen | えん | | Section 1 Unit 8 |
+| yen | えん | <span class="kanji">円</span> | Section 1 Unit 8 |
 | yes | はい | | Section 1 Unit 2 |
 | yoga | ヨガ | | Section 2 Unit 1 |
 | Yokohama | よこはま | | Section 2 Unit 4 |
@@ -752,6 +760,7 @@ one or more Kanji characters.
 | zero | ゼロ | <span class="kanji">〇</span> | Section 2 Unit 5 |
 | zoo | どうぶつえん | | Section 2 Unit 7 |
 <!-- End of autogenerated section -->
+
 
 
 

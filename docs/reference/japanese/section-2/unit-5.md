@@ -51,7 +51,7 @@
 | snowy | ゆき | |
 | cloudy | くもり | |
 | weather | てんき | |
-| hot | あつい | |
+| hot | あつい | 熱い |
 | warm | あたたかい | |
 | cold | さむい | |
 | days | ひ | 日 |

@@ -49,9 +49,9 @@
 | every day | まいにち | 毎日 |
 | every morning | まいあさ | 毎朝 |
 | every night | まいばん | 毎晩 |
-| breakfast | あさごはん | |
-| lunch | ひるごはん | |
-| dinner | ばんごはん | |
+| breakfast | あさごはん | 朝ご飯 |
+| lunch | ひるごはん | 昼ご飯 |
+| dinner | ばんごはん | 晩ご飯 |
 | eight | はち | 八 |
 | nine | きゅう | 九 |
 | ten | じゅう | 十 |

@@ -31,6 +31,14 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| cold | つめたい | 冷たい |
+| do not like | きらい | 嫌い |
+| dining room | しょくどう | 食堂 |
+| menu | メニュー | |
+| spicy | からい | |
+| steak | ステーキ | |
+| tastes bad | まずい | |
+| ten thousand | いちまん | 一万 |
 
 ### Examples
 | English | Japanese |
