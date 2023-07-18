@@ -49,7 +49,7 @@
 | to help with | てつだいます | |
 | to return | かえります | |
 | to take a | にはいります | |
-| work | しごと | |
+| work | しごと | 仕事 |
 
 ### Examples
 | English | Japanese |

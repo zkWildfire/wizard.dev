@@ -61,7 +61,7 @@
 | winter | ふゆ | |
 | July | しちがつ | 七月 |
 | September | くがつ | 九月 |
-| today | きょう | |
+| today | きょう | 今日 |
 | this evening | こんばん | |
 | summer break | なつやすみ | |
 | beach | うみ | |

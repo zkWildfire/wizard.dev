@@ -3,6 +3,9 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| job | しごと | 仕事 |
+| party | パーティー | |
+| to work | はたらきます | 働きます |
 
 ### Examples
 | English | Japanese |
