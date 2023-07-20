@@ -45,7 +45,7 @@
 | piano | ピアノ | |
 | printer | プリンター | |
 | (blog) post | きじ | |
-| study | べんきょう | |
+| study | べんきょう | 勉強 |
 | to dance | おどります | |
 | to play (an instrument) | ひきます | |
 | to sing | うたいます | |

@@ -5,7 +5,10 @@
 |:-------:|:----:|:-----:|
 | job | しごと | 仕事 |
 | party | パーティー | |
+| the day after tomorrow | あさって | 明後日 |
+| time | じかん | 時間 |
 | to work | はたらきます | 働きます |
+| yesterday | きのう | 昨日 |
 
 ### Examples
 | English | Japanese |

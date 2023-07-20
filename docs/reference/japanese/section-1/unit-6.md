@@ -45,7 +45,7 @@
 | daughter | むすめ | |
 | noisy | うるさい | |
 | smart | あたまがい | |
-| busy | いそがしい | |
+| busy | いそがしい | 忙しい |
 | famous | ゆうめい | |
 | fashionable | おしゃれ | |
 | stylish | おしゃれ | |

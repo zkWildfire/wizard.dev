@@ -23,7 +23,7 @@
 | to read | よみます | 読みます |
 | to listen | ききます | |
 | to play | します | |
-| friend | ともだち | |
+| friend | ともだち | 友達 |
 | with | と | |
 | *particle* | を | |
 
