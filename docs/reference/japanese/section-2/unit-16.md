@@ -24,6 +24,21 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| a little bit | ちょっと | |
+| below | した | 下 |
+| beside | となり | 隣 |
+| between | あいだ | 間 |
+| bottom | した | 下 |
+| in front of | まえ | 前 |
+| inside | なか | 中 |
+| left | ひだり | 左 |
+| next door | となり | 隣 |
+| next to | よこ | 横 |
+| on | うえ | 上 |
+| outside | そと | 外 |
+| right | みぎ | 右 |
+| up | うえ | 上 |
+| behind | うしろ | 後ろ |
 
 ### Examples
 | English | Japanese |
