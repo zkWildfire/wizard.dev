@@ -50,7 +50,7 @@
 | temple | おてら | |
 | postcard | ポストカード | |
 | snack | おかし | |
-| souvenir | おみやげ | |
+| souvenir | おみやげ | お土産 |
 | pretty | きれい | |
 | tall | たかい | 高い |
 | what kind of | どんな | |

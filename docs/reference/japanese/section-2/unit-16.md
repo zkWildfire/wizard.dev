@@ -3,11 +3,14 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| alone | ひとりで | 一人で |
 | job | しごと | 仕事 |
+| our | うちの | |
 | party | パーティー | |
 | the day after tomorrow | あさって | 明後日 |
 | time | じかん | 時間 |
 | to work | はたらきます | 働きます |
+| travel | りょこう | 旅行 |
 | yesterday | きのう | 昨日 |
 
 ### Examples
@@ -39,6 +42,17 @@
 | right | みぎ | 右 |
 | up | うえ | 上 |
 | behind | うしろ | 後ろ |
+| shelf | たな | 棚 |
+| one (book) | いっさつ | 一冊 |
+| two (books) | にさつ | 二冊 |
+| three (books) | さんさつ | 三冊 |
+| four (books) | よんさつ | 四冊 |
+| five (books) | ごさつ | 五冊 |
+| six (books) | ろくさつ | 六冊 |
+| seven (books) | ななさつ | 七冊 |
+| eight (books) | はっさつ | 八冊 |
+| nine (books) | きゅうさつ | 九冊 |
+| ten (books) | じゅっさつ | 十冊 |
 
 ### Examples
 | English | Japanese |

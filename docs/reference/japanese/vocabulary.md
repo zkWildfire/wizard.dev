@@ -36,6 +36,7 @@ one or more Kanji characters.
 | album | アルバム | | Section 2 Unit 10 |
 | all sorts of (things) | いろいろ | | Section 2 Unit 6 |
 | allergy | アレルギー | | Section 2 Unit 5 |
+| alone | ひとりで | <span class="kanji">一人で</span> | Section 2 Unit 16 |
 | alright/okay | だいじょうぶ | | Section 2 Unit 5 |
 | always | いつも | | Section 2 Unit 2 |
 | ambulance | きゅうきゅうしゃ | | Section 2 Unit 5 |
@@ -78,7 +79,7 @@ one or more Kanji characters.
 | blog | ブログ | | Section 2 Unit 11 |
 | blue | あおい | | Section 1 Unit 8 |
 | book | ほん | <span class="kanji">本</span> | Section 1 Unit 7 |
-| bookshelf | ほんだな | | Section 2 Unit 3 |
+| bookshelf | ほんだな | <span class="kanji">本棚</span> | Section 2 Unit 3 |
 | bookstore | ほんや | | Section 2 Unit 10 |
 | boring | つまらない | | Section 2 Unit 10 |
 | bottom | した | <span class="kanji">下</span> | Section 2 Unit 16 |
@@ -100,7 +101,7 @@ one or more Kanji characters.
 | by myself | ひとりで | | Section 2 Unit 1 |
 | bye | じゃあね | | Section 1 Unit 2 |
 | cafe | カフェ | | Section 2 Unit 2 |
-| cafeteria | しょくどう | | Section 2 Unit 11 |
+| cafeteria | しょくどう | <span class="kanji">食堂</span> | Section 2 Unit 11 |
 | cake | ケーキ | | Section 2 Unit 1 |
 | camera | カメラ | | Section 2 Unit 9 |
 | Canada | カナダ | | Section 1 Unit 3 |
@@ -178,6 +179,7 @@ one or more Kanji characters.
 | eggs | たまご | <span class="kanji">卵</span> | Section 2 Unit 8 |
 | eight | はち | <span class="kanji">八</span> | Section 1 Unit 7 |
 | eight (birds, rabbits) | はちば | <span class="kanji">八羽</span> | Section 2 Unit 14 |
+| eight (books) | はっさつ | <span class="kanji">八冊</span> | Section 2 Unit 16 |
 | eight (objects) | はっこ | <span class="kanji">八個</span> | Section 2 Unit 14 |
 | eight (objects, generic) | やっつ | <span class="kanji">八つ</span> | Section 2 Unit 14 |
 | eight minutes | はっぷん | <span class="kanji">八分</span> | Section 2 Unit 5 |
@@ -222,6 +224,7 @@ one or more Kanji characters.
 | fish | さかな | <span class="kanji">魚</span> | Section 2 Unit 8 |
 | five | ご | <span class="kanji">五</span> | Section 1 Unit 6 |
 | five (birds, rabbits) | ごば | <span class="kanji">五羽</span> | Section 2 Unit 14 |
+| five (books) | ごさつ | <span class="kanji">五冊</span> | Section 2 Unit 16 |
 | five (objects) | ごこ | <span class="kanji">五個</span> | Section 2 Unit 14 |
 | five (objects, generic) | いつつ | <span class="kanji">五つ</span> | Section 2 Unit 9 |
 | five minutes | ごふん | <span class="kanji">五分</span> | Section 2 Unit 5 |
@@ -232,6 +235,7 @@ one or more Kanji characters.
 | foreigner | がいこくじん | <span class="kanji">外国人</span> | Section 2 Unit 14 |
 | four | よん | <span class="kanji">四</span> | Section 1 Unit 6 |
 | four (birds, rabbits) | よんば | <span class="kanji">四羽</span> | Section 2 Unit 14 |
+| four (books) | よんさつ | <span class="kanji">四冊</span> | Section 2 Unit 16 |
 | four (objects) | よんこ | <span class="kanji">四個</span> | Section 2 Unit 14 |
 | four (objects, generic) | よっつ | <span class="kanji">四つ</span> | Section 2 Unit 1 |
 | four minutes | よんぷん | <span class="kanji">四分</span> | Section 2 Unit 5 |
@@ -327,7 +331,6 @@ one or more Kanji characters.
 | kitchen | キッチン | | Section 2 Unit 3 |
 | kitchen | だいどころ | <span class="kanji">台所</span> | Section 2 Unit 13 |
 | kitten | こねこ | <span class="kanji">子猫</span> | Section 2 Unit 13 |
-| Korea | かんこく | | Section 2 Unit 3 |
 | Kyoto | きょうと | <span class="kanji">京都</span> | Section 1 Unit 6 |
 | large | Lサイズ | | Section 2 Unit 10 |
 | last | さいご | | Section 2 Unit 11 |
@@ -398,6 +401,7 @@ one or more Kanji characters.
 | nice to meet you | はじめまして | | Section 1 Unit 6 |
 | nine | きゅう | <span class="kanji">九</span> | Section 1 Unit 7 |
 | nine (birds, rabbits) | きゅうば | <span class="kanji">九羽</span> | Section 2 Unit 14 |
+| nine (books) | きゅうさつ | <span class="kanji">九冊</span> | Section 2 Unit 16 |
 | nine (objects) | きゅうこ | <span class="kanji">九個</span> | Section 2 Unit 14 |
 | nine (objects, generic) | ここのつ | <span class="kanji">九つ</span> | Section 2 Unit 14 |
 | nine minutes | きゅうふん | <span class="kanji">九分</span> | Section 2 Unit 5 |
@@ -421,6 +425,7 @@ one or more Kanji characters.
 | on | うえ | <span class="kanji">上</span> | Section 2 Unit 16 |
 | one | いち | <span class="kanji">一</span> | Section 1 Unit 5 |
 | one (birds, rabbits, etc) | いちわ | <span class="kanji">一羽</span> | Section 2 Unit 13 |
+| one (book) | いっさつ | <span class="kanji">一冊</span> | Section 2 Unit 16 |
 | one (object, generic) | ひとつ | <span class="kanji">一つ</span> | Section 2 Unit 1 |
 | one (objects) | いっこ | <span class="kanji">一個</span> | Section 2 Unit 14 |
 | one minute | いっぷん | <span class="kanji">一分</span> | Section 2 Unit 5 |
@@ -428,6 +433,7 @@ one or more Kanji characters.
 | one year old | いっさい | <span class="kanji">一歳</span> | Section 2 Unit 14 |
 | Osaka | おおさか | <span class="kanji">大阪</span> | Section 2 Unit 4 |
 | our | うちの | | Section 2 Unit 15 |
+| our | うちの | | Section 2 Unit 16 |
 | outlet | コンセント | | Section 2 Unit 2 |
 | outside | そと | <span class="kanji">外</span> | Section 2 Unit 16 |
 | over there | あそこ | | Section 2 Unit 2 |
@@ -512,12 +518,14 @@ one or more Kanji characters.
 | September | くがつ | <span class="kanji">九月</span> | Section 2 Unit 5 |
 | seven | なな | <span class="kanji">七</span> | Section 1 Unit 6 |
 | seven (birds, rabbits) | ななば | <span class="kanji">七羽</span> | Section 2 Unit 14 |
+| seven (books) | ななさつ | <span class="kanji">七冊</span> | Section 2 Unit 16 |
 | seven (objects) | ななこ | <span class="kanji">七個</span> | Section 2 Unit 14 |
 | seven (objects, generic) | ななつ | <span class="kanji">七つ</span> | Section 2 Unit 9 |
 | seven minutes | ななふん | <span class="kanji">七分</span> | Section 2 Unit 5 |
 | seven o'clock | しちじ | <span class="kanji">七時</span> | Section 1 Unit 7 |
 | seven years old | ななさい | <span class="kanji">七歳</span> | Section 2 Unit 14 |
 | she | かのじょ | <span class="kanji">彼女</span> | Section 2 Unit 15 |
+| shelf | たな | <span class="kanji">棚</span> | Section 2 Unit 16 |
 | Shibuya | しぶや | | Section 2 Unit 4 |
 | shoe | くつ | | Section 1 Unit 4 |
 | shopping | かいもの | <span class="kanji">買い物</span> | Section 2 Unit 6 |
@@ -530,6 +538,7 @@ one or more Kanji characters.
 | sisters | しまい | <span class="kanji">姉妹</span> | Section 2 Unit 15 |
 | six | ろく | <span class="kanji">六</span> | Section 1 Unit 6 |
 | six (birds, rabbits) | ろくば | <span class="kanji">六羽</span> | Section 2 Unit 14 |
+| six (books) | ろくさつ | <span class="kanji">六冊</span> | Section 2 Unit 16 |
 | six (objects) | ろっこ | <span class="kanji">六個</span> | Section 2 Unit 14 |
 | six (objects, generic) | むっつ | <span class="kanji">六つ</span> | Section 2 Unit 9 |
 | six minutes | ろっぷん | <span class="kanji">六分</span> | Section 2 Unit 5 |
@@ -546,10 +555,11 @@ one or more Kanji characters.
 | soba | そば | | Section 2 Unit 1 |
 | soccer | サッカー | | Section 1 Unit 7 |
 | sofa | ソファー | | Section 2 Unit 13 |
-| sometimes | ときどき | | Section 1 Unit 7 |
+| sometimes | ときどき | <span class="kanji">時々</span> | Section 1 Unit 7 |
 | son | むすこ | | Section 1 Unit 6 |
 | soon | もうすぐ | | Section 2 Unit 4 |
-| souvenir | おみやげ | | Section 2 Unit 4 |
+| South Korea | かんこく | <span class="kanji">韓国</span> | Section 2 Unit 3 |
+| souvenir | おみやげ | <span class="kanji">お土産</span> | Section 2 Unit 4 |
 | soy sauce | しょうゆ | | Section 2 Unit 8 |
 | spacious | ひろい | | Section 2 Unit 3 |
 | Spanish (language) | スペインご | | Section 2 Unit 9 |
@@ -579,7 +589,7 @@ one or more Kanji characters.
 | sweet | あまい | <span class="kanji">甘い</span> | Section 2 Unit 8 |
 | T-shirt | Tシャツ | | Section 1 Unit 8 |
 | table | テーブル | | Section 2 Unit 3 |
-| Taiwan | たいわん | | Section 2 Unit 6 |
+| Taiwan | たいわん | <span class="kanji">台湾</span> | Section 2 Unit 6 |
 | tall | たかい | <span class="kanji">高い</span> | Section 2 Unit 4 |
 | Tanaka | たなか | <span class="kanji">田中</span> | Section 1 Unit 4 |
 | tastes bad | まずい | | Section 2 Unit 15 |
@@ -591,6 +601,7 @@ one or more Kanji characters.
 | tempura | てんぷら | | Section 2 Unit 1 |
 | ten | じゅう | <span class="kanji">十</span> | Section 1 Unit 7 |
 | ten (birds, rabbits) | じゅうば | <span class="kanji">十羽</span> | Section 2 Unit 14 |
+| ten (books) | じゅっさつ | <span class="kanji">十冊</span> | Section 2 Unit 16 |
 | ten (objects) | じゅっこ | <span class="kanji">十個</span> | Section 2 Unit 14 |
 | ten minutes | じゅっぷん | <span class="kanji">十分</span> | Section 2 Unit 5 |
 | ten o'clock | じゅうじ | <span class="kanji">十時</span> | Section 2 Unit 1 |
@@ -621,6 +632,7 @@ one or more Kanji characters.
 | thousand | せん | <span class="kanji">千</span> | Section 1 Unit 8 |
 | three | さん | <span class="kanji">三</span> | Section 1 Unit 5 |
 | three (birds, rabbits, etc) | さんば | <span class="kanji">三羽</span> | Section 2 Unit 13 |
+| three (books) | さんさつ | <span class="kanji">三冊</span> | Section 2 Unit 16 |
 | three (objects) | さんこ | <span class="kanji">三個</span> | Section 2 Unit 14 |
 | three (objects, generic) | みっつ | <span class="kanji">三つ</span> | Section 2 Unit 1 |
 | three minutes | さんぷん | <span class="kanji">三分</span> | Section 2 Unit 5 |
@@ -700,12 +712,14 @@ one or more Kanji characters.
 | transfer | のりかえ | | Section 2 Unit 2 |
 | translator | ほんやくか | | Section 2 Unit 9 |
 | trash can | ゴミばこ | | Section 2 Unit 2 |
-| trip | りょこう | | Section 2 Unit 7 |
+| travel | りょこう | <span class="kanji">旅行</span> | Section 2 Unit 16 |
+| trip | りょこう | <span class="kanji">旅行</span> | Section 2 Unit 7 |
 | Tuesday | かようび | <span class="kanji">火曜日</span> | Section 2 Unit 8 |
 | twelve | じゅうに | <span class="kanji">十二</span> | Section 1 Unit 7 |
 | twelve o'clock | じゅうにじ | <span class="kanji">十二時</span> | Section 2 Unit 1 |
 | two | に | <span class="kanji">二</span> | Section 1 Unit 5 |
 | two (birds, rabbits, etc) | にわ | <span class="kanji">二羽</span> | Section 2 Unit 13 |
+| two (books) | にさつ | <span class="kanji">二冊</span> | Section 2 Unit 16 |
 | two (objects) | にこ | <span class="kanji">二個</span> | Section 2 Unit 14 |
 | two (objects, generic) | ふたつ | <span class="kanji">二つ</span> | Section 2 Unit 1 |
 | two minutes | にふん | <span class="kanji">二分</span> | Section 2 Unit 5 |
@@ -782,6 +796,8 @@ one or more Kanji characters.
 | zero | ゼロ | <span class="kanji">〇</span> | Section 2 Unit 5 |
 | zoo | どうぶつえん | | Section 2 Unit 7 |
 <!-- End of autogenerated section -->
+
+
 
 
 

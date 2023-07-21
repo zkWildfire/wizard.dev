@@ -3,7 +3,7 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| cafeteria | しょくどう | |
+| cafeteria | しょくどう | 食堂 |
 | computer | パソコン | |
 | french fries | フライドポテト | |
 | front desk | うけつけ | |

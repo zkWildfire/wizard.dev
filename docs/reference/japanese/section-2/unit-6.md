@@ -6,7 +6,7 @@
 | kid(s) | こども | |
 | siblings | きょうだい | 兄弟 |
 | Seoul | ソウル | |
-| Taiwan | たいわん | |
+| Taiwan | たいわん | 台湾 |
 | your kid | おこさん | |
 | your older brother | おにいさん | お兄さん |
 | your older sister | おねえさん | お姉さん |

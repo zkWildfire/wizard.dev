@@ -45,7 +45,7 @@
 | pizza | ピザ | |
 | to eat | たべます | 食べます |
 | to drink | のみます | 飲みます |
-| sometimes | ときどき | |
+| sometimes | ときどき | 時々 |
 | every day | まいにち | 毎日 |
 | every morning | まいあさ | 毎朝 |
 | every night | まいばん | 毎晩 |

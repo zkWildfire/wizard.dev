@@ -10,7 +10,7 @@
 | boyfriend | かれし | |
 | Australia | オーストラリア | |
 | China | ちゅうごく | |
-| Korea | かんこく | |
+| South Korea | かんこく | 韓国 |
 | Malaysia | マレーシア | |
 | Vietnam | ベトナム | |
 | American (thing) | アメリカの | |
@@ -51,7 +51,7 @@
 | living room | リビング | |
 | air conditioner | エアコン | |
 | bed | ベッド | |
-| bookshelf | ほんだな | |
+| bookshelf | ほんだな | 本棚 |
 | chair | いす | 椅子 |
 | desk | つくえ | 机 |
 | futon | ふとん | |
