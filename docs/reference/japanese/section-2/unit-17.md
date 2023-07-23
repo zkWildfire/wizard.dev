@@ -3,6 +3,9 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| dirty | きたない | 汚い |
+| low | ひくい | 低い |
+| mirror | かがみ | 鏡 |
 
 ### Examples
 | English | Japanese |

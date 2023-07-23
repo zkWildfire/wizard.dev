@@ -7,7 +7,7 @@
 | how long | どの | |
 | next | つぎ | |
 | fast | はやい | |
-| long | ながい | |
+| long | ながい | 長い |
 | soon | もうすぐ | |
 | minute | ふん | 分 |
 | hour | じかん | 時間 |

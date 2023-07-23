@@ -162,6 +162,7 @@ one or more Kanji characters.
 | difficult | むずかしい | | Section 2 Unit 10 |
 | dining room | しょくどう | <span class="kanji">食堂</span> | Section 2 Unit 15 |
 | dinner | ばんごはん | <span class="kanji">晩ご飯</span> | Section 1 Unit 7 |
+| dirty | きたない | <span class="kanji">汚い</span> | Section 2 Unit 17 |
 | do not like | きらい | <span class="kanji">嫌い</span> | Section 2 Unit 15 |
 | do not live in | にはすんでいません | <span class="kanji">には住んでいません</span> | Section 2 Unit 14 |
 | doctor | いしゃ | | Section 1 Unit 1 |
@@ -253,7 +254,7 @@ one or more Kanji characters.
 | front desk | うけつけ | | Section 2 Unit 11 |
 | fun | たのしい | | Section 2 Unit 6 |
 | funny | おもしろい | | Section 1 Unit 4 |
-| futon | ふとん | | Section 2 Unit 3 |
+| futon | ふとん | <span class="kanji">布団</span> | Section 2 Unit 3 |
 | game | ゲーム | | Section 1 Unit 7 |
 | game | しあい | | Section 2 Unit 11 |
 | garden | にわ | <span class="kanji">庭</span> | Section 2 Unit 7 |
@@ -342,9 +343,10 @@ one or more Kanji characters.
 | lively | にぎやか | | Section 1 Unit 6 |
 | living room | リビング | | Section 2 Unit 3 |
 | lobby | ロビー | | Section 2 Unit 7 |
-| long | ながい | | Section 2 Unit 4 |
+| long | ながい | <span class="kanji">長い</span> | Section 2 Unit 4 |
 | looking forward to | たのしみです | | Section 2 Unit 7 |
 | lovely | すてき | | Section 1 Unit 8 |
+| low | ひくい | <span class="kanji">低い</span> | Section 2 Unit 17 |
 | lunch | ひるごはん | <span class="kanji">昼ご飯</span> | Section 1 Unit 7 |
 | lunch break | ひるやすみ | <span class="kanji">ひる休み</span> | Section 2 Unit 11 |
 | magazine | ざっし | | Section 1 Unit 7 |
@@ -367,6 +369,7 @@ one or more Kanji characters.
 | milk | ぎゅうにゅう | <span class="kanji">牛乳</span> | Section 2 Unit 12 |
 | mint chocolate chip | チョコミント | | Section 2 Unit 10 |
 | minute | ふん | <span class="kanji">分</span> | Section 2 Unit 4 |
+| mirror | かがみ | <span class="kanji">鏡</span> | Section 2 Unit 17 |
 | miso pork cutlets | みそかつ | | Section 2 Unit 7 |
 | miso soup | みそしる | | Section 2 Unit 1 |
 | mom | はは | <span class="kanji">母</span> | Section 1 Unit 6 |
@@ -489,7 +492,7 @@ one or more Kanji characters.
 | raw | なま | | Section 2 Unit 8 |
 | really? | ほんとうですか。 | | Section 2 Unit 3 |
 | red | あかい | | Section 1 Unit 4 |
-| refrigerator | れいぞうこ | | Section 2 Unit 3 |
+| refrigerator | れいぞうこ | <span class="kanji">冷蔵庫</span> | Section 2 Unit 3 |
 | restaurant | レストラン | | Section 2 Unit 1 |
 | restroom | おてあらい | | Section 2 Unit 2 |
 | rice | ごはん | <span class="kanji">ご飯</span> | Section 1 Unit 1 |

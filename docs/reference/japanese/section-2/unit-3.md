@@ -54,9 +54,9 @@
 | bookshelf | ほんだな | 本棚 |
 | chair | いす | 椅子 |
 | desk | つくえ | 机 |
-| futon | ふとん | |
+| futon | ふとん | 布団 |
 | microwave | でんしレンジ | |
-| refrigerator | れいぞうこ | |
+| refrigerator | れいぞうこ | 冷蔵庫 |
 | table | テーブル | |
 | washing machine | せんたくき | |
 | vacuum cleaner | そうじき | |
