@@ -142,6 +142,7 @@ one or more Kanji characters.
 | cookie | クッキー | | Section 2 Unit 8 |
 | cooking | りょうり | | Section 2 Unit 6 |
 | cool | かっこいい | | Section 1 Unit 1 |
+| corner | かたすみ | <span class="kanji">片隅</span> | Section 2 Unit 17 |
 | coworker(s) | どうりょう | | Section 2 Unit 9 |
 | cramped | せまい | | Section 2 Unit 3 |
 | cupcake | カップケーキ | | Section 2 Unit 8 |

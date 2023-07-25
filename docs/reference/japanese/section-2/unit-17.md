@@ -3,6 +3,7 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| corner | かたすみ | 片隅 |
 | dirty | きたない | 汚い |
 | low | ひくい | 低い |
 | mirror | かがみ | 鏡 |
