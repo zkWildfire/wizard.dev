@@ -31,7 +31,7 @@
 | after | あと | |
 | bath | おふろ | |
 | chores | かじ | |
-| cleaning | そうじ | |
+| cleaning | そうじ | 掃除 |
 | cooking | りょうり | |
 | days off | やすみのひ | 休みの日 |
 | easy | やさしい | |
@@ -40,7 +40,7 @@
 | gardening | ガーデニング | |
 | home | うち | |
 | homework | しゅくだい | |
-| laundry | せんたく | |
+| laundry | せんたく | 洗濯 |
 | school | がっこう | 学校 |
 | shopping | かいもの | 買い物 |
 | stretches | ストレッチ | |

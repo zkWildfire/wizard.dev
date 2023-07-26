@@ -30,6 +30,7 @@ one or more Kanji characters.
 | admission fee | にゅうじょうりょう | | Section 2 Unit 10 |
 | adults | おとな | | Section 2 Unit 10 |
 | after | あと | | Section 2 Unit 6 |
+| after that | それから | | Section 2 Unit 17 |
 | air conditioner | エアコン | | Section 2 Unit 3 |
 | airport | くうこう | | Section 1 Unit 5 |
 | Akihabara | あきはばら | | Section 2 Unit 4 |
@@ -122,7 +123,7 @@ one or more Kanji characters.
 | city | とし | | Section 1 Unit 6 |
 | class(es) | じゅぎょう | | Section 2 Unit 9 |
 | classroom | きょうしつ | | Section 2 Unit 9 |
-| cleaning | そうじ | | Section 2 Unit 6 |
+| cleaning | そうじ | <span class="kanji">掃除</span> | Section 2 Unit 6 |
 | close | ちかい | | Section 2 Unit 2 |
 | clothes | ふく | | Section 1 Unit 8 |
 | cloudy | くもり | | Section 2 Unit 5 |
@@ -152,6 +153,7 @@ one or more Kanji characters.
 | dangerous | あぶない | | Section 2 Unit 5 |
 | Daniel | ダニエル | | Section 2 Unit 3 |
 | daughter | むすめ | | Section 1 Unit 6 |
+| day before yesterday | おととい | <span class="kanji">一昨日</span> | Section 2 Unit 17 |
 | days | ひ | <span class="kanji">日</span> | Section 2 Unit 5 |
 | days off | やすみのひ | <span class="kanji">休みの日</span> | Section 2 Unit 6 |
 | deadline | しめきり | | Section 2 Unit 9 |
@@ -291,6 +293,7 @@ one or more Kanji characters.
 | hotel | ホテル | | Section 1 Unit 3 |
 | hour | じかん | <span class="kanji">時間</span> | Section 2 Unit 4 |
 | house | いえ | <span class="kanji">家</span> | Section 2 Unit 3 |
+| housework | いえのそうじ | <span class="kanji">家の掃除</span> | Section 2 Unit 17 |
 | how is | どう | | Section 2 Unit 1 |
 | how long | どの | | Section 2 Unit 4 |
 | how many (objects) | いくつ | | Section 2 Unit 14 |
@@ -336,7 +339,7 @@ one or more Kanji characters.
 | Kyoto | きょうと | <span class="kanji">京都</span> | Section 1 Unit 6 |
 | large | Lサイズ | | Section 2 Unit 10 |
 | last | さいご | | Section 2 Unit 11 |
-| laundry | せんたく | | Section 2 Unit 6 |
+| laundry | せんたく | <span class="kanji">洗濯</span> | Section 2 Unit 6 |
 | lawyer | べんごし | | Section 1 Unit 1 |
 | left | ひだり | <span class="kanji">左</span> | Section 2 Unit 16 |
 | library | としょかん | | Section 2 Unit 9 |
@@ -754,7 +757,8 @@ one or more Kanji characters.
 | we | わたしたち | <span class="kanji">私たち</span> | Section 2 Unit 15 |
 | weather | てんき | | Section 2 Unit 5 |
 | Wednesday | すいようび | <span class="kanji">水曜日</span> | Section 2 Unit 8 |
-| weekend | しゅうまつ | | Section 2 Unit 1 |
+| weekdays | へいじつ | <span class="kanji">平日</span> | Section 2 Unit 17 |
+| weekend | しゅうまつ | <span class="kanji">週末</span> | Section 2 Unit 1 |
 | well | では | | Section 2 Unit 12 |
 | well-lit | あかるい | | Section 2 Unit 3 |
 | what day | なんようび | <span class="kanji">何曜日</span> | Section 2 Unit 9 |

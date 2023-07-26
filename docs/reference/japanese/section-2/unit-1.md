@@ -56,7 +56,7 @@
 | by myself | ひとりで | |
 | Saturday | どようび | 土曜日 |
 | Sunday | にちようび | 日曜日 |
-| weekend | しゅうまつ | |
+| weekend | しゅうまつ | 週末 |
 | every week | まいしゅう | |
 | four o'clock | よじ | 四時 |
 | five o'clock | ごじ | 五時 |

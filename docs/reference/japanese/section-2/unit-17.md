@@ -20,6 +20,10 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| after that | それから | |
+| day before yesterday | おととい | 一昨日 |
+| housework | いえのそうじ | 家の掃除 |
+| weekdays | へいじつ | 平日 |
 
 ### Examples
 | English | Japanese |
