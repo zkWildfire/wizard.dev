@@ -19,7 +19,7 @@
 | your family | ごかぞく | |
 | your parents | ごりょうしん | |
 | to rest | やすみます | 休みます |
-| to sit (down) | すわります | |
+| to sit (down) | すわります | 座ります |
 | zero | ゼロ | 〇 |
 | one minute | いっぷん | 一分 |
 | two minutes | にふん | 二分 |

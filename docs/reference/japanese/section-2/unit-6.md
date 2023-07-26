@@ -47,7 +47,7 @@
 | then | そして | |
 | tough | たいへん | |
 | to help with | てつだいます | |
-| to return | かえります | |
+| to return | かえります | 帰ります |
 | to take a | にはいります | |
 | work | しごと | 仕事 |
 

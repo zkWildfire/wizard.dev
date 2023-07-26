@@ -189,6 +189,7 @@ one or more Kanji characters.
 | eight minutes | はっぷん | <span class="kanji">八分</span> | Section 2 Unit 5 |
 | eight o'clock | はちじ | <span class="kanji">八時</span> | Section 2 Unit 1 |
 | eight years old | はっさい | <span class="kanji">八歳</span> | Section 2 Unit 14 |
+| electricity | でんき | <span class="kanji">電気</span> | Section 2 Unit 17 |
 | elementary school (grade) | しょうがく | <span class="kanji">小学</span> | Section 2 Unit 14 |
 | elementary school student | しょうがくせい | <span class="kanji">小学生</span> | Section 2 Unit 14 |
 | elementary school students | しょうがくせいたち | <span class="kanji">小学生たち</span> | Section 2 Unit 14 |
@@ -264,6 +265,7 @@ one or more Kanji characters.
 | gardening | ガーデニング | | Section 2 Unit 6 |
 | get up | おきます | | Section 2 Unit 2 |
 | girlfriend | かのじょ | <span class="kanji">彼女</span> | Section 2 Unit 3 |
+| go home | かえて | <span class="kanji">帰って</span> | Section 2 Unit 17 |
 | go-cart | ゴーカート | | Section 2 Unit 10 |
 | good evening | こんばんは | | Section 1 Unit 2 |
 | good morning (formal) | おはようございます | | Section 1 Unit 6 |
@@ -305,6 +307,7 @@ one or more Kanji characters.
 | I'm | です | | Section 1 Unit 2 |
 | ice cream | アイスクリーム | | Section 2 Unit 1 |
 | iced coffee | アイスコーヒー | | Section 2 Unit 1 |
+| immediately | すぐに | | Section 2 Unit 17 |
 | in front of | まえ | <span class="kanji">前</span> | Section 2 Unit 16 |
 | inside | なか | <span class="kanji">中</span> | Section 2 Unit 16 |
 | instrument | がっき | | Section 2 Unit 11 |
@@ -502,6 +505,7 @@ one or more Kanji characters.
 | rice | ごはん | <span class="kanji">ご飯</span> | Section 1 Unit 1 |
 | rice balls | おにぎり | | Section 2 Unit 1 |
 | right | みぎ | <span class="kanji">右</span> | Section 2 Unit 16 |
+| right away | すぐに | | Section 2 Unit 17 |
 | right/correct | そう | | Section 2 Unit 14 |
 | right? | よね | | Section 2 Unit 14 |
 | rock | ロック | | Section 1 Unit 7 |
@@ -656,6 +660,7 @@ one or more Kanji characters.
 | to be at | にいます | | Section 2 Unit 13 |
 | to begin | はじまります | | Section 2 Unit 11 |
 | to buy | かいます | <span class="kanji">買います</span> | Section 2 Unit 1 |
+| to close | しめます | <span class="kanji">閉めます</span> | Section 2 Unit 17 |
 | to come | きます | <span class="kanji">来ます</span> | Section 2 Unit 4 |
 | to dance | おどります | | Section 2 Unit 11 |
 | to drink | のみます | <span class="kanji">飲みます</span> | Section 1 Unit 7 |
@@ -680,23 +685,26 @@ one or more Kanji characters.
 | to move | ひっこします | | Section 2 Unit 3 |
 | to need | おねがいします | | Section 2 Unit 5 |
 | to not have | いません | | Section 2 Unit 13 |
+| to open | あけます | <span class="kanji">開けます</span> | Section 2 Unit 17 |
 | to play | します | | Section 1 Unit 7 |
 | to play (an instrument) | ひきます | | Section 2 Unit 11 |
 | to read | よみます | <span class="kanji">読みます</span> | Section 1 Unit 7 |
 | to rest | やすみます | <span class="kanji">休みます</span> | Section 2 Unit 5 |
-| to return | かえります | | Section 2 Unit 6 |
+| to return | かえります | <span class="kanji">帰ります</span> | Section 2 Unit 6 |
 | to ride | のります | | Section 2 Unit 7 |
 | to run | はしります | | Section 2 Unit 1 |
 | to sing | うたいます | | Section 2 Unit 11 |
-| to sit (down) | すわります | | Section 2 Unit 5 |
+| to sit (down) | すわります | <span class="kanji">座ります</span> | Section 2 Unit 5 |
 | to sleep | ねます | <span class="kanji">寝ます</span> | Section 2 Unit 2 |
+| to stand up | たちます | <span class="kanji">立ちます</span> | Section 2 Unit 17 |
 | to swim | よぎます | | Section 2 Unit 1 |
-| to take | あびます | | Section 2 Unit 2 |
+| to take | あびます | <span class="kanji">浴びます</span> | Section 2 Unit 2 |
 | to take (a photo) | とります | | Section 2 Unit 7 |
 | to take (time) | かかります | | Section 2 Unit 4 |
 | to take a | にはいります | | Section 2 Unit 6 |
 | to talk | はなします | <span class="kanji">話します</span> | Section 2 Unit 1 |
 | to translate | ほんやくします | | Section 2 Unit 9 |
+| to turn on | つけます | | Section 2 Unit 17 |
 | to use | つかいます | | Section 2 Unit 8 |
 | to wait for | まちます | | Section 2 Unit 7 |
 | to wash | あらいます | | Section 2 Unit 9 |

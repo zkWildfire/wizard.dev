@@ -45,7 +45,7 @@
 | to get up | おきます | 起きます |
 | to make | つくります | |
 | to sleep | ねます | 寝ます |
-| to take | あびます | |
+| to take | あびます | 浴びます |
 | emails | メール | |
 | dessert | デザート | |
 | pasta | パスタ | |
