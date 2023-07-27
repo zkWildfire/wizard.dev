@@ -55,4 +55,19 @@ public class ArrayMemory : IMemory
 
 		_memory[address] = value;
 	}
+
+	/// Checks if the address is a valid address in the memory block.
+	/// @throws ArgumentOutOfRangeException If the address is not a valid
+	///   address in the memory block.
+	public void ValidateAddress(int address)
+	{
+		if (address < 0 || address >= Size)
+		{
+			throw new ArgumentOutOfRangeException(
+				nameof(address),
+				address,
+				$"Expected address '{address}' to be in the range [0, {Size})."
+			);
+		}
+	}
 }
