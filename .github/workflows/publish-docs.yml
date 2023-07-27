@@ -3,6 +3,12 @@ on:
   push:
     branches:
       - master
+    paths:
+      - ".github/workflows/publish-docs.yml"
+      - "docs/**"
+      - "docker/mkdocs/**"
+      - "plantuml/**"
+      - "mkdocs.yml"
   workflow_dispatch:
     inputs:
       force_publish:
