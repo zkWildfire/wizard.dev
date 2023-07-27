@@ -1,0 +1,27 @@
+name: Matrix Cache Simulator Test Suite
+on:
+  push:
+    paths:
+      - ".github/workflows/matrix-cache-simulator-tests.yml"
+      - "projects/matrix-cache-sim/**"
+  pull_request:
+    paths:
+      - ".github/workflows/matrix-cache-simulator-tests.yml"
+      - "projects/matrix-cache-sim/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Dotnet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7
+      - name: Build
+        run: dotnet build
+        working-directory: ./projects/matrix-cache-sim
+      - name: Test
+        run: dotnet test
+        working-directory: ./projects/matrix-cache-sim
