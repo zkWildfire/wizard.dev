@@ -18,7 +18,7 @@ RUN apk add --no-cache \
 # Install pip packages
 RUN python3 -m pip install \
 	# Primary mkdocs package
-	mkdocs \
+	mkdocs==1.4.3 \
 	# Packages used to enable the material mkdocs theme
 	mkdocs-material \
 	mkdocs-git-revision-date-localized-plugin \
