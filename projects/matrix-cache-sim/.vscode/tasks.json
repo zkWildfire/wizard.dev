@@ -32,6 +32,26 @@
 				"cwd": "${workspaceFolder:Matrix Cache Simulator}"
 			},
 			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Run Matrix Cache Simulator Tests (Debug)",
+			"type": "process",
+			"group": "test",
+			"command": "dotnet",
+			"args": [
+				"test",
+				"--configuration",
+				"Debug",
+				"--no-build",
+				"--no-restore"
+			],
+			"options": {
+				"cwd": "${workspaceFolder:Matrix Cache Simulator}"
+			},
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Build Matrix Cache Simulator (Debug)"
+			]
 		}
 	]
 }

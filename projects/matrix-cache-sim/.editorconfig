@@ -361,7 +361,7 @@ dotnet_naming_style.hidden_member_variables.required_prefix = _
 dotnet_diagnostic.IDE0005.severity = none
 
 
-[tests/**/*.cs]
+[test/**/*.cs]
 # Don't require test code to always handle return values
 dotnet_diagnostic.IDE0058.severity = none
 
