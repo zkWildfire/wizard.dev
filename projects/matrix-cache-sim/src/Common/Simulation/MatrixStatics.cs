@@ -9,16 +9,6 @@ namespace Mcs.Common.Simulation;
 public static class MatrixStatics
 {
 	/// Converts the given matrix coordinate into a memory address.
-	/// @param matrix Matrix to convert the coordinates for.
-	/// @param x X coordinate of the value to convert.
-	/// @param y Y coordinate of the value to convert.
-	/// @returns Memory address of the given coordinates.
-	public static int ToMemoryAddress(this IMatrix matrix, int x, int y)
-	{
-		return matrix.StartingAddress + (y * matrix.X) + x;
-	}
-
-	/// Converts the given matrix coordinate into a memory address.
 	/// @param x X coordinate of the value to convert.
 	/// @param y Y coordinate of the value to convert.
 	/// @param xSize Size of the matrix in the X dimension.
@@ -37,6 +27,23 @@ public static class MatrixStatics
 		return columnMajor
 			? (x * ySize) + y + startingOffset
 			: (y * xSize) + x + startingOffset;
+	}
+
+	/// Converts the given matrix coordinate into a memory address.
+	/// @param matrix Matrix to convert the coordinates for.
+	/// @param x X coordinate of the value to convert.
+	/// @param y Y coordinate of the value to convert.
+	/// @returns Memory address of the given coordinates.
+	public static int ToMemoryAddress(this IMatrix matrix, int x, int y)
+	{
+		return ToMemoryAddress(
+			x,
+			y,
+			matrix.X,
+			matrix.Y,
+			matrix.StartingAddress,
+			matrix.IsColumnMajor
+		);
 	}
 
 	/// Converts the given memory address into a matrix coordinate.
@@ -68,8 +75,7 @@ public static class MatrixStatics
 	{
 		// Make sure that the memory address is within the matrix
 		var beforeStart = memoryAddress < matrix.StartingAddress;
-		var afterEnd =
-			memoryAddress >= matrix.StartingAddress + (matrix.X * matrix.Y);
+		var afterEnd = memoryAddress >= matrix.EndingAddress;
 
 		return beforeStart || afterEnd
 			? throw new ArgumentOutOfRangeException(
@@ -106,7 +112,7 @@ public static class MatrixStatics
 	{
 		yield return new ReadAction(matrix.ToMemoryAddress(x1, y1), r1);
 		yield return new ReadAction(matrix.ToMemoryAddress(x2, y2), r2);
-		yield return new WriteAction(matrix.ToMemoryAddress(x2, y2), r2);
-		yield return new WriteAction(matrix.ToMemoryAddress(x1, y1), r1);
+		yield return new WriteAction(matrix.ToMemoryAddress(x2, y2), r1);
+		yield return new WriteAction(matrix.ToMemoryAddress(x1, y1), r2);
 	}
 }
