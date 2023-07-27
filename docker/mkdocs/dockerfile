@@ -18,6 +18,13 @@ RUN apk add --no-cache \
 # Install pip packages
 RUN python3 -m pip install \
 	# Primary mkdocs package
+	# mkdocs needs to be pegged to 1.4.3 until `mkdocs_puml` is updated.
+	#   Attempting to use mkdocs 1.5 results in the following error:
+	# ```
+	# File "/usr/local/lib/python3.11/site-packages/mkdocs_puml/plugin.py", line 6, in <module>
+	#     from mkdocs.plugins import BasePlugin, Page
+	# ImportError: cannot import name 'Page' from 'mkdocs.plugins' (/usr/local/lib/python3.11/site-packages/mkdocs/plugins.py)
+	# ```
 	mkdocs==1.4.3 \
 	# Packages used to enable the material mkdocs theme
 	mkdocs-material \
@@ -27,3 +34,7 @@ RUN python3 -m pip install \
 	mkdocs-awesome-pages-plugin \
 	doxypypy \
 	mkdocs_puml
+
+# Temporarily dump the python packages being used so that they can be saved
+#   in the repository
+RUN python3 -m pip freeze
