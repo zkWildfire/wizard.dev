@@ -18,7 +18,7 @@ public class ArrayMemory : IMemory
 	public ArrayMemory(int size)
 	{
 		Size = size;
-		_memory = new List<int>(size);
+		_memory = new List<int>(new int[size]);
 	}
 
 	/// Reads a value from memory.
