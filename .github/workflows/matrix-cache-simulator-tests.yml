@@ -25,24 +25,24 @@ jobs:
       - name: Build
         run: >
           dotnet build
-            --configuration Release
-            --no-restore
+          --configuration Release
+          --no-restore
         working-directory: ./projects/matrix-cache-sim
       - name: Test
         run: >
           dotnet test
-            --blame-crash
-            --blame-crash-dump-type mini
-            --blame-hang
-            --blame-hang-timeout 30min
-            --blame-hang-dump-type mini
-            --collect:"XPlat Code Coverage"
-            --configuration Release
-            --no-build
-            --no-restore
-            --results-directory _test
-            --logger "xunit;LogFileName=xunit.xml"
-            --logger "console;verbosity=detailed"
+          --blame-crash
+          --blame-crash-dump-type mini
+          --blame-hang
+          --blame-hang-timeout 30min
+          --blame-hang-dump-type mini
+          --collect:"XPlat Code Coverage"
+          --configuration Release
+          --no-build
+          --no-restore
+          --results-directory _test
+          --logger "xunit;LogFileName=xunit.xml"
+          --logger "console;verbosity=detailed"
         working-directory: ./projects/matrix-cache-sim
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
