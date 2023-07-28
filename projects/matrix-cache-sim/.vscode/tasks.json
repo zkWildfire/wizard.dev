@@ -50,7 +50,9 @@
 				"--logger",
 				"xunit;LogFileName=xunit.xml",
 				"--logger",
-				"console;verbosity=detailed"
+				"console;verbosity=detailed",
+				"--settings",
+				"${workspaceFolder:Matrix Cache Simulator}/.runsettings"
 			],
 			"options": {
 				"cwd": "${workspaceFolder:Matrix Cache Simulator}"
