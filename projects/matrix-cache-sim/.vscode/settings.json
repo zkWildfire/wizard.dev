@@ -1,0 +1,6 @@
+{
+	"coverage-gutters.coverageBaseDir": "_test/**",
+	"coverage-gutters.coverageFileNames": [
+		"coverage.cobertura.xml"
+	]
+}

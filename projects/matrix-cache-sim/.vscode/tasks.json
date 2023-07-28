@@ -34,6 +34,27 @@
 			"problemMatcher": "$msCompile"
 		},
 		{
+			"label": "Clean test results",
+			"type": "process",
+			"group": "test",
+			"command": "rm",
+			"args": [
+				"-rf",
+				"${workspaceFolder:Matrix Cache Simulator}/_test"
+			],
+			"options": {
+				"cwd": "${workspaceFolder:Matrix Cache Simulator}"
+			},
+			"windows": {
+				"command": "rmdir",
+				"args": [
+					"/S",
+					"/Q",
+					"${workspaceFolder:Matrix Cache Simulator}/_test"
+				]
+			}
+		},
+		{
 			"label": "Run Matrix Cache Simulator Tests (Debug)",
 			"type": "process",
 			"group": "test",
@@ -52,14 +73,15 @@
 				"--logger",
 				"console;verbosity=detailed",
 				"--settings",
-				"${workspaceFolder:Matrix Cache Simulator}/.runsettings"
+				"${workspaceFolder:Matrix Cache Simulator}/local.runsettings"
 			],
 			"options": {
 				"cwd": "${workspaceFolder:Matrix Cache Simulator}"
 			},
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"Build Matrix Cache Simulator (Debug)"
+				"Build Matrix Cache Simulator (Debug)",
+				"Clean test results"
 			]
 		}
 	]

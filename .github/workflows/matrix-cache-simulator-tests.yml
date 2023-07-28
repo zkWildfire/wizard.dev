@@ -43,7 +43,7 @@ jobs:
           --results-directory _test
           --logger "xunit;LogFileName=xunit.xml"
           --logger "console;verbosity=detailed"
-          --settings ./.runsettings
+          --settings ./actions.runsettings
         working-directory: ./projects/matrix-cache-sim
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
