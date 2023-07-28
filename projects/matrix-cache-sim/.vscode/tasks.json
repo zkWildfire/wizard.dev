@@ -43,7 +43,14 @@
 				"--configuration",
 				"Debug",
 				"--no-build",
-				"--no-restore"
+				"--no-restore",
+				"--collect:XPlat Code Coverage",
+				"--results-directory",
+				"${workspaceFolder:Matrix Cache Simulator}/_test",
+				"--logger",
+				"xunit;LogFileName=xunit.xml",
+				"--logger",
+				"console;verbosity=detailed"
 			],
 			"options": {
 				"cwd": "${workspaceFolder:Matrix Cache Simulator}"

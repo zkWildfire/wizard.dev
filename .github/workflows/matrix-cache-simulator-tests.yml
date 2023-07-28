@@ -19,9 +19,29 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 7
+      - name: Restore
+        run: dotnet restore
+        working-directory: ./projects/matrix-cache-sim
       - name: Build
-        run: dotnet build
+        run: dotnet build --configuration Release
         working-directory: ./projects/matrix-cache-sim
       - name: Test
-        run: dotnet test
+        run: >
+          dotnet test
+            --blame-crash
+            --blame-crash-dump-type mini
+            --blame-hang
+            --blame-hang-timeout 30min
+            --blame-hang-dump-type mini
+            --collect:"XPlat Code Coverage"
+            --configuration Release
+            --no-build
+            --no-restore
+            --results-directory _test
+            --logger "xunit;LogFileName=xunit.xml"
+            --logger "console;verbosity=detailed"
         working-directory: ./projects/matrix-cache-sim
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
