@@ -5,7 +5,7 @@
 |:-------:|:----:|:-----:|
 | anime | アニメ | |
 | manga | まんが | |
-| music | おんがく | |
+| music | おんがく | 音楽 |
 | J-pop | Jポップ | |
 | jazz | ジャズ | |
 | rock | ロック | |
@@ -21,7 +21,7 @@
 | often | よく | |
 | to watch | みます | 見ます |
 | to read | よみます | 読みます |
-| to listen | ききます | |
+| to listen | ききます | 聞きます |
 | to play | します | |
 | friend | ともだち | 友達 |
 | with | と | |

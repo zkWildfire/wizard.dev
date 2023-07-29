@@ -186,6 +186,7 @@ one or more Kanji characters.
 | eight (books) | はっさつ | <span class="kanji">八冊</span> | Section 2 Unit 16 |
 | eight (objects) | はっこ | <span class="kanji">八個</span> | Section 2 Unit 14 |
 | eight (objects, generic) | やっつ | <span class="kanji">八つ</span> | Section 2 Unit 14 |
+| eight (pictures) | はちまい | <span class="kanji">八枚</span> | Section 2 Unit 18 |
 | eight minutes | はっぷん | <span class="kanji">八分</span> | Section 2 Unit 5 |
 | eight o'clock | はちじ | <span class="kanji">八時</span> | Section 2 Unit 1 |
 | eight years old | はっさい | <span class="kanji">八歳</span> | Section 2 Unit 14 |
@@ -232,6 +233,7 @@ one or more Kanji characters.
 | five (books) | ごさつ | <span class="kanji">五冊</span> | Section 2 Unit 16 |
 | five (objects) | ごこ | <span class="kanji">五個</span> | Section 2 Unit 14 |
 | five (objects, generic) | いつつ | <span class="kanji">五つ</span> | Section 2 Unit 9 |
+| five (pictures) | ごまい | <span class="kanji">五枚</span> | Section 2 Unit 18 |
 | five minutes | ごふん | <span class="kanji">五分</span> | Section 2 Unit 5 |
 | five o'clock | ごじ | <span class="kanji">五時</span> | Section 2 Unit 1 |
 | five years old | ごさい | <span class="kanji">五歳</span> | Section 2 Unit 14 |
@@ -243,6 +245,7 @@ one or more Kanji characters.
 | four (books) | よんさつ | <span class="kanji">四冊</span> | Section 2 Unit 16 |
 | four (objects) | よんこ | <span class="kanji">四個</span> | Section 2 Unit 14 |
 | four (objects, generic) | よっつ | <span class="kanji">四つ</span> | Section 2 Unit 1 |
+| four (pictures) | よんまい | <span class="kanji">四枚</span> | Section 2 Unit 18 |
 | four minutes | よんぷん | <span class="kanji">四分</span> | Section 2 Unit 5 |
 | four o'clock | よじ | <span class="kanji">四時</span> | Section 2 Unit 1 |
 | four years old | よんさい | <span class="kanji">四歳</span> | Section 2 Unit 14 |
@@ -387,7 +390,7 @@ one or more Kanji characters.
 | movie | えいが | <span class="kanji">映画</span> | Section 1 Unit 7 |
 | Mt Fuji | ふじさん | | Section 2 Unit 4 |
 | museum | はくぶつかん | | Section 2 Unit 10 |
-| music | おんがく | | Section 1 Unit 7 |
+| music | おんがく | <span class="kanji">音楽</span> | Section 1 Unit 7 |
 | my | わたしの | <span class="kanji">私の</span> | Section 1 Unit 4 |
 | my | ぼくの | <span class="kanji">僕の</span> | Section 2 Unit 12 |
 | my name is | といいます | <span class="kanji">と言います</span> | Section 2 Unit 3 |
@@ -415,6 +418,7 @@ one or more Kanji characters.
 | nine (books) | きゅうさつ | <span class="kanji">九冊</span> | Section 2 Unit 16 |
 | nine (objects) | きゅうこ | <span class="kanji">九個</span> | Section 2 Unit 14 |
 | nine (objects, generic) | ここのつ | <span class="kanji">九つ</span> | Section 2 Unit 14 |
+| nine (pictures) | きゅうまい | <span class="kanji">九枚</span> | Section 2 Unit 18 |
 | nine minutes | きゅうふん | <span class="kanji">九分</span> | Section 2 Unit 5 |
 | nine o'clock | くじ | <span class="kanji">九時</span> | Section 1 Unit 7 |
 | nine years old | きゅうさい | <span class="kanji">九歳</span> | Section 2 Unit 14 |
@@ -439,6 +443,7 @@ one or more Kanji characters.
 | one (book) | いっさつ | <span class="kanji">一冊</span> | Section 2 Unit 16 |
 | one (object, generic) | ひとつ | <span class="kanji">一つ</span> | Section 2 Unit 1 |
 | one (objects) | いっこ | <span class="kanji">一個</span> | Section 2 Unit 14 |
+| one (picture) | いちまい | <span class="kanji">一枚</span> | Section 2 Unit 18 |
 | one minute | いっぷん | <span class="kanji">一分</span> | Section 2 Unit 5 |
 | one o'clock | いちじ | <span class="kanji">一時</span> | Section 1 Unit 5 |
 | one year old | いっさい | <span class="kanji">一歳</span> | Section 2 Unit 14 |
@@ -461,7 +466,7 @@ one or more Kanji characters.
 | pet | ペット | | Section 2 Unit 13 |
 | phone | でんわ | | Section 2 Unit 2 |
 | phone number | でんわばんごう | | Section 2 Unit 5 |
-| photo | しゃしん | | Section 2 Unit 7 |
+| photo | しゃしん | <span class="kanji">写真</span> | Section 2 Unit 7 |
 | photographer | しゃしんか | | Section 2 Unit 9 |
 | piano | ピアノ | | Section 2 Unit 11 |
 | picture | え | <span class="kanji">絵</span> | Section 2 Unit 18 |
@@ -534,6 +539,7 @@ one or more Kanji characters.
 | seven (books) | ななさつ | <span class="kanji">七冊</span> | Section 2 Unit 16 |
 | seven (objects) | ななこ | <span class="kanji">七個</span> | Section 2 Unit 14 |
 | seven (objects, generic) | ななつ | <span class="kanji">七つ</span> | Section 2 Unit 9 |
+| seven (pictures) | ななまい | <span class="kanji">七枚</span> | Section 2 Unit 18 |
 | seven minutes | ななふん | <span class="kanji">七分</span> | Section 2 Unit 5 |
 | seven o'clock | しちじ | <span class="kanji">七時</span> | Section 1 Unit 7 |
 | seven years old | ななさい | <span class="kanji">七歳</span> | Section 2 Unit 14 |
@@ -554,6 +560,7 @@ one or more Kanji characters.
 | six (books) | ろくさつ | <span class="kanji">六冊</span> | Section 2 Unit 16 |
 | six (objects) | ろっこ | <span class="kanji">六個</span> | Section 2 Unit 14 |
 | six (objects, generic) | むっつ | <span class="kanji">六つ</span> | Section 2 Unit 9 |
+| six (pictures) | ろくまい | <span class="kanji">六枚</span> | Section 2 Unit 18 |
 | six minutes | ろっぷん | <span class="kanji">六分</span> | Section 2 Unit 5 |
 | six o'clock | ろくじ | <span class="kanji">六時</span> | Section 2 Unit 1 |
 | six years old | ろくさい | <span class="kanji">六歳</span> | Section 2 Unit 14 |
@@ -617,6 +624,7 @@ one or more Kanji characters.
 | ten (birds, rabbits) | じゅうば | <span class="kanji">十羽</span> | Section 2 Unit 14 |
 | ten (books) | じゅっさつ | <span class="kanji">十冊</span> | Section 2 Unit 16 |
 | ten (objects) | じゅっこ | <span class="kanji">十個</span> | Section 2 Unit 14 |
+| ten (pictures) | じゅうまい | <span class="kanji">十枚</span> | Section 2 Unit 18 |
 | ten minutes | じゅっぷん | <span class="kanji">十分</span> | Section 2 Unit 5 |
 | ten o'clock | じゅうじ | <span class="kanji">十時</span> | Section 2 Unit 1 |
 | ten thousand | いちまん | <span class="kanji">一万</span> | Section 2 Unit 15 |
@@ -649,6 +657,7 @@ one or more Kanji characters.
 | three (books) | さんさつ | <span class="kanji">三冊</span> | Section 2 Unit 16 |
 | three (objects) | さんこ | <span class="kanji">三個</span> | Section 2 Unit 14 |
 | three (objects, generic) | みっつ | <span class="kanji">三つ</span> | Section 2 Unit 1 |
+| three (pictures) | さんまい | <span class="kanji">三枚</span> | Section 2 Unit 18 |
 | three minutes | さんぷん | <span class="kanji">三分</span> | Section 2 Unit 5 |
 | three o'clock | さんじ | <span class="kanji">三時</span> | Section 1 Unit 5 |
 | three thousand | さんぜん | <span class="kanji">三千</span> | Section 2 Unit 10 |
@@ -676,13 +685,14 @@ one or more Kanji characters.
 | to go on a walk | さんぽします | <span class="kanji">散歩します</span> | Section 2 Unit 18 |
 | to go out | でかけます | | Section 2 Unit 1 |
 | to go to | いきます | <span class="kanji">行きます</span> | Section 2 Unit 4 |
-| to hang out | あそびます | | Section 2 Unit 1 |
+| to hang out | あそびます | <span class="kanji">遊びます</span> | Section 2 Unit 1 |
 | to have | あります | | Section 2 Unit 2 |
 | to have | います | | Section 2 Unit 13 |
 | to help with | てつだいます | | Section 2 Unit 6 |
 | to know | ができます | | Section 2 Unit 7 |
+| to learn | ならいます | <span class="kanji">習います</span> | Section 2 Unit 18 |
 | to like | すき | <span class="kanji">好き</span> | Section 2 Unit 3 |
-| to listen | ききます | | Section 1 Unit 7 |
+| to listen | ききます | <span class="kanji">聞きます</span> | Section 1 Unit 7 |
 | to live in | にすんでいます | <span class="kanji">に住んでいます</span> | Section 1 Unit 6 |
 | to love | だいすき | | Section 2 Unit 8 |
 | to make | つくります | | Section 2 Unit 2 |
@@ -697,15 +707,15 @@ one or more Kanji characters.
 | to rest | やすみます | <span class="kanji">休みます</span> | Section 2 Unit 5 |
 | to return | かえります | <span class="kanji">帰ります</span> | Section 2 Unit 6 |
 | to ride | のります | | Section 2 Unit 7 |
-| to run | はしります | | Section 2 Unit 1 |
+| to run | はしります | <span class="kanji">走ります</span> | Section 2 Unit 1 |
 | to sing | うたいます | | Section 2 Unit 11 |
 | to sing | うたいます | <span class="kanji">歌います</span> | Section 2 Unit 18 |
 | to sit (down) | すわります | <span class="kanji">座ります</span> | Section 2 Unit 5 |
 | to sleep | ねます | <span class="kanji">寝ます</span> | Section 2 Unit 2 |
 | to stand up | たちます | <span class="kanji">立ちます</span> | Section 2 Unit 17 |
-| to swim | よぎます | | Section 2 Unit 1 |
+| to swim | およぎます | <span class="kanji">泳ぎます</span> | Section 2 Unit 1 |
 | to take | あびます | <span class="kanji">浴びます</span> | Section 2 Unit 2 |
-| to take (a photo) | とります | | Section 2 Unit 7 |
+| to take (a photo) | とります | <span class="kanji">撮ります</span> | Section 2 Unit 7 |
 | to take (time) | かかります | | Section 2 Unit 4 |
 | to take a | にはいります | | Section 2 Unit 6 |
 | to talk | はなします | <span class="kanji">話します</span> | Section 2 Unit 1 |
@@ -743,6 +753,7 @@ one or more Kanji characters.
 | two (books) | にさつ | <span class="kanji">二冊</span> | Section 2 Unit 16 |
 | two (objects) | にこ | <span class="kanji">二個</span> | Section 2 Unit 14 |
 | two (objects, generic) | ふたつ | <span class="kanji">二つ</span> | Section 2 Unit 1 |
+| two (pictures) | にまい | <span class="kanji">二枚</span> | Section 2 Unit 18 |
 | two minutes | にふん | <span class="kanji">二分</span> | Section 2 Unit 5 |
 | two o'clock | にじ | <span class="kanji">二時</span> | Section 1 Unit 5 |
 | two years old | にさい | <span class="kanji">二歳</span> | Section 2 Unit 14 |

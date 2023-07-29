@@ -7,9 +7,20 @@
 | picture | え | 絵 |
 | song | うた | 歌 |
 | to draw | かきます | 描きます |
+| to learn | ならいます | 習います |
 | to sing | うたいます | 歌います |
 | to go on a walk | さんぽします | 散歩します |
 | walks | さんぽ | 散歩 |
+| one (picture) | いちまい | 一枚 |
+| two (pictures) | にまい | 二枚 |
+| three (pictures) | さんまい | 三枚 |
+| four (pictures) | よんまい | 四枚 |
+| five (pictures) | ごまい | 五枚 |
+| six (pictures) | ろくまい | 六枚 |
+| seven (pictures) | ななまい | 七枚 |
+| eight (pictures) | はちまい | 八枚 |
+| nine (pictures) | きゅうまい | 九枚 |
+| ten (pictures) | じゅうまい | 十枚 |
 
 ### Examples
 | English | Japanese |

@@ -43,14 +43,14 @@
 | Friday | きんようび | 金曜日 |
 | miso pork cutlets | みそかつ | |
 | Nagoya | なごや | |
-| photo | しゃしん | |
+| photo | しゃしん | 写真 |
 | plaza | ひろば | |
 | seat | せき | |
 | sightseeing | かんこう | |
 | suitcase | スーツケース | |
 | to know | ができます | |
 | to meet | あいます | 会います |
-| to take (a photo) | とります | |
+| to take (a photo) | とります | 撮ります |
 | to ride | のります | |
 | to wait for | まちます | |
 | who | だれ | 誰 |

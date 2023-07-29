@@ -43,9 +43,9 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| to swim | よぎます | |
-| to run | はしります | |
-| to hang out | あそびます | |
+| to swim | およぎます | 泳ぎます |
+| to run | はしります | 走ります |
+| to hang out | あそびます | 遊びます |
 | to go out | でかけます | |
 | to buy | かいます | 買います |
 | to talk | はなします | 話します |
