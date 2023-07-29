@@ -3,6 +3,13 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| letter | てがみ | 手紙 |
+| picture | え | 絵 |
+| song | うた | 歌 |
+| to draw | かきます | 描きます |
+| to sing | うたいます | 歌います |
+| to go on a walk | さんぽします | 散歩します |
+| walks | さんぽ | 散歩 |
 
 ### Examples
 | English | Japanese |

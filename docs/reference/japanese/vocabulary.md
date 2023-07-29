@@ -152,7 +152,7 @@ one or more Kanji characters.
 | dad | ちち | <span class="kanji">父</span> | Section 1 Unit 6 |
 | dangerous | あぶない | | Section 2 Unit 5 |
 | Daniel | ダニエル | | Section 2 Unit 3 |
-| daughter | むすめ | | Section 1 Unit 6 |
+| daughter | むすめ | <span class="kanji">娘</span> | Section 1 Unit 6 |
 | day before yesterday | おととい | <span class="kanji">一昨日</span> | Section 2 Unit 17 |
 | days | ひ | <span class="kanji">日</span> | Section 2 Unit 5 |
 | days off | やすみのひ | <span class="kanji">休みの日</span> | Section 2 Unit 6 |
@@ -345,6 +345,7 @@ one or more Kanji characters.
 | laundry | せんたく | <span class="kanji">洗濯</span> | Section 2 Unit 6 |
 | lawyer | べんごし | | Section 1 Unit 1 |
 | left | ひだり | <span class="kanji">左</span> | Section 2 Unit 16 |
+| letter | てがみ | <span class="kanji">手紙</span> | Section 2 Unit 18 |
 | library | としょかん | | Section 2 Unit 9 |
 | lion | ライオン | | Section 2 Unit 7 |
 | lively | にぎやか | | Section 1 Unit 6 |
@@ -383,7 +384,7 @@ one or more Kanji characters.
 | Monday | げつようび | <span class="kanji">月曜日</span> | Section 2 Unit 7 |
 | more | もっと | | Section 2 Unit 8 |
 | mountain | やま | <span class="kanji">山</span> | Section 2 Unit 4 |
-| movie | えいが | | Section 1 Unit 7 |
+| movie | えいが | <span class="kanji">映画</span> | Section 1 Unit 7 |
 | Mt Fuji | ふじさん | | Section 2 Unit 4 |
 | museum | はくぶつかん | | Section 2 Unit 10 |
 | music | おんがく | | Section 1 Unit 7 |
@@ -463,6 +464,7 @@ one or more Kanji characters.
 | photo | しゃしん | | Section 2 Unit 7 |
 | photographer | しゃしんか | | Section 2 Unit 9 |
 | piano | ピアノ | | Section 2 Unit 11 |
+| picture | え | <span class="kanji">絵</span> | Section 2 Unit 18 |
 | pie | パイ | | Section 2 Unit 8 |
 | pizza | ピザ | | Section 1 Unit 7 |
 | pizza shop | ピザや | | Section 2 Unit 4 |
@@ -568,6 +570,7 @@ one or more Kanji characters.
 | sofa | ソファー | | Section 2 Unit 13 |
 | sometimes | ときどき | <span class="kanji">時々</span> | Section 1 Unit 7 |
 | son | むすこ | | Section 1 Unit 6 |
+| song | うた | <span class="kanji">歌</span> | Section 2 Unit 18 |
 | soon | もうすぐ | | Section 2 Unit 4 |
 | South Korea | かんこく | <span class="kanji">韓国</span> | Section 2 Unit 3 |
 | souvenir | おみやげ | <span class="kanji">お土産</span> | Section 2 Unit 4 |
@@ -663,12 +666,14 @@ one or more Kanji characters.
 | to close | しめます | <span class="kanji">閉めます</span> | Section 2 Unit 17 |
 | to come | きます | <span class="kanji">来ます</span> | Section 2 Unit 4 |
 | to dance | おどります | | Section 2 Unit 11 |
+| to draw | かきます | <span class="kanji">描きます</span> | Section 2 Unit 18 |
 | to drink | のみます | <span class="kanji">飲みます</span> | Section 1 Unit 7 |
 | to drive | うんてんします | | Section 2 Unit 9 |
 | to eat | たべます | <span class="kanji">食べます</span> | Section 1 Unit 7 |
 | to end | おわります | | Section 2 Unit 9 |
 | to exercise | うんどうします | | Section 2 Unit 9 |
 | to get up | おきます | <span class="kanji">起きます</span> | Section 2 Unit 2 |
+| to go on a walk | さんぽします | <span class="kanji">散歩します</span> | Section 2 Unit 18 |
 | to go out | でかけます | | Section 2 Unit 1 |
 | to go to | いきます | <span class="kanji">行きます</span> | Section 2 Unit 4 |
 | to hang out | あそびます | | Section 2 Unit 1 |
@@ -694,6 +699,7 @@ one or more Kanji characters.
 | to ride | のります | | Section 2 Unit 7 |
 | to run | はしります | | Section 2 Unit 1 |
 | to sing | うたいます | | Section 2 Unit 11 |
+| to sing | うたいます | <span class="kanji">歌います</span> | Section 2 Unit 18 |
 | to sit (down) | すわります | <span class="kanji">座ります</span> | Section 2 Unit 5 |
 | to sleep | ねます | <span class="kanji">寝ます</span> | Section 2 Unit 2 |
 | to stand up | たちます | <span class="kanji">立ちます</span> | Section 2 Unit 17 |
@@ -757,6 +763,7 @@ one or more Kanji characters.
 | videos | どうが | | Section 2 Unit 1 |
 | Vietnam | ベトナム | | Section 2 Unit 3 |
 | volleyball | バレーボール | | Section 2 Unit 2 |
+| walks | さんぽ | <span class="kanji">散歩</span> | Section 2 Unit 18 |
 | wallet | さいふ | | Section 1 Unit 8 |
 | want | ほしい | | Section 1 Unit 8 |
 | warm | あたたかい | | Section 2 Unit 5 |

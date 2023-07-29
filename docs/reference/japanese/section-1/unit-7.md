@@ -9,7 +9,7 @@
 | J-pop | Jポップ | |
 | jazz | ジャズ | |
 | rock | ロック | |
-| movie | えいが | |
+| movie | えいが | 映画 |
 | book | ほん | 本 |
 | magazine | ざっし | |
 | game | ゲーム | |

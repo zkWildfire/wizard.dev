@@ -42,7 +42,7 @@
 | husband | おっと | |
 | wife | つま | |
 | son | むすこ | |
-| daughter | むすめ | |
+| daughter | むすめ | 娘 |
 | noisy | うるさい | |
 | smart | あたまがい | |
 | busy | いそがしい | 忙しい |
