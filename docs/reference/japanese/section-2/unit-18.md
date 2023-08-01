@@ -4,6 +4,8 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | letter | てがみ | 手紙 |
+| loud | うるさい |  |
+| not very | あまり |  |
 | picture | え | 絵 |
 | song | うた | 歌 |
 | to draw | かきます | 描きます |

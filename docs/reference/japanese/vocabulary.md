@@ -356,6 +356,7 @@ one or more Kanji characters.
 | lobby | ロビー | | Section 2 Unit 7 |
 | long | ながい | <span class="kanji">長い</span> | Section 2 Unit 4 |
 | looking forward to | たのしみです | | Section 2 Unit 7 |
+| loud | うるさい | | Section 2 Unit 18 |
 | lovely | すてき | | Section 1 Unit 8 |
 | low | ひくい | <span class="kanji">低い</span> | Section 2 Unit 17 |
 | lunch | ひるごはん | <span class="kanji">昼ご飯</span> | Section 1 Unit 7 |
@@ -427,6 +428,7 @@ one or more Kanji characters.
 | non-fiction | ノンフィクション | | Section 2 Unit 10 |
 | not | じゃない | | Section 1 Unit 5 |
 | not at (place) | いません | | Section 2 Unit 14 |
+| not very | あまり | | Section 2 Unit 18 |
 | now | いま | <span class="kanji">今</span> | Section 1 Unit 5 |
 | o'clock | じ | <span class="kanji">時</span> | Section 1 Unit 5 |
 | office | かいしゃ | <span class="kanji">会社</span> | Section 2 Unit 13 |
