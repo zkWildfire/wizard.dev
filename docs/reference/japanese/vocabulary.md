@@ -55,6 +55,7 @@ one or more Kanji characters.
 | at | に | | Section 1 Unit 7 |
 | at | で | | Section 2 Unit 7 |
 | attraction | アトラクション | | Section 2 Unit 10 |
+| aunt | おば | | Section 2 Unit 18 |
 | Australia | オーストラリア | | Section 2 Unit 3 |
 | Australia | オーストラリア | | Section 2 Unit 7 |
 | badminton | バドミントン | | Section 2 Unit 11 |
@@ -509,6 +510,7 @@ one or more Kanji characters.
 | really? | ほんとうですか。 | | Section 2 Unit 3 |
 | red | あかい | | Section 1 Unit 4 |
 | refrigerator | れいぞうこ | <span class="kanji">冷蔵庫</span> | Section 2 Unit 3 |
+| relatives | しんせき | <span class="kanji">親戚</span> | Section 2 Unit 18 |
 | restaurant | レストラン | | Section 2 Unit 1 |
 | restroom | おてあらい | | Section 2 Unit 2 |
 | rice | ごはん | <span class="kanji">ご飯</span> | Section 1 Unit 1 |
@@ -578,7 +580,7 @@ one or more Kanji characters.
 | soccer | サッカー | | Section 1 Unit 7 |
 | sofa | ソファー | | Section 2 Unit 13 |
 | sometimes | ときどき | <span class="kanji">時々</span> | Section 1 Unit 7 |
-| son | むすこ | | Section 1 Unit 6 |
+| son | むすこ | <span class="kanji">息子</span> | Section 1 Unit 6 |
 | song | うた | <span class="kanji">歌</span> | Section 2 Unit 18 |
 | soon | もうすぐ | | Section 2 Unit 4 |
 | South Korea | かんこく | <span class="kanji">韓国</span> | Section 2 Unit 3 |

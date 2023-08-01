@@ -41,7 +41,7 @@
 | younger sister | いもうと | 妹 |
 | husband | おっと | |
 | wife | つま | |
-| son | むすこ | |
+| son | むすこ | 息子 |
 | daughter | むすめ | 娘 |
 | noisy | うるさい | |
 | smart | あたまがい | |

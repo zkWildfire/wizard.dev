@@ -37,6 +37,8 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| aunt | おば | |
+| relatives | しんせき | 親戚 |
 
 ### Examples
 | English | Japanese |
