@@ -63,6 +63,14 @@
 		"python.analysis.typeCheckingMode": "strict",
 		"python.languageServer": "Pylance",
 		"python.testing.pytestEnabled": true,
-		"workbench.editor.wrapTabs": true
+		"vim.camelCaseMotion.enable": true,
+		"vim.easymotion": true,
+		"vim.foldfix": true,
+		"vim.highlightedyank.enable": true,
+		"vim.showMarksInGutter": true,
+		"vim.sneak": true,
+		"vim.vimrc.enable": true,
+		"vim.vimrc.path": "$HOME/.vimrc",
+		"workbench.editor.wrapTabs": true,
 	}
 }

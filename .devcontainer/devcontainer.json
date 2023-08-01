@@ -23,7 +23,8 @@
 				"ryanluker.vscode-coverage-gutters",
 				"streetsidesoftware.code-spell-checker",
 				"timonwong.shellcheck",
-				"yzhang.markdown-all-in-one"
+				"yzhang.markdown-all-in-one",
+				"vscodevim.vim"
 			]
 		}
 	},
