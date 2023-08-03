@@ -16,5 +16,6 @@ public interface IRegister
 	/// Sets the value of the register.
 	/// @param value Value to set the register to.
 	/// @param address Memory address that the value was read from.
+	/// @throws ArgumentOutOfRangeException If the address is negative.
 	void SetValue(int value, int address);
 }

@@ -36,6 +36,10 @@ public abstract class IMemoryMatrix : IMatrix
 	/// @param y Size of the matrix in the Y dimension.
 	/// @param startingAddress Starting address of the matrix in memory.
 	/// @param isColumnMajor Whether the matrix is stored in column major order.
+	/// @throws ArgumentOutOfRangeException If `x` or `y` is less than or equal
+	///   to zero.
+	/// @throws ArgumentOutOfRangeException If `startingAddress` is less than
+	///   zero.
 	protected IMemoryMatrix(
 		IMemory memory,
 		int x,
@@ -43,6 +47,19 @@ public abstract class IMemoryMatrix : IMatrix
 		int startingAddress,
 		bool isColumnMajor)
 	{
+		if (x <= 0)
+		{
+			throw new ArgumentOutOfRangeException(nameof(x));
+		}
+		if (y <= 0)
+		{
+			throw new ArgumentOutOfRangeException(nameof(y));
+		}
+		if (startingAddress < 0)
+		{
+			throw new ArgumentOutOfRangeException(nameof(startingAddress));
+		}
+
 		_memory = memory;
 		X = x;
 		Y = y;

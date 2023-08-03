@@ -14,7 +14,7 @@ public class ColumnMajorMatrix : IMemoryMatrix
 	/// @param y Size of the matrix in the Y dimension.
 	/// @param startingAddress Starting address of the matrix in memory.
 	/// @param isColumnMajor Whether the matrix is stored in column major order.
-	protected ColumnMajorMatrix(
+	public ColumnMajorMatrix(
 		IMemory memory,
 		int x,
 		int y,
