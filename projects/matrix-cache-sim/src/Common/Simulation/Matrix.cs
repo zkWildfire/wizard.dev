@@ -22,9 +22,6 @@ public interface IMatrix
 	/// Checks whether the matrix is stored in column major order.
 	bool IsColumnMajor { get; }
 
-	/// Checks whether the matrix has been fully transposed.
-	bool IsTransposed { get; }
-
 	/// Reads the value at the given coordinates into the given register.
 	/// @param x X coordinate of the value to read.
 	/// @param y Y coordinate of the value to read.
