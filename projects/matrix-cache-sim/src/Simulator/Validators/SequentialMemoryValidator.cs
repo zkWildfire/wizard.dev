@@ -10,7 +10,7 @@ namespace Mcs.Simulator.Validators;
 public class SequentialMemoryValidator : IMemoryValidator
 {
 	/// Value written to memory locations not part of the matrix.
-	private const int UNINITIALIZED_VALUE = 0x12345678;
+	public const int UNINITIALIZED_VALUE = 0x12345678;
 
 	/// Initializes the data for the matrix.
 	/// @param memory Memory that the matrix is stored in.
@@ -26,12 +26,7 @@ public class SequentialMemoryValidator : IMemoryValidator
 			//   starting value for the cell
 			if (i >= matrix.StartingAddress && i < matrix.EndingAddress)
 			{
-				var (xCoord, yCoord) = MatrixStatics.ToMatrixCoordinate(
-					i,
-					matrix.StartingAddress,
-					matrix.X,
-					matrix.Y
-				);
+				var (xCoord, yCoord) = matrix.ToMatrixCoordinate(i);
 				memory.Write(
 					i,
 					GetInitialValue(xCoord, yCoord, matrix)
@@ -49,12 +44,7 @@ public class SequentialMemoryValidator : IMemoryValidator
 		// Iterate over each element in the matrix
 		for (var i = matrix.StartingAddress; i < matrix.EndingAddress; i++)
 		{
-			var (xCoord, yCoord) = MatrixStatics.ToMatrixCoordinate(
-				i,
-				matrix.StartingAddress,
-				matrix.X,
-				matrix.Y
-			);
+			var (xCoord, yCoord) = matrix.ToMatrixCoordinate(i);
 
 			// Check that the value is correct
 			if (memory.Read(i) != GetExpectedValue(xCoord, yCoord, matrix))
@@ -72,7 +62,12 @@ public class SequentialMemoryValidator : IMemoryValidator
 	/// @param matrix Matrix that the memory cell is part of.
 	private static int GetInitialValue(int x, int y, IMatrix matrix)
 	{
-		return MatrixStatics.ToMemoryAddress(x, y, matrix.X, matrix.Y) + 1;
+		var offset = matrix.IsColumnMajor
+			? (x * matrix.Y) + y
+			: (y * matrix.X) + x;
+
+		// Start at 1 instead of at 0
+		return offset + 1;
 	}
 
 	/// Gets the value that the memory cell is expected to be set to.
@@ -81,6 +76,6 @@ public class SequentialMemoryValidator : IMemoryValidator
 	/// @param matrix Matrix that the memory cell is part of.
 	private static int GetExpectedValue(int x, int y, IMatrix matrix)
 	{
-		return MatrixStatics.ToMemoryAddress(y, x, matrix.X, matrix.Y) + 1;
+		return GetInitialValue(y, x, matrix);
 	}
 }
