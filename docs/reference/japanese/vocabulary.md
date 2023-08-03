@@ -54,6 +54,7 @@ one or more Kanji characters.
 | Asakusa | あさくさ | | Section 2 Unit 4 |
 | at | に | | Section 1 Unit 7 |
 | at | で | | Section 2 Unit 7 |
+| at home | ございたく | <span class="kanji">ご在宅</span> | Section 2 Unit 18 |
 | attraction | アトラクション | | Section 2 Unit 10 |
 | aunt | おば | | Section 2 Unit 18 |
 | Australia | オーストラリア | | Section 2 Unit 3 |
@@ -117,6 +118,7 @@ one or more Kanji characters.
 | cheesecake | チーズケーキ | | Section 2 Unit 8 |
 | child | こども | <span class="kanji">子供</span> | Section 2 Unit 15 |
 | children | こどもたち | <span class="kanji">子供たち</span> | Section 2 Unit 15 |
+| children | おこさん | <span class="kanji">お子さん</span> | Section 2 Unit 18 |
 | China | ちゅうごく | | Section 2 Unit 3 |
 | Chinese (language) | ちゅうごくご | | Section 2 Unit 9 |
 | chocolate | チョコレート | | Section 2 Unit 8 |
@@ -145,6 +147,7 @@ one or more Kanji characters.
 | cooking | りょうり | | Section 2 Unit 6 |
 | cool | かっこいい | | Section 1 Unit 1 |
 | corner | かたすみ | <span class="kanji">片隅</span> | Section 2 Unit 17 |
+| cousin | いとこ | | Section 2 Unit 18 |
 | coworker(s) | どうりょう | | Section 2 Unit 9 |
 | cramped | せまい | | Section 2 Unit 3 |
 | cupcake | カップケーキ | | Section 2 Unit 8 |
@@ -187,6 +190,7 @@ one or more Kanji characters.
 | eight (books) | はっさつ | <span class="kanji">八冊</span> | Section 2 Unit 16 |
 | eight (objects) | はっこ | <span class="kanji">八個</span> | Section 2 Unit 14 |
 | eight (objects, generic) | やっつ | <span class="kanji">八つ</span> | Section 2 Unit 14 |
+| eight (people) | はちにん | <span class="kanji">八人</span> | Section 2 Unit 18 |
 | eight (pictures) | はちまい | <span class="kanji">八枚</span> | Section 2 Unit 18 |
 | eight minutes | はっぷん | <span class="kanji">八分</span> | Section 2 Unit 5 |
 | eight o'clock | はちじ | <span class="kanji">八時</span> | Section 2 Unit 1 |
@@ -220,6 +224,7 @@ one or more Kanji characters.
 | far | とおい | | Section 2 Unit 2 |
 | fashionable | おしゃれ | | Section 1 Unit 6 |
 | fast | はやい | | Section 2 Unit 4 |
+| father | ちちおや | <span class="kanji">父親</span> | Section 2 Unit 18 |
 | favorite | すき | | Section 2 Unit 10 |
 | feeling sick | ぐあいがわるい | | Section 2 Unit 5 |
 | fiction | フィクション | | Section 2 Unit 10 |
@@ -234,6 +239,7 @@ one or more Kanji characters.
 | five (books) | ごさつ | <span class="kanji">五冊</span> | Section 2 Unit 16 |
 | five (objects) | ごこ | <span class="kanji">五個</span> | Section 2 Unit 14 |
 | five (objects, generic) | いつつ | <span class="kanji">五つ</span> | Section 2 Unit 9 |
+| five (people) | ごにん | <span class="kanji">五人</span> | Section 2 Unit 18 |
 | five (pictures) | ごまい | <span class="kanji">五枚</span> | Section 2 Unit 18 |
 | five minutes | ごふん | <span class="kanji">五分</span> | Section 2 Unit 5 |
 | five o'clock | ごじ | <span class="kanji">五時</span> | Section 2 Unit 1 |
@@ -246,6 +252,7 @@ one or more Kanji characters.
 | four (books) | よんさつ | <span class="kanji">四冊</span> | Section 2 Unit 16 |
 | four (objects) | よんこ | <span class="kanji">四個</span> | Section 2 Unit 14 |
 | four (objects, generic) | よっつ | <span class="kanji">四つ</span> | Section 2 Unit 1 |
+| four (people) | よにん | <span class="kanji">四人</span> | Section 2 Unit 18 |
 | four (pictures) | よんまい | <span class="kanji">四枚</span> | Section 2 Unit 18 |
 | four minutes | よんぷん | <span class="kanji">四分</span> | Section 2 Unit 5 |
 | four o'clock | よじ | <span class="kanji">四時</span> | Section 2 Unit 1 |
@@ -275,6 +282,11 @@ one or more Kanji characters.
 | good morning (formal) | おはようございます | | Section 1 Unit 6 |
 | GPS | ナビ | | Section 2 Unit 9 |
 | grade, school year | ねんせい | <span class="kanji">年生</span> | Section 2 Unit 14 |
+| grandchildren | おまごさん | <span class="kanji">お孫さん</span> | Section 2 Unit 18 |
+| granddaughter | まごむすめ | <span class="kanji">孫娘</span> | Section 2 Unit 18 |
+| grandfather | おじいさん | | Section 2 Unit 18 |
+| grandmother | おばあさん | | Section 2 Unit 18 |
+| grandson | まごむすこ | <span class="kanji">孫息子</span> | Section 2 Unit 18 |
 | green | みどり | | Section 2 Unit 8 |
 | green tea | おちゃ | <span class="kanji">お茶</span> | Section 1 Unit 1 |
 | guitar | ギター | | Section 2 Unit 11 |
@@ -305,10 +317,12 @@ one or more Kanji characters.
 | how many (objects) | いくつ | | Section 2 Unit 14 |
 | how many hours | なんじかん | <span class="kanji">何時間</span> | Section 2 Unit 11 |
 | how much | いくら | | Section 1 Unit 8 |
+| how old | おいくつ | | Section 2 Unit 18 |
 | hundred | ひゃく | <span class="kanji">百</span> | Section 1 Unit 8 |
-| husband | おっと | | Section 1 Unit 6 |
+| husband | おっと | <span class="kanji">夫</span> | Section 1 Unit 6 |
 | I | わたし | <span class="kanji">私</span> | Section 1 Unit 5 |
 | I'm | です | | Section 1 Unit 2 |
+| I'm back | ただいま | | Section 2 Unit 18 |
 | ice cream | アイスクリーム | | Section 2 Unit 1 |
 | iced coffee | アイスコーヒー | | Section 2 Unit 1 |
 | immediately | すぐに | | Section 2 Unit 17 |
@@ -388,6 +402,7 @@ one or more Kanji characters.
 | mom | はは | <span class="kanji">母</span> | Section 1 Unit 6 |
 | Monday | げつようび | <span class="kanji">月曜日</span> | Section 2 Unit 7 |
 | more | もっと | | Section 2 Unit 8 |
+| mother | ははおや | <span class="kanji">母親</span> | Section 2 Unit 18 |
 | mountain | やま | <span class="kanji">山</span> | Section 2 Unit 4 |
 | movie | えいが | <span class="kanji">映画</span> | Section 1 Unit 7 |
 | Mt Fuji | ふじさん | | Section 2 Unit 4 |
@@ -395,6 +410,8 @@ one or more Kanji characters.
 | music | おんがく | <span class="kanji">音楽</span> | Section 1 Unit 7 |
 | my | わたしの | <span class="kanji">私の</span> | Section 1 Unit 4 |
 | my | ぼくの | <span class="kanji">僕の</span> | Section 2 Unit 12 |
+| my grandfather | そふ | <span class="kanji">祖父</span> | Section 2 Unit 18 |
+| my grandmother | そぼ | <span class="kanji">祖母</span> | Section 2 Unit 18 |
 | my name is | といいます | <span class="kanji">と言います</span> | Section 2 Unit 3 |
 | my name is | もうします | <span class="kanji">申します</span> | Section 2 Unit 14 |
 | mystery | ミステリー | | Section 2 Unit 3 |
@@ -420,6 +437,7 @@ one or more Kanji characters.
 | nine (books) | きゅうさつ | <span class="kanji">九冊</span> | Section 2 Unit 16 |
 | nine (objects) | きゅうこ | <span class="kanji">九個</span> | Section 2 Unit 14 |
 | nine (objects, generic) | ここのつ | <span class="kanji">九つ</span> | Section 2 Unit 14 |
+| nine (people) | きゅうにん | <span class="kanji">九人</span> | Section 2 Unit 18 |
 | nine (pictures) | きゅうまい | <span class="kanji">九枚</span> | Section 2 Unit 18 |
 | nine minutes | きゅうふん | <span class="kanji">九分</span> | Section 2 Unit 5 |
 | nine o'clock | くじ | <span class="kanji">九時</span> | Section 1 Unit 7 |
@@ -446,6 +464,7 @@ one or more Kanji characters.
 | one (book) | いっさつ | <span class="kanji">一冊</span> | Section 2 Unit 16 |
 | one (object, generic) | ひとつ | <span class="kanji">一つ</span> | Section 2 Unit 1 |
 | one (objects) | いっこ | <span class="kanji">一個</span> | Section 2 Unit 14 |
+| one (person) | ひとり | <span class="kanji">一人</span> | Section 2 Unit 18 |
 | one (picture) | いちまい | <span class="kanji">一枚</span> | Section 2 Unit 18 |
 | one minute | いっぷん | <span class="kanji">一分</span> | Section 2 Unit 5 |
 | one o'clock | いちじ | <span class="kanji">一時</span> | Section 1 Unit 5 |
@@ -511,6 +530,7 @@ one or more Kanji characters.
 | red | あかい | | Section 1 Unit 4 |
 | refrigerator | れいぞうこ | <span class="kanji">冷蔵庫</span> | Section 2 Unit 3 |
 | relatives | しんせき | <span class="kanji">親戚</span> | Section 2 Unit 18 |
+| resembles | にています | <span class="kanji">似ています</span> | Section 2 Unit 18 |
 | restaurant | レストラン | | Section 2 Unit 1 |
 | restroom | おてあらい | | Section 2 Unit 2 |
 | rice | ごはん | <span class="kanji">ご飯</span> | Section 1 Unit 1 |
@@ -543,6 +563,7 @@ one or more Kanji characters.
 | seven (books) | ななさつ | <span class="kanji">七冊</span> | Section 2 Unit 16 |
 | seven (objects) | ななこ | <span class="kanji">七個</span> | Section 2 Unit 14 |
 | seven (objects, generic) | ななつ | <span class="kanji">七つ</span> | Section 2 Unit 9 |
+| seven (people) | しちにん | <span class="kanji">七人</span> | Section 2 Unit 18 |
 | seven (pictures) | ななまい | <span class="kanji">七枚</span> | Section 2 Unit 18 |
 | seven minutes | ななふん | <span class="kanji">七分</span> | Section 2 Unit 5 |
 | seven o'clock | しちじ | <span class="kanji">七時</span> | Section 1 Unit 7 |
@@ -564,6 +585,7 @@ one or more Kanji characters.
 | six (books) | ろくさつ | <span class="kanji">六冊</span> | Section 2 Unit 16 |
 | six (objects) | ろっこ | <span class="kanji">六個</span> | Section 2 Unit 14 |
 | six (objects, generic) | むっつ | <span class="kanji">六つ</span> | Section 2 Unit 9 |
+| six (people) | ろくにん | <span class="kanji">六人</span> | Section 2 Unit 18 |
 | six (pictures) | ろくまい | <span class="kanji">六枚</span> | Section 2 Unit 18 |
 | six minutes | ろっぷん | <span class="kanji">六分</span> | Section 2 Unit 5 |
 | six o'clock | ろくじ | <span class="kanji">六時</span> | Section 2 Unit 1 |
@@ -615,6 +637,7 @@ one or more Kanji characters.
 | T-shirt | Tシャツ | | Section 1 Unit 8 |
 | table | テーブル | | Section 2 Unit 3 |
 | Taiwan | たいわん | <span class="kanji">台湾</span> | Section 2 Unit 6 |
+| take care | いってらっしゃい | <span class="kanji">行ってらっしゃい</span> | Section 2 Unit 18 |
 | tall | たかい | <span class="kanji">高い</span> | Section 2 Unit 4 |
 | Tanaka | たなか | <span class="kanji">田中</span> | Section 1 Unit 4 |
 | tastes bad | まずい | | Section 2 Unit 15 |
@@ -628,6 +651,7 @@ one or more Kanji characters.
 | ten (birds, rabbits) | じゅうば | <span class="kanji">十羽</span> | Section 2 Unit 14 |
 | ten (books) | じゅっさつ | <span class="kanji">十冊</span> | Section 2 Unit 16 |
 | ten (objects) | じゅっこ | <span class="kanji">十個</span> | Section 2 Unit 14 |
+| ten (people) | じゅうにん | <span class="kanji">十人</span> | Section 2 Unit 18 |
 | ten (pictures) | じゅうまい | <span class="kanji">十枚</span> | Section 2 Unit 18 |
 | ten minutes | じゅっぷん | <span class="kanji">十分</span> | Section 2 Unit 5 |
 | ten o'clock | じゅうじ | <span class="kanji">十時</span> | Section 2 Unit 1 |
@@ -661,6 +685,7 @@ one or more Kanji characters.
 | three (books) | さんさつ | <span class="kanji">三冊</span> | Section 2 Unit 16 |
 | three (objects) | さんこ | <span class="kanji">三個</span> | Section 2 Unit 14 |
 | three (objects, generic) | みっつ | <span class="kanji">三つ</span> | Section 2 Unit 1 |
+| three (people) | さんにん | <span class="kanji">三人</span> | Section 2 Unit 18 |
 | three (pictures) | さんまい | <span class="kanji">三枚</span> | Section 2 Unit 18 |
 | three minutes | さんぷん | <span class="kanji">三分</span> | Section 2 Unit 5 |
 | three o'clock | さんじ | <span class="kanji">三時</span> | Section 1 Unit 5 |
@@ -757,6 +782,7 @@ one or more Kanji characters.
 | two (books) | にさつ | <span class="kanji">二冊</span> | Section 2 Unit 16 |
 | two (objects) | にこ | <span class="kanji">二個</span> | Section 2 Unit 14 |
 | two (objects, generic) | ふたつ | <span class="kanji">二つ</span> | Section 2 Unit 1 |
+| two (people) | ふたり | <span class="kanji">二人</span> | Section 2 Unit 18 |
 | two (pictures) | にまい | <span class="kanji">二枚</span> | Section 2 Unit 18 |
 | two minutes | にふん | <span class="kanji">二分</span> | Section 2 Unit 5 |
 | two o'clock | にじ | <span class="kanji">二時</span> | Section 1 Unit 5 |
@@ -765,6 +791,7 @@ one or more Kanji characters.
 | Ueno Park | うえのこうえん | | Section 2 Unit 4 |
 | um | ええと | | Section 2 Unit 1 |
 | umbrella | かさ | | Section 1 Unit 4 |
+| uncle | おじ | | Section 2 Unit 18 |
 | underground | ちか | | Section 2 Unit 2 |
 | university | だいがく | | Section 1 Unit 3 |
 | until | まで | | Section 2 Unit 11 |
@@ -789,6 +816,7 @@ one or more Kanji characters.
 | Wednesday | すいようび | <span class="kanji">水曜日</span> | Section 2 Unit 8 |
 | weekdays | へいじつ | <span class="kanji">平日</span> | Section 2 Unit 17 |
 | weekend | しゅうまつ | <span class="kanji">週末</span> | Section 2 Unit 1 |
+| welcome back | おかえりなさい | | Section 2 Unit 18 |
 | well | では | | Section 2 Unit 12 |
 | well-lit | あかるい | | Section 2 Unit 3 |
 | what day | なんようび | <span class="kanji">何曜日</span> | Section 2 Unit 9 |
@@ -803,7 +831,7 @@ one or more Kanji characters.
 | which one | どれ | | Section 2 Unit 12 |
 | white | しろい | | Section 1 Unit 4 |
 | who | だれ | <span class="kanji">誰</span> | Section 2 Unit 7 |
-| wife | つま | | Section 1 Unit 6 |
+| wife | つま | <span class="kanji">妻</span> | Section 1 Unit 6 |
 | window | まど | <span class="kanji">窓</span> | Section 2 Unit 13 |
 | winter | ふゆ | | Section 2 Unit 5 |
 | with | と | | Section 1 Unit 7 |
@@ -825,10 +853,12 @@ one or more Kanji characters.
 | your | あなたの | | Section 2 Unit 8 |
 | your | ご | | Section 2 Unit 15 |
 | your family | ごかぞく | | Section 2 Unit 5 |
+| your husband | ごしゅじん | <span class="kanji">ご主人</span> | Section 2 Unit 18 |
 | your kid | おこさん | | Section 2 Unit 6 |
 | your older brother | おにいさん | <span class="kanji">お兄さん</span> | Section 2 Unit 6 |
 | your older sister | おねえさん | <span class="kanji">お姉さん</span> | Section 2 Unit 6 |
 | your parents | ごりょうしん | | Section 2 Unit 5 |
+| your wife | おくさん | <span class="kanji">奥さん</span> | Section 2 Unit 18 |
 | your younger brother | おとうとさん | | Section 2 Unit 6 |
 | your younger sister | いもうとさん | | Section 2 Unit 6 |
 | zero | ゼロ | <span class="kanji">〇</span> | Section 2 Unit 5 |

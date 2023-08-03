@@ -38,7 +38,37 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | aunt | おば | |
+| at home | ございたく | ご在宅 |
+| children | おこさん | お子さん |
+| cousin | いとこ | |
+| father | ちちおや | 父親 |
+| how old | おいくつ | |
+| I'm back | ただいま | |
+| mother | ははおや | 母親 |
+| grandfather | おじいさん | |
+| grandmother | おばあさん | |
+| grandchildren | おまごさん | お孫さん |
+| granddaughter | まごむすめ | 孫娘 |
+| grandson | まごむすこ | 孫息子 |
+| my grandfather | そふ | 祖父 |
+| my grandmother | そぼ | 祖母 |
 | relatives | しんせき | 親戚 |
+| resembles | にています | 似ています |
+| take care | いってらっしゃい | 行ってらっしゃい |
+| welcome back | おかえりなさい | |
+| uncle | おじ | |
+| your husband | ごしゅじん | ご主人 |
+| your wife | おくさん | 奥さん |
+| one (person) | ひとり | 一人 |
+| two (people) | ふたり | 二人 |
+| three (people) | さんにん | 三人 |
+| four (people) | よにん | 四人 |
+| five (people) | ごにん | 五人 |
+| six (people) | ろくにん | 六人 |
+| seven (people) | しちにん | 七人 |
+| eight (people) | はちにん | 八人 |
+| nine (people) | きゅうにん | 九人 |
+| ten (people) | じゅうにん | 十人 |
 
 ### Examples
 | English | Japanese |

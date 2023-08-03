@@ -39,8 +39,8 @@
 | older sister | あね | 姉 |
 | younger brother | おとうと | 弟 |
 | younger sister | いもうと | 妹 |
-| husband | おっと | |
-| wife | つま | |
+| husband | おっと | 夫 |
+| wife | つま | 妻 |
 | son | むすこ | 息子 |
 | daughter | むすめ | 娘 |
 | noisy | うるさい | |
