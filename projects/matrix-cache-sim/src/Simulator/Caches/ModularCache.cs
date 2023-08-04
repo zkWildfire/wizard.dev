@@ -47,7 +47,7 @@ public class ModularCache : ICache
 		CacheLineSize = cacheLineSize;
 		_placementPolicy = placementPolicy;
 		_evictionPolicy = evictionPolicy;
-		_cacheLines = new List<ICacheLine?>(CacheSize);
+		_cacheLines = new List<ICacheLine?>(new ICacheLine?[cacheSize]);
 	}
 
 	/// Gets the cache line containing the given memory address.
@@ -58,19 +58,19 @@ public class ModularCache : ICache
 	///   main memory address.
 	public ICacheLine GetCacheLine(int address)
 	{
-		Debug.Assert(IsPresent(address));
+		if (address < 0)
+		{
+			throw new ArgumentOutOfRangeException(nameof(address));
+		}
 
 		// The number of cache lines in each cache will be relatively low, so
 		//   a simple linear search is sufficient.
-		foreach (var cacheLine in _cacheLines)
-		{
-			if (cacheLine != null && cacheLine.Contains(address))
-			{
-				return cacheLine;
-			}
-		}
-
-		throw new UnreachableException();
+		Debug.Assert(IsPresent(address));
+		return (
+			from cacheLine in _cacheLines
+			where cacheLine != null && cacheLine.Contains(address)
+			select cacheLine
+		).Single();
 	}
 
 	/// Checks if the cache contains a memory address.
