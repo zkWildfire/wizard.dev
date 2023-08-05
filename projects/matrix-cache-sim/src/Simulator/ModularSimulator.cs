@@ -70,15 +70,17 @@ public class ModularSimulator : ISimulator
 	/// Reads a value from memory.
 	/// @param address Address to read from.
 	/// @throws ArgumentOutOfRangeException If the address is not a valid
-	///   address in the memory block.
+	///   address in the matrix.
 	/// @returns The value at the address.
 	public int Read(int address)
 	{
+		// Make sure that the memory address is in the memory block, then
+		//   make sure that the memory address is in the matrix
 		_memory.ValidateAddress(address);
+		var (x, y) = _matrix.ToMatrixCoordinate(address);
 
 		var (cacheLine, isCacheHit) = GetCacheLine(address);
 		var value = cacheLine.Read(address);
-		var (x, y) = _matrix.ToMatrixCoordinate(address);
 		OnMemoryAccess?.Invoke(
 			this,
 			new OnMemoryAccessedEventArgs()
@@ -100,15 +102,17 @@ public class ModularSimulator : ISimulator
 	/// @param address Address to write to.
 	/// @param value Value to write.
 	/// @throws ArgumentOutOfRangeException If the address is not a valid
-	///   address in the memory block.
+	///   address in the matrix.
 	public void Write(int address, int value)
 	{
+		// Make sure that the memory address is in the memory block, then
+		//   make sure that the memory address is in the matrix
 		_memory.ValidateAddress(address);
+		var (x, y) = _matrix.ToMatrixCoordinate(address);
 
 		var (cacheLine, isCacheHit) = GetCacheLine(address);
 		var oldValue = cacheLine.Read(address);
 		cacheLine.Write(address, value);
-		var (x, y) = _matrix.ToMatrixCoordinate(address);
 		OnMemoryAccess?.Invoke(
 			this,
 			new OnMemoryAccessedEventArgs()
@@ -142,8 +146,15 @@ public class ModularSimulator : ISimulator
 		// Check if the cache line for the address needs to be loaded
 		if (!_cache.IsPresent(address))
 		{
+			// Determine the starting address of the cache line containing
+			//   the target memory address
+			var startingAddress = address - (address % _cache.CacheLineSize);
+
 			// Load the cache line
-			var newCacheLine = _cacheLineFactory.Construct(_memory, address);
+			var newCacheLine = _cacheLineFactory.Construct(
+				_memory,
+				startingAddress
+			);
 			_cache.LoadCacheLine(newCacheLine);
 			isCacheHit = false;
 		}

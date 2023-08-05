@@ -12,10 +12,10 @@ public class WriteThroughCacheLineFactory : ICacheLineFactory
 	private readonly int _size;
 
 	/// Initializes the factory.
-	/// @param size Size of each cache line in number of elements.
-	public WriteThroughCacheLineFactory(int size)
+	/// @param cacheLineSize Size of each cache line in number of elements.
+	public WriteThroughCacheLineFactory(int cacheLineSize)
 	{
-		_size = size;
+		_size = cacheLineSize;
 	}
 
 	/// Constructs a cache line for the given memory block.

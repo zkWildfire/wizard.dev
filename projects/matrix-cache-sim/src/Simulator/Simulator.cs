@@ -20,7 +20,7 @@ public interface ISimulator
 	/// Reads a value from memory.
 	/// @param address Address to read from.
 	/// @throws ArgumentOutOfRangeException If the address is not a valid
-	///   address in the memory block.
+	///   address in the matrix.
 	/// @returns The value at the address.
 	int Read(int address);
 
@@ -28,7 +28,7 @@ public interface ISimulator
 	/// @param address Address to write to.
 	/// @param value Value to write.
 	/// @throws ArgumentOutOfRangeException If the address is not a valid
-	///   address in the memory block.
+	///   address in the matrix.
 	void Write(int address, int value);
 
 	/// Checks whether the simulation's matrix has been fully transposed.
