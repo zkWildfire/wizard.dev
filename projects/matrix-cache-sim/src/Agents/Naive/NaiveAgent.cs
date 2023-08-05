@@ -32,9 +32,9 @@ public class NaiveAgent : IAgent
 		_matrix = matrix;
 	}
 
-	/// Generates the next action to take.
-	/// @returns The next action to take.
-	public IEnumerable<IAction> GetNextAction()
+	/// Generates the next action(s) to take.
+	/// @returns The next action(s) to take. Will return at least one action.
+	public IEnumerable<IAction> GetActions()
 	{
 		for (var y = 0; y < _matrix.Y; y++)
 		{

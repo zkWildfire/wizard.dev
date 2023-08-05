@@ -19,12 +19,13 @@ public class WriteAction : IAction
 	}
 
 	/// Applies the action to the given matrix and registers.
-	/// @param matrix Matrix to apply the action to.
+	/// @param simulator Simulator to apply the action to.
 	/// @param registers Registers to apply the action to.
-	public override void ApplyAction(IMatrix matrix, Register[] registers)
+	public override void ApplyAction(
+		ISimulator simulator,
+		IReadOnlyList<Register> registers)
 	{
 		// Write the value from the source register into the matrix
-		var (x, y) = matrix.ToMatrixCoordinate(Address);
-		matrix.Write(x, y, registers[RegisterIndex]);
+		simulator.Write(Address, registers[RegisterIndex].Value);
 	}
 }

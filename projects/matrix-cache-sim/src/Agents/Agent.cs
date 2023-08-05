@@ -9,8 +9,8 @@ namespace Mcs.Agents;
 public interface IAgent
 {
 	/// Generates the next action to take.
-	/// @returns The next action to take.
-	IEnumerable<IAction> GetNextAction();
+	/// @returns The next action(s) to take. Will return at least one action.
+	IEnumerable<IAction> GetActions();
 
 	/// Provides feedback to the agent about the result of the last action.
 	/// @param action Action that the result data is for.

@@ -48,7 +48,10 @@ public abstract class IAction
 	}
 
 	/// Applies the action to the given matrix and registers.
-	/// @param matrix Matrix to apply the action to.
+	/// @param simulator Simulator to apply the action to.
 	/// @param registers Registers to apply the action to.
-	public abstract void ApplyAction(IMatrix matrix, Register[] registers);
+	public abstract void ApplyAction(
+		ISimulator simulator,
+		IReadOnlyList<Register> registers
+	);
 }
