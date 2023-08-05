@@ -2,8 +2,8 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Actions;
-namespace Mcs.Common.Agents;
+using Mcs.Simulator.Actions;
+namespace Mcs.Agents;
 
 /// Interface for classes that implement a matrix transposition agent.
 public interface IAgent

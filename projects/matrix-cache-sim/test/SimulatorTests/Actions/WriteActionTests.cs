@@ -2,8 +2,8 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Actions;
-using Mcs.Common.Simulation;
+using Mcs.Simulator.Actions;
+using Mcs.Simulator.Simulation;
 
 namespace McsTests.Common.Actions;
 
@@ -62,8 +62,7 @@ public class WriteActionTests
 		var matrix = mockMatrix.Object;
 
 		// Set up the register that the test will use
-		var mockRegister = new Mock<IRegister>();
-		var register = mockRegister.Object;
+		var register = new Register();
 
 		// Run the test
 		var action = new WriteAction(matrix.ToMemoryAddress(x, y), 0);

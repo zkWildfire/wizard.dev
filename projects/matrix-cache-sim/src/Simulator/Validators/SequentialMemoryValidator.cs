@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Simulation;
+using Mcs.Simulator.Simulation;
 using Mcs.Simulator.Memory;
 namespace Mcs.Simulator.Validators;
 

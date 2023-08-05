@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Actions;
+using Mcs.Simulator.Actions;
 
 namespace McsTests.Common.Actions;
 

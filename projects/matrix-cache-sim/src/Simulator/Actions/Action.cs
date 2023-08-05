@@ -2,8 +2,8 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Simulation;
-namespace Mcs.Common.Actions;
+using Mcs.Simulator.Simulation;
+namespace Mcs.Simulator.Actions;
 
 /// Represents an action that an agent can take.
 public abstract class IAction
@@ -50,5 +50,5 @@ public abstract class IAction
 	/// Applies the action to the given matrix and registers.
 	/// @param matrix Matrix to apply the action to.
 	/// @param registers Registers to apply the action to.
-	public abstract void ApplyAction(IMatrix matrix, IRegister[] registers);
+	public abstract void ApplyAction(IMatrix matrix, Register[] registers);
 }

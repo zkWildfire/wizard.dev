@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-namespace Mcs.Common.Actions;
+namespace Mcs.Simulator.Actions;
 
 /// Provides feedback to an agent about the result of an action.
 public readonly record struct Result

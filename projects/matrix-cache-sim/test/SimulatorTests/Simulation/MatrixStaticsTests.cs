@@ -2,9 +2,9 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Actions;
-using Mcs.Common.Simulation;
-namespace McsTests.Common.Simulation;
+using Mcs.Simulator.Actions;
+using Mcs.Simulator.Simulation;
+namespace McsTests.Simulator.Simulation;
 
 public class MatrixStaticsTests
 {
@@ -207,42 +207,31 @@ public class MatrixStaticsTests
 		mockMatrix.SetupGet(m => m.Y).Returns(matrixY);
 		mockMatrix.SetupGet(m => m.IsColumnMajor).Returns(false);
 		mockMatrix.Setup(
-			m => m.Read(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<IRegister>())
-		).Callback<int, int, IRegister>((x, y, r) =>
+			m => m.Read(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<Register>())
+		).Callback<int, int, Register>((x, y, r) =>
 		{
 			// Note that since the register will be a mock register, the address
 			//   passed to `SetValue()` is irrelevant for this test
 			r.SetValue(matrixValues[y][x], 0);
 		});
 		mockMatrix.Setup(
-			m => m.Write(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<IRegister>())
-		).Callback<int, int, IRegister>((x, y, r) =>
+			m => m.Write(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<Register>())
+		).Callback<int, int, Register>((x, y, r) =>
 		{
 			matrixValues[y][x] = r.Value;
 		});
 		var matrix = mockMatrix.Object;
-
-		// Set up the registers for the test
-		var values = new int[] { -1, -1 };
-		var mockRegisters = new Mock<IRegister>[2] {
-			new Mock<IRegister>(),
-			new Mock<IRegister>()
+		var registers = new Register[2] {
+			new Register(),
+			new Register()
 		};
-		for (var i = 0; i < mockRegisters.Length; i++)
-		{
-			var index = i;
-			var mockRegister = mockRegisters[i];
-			mockRegister.SetupGet(r => r.Value).Returns(() => values[index]);
-			mockRegister.Setup(r => r.SetValue(It.IsAny<int>(), It.IsAny<int>()))
-				.Callback<int, int>((v, _) => values[index] = v);
-		}
 
 		// Run the swap operation
 		foreach (var action in matrix.Swap(x1, y1, r1, x2, y2, r2))
 		{
 			action.ApplyAction(
 				matrix,
-				mockRegisters.Select(r => r.Object).ToArray()
+				registers
 			);
 		}
 

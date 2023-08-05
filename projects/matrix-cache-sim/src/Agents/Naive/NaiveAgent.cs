@@ -2,10 +2,9 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Actions;
-using Mcs.Common.Agents;
-using Mcs.Common.Simulation;
-using static Mcs.Common.Simulation.MatrixStatics;
+using Mcs.Simulator.Actions;
+using Mcs.Simulator.Simulation;
+using static Mcs.Simulator.Simulation.MatrixStatics;
 namespace Mcs.Agents.Naive;
 
 /// Agent that implements a naive matrix transpose algorithm.

@@ -2,8 +2,8 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Actions;
-namespace Mcs.Common.Simulation;
+using Mcs.Simulator.Actions;
+namespace Mcs.Simulator.Simulation;
 
 /// Defines helper methods applicable to any matrix implementation.
 public static class MatrixStatics

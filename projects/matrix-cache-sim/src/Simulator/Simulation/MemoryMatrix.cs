@@ -2,7 +2,6 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Simulation;
 using Mcs.Simulator.Memory;
 namespace Mcs.Simulator.Simulation;
 
@@ -73,7 +72,7 @@ public abstract class IMemoryMatrix : IMatrix
 	/// @param x X coordinate of the value to read.
 	/// @param y Y coordinate of the value to read.
 	/// @param reg Register to read the value into.
-	public void Read(int x, int y, IRegister reg)
+	public void Read(int x, int y, Register reg)
 	{
 		// `ToMemoryAddress()` is an extension method, hence the use of `this`
 		var address = this.ToMemoryAddress(x, y);
@@ -85,7 +84,7 @@ public abstract class IMemoryMatrix : IMatrix
 	/// @param x X coordinate of the value to write.
 	/// @param y Y coordinate of the value to write.
 	/// @param reg Register to write the value from.
-	public void Write(int x, int y, IRegister reg)
+	public void Write(int x, int y, Register reg)
 	{
 		// `ToMemoryAddress()` is an extension method, hence the use of `this`
 		var address = this.ToMemoryAddress(x, y);

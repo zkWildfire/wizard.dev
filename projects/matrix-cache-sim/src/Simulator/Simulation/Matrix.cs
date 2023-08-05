@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-namespace Mcs.Common.Simulation;
+namespace Mcs.Simulator.Simulation;
 
 /// Interface that each agent will use when transposing a matrix.
 public interface IMatrix
@@ -26,11 +26,11 @@ public interface IMatrix
 	/// @param x X coordinate of the value to read.
 	/// @param y Y coordinate of the value to read.
 	/// @param reg Register to read the value into.
-	void Read(int x, int y, IRegister reg);
+	void Read(int x, int y, Register reg);
 
 	/// Writes the value from the given register into the given coordinates.
 	/// @param x X coordinate of the value to write.
 	/// @param y Y coordinate of the value to write.
 	/// @param reg Register to write the value from.
-	void Write(int x, int y, IRegister reg);
+	void Write(int x, int y, Register reg);
 }

@@ -9,6 +9,6 @@
 		</AssemblyAttribute>
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\Common\Common.csproj" />
+		<ProjectReference Include="..\Simulator\Simulator.csproj" />
 	</ItemGroup>
 </Project>

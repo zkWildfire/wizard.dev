@@ -2,11 +2,10 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Simulation;
 namespace Mcs.Simulator.Simulation;
 
 /// Class that simulates a CPU register.
-public class Register : IRegister
+public class Register
 {
 	/// Value currently held in the register.
 	public int Value { get; private set; }

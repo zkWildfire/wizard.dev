@@ -2,8 +2,8 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Simulation;
-namespace Mcs.Common.Actions;
+using Mcs.Simulator.Simulation;
+namespace Mcs.Simulator.Actions;
 
 /// Represents a write operation.
 public class WriteAction : IAction
@@ -21,7 +21,7 @@ public class WriteAction : IAction
 	/// Applies the action to the given matrix and registers.
 	/// @param matrix Matrix to apply the action to.
 	/// @param registers Registers to apply the action to.
-	public override void ApplyAction(IMatrix matrix, IRegister[] registers)
+	public override void ApplyAction(IMatrix matrix, Register[] registers)
 	{
 		// Write the value from the source register into the matrix
 		var (x, y) = matrix.ToMatrixCoordinate(Address);

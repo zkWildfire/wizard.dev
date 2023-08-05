@@ -2,7 +2,6 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Simulation;
 using Mcs.Simulator.CacheLines;
 using Mcs.Simulator.Caches;
 using Mcs.Simulator.Events;

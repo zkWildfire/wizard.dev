@@ -2,8 +2,8 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Common.Agents;
-using Mcs.Common.Simulation;
+using Mcs.Agents;
+using Mcs.Simulator.Simulation;
 namespace Mcs.Cli.Commands;
 
 /// Runs an agent on a variety of scenarios and evaluates its performance.
