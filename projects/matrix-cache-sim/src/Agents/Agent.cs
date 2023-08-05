@@ -8,6 +8,9 @@ namespace Mcs.Agents;
 /// Interface for classes that implement a matrix transposition agent.
 public interface IAgent
 {
+	/// Printable name of the agent.
+	string Name { get; }
+
 	/// Generates the next action to take.
 	/// @returns The next action(s) to take. Will return at least one action.
 	IEnumerable<IAction> GetActions();

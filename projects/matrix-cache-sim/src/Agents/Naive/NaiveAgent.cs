@@ -10,6 +10,9 @@ namespace Mcs.Agents.Naive;
 /// Agent that implements a naive matrix transpose algorithm.
 public class NaiveAgent : IAgent
 {
+	/// Printable name of the agent.
+	public string Name => "Naive Agent";
+
 	/// Matrix that the agent is transposing.
 	private readonly IMatrix _matrix;
 
