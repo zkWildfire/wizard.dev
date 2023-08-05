@@ -86,4 +86,11 @@ public class NaiveAgentTests
 
 		Assert.True(validator.Validate(memory, matrix));
 	}
+
+	[Fact]
+	public void CodeCoverageOnly()
+	{
+		var agent = new NaiveAgent(Mock.Of<IMatrix>(), 2);
+		agent.NotifyResult(new Mock<IAction>(true, 0, 0).Object, new());
+	}
 }
