@@ -2,7 +2,6 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Simulator.Simulation;
 namespace Mcs.Simulator.Actions;
 
 /// Represents an action that an agent can take.
@@ -46,12 +45,4 @@ public abstract class IAction
 		Address = address;
 		RegisterIndex = registerIndex;
 	}
-
-	/// Applies the action to the given matrix and registers.
-	/// @param simulator Simulator to apply the action to.
-	/// @param registers Registers to apply the action to.
-	public abstract void ApplyAction(
-		ISimulator simulator,
-		IReadOnlyList<Register> registers
-	);
 }

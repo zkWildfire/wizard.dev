@@ -47,7 +47,7 @@ public class ReadActionTests
 	}
 
 	[Fact]
-	public void ReadIntoRegister()
+	public void ReadIntoRegisterFromSimulator()
 	{
 		const int ADDRESS = 5;
 		const int REGISTER_COUNT = 4;
@@ -67,5 +67,34 @@ public class ReadActionTests
 			Times.Once
 		);
 		Assert.Equal(VALUE, registers[INDEX].Value);
+	}
+
+	[Fact]
+	public void ReadIntoRegisterFromMatrix()
+	{
+		const int ADDRESS = 1;
+		const int REGISTER_COUNT = 4;
+		const int INDEX = 1;
+		const int X = 2;
+		const int Y = 2;
+
+		var matrix = new Mock<IMatrix>();
+		matrix.SetupGet(m => m.X).Returns(X);
+		matrix.SetupGet(m => m.Y).Returns(Y);
+		matrix.SetupGet(m => m.StartingAddress).Returns(0);
+		matrix.SetupGet(m => m.EndingAddress).Returns(X * Y);
+
+		var registers = Enumerable.Range(0, REGISTER_COUNT)
+			.Select(i => new Register(i))
+			.ToArray();
+		var action = new ReadAction(ADDRESS, INDEX);
+		action.ApplyAction(matrix.Object, registers);
+
+		// Make sure the expected methods were invoked
+		var (x, y) = matrix.Object.ToMatrixCoordinate(ADDRESS);
+		matrix.Verify(
+			m => m.Read(x, y, registers[INDEX]),
+			Times.Once
+		);
 	}
 }

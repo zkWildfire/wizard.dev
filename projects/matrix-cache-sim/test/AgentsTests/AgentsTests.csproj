@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Agents\Agents.csproj" />
+		<ProjectReference Include="..\..\src\Simulator\Simulator.csproj" />
+	</ItemGroup>
+</Project>
