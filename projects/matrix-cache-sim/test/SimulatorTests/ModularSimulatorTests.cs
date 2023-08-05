@@ -703,10 +703,99 @@ public class ModularSimulatorTests
 	[Fact]
 	public void ValidateCorrectlyTransposedMatrix()
 	{
+		const int MATRIX_X = 4;
+		const int MATRIX_Y = 4;
+		const int CACHE_SIZE = 4;
+		const int CACHE_LINE_SIZE = 8;
+		const int STARTING_OFFSET = CACHE_LINE_SIZE;
+
+		// Create the simulator components
+		var memory = new ArrayMemory((MATRIX_X * MATRIX_Y) + STARTING_OFFSET);
+		var placementPolicy = new FullyAssociativePlacementPolicy(CACHE_SIZE);
+		var evictionPolicy = new LeastRecentlyUsedEvictionPolicy(CACHE_SIZE);
+		var validator = new SequentialMemoryValidator();
+		var cache = new ModularCache(
+			CACHE_SIZE,
+			CACHE_LINE_SIZE,
+			placementPolicy,
+			evictionPolicy
+		);
+		var cacheLineFactory = new WriteThroughCacheLineFactory(CACHE_LINE_SIZE);
+		var matrix = new RowMajorMatrix(
+			memory,
+			MATRIX_X,
+			MATRIX_Y,
+			STARTING_OFFSET
+		);
+
+		// Create the simulator and run the test
+		var simulator = new ModularSimulator(
+			memory,
+			cache,
+			cacheLineFactory,
+			validator,
+			matrix
+		);
+		for (var x = 0; x < MATRIX_X; x++)
+		{
+			for (var y = 0; y < MATRIX_Y; y++)
+			{
+				if (x > y)
+				{
+					continue;
+				}
+
+				var a1 = matrix.ToMemoryAddress(x, y);
+				var a2 = matrix.ToMemoryAddress(y, x);
+				var v1 = simulator.Read(a1);
+				var v2 = simulator.Read(a2);
+				simulator.Write(a1, v2);
+				simulator.Write(a2, v1);
+			}
+		}
+
+		// Validate the matrix
+		Assert.True(simulator.Validate());
 	}
 
 	[Fact]
 	public void ValidateIncorrectlyTransposedMatrix()
 	{
+		const int MATRIX_X = 4;
+		const int MATRIX_Y = 4;
+		const int CACHE_SIZE = 4;
+		const int CACHE_LINE_SIZE = 8;
+		const int STARTING_OFFSET = CACHE_LINE_SIZE;
+
+		// Create the simulator components
+		var memory = new ArrayMemory((MATRIX_X * MATRIX_Y) + STARTING_OFFSET);
+		var placementPolicy = new FullyAssociativePlacementPolicy(CACHE_SIZE);
+		var evictionPolicy = new LeastRecentlyUsedEvictionPolicy(CACHE_SIZE);
+		var validator = new SequentialMemoryValidator();
+		var cache = new ModularCache(
+			CACHE_SIZE,
+			CACHE_LINE_SIZE,
+			placementPolicy,
+			evictionPolicy
+		);
+		var cacheLineFactory = new WriteThroughCacheLineFactory(CACHE_LINE_SIZE);
+		var matrix = new RowMajorMatrix(
+			memory,
+			MATRIX_X,
+			MATRIX_Y,
+			STARTING_OFFSET
+		);
+
+		// Create the simulator but don't modify the matrix
+		var simulator = new ModularSimulator(
+			memory,
+			cache,
+			cacheLineFactory,
+			validator,
+			matrix
+		);
+
+		// Validate the matrix
+		Assert.False(simulator.Validate());
 	}
 }

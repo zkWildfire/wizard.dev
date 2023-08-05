@@ -65,6 +65,9 @@ public class ModularSimulator : ISimulator
 		{
 			OnCacheLineEvicted?.Invoke(this, args);
 		};
+
+		// Set the initial memory state
+		_memoryValidator.Initialize(_memory, _matrix);
 	}
 
 	/// Reads a value from memory.
