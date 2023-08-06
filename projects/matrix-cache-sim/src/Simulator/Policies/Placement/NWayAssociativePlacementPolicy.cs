@@ -8,9 +8,6 @@ namespace Mcs.Simulator.Policies.Placement;
 /// Policy used by N-way associative caches.
 public class NWayAssociativePlacementPolicy : IPlacementPolicy
 {
-	/// Size of the cache in number of cache lines.
-	private readonly int _cacheSize;
-
 	/// Size of each cache line in number of elements.
 	private readonly int _cacheLineSize;
 
@@ -38,7 +35,6 @@ public class NWayAssociativePlacementPolicy : IPlacementPolicy
 			);
 		}
 
-		_cacheSize = cacheSize;
 		_cacheLineSize = cacheLineSize;
 		_associativity = associativity;
 		_numSets = cacheSize / associativity;

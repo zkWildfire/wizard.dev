@@ -22,6 +22,9 @@ public class ModularSimulator : ISimulator
 	/// Event raised when a memory location is accessed.
 	public event EventHandler<OnMemoryAccessedEventArgs>? OnMemoryAccess;
 
+	/// Matrix being transposed in the simulation.
+	public IMatrix Matrix { get; }
+
 	/// Memory block used for the simulation.
 	private readonly IMemory _memory;
 
@@ -33,9 +36,6 @@ public class ModularSimulator : ISimulator
 
 	/// Memory validator used for the simulation.
 	private readonly IMemoryValidator _memoryValidator;
-
-	/// Matrix used for the simulation.
-	private readonly IMatrix _matrix;
 
 	/// Initializes the simulator.
 	/// @param memory Memory block used for the simulation.
@@ -54,7 +54,7 @@ public class ModularSimulator : ISimulator
 		_cache = cache;
 		_cacheLineFactory = cacheLineFactory;
 		_memoryValidator = memoryValidator;
-		_matrix = matrix;
+		Matrix = matrix;
 
 		// Bind to events from the cache
 		_cache.OnCacheLineLoaded += (sender, args) =>
@@ -67,7 +67,7 @@ public class ModularSimulator : ISimulator
 		};
 
 		// Set the initial memory state
-		_memoryValidator.Initialize(_memory, _matrix);
+		_memoryValidator.Initialize(_memory, Matrix);
 	}
 
 	/// Reads a value from memory.
@@ -80,7 +80,7 @@ public class ModularSimulator : ISimulator
 		// Make sure that the memory address is in the memory block, then
 		//   make sure that the memory address is in the matrix
 		_memory.ValidateAddress(address);
-		var (x, y) = _matrix.ToMatrixCoordinate(address);
+		var (x, y) = Matrix.ToMatrixCoordinate(address);
 
 		var (cacheLine, isCacheHit) = GetCacheLine(address);
 		var value = cacheLine.Read(address);
@@ -111,7 +111,7 @@ public class ModularSimulator : ISimulator
 		// Make sure that the memory address is in the memory block, then
 		//   make sure that the memory address is in the matrix
 		_memory.ValidateAddress(address);
-		var (x, y) = _matrix.ToMatrixCoordinate(address);
+		var (x, y) = Matrix.ToMatrixCoordinate(address);
 
 		var (cacheLine, isCacheHit) = GetCacheLine(address);
 		var oldValue = cacheLine.Read(address);
@@ -135,7 +135,7 @@ public class ModularSimulator : ISimulator
 	/// @returns True if the matrix has been fully transposed, false otherwise.
 	public bool Validate()
 	{
-		return _memoryValidator.Validate(_memory, _matrix);
+		return _memoryValidator.Validate(_memory, Matrix);
 	}
 
 	/// Gets the cache line for the address, loading it if necessary.

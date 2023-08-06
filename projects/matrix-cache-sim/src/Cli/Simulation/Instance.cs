@@ -3,6 +3,7 @@
  *   All rights reserved.
  */
 using Mcs.Agents;
+using Mcs.Cli.Results;
 using Mcs.Cli.Rewards;
 using Mcs.Simulator;
 using Mcs.Simulator.Actions;

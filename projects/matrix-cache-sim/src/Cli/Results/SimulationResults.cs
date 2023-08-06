@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-namespace Mcs.Cli.Simulation;
+namespace Mcs.Cli.Results;
 
 /// Results of running a single simulation instance.
 public readonly record struct SimulationResults

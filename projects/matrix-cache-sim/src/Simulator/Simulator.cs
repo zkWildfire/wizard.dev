@@ -3,6 +3,7 @@
  *   All rights reserved.
  */
 using Mcs.Simulator.Events;
+using Mcs.Simulator.Simulation;
 namespace Mcs.Simulator;
 
 /// Interface for all simulator implementations.
@@ -16,6 +17,9 @@ public interface ISimulator
 
 	/// Event raised when a memory location is accessed.
 	event EventHandler<OnMemoryAccessedEventArgs>? OnMemoryAccess;
+
+	/// Matrix being transposed in the simulation.
+	IMatrix Matrix { get; }
 
 	/// Reads a value from memory.
 	/// @param address Address to read from.
