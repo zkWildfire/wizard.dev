@@ -8,6 +8,9 @@ namespace Mcs.Cli.Reporter;
 /// Stats reporter that prints to the console.
 public class ConsoleStatsReporter : IStatsReporter
 {
+	/// Prefix used for each indented line.
+	private const string PREFIX = "  ";
+
 	/// Writer to write to.
 	private readonly TextWriter _writer;
 
@@ -43,6 +46,17 @@ public class ConsoleStatsReporter : IStatsReporter
 		{
 			ReportResults(run);
 		}
+
+		// Report aggregated statistics for the agent
+		var stats = new ResultStatistics(results, 2);
+		_writer.WriteLine("Agent Score Statistics:");
+		_writer.WriteLine(
+			$"{PREFIX}Arithmetic mean: {stats.ArithmeticMean}"
+		);
+		_writer.WriteLine(
+			$"{PREFIX}Geometric mean: {stats.GeometricMean}"
+		);
+		_writer.WriteLine();
 	}
 
 	/// Reports results from a single simulation run.
@@ -57,7 +71,6 @@ public class ConsoleStatsReporter : IStatsReporter
 	/// @param results Results from the simulation runs.
 	public void ReportResults(SimulationResults results)
 	{
-		const string PREFIX = "  ";
 		_writer.WriteLine(
 			$"{PREFIX}Cache hits: {results.CacheHits}"
 		);
