@@ -8,10 +8,10 @@ namespace Mcs.Cli.Results;
 public readonly record struct SimulationRun
 {
 	/// UI-printable name of the configuration.
-	public string ConfigurationName { get; init; }
+	public string ConfigurationName => Config.ConfigurationName;
 
 	/// Unique ID assigned to the configuration.
-	public string ConfigurationId { get; init; }
+	public string ConfigurationId => Config.ConfigurationId;
 
 	/// Configuration used for the simulation.
 	public SimulationConfig Config { get; init; }

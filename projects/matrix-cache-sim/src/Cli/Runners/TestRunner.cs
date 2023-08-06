@@ -10,15 +10,17 @@ namespace Mcs.Cli.Runners;
 ///   to run simulations for the purpose of training agents.
 public interface ITestRunner
 {
-	/// Performs a single simulation run.
-	/// @param config Configuration to use for the simulation.
-	/// @return Results from the simulation run.
-	SimulationRun RunSimulation(SimulationConfig config);
-
 	/// Performs a set of simulation runs.
 	/// @param configs Configurations to use for the simulation runs.
 	/// @return Results from the simulation runs.
 	IEnumerable<SimulationRun> RunSimulations(
 		IEnumerable<SimulationConfig> configs
 	);
+
+	/// Performs a single simulation run.
+	/// @param configName UI-printable name of the configuration.
+	/// @param configId Unique ID assigned to the configuration.
+	/// @param config Configuration to use for the simulation.
+	/// @return Results from the simulation run.
+	SimulationRun RunSimulation(SimulationConfig config);
 }
