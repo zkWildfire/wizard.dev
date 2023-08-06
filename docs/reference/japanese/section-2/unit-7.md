@@ -13,7 +13,7 @@
 | meat | にく | 肉 |
 | next month | らいげつ | 来月 |
 | painting | え | |
-| plane | ひこうき | |
+| plane | ひこうき | 飛行機 |
 | plane ticket | ひこうきのチケット | |
 | short | みじかい | |
 | ticket | チケット | |
@@ -51,7 +51,7 @@
 | to know | ができます | |
 | to meet | あいます | 会います |
 | to take (a photo) | とります | 撮ります |
-| to ride | のります | |
+| to ride | のります | 乗ります |
 | to wait for | まちます | |
 | who | だれ | 誰 |
 

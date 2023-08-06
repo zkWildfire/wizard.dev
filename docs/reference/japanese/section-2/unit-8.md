@@ -51,7 +51,7 @@
 | supermarket | スーパー | |
 | sweet | あまい | 甘い |
 | to love | だいすき | |
-| to use | つかいます | |
+| to use | つかいます | 使います |
 | tofu | とうふ | |
 | together | いっしょに | |
 | though | でも | |

@@ -3,6 +3,9 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| bicycle | じてんしゃ | 自転車 |
+| car | くるま | 車 |
+| to walk | あるくます | 歩くます |
 
 ### Examples
 | English | Japanese |

@@ -35,7 +35,7 @@
 | convenience store | コンビニ | |
 | department store | デパート | |
 | hotel | ホテル | |
-| train station | えき | |
+| train station | えき | 駅 |
 | university | だいがく | |
 
 ### Examples

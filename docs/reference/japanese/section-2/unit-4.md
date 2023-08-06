@@ -21,7 +21,7 @@
 | Yokohama | よこはま | |
 | final stop | しゅうてん | |
 | bus | バス | |
-| train | でんしゃ | |
+| train | でんしゃ | 電車 |
 | to come | きます | 来ます |
 | to go to | いきます | 行きます |
 | to take (time) | かかります | |

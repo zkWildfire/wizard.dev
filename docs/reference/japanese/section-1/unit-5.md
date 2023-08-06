@@ -28,9 +28,9 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| airport | くうこう | |
-| subway | ちかてつ | |
-| map | ちず | |
+| airport | くうこう | 空港 |
+| subway | ちかてつ | 地下鉄 |
+| map | ちず | 地図 |
 | passport | パスポート | |
 | smartphone | スマホ | |
 | ticket | きっぷ | |

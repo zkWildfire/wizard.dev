@@ -32,7 +32,7 @@ one or more Kanji characters.
 | after | あと | | Section 2 Unit 6 |
 | after that | それから | | Section 2 Unit 17 |
 | air conditioner | エアコン | | Section 2 Unit 3 |
-| airport | くうこう | | Section 1 Unit 5 |
+| airport | くうこう | <span class="kanji">空港</span> | Section 1 Unit 5 |
 | Akihabara | あきはばら | | Section 2 Unit 4 |
 | album | アルバム | | Section 2 Unit 10 |
 | all sorts of (things) | いろいろ | | Section 2 Unit 6 |
@@ -75,6 +75,7 @@ one or more Kanji characters.
 | below | した | <span class="kanji">下</span> | Section 2 Unit 16 |
 | beside | となり | <span class="kanji">隣</span> | Section 2 Unit 16 |
 | between | あいだ | <span class="kanji">間</span> | Section 2 Unit 16 |
+| bicycle | じてんしゃ | <span class="kanji">自転車</span> | Section 2 Unit 19 |
 | big | おおきい | <span class="kanji">大きい</span> | Section 1 Unit 3 |
 | bird | とり | <span class="kanji">鳥</span> | Section 2 Unit 13 |
 | black | くろい | | Section 1 Unit 8 |
@@ -109,6 +110,7 @@ one or more Kanji characters.
 | camera | カメラ | | Section 2 Unit 9 |
 | Canada | カナダ | | Section 1 Unit 3 |
 | Canadian | カナダじん | | Section 1 Unit 3 |
+| car | くるま | <span class="kanji">車</span> | Section 2 Unit 19 |
 | card game | カードゲーム | | Section 2 Unit 10 |
 | castle | しろ | | Section 2 Unit 7 |
 | cat | ねこ | <span class="kanji">猫</span> | Section 2 Unit 13 |
@@ -381,7 +383,7 @@ one or more Kanji characters.
 | Malaysia | マレーシア | | Section 2 Unit 3 |
 | manager | マネージャー | | Section 2 Unit 9 |
 | manga | まんが | | Section 1 Unit 7 |
-| map | ちず | | Section 1 Unit 5 |
+| map | ちず | <span class="kanji">地図</span> | Section 1 Unit 5 |
 | mascot | キャラクター | | Section 2 Unit 10 |
 | matcha | まっちゃ | | Section 2 Unit 8 |
 | meal set | ていしょく | | Section 2 Unit 1 |
@@ -496,7 +498,7 @@ one or more Kanji characters.
 | pizza | ピザ | | Section 1 Unit 7 |
 | pizza shop | ピザや | | Section 2 Unit 4 |
 | place | ところ | | Section 2 Unit 4 |
-| plane | ひこうき | | Section 2 Unit 7 |
+| plane | ひこうき | <span class="kanji">飛行機</span> | Section 2 Unit 7 |
 | plane ticket | ひこうきのチケット | | Section 2 Unit 7 |
 | platforms | ホーム | | Section 2 Unit 2 |
 | player | せんしゅ | | Section 2 Unit 9 |
@@ -625,7 +627,7 @@ one or more Kanji characters.
 | study | べんきょう | <span class="kanji">勉強</span> | Section 2 Unit 11 |
 | stuff | もの | | Section 2 Unit 8 |
 | stylish | おしゃれ | | Section 1 Unit 6 |
-| subway | ちかてつ | | Section 1 Unit 5 |
+| subway | ちかてつ | <span class="kanji">地下鉄</span> | Section 1 Unit 5 |
 | suitcase | スーツケース | | Section 2 Unit 7 |
 | summer | なつ | | Section 2 Unit 5 |
 | summer break | なつやすみ | | Section 2 Unit 5 |
@@ -735,7 +737,7 @@ one or more Kanji characters.
 | to read | よみます | <span class="kanji">読みます</span> | Section 1 Unit 7 |
 | to rest | やすみます | <span class="kanji">休みます</span> | Section 2 Unit 5 |
 | to return | かえります | <span class="kanji">帰ります</span> | Section 2 Unit 6 |
-| to ride | のります | | Section 2 Unit 7 |
+| to ride | のります | <span class="kanji">乗ります</span> | Section 2 Unit 7 |
 | to run | はしります | <span class="kanji">走ります</span> | Section 2 Unit 1 |
 | to sing | うたいます | | Section 2 Unit 11 |
 | to sing | うたいます | <span class="kanji">歌います</span> | Section 2 Unit 18 |
@@ -750,8 +752,9 @@ one or more Kanji characters.
 | to talk | はなします | <span class="kanji">話します</span> | Section 2 Unit 1 |
 | to translate | ほんやくします | | Section 2 Unit 9 |
 | to turn on | つけます | | Section 2 Unit 17 |
-| to use | つかいます | | Section 2 Unit 8 |
+| to use | つかいます | <span class="kanji">使います</span> | Section 2 Unit 8 |
 | to wait for | まちます | | Section 2 Unit 7 |
+| to walk | あるくます | <span class="kanji">歩くます</span> | Section 2 Unit 19 |
 | to wash | あらいます | | Section 2 Unit 9 |
 | to watch | みます | <span class="kanji">見ます</span> | Section 1 Unit 7 |
 | to work | しごとします | | Section 2 Unit 9 |
@@ -767,8 +770,8 @@ one or more Kanji characters.
 | Toronto | トロント | | Section 1 Unit 6 |
 | tough | たいへん | | Section 2 Unit 6 |
 | town | まち | | Section 1 Unit 6 |
-| train | でんしゃ | | Section 2 Unit 4 |
-| train station | えき | | Section 1 Unit 3 |
+| train | でんしゃ | <span class="kanji">電車</span> | Section 2 Unit 4 |
+| train station | えき | <span class="kanji">駅</span> | Section 1 Unit 3 |
 | transfer | のりかえ | | Section 2 Unit 2 |
 | translator | ほんやくか | | Section 2 Unit 9 |
 | trash can | ゴミばこ | | Section 2 Unit 2 |
