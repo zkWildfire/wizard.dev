@@ -57,23 +57,34 @@ public class ConsoleStatsReporter : IStatsReporter
 	/// @param results Results from the simulation runs.
 	public void ReportResults(SimulationResults results)
 	{
-		_writer.WriteLine($"Cache hits: {results.CacheHits}");
-		_writer.WriteLine($"Cache misses: {results.CacheMisses}");
+		const string PREFIX = "  ";
 		_writer.WriteLine(
-			$"Total memory accesses: {results.TotalMemoryAccesses}"
+			$"{PREFIX}Cache hits: {results.CacheHits}"
 		);
-		_writer.WriteLine($"Score: {results.Score}");
+		_writer.WriteLine(
+			$"{PREFIX}Cache misses: {results.CacheMisses}"
+		);
+		_writer.WriteLine(
+			$"{PREFIX}Total memory accesses: {results.TotalMemoryAccesses}"
+		);
+		_writer.WriteLine(
+			$"{PREFIX}Score: {results.Score}"
+		);
+		_writer.WriteLine();
 	}
 
 	/// Prints a banner with the given text.
 	/// @param bannerText Text to print in the banner.
-	private void PrintBanner(string bannerText, char bannerChar = '=')
+	private void PrintBanner(
+		string bannerText,
+		char bannerChar = '=',
+		int bannerWidth = 80)
 	{
-		_writer.WriteLine(new string(bannerChar, bannerText.Length));
+		_writer.WriteLine(new string(bannerChar, bannerWidth));
 		_writer.WriteLine();
 		_writer.WriteLine(bannerText);
 		_writer.WriteLine();
-		_writer.WriteLine(new string(bannerChar, bannerText.Length));
+		_writer.WriteLine(new string(bannerChar, bannerWidth));
 		_writer.WriteLine();
 	}
 }

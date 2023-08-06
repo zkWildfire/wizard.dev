@@ -11,6 +11,9 @@ public class NaiveAgentFactory : IAgentFactory
 	/// Name of the agent type that the factory constructs.
 	public string AgentName => "Naive Agent";
 
+	/// Unique ID for the agent.
+	public string AgentId => "naive";
+
 	/// Creates a new agent instance.
 	/// @param simulator Simulator for the agent to use.
 	/// @param registerCount Number of registers the agent can use.

@@ -2,7 +2,6 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Mcs.Agents;
 using Mcs.Simulator.Policies.Eviction;
 using Mcs.Simulator.Policies.Placement;
 namespace Mcs.Cli.Results;
@@ -27,9 +26,6 @@ public readonly record struct SimulationConfig
 
 	/// Eviction policy to use for the cache.
 	public IEvictionPolicyFactory EvictionPolicyFactory { get; init; }
-
-	/// Factory to use to construct the agent.
-	public IAgentFactory AgentFactory { get; init; }
 
 	/// Number of registers that the agent can use.
 	public int RegisterCount { get; init; }

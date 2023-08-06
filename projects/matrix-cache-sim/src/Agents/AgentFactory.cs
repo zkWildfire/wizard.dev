@@ -11,6 +11,9 @@ public interface IAgentFactory
 	/// Name of the agent type that the factory constructs.
 	string AgentName { get; }
 
+	/// Unique ID for the agent.
+	string AgentId { get; }
+
 	/// Creates a new agent instance.
 	/// @param simulator Simulator for the agent to use.
 	/// @param registerCount Number of registers the agent can use.

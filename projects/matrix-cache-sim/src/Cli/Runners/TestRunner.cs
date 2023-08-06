@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using Mcs.Agents;
 using Mcs.Cli.Results;
 namespace Mcs.Cli.Runners;
 
@@ -11,16 +12,20 @@ namespace Mcs.Cli.Runners;
 public interface ITestRunner
 {
 	/// Performs a set of simulation runs.
+	/// @param agentFactory Factory to use for creating agents.
 	/// @param configs Configurations to use for the simulation runs.
 	/// @return Results from the simulation runs.
 	IEnumerable<SimulationRun> RunSimulations(
+		IAgentFactory agentFactory,
 		IEnumerable<SimulationConfig> configs
 	);
 
 	/// Performs a single simulation run.
-	/// @param configName UI-printable name of the configuration.
-	/// @param configId Unique ID assigned to the configuration.
+	/// @param agentFactory Factory to use for creating agents.
 	/// @param config Configuration to use for the simulation.
 	/// @return Results from the simulation run.
-	SimulationRun RunSimulation(SimulationConfig config);
+	SimulationRun RunSimulation(
+		IAgentFactory agentFactory,
+		SimulationConfig config
+	);
 }

@@ -83,6 +83,26 @@
 				"Build Matrix Cache Simulator (Debug)",
 				"Clean test results"
 			]
+		},
+		{
+			"label": "Run Matrix Cache Simulator CLI",
+			"type": "process",
+			"group": "none",
+			"command": "dotnet",
+			"args": [
+				"run",
+				"--configuration",
+				"Release",
+				"--no-build",
+				"--no-restore"
+			],
+			"options": {
+				"cwd": "${workspaceFolder:Matrix Cache Simulator}/src/Cli"
+			},
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Build Matrix Cache Simulator (Release)"
+			]
 		}
 	]
 }

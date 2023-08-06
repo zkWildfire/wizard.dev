@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using Mcs.Agents;
 using Mcs.Cli.Results;
 using Mcs.Cli.Rewards;
 using Mcs.Cli.Simulation;
@@ -30,21 +31,26 @@ public class SequentialLocalTestRunner : ITestRunner
 	}
 
 	/// Performs a set of simulation runs.
+	/// @param agentFactory Factory to use for creating agents.
 	/// @param configs Configurations to use for the simulation runs.
 	/// @return Results from the simulation runs.
 	public IEnumerable<SimulationRun> RunSimulations(
+		IAgentFactory agentFactory,
 		IEnumerable<SimulationConfig> configs)
 	{
 		foreach (var config in configs)
 		{
-			yield return RunSimulation(config);
+			yield return RunSimulation(agentFactory, config);
 		}
 	}
 
 	/// Performs a single simulation run.
+	/// @param agentFactory Factory to use for creating agents.
 	/// @param config Configuration to use for the simulation.
 	/// @return Results from the simulation run.
-	public SimulationRun RunSimulation(SimulationConfig config)
+	public SimulationRun RunSimulation(
+		IAgentFactory agentFactory,
+		SimulationConfig config)
 	{
 		// Extract parameters into local variables for convenience
 		var MATRIX_X = config.MatrixSizeX;
@@ -81,7 +87,7 @@ public class SequentialLocalTestRunner : ITestRunner
 
 		// Set up the components for running the simulation
 		var rewardComponent = _rewardComponentFactory();
-		var agent = config.AgentFactory.Construct(
+		var agent = agentFactory.Construct(
 			simulator,
 			config.RegisterCount
 		);
