@@ -4,8 +4,9 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | over there | あそこ | |
-| close | ちかい | |
-| far | とおい | |
+| close | ちかい | 近い |
+| near | ちかい | 近い |
+| far | とおい | 遠い |
 | underground | ちか | |
 | first floor | いっかい | |
 | second floor | にかい | |

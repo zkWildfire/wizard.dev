@@ -129,7 +129,7 @@ one or more Kanji characters.
 | class(es) | じゅぎょう | | Section 2 Unit 9 |
 | classroom | きょうしつ | | Section 2 Unit 9 |
 | cleaning | そうじ | <span class="kanji">掃除</span> | Section 2 Unit 6 |
-| close | ちかい | | Section 2 Unit 2 |
+| close | ちかい | <span class="kanji">近い</span> | Section 2 Unit 2 |
 | clothes | ふく | | Section 1 Unit 8 |
 | cloudy | くもり | | Section 2 Unit 5 |
 | coach | コーチ | | Section 2 Unit 7 |
@@ -223,9 +223,9 @@ one or more Kanji characters.
 | family | かぞく | <span class="kanji">家族</span> | Section 1 Unit 6 |
 | famous | ゆうめい | | Section 1 Unit 6 |
 | fantasy | ファンタジー | | Section 2 Unit 3 |
-| far | とおい | | Section 2 Unit 2 |
+| far | とおい | <span class="kanji">遠い</span> | Section 2 Unit 2 |
 | fashionable | おしゃれ | | Section 1 Unit 6 |
-| fast | はやい | | Section 2 Unit 4 |
+| fast | はやい | <span class="kanji">速い</span> | Section 2 Unit 4 |
 | father | ちちおや | <span class="kanji">父親</span> | Section 2 Unit 18 |
 | favorite | すき | | Section 2 Unit 10 |
 | feeling sick | ぐあいがわるい | | Section 2 Unit 5 |
@@ -315,7 +315,8 @@ one or more Kanji characters.
 | house | いえ | <span class="kanji">家</span> | Section 2 Unit 3 |
 | housework | いえのそうじ | <span class="kanji">家の掃除</span> | Section 2 Unit 17 |
 | how is | どう | | Section 2 Unit 1 |
-| how long | どの | | Section 2 Unit 4 |
+| how long | どのぐらい | | Section 2 Unit 4 |
+| how long | どれくらい | | Section 2 Unit 19 |
 | how many (objects) | いくつ | | Section 2 Unit 14 |
 | how many hours | なんじかん | <span class="kanji">何時間</span> | Section 2 Unit 11 |
 | how much | いくら | | Section 1 Unit 8 |
@@ -362,6 +363,7 @@ one or more Kanji characters.
 | Kyoto | きょうと | <span class="kanji">京都</span> | Section 1 Unit 6 |
 | large | Lサイズ | | Section 2 Unit 10 |
 | last | さいご | | Section 2 Unit 11 |
+| late | おそい | <span class="kanji">遅い</span> | Section 2 Unit 19 |
 | laundry | せんたく | <span class="kanji">洗濯</span> | Section 2 Unit 6 |
 | lawyer | べんごし | | Section 1 Unit 1 |
 | left | ひだり | <span class="kanji">左</span> | Section 2 Unit 16 |
@@ -421,6 +423,7 @@ one or more Kanji characters.
 | Nakayama | なかやま | <span class="kanji">中山</span> | Section 1 Unit 4 |
 | name | なまえ | <span class="kanji">名前</span> | Section 2 Unit 15 |
 | Naomi | なおみ | <span class="kanji">直美</span> | Section 1 Unit 2 |
+| near | ちかい | <span class="kanji">近い</span> | Section 2 Unit 2 |
 | nearby | ちかく | | Section 2 Unit 5 |
 | necktie | ネクタイ | | Section 1 Unit 8 |
 | new | あたらしい | <span class="kanji">新しい</span> | Section 1 Unit 8 |
@@ -449,6 +452,13 @@ one or more Kanji characters.
 | non-fiction | ノンフィクション | | Section 2 Unit 10 |
 | not | じゃない | | Section 1 Unit 5 |
 | not at (place) | いません | | Section 2 Unit 14 |
+| not close | ちかくない | <span class="kanji">近くない</span> | Section 2 Unit 19 |
+| not dirty | きたなくない | <span class="kanji">汚くない</span> | Section 2 Unit 19 |
+| not far | とおくない | <span class="kanji">遠くない</span> | Section 2 Unit 19 |
+| not fast | はやくない | <span class="kanji">速くない</span> | Section 2 Unit 19 |
+| not late | おそくない | <span class="kanji">遅くない</span> | Section 2 Unit 19 |
+| not near | ちかくない | <span class="kanji">近くない</span> | Section 2 Unit 19 |
+| not slow | おそくない | <span class="kanji">遅くない</span> | Section 2 Unit 19 |
 | not very | あまり | | Section 2 Unit 18 |
 | now | いま | <span class="kanji">今</span> | Section 1 Unit 5 |
 | o'clock | じ | <span class="kanji">時</span> | Section 1 Unit 5 |
@@ -593,6 +603,7 @@ one or more Kanji characters.
 | six o'clock | ろくじ | <span class="kanji">六時</span> | Section 2 Unit 1 |
 | six years old | ろくさい | <span class="kanji">六歳</span> | Section 2 Unit 14 |
 | skirt | スカート | | Section 1 Unit 8 |
+| slow | おそい | <span class="kanji">遅い</span> | Section 2 Unit 19 |
 | small | ちいさい | <span class="kanji">小さい</span> | Section 1 Unit 3 |
 | small | Sサイズ | | Section 2 Unit 10 |
 | smart | あたまがい | | Section 1 Unit 6 |

@@ -5,6 +5,16 @@
 |:-------:|:----:|:-----:|
 | bicycle | じてんしゃ | 自転車 |
 | car | くるま | 車 |
+| late | おそい | 遅い |
+| how long | どれくらい | |
+| not close | ちかくない | 近くない |
+| not dirty | きたなくない | 汚くない |
+| not far | とおくない | 遠くない |
+| not fast | はやくない | 速くない |
+| not late | おそくない | 遅くない |
+| not near | ちかくない | 近くない |
+| not slow | おそくない | 遅くない |
+| slow | おそい | 遅い |
 | to walk | あるくます | 歩くます |
 
 ### Examples

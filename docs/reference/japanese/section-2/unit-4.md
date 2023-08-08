@@ -4,9 +4,9 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | about | ぐらい | |
-| how long | どの | |
+| how long | どのぐらい | |
 | next | つぎ | |
-| fast | はやい | |
+| fast | はやい | 速い |
 | long | ながい | 長い |
 | soon | もうすぐ | |
 | minute | ふん | 分 |
