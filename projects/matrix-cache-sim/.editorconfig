@@ -415,3 +415,11 @@ dotnet_diagnostic.CA5394.severity = none
 # This warning is more of a nuisance than a useful warning since events are
 #   often defined before the code that ends up using them is implemented.
 dotnet_diagnostic.CS0067.severity = none
+
+# Ignore missing XML comment warnings
+# `GenerateDocumentationFile` needs to be enabled to allow IDE0005 warnings
+#   about unused imports to be emitted (see https://github.com/dotnet/roslyn/issues/41640).
+#   However, enabling that option causes CS1591 warnings to be emitted for
+#   missing XML comments since Doxygen is used for documentation instead of XML
+#   comments. Ignore this warning since the XML documentation file is not used.
+dotnet_diagnostic.CS1591.severity = none

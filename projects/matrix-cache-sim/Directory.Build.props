@@ -19,6 +19,11 @@
 		<CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<!--
+			Needed to enable IDE0005 (Remove unnecessary usings/imports) when building.
+			See: https://github.com/dotnet/roslyn/issues/41640
+		-->
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
 		<!-- Build configuration -->
 		<PlatformTarget>AnyCPU</PlatformTarget>
