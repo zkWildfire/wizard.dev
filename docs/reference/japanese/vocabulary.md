@@ -81,7 +81,7 @@ one or more Kanji characters.
 | black | くろい | | Section 1 Unit 8 |
 | black tea | こうちゃ | | Section 2 Unit 1 |
 | blog | ブログ | | Section 2 Unit 11 |
-| blue | あおい | | Section 1 Unit 8 |
+| blue | あおい | <span class="kanji">青い</span> | Section 1 Unit 8 |
 | book | ほん | <span class="kanji">本</span> | Section 1 Unit 7 |
 | bookshelf | ほんだな | <span class="kanji">本棚</span> | Section 2 Unit 3 |
 | bookstore | ほんや | | Section 2 Unit 10 |
@@ -539,7 +539,7 @@ one or more Kanji characters.
 | ramen shop | ラーメンや | | Section 2 Unit 4 |
 | raw | なま | | Section 2 Unit 8 |
 | really? | ほんとうですか。 | | Section 2 Unit 3 |
-| red | あかい | | Section 1 Unit 4 |
+| red | あかい | <span class="kanji">赤い</span> | Section 1 Unit 4 |
 | refrigerator | れいぞうこ | <span class="kanji">冷蔵庫</span> | Section 2 Unit 3 |
 | relatives | しんせき | <span class="kanji">親戚</span> | Section 2 Unit 18 |
 | resembles | にています | <span class="kanji">似ています</span> | Section 2 Unit 18 |
@@ -583,7 +583,8 @@ one or more Kanji characters.
 | she | かのじょ | <span class="kanji">彼女</span> | Section 2 Unit 15 |
 | shelf | たな | <span class="kanji">棚</span> | Section 2 Unit 16 |
 | Shibuya | しぶや | | Section 2 Unit 4 |
-| shoe | くつ | | Section 1 Unit 4 |
+| shirt | シャツ | | Section 2 Unit 19 |
+| shoe(s) | くつ | <span class="kanji">靴</span> | Section 1 Unit 4 |
 | shopping | かいもの | <span class="kanji">買い物</span> | Section 2 Unit 6 |
 | short | みじかい | | Section 2 Unit 7 |
 | show | ショー | | Section 2 Unit 10 |
@@ -646,6 +647,7 @@ one or more Kanji characters.
 | sunny | はれ | | Section 2 Unit 5 |
 | supermarket | スーパー | | Section 2 Unit 8 |
 | sushi | すし | | Section 1 Unit 1 |
+| sweater | セーター | | Section 2 Unit 19 |
 | sweet | あまい | <span class="kanji">甘い</span> | Section 2 Unit 8 |
 | T-shirt | Tシャツ | | Section 1 Unit 8 |
 | table | テーブル | | Section 2 Unit 3 |
@@ -768,6 +770,7 @@ one or more Kanji characters.
 | to walk | あるくます | <span class="kanji">歩くます</span> | Section 2 Unit 19 |
 | to wash | あらいます | | Section 2 Unit 9 |
 | to watch | みます | <span class="kanji">見ます</span> | Section 1 Unit 7 |
+| to wear | きます | <span class="kanji">着ます</span> | Section 2 Unit 19 |
 | to work | しごとします | | Section 2 Unit 9 |
 | to work | はたらきます | <span class="kanji">働きます</span> | Section 2 Unit 16 |
 | to write | かきます | <span class="kanji">書きます</span> | Section 2 Unit 11 |
@@ -843,7 +846,7 @@ one or more Kanji characters.
 | where | どこ | | Section 1 Unit 3 |
 | which | どの | | Section 2 Unit 8 |
 | which one | どれ | | Section 2 Unit 12 |
-| white | しろい | | Section 1 Unit 4 |
+| white | しろい | <span class="kanji">白い</span> | Section 1 Unit 4 |
 | who | だれ | <span class="kanji">誰</span> | Section 2 Unit 7 |
 | wife | つま | <span class="kanji">妻</span> | Section 1 Unit 6 |
 | window | まど | <span class="kanji">窓</span> | Section 2 Unit 13 |
@@ -854,7 +857,7 @@ one or more Kanji characters.
 | Yamaguchi | やまぐち | <span class="kanji">山口</span> | Section 1 Unit 4 |
 | yard | にわ | <span class="kanji">庭</span> | Section 2 Unit 13 |
 | years old | さい | <span class="kanji">歳</span> | Section 1 Unit 6 |
-| yellow | きいろい | | Section 2 Unit 10 |
+| yellow | きいろい | <span class="kanji">黄色い</span> | Section 2 Unit 10 |
 | yen | えん | <span class="kanji">円</span> | Section 1 Unit 8 |
 | yes | はい | | Section 1 Unit 2 |
 | yesterday | きのう | <span class="kanji">昨日</span> | Section 2 Unit 16 |

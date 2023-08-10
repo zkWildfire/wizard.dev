@@ -8,10 +8,10 @@
 | my | わたしの | 私の |
 | hat | ぼうし | |
 | umbrella | かさ | |
-| shoe | くつ | |
+| shoe(s) | くつ | 靴 |
 | coat | コート | |
-| red | あかい | |
-| white | しろい | |
+| red | あかい | 赤い |
+| white | しろい | 白い |
 
 ### Examples
 | English | Japanese |

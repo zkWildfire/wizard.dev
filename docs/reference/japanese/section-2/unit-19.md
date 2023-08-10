@@ -30,6 +30,9 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| shirt | シャツ | |
+| sweater | セーター | |
+| to wear | きます | 着ます |
 
 ### Examples
 | English | Japanese |

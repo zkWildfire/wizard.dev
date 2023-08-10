@@ -19,7 +19,7 @@
 | scary | こわい | |
 | show | ショー | |
 | vanilla | バニラ | |
-| yellow | きいろい | |
+| yellow | きいろい | 黄色い |
 | large | Lサイズ | |
 | small | Sサイズ | |
 
