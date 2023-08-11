@@ -483,7 +483,7 @@ one or more Kanji characters.
 | one minute | いっぷん | <span class="kanji">一分</span> | Section 2 Unit 5 |
 | one o'clock | いちじ | <span class="kanji">一時</span> | Section 1 Unit 5 |
 | one year old | いっさい | <span class="kanji">一歳</span> | Section 2 Unit 14 |
-| orange | オレンジ色 | | Section 2 Unit 19 |
+| orange | オレンジいろ | <span class="kanji">オレンジ色</span> | Section 2 Unit 19 |
 | Osaka | おおさか | <span class="kanji">大阪</span> | Section 2 Unit 4 |
 | our | うちの | | Section 2 Unit 15 |
 | our | うちの | | Section 2 Unit 16 |
@@ -509,7 +509,7 @@ one or more Kanji characters.
 | piano | ピアノ | | Section 2 Unit 11 |
 | picture | え | <span class="kanji">絵</span> | Section 2 Unit 18 |
 | pie | パイ | | Section 2 Unit 8 |
-| pink | ピンク色 | | Section 2 Unit 19 |
+| pink | ピンクいろ | <span class="kanji">ピンク色</span> | Section 2 Unit 19 |
 | pizza | ピザ | | Section 1 Unit 7 |
 | pizza shop | ピザや | | Section 2 Unit 4 |
 | place | ところ | | Section 2 Unit 4 |
@@ -752,7 +752,7 @@ one or more Kanji characters.
 | to open | あけます | <span class="kanji">開けます</span> | Section 2 Unit 17 |
 | to play | します | | Section 1 Unit 7 |
 | to play (an instrument) | ひきます | | Section 2 Unit 11 |
-| to put on | はきます | <span class="kanji">履きます</span> | Section 2 Unit 19 |
+| to put on (feet) | はきます | <span class="kanji">履きます</span> | Section 2 Unit 19 |
 | to read | よみます | <span class="kanji">読みます</span> | Section 1 Unit 7 |
 | to rest | やすみます | <span class="kanji">休みます</span> | Section 2 Unit 5 |
 | to return | かえります | <span class="kanji">帰ります</span> | Section 2 Unit 6 |
@@ -777,8 +777,8 @@ one or more Kanji characters.
 | to walk | あるくます | <span class="kanji">歩くます</span> | Section 2 Unit 19 |
 | to wash | あらいます | <span class="kanji">洗います</span> | Section 2 Unit 9 |
 | to watch | みます | <span class="kanji">見ます</span> | Section 1 Unit 7 |
-| to wear | きます | <span class="kanji">着ます</span> | Section 2 Unit 19 |
-| to wear | かぶります | <span class="kanji">被ります</span> | Section 2 Unit 19 |
+| to wear (head) | かぶります | <span class="kanji">被ります</span> | Section 2 Unit 19 |
+| to wear (torso) | きます | <span class="kanji">着ます</span> | Section 2 Unit 19 |
 | to work | しごとします | | Section 2 Unit 9 |
 | to work | はたらきます | <span class="kanji">働きます</span> | Section 2 Unit 16 |
 | to write | かきます | <span class="kanji">書きます</span> | Section 2 Unit 11 |
