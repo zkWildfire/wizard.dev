@@ -91,6 +91,7 @@ public class NaiveAgentTests
 	public void CodeCoverageOnly()
 	{
 		var agent = new NaiveAgent(Mock.Of<IMatrix>(), 2);
+		Assert.NotEmpty(agent.Name);
 		agent.NotifyResult(new Mock<IAction>(true, 0, 0).Object, new());
 	}
 }
