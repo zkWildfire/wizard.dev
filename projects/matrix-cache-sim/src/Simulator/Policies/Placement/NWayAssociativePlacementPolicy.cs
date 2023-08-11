@@ -8,11 +8,14 @@ namespace Mcs.Simulator.Policies.Placement;
 /// Policy used by N-way associative caches.
 public class NWayAssociativePlacementPolicy : IPlacementPolicy
 {
+	/// Size of the cache in number of cache lines.
+	public int CacheSize => _numSets * Associativity;
+
 	/// Size of each cache line in number of elements.
-	private readonly int _cacheLineSize;
+	public int CacheLineSize { get; }
 
 	/// Number of cache lines in each set.
-	private readonly int _associativity;
+	public int Associativity { get; }
 
 	/// Number of cache sets in the cache.
 	private readonly int _numSets;
@@ -35,8 +38,8 @@ public class NWayAssociativePlacementPolicy : IPlacementPolicy
 			);
 		}
 
-		_cacheLineSize = cacheLineSize;
-		_associativity = associativity;
+		CacheLineSize = cacheLineSize;
+		Associativity = associativity;
 		_numSets = cacheSize / associativity;
 	}
 
@@ -45,11 +48,11 @@ public class NWayAssociativePlacementPolicy : IPlacementPolicy
 	/// @returns The indices in the cache that the cache line may be placed in.
 	public IReadOnlyList<int> GetIndices(ICacheLine cacheLine)
 	{
-		Debug.Assert(cacheLine.Size == _cacheLineSize);
+		Debug.Assert(cacheLine.Size == CacheLineSize);
 
 		// Determine which set the cache line is part of
-		var setIndex = cacheLine.StartingAddress / _cacheLineSize % _numSets;
-		return Enumerable.Range(0, _associativity)
+		var setIndex = cacheLine.StartingAddress / CacheLineSize % _numSets;
+		return Enumerable.Range(0, Associativity)
 			.Select(i => (i * _numSets) + setIndex)
 			.ToList();
 	}

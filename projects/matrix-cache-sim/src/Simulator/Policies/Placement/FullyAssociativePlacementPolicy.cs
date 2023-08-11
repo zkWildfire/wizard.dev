@@ -8,6 +8,9 @@ namespace Mcs.Simulator.Policies.Placement;
 /// Policy used by fully associative caches.
 public class FullyAssociativePlacementPolicy : IPlacementPolicy
 {
+	/// Number of cache lines in the cache.
+	public int CacheSize => _indices.Count;
+
 	/// Array to return whenever `GetIndices()` is called.
 	/// A fully associative cache maps all cache lines to every possible index
 	///   in the cache, so the array to return is always the same regardless

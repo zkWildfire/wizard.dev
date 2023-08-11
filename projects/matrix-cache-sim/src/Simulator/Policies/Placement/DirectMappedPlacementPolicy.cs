@@ -9,18 +9,18 @@ namespace Mcs.Simulator.Policies.Placement;
 public class DirectMappedPlacementPolicy : IPlacementPolicy
 {
 	/// Size of the cache in number of cache lines.
-	private readonly int _cacheSize;
+	public int CacheSize { get; }
 
 	/// Size of each cache line in number of elements.
-	private readonly int _cacheLineSize;
+	public int CacheLineSize { get; }
 
 	/// Initializes the policy.
 	/// @param cacheSize Size of the cache in number of cache lines.
 	/// @param cacheLineSize Size of each cache line in number of elements.
 	public DirectMappedPlacementPolicy(int cacheSize, int cacheLineSize)
 	{
-		_cacheSize = cacheSize;
-		_cacheLineSize = cacheLineSize;
+		CacheSize = cacheSize;
+		CacheLineSize = cacheLineSize;
 	}
 
 	/// Gets the indices in the cache that a cache line may be placed in.
@@ -28,13 +28,13 @@ public class DirectMappedPlacementPolicy : IPlacementPolicy
 	/// @returns The indices in the cache that the cache line may be placed in.
 	public IReadOnlyList<int> GetIndices(ICacheLine cacheLine)
 	{
-		Debug.Assert(cacheLine.Size == _cacheLineSize);
+		Debug.Assert(cacheLine.Size == CacheLineSize);
 
 		// Each cache line may be mapped to exactly one location in the cache
 		//   based on its starting address.
-		var cacheLineIndex = cacheLine.StartingAddress / _cacheLineSize;
+		var cacheLineIndex = cacheLine.StartingAddress / CacheLineSize;
 		return new List<int> {
-			cacheLineIndex % _cacheSize
+			cacheLineIndex % CacheSize
 		};
 	}
 }
