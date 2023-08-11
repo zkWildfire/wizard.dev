@@ -3,14 +3,14 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| clothes | ふく | |
+| clothes | ふく | 服 |
 | dress | ドレス | |
 | jacket | ジャケット | |
 | necktie | ネクタイ | |
 | T-shirt | Tシャツ | |
 | skirt | スカート | |
 | wallet | さいふ | |
-| black | くろい | |
+| black | くろい | 黒い |
 | blue | あおい | 青い |
 | new | あたらしい | 新しい |
 | old | ふるい | 古い |

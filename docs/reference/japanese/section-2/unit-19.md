@@ -30,9 +30,18 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| brown | ちゃいろ | 茶色 |
+| do not want | ほしくない | 欲しくない |
+| orange | オレンジ色 | |
+| pants | ズボン | |
+| pink | ピンク色 | |
 | shirt | シャツ | |
 | sweater | セーター | |
-| to wear | きます | 着ます |
+| to take off | ぬぎます | 脱ぎます |
+| to put on (feet) | はきます | 履きます |
+| to wear (torso) | きます | 着ます |
+| to wear (head) | かぶります | 被ります |
+| underwear | パンツ | |
 
 ### Examples
 | English | Japanese |

@@ -6,7 +6,7 @@
 | these | これら | |
 | those | それら | |
 | my | わたしの | 私の |
-| hat | ぼうし | |
+| hat | ぼうし | 帽子 |
 | umbrella | かさ | |
 | shoe(s) | くつ | 靴 |
 | coat | コート | |

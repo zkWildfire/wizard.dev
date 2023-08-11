@@ -78,7 +78,7 @@ one or more Kanji characters.
 | bicycle | じてんしゃ | <span class="kanji">自転車</span> | Section 2 Unit 19 |
 | big | おおきい | <span class="kanji">大きい</span> | Section 1 Unit 3 |
 | bird | とり | <span class="kanji">鳥</span> | Section 2 Unit 13 |
-| black | くろい | | Section 1 Unit 8 |
+| black | くろい | <span class="kanji">黒い</span> | Section 1 Unit 8 |
 | black tea | こうちゃ | | Section 2 Unit 1 |
 | blog | ブログ | | Section 2 Unit 11 |
 | blue | あおい | <span class="kanji">青い</span> | Section 1 Unit 8 |
@@ -97,6 +97,7 @@ one or more Kanji characters.
 | British | イギリスじん | | Section 1 Unit 3 |
 | British (thing) | イギリスの | | Section 2 Unit 3 |
 | brothers | きょうだい | <span class="kanji">兄弟</span> | Section 2 Unit 15 |
+| brown | ちゃいろ | <span class="kanji">茶色</span> | Section 2 Unit 19 |
 | building | たてもの | | Section 2 Unit 4 |
 | bullet train | しんかんせん | | Section 2 Unit 7 |
 | bus | バス | | Section 2 Unit 4 |
@@ -130,7 +131,7 @@ one or more Kanji characters.
 | classroom | きょうしつ | | Section 2 Unit 9 |
 | cleaning | そうじ | <span class="kanji">掃除</span> | Section 2 Unit 6 |
 | close | ちかい | <span class="kanji">近い</span> | Section 2 Unit 2 |
-| clothes | ふく | | Section 1 Unit 8 |
+| clothes | ふく | <span class="kanji">服</span> | Section 1 Unit 8 |
 | cloudy | くもり | | Section 2 Unit 5 |
 | coach | コーチ | | Section 2 Unit 7 |
 | coat | コート | | Section 1 Unit 4 |
@@ -174,6 +175,7 @@ one or more Kanji characters.
 | dirty | きたない | <span class="kanji">汚い</span> | Section 2 Unit 17 |
 | do not like | きらい | <span class="kanji">嫌い</span> | Section 2 Unit 15 |
 | do not live in | にはすんでいません | <span class="kanji">には住んでいません</span> | Section 2 Unit 14 |
+| do not want | ほしくない | <span class="kanji">欲しくない</span> | Section 2 Unit 19 |
 | doctor | いしゃ | | Section 1 Unit 1 |
 | documentary | ドキュメンタリー | | Section 2 Unit 10 |
 | dog | いぬ | <span class="kanji">犬</span> | Section 2 Unit 13 |
@@ -295,7 +297,7 @@ one or more Kanji characters.
 | gym | ジム | | Section 2 Unit 9 |
 | Hana | はな | | Section 1 Unit 2 |
 | Harajuku | はらじゅく | | Section 2 Unit 4 |
-| hat | ぼうし | | Section 1 Unit 4 |
+| hat | ぼうし | <span class="kanji">帽子</span> | Section 1 Unit 4 |
 | he | かれ | <span class="kanji">彼</span> | Section 2 Unit 15 |
 | hello | こんにちは | | Section 1 Unit 2 |
 | here | ここ | | Section 1 Unit 3 |
@@ -481,6 +483,7 @@ one or more Kanji characters.
 | one minute | いっぷん | <span class="kanji">一分</span> | Section 2 Unit 5 |
 | one o'clock | いちじ | <span class="kanji">一時</span> | Section 1 Unit 5 |
 | one year old | いっさい | <span class="kanji">一歳</span> | Section 2 Unit 14 |
+| orange | オレンジ色 | | Section 2 Unit 19 |
 | Osaka | おおさか | <span class="kanji">大阪</span> | Section 2 Unit 4 |
 | our | うちの | | Section 2 Unit 15 |
 | our | うちの | | Section 2 Unit 16 |
@@ -489,6 +492,7 @@ one or more Kanji characters.
 | over there | あそこ | | Section 2 Unit 2 |
 | p.m. | ごご | <span class="kanji">午後</span> | Section 2 Unit 9 |
 | painting | え | | Section 2 Unit 7 |
+| pants | ズボン | | Section 2 Unit 19 |
 | parents | りょうしん | <span class="kanji">両親</span> | Section 2 Unit 5 |
 | park | こうえん | | Section 2 Unit 5 |
 | party | パーティー | | Section 2 Unit 16 |
@@ -505,6 +509,7 @@ one or more Kanji characters.
 | piano | ピアノ | | Section 2 Unit 11 |
 | picture | え | <span class="kanji">絵</span> | Section 2 Unit 18 |
 | pie | パイ | | Section 2 Unit 8 |
+| pink | ピンク色 | | Section 2 Unit 19 |
 | pizza | ピザ | | Section 1 Unit 7 |
 | pizza shop | ピザや | | Section 2 Unit 4 |
 | place | ところ | | Section 2 Unit 4 |
@@ -747,6 +752,7 @@ one or more Kanji characters.
 | to open | あけます | <span class="kanji">開けます</span> | Section 2 Unit 17 |
 | to play | します | | Section 1 Unit 7 |
 | to play (an instrument) | ひきます | | Section 2 Unit 11 |
+| to put on | はきます | <span class="kanji">履きます</span> | Section 2 Unit 19 |
 | to read | よみます | <span class="kanji">読みます</span> | Section 1 Unit 7 |
 | to rest | やすみます | <span class="kanji">休みます</span> | Section 2 Unit 5 |
 | to return | かえります | <span class="kanji">帰ります</span> | Section 2 Unit 6 |
@@ -762,15 +768,17 @@ one or more Kanji characters.
 | to take (a photo) | とります | <span class="kanji">撮ります</span> | Section 2 Unit 7 |
 | to take (time) | かかります | | Section 2 Unit 4 |
 | to take a | にはいります | | Section 2 Unit 6 |
+| to take off | ぬぎます | <span class="kanji">脱ぎます</span> | Section 2 Unit 19 |
 | to talk | はなします | <span class="kanji">話します</span> | Section 2 Unit 1 |
 | to translate | ほんやくします | | Section 2 Unit 9 |
 | to turn on | つけます | | Section 2 Unit 17 |
 | to use | つかいます | <span class="kanji">使います</span> | Section 2 Unit 8 |
 | to wait for | まちます | | Section 2 Unit 7 |
 | to walk | あるくます | <span class="kanji">歩くます</span> | Section 2 Unit 19 |
-| to wash | あらいます | | Section 2 Unit 9 |
+| to wash | あらいます | <span class="kanji">洗います</span> | Section 2 Unit 9 |
 | to watch | みます | <span class="kanji">見ます</span> | Section 1 Unit 7 |
 | to wear | きます | <span class="kanji">着ます</span> | Section 2 Unit 19 |
+| to wear | かぶります | <span class="kanji">被ります</span> | Section 2 Unit 19 |
 | to work | しごとします | | Section 2 Unit 9 |
 | to work | はたらきます | <span class="kanji">働きます</span> | Section 2 Unit 16 |
 | to write | かきます | <span class="kanji">書きます</span> | Section 2 Unit 11 |
@@ -810,6 +818,7 @@ one or more Kanji characters.
 | umbrella | かさ | | Section 1 Unit 4 |
 | uncle | おじ | | Section 2 Unit 18 |
 | underground | ちか | | Section 2 Unit 2 |
+| underwear | パンツ | | Section 2 Unit 19 |
 | university | だいがく | | Section 1 Unit 3 |
 | until | まで | | Section 2 Unit 11 |
 | up | うえ | <span class="kanji">上</span> | Section 2 Unit 16 |

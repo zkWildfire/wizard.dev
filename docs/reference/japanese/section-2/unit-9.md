@@ -57,7 +57,7 @@
 | team | チーム | |
 | to drive | うんてんします | |
 | to translate | ほんやくします | |
-| to wash | あらいます | |
+| to wash | あらいます | 洗います |
 | to work | しごとします | |
 | translator | ほんやくか | |
 
