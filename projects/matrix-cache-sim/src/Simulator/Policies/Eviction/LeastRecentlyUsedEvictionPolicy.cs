@@ -7,6 +7,9 @@ namespace Mcs.Simulator.Policies.Eviction;
 /// Policy that evicts the least recently used cache line in a set.
 public class LeastRecentlyUsedEvictionPolicy : IEvictionPolicy
 {
+	/// Number of cache lines in the cache.
+	public int CacheSize => _lastAccessTimes.Count;
+
 	/// "Timestamp" used for cache lines that are not loaded.
 	private const int UNLOADED_TIME = -1;
 

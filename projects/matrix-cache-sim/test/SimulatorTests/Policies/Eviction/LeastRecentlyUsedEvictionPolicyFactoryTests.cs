@@ -15,9 +15,14 @@ public class LeastRecentlyUsedEvictionFactoryTests
 	}
 
 	[Fact]
-	public void CodeCoverageOnly()
+	public void PolicyPropertiesMatchFactoryParameters()
 	{
+		const int CACHE_SIZE = 4;
 		var factory = new LeastRecentlyUsedEvictionPolicyFactory();
-		Assert.NotNull(factory.Construct(1));
+		var policy = factory.Construct(CACHE_SIZE);
+
+		Assert.IsType<LeastRecentlyUsedEvictionPolicy>(policy);
+		var p = (LeastRecentlyUsedEvictionPolicy)policy;
+		Assert.Equal(CACHE_SIZE, p.CacheSize);
 	}
 }
