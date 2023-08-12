@@ -53,7 +53,7 @@
 | to love | だいすき | |
 | to use | つかいます | 使います |
 | tofu | とうふ | |
-| together | いっしょに | |
+| together | いっしょに | 一緒に |
 | though | でも | |
 | which | どの | |
 | vegetables | やさい | 野菜 |

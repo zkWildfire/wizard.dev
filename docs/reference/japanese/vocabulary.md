@@ -494,7 +494,7 @@ one or more Kanji characters.
 | painting | え | | Section 2 Unit 7 |
 | pants | ズボン | | Section 2 Unit 19 |
 | parents | りょうしん | <span class="kanji">両親</span> | Section 2 Unit 5 |
-| park | こうえん | | Section 2 Unit 5 |
+| park | こうえん | <span class="kanji">公園</span> | Section 2 Unit 5 |
 | party | パーティー | | Section 2 Unit 16 |
 | passport | パスポート | | Section 1 Unit 5 |
 | pasta | パスタ | | Section 2 Unit 2 |
@@ -696,7 +696,7 @@ one or more Kanji characters.
 | this | ここ | | Section 2 Unit 4 |
 | this evening | こんばん | | Section 2 Unit 5 |
 | this way | こちら | | Section 2 Unit 15 |
-| this week | こんしゅう | | Section 2 Unit 3 |
+| this week | こんしゅう | <span class="kanji">今週</span> | Section 2 Unit 3 |
 | those | それら | | Section 1 Unit 4 |
 | though | でも | | Section 2 Unit 8 |
 | thousand | せん | <span class="kanji">千</span> | Section 1 Unit 8 |
@@ -784,7 +784,7 @@ one or more Kanji characters.
 | to write | かきます | <span class="kanji">書きます</span> | Section 2 Unit 11 |
 | today | きょう | <span class="kanji">今日</span> | Section 2 Unit 5 |
 | tofu | とうふ | | Section 2 Unit 8 |
-| together | いっしょに | | Section 2 Unit 8 |
+| together | いっしょに | <span class="kanji">一緒に</span> | Section 2 Unit 8 |
 | toilet | トイレ | | Section 2 Unit 13 |
 | Tokyo | とうきょう | <span class="kanji">東京</span> | Section 1 Unit 6 |
 | tomorrow | あした | <span class="kanji">明日</span> | Section 2 Unit 5 |

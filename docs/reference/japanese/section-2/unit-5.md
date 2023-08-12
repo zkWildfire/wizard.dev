@@ -69,7 +69,7 @@
 | concert | コンサート | |
 | fireworks | はなび | |
 | hot spring | おんせん | |
-| park | こうえん | |
+| park | こうえん | 公園 |
 | pool | プール | |
 | cocoa | ココア | |
 

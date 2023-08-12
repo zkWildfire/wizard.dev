@@ -61,7 +61,7 @@
 | washing machine | せんたくき | |
 | vacuum cleaner | そうじき | |
 | to move | ひっこします | |
-| this week | こんしゅう | |
+| this week | こんしゅう | 今週 |
 | still | まだ | |
 | cramped | せまい | |
 | spacious | ひろい | |
