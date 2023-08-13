@@ -32,7 +32,7 @@
 | bath | おふろ | |
 | chores | かじ | |
 | cleaning | そうじ | 掃除 |
-| cooking | りょうり | |
+| cooking | りょうり | 料理 |
 | days off | やすみのひ | 休みの日 |
 | easy | やさしい | |
 | English (language) | えいご | 英語 |

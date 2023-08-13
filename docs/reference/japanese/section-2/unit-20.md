@@ -3,6 +3,21 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| again | また | |
+| cinema | えいがかん | 映画館 |
+| come on | さあ | |
+| last month | せんげつ | 先月 |
+| last week | せんしゅう | 先週 |
+| movie theater | えいがかん | 映画館 |
+| not busy | いそがしくない | 忙しくない |
+| practice | れんしゅう | 練習 |
+| see you | またね | |
+| something | なにか | 何か |
+| the week after next | さらいしゅう | 再来週 |
+| this month | こんげつ | 今月 |
+| to call | でんわをかけます | 電話をかけます |
+| to practice | れんしゅうします | 練習します |
+| to teach | おしえます | 教えます |
 
 ### Examples
 | English | Japanese |

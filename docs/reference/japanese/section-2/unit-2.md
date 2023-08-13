@@ -22,7 +22,7 @@
 | ticket gate | かいさつ | |
 | transfer | のりかえ | |
 | trash can | ゴミばこ | |
-| phone | でんわ | |
+| phone | でんわ | 電話 |
 | vending machine | じはんき | |
 | to have | あります | |
 | don't have | ありません | |
@@ -41,10 +41,10 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | get up | おきます | |
-| next week | らいしゅう | |
+| next week | らいしゅう | 来週 |
 | always | いつも | |
 | to get up | おきます | 起きます |
-| to make | つくります | |
+| to make | つくります | 作ります |
 | to sleep | ねます | 寝ます |
 | to take | あびます | 浴びます |
 | emails | メール | |

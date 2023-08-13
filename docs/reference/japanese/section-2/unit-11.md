@@ -47,7 +47,7 @@
 | (blog) post | きじ | |
 | study | べんきょう | 勉強 |
 | to dance | おどります | |
-| to play (an instrument) | ひきます | |
+| to play (an instrument) | ひきます | 弾きます |
 | to sing | うたいます | |
 | to write | かきます | 書きます |
 | tonight | こんや | |

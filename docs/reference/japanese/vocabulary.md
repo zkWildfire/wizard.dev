@@ -31,6 +31,7 @@ one or more Kanji characters.
 | adults | おとな | | Section 2 Unit 10 |
 | after | あと | | Section 2 Unit 6 |
 | after that | それから | | Section 2 Unit 17 |
+| again | また | | Section 2 Unit 20 |
 | air conditioner | エアコン | | Section 2 Unit 3 |
 | airport | くうこう | <span class="kanji">空港</span> | Section 1 Unit 5 |
 | Akihabara | あきはばら | | Section 2 Unit 4 |
@@ -126,6 +127,7 @@ one or more Kanji characters.
 | Chinese (language) | ちゅうごくご | | Section 2 Unit 9 |
 | chocolate | チョコレート | | Section 2 Unit 8 |
 | chores | かじ | | Section 2 Unit 6 |
+| cinema | えいがかん | <span class="kanji">映画館</span> | Section 2 Unit 20 |
 | city | とし | | Section 1 Unit 6 |
 | class(es) | じゅぎょう | | Section 2 Unit 9 |
 | classroom | きょうしつ | | Section 2 Unit 9 |
@@ -141,13 +143,14 @@ one or more Kanji characters.
 | cold | さむい | | Section 2 Unit 5 |
 | cold | つめたい | <span class="kanji">冷たい</span> | Section 2 Unit 15 |
 | college student | だいがくせい | <span class="kanji">大学生</span> | Section 1 Unit 6 |
+| come on | さあ | | Section 2 Unit 20 |
 | comedy | コメディ | | Section 2 Unit 3 |
 | computer | パソコン | | Section 2 Unit 11 |
 | concert | コンサート | | Section 2 Unit 5 |
 | convenience store | コンビニ | | Section 1 Unit 3 |
 | convenient | べんり | | Section 2 Unit 7 |
 | cookie | クッキー | | Section 2 Unit 8 |
-| cooking | りょうり | | Section 2 Unit 6 |
+| cooking | りょうり | <span class="kanji">料理</span> | Section 2 Unit 6 |
 | cool | かっこいい | | Section 1 Unit 1 |
 | corner | かたすみ | <span class="kanji">片隅</span> | Section 2 Unit 17 |
 | cousin | いとこ | | Section 2 Unit 18 |
@@ -365,6 +368,8 @@ one or more Kanji characters.
 | Kyoto | きょうと | <span class="kanji">京都</span> | Section 1 Unit 6 |
 | large | Lサイズ | | Section 2 Unit 10 |
 | last | さいご | | Section 2 Unit 11 |
+| last month | せんげつ | <span class="kanji">先月</span> | Section 2 Unit 20 |
+| last week | せんしゅう | <span class="kanji">先週</span> | Section 2 Unit 20 |
 | late | おそい | <span class="kanji">遅い</span> | Section 2 Unit 19 |
 | laundry | せんたく | <span class="kanji">洗濯</span> | Section 2 Unit 6 |
 | lawyer | べんごし | | Section 1 Unit 1 |
@@ -411,6 +416,7 @@ one or more Kanji characters.
 | mother | ははおや | <span class="kanji">母親</span> | Section 2 Unit 18 |
 | mountain | やま | <span class="kanji">山</span> | Section 2 Unit 4 |
 | movie | えいが | <span class="kanji">映画</span> | Section 1 Unit 7 |
+| movie theater | えいがかん | <span class="kanji">映画館</span> | Section 2 Unit 20 |
 | Mt Fuji | ふじさん | | Section 2 Unit 4 |
 | museum | はくぶつかん | | Section 2 Unit 10 |
 | music | おんがく | <span class="kanji">音楽</span> | Section 1 Unit 7 |
@@ -434,7 +440,7 @@ one or more Kanji characters.
 | next door | となり | <span class="kanji">隣</span> | Section 2 Unit 16 |
 | next month | らいげつ | <span class="kanji">来月</span> | Section 2 Unit 7 |
 | next to | よこ | <span class="kanji">横</span> | Section 2 Unit 16 |
-| next week | らいしゅう | | Section 2 Unit 2 |
+| next week | らいしゅう | <span class="kanji">来週</span> | Section 2 Unit 2 |
 | nice | やさしい | | Section 1 Unit 1 |
 | nice | いい | | Section 1 Unit 8 |
 | nice to meet you | どうぞよろしく | | Section 1 Unit 2 |
@@ -454,6 +460,7 @@ one or more Kanji characters.
 | non-fiction | ノンフィクション | | Section 2 Unit 10 |
 | not | じゃない | | Section 1 Unit 5 |
 | not at (place) | いません | | Section 2 Unit 14 |
+| not busy | いそがしくない | <span class="kanji">忙しくない</span> | Section 2 Unit 20 |
 | not close | ちかくない | <span class="kanji">近くない</span> | Section 2 Unit 19 |
 | not dirty | きたなくない | <span class="kanji">汚くない</span> | Section 2 Unit 19 |
 | not far | とおくない | <span class="kanji">遠くない</span> | Section 2 Unit 19 |
@@ -502,7 +509,7 @@ one or more Kanji characters.
 | performance | パフォーマンス | | Section 2 Unit 11 |
 | person | ひと | <span class="kanji">人</span> | Section 1 Unit 1 |
 | pet | ペット | | Section 2 Unit 13 |
-| phone | でんわ | | Section 2 Unit 2 |
+| phone | でんわ | <span class="kanji">電話</span> | Section 2 Unit 2 |
 | phone number | でんわばんごう | | Section 2 Unit 5 |
 | photo | しゃしん | <span class="kanji">写真</span> | Section 2 Unit 7 |
 | photographer | しゃしんか | | Section 2 Unit 9 |
@@ -526,6 +533,7 @@ one or more Kanji characters.
 | pork cutlets | とんかつ | | Section 2 Unit 8 |
 | postcard | ポストカード | | Section 2 Unit 4 |
 | poster | ポスター | | Section 2 Unit 10 |
+| practice | れんしゅう | <span class="kanji">練習</span> | Section 2 Unit 20 |
 | presentation | プレゼン | | Section 2 Unit 11 |
 | pretty | きれい | | Section 2 Unit 4 |
 | printer | プリンター | | Section 2 Unit 11 |
@@ -572,6 +580,7 @@ one or more Kanji characters.
 | seat | せき | | Section 2 Unit 7 |
 | second floor | にかい | | Section 2 Unit 2 |
 | section | コーナー | | Section 2 Unit 10 |
+| see you | またね | | Section 2 Unit 20 |
 | see you tomorrow | またあした | | Section 1 Unit 2 |
 | Seoul | ソウル | | Section 2 Unit 6 |
 | September | くがつ | <span class="kanji">九月</span> | Section 2 Unit 5 |
@@ -620,6 +629,7 @@ one or more Kanji characters.
 | soba | そば | | Section 2 Unit 1 |
 | soccer | サッカー | | Section 1 Unit 7 |
 | sofa | ソファー | | Section 2 Unit 13 |
+| something | なにか | <span class="kanji">何か</span> | Section 2 Unit 20 |
 | sometimes | ときどき | <span class="kanji">時々</span> | Section 1 Unit 7 |
 | son | むすこ | <span class="kanji">息子</span> | Section 1 Unit 6 |
 | song | うた | <span class="kanji">歌</span> | Section 2 Unit 18 |
@@ -685,6 +695,7 @@ one or more Kanji characters.
 | that over there | あの | | Section 1 Unit 8 |
 | that over there | あれ | | Section 2 Unit 4 |
 | the day after tomorrow | あさって | <span class="kanji">明後日</span> | Section 2 Unit 16 |
+| the week after next | さらいしゅう | <span class="kanji">再来週</span> | Section 2 Unit 20 |
 | theme park | ゆうえんち | | Section 2 Unit 10 |
 | then | そして | | Section 2 Unit 6 |
 | there | そこ | | Section 1 Unit 3 |
@@ -695,6 +706,7 @@ one or more Kanji characters.
 | this | こちら | | Section 2 Unit 3 |
 | this | ここ | | Section 2 Unit 4 |
 | this evening | こんばん | | Section 2 Unit 5 |
+| this month | こんげつ | <span class="kanji">今月</span> | Section 2 Unit 20 |
 | this way | こちら | | Section 2 Unit 15 |
 | this week | こんしゅう | <span class="kanji">今週</span> | Section 2 Unit 3 |
 | those | それら | | Section 1 Unit 4 |
@@ -721,6 +733,7 @@ one or more Kanji characters.
 | to be at | にいます | | Section 2 Unit 13 |
 | to begin | はじまります | | Section 2 Unit 11 |
 | to buy | かいます | <span class="kanji">買います</span> | Section 2 Unit 1 |
+| to call | でんわをかけます | <span class="kanji">電話をかけます</span> | Section 2 Unit 20 |
 | to close | しめます | <span class="kanji">閉めます</span> | Section 2 Unit 17 |
 | to come | きます | <span class="kanji">来ます</span> | Section 2 Unit 4 |
 | to dance | おどります | | Section 2 Unit 11 |
@@ -744,14 +757,15 @@ one or more Kanji characters.
 | to listen | ききます | <span class="kanji">聞きます</span> | Section 1 Unit 7 |
 | to live in | にすんでいます | <span class="kanji">に住んでいます</span> | Section 1 Unit 6 |
 | to love | だいすき | | Section 2 Unit 8 |
-| to make | つくります | | Section 2 Unit 2 |
+| to make | つくります | <span class="kanji">作ります</span> | Section 2 Unit 2 |
 | to meet | あいます | <span class="kanji">会います</span> | Section 2 Unit 7 |
 | to move | ひっこします | | Section 2 Unit 3 |
 | to need | おねがいします | | Section 2 Unit 5 |
 | to not have | いません | | Section 2 Unit 13 |
 | to open | あけます | <span class="kanji">開けます</span> | Section 2 Unit 17 |
 | to play | します | | Section 1 Unit 7 |
-| to play (an instrument) | ひきます | | Section 2 Unit 11 |
+| to play (an instrument) | ひきます | <span class="kanji">弾きます</span> | Section 2 Unit 11 |
+| to practice | れんしゅうします | <span class="kanji">練習します</span> | Section 2 Unit 20 |
 | to put on (feet) | はきます | <span class="kanji">履きます</span> | Section 2 Unit 19 |
 | to read | よみます | <span class="kanji">読みます</span> | Section 1 Unit 7 |
 | to rest | やすみます | <span class="kanji">休みます</span> | Section 2 Unit 5 |
@@ -770,6 +784,7 @@ one or more Kanji characters.
 | to take a | にはいります | | Section 2 Unit 6 |
 | to take off | ぬぎます | <span class="kanji">脱ぎます</span> | Section 2 Unit 19 |
 | to talk | はなします | <span class="kanji">話します</span> | Section 2 Unit 1 |
+| to teach | おしえます | <span class="kanji">教えます</span> | Section 2 Unit 20 |
 | to translate | ほんやくします | | Section 2 Unit 9 |
 | to turn on | つけます | | Section 2 Unit 17 |
 | to use | つかいます | <span class="kanji">使います</span> | Section 2 Unit 8 |
