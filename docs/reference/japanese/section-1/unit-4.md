@@ -28,7 +28,7 @@
 | Tanaka | たなか | 田中 |
 | Nakayama | なかやま | 中山 |
 | Yamaguchi | やまぐち | 山口 |
-| cheerful | あかるい | |
+| cheerful | あかるい | 明るい |
 | funny | おもしろい | |
 
 ### Examples

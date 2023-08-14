@@ -31,6 +31,33 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| bad | わるい | 悪い |
+| bright | あかるい | 明るい |
+| clear | はれ | 晴れ |
+| dark | くらい | 暗い |
+| daytime | ひるま | 昼間 |
+| evening | ゆうがた | 夕方 |
+| last night | ゆうべ | 夕べ |
+| morning | あさ | 朝 |
+| not bad | わるくない | 悪くない |
+| not bright | あかるくない | 明るくない |
+| not dark | くらくない | 暗くない |
+| not good | よくない | |
+| not weak | よわくない | 弱くない |
+| not very strong | あまりつよくない | あまり強くない |
+| not strong | つよくない | 強くない |
+| sky | そら | 空 |
+| strong | つよい | 強い |
+| this morning | けさ | 今朝 |
+| to blow | ふきます | 吹きます |
+| to blow strongly | つよくふきます | 強く吹きます |
+| to be clear | はれます | 晴れます |
+| to be cloudy | くもります | 曇ります |
+| to rain | あめがふります | 雨が降ります |
+| to snow | ゆきがふります | 雪が降ります |
+| to be sunny | はれます | 晴れます |
+| weak | よわい | 弱い |
+| wind | かぜ | 風 |
 
 ### Examples
 | English | Japanese |

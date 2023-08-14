@@ -46,11 +46,11 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| sunny | はれ | |
-| rainy | あめ | |
-| snowy | ゆき | |
-| cloudy | くもり | |
-| weather | てんき | |
+| sunny | はれ | 晴れ |
+| rainy | あめ | 雨 |
+| snowy | ゆき | 雪 |
+| cloudy | くもり | 曇り |
+| weather | てんき | 天気 |
 | hot | あつい | 熱い |
 | warm | あたたかい | |
 | cold | さむい | |
@@ -63,7 +63,7 @@
 | September | くがつ | 九月 |
 | today | きょう | 今日 |
 | tomorrow | あした | 明日 |
-| this evening | こんばん | |
+| this evening | こんばん | 今晩 |
 | summer break | なつやすみ | |
 | beach | うみ | |
 | concert | コンサート | |
