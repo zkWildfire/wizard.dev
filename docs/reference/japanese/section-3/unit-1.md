@@ -3,6 +3,25 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| all of them | ぜんぶ | 全部 |
+| alcohol | おさけ | お酒 |
+| at all | まったく | |
+| dinner | ゆうはん | 夕飯 |
+| a drink | のみもの | 飲み物 |
+| food | たべもの | 食べ物 |
+| fruit | くだもの | 果物 |
+| How is it? | いかがですか | |
+| a lot of | おおい | 多い |
+| lunchbox | べんとう | 弁当 |
+| mint | ミント | |
+| No thanks. | いいえ、けっこうです | いいえ、結構です |
+| not at all | ぜんぜん | 全然 |
+| not delicious | おいしくない | |
+| not much | すくない | 少ない |
+| not much | おおくない | 多くない |
+| not much at all | まったくおおくない | まったく多くない |
+| sugar | さとう | 砂糖 |
+| very | たいへん | 大変 |
 
 ### Examples
 | English | Japanese |

@@ -42,10 +42,10 @@
 | pork | ぶたにく | |
 | pork cutlets | とんかつ | |
 | raw | なま | |
-| salt | しお | |
+| salt | しお | 塩 |
 | salty | しょっぱい | |
 | sauce | ソース | |
-| soy sauce | しょうゆ | |
+| soy sauce | しょうゆ | 醤油 |
 | strawberry | いちご | |
 | stuff | もの | |
 | supermarket | スーパー | |

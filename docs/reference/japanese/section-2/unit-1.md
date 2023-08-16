@@ -3,8 +3,8 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| black tea | こうちゃ | |
-| boxed lunch | べんとう | |
+| black tea | こうちゃ | 紅茶 |
+| boxed lunch | べんとう | 弁当 |
 | bread | パン | |
 | cake | ケーキ | |
 | juice | ジュース | |

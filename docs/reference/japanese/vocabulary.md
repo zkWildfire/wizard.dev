@@ -21,7 +21,9 @@ one or more Kanji characters.
 | *particle* | か | | Section 1 Unit 2 |
 | *particle* | を | | Section 1 Unit 7 |
 | a bit | すこし | | Section 2 Unit 1 |
+| a drink | のみもの | <span class="kanji">飲み物</span> | Section 3 Unit 1 |
 | a little bit | ちょっと | | Section 2 Unit 16 |
+| a lot of | おおい | <span class="kanji">多い</span> | Section 3 Unit 1 |
 | a.m. | ごぜん | <span class="kanji">午前</span> | Section 2 Unit 9 |
 | about | ごろ | | Section 1 Unit 5 |
 | about | ぐらい | | Section 2 Unit 4 |
@@ -36,6 +38,8 @@ one or more Kanji characters.
 | airport | くうこう | <span class="kanji">空港</span> | Section 1 Unit 5 |
 | Akihabara | あきはばら | | Section 2 Unit 4 |
 | album | アルバム | | Section 2 Unit 10 |
+| alcohol | おさけ | <span class="kanji">お酒</span> | Section 3 Unit 1 |
+| all of them | ぜんぶ | <span class="kanji">全部</span> | Section 3 Unit 1 |
 | all sorts of (things) | いろいろ | | Section 2 Unit 6 |
 | allergy | アレルギー | | Section 2 Unit 5 |
 | alone | ひとりで | <span class="kanji">一人で</span> | Section 2 Unit 16 |
@@ -55,6 +59,7 @@ one or more Kanji characters.
 | Asakusa | あさくさ | | Section 2 Unit 4 |
 | at | に | | Section 1 Unit 7 |
 | at | で | | Section 2 Unit 7 |
+| at all | まったく | | Section 3 Unit 1 |
 | at home | ございたく | <span class="kanji">ご在宅</span> | Section 2 Unit 18 |
 | attraction | アトラクション | | Section 2 Unit 10 |
 | aunt | おば | | Section 2 Unit 18 |
@@ -81,7 +86,7 @@ one or more Kanji characters.
 | big | おおきい | <span class="kanji">大きい</span> | Section 1 Unit 3 |
 | bird | とり | <span class="kanji">鳥</span> | Section 2 Unit 13 |
 | black | くろい | <span class="kanji">黒い</span> | Section 1 Unit 8 |
-| black tea | こうちゃ | | Section 2 Unit 1 |
+| black tea | こうちゃ | <span class="kanji">紅茶</span> | Section 2 Unit 1 |
 | blog | ブログ | | Section 2 Unit 11 |
 | blue | あおい | <span class="kanji">青い</span> | Section 1 Unit 8 |
 | book | ほん | <span class="kanji">本</span> | Section 1 Unit 7 |
@@ -89,7 +94,7 @@ one or more Kanji characters.
 | bookstore | ほんや | | Section 2 Unit 10 |
 | boring | つまらない | | Section 2 Unit 10 |
 | bottom | した | <span class="kanji">下</span> | Section 2 Unit 16 |
-| boxed lunch | べんとう | | Section 2 Unit 1 |
+| boxed lunch | べんとう | <span class="kanji">弁当</span> | Section 2 Unit 1 |
 | boyfriend | かれし | | Section 2 Unit 3 |
 | Brazil | ブラジル | | Section 1 Unit 3 |
 | Brazilian | ブラジルじん | | Section 1 Unit 3 |
@@ -180,6 +185,7 @@ one or more Kanji characters.
 | difficult | むずかしい | | Section 2 Unit 10 |
 | dining room | しょくどう | <span class="kanji">食堂</span> | Section 2 Unit 15 |
 | dinner | ばんごはん | <span class="kanji">晩ご飯</span> | Section 1 Unit 7 |
+| dinner | ゆうはん | <span class="kanji">夕飯</span> | Section 3 Unit 1 |
 | dirty | きたない | <span class="kanji">汚い</span> | Section 2 Unit 17 |
 | do not like | きらい | <span class="kanji">嫌い</span> | Section 2 Unit 15 |
 | do not live in | にはすんでいません | <span class="kanji">には住んでいません</span> | Section 2 Unit 14 |
@@ -258,6 +264,7 @@ one or more Kanji characters.
 | five o'clock | ごじ | <span class="kanji">五時</span> | Section 2 Unit 1 |
 | five years old | ごさい | <span class="kanji">五歳</span> | Section 2 Unit 14 |
 | flavor | あじ | | Section 2 Unit 10 |
+| food | たべもの | <span class="kanji">食べ物</span> | Section 3 Unit 1 |
 | foreign exchange student | りゅうがくせい | <span class="kanji">留学性</span> | Section 2 Unit 14 |
 | foreigner | がいこくじん | <span class="kanji">外国人</span> | Section 2 Unit 14 |
 | four | よん | <span class="kanji">四</span> | Section 1 Unit 6 |
@@ -280,6 +287,7 @@ one or more Kanji characters.
 | from | しゅっしん | | Section 1 Unit 6 |
 | from | から | | Section 2 Unit 11 |
 | front desk | うけつけ | | Section 2 Unit 11 |
+| fruit | くだもの | <span class="kanji">果物</span> | Section 3 Unit 1 |
 | fun | たのしい | | Section 2 Unit 6 |
 | funny | おもしろい | | Section 1 Unit 4 |
 | futon | ふとん | <span class="kanji">布団</span> | Section 2 Unit 3 |
@@ -326,6 +334,7 @@ one or more Kanji characters.
 | house | いえ | <span class="kanji">家</span> | Section 2 Unit 3 |
 | housework | いえのそうじ | <span class="kanji">家の掃除</span> | Section 2 Unit 17 |
 | how is | どう | | Section 2 Unit 1 |
+| How is it? | いかがですか | | Section 3 Unit 1 |
 | how long | どのぐらい | | Section 2 Unit 4 |
 | how long | どれくらい | | Section 2 Unit 19 |
 | how many (objects) | いくつ | | Section 2 Unit 14 |
@@ -394,6 +403,7 @@ one or more Kanji characters.
 | low | ひくい | <span class="kanji">低い</span> | Section 2 Unit 17 |
 | lunch | ひるごはん | <span class="kanji">昼ご飯</span> | Section 1 Unit 7 |
 | lunch break | ひるやすみ | <span class="kanji">ひる休み</span> | Section 2 Unit 11 |
+| lunchbox | べんとう | <span class="kanji">弁当</span> | Section 3 Unit 1 |
 | magazine | ざっし | | Section 1 Unit 7 |
 | make sure to | ちゃんと | | Section 2 Unit 5 |
 | Malaysia | マレーシア | | Section 2 Unit 3 |
@@ -412,6 +422,7 @@ one or more Kanji characters.
 | middle school students | ちゅうがくせいたち | <span class="kanji">中学生たち</span> | Section 2 Unit 14 |
 | midnight | れいじ | <span class="kanji">零時</span> | Section 2 Unit 13 |
 | milk | ぎゅうにゅう | <span class="kanji">牛乳</span> | Section 2 Unit 12 |
+| mint | ミント | | Section 3 Unit 1 |
 | mint chocolate chip | チョコミント | | Section 2 Unit 10 |
 | minute | ふん | <span class="kanji">分</span> | Section 2 Unit 4 |
 | mirror | かがみ | <span class="kanji">鏡</span> | Section 2 Unit 17 |
@@ -464,20 +475,26 @@ one or more Kanji characters.
 | nine o'clock | くじ | <span class="kanji">九時</span> | Section 1 Unit 7 |
 | nine years old | きゅうさい | <span class="kanji">九歳</span> | Section 2 Unit 14 |
 | no | いいえ | | Section 1 Unit 6 |
+| No thanks. | いいえ、けっこうです | <span class="kanji">いいえ、結構です</span> | Section 3 Unit 1 |
 | noisy | うるさい | | Section 1 Unit 6 |
 | non-fiction | ノンフィクション | | Section 2 Unit 10 |
 | not | じゃない | | Section 1 Unit 5 |
 | not at (place) | いません | | Section 2 Unit 14 |
+| not at all | ぜんぜん | <span class="kanji">全然</span> | Section 3 Unit 1 |
 | not bad | わるくない | <span class="kanji">悪くない</span> | Section 2 Unit 20 |
 | not bright | あかるくない | <span class="kanji">明るくない</span> | Section 2 Unit 20 |
 | not busy | いそがしくない | <span class="kanji">忙しくない</span> | Section 2 Unit 20 |
 | not close | ちかくない | <span class="kanji">近くない</span> | Section 2 Unit 19 |
 | not dark | くらくない | <span class="kanji">暗くない</span> | Section 2 Unit 20 |
+| not delicious | おいしくない | | Section 3 Unit 1 |
 | not dirty | きたなくない | <span class="kanji">汚くない</span> | Section 2 Unit 19 |
 | not far | とおくない | <span class="kanji">遠くない</span> | Section 2 Unit 19 |
 | not fast | はやくない | <span class="kanji">速くない</span> | Section 2 Unit 19 |
 | not good | よくない | | Section 2 Unit 20 |
 | not late | おそくない | <span class="kanji">遅くない</span> | Section 2 Unit 19 |
+| not much | すくない | <span class="kanji">少ない</span> | Section 3 Unit 1 |
+| not much | おおくない | <span class="kanji">多くない</span> | Section 3 Unit 1 |
+| not much at all | まったくおおくない | <span class="kanji">まったく多くない</span> | Section 3 Unit 1 |
 | not near | ちかくない | <span class="kanji">近くない</span> | Section 2 Unit 19 |
 | not slow | おそくない | <span class="kanji">遅くない</span> | Section 2 Unit 19 |
 | not strong | つよくない | <span class="kanji">強くない</span> | Section 2 Unit 20 |
@@ -585,7 +602,7 @@ one or more Kanji characters.
 | room | へや | <span class="kanji">部屋</span> | Section 2 Unit 13 |
 | salad | サラダ | | Section 2 Unit 1 |
 | sale | セール | | Section 2 Unit 10 |
-| salt | しお | | Section 2 Unit 8 |
+| salt | しお | <span class="kanji">塩</span> | Section 2 Unit 8 |
 | salty | しょっぱい | | Section 2 Unit 8 |
 | sandwich | サンドイッチ | | Section 2 Unit 1 |
 | Saturday | どようび | <span class="kanji">土曜日</span> | Section 2 Unit 1 |
@@ -652,7 +669,7 @@ one or more Kanji characters.
 | soon | もうすぐ | | Section 2 Unit 4 |
 | South Korea | かんこく | <span class="kanji">韓国</span> | Section 2 Unit 3 |
 | souvenir | おみやげ | <span class="kanji">お土産</span> | Section 2 Unit 4 |
-| soy sauce | しょうゆ | | Section 2 Unit 8 |
+| soy sauce | しょうゆ | <span class="kanji">醤油</span> | Section 2 Unit 8 |
 | spacious | ひろい | | Section 2 Unit 3 |
 | Spanish (language) | スペインご | | Section 2 Unit 9 |
 | spicy | からい | | Section 2 Unit 15 |
@@ -672,6 +689,7 @@ one or more Kanji characters.
 | stuff | もの | | Section 2 Unit 8 |
 | stylish | おしゃれ | | Section 1 Unit 6 |
 | subway | ちかてつ | <span class="kanji">地下鉄</span> | Section 1 Unit 5 |
+| sugar | さとう | <span class="kanji">砂糖</span> | Section 3 Unit 1 |
 | suitcase | スーツケース | | Section 2 Unit 7 |
 | summer | なつ | | Section 2 Unit 5 |
 | summer break | なつやすみ | | Section 2 Unit 5 |
@@ -867,6 +885,7 @@ one or more Kanji characters.
 | vegetables | やさい | <span class="kanji">野菜</span> | Section 2 Unit 8 |
 | vending machine | じはんき | | Section 2 Unit 2 |
 | very | とても | | Section 2 Unit 1 |
+| very | たいへん | <span class="kanji">大変</span> | Section 3 Unit 1 |
 | video | どうが | | Section 2 Unit 3 |
 | videos | どうが | | Section 2 Unit 1 |
 | Vietnam | ベトナム | | Section 2 Unit 3 |
