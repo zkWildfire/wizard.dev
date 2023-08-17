@@ -5,5 +5,7 @@ nav:
   - Canonical Forms: canonical-forms.md
   - Predicate Logic: predicate-logic.md
   - Logical Inference: logical-inference.md
+  - Sets: sets.md
+  - Functions: functions.md
   - "Appendix 1: Proofs for Logical Equivalences": appendix-1.md
   - "Appendix 2: Truth Tables for Logical Equivalences": appendix-2.md
