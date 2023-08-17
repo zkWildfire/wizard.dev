@@ -20,7 +20,9 @@
 | not much | すくない | 少ない |
 | not much | おおくない | 多くない |
 | not much at all | まったくおおくない | まったく多くない |
+| quite | けっこう | 結構 |
 | sugar | さとう | 砂糖 |
+| would you like | いかがですか | |
 | very | たいへん | 大変 |
 
 ### Examples

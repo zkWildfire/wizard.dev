@@ -578,6 +578,7 @@ one or more Kanji characters.
 | puzzle | パズル | | Section 2 Unit 10 |
 | question(s) | しつもん | | Section 2 Unit 9 |
 | quiet | しずか | | Section 1 Unit 6 |
+| quite | けっこう | <span class="kanji">結構</span> | Section 3 Unit 1 |
 | radio | ラジオ | | Section 2 Unit 2 |
 | rainy | あめ | <span class="kanji">雨</span> | Section 2 Unit 5 |
 | ramen | ラーメン | | Section 1 Unit 2 |
@@ -923,6 +924,7 @@ one or more Kanji characters.
 | winter | ふゆ | | Section 2 Unit 5 |
 | with | と | | Section 1 Unit 7 |
 | work | しごと | <span class="kanji">仕事</span> | Section 2 Unit 6 |
+| would you like | いかがですか | | Section 3 Unit 1 |
 | Yamada | やまだ | <span class="kanji">山田</span> | Section 2 Unit 9 |
 | Yamaguchi | やまぐち | <span class="kanji">山口</span> | Section 1 Unit 4 |
 | yard | にわ | <span class="kanji">庭</span> | Section 2 Unit 13 |
