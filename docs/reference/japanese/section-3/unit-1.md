@@ -12,7 +12,7 @@
 | fruit | くだもの | 果物 |
 | How is it? | いかがですか | |
 | a lot of | おおい | 多い |
-| lunchbox | べんとう | 弁当 |
+| lunchbox | おべんとう | お弁当 |
 | mint | ミント | |
 | No thanks. | いいえ、けっこうです | いいえ、結構です |
 | not at all | ぜんぜん | 全然 |

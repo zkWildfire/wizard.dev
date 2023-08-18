@@ -403,7 +403,7 @@ one or more Kanji characters.
 | low | ひくい | <span class="kanji">低い</span> | Section 2 Unit 17 |
 | lunch | ひるごはん | <span class="kanji">昼ご飯</span> | Section 1 Unit 7 |
 | lunch break | ひるやすみ | <span class="kanji">ひる休み</span> | Section 2 Unit 11 |
-| lunchbox | べんとう | <span class="kanji">弁当</span> | Section 3 Unit 1 |
+| lunchbox | おべんとう | <span class="kanji">お弁当</span> | Section 3 Unit 1 |
 | magazine | ざっし | | Section 1 Unit 7 |
 | make sure to | ちゃんと | | Section 2 Unit 5 |
 | Malaysia | マレーシア | | Section 2 Unit 3 |
