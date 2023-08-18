@@ -8,7 +8,7 @@
 | ambulance | きゅうきゅうしゃ | |
 | dangerous | あぶない | |
 | feeling sick | ぐあいがわるい | |
-| hospital | びょういん | |
+| hospital | びょういん | 病院 |
 | make sure to | ちゃんと | |
 | medicine | くすり | |
 | nearby | ちかく | |

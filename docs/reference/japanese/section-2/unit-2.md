@@ -11,7 +11,7 @@
 | first floor | いっかい | |
 | second floor | にかい | |
 | elevator | エレベーター | |
-| exit | でぐち | |
+| exit | でぐち | 出口 |
 | cafe | カフェ | |
 | outlet | コンセント | |
 | platforms | ホーム | |

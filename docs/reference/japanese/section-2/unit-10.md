@@ -7,7 +7,7 @@
 | adults | おとな | |
 | attraction | アトラクション | |
 | boring | つまらない | |
-| entrance | いりぐち | |
+| entrance | いりぐち | 入り口 |
 | face | かお | |
 | favorite | すき | |
 | flavor | あじ | |

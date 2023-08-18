@@ -41,7 +41,7 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| building | たてもの | |
+| building | たてもの | 建物 |
 | mountain | やま | 山 |
 | pizza shop | ピザや | |
 | place | ところ | |

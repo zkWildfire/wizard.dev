@@ -38,6 +38,10 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| bank | ぎんこう | 銀行 |
+| how (to do something) | どうやって | |
+| that way | そちら | |
+| which way | どちら | |
 
 ### Examples
 | English | Japanese |

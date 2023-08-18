@@ -69,6 +69,7 @@ one or more Kanji characters.
 | badminton | バドミントン | | Section 2 Unit 11 |
 | ballet | バレエ | | Section 2 Unit 11 |
 | band | バンド | | Section 2 Unit 10 |
+| bank | ぎんこう | <span class="kanji">銀行</span> | Section 3 Unit 1 |
 | baseball | やきゅう | | Section 1 Unit 7 |
 | basketball | バスケットボール | | Section 1 Unit 7 |
 | bath | おふろ | | Section 2 Unit 6 |
@@ -106,7 +107,7 @@ one or more Kanji characters.
 | British (thing) | イギリスの | | Section 2 Unit 3 |
 | brothers | きょうだい | <span class="kanji">兄弟</span> | Section 2 Unit 15 |
 | brown | ちゃいろ | <span class="kanji">茶色</span> | Section 2 Unit 19 |
-| building | たてもの | | Section 2 Unit 4 |
+| building | たてもの | <span class="kanji">建物</span> | Section 2 Unit 4 |
 | bullet train | しんかんせん | | Section 2 Unit 7 |
 | bus | バス | | Section 2 Unit 4 |
 | bus stop | バスてい | | Section 1 Unit 3 |
@@ -223,7 +224,7 @@ one or more Kanji characters.
 | emails | メール | | Section 2 Unit 2 |
 | engineer | エンジニア | | Section 1 Unit 6 |
 | English (language) | えいご | <span class="kanji">英語</span> | Section 2 Unit 6 |
-| entrance | いりぐち | | Section 2 Unit 10 |
+| entrance | いりぐち | <span class="kanji">入り口</span> | Section 2 Unit 10 |
 | Erika | エリカ | | Section 2 Unit 3 |
 | evening | ゆうがた | <span class="kanji">夕方</span> | Section 2 Unit 20 |
 | event | イベント | | Section 2 Unit 9 |
@@ -233,7 +234,7 @@ one or more Kanji characters.
 | every week | まいしゅう | | Section 2 Unit 1 |
 | exactly | ちょうど | | Section 2 Unit 12 |
 | excuse me | すみません | | Section 1 Unit 5 |
-| exit | でぐち | | Section 2 Unit 2 |
+| exit | でぐち | <span class="kanji">出口</span> | Section 2 Unit 2 |
 | expensive | たかい | <span class="kanji">高い</span> | Section 1 Unit 8 |
 | face | かお | | Section 2 Unit 10 |
 | fall | あき | | Section 2 Unit 5 |
@@ -326,13 +327,14 @@ one or more Kanji characters.
 | home | うち | | Section 2 Unit 6 |
 | homework | しゅくだい | | Section 2 Unit 6 |
 | horror | ホラー | | Section 2 Unit 3 |
-| hospital | びょういん | | Section 2 Unit 5 |
+| hospital | びょういん | <span class="kanji">病院</span> | Section 2 Unit 5 |
 | hot | あつい | <span class="kanji">熱い</span> | Section 2 Unit 5 |
 | hot spring | おんせん | | Section 2 Unit 5 |
 | hotel | ホテル | | Section 1 Unit 3 |
 | hour | じかん | <span class="kanji">時間</span> | Section 2 Unit 4 |
 | house | いえ | <span class="kanji">家</span> | Section 2 Unit 3 |
 | housework | いえのそうじ | <span class="kanji">家の掃除</span> | Section 2 Unit 17 |
+| how (to do something) | どうやって | | Section 3 Unit 1 |
 | how is | どう | | Section 2 Unit 1 |
 | How is it? | いかがですか | | Section 3 Unit 1 |
 | how long | どのぐらい | | Section 2 Unit 4 |
@@ -730,6 +732,7 @@ one or more Kanji characters.
 | that | それ | | Section 1 Unit 2 |
 | that over there | あの | | Section 1 Unit 8 |
 | that over there | あれ | | Section 2 Unit 4 |
+| that way | そちら | | Section 3 Unit 1 |
 | the day after tomorrow | あさって | <span class="kanji">明後日</span> | Section 2 Unit 16 |
 | the week after next | さらいしゅう | <span class="kanji">再来週</span> | Section 2 Unit 20 |
 | theme park | ゆうえんち | | Section 2 Unit 10 |
@@ -916,6 +919,7 @@ one or more Kanji characters.
 | where | どこ | | Section 1 Unit 3 |
 | which | どの | | Section 2 Unit 8 |
 | which one | どれ | | Section 2 Unit 12 |
+| which way | どちら | | Section 3 Unit 1 |
 | white | しろい | <span class="kanji">白い</span> | Section 1 Unit 4 |
 | who | だれ | <span class="kanji">誰</span> | Section 2 Unit 7 |
 | wife | つま | <span class="kanji">妻</span> | Section 1 Unit 6 |
