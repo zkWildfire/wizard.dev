@@ -39,8 +39,28 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | bank | ぎんこう | 銀行 |
+| big | おおきな | 大きな |
+| by/next to | そば | |
+| east | ひがし | 東 |
+| first/firstly | はじめに | |
 | how (to do something) | どうやって | |
+| north | きた | 北 |
+| northeast | ほくとう | 北東 |
+| over there (direction) | あちら | |
+| on the other side | むこう | 向こう |
+| path | みち | 道 |
+| road | みち | 道 |
+| small | ちいさな | 小さな |
+| street | とおり | 通り |
+| south | みなみ | 南 |
 | that way | そちら | |
+| there (direction) | そちら | |
+| to enter | はいります | 入ります |
+| to exit | でます | 出ます |
+| to get off | おります | 降ります |
+| to leave | でます | 出ます |
+| to pass by | とおります | 通ります |
+| west | にし | 西 |
 | which way | どちら | |
 
 ### Examples

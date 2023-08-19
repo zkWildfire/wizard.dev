@@ -24,7 +24,7 @@
 | don't really like | はちょっと | |
 | want | ほしい | |
 | isn't it | ですね | |
-| store | みせ | |
+| store | みせ | 店 |
 | how much | いくら | |
 | hundred | ひゃく | 百 |
 | thousand | せん | 千 |
