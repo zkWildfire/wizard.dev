@@ -55,6 +55,7 @@ one or more Kanji characters.
 | anime music | アニソン | | Section 2 Unit 10 |
 | apartment | アパート | | Section 2 Unit 3 |
 | apple | りんご | | Section 2 Unit 12 |
+| Are you hungry? | おなかがすきました | | Section 3 Unit 2 |
 | art museum | びじゅつかん | | Section 2 Unit 7 |
 | Asakusa | あさくさ | | Section 2 Unit 4 |
 | at | に | | Section 1 Unit 7 |
@@ -96,6 +97,7 @@ one or more Kanji characters.
 | bookstore | ほんや | | Section 2 Unit 10 |
 | boring | つまらない | | Section 2 Unit 10 |
 | bottom | した | <span class="kanji">下</span> | Section 2 Unit 16 |
+| bowl | ボウル | | Section 3 Unit 2 |
 | boxed lunch | べんとう | <span class="kanji">弁当</span> | Section 2 Unit 1 |
 | boyfriend | かれし | | Section 2 Unit 3 |
 | Brazil | ブラジル | | Section 1 Unit 3 |
@@ -136,6 +138,7 @@ one or more Kanji characters.
 | China | ちゅうごく | | Section 2 Unit 3 |
 | Chinese (language) | ちゅうごくご | | Section 2 Unit 9 |
 | chocolate | チョコレート | | Section 2 Unit 8 |
+| chopsticks | はし | <span class="kanji">箸</span> | Section 3 Unit 2 |
 | chores | かじ | | Section 2 Unit 6 |
 | cinema | えいがかん | <span class="kanji">映画館</span> | Section 2 Unit 20 |
 | city | とし | | Section 1 Unit 6 |
@@ -167,6 +170,7 @@ one or more Kanji characters.
 | cousin | いとこ | | Section 2 Unit 18 |
 | coworker(s) | どうりょう | | Section 2 Unit 9 |
 | cramped | せまい | | Section 2 Unit 3 |
+| cup | コップ | | Section 3 Unit 2 |
 | cupcake | カップケーキ | | Section 2 Unit 8 |
 | curry | カレー | | Section 1 Unit 2 |
 | cute | かわいい | | Section 1 Unit 8 |
@@ -249,6 +253,7 @@ one or more Kanji characters.
 | fast | はやい | <span class="kanji">速い</span> | Section 2 Unit 4 |
 | father | ちちおや | <span class="kanji">父親</span> | Section 2 Unit 18 |
 | favorite | すき | | Section 2 Unit 10 |
+| favorite food | こうぶつ | <span class="kanji">好物</span> | Section 3 Unit 2 |
 | feeling sick | ぐあいがわるい | | Section 2 Unit 5 |
 | fiction | フィクション | | Section 2 Unit 10 |
 | final stop | しゅうてん | | Section 2 Unit 4 |
@@ -272,6 +277,7 @@ one or more Kanji characters.
 | food | たべもの | <span class="kanji">食べ物</span> | Section 3 Unit 1 |
 | foreign exchange student | りゅうがくせい | <span class="kanji">留学性</span> | Section 2 Unit 14 |
 | foreigner | がいこくじん | <span class="kanji">外国人</span> | Section 2 Unit 14 |
+| fork | フォーク | | Section 3 Unit 2 |
 | four | よん | <span class="kanji">四</span> | Section 1 Unit 6 |
 | four (birds, rabbits) | よんば | <span class="kanji">四羽</span> | Section 2 Unit 14 |
 | four (books) | よんさつ | <span class="kanji">四冊</span> | Section 2 Unit 16 |
@@ -302,6 +308,7 @@ one or more Kanji characters.
 | gardening | ガーデニング | | Section 2 Unit 6 |
 | get up | おきます | | Section 2 Unit 2 |
 | girlfriend | かのじょ | <span class="kanji">彼女</span> | Section 2 Unit 3 |
+| glass | グラス | | Section 3 Unit 2 |
 | go home | かえて | <span class="kanji">帰って</span> | Section 2 Unit 17 |
 | go-cart | ゴーカート | | Section 2 Unit 10 |
 | good evening | こんばんは | | Section 1 Unit 2 |
@@ -313,10 +320,12 @@ one or more Kanji characters.
 | grandfather | おじいさん | | Section 2 Unit 18 |
 | grandmother | おばあさん | | Section 2 Unit 18 |
 | grandson | まごむすこ | <span class="kanji">孫息子</span> | Section 2 Unit 18 |
+| grapes | ぶどう | | Section 3 Unit 2 |
 | green | みどり | | Section 2 Unit 8 |
 | green tea | おちゃ | <span class="kanji">お茶</span> | Section 1 Unit 1 |
 | guitar | ギター | | Section 2 Unit 11 |
 | gym | ジム | | Section 2 Unit 9 |
+| half | はんぶん | <span class="kanji">半分</span> | Section 3 Unit 2 |
 | Hana | はな | | Section 1 Unit 2 |
 | Harajuku | はらじゅく | | Section 2 Unit 4 |
 | hat | ぼうし | <span class="kanji">帽子</span> | Section 1 Unit 4 |
@@ -386,6 +395,7 @@ one or more Kanji characters.
 | kitchen | キッチン | | Section 2 Unit 3 |
 | kitchen | だいどころ | <span class="kanji">台所</span> | Section 2 Unit 13 |
 | kitten | こねこ | <span class="kanji">子猫</span> | Section 2 Unit 13 |
+| knife | ナイフ | | Section 3 Unit 2 |
 | Kyoto | きょうと | <span class="kanji">京都</span> | Section 1 Unit 6 |
 | large | Lサイズ | | Section 2 Unit 10 |
 | last | さいご | | Section 2 Unit 11 |
@@ -396,6 +406,7 @@ one or more Kanji characters.
 | laundry | せんたく | <span class="kanji">洗濯</span> | Section 2 Unit 6 |
 | lawyer | べんごし | | Section 1 Unit 1 |
 | left | ひだり | <span class="kanji">左</span> | Section 2 Unit 16 |
+| lemon | レモン | | Section 3 Unit 2 |
 | letter | てがみ | <span class="kanji">手紙</span> | Section 2 Unit 18 |
 | library | としょかん | | Section 2 Unit 9 |
 | lion | ライオン | | Section 2 Unit 7 |
@@ -565,6 +576,7 @@ one or more Kanji characters.
 | place | ところ | | Section 2 Unit 4 |
 | plane | ひこうき | <span class="kanji">飛行機</span> | Section 2 Unit 7 |
 | plane ticket | ひこうきのチケット | | Section 2 Unit 7 |
+| plate | さら | <span class="kanji">皿</span> | Section 3 Unit 2 |
 | platforms | ホーム | | Section 2 Unit 2 |
 | player | せんしゅ | | Section 2 Unit 9 |
 | plaza | ひろば | | Section 2 Unit 7 |
@@ -595,8 +607,9 @@ one or more Kanji characters.
 | ramen | ラーメン | | Section 1 Unit 2 |
 | ramen shop | ラーメンや | | Section 2 Unit 4 |
 | raw | なま | | Section 2 Unit 8 |
-| really? | ほんとうですか。 | | Section 2 Unit 3 |
+| really | ほんとう | <span class="kanji">本当</span> | Section 2 Unit 3 |
 | red | あかい | <span class="kanji">赤い</span> | Section 1 Unit 4 |
+| red wine | あかワイン | <span class="kanji">赤ワイン</span> | Section 3 Unit 2 |
 | refrigerator | れいぞうこ | <span class="kanji">冷蔵庫</span> | Section 2 Unit 3 |
 | relatives | しんせき | <span class="kanji">親戚</span> | Section 2 Unit 18 |
 | resembles | にています | <span class="kanji">似ています</span> | Section 2 Unit 18 |
@@ -604,6 +617,7 @@ one or more Kanji characters.
 | restroom | おてあらい | | Section 2 Unit 2 |
 | rice | ごはん | <span class="kanji">ご飯</span> | Section 1 Unit 1 |
 | rice balls | おにぎり | | Section 2 Unit 1 |
+| rice bowl | ちゃわん | <span class="kanji">茶碗</span> | Section 3 Unit 2 |
 | right | みぎ | <span class="kanji">右</span> | Section 2 Unit 16 |
 | right away | すぐに | | Section 2 Unit 17 |
 | right/correct | そう | | Section 2 Unit 14 |
@@ -616,7 +630,7 @@ one or more Kanji characters.
 | salad | サラダ | | Section 2 Unit 1 |
 | sale | セール | | Section 2 Unit 10 |
 | salt | しお | <span class="kanji">塩</span> | Section 2 Unit 8 |
-| salty | しょっぱい | | Section 2 Unit 8 |
+| salty | しょっぱい | <span class="kanji">塩っぱい</span> | Section 2 Unit 8 |
 | sandwich | サンドイッチ | | Section 2 Unit 1 |
 | Saturday | どようび | <span class="kanji">土曜日</span> | Section 2 Unit 1 |
 | sauce | ソース | | Section 2 Unit 8 |
@@ -681,6 +695,8 @@ one or more Kanji characters.
 | son | むすこ | <span class="kanji">息子</span> | Section 1 Unit 6 |
 | song | うた | <span class="kanji">歌</span> | Section 2 Unit 18 |
 | soon | もうすぐ | | Section 2 Unit 4 |
+| soup | スープ | | Section 3 Unit 2 |
+| sour | すっぱい | | Section 3 Unit 2 |
 | south | みなみ | <span class="kanji">南</span> | Section 3 Unit 1 |
 | South Korea | かんこく | <span class="kanji">韓国</span> | Section 2 Unit 3 |
 | souvenir | おみやげ | <span class="kanji">お土産</span> | Section 2 Unit 4 |
@@ -688,6 +704,7 @@ one or more Kanji characters.
 | spacious | ひろい | | Section 2 Unit 3 |
 | Spanish (language) | スペインご | | Section 2 Unit 9 |
 | spicy | からい | | Section 2 Unit 15 |
+| spoon | スプーン | | Section 3 Unit 2 |
 | sports | スポーツ | | Section 2 Unit 2 |
 | spring | はる | | Section 2 Unit 5 |
 | stairs | かいだん | | Section 2 Unit 2 |
@@ -712,7 +729,7 @@ one or more Kanji characters.
 | Sunday | にちようび | <span class="kanji">日曜日</span> | Section 2 Unit 1 |
 | sunny | はれ | <span class="kanji">晴れ</span> | Section 2 Unit 5 |
 | supermarket | スーパー | | Section 2 Unit 8 |
-| sushi | すし | | Section 1 Unit 1 |
+| sushi | すし | <span class="kanji">寿司</span> | Section 1 Unit 1 |
 | sweater | セーター | | Section 2 Unit 19 |
 | sweet | あまい | <span class="kanji">甘い</span> | Section 2 Unit 8 |
 | T-shirt | Tシャツ | | Section 1 Unit 8 |
@@ -941,10 +958,12 @@ one or more Kanji characters.
 | which one | どれ | | Section 2 Unit 12 |
 | which way | どちら | | Section 3 Unit 1 |
 | white | しろい | <span class="kanji">白い</span> | Section 1 Unit 4 |
+| white wine | しろワイン | <span class="kanji">白ワイン</span> | Section 3 Unit 2 |
 | who | だれ | <span class="kanji">誰</span> | Section 2 Unit 7 |
 | wife | つま | <span class="kanji">妻</span> | Section 1 Unit 6 |
 | wind | かぜ | <span class="kanji">風</span> | Section 2 Unit 20 |
 | window | まど | <span class="kanji">窓</span> | Section 2 Unit 13 |
+| wine | ワイン | | Section 3 Unit 2 |
 | winter | ふゆ | | Section 2 Unit 5 |
 | with | と | | Section 1 Unit 7 |
 | work | しごと | <span class="kanji">仕事</span> | Section 2 Unit 6 |

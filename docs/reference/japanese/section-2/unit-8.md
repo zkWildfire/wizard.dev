@@ -43,7 +43,7 @@
 | pork cutlets | とんかつ | |
 | raw | なま | |
 | salt | しお | 塩 |
-| salty | しょっぱい | |
+| salty | しょっぱい | 塩っぱい |
 | sauce | ソース | |
 | soy sauce | しょうゆ | 醤油 |
 | strawberry | いちご | |

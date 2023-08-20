@@ -3,7 +3,7 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| sushi | すし | |
+| sushi | すし | 寿司 |
 | green tea | おちゃ | お茶 |
 | water | みず | 水 |
 | rice | ごはん | ご飯 |

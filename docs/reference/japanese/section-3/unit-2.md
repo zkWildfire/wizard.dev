@@ -3,6 +3,25 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| Are you hungry? | おなかがすきました | |
+| bowl | ボウル | |
+| chopsticks | はし | 箸 |
+| cup | コップ | |
+| favorite food | こうぶつ | 好物 |
+| fork | フォーク | |
+| half | はんぶん | 半分 |
+| knife | ナイフ | |
+| glass | グラス | |
+| plate | さら | 皿 |
+| rice bowl | ちゃわん | 茶碗 |
+| spoon | スプーン | |
+| wine | ワイン | |
+| lemon | レモン | |
+| grapes | ぶどう | |
+| soup | スープ | |
+| white wine | しろワイン | 白ワイン |
+| red wine | あかワイン | 赤ワイン |
+| sour | すっぱい | |
 
 ### Examples
 | English | Japanese |

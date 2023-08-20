@@ -27,7 +27,7 @@
 | video | どうが | |
 | this | こちら | |
 | probably | たぶん | |
-| really? | ほんとうですか。 | |
+| really | ほんとう | 本当 |
 | to like | すき | 好き |
 | my name is | といいます | と言います |
 
