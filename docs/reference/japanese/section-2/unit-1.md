@@ -57,7 +57,7 @@
 | Saturday | どようび | 土曜日 |
 | Sunday | にちようび | 日曜日 |
 | weekend | しゅうまつ | 週末 |
-| every week | まいしゅう | |
+| every week | まいしゅう | 毎週 |
 | four o'clock | よじ | 四時 |
 | five o'clock | ごじ | 五時 |
 | six o'clock | ろくじ | 六時 |

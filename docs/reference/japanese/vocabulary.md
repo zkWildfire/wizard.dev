@@ -55,6 +55,7 @@ one or more Kanji characters.
 | anime music | アニソン | | Section 2 Unit 10 |
 | apartment | アパート | | Section 2 Unit 3 |
 | apple | りんご | | Section 2 Unit 12 |
+| April | しがつ | <span class="kanji">四月</span> | Section 3 Unit 2 |
 | Are you hungry? | おなかがすきました | | Section 3 Unit 2 |
 | art museum | びじゅつかん | | Section 2 Unit 7 |
 | Asakusa | あさくさ | | Section 2 Unit 4 |
@@ -63,6 +64,7 @@ one or more Kanji characters.
 | at all | まったく | | Section 3 Unit 1 |
 | at home | ございたく | <span class="kanji">ご在宅</span> | Section 2 Unit 18 |
 | attraction | アトラクション | | Section 2 Unit 10 |
+| August | はちがつ | <span class="kanji">八月</span> | Section 3 Unit 2 |
 | aunt | おば | | Section 2 Unit 18 |
 | Australia | オーストラリア | | Section 2 Unit 3 |
 | Australia | オーストラリア | | Section 2 Unit 7 |
@@ -88,6 +90,7 @@ one or more Kanji characters.
 | big | おおきい | <span class="kanji">大きい</span> | Section 1 Unit 3 |
 | big | おおきな | <span class="kanji">大きな</span> | Section 3 Unit 1 |
 | bird | とり | <span class="kanji">鳥</span> | Section 2 Unit 13 |
+| birthday | たんじょうび | <span class="kanji">誕生日</span> | Section 3 Unit 2 |
 | black | くろい | <span class="kanji">黒い</span> | Section 1 Unit 8 |
 | black tea | こうちゃ | <span class="kanji">紅茶</span> | Section 2 Unit 1 |
 | blog | ブログ | | Section 2 Unit 11 |
@@ -161,6 +164,7 @@ one or more Kanji characters.
 | comedy | コメディ | | Section 2 Unit 3 |
 | computer | パソコン | | Section 2 Unit 11 |
 | concert | コンサート | | Section 2 Unit 5 |
+| congratulations | おめでとう | | Section 3 Unit 2 |
 | convenience store | コンビニ | | Section 1 Unit 3 |
 | convenient | べんり | | Section 2 Unit 7 |
 | cookie | クッキー | | Section 2 Unit 8 |
@@ -184,6 +188,7 @@ one or more Kanji characters.
 | days off | やすみのひ | <span class="kanji">休みの日</span> | Section 2 Unit 6 |
 | daytime | ひるま | <span class="kanji">昼間</span> | Section 2 Unit 20 |
 | deadline | しめきり | | Section 2 Unit 9 |
+| December | じゅうにがつ | <span class="kanji">十二月</span> | Section 3 Unit 2 |
 | department store | デパート | | Section 1 Unit 3 |
 | desk | つくえ | <span class="kanji">机</span> | Section 2 Unit 3 |
 | dessert | デザート | | Section 2 Unit 2 |
@@ -218,8 +223,12 @@ one or more Kanji characters.
 | eight (objects, generic) | やっつ | <span class="kanji">八つ</span> | Section 2 Unit 14 |
 | eight (people) | はちにん | <span class="kanji">八人</span> | Section 2 Unit 18 |
 | eight (pictures) | はちまい | <span class="kanji">八枚</span> | Section 2 Unit 18 |
+| eight days | ようか | <span class="kanji">八日</span> | Section 3 Unit 2 |
 | eight minutes | はっぷん | <span class="kanji">八分</span> | Section 2 Unit 5 |
+| eight months | はっかげつ | <span class="kanji">八ヶ月</span> | Section 3 Unit 2 |
 | eight o'clock | はちじ | <span class="kanji">八時</span> | Section 2 Unit 1 |
+| eight weeks | はっしゅうかん | <span class="kanji">八週間</span> | Section 3 Unit 2 |
+| eight years | はちねん | <span class="kanji">八年</span> | Section 3 Unit 2 |
 | eight years old | はっさい | <span class="kanji">八歳</span> | Section 2 Unit 14 |
 | electricity | でんき | <span class="kanji">電気</span> | Section 2 Unit 17 |
 | elementary school (grade) | しょうがく | <span class="kanji">小学</span> | Section 2 Unit 14 |
@@ -227,6 +236,7 @@ one or more Kanji characters.
 | elementary school students | しょうがくせいたち | <span class="kanji">小学生たち</span> | Section 2 Unit 14 |
 | elevator | エレベーター | | Section 2 Unit 2 |
 | eleven | じゅういち | <span class="kanji">十一</span> | Section 1 Unit 7 |
+| eleven months | じゅういっかげつ | <span class="kanji">十一ヶ月</span> | Section 3 Unit 2 |
 | eleven o'clock | じゅういちじ | <span class="kanji">十一時</span> | Section 2 Unit 1 |
 | emails | メール | | Section 2 Unit 2 |
 | engineer | エンジニア | | Section 1 Unit 6 |
@@ -236,9 +246,11 @@ one or more Kanji characters.
 | evening | ゆうがた | <span class="kanji">夕方</span> | Section 2 Unit 20 |
 | event | イベント | | Section 2 Unit 9 |
 | every day | まいにち | <span class="kanji">毎日</span> | Section 1 Unit 7 |
+| every month | まいつき | <span class="kanji">毎月</span> | Section 3 Unit 2 |
 | every morning | まいあさ | <span class="kanji">毎朝</span> | Section 1 Unit 7 |
 | every night | まいばん | <span class="kanji">毎晩</span> | Section 1 Unit 7 |
-| every week | まいしゅう | | Section 2 Unit 1 |
+| every week | まいしゅう | <span class="kanji">毎週</span> | Section 2 Unit 1 |
+| every year | まいとし | <span class="kanji">毎年</span> | Section 3 Unit 2 |
 | exactly | ちょうど | | Section 2 Unit 12 |
 | excuse me | すみません | | Section 1 Unit 5 |
 | exit | でぐち | <span class="kanji">出口</span> | Section 2 Unit 2 |
@@ -254,6 +266,7 @@ one or more Kanji characters.
 | father | ちちおや | <span class="kanji">父親</span> | Section 2 Unit 18 |
 | favorite | すき | | Section 2 Unit 10 |
 | favorite food | こうぶつ | <span class="kanji">好物</span> | Section 3 Unit 2 |
+| February | にがつ | <span class="kanji">二月</span> | Section 3 Unit 2 |
 | feeling sick | ぐあいがわるい | | Section 2 Unit 5 |
 | fiction | フィクション | | Section 2 Unit 10 |
 | final stop | しゅうてん | | Section 2 Unit 4 |
@@ -270,8 +283,12 @@ one or more Kanji characters.
 | five (objects, generic) | いつつ | <span class="kanji">五つ</span> | Section 2 Unit 9 |
 | five (people) | ごにん | <span class="kanji">五人</span> | Section 2 Unit 18 |
 | five (pictures) | ごまい | <span class="kanji">五枚</span> | Section 2 Unit 18 |
+| five days | いつか | <span class="kanji">五日</span> | Section 3 Unit 2 |
 | five minutes | ごふん | <span class="kanji">五分</span> | Section 2 Unit 5 |
+| five months | ごかげつ | <span class="kanji">五ヶ月</span> | Section 3 Unit 2 |
 | five o'clock | ごじ | <span class="kanji">五時</span> | Section 2 Unit 1 |
+| five weeks | ごしゅうかん | <span class="kanji">五週間</span> | Section 3 Unit 2 |
+| five years | ごねん | <span class="kanji">五年</span> | Section 3 Unit 2 |
 | five years old | ごさい | <span class="kanji">五歳</span> | Section 2 Unit 14 |
 | flavor | あじ | | Section 2 Unit 10 |
 | food | たべもの | <span class="kanji">食べ物</span> | Section 3 Unit 1 |
@@ -285,8 +302,12 @@ one or more Kanji characters.
 | four (objects, generic) | よっつ | <span class="kanji">四つ</span> | Section 2 Unit 1 |
 | four (people) | よにん | <span class="kanji">四人</span> | Section 2 Unit 18 |
 | four (pictures) | よんまい | <span class="kanji">四枚</span> | Section 2 Unit 18 |
+| four days | よっか | <span class="kanji">四日</span> | Section 3 Unit 2 |
 | four minutes | よんぷん | <span class="kanji">四分</span> | Section 2 Unit 5 |
+| four months | よんかげつ | <span class="kanji">四ヶ月</span> | Section 3 Unit 2 |
 | four o'clock | よじ | <span class="kanji">四時</span> | Section 2 Unit 1 |
+| four weeks | よんしゅうかん | <span class="kanji">四週間</span> | Section 3 Unit 2 |
+| four years | よねん | <span class="kanji">四年</span> | Section 3 Unit 2 |
 | four years old | よんさい | <span class="kanji">四歳</span> | Section 2 Unit 14 |
 | France | フランス | | Section 2 Unit 7 |
 | free (not busy) | ひま | | Section 2 Unit 8 |
@@ -327,6 +348,7 @@ one or more Kanji characters.
 | gym | ジム | | Section 2 Unit 9 |
 | half | はんぶん | <span class="kanji">半分</span> | Section 3 Unit 2 |
 | Hana | はな | | Section 1 Unit 2 |
+| happy birthday | おたんじょうびおめでとう | <span class="kanji">誕生日おめでとう</span> | Section 3 Unit 2 |
 | Harajuku | はらじゅく | | Section 2 Unit 4 |
 | hat | ぼうし | <span class="kanji">帽子</span> | Section 1 Unit 4 |
 | he | かれ | <span class="kanji">彼</span> | Section 2 Unit 15 |
@@ -374,6 +396,7 @@ one or more Kanji characters.
 | it's | です | | Section 1 Unit 1 |
 | J-pop | Jポップ | | Section 1 Unit 7 |
 | jacket | ジャケット | | Section 1 Unit 8 |
+| January | いちがつ | <span class="kanji">一月</span> | Section 3 Unit 2 |
 | Japan | にほん | <span class="kanji">日本</span> | Section 1 Unit 3 |
 | Japanese (language) | にほんご | <span class="kanji">日本語</span> | Section 2 Unit 9 |
 | Japanese (person) | にほんじん | <span class="kanji">日本人</span> | Section 1 Unit 3 |
@@ -385,6 +408,7 @@ one or more Kanji characters.
 | judo | じゅうどう | | Section 2 Unit 1 |
 | juice | ジュース | | Section 2 Unit 1 |
 | July | しちがつ | <span class="kanji">七月</span> | Section 2 Unit 5 |
+| June | ろくがつ | <span class="kanji">六月</span> | Section 3 Unit 2 |
 | K-pop | Kポップ | | Section 2 Unit 3 |
 | kanji | かんじ | | Section 2 Unit 11 |
 | karaoke | カラオケ | | Section 2 Unit 10 |
@@ -402,6 +426,7 @@ one or more Kanji characters.
 | last month | せんげつ | <span class="kanji">先月</span> | Section 2 Unit 20 |
 | last night | ゆうべ | <span class="kanji">夕べ</span> | Section 2 Unit 20 |
 | last week | せんしゅう | <span class="kanji">先週</span> | Section 2 Unit 20 |
+| last year | きょねん | <span class="kanji">去年</span> | Section 3 Unit 2 |
 | late | おそい | <span class="kanji">遅い</span> | Section 2 Unit 19 |
 | laundry | せんたく | <span class="kanji">洗濯</span> | Section 2 Unit 6 |
 | lawyer | べんごし | | Section 1 Unit 1 |
@@ -427,8 +452,10 @@ one or more Kanji characters.
 | manager | マネージャー | | Section 2 Unit 9 |
 | manga | まんが | | Section 1 Unit 7 |
 | map | ちず | <span class="kanji">地図</span> | Section 1 Unit 5 |
+| March | さんがつ | <span class="kanji">三月</span> | Section 3 Unit 2 |
 | mascot | キャラクター | | Section 2 Unit 10 |
 | matcha | まっちゃ | | Section 2 Unit 8 |
+| May | ごがつ | <span class="kanji">五月</span> | Section 3 Unit 2 |
 | meal set | ていしょく | | Section 2 Unit 1 |
 | meat | にく | <span class="kanji">肉</span> | Section 2 Unit 7 |
 | medicine | くすり | | Section 2 Unit 5 |
@@ -477,6 +504,7 @@ one or more Kanji characters.
 | next month | らいげつ | <span class="kanji">来月</span> | Section 2 Unit 7 |
 | next to | よこ | <span class="kanji">横</span> | Section 2 Unit 16 |
 | next week | らいしゅう | <span class="kanji">来週</span> | Section 2 Unit 2 |
+| next year | らいねん | <span class="kanji">来年</span> | Section 3 Unit 2 |
 | nice | やさしい | | Section 1 Unit 1 |
 | nice | いい | | Section 1 Unit 8 |
 | nice to meet you | どうぞよろしく | | Section 1 Unit 2 |
@@ -488,8 +516,12 @@ one or more Kanji characters.
 | nine (objects, generic) | ここのつ | <span class="kanji">九つ</span> | Section 2 Unit 14 |
 | nine (people) | きゅうにん | <span class="kanji">九人</span> | Section 2 Unit 18 |
 | nine (pictures) | きゅうまい | <span class="kanji">九枚</span> | Section 2 Unit 18 |
+| nine days | ここのか | <span class="kanji">九日</span> | Section 3 Unit 2 |
 | nine minutes | きゅうふん | <span class="kanji">九分</span> | Section 2 Unit 5 |
+| nine months | きゅうかげつ | <span class="kanji">九ヶ月</span> | Section 3 Unit 2 |
 | nine o'clock | くじ | <span class="kanji">九時</span> | Section 1 Unit 7 |
+| nine weeks | きゅうしゅうかん | <span class="kanji">九週間</span> | Section 3 Unit 2 |
+| nine years | きゅうねん | <span class="kanji">九年</span> | Section 3 Unit 2 |
 | nine years old | きゅうさい | <span class="kanji">九歳</span> | Section 2 Unit 14 |
 | no | いいえ | | Section 1 Unit 6 |
 | No thanks. | いいえ、けっこうです | <span class="kanji">いいえ、結構です</span> | Section 3 Unit 1 |
@@ -520,8 +552,10 @@ one or more Kanji characters.
 | not very | あまり | | Section 2 Unit 18 |
 | not very strong | あまりつよくない | <span class="kanji">あまり強くない</span> | Section 2 Unit 20 |
 | not weak | よわくない | <span class="kanji">弱くない</span> | Section 2 Unit 20 |
+| November | じゅういちがつ | <span class="kanji">十一月</span> | Section 3 Unit 2 |
 | now | いま | <span class="kanji">今</span> | Section 1 Unit 5 |
 | o'clock | じ | <span class="kanji">時</span> | Section 1 Unit 5 |
+| October | じゅうがつ | <span class="kanji">十月</span> | Section 3 Unit 2 |
 | office | かいしゃ | <span class="kanji">会社</span> | Section 2 Unit 13 |
 | office worker | かいしゃいん | | Section 1 Unit 6 |
 | often | よく | | Section 1 Unit 7 |
@@ -539,8 +573,12 @@ one or more Kanji characters.
 | one (objects) | いっこ | <span class="kanji">一個</span> | Section 2 Unit 14 |
 | one (person) | ひとり | <span class="kanji">一人</span> | Section 2 Unit 18 |
 | one (picture) | いちまい | <span class="kanji">一枚</span> | Section 2 Unit 18 |
+| one day | いちにち | <span class="kanji">一日</span> | Section 3 Unit 2 |
 | one minute | いっぷん | <span class="kanji">一分</span> | Section 2 Unit 5 |
+| one month | いっかげつ | <span class="kanji">一ヶ月</span> | Section 3 Unit 2 |
 | one o'clock | いちじ | <span class="kanji">一時</span> | Section 1 Unit 5 |
+| one week | いっしゅうかん | <span class="kanji">一週間</span> | Section 3 Unit 2 |
+| one year | いちねん | <span class="kanji">一年</span> | Section 3 Unit 2 |
 | one year old | いっさい | <span class="kanji">一歳</span> | Section 2 Unit 14 |
 | orange | オレンジいろ | <span class="kanji">オレンジ色</span> | Section 2 Unit 19 |
 | Osaka | おおさか | <span class="kanji">大阪</span> | Section 2 Unit 4 |
@@ -650,8 +688,12 @@ one or more Kanji characters.
 | seven (objects, generic) | ななつ | <span class="kanji">七つ</span> | Section 2 Unit 9 |
 | seven (people) | しちにん | <span class="kanji">七人</span> | Section 2 Unit 18 |
 | seven (pictures) | ななまい | <span class="kanji">七枚</span> | Section 2 Unit 18 |
+| seven days | なのか | <span class="kanji">七日</span> | Section 3 Unit 2 |
 | seven minutes | ななふん | <span class="kanji">七分</span> | Section 2 Unit 5 |
+| seven months | ななかげつ | <span class="kanji">七ヶ月</span> | Section 3 Unit 2 |
 | seven o'clock | しちじ | <span class="kanji">七時</span> | Section 1 Unit 7 |
+| seven weeks | ななしゅうかん | <span class="kanji">七週間</span> | Section 3 Unit 2 |
+| seven years | ななねん | <span class="kanji">七年</span> | Section 3 Unit 2 |
 | seven years old | ななさい | <span class="kanji">七歳</span> | Section 2 Unit 14 |
 | she | かのじょ | <span class="kanji">彼女</span> | Section 2 Unit 15 |
 | shelf | たな | <span class="kanji">棚</span> | Section 2 Unit 16 |
@@ -673,8 +715,12 @@ one or more Kanji characters.
 | six (objects, generic) | むっつ | <span class="kanji">六つ</span> | Section 2 Unit 9 |
 | six (people) | ろくにん | <span class="kanji">六人</span> | Section 2 Unit 18 |
 | six (pictures) | ろくまい | <span class="kanji">六枚</span> | Section 2 Unit 18 |
+| six days | むいか | <span class="kanji">六日</span> | Section 3 Unit 2 |
 | six minutes | ろっぷん | <span class="kanji">六分</span> | Section 2 Unit 5 |
+| six months | ろっかげつ | <span class="kanji">六ヶ月</span> | Section 3 Unit 2 |
 | six o'clock | ろくじ | <span class="kanji">六時</span> | Section 2 Unit 1 |
+| six weeks | ろくしゅうかん | <span class="kanji">六週間</span> | Section 3 Unit 2 |
+| six years | ろくねん | <span class="kanji">六年</span> | Section 3 Unit 2 |
 | six years old | ろくさい | <span class="kanji">六歳</span> | Section 2 Unit 14 |
 | skirt | スカート | | Section 1 Unit 8 |
 | sky | そら | <span class="kanji">空</span> | Section 2 Unit 20 |
@@ -751,9 +797,13 @@ one or more Kanji characters.
 | ten (objects) | じゅっこ | <span class="kanji">十個</span> | Section 2 Unit 14 |
 | ten (people) | じゅうにん | <span class="kanji">十人</span> | Section 2 Unit 18 |
 | ten (pictures) | じゅうまい | <span class="kanji">十枚</span> | Section 2 Unit 18 |
+| ten days | とおか | <span class="kanji">十日</span> | Section 3 Unit 2 |
 | ten minutes | じゅっぷん | <span class="kanji">十分</span> | Section 2 Unit 5 |
+| ten months | じゅっかげつ | <span class="kanji">十ヶ月</span> | Section 3 Unit 2 |
 | ten o'clock | じゅうじ | <span class="kanji">十時</span> | Section 2 Unit 1 |
 | ten thousand | いちまん | <span class="kanji">一万</span> | Section 2 Unit 15 |
+| ten weeks | じゅっしゅうかん | <span class="kanji">十週間</span> | Section 3 Unit 2 |
+| ten years | じゅうねん | <span class="kanji">十年</span> | Section 3 Unit 2 |
 | ten years old | じゅっさい | <span class="kanji">十歳</span> | Section 2 Unit 14 |
 | tennis | テニス | | Section 1 Unit 7 |
 | test | テスト | | Section 2 Unit 9 |
@@ -765,6 +815,7 @@ one or more Kanji characters.
 | that way | そちら | | Section 3 Unit 1 |
 | the day after tomorrow | あさって | <span class="kanji">明後日</span> | Section 2 Unit 16 |
 | the week after next | さらいしゅう | <span class="kanji">再来週</span> | Section 2 Unit 20 |
+| the year before last | おととし | <span class="kanji">一昨年</span> | Section 3 Unit 2 |
 | theme park | ゆうえんち | | Section 2 Unit 10 |
 | then | そして | | Section 2 Unit 6 |
 | there | そこ | | Section 1 Unit 3 |
@@ -780,6 +831,7 @@ one or more Kanji characters.
 | this morning | けさ | <span class="kanji">今朝</span> | Section 2 Unit 20 |
 | this way | こちら | | Section 2 Unit 15 |
 | this week | こんしゅう | <span class="kanji">今週</span> | Section 2 Unit 3 |
+| this year | ことし | <span class="kanji">今年</span> | Section 3 Unit 2 |
 | those | それら | | Section 1 Unit 4 |
 | though | でも | | Section 2 Unit 8 |
 | thousand | せん | <span class="kanji">千</span> | Section 1 Unit 8 |
@@ -790,9 +842,13 @@ one or more Kanji characters.
 | three (objects, generic) | みっつ | <span class="kanji">三つ</span> | Section 2 Unit 1 |
 | three (people) | さんにん | <span class="kanji">三人</span> | Section 2 Unit 18 |
 | three (pictures) | さんまい | <span class="kanji">三枚</span> | Section 2 Unit 18 |
+| three days | みっか | <span class="kanji">三日</span> | Section 3 Unit 2 |
 | three minutes | さんぷん | <span class="kanji">三分</span> | Section 2 Unit 5 |
+| three months | さんかげつ | <span class="kanji">三ヶ月</span> | Section 3 Unit 2 |
 | three o'clock | さんじ | <span class="kanji">三時</span> | Section 1 Unit 5 |
 | three thousand | さんぜん | <span class="kanji">三千</span> | Section 2 Unit 10 |
+| three weeks | さんしゅうかん | <span class="kanji">三週間</span> | Section 3 Unit 2 |
+| three years | さんねん | <span class="kanji">三年</span> | Section 3 Unit 2 |
 | three years old | さんさい | <span class="kanji">三歳</span> | Section 2 Unit 14 |
 | Thursday | もくようび | <span class="kanji">木曜日</span> | Section 2 Unit 8 |
 | ticket | きっぷ | | Section 1 Unit 5 |
@@ -825,6 +881,7 @@ one or more Kanji characters.
 | to get up | おきます | <span class="kanji">起きます</span> | Section 2 Unit 2 |
 | to go on a walk | さんぽします | <span class="kanji">散歩します</span> | Section 2 Unit 18 |
 | to go out | でかけます | | Section 2 Unit 1 |
+| to go out to | でかけます | <span class="kanji">出かけます</span> | Section 3 Unit 2 |
 | to go to | いきます | <span class="kanji">行きます</span> | Section 2 Unit 4 |
 | to hang out | あそびます | <span class="kanji">遊びます</span> | Section 2 Unit 1 |
 | to have | あります | | Section 2 Unit 2 |
@@ -899,7 +956,9 @@ one or more Kanji characters.
 | trip | りょこう | <span class="kanji">旅行</span> | Section 2 Unit 7 |
 | Tuesday | かようび | <span class="kanji">火曜日</span> | Section 2 Unit 8 |
 | twelve | じゅうに | <span class="kanji">十二</span> | Section 1 Unit 7 |
+| twelve months | じゅうにかげつ | <span class="kanji">十二ヶ月</span> | Section 3 Unit 2 |
 | twelve o'clock | じゅうにじ | <span class="kanji">十二時</span> | Section 2 Unit 1 |
+| twenty days | はつか | <span class="kanji">二十日</span> | Section 3 Unit 2 |
 | two | に | <span class="kanji">二</span> | Section 1 Unit 5 |
 | two (birds, rabbits, etc) | にわ | <span class="kanji">二羽</span> | Section 2 Unit 13 |
 | two (books) | にさつ | <span class="kanji">二冊</span> | Section 2 Unit 16 |
@@ -907,8 +966,12 @@ one or more Kanji characters.
 | two (objects, generic) | ふたつ | <span class="kanji">二つ</span> | Section 2 Unit 1 |
 | two (people) | ふたり | <span class="kanji">二人</span> | Section 2 Unit 18 |
 | two (pictures) | にまい | <span class="kanji">二枚</span> | Section 2 Unit 18 |
+| two days | ふつか | <span class="kanji">二日</span> | Section 3 Unit 2 |
 | two minutes | にふん | <span class="kanji">二分</span> | Section 2 Unit 5 |
+| two months | にかげつ | <span class="kanji">二ヶ月</span> | Section 3 Unit 2 |
 | two o'clock | にじ | <span class="kanji">二時</span> | Section 1 Unit 5 |
+| two weeks | にしゅうかん | <span class="kanji">二週間</span> | Section 3 Unit 2 |
+| two years | にねん | <span class="kanji">二年</span> | Section 3 Unit 2 |
 | two years old | にさい | <span class="kanji">二歳</span> | Section 2 Unit 14 |
 | udon | うどん | | Section 2 Unit 1 |
 | Ueno Park | うえのこうえん | | Section 2 Unit 4 |
@@ -971,6 +1034,8 @@ one or more Kanji characters.
 | Yamada | やまだ | <span class="kanji">山田</span> | Section 2 Unit 9 |
 | Yamaguchi | やまぐち | <span class="kanji">山口</span> | Section 1 Unit 4 |
 | yard | にわ | <span class="kanji">庭</span> | Section 2 Unit 13 |
+| year | とし | <span class="kanji">年</span> | Section 3 Unit 2 |
+| year after next | さらいねん | <span class="kanji">再来年</span> | Section 3 Unit 2 |
 | years old | さい | <span class="kanji">歳</span> | Section 1 Unit 6 |
 | yellow | きいろい | <span class="kanji">黄色い</span> | Section 2 Unit 10 |
 | yen | えん | <span class="kanji">円</span> | Section 1 Unit 8 |
