@@ -16,6 +16,10 @@
 		{
 			"name": "Matrix Cache Simulator",
 			"path": "projects/matrix-cache-sim"
+		},
+		{
+			"name": "MNIST",
+			"path": "projects/mnist"
 		}
 	],
 	"settings": {

@@ -20,6 +20,8 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
+    environment:
+      PYTHON_PATH: "/workspaces/wizard/projects/mnist/src"
     networks:
       dev-net:
     stdin_open: true
