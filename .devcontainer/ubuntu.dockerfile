@@ -20,9 +20,11 @@ RUN apt-get update -y && \
 		doxygen \
 		git \
 		g++-${GCC_VERSION} \
+		libcairo2-dev \
 		ninja-build \
 		pkg-config \
 		python${PYTHON_VERSION} \
+		python${PYTHON_VERSION}-dev \
 		python3-pip \
 		ssh \
 		sudo \
@@ -41,25 +43,8 @@ RUN apt-get update -y && \
 		/usr/bin/clang++ clang++ /usr/bin/clang++-${CLANG_VERSION} ${CLANG_VERSION}
 
 # Install pip packages
-RUN python3 -m pip install \
-	# Primary mkdocs package
-	mkdocs \
-	# Packages used to enable the material mkdocs theme
-	mkdocs-material \
-	mkdocs-git-revision-date-localized-plugin \
-	pygments \
-	# Packages for documentation
-	mkdocs-awesome-pages-plugin \
-	doxypypy \
-	mkdocs_puml \
-	# Other
-	autopep8 \
-	beautifulsoup4 \
-	coverage \
-	pythonnet \
-	pytest \
-	pytest-cov \
-	tqdm
+COPY requirements.txt /tmp/requirements.txt
+RUN python3 -m pip install -r /tmp/requirements.txt
 
 # Add CMake
 RUN mkdir -p /tmp/${USERNAME} && \
@@ -97,3 +82,8 @@ RUN groupadd --gid $USER_GID $USERNAME && \
 	chmod 0440 /etc/sudoers.d/$USERNAME
 USER $USERNAME
 COPY .vimrc /home/$USERNAME/.vimrc
+
+# Add the path that pip scripts are added to
+# Note that using `${PATH}` and `$PATH` may have different behavior according
+#   to https://github.com/moby/moby/issues/42863. For safety, prefer `$PATH`.
+ENV PATH="$PATH:/home/$USERNAME/.local/bin"
