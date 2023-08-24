@@ -13,6 +13,13 @@ services:
     #   devcontainers GitHub repository here:
     # https://github.com/devcontainers/templates/blob/main/src/docker-existing-docker-compose/.devcontainer/docker-compose.yml
     command: /bin/sh -c "while sleep 1000; do :; done"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     networks:
       dev-net:
     stdin_open: true
