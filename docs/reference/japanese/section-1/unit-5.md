@@ -31,6 +31,7 @@
 | airport | くうこう | 空港 |
 | subway | ちかてつ | 地下鉄 |
 | map | ちず | 地図 |
+| bag | かばん | 鞄 |
 | passport | パスポート | |
 | smartphone | スマホ | |
 | ticket | きっぷ | |

@@ -42,6 +42,7 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | building | たてもの | 建物 |
+| flower | はな | 花 |
 | mountain | やま | 山 |
 | pizza shop | ピザや | |
 | place | ところ | |

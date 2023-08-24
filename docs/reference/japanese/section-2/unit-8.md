@@ -50,7 +50,7 @@
 | stuff | もの | |
 | supermarket | スーパー | |
 | sweet | あまい | 甘い |
-| to love | だいすき | |
+| to love | だいすき | 大好き |
 | to use | つかいます | 使います |
 | tofu | とうふ | |
 | together | いっしょに | 一緒に |

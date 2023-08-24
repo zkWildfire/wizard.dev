@@ -27,7 +27,7 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| all sorts of (things) | いろいろ | |
+| all sorts of (things) | いろいろ | 色々 |
 | after | あと | |
 | bath | おふろ | |
 | chores | かじ | |

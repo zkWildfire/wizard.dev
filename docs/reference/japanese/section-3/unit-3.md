@@ -3,6 +3,31 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| baggage | にもつ | 荷物 |
+| bakery | パンや | パン屋 |
+| clock | とけい | 時計 |
+| color | いろ | 色 |
+| different | ちがう | 違う |
+| durable | じょうぶ | 丈夫 |
+| else | ほかに | 他に |
+| heavy | おもい | 重い |
+| lightweight | かるい | 軽い |
+| like this | こんな | |
+| luggage | にもつ | 荷物 |
+| mine | わたしのもの | 私の物 |
+| money | おかね | お金 |
+| not heavy | かるくない | 軽くない |
+| not lightweight | かるくない | 軽くない |
+| same | おなじ | 同じ |
+| sturdy | じょうぶ | 丈夫 |
+| take care of | たいせつ | 大切 |
+| to | にとって | |
+| to carry | もちます | 持ちます |
+| to hold | もちます | 持ちます |
+| to give | あげます | 上げます |
+| to put in | いれます | 入れます |
+| to receive | もらいます | |
+| watch | うでどけい | 腕時計 |
 
 ### Examples
 | English | Japanese |
