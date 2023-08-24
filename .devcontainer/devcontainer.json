@@ -12,6 +12,8 @@
 				"EditorConfig.EditorConfig",
 				"FordLabs.copyrighter",
 				"formulahendry.dotnet-test-explorer",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
 				"github.vscode-github-actions",
 				"jebbs.plantuml",
 				"ms-azuretools.vscode-docker",
