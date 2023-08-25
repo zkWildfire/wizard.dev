@@ -8,9 +8,10 @@ from typing import Tuple
 
 logger = logging.getLogger()
 
-def evaluate(model: IModel) -> None:
+def evaluate(model: IModel, device: torch.device) -> None:
 	"""
 	Evaluate the specified model.
+	@param device The device to evaluate the model on.
 	@param model The model to evaluate.
 	"""
 	# Transformations applied to the test data
@@ -46,6 +47,11 @@ def evaluate(model: IModel) -> None:
 	# No need to track gradients for evaluation
 	with torch.no_grad():
 		for data, target in test_loader:
+			# Move the data to the correct device
+			data = data.to(device)
+			target = target.to(device)
+
+			# Run the model
 			output = model(data)
 			correct += get_num_correct(output, target)
 			total += len(target)

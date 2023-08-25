@@ -11,10 +11,15 @@ from typing import Tuple
 
 logger = logging.getLogger()
 
-def train(model: IModel, epochs: int = 5, learning_rate: float = 0.001) -> None:
+def train(
+	model: IModel,
+	device: torch.device,
+	epochs: int = 5,
+	learning_rate: float = 0.001) -> None:
 	"""
 	Runs the training loop for the model.
 	@param model The model to train.
+	@param device The device to train the model on.
 	@param epochs The number of epochs to train for.
 	@param learning_rate The learning rate to use for training.
 	"""
@@ -51,6 +56,10 @@ def train(model: IModel, epochs: int = 5, learning_rate: float = 0.001) -> None:
 
 		start_time = time.time()
 		for images, labels in data_loader:
+			# Move the data to the correct device
+			images = images.to(device)
+			labels = labels.to(device)
+
 			# Zero the gradients
 			optimizer.zero_grad()
 
@@ -83,4 +92,4 @@ def train(model: IModel, epochs: int = 5, learning_rate: float = 0.001) -> None:
 	logger.info(
 		f"Training completed. Total training time: {round(elapsed_time, 2)}s."
 	)
-	evaluate(model)
+	evaluate(model, device)

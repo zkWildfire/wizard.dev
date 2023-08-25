@@ -6,6 +6,7 @@ from mnist.models.model import IModel
 from mnist.models.simple import SimpleModel
 from mnist.evaluate import evaluate
 from mnist.train import train
+import torch
 from typing import Callable, List, Dict
 import sys
 
@@ -133,18 +134,24 @@ def main(*cli_args: str) -> int:
 	handler.setFormatter(formatter)
 	logger.addHandler(handler)
 
+	# Set up the device to use
+	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+	logger.info(f"Using device: {device}")
+
 	# Run the correct command
 	if args.command == "train":
 		assert isinstance(args.model, str)
 		model = MODELS[args.model]()
-		train(model)
+		model.to(device)
+		train(model, device)
 	elif args.command == "evaluate":
 		if isinstance(args.model, str):
 			args.model = [args.model]
 
 		for model_name in args.model:
 			model = MODELS[model_name]()
-			evaluate(model)
+			model.to(device)
+			evaluate(model, device)
 	else:
 		parser.print_help()
 
