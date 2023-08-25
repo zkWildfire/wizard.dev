@@ -1,13 +1,23 @@
 #!/usr/bin/env python3
 # Entry point for MNIST model training and evaluation.
 import argparse
-from typing import Callable, Dict
+import logging
 from mnist.models.model import IModel
 from mnist.models.simple import SimpleModel
 from mnist.evaluate import evaluate
 from mnist.train import train
-from typing import List, Dict
+from typing import Callable, List, Dict
 import sys
+
+# Log levels that may be specified on the command line
+LOG_LEVELS: Dict[str, int] = {
+	"critical": logging.CRITICAL,
+	"error": logging.ERROR,
+	"warning": logging.WARNING,
+	"info": logging.INFO,
+	"debug": logging.DEBUG
+}
+
 
 # Supported models with corresponding factory methods
 MODELS: Dict[str, Callable[[], IModel]] = {
@@ -22,10 +32,39 @@ class CliArgs(argparse.Namespace):
 	# Command that was selected
 	command: str
 
+	# Minimum log level to print to the console
+	log_level: str
+
 	# The model or models that were selected
 	# For the "train" command, this will always be a single model. For the
 	#   "evaluate" command, this will be a string or list of models.
 	model: str | List[str]
+
+
+class LogFormatter(logging.Formatter):
+	"""
+	Formatter used for logging messages.
+	"""
+	# Mapping of log levels to the single character used to represent them.
+	LOG_LEVEL_MAPPING = {
+		'DEBUG': 'D',
+		'INFO': 'I',
+		'WARNING': 'W',
+		'ERROR': 'E',
+		'CRITICAL': 'C'
+	}
+
+	def format(self, record: logging.LogRecord) -> str:
+		"""
+		Re-maps the log level name to a single character.
+		@param record The log record to format.
+		@returns The formatted log record.
+		"""
+		record.levelname = LogFormatter.LOG_LEVEL_MAPPING.get(
+			record.levelname,
+			record.levelname[0]
+		)
+		return super().format(record)
 
 
 def make_parser() -> argparse.ArgumentParser:
@@ -35,6 +74,13 @@ def make_parser() -> argparse.ArgumentParser:
 	"""
 	parser = argparse.ArgumentParser(
 		description="MNIST model training and evaluation."
+	)
+	parser.add_argument(
+		"--log-level",
+		type=str,
+		choices=LOG_LEVELS.keys(),
+		default="info",
+		help="The minimum log level to print to the console."
 	)
 	subparsers = parser.add_subparsers(dest="command")
 
@@ -73,6 +119,21 @@ def main(*cli_args: str) -> int:
 	parser = make_parser()
 	args = parser.parse_args(cli_args, namespace=CliArgs())
 
+	# Set up logging
+	logger = logging.getLogger()
+	logger.setLevel(LOG_LEVELS[args.log_level])
+
+	# Configure the format used for logging
+	handler = logging.StreamHandler()
+	handler.setLevel(logging.DEBUG)
+	formatter = LogFormatter(
+		"(%(levelname)s)[%(asctime)s.%(msecs)03d] %(filename)s:%(lineno)d: %(message)s",
+		datefmt = "%Y-%m-%d %H:%M:%S"
+	)
+	handler.setFormatter(formatter)
+	logger.addHandler(handler)
+
+	# Run the correct command
 	if args.command == "train":
 		assert isinstance(args.model, str)
 		model = MODELS[args.model]()
