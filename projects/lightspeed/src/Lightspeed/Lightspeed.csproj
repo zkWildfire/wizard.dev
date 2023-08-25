@@ -1,9 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
+	<ItemGroup>
+		<PackageReference Include="libtorch-cuda-11.7-linux-x64" Version="2.0.1.1" />
+		<PackageReference Include="TorchSharp" Version="0.100.4" />
+		<PackageReference Include="TorchVision" Version="0.100.4" />
+	</ItemGroup>
 </Project>

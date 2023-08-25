@@ -1,0 +1,4 @@
+<!-- Build properties applied to all source projects -->
+<Project>
+	<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+</Project>

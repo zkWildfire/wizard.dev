@@ -1,0 +1,425 @@
+#
+# List of style rules:
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/#index
+#
+
+[*.cs]
+#
+# Code Style Settings
+#
+
+# Treat style warnings as errors
+dotnet_analyzer_diagnostic.category-Style.severity = error
+
+# Require that `this` is not used when not necessary
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0003-ide0009
+dotnet_diagnostic.IDE0009.severity = none
+
+# Prefer `var` in most cases
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0007-ide0008
+csharp_style_var_elsewhere = true
+csharp_style_var_when_type_is_apparent = true
+csharp_style_var_for_built_in_types = true
+
+# Always require the use of braces, even for single line statements
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0011
+csharp_prefer_braces = true
+
+# Allow the use of either throw statements or throw expressions with no
+#   preference given to either form
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0016
+dotnet_diagnostic.IDE0016.severity = none
+
+# Always use the object initializer syntax whenever possible
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0017
+dotnet_style_object_initializer = true
+
+# Always use inline variable declaration when it is possible
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0018
+csharp_style_inlined_variable_declaration = true
+
+# Always prefer pattern matching instead of a cast + null check
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0019
+csharp_style_pattern_matching_over_as_with_null_check = true
+
+# Always prefer saving casted values into a variable immediately
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0020-ide0038
+csharp_style_pattern_matching_over_is_with_cast_check = true
+
+# Constructors and methods are most frequently multi-line methods, so require
+#   them to always use expression bodies rather than allowing them to use
+#   shorthand syntax (even if they're only one line)
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0021
+csharp_style_expression_bodied_constructors = false
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0022
+csharp_style_expression_bodied_methods = false
+
+# For everything else (e.g. properties), allow them to use shorthand syntax if
+#   they're a single line but require expression bodies if they're more complex
+#   and require multiple lines
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0023-ide0024
+csharp_style_expression_bodied_operators = when_on_single_line
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0025
+csharp_style_expression_bodied_properties = when_on_single_line
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0026
+csharp_style_expression_bodied_indexers = when_on_single_line
+
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0027
+csharp_style_expression_bodied_accessors = when_on_single_line
+
+# Always use collection initializers instead of calling `.Add()` or similar
+#   after creating a collection
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0028
+dotnet_style_collection_initializer = true
+
+# The coalescing operator should always be used over ternary operators
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0029-ide0030
+dotnet_style_coalesce_expression = true
+
+# Always use null propagation over ternary operators
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0031
+dotnet_style_null_propagation = true
+
+# Require the use of auto-implemented properties when possible
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0032
+dotnet_style_prefer_auto_properties = true
+
+# Always require the use of tuple property names instead of Item1, Item2, etc.
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0033
+dotnet_style_explicit_tuple_names = true
+
+# Require the use of simplified default expressions
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0034
+csharp_prefer_simple_default_expression = true
+
+# Explicitly specify the default .NET style as the preferred modifier order
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0036
+csharp_preferred_modifier_order = public, private, protected, internal, file, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, required, volatile, async
+
+# Require the use of inferred tuple variable names
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0037
+dotnet_style_prefer_inferred_tuple_names = true
+
+# Require the use of inferred anonymous type variable names
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0037
+dotnet_style_prefer_inferred_anonymous_type_member_names = true
+
+# Prefer the use of local methods over anonymous functions
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0039
+csharp_style_prefer_local_over_anonymous_function = true
+
+# Always require accessibility modifiers to be declared, even if the declared
+#   modifier is the default value. Interfaces are excluded from this requirement
+#   since interface members are required to always be public.
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0040
+dotnet_style_require_accessibility_modifiers = for_non_interface_members
+
+# Always requre using `x is null` instead of `(object)x == null` or
+#   `object.ReferenceEquals(x, null)`
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0041
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+
+# Prefer using deconstruction expressions when possible
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0042
+csharp_style_deconstructed_variable_declaration = true
+
+# Require `readonly` to be added to member variables that are not modified
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0044
+dotnet_style_readonly_field = true
+
+# Require the use of ternary operators instead of if-else blocks for variable
+#   assignment
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0045
+dotnet_style_prefer_conditional_expression_over_assignment = true
+
+# Require the use of ternary operators instead of if-else blocks for return
+#   statements
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0046
+dotnet_style_prefer_conditional_expression_over_return = true
+
+# Always use "unnecessary" parentheses to clarify order of operations in most
+#   cases. The exception is the "other operators" option, which would apply
+#   to statements like `a.b.foo` and require them to be written as `(a.b).foo`.
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0047-ide0048
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+
+# Always require the use of built in type names instead of framework type names
+#   (e.g. use `int` instead of `Int32`)
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0049
+dotnet_style_predefined_type_for_locals_parameters_members = true
+dotnet_style_predefined_type_for_member_access = true
+
+# Require lambdas to be declared using shorthand syntax if they're a single line;
+#   require the use of expression bodies if they're not a single line
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0053
+csharp_style_expression_bodied_lambdas = when_on_single_line
+
+# Always prefer the use of compound assignment operators (e.g. +=)
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0054-ide0074
+dotnet_style_prefer_compound_assignment = true
+
+# Prefer the use of the index operator
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0056
+csharp_style_prefer_index_operator = true
+
+# Prefer the use of the range operator
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0057
+csharp_style_prefer_range_operator = true
+
+# Require unused values to be explicitly discarded
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0058
+csharp_style_unused_value_expression_statement_preference = discard_variable
+
+# Require that unused values are not saved to variables that are used later
+# This is closely related to IDE0058, but is handled separately since it handles
+#   cases where the unused value is saved to a variable that isn't unused, but
+#   is used in a way that the originally saved value is unused.
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0059
+csharp_style_unused_value_assignment_preference = discard_variable
+
+# Require that method parameters are always used
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0060
+dotnet_code_quality_unused_parameters = all
+
+# Use the same rule for local methods as other frequently single line methods
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0061
+csharp_style_expression_bodied_local_functions = when_on_single_line
+
+# Require that local methods that do not access instance state are declared static
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0062
+csharp_prefer_static_local_function = true
+
+# Require the use of simple using statements where possible
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0063
+csharp_prefer_simple_using_statement = true
+
+# Require using statements to be placed outside of namespaces
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0065
+csharp_using_directive_placement = outside_namespace
+
+# Require the use of pattern matching switch statements where possible
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0066
+csharp_style_prefer_switch_expression = true
+
+# Require string interpolation to be simplified at all times
+# This will catch string interpolation usage like $"=={foo.toString()}==" where
+#   the call to `toString()` is unnecessary.
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0071
+dotnet_style_prefer_simplified_interpolation = true
+
+# Catch instances of boolean expressions that can be simplified
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0075
+dotnet_style_prefer_simplified_boolean_expressions = true
+
+# Require pattern matching to be used whenever possible
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0078
+csharp_style_prefer_pattern_matching = true
+
+# Flag unnecessary suppression attributes as errors
+# Note that this only applies to open files in Visual Studio and does not apply
+#   at build time (as of 2023-04-22).
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0079
+dotnet_remove_unnecessary_suppression_exclusions = true
+
+# Prefer pattern matching via the `not` operator whenever possible
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0083
+csharp_style_prefer_not_pattern = true
+
+# Always require the shorthand `new()` syntax when creating an object where the
+#   type is known
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0090
+csharp_style_implicit_object_creation_when_type_is_apparent = true
+
+# Don't require that namespaces match the folder structure
+# This is necessary for Singularity since all code is placed under the
+#   Singularity namespace, but code isn't placed into a "Singularity" folder
+#   within each project due to already being in a repo-level Singularity folder.
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0130
+dotnet_style_namespace_match_folder = false
+
+# Prefer `is null` and `is not null` over type-specific checks
+# This applies in cases where the only scenario where an expression like
+#   `x is not Foo` can be true is if `x` is null.
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0150
+csharp_style_prefer_null_check_over_type_check = true
+
+# Always use file scoped namespaces
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0160-ide0161
+csharp_style_namespace_declarations = file_scoped
+
+# Always use extended property syntax instead of nested braces
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0170
+csharp_style_prefer_extended_property_pattern = true
+
+# Prefer using tuples to implement swap operations
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0180
+csharp_style_prefer_tuple_swap = true
+
+# Require `?.Invoke()` instead of `if (x != null) { x() }`
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide1005
+csharp_style_conditional_delegate_call = true
+
+#
+# Formatting preferences
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0055
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/dotnet-formatting-options
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options
+#
+
+# Prefer having using statements in alphabetical order rather than splitting
+#   them between system and non-system namespaces. C# isn't C++, so there's no
+#   need to split system and non-system using statements.
+dotnet_sort_system_directives_first = false
+dotnet_separate_import_directive_groups = false
+
+# Require newline characters to be added
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
+
+# Indentation preferences
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+csharp_indent_labels = one_less_than_current
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents_when_block = false
+
+# Spacing preferences
+csharp_space_after_cast = false
+csharp_space_after_keywords_in_control_flow_statements = true
+# This option doesn't have a "none" value and needs to not be provided at all
+#   to disable the rule.
+# csharp_space_between_parentheses = control_flow_statements, expressions, type_casts
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_after_comma = true
+csharp_space_before_comma = false
+csharp_space_after_dot = false
+csharp_space_before_dot = false
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_around_declaration_statements = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_square_brackets = false
+
+# Wrapping preferences
+csharp_preserve_single_line_statements = false
+csharp_preserve_single_line_blocks = true
+
+
+#
+# Naming preferences
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/naming-rules
+#
+
+# Custom entity type that matches constant variables in any type
+dotnet_naming_symbols.constants.applicable_kinds = field, local
+dotnet_naming_symbols.constants.applicable_accessibilities = *
+dotnet_naming_symbols.constants.required_modifiers = const
+
+# Custom entity type that matches hidden member variables in any type
+dotnet_naming_symbols.constants.applicable_kinds = field
+dotnet_naming_symbols.constants.applicable_accessibilities = private, protected
+
+# Constants should always use the UPPER_SNAKE_CASE naming convention
+dotnet_naming_style.constants.capitalization = pascal_case
+dotnet_naming_style.constants.word_separator = _
+
+# Private and protected member variables should always use the _camelCase
+#   naming convention
+dotnet_naming_style.hidden_member_variables.capitalization = camel_case
+dotnet_naming_style.hidden_member_variables.required_prefix = _
+
+
+#
+# Exclusions
+#
+
+[Usings.cs]
+# Disable "Using directive is unnecessary" in Usings.cs files
+dotnet_diagnostic.IDE0005.severity = none
+
+
+[test/**/*.cs]
+# Don't require test code to always handle return values
+dotnet_diagnostic.IDE0058.severity = none
+
+
+[*.cs]
+# Ignore the empty interface warning
+# This warning is more of a nuisance than a useful warning since interfaces may
+#   be created as empty interface placeholders during development. Such
+#   interfaces should not prevent compilation from succeeding.
+dotnet_diagnostic.CA1040.severity = none
+
+# Don't require parameters to be checked for null values
+# These projects are only used by this repo, where all projects have null
+#   references enabled.
+dotnet_diagnostic.CA1062.severity = none
+
+# Don't require strings to be pulled from a resource manager
+# Supporting localization for this demo is overkill.
+dotnet_diagnostic.CA1303.severity = none
+
+# Don't flag variables with underscores as violating naming conventions
+# This warning is triggered by constants, which use the UPPER_SNAKE_CASE
+#   naming convention.
+dotnet_diagnostic.CA1707.severity = none
+
+# Don't require specific suffixes
+# This warning is triggered by classes such as `ICircularBuffer`, where the
+#   warning appears with the message:
+# ```
+# Rename Foobar.Common.Collections.ICircularBuffer<T> to end in either
+# 'Collection' or 'Dictionary', 'Set', 'Stack', 'Queue'
+# ```
+# This is overly restrictive since Circular Buffers are a common and widely
+#   recognized data structure. The closest match to the suggested suffixes
+#   would be to name the interface `ICircularList`, but the `-List` suffix
+#   is not listed in the allowed suffixes.
+dotnet_diagnostic.CA1710.severity = none
+
+# Don't require the use of the LoggerMessage pattern
+# Using the LoggerMessage pattern will improve performance when logging.
+#   Currently, perfomance isn't a concern, so this warning is unnecessary.
+# https://learn.microsoft.com/en-us/dotnet/core/extensions/logger-message-generator
+dotnet_diagnostic.CA1848.severity = none
+
+# Disable warning about cryptographically secure random number generators
+# This project doesn't need to be cryptographically secure, so this warning is
+#   unnecessary.
+dotnet_diagnostic.CA5394.severity = none
+
+# Ignore warnings about unused events
+# This warning is more of a nuisance than a useful warning since events are
+#   often defined before the code that ends up using them is implemented.
+dotnet_diagnostic.CS0067.severity = none
+
+# Ignore missing XML comment warnings
+# `GenerateDocumentationFile` needs to be enabled to allow IDE0005 warnings
+#   about unused imports to be emitted (see https://github.com/dotnet/roslyn/issues/41640).
+#   However, enabling that option causes CS1591 warnings to be emitted for
+#   missing XML comments since Doxygen is used for documentation instead of XML
+#   comments. Ignore this warning since the XML documentation file is not used.
+dotnet_diagnostic.CS1591.severity = none

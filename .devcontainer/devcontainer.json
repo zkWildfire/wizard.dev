@@ -17,6 +17,7 @@
 				"github.vscode-github-actions",
 				"jebbs.plantuml",
 				"ms-azuretools.vscode-docker",
+				"ms-dotnettools.csdevkit",
 				"ms-dotnettools.csharp",
 				"ms-python.python",
 				"ms-vscode.cmake-tools",

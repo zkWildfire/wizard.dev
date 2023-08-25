@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+	<DataCollectionRunSettings>
+		<DataCollectors>
+			<DataCollector friendlyName="XPlat code coverage">
+				<Configuration>
+					<Format>cobertura</Format>
+					<SingleHit>false</SingleHit>
+					<!--
+						Don't use SourceLink when running locally because it causes file
+						paths in the coverage files to be replaced with GitHub URLs,
+						preventing the Coverage Gutters extension from working.
+					-->
+					<UseSourceLink>false</UseSourceLink>
+					<IncludeTestAssembly>false</IncludeTestAssembly>
+					<SkipAutoProps>true</SkipAutoProps>
+					<DeterministicReport>false</DeterministicReport>
+				</Configuration>
+			</DataCollector>
+		</DataCollectors>
+	</DataCollectionRunSettings>
+</RunSettings>
