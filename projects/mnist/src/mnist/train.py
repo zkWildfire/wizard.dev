@@ -26,7 +26,7 @@ def train(model: IModel, epochs: int = 5, learning_rate: float = 0.001) -> None:
 
 	# Download and load the training data
 	train_data = datasets.MNIST(
-		"../data",
+		"../../data",
 		train=True,
 		download=True,
 		transform=transform

@@ -11,12 +11,12 @@ class SimpleModel(IModel):
 		"""
 		Initializes a new instance of the class.
 		"""
-		super(torch.nn.Module).__init__()
+		super(IModel, self).__init__() # pyright: ignore[reportUnknownMemberType]
 
 		# Arbitrarily selected hidden size
 		HIDDEN_SIZE = 50
-		self.fc1 = torch.nn.Linear(INPUT_SIZE, HIDDEN_SIZE)
-		self.fc2 = torch.nn.Linear(HIDDEN_SIZE, NUM_CLASSES)
+		self._fc1 = torch.nn.Linear(INPUT_SIZE, HIDDEN_SIZE)
+		self._fc2 = torch.nn.Linear(HIDDEN_SIZE, NUM_CLASSES)
 
 
 	@property
@@ -38,6 +38,6 @@ class SimpleModel(IModel):
 		x = x.view(-1, INPUT_SIZE)
 
 		# Process the tensor
-		x = F.relu(self.fc1(x))
-		x = self.fc2(x)
+		x = F.relu(self._fc1(x))
+		x = self._fc2(x)
 		return F.log_softmax(x, dim=1)

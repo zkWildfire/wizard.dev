@@ -676,3 +676,6 @@ $RECYCLE.BIN/
 
 # Ignore the downloaded `code` binary used to run code-server
 scripts/download-code-server/code
+
+# Ignore the data folder created for the MNIST project
+projects/mnist/data/

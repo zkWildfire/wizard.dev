@@ -41,6 +41,7 @@ maxterm
 memcheck
 minterm
 mkdocs
+MNIST
 msan
 msvc
 Nakayama
@@ -53,10 +54,12 @@ pycache
 Pylance
 pyright
 pytest
+relu
 rpath
 rpaths
 scrollbars
 Shibuya
+softmax
 subcomponents
 Tanaka
 toolset

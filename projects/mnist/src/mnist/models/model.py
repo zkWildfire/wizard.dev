@@ -6,6 +6,14 @@ class IModel(ABC, torch.nn.Module):
 	"""
 	Base type used for classes that implement models for MNIST classification.
 	"""
+	@abstractmethod
+	def __init__(self) -> None:
+		"""
+		Initializes a new instance of the class.
+		"""
+		super(torch.nn.Module, self).__init__()
+
+
 	@property
 	@abstractmethod
 	def model_name(self) -> str:
