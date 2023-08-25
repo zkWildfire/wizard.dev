@@ -20,7 +20,11 @@
 		{
 			"name": "MNIST",
 			"path": "projects/mnist"
-		}
+		},
+		{
+			"name": "Lightspeed",
+			"path": "projects/lightspeed"
+		},
 	],
 	"settings": {
 		"cmake.allowCommentsInPresetsFile": true,

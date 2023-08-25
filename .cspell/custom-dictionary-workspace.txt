@@ -35,6 +35,7 @@ interprocedural
 iwyu
 Kenta
 Kymira
+lightspeed
 makefiles
 matcha
 maxterm
