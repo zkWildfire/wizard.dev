@@ -1,5 +1,8 @@
 import logging
+from mnist.constants import MNIST_MEAN, MNIST_STD
 from mnist.models.model import IModel
+from mnist.evaluate import evaluate
+import time
 import torch
 from torch import optim
 from torchvision import datasets, transforms # pyright: ignore[reportMissingTypeStubs]
@@ -17,8 +20,6 @@ def train(model: IModel, epochs: int = 5, learning_rate: float = 0.001) -> None:
 	"""
 	# Define a transform to normalize the data
 	logger.info("Loading training data...")
-	MNIST_MEAN = 0.1307
-	MNIST_STD = 0.3081
 	transform = transforms.Compose([
 		transforms.ToTensor(),
 		transforms.Normalize((MNIST_MEAN,), (MNIST_STD,))
@@ -40,10 +41,15 @@ def train(model: IModel, epochs: int = 5, learning_rate: float = 0.001) -> None:
 	loss_function = torch.nn.CrossEntropyLoss()
 	optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
+	# Keep track of timing information
+	elapsed_time = 0.0
+
 	# Run the training loop
 	logger.info("Starting training...")
 	for epoch in range(epochs):
 		model.train()
+
+		start_time = time.time()
 		for images, labels in data_loader:
 			# Zero the gradients
 			optimizer.zero_grad()
@@ -60,6 +66,21 @@ def train(model: IModel, epochs: int = 5, learning_rate: float = 0.001) -> None:
 			# Update the weights
 			optimizer.step()
 
-		logger.info(f"Epoch {epoch+1}/{epochs} finished.")
+		duration = time.time() - start_time
+		elapsed_time += duration
+		# Non-zero indexed epoch
+		curr_epoch = epoch + 1
+		remaining_epochs = epochs - curr_epoch
+		avg_time_per_epoch = elapsed_time / curr_epoch
+		estimated_time_remaining = remaining_epochs * avg_time_per_epoch
+		logger.info(
+			f"Epoch {epoch+1}/{epochs} finished ("
+			f"duration: {round(duration, 2)}s, "
+			f"estimated time remaining: {round(estimated_time_remaining, 2)}s"
+			")."
+		)
 
-	logger.info("Training completed")
+	logger.info(
+		f"Training completed. Total training time: {round(elapsed_time, 2)}s."
+	)
+	evaluate(model)

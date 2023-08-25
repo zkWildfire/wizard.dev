@@ -9,3 +9,9 @@ INPUT_SIZE = INPUT_X * INPUT_Y
 
 # Number of labels
 NUM_CLASSES = 10
+
+# Mean of the MNIST dataset
+MNIST_MEAN = 0.1307
+
+# Standard deviation of the MNIST dataset
+MNIST_STD = 0.3081

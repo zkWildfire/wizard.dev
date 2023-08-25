@@ -63,6 +63,7 @@ softmax
 subcomponents
 Tanaka
 toolset
+torchvision
 tparam
 tqdm
 tsan
