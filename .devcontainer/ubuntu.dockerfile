@@ -83,6 +83,9 @@ RUN groupadd --gid $USER_GID $USERNAME && \
 USER $USERNAME
 COPY .vimrc /home/$USERNAME/.vimrc
 
+# Generate the .NET developer certificate
+RUN dotnet dev-certs https
+
 # Add the path that pip scripts are added to
 # Note that using `${PATH}` and `$PATH` may have different behavior according
 #   to https://github.com/moby/moby/issues/42863. For safety, prefer `$PATH`.
