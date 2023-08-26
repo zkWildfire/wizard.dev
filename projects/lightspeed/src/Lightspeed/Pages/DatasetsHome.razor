@@ -1,0 +1,22 @@
+@page "/datasets"
+@using Lightspeed.Components.Datasets
+
+<div class="container flex-fill pt-2">
+	<!-- Title bar -->
+	<div class="row">
+		<h1 class="col-12">Datasets</h1>
+	</div>
+
+	<!-- Grid -->
+	<div class="row">
+		@foreach (var dataset in _datasets)
+		{
+			<DatasetGridElement
+				Name="@dataset.Name"
+				Image="@dataset.Image"
+				Address="@dataset.Address"
+				Description="@dataset.Description"
+			/>
+		}
+	</div>
+</div>
