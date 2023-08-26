@@ -13,21 +13,35 @@ namespace Lightspeed.Datasets;
 ///   not part of the dataset itself.
 public interface IDatasetInstance : IDisposable, IEnumerable<IDatasetElement>
 {
+	/// <summary>
 	/// Dataset that the instance was created by.
+	/// </summary>
 	IDataset Dataset { get; }
 
+	/// <summary>
 	/// Gets the data to use for training.
-	/// @warning This object will be disposed of by the dataset instance.
+	/// </summary>
+	/// <remarks>
+	/// This object will be disposed of by the dataset instance.
 	///   External code should not dispose of this object.
+	/// </remarks>
 	IDatasetSlice TrainingSet { get; }
 
+	/// <summary>
 	/// Gets the data to use for validation.
+	/// </summary>
+	/// <remarks>
 	/// @warning This object will be disposed of by the dataset instance.
 	///   External code should not dispose of this object.
+	/// </remarks>
 	IDatasetSlice ValidationSet { get; }
 
+	/// <summary>
 	/// Gets the data to use for testing.
+	/// </summary>
+	/// <remarks>
 	/// @warning This object will be disposed of by the dataset instance.
 	///   External code should not dispose of this object.
+	/// </remarks>
 	IDatasetSlice TestSet { get; }
 }
