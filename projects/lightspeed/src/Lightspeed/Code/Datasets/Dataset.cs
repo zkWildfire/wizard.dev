@@ -16,7 +16,7 @@ public interface IDataset : IDisposable, IEnumerable<IDatasetElement>
 	/// Gets the number of elements in the dataset.
 	/// If the dataset hasn't been downloaded yet, this will be -1.
 	/// </summary>
-	long Count { get; }
+	int Count { get; }
 
 	/// <summary>
 	/// Path to the folder on disk containing the dataset's files.

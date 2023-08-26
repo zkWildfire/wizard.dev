@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using TorchSharp;
+using static TorchSharp.torch;
 using static TorchSharp.torch.utils.data;
 namespace Lightspeed.Datasets;
 
@@ -20,14 +20,14 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 	public IDatasetInstance DatasetInstance { get; }
 
 	/// <summary>
-	/// Number of elements in the slice.
+	/// Device that the dataset slice's data is on.
 	/// </summary>
-	public long Count => _data.Count;
+	public Device Device => DatasetInstance.Device;
 
 	/// <summary>
-	/// Gets the Torch dataloader object for the slice.
+	/// Number of elements in the slice.
 	/// </summary>
-	public DataLoader Data { get; }
+	public int Count => _data.Count;
 
 	/// <summary>
 	/// Gets the dataset element at the given ID.
@@ -49,10 +49,13 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 		}
 	}
 
+	/// Dataset to get slice data from.
+	private readonly Dataset _dataset;
+
 	/// <summary>
 	/// List of all tensors in the slice.
 	/// </summary>
-	private readonly IReadOnlyList<torch.Tensor> _data;
+	private readonly IReadOnlyList<Tensor> _data;
 
 	/// <summary>
 	/// Method to invoke to convert tensors from the slice into dataset
@@ -61,7 +64,7 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 	private readonly Func<
 		IDatasetSlice,
 		long,
-		torch.Tensor,
+		Tensor,
 		IDatasetElement
 	> _elementFactory;
 
@@ -77,7 +80,7 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 	/// <param name="parentDatasetInstance">
 	/// Dataset instance that the slice is from.
 	/// </param>
-	/// <param name="dataLoader">Torch dataloader object for the slice.</param>
+	/// <param name="dataset">Torch dataset object for the slice.</param>
 	/// <param name="elementFactory">
 	/// Method to invoke to convert tensors from the slice into dataset
 	///   elements. The method will be passed the slice instance invoking the
@@ -87,19 +90,20 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 	public GenericDatasetSlice(
 		IDataset parentDataset,
 		IDatasetInstance parentDatasetInstance,
-		DataLoader dataLoader,
-		Func<IDatasetSlice, long, torch.Tensor, IDatasetElement> elementFactory)
+		Dataset dataset,
+		Func<IDatasetSlice, long, Tensor, IDatasetElement> elementFactory)
 	{
 		Dataset = parentDataset;
 		DatasetInstance = parentDatasetInstance;
-		Data = dataLoader;
+		_dataset = dataset;
 		_elementFactory = elementFactory;
 
 		// Add all tensors into a single list for quick access
-		var tensors = new List<torch.Tensor>();
-		foreach (var batch in dataLoader)
+		var tensors = new List<Tensor>();
+		for (var i = 0; i < dataset.Count; i++)
 		{
-			foreach (var (_, tensor) in batch)
+			var dict = dataset.GetTensor(i);
+			foreach (var (_, tensor) in dict)
 			{
 				tensors.Add(tensor);
 			}
@@ -117,9 +121,27 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 			return;
 		}
 
-		Data.Dispose();
+		_dataset.Dispose();
 		GC.SuppressFinalize(this);
 		_isDisposed = true;
+	}
+
+	/// <summary>
+	/// Creates a new dataloader instance for the slice's data.
+	/// </summary>
+	/// <param name="batchSize">Number of elements per batch.</param>
+	/// <param name="shuffle">Whether to shuffle the data.</param>
+	/// <returns>A new dataloader instance.</returns>
+	public DataLoader GetDataLoader(
+		int batchSize,
+		bool shuffle)
+	{
+		return new DataLoader(
+			_dataset,
+			batchSize,
+			device: Device,
+			shuffle: shuffle
+		);
 	}
 
 	/// <summary>

@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using static TorchSharp.torch;
 using static TorchSharp.torch.utils.data;
 namespace Lightspeed.Datasets;
 
@@ -19,14 +20,14 @@ public interface IDatasetSlice : IDisposable, IEnumerable<IDatasetElement>
 	IDatasetInstance DatasetInstance { get; }
 
 	/// <summary>
-	/// Number of elements in the slice.
+	/// Device that the dataset slice's data is on.
 	/// </summary>
-	long Count { get; }
+	Device Device { get; }
 
 	/// <summary>
-	/// Gets the Torch dataloader object for the slice.
+	/// Number of elements in the slice.
 	/// </summary>
-	DataLoader Data { get; }
+	int Count { get; }
 
 	/// <summary>
 	/// Gets the dataset element at the given ID.
@@ -35,4 +36,12 @@ public interface IDatasetSlice : IDisposable, IEnumerable<IDatasetElement>
 	///   assign different IDs to the same element.
 	/// </summary>
 	IDatasetElement this[int id] { get; }
+
+	/// <summary>
+	/// Creates a new dataloader instance for the slice's data.
+	/// </summary>
+	/// <param name="batchSize">Number of elements per batch.</param>
+	/// <param name="shuffle">Whether to shuffle the data.</param>
+	/// <returns>A new dataloader instance.</returns>
+	DataLoader GetDataLoader(int batchSize, bool shuffle);
 }

@@ -19,7 +19,7 @@ public sealed class MnistDataset : IDataset
 	/// Gets the number of elements in the dataset.
 	/// If the dataset hasn't been downloaded yet, this will be -1.
 	/// </summary>
-	public long Count => _data.Count == 0 ? -1 : _data.Count;
+	public int Count => _data.Count == 0 ? -1 : _data.Count;
 
 	/// <summary>
 	/// Path to the folder on disk containing the dataset's files.
