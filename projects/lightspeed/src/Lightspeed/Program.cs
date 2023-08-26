@@ -1,3 +1,4 @@
+using Lightspeed.Services.Datasets;
 using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddSingleton<IDatasetService, TorchDatasetsService>();
 
 var app = builder.Build();
 

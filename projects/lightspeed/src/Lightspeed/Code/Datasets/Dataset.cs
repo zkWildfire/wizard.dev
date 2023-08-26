@@ -8,6 +8,23 @@ namespace Lightspeed.Datasets;
 public interface IDataset : IDisposable, IEnumerable<IDatasetElement>
 {
 	/// <summary>
+	/// Event broadcast to when the dataset has been downloaded.
+	/// The sender of the event will be the dataset object for which the
+	///   underlying data has been downloaded.
+	/// </summary>
+	/// <remarks>
+	/// If the dataset was previously downloaded, e.g. `IsDownloaded` is true
+	///   immediately after the constructor finishes executing, this event will
+	///   never be broadcast to.
+	/// </remarks>
+	event EventHandler? OnDownloaded;
+
+	/// <summary>
+	/// Lightspeed internal unique ID for the dataset.
+	/// </summary>
+	string Id { get; }
+
+	/// <summary>
 	/// Name to display for the dataset on the UI.
 	/// </summary>
 	string DisplayName { get; }
