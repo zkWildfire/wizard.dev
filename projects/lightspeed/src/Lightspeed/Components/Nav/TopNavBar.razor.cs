@@ -31,4 +31,32 @@ public partial class TopNavBar : ComponentBase
 	[Parameter]
 	public IReadOnlyList<NavButtonData> Buttons { get; set; } =
 		new List<NavButtonData>();
+
+	/// <summary>
+	/// Navigation manager for the application.
+	/// </summary>
+	[Inject]
+	private NavigationManager NavManager { get; set; } = null!;
+
+	/// <summary>
+	/// Checks whether the button is the active button.
+	/// </summary>
+	/// <param name="buttonAddress">Address that the button is for.</param>
+	/// <returns>True if the button is the active button.</returns>
+	private bool IsActiveButton(Uri buttonAddress)
+	{
+		// Handle the root address case separately
+		if (buttonAddress == new Uri("/", UriKind.Relative))
+		{
+			return NavManager.Uri == NavManager.BaseUri;
+		}
+
+		// For all other pages, check if the button's address is a prefix of the
+		//   current address
+		var buttonUri = NavManager.BaseUri.TrimEnd('/') + buttonAddress;
+		return NavManager.Uri.StartsWith(
+			buttonUri,
+			StringComparison.OrdinalIgnoreCase
+		);
+	}
 }

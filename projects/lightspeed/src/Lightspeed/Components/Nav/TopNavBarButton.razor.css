@@ -3,6 +3,18 @@
  *   All rights reserved.
  */
 
+.top-nav-bar-button {
+	position: relative;
+}
+
 .top-nav-bar-button:hover {
 	color: black !important;
+}
+
+.top-nav-bar-button-active {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }

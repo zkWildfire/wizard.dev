@@ -2,7 +2,13 @@
 	border-bottom border-light py-0">
 	<div class="container-fluid">
 		<!-- Nav bar title -->
-		<a class="navbar-brand" href="#">Lightspeed</a>
+		<a class="navbar-brand py-2" href="#">
+			<img src="/logo.png" alt="Lightspeed logo" width="32" height="32"
+				class="d-inline-block align-text-center">
+			<span class="ps-1">
+				Lightspeed
+			</span>
+		</a>
 		<button class="navbar-toggler"
 			type="button"
 			data-bs-toggle="collapse"
@@ -22,7 +28,7 @@
 					<TopNavBarButton
 						Text="@button.Text"
 						Address="@button.Address"
-						IsActive=false
+						IsActive=@(IsActiveButton(button.Address))
 					/>
 				}
 			</ul>

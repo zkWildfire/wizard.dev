@@ -36,6 +36,11 @@ public partial class MainLayout : LayoutComponentBase
 			{
 				Text = "Models",
 				Address = new Uri("/models", UriKind.Relative)
+			},
+			new NavButtonData
+			{
+				Text = "Playground",
+				Address = new Uri("/playground", UriKind.Relative)
 			}
 		};
 	}

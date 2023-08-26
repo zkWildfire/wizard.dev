@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using Lightspeed.Datasets.Mnist;
 namespace Lightspeed.Pages;
 
 /// <summary>
@@ -50,8 +51,14 @@ public partial class DatasetsHome : ComponentBase
 			new DatasetInfo
 			{
 				Name = "MNIST",
-				Image = new Uri("/img/datasets/mnist.png", UriKind.Relative),
-				Address = new Uri("/datasets/mnist", UriKind.Relative),
+				Image = new Uri(
+					$"/img/datasets/{MnistDataset.DATASET_ID}.png",
+					UriKind.Relative
+				),
+				Address = new Uri(
+					$"/datasets/{MnistDataset.DATASET_ID}",
+					UriKind.Relative
+				),
 				Description="A large database of handwritten digits created " +
 					"by the National Institute of Standards and Technology. " +
 					"The dataset consists of 60,000 training images and " +

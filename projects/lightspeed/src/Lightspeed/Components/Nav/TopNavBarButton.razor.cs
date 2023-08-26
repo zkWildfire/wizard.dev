@@ -57,21 +57,20 @@ public partial class TopNavBarButton : ComponentBase
 	/// Css applied to the button in all states.
 	/// </summary>
 	[Parameter]
-	public string CommonCss { get; set; } = "btn rounded-0 text-light h-100";
+	public string CommonCss { get; set; } =
+		"btn btn-outline-light border-0 rounded-0 text-light h-100";
 
 	/// <summary>
 	/// Css applied to the button when it is active.
 	/// </summary>
 	[Parameter]
-	public string ActiveCss { get; set; } =
-		"btn-outline-light border-0 border-bottom border-thick";
+	public string ActiveCss { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Css applied to the button when it is inactive.
 	/// </summary>
 	[Parameter]
-	public string InactiveCss { get; set; } =
-		"btn-outline-light border-0";
+	public string InactiveCss { get; set; } = string.Empty;
 
 	/// <summary>
 	/// CSS classes to apply to the button.
