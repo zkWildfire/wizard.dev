@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary align-self-stretch
+	border-bottom border-light py-0">
+	<div class="container-fluid">
+		<!-- Nav bar title -->
+		<a class="navbar-brand" href="#">Lightspeed</a>
+		<button class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent"
+			aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Nav bar buttons -->
+		<div class="collapse navbar-collapse align-self-stretch"
+			id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0 align-self-stretch">
+				@foreach(var button in Buttons)
+				{
+					<TopNavBarButton
+						Text="@button.Text"
+						Address="@button.Address"
+						IsActive=false
+					/>
+				}
+			</ul>
+		</div>
+	</div>
+</nav>
