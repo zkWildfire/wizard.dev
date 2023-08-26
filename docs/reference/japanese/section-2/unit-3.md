@@ -7,7 +7,7 @@
 | Daniel | ダニエル | |
 | Erika | エリカ | |
 | girlfriend | かのじょ | 彼女 |
-| boyfriend | かれし | |
+| boyfriend | かれし | 彼氏 |
 | Australia | オーストラリア | |
 | China | ちゅうごく | |
 | South Korea | かんこく | 韓国 |

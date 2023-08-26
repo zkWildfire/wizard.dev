@@ -25,7 +25,7 @@
 | four (objects, generic) | よっつ | 四つ |
 | how is | どう | |
 | very | とても | |
-| a bit | すこし | |
+| a bit | すこし | 少し |
 | um | ええと | |
 | oh | あ | |
 | okay then | じゃあ | |

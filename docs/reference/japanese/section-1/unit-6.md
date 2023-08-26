@@ -46,7 +46,7 @@
 | noisy | うるさい | |
 | smart | あたまがい | |
 | busy | いそがしい | 忙しい |
-| famous | ゆうめい | |
+| famous | ゆうめい | 有名 |
 | fashionable | おしゃれ | |
 | stylish | おしゃれ | |
 | engineer | エンジニア | |

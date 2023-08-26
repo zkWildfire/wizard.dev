@@ -42,6 +42,35 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| a lot of (people) | おおぜい | 大勢 |
+| all | みんな | |
+| adult | おとな | 大人 |
+| ago | まえ | 前 |
+| baby | あかちゃん | 赤ちゃん |
+| boy | おとこのこ | 男の子 |
+| date | デート | |
+| divorce | りこん | 離婚 |
+| everyone | みなさん | 皆さん |
+| few | すこし | 少し |
+| girl | おんなのこ | 女の子 |
+| magnificent | りっぱ | 立派 |
+| man | おとこ | 男 |
+| man | おとこのひと | 男の人 |
+| marriage | けっこん | 結婚 |
+| how many people | なんにん | 何人 |
+| person | かた | 方 |
+| single | どくしん | 独身 |
+| splendid | りっぱ | 立派 |
+| to be born | うまれます | 生まれます |
+| to break up with | わかれます | 別れます |
+| to call | よびます | 呼びます |
+| to die | しにます | 死にます |
+| to get divorced | りこんします | 離婚します |
+| to pass away | なくなります | 亡くなります |
+| who | どなた | |
+| woman | おんな | 女 |
+| woman | おんなのひと | 女の人 |
+| young | わかい | 若い |
 
 ### Examples
 | English | Japanese |
