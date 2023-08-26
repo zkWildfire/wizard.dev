@@ -19,20 +19,7 @@ public sealed class MnistDataset : IDataset
 	/// Gets the number of elements in the dataset.
 	/// If the dataset hasn't been downloaded yet, this will be -1.
 	/// </summary>
-	public long Count
-	{
-		get
-		{
-			if (!IsDownloaded)
-			{
-				return -1;
-			}
-
-			Debug.Assert(_trainDataset != null);
-			Debug.Assert(_testDataset != null);
-			return _trainDataset.Count + _testDataset.Count;
-		}
-	}
+	public long Count => _data.Count == 0 ? -1 : _data.Count;
 
 	/// <summary>
 	/// Path to the folder on disk containing the dataset's files.
@@ -90,6 +77,11 @@ public sealed class MnistDataset : IDataset
 	private Dataset? _testDataset;
 
 	/// <summary>
+	/// List of all tensors in the slice.
+	/// </summary>
+	private IReadOnlyList<torch.Tensor> _data;
+
+	/// <summary>
 	/// Whether the dataset has been disposed.
 	/// </summary>
 	private bool _isDisposed;
@@ -109,6 +101,7 @@ public sealed class MnistDataset : IDataset
 	{
 		DisplayName = displayName;
 		SaveLocation = saveLocation;
+		_data = new List<torch.Tensor>();
 
 		// If the dataset is downloaded, load the dataset from disk
 		if (Directory.Exists(SaveLocation))
@@ -125,12 +118,7 @@ public sealed class MnistDataset : IDataset
 				download: false
 			);
 
-			// Get the size of the dataset on disk
-			SizeOnDiskBytes = Directory.GetFiles(
-				SaveLocation,
-				"*",
-				SearchOption.AllDirectories)
-				.Sum(path => new FileInfo(path).Length);
+			LoadData();
 		}
 	}
 
@@ -177,8 +165,7 @@ public sealed class MnistDataset : IDataset
 					"not downloaded."
 				);
 			}
-
-			if (id < 0 || id >= Count)
+			else if (id < 0 || id >= _data.Count)
 			{
 				throw new ArgumentOutOfRangeException(
 					nameof(id),
@@ -187,21 +174,10 @@ public sealed class MnistDataset : IDataset
 				);
 			}
 
-			Debug.Assert(_trainDataset != null);
-			Debug.Assert(_testDataset != null);
-
-			// Figure out which dataset the element is in
-			var dataset = id < _trainDataset.Count
-				? _trainDataset
-				: _testDataset;
-
-			// Get the element from the dataset
-			var element = dataset.GetTensor(id);
-			Debug.Assert(element != null);
 			return new GrayscaleImageDatasetElement(
 				this,
 				id,
-				element.Single().Value
+				_data[id]
 			);
 		}
 	}
@@ -238,26 +214,12 @@ public sealed class MnistDataset : IDataset
 		Debug.Assert(_trainDataset != null);
 		Debug.Assert(_testDataset != null);
 
-		// Iterate over each dataset and return the elements in the set
-		for (var i = 0; i < _trainDataset.Count; i++)
+		for (var i = 0; i < _data.Count; i++)
 		{
-			var element = _trainDataset.GetTensor(i);
-			Debug.Assert(element != null);
 			yield return new GrayscaleImageDatasetElement(
 				this,
 				i,
-				element.Single().Value
-			);
-		}
-
-		for (var i = 0; i < _testDataset.Count; i++)
-		{
-			var element = _testDataset.GetTensor(i);
-			Debug.Assert(element != null);
-			yield return new GrayscaleImageDatasetElement(
-				this,
-				i + _trainDataset.Count,
-				element.Single().Value
+				_data[i]
 			);
 		}
 	}
@@ -291,6 +253,8 @@ public sealed class MnistDataset : IDataset
 			download: true,
 			target_transform: normImage
 		);
+
+		LoadData();
 	}
 
 	/// <summary>
@@ -317,5 +281,45 @@ public sealed class MnistDataset : IDataset
 	public IDatasetInstance CreateTrainingInstance(bool shuffle = true)
 	{
 		throw new NotImplementedException();
+	}
+
+	/// <summary>
+	/// Initializes class members using the dataset's data.
+	/// This may only be called once `_trainDataset` and `_testDataset` have
+	///   been initialized.
+	/// </summary>
+	private void LoadData()
+	{
+		Debug.Assert(_trainDataset != null);
+		Debug.Assert(_testDataset != null);
+		var tensors = new List<torch.Tensor>();
+
+		// Add the tensors from each dataset into a single list
+		for (var i = 0; i < _trainDataset.Count; i++)
+		{
+			var dict = _trainDataset.GetTensor(i);
+			foreach (var (_, tensor) in dict)
+			{
+				tensors.Add(tensor);
+			}
+		}
+
+		for (var i = 0; i < _testDataset.Count; i++)
+		{
+			var dict = _testDataset.GetTensor(i);
+			foreach (var (_, tensor) in dict)
+			{
+				tensors.Add(tensor);
+			}
+		}
+
+		_data = tensors;
+
+		// Calculate and save the size of the dataset on disk
+		SizeOnDiskBytes = Directory.GetFiles(
+			SaveLocation,
+			"*",
+			SearchOption.AllDirectories)
+			.Sum(path => new FileInfo(path).Length);
 	}
 }
