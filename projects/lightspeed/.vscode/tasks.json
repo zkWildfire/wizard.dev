@@ -1,0 +1,43 @@
+{
+	"version": "2.0.0",
+	"windows": {
+		"options": {
+			"shell": {
+				"executable": "cmd.exe",
+				"args": [
+					"/c"
+				]
+			}
+		}
+	},
+	"tasks": [
+		{
+			"label": "Build Lightspeed (Debug)",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"build",
+				"${workspaceFolder:Lightspeed}/src/Lightspeed/Lightspeed.csproj",
+				"/property:GenerateFullPaths=true",
+				"/consoleloggerparameters:NoSummary"
+			],
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Run Lightspeed (Debug)",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"watch"
+			],
+			"options": {
+				"cwd": "${workspaceFolder:Lightspeed}/src/Lightspeed"
+			},
+			"dependsOn": [
+				"Build Lightspeed (Debug)"
+			],
+			"isBackground": true,
+			"problemMatcher": "$msCompile"
+		}
+	]
+}
