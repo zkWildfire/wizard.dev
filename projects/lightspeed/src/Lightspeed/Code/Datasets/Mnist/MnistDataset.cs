@@ -126,7 +126,7 @@ public sealed class MnistDataset : IDataset
 		_data = new List<torch.Tensor>();
 
 		// If the dataset is downloaded, load the dataset from disk
-		if (Directory.Exists(SaveLocation))
+		try
 		{
 			// Load the dataset from disk
 			_trainDataset = torchvision.datasets.MNIST(
@@ -141,6 +141,18 @@ public sealed class MnistDataset : IDataset
 			);
 
 			LoadData();
+		}
+		catch (DirectoryNotFoundException)
+		{
+			// The dataset is not downloaded
+			_trainDataset = null;
+			_testDataset = null;
+		}
+		catch (FileNotFoundException)
+		{
+			// One or more required dataset files are missing
+			_trainDataset = null;
+			_testDataset = null;
 		}
 	}
 
@@ -263,18 +275,108 @@ public sealed class MnistDataset : IDataset
 			new double[] { MNIST_MEAN },
 			new double[] { MNIST_STDDEV }
 		);
-		_trainDataset = torchvision.datasets.MNIST(
-			SaveLocation,
-			train: true,
-			download: true,
-			target_transform: normImage
-		);
-		_testDataset = torchvision.datasets.MNIST(
-			SaveLocation,
-			train: false,
-			download: true,
-			target_transform: normImage
-		);
+
+		// There's currently a bug in TorchSharp (as of 2023-08-26) where
+		//   downloaded files are always saved to the current working directory
+		//   instead of the path that was specified. Until this is fixed,
+		//   work around the issue by catching the file not found exception
+		//   caused by the files getting downloaded to the wrong location,
+		//   moving the files to the proper location, then re-trying the load
+		//   operation.
+		// These files will be created by the download process and will be
+		//   placed in the current working directory. The expected location for
+		//   these files is the within the dataset's folder.
+		string[] DOWNLOADED_FILES = {
+			"train-images-idx3-ubyte.gz",
+			"train-labels-idx1-ubyte.gz",
+			"t10k-images-idx3-ubyte.gz",
+			"t10k-labels-idx1-ubyte.gz"
+		};
+		try
+		{
+			_trainDataset = torchvision.datasets.MNIST(
+				SaveLocation,
+				train: true,
+				download: true,
+				target_transform: normImage
+			);
+			_testDataset = torchvision.datasets.MNIST(
+				SaveLocation,
+				train: false,
+				download: true,
+				target_transform: normImage
+			);
+		}
+		catch (FileNotFoundException)
+		{
+			var srcFolder = Directory.GetCurrentDirectory();
+			var dstFolder = Path.Combine(
+				SaveLocation,
+				// Based on the code for TorchSharp, `DownloadFile()` should
+				//   end up putting the downloaded file in `[root]/mnist`, where
+				//   `[root]` is the directory passed to the ctor.
+				// Comment indicating that files should be placed in the
+				//   directory passed to the ctor:
+				//   https://github.com/dotnet/TorchSharp/blob/d7be25b4c5946c426920d0aef539fccd4979d5a9/src/TorchVision/dsets/MNIST.cs#L24
+				// Call to `DownloadFile()`:
+				//   https://github.com/dotnet/TorchSharp/blob/d7be25b4c5946c426920d0aef539fccd4979d5a9/src/TorchVision/dsets/MNIST.cs#L174
+				// `DownloadFile()` implementation:
+				//   https://github.com/dotnet/TorchSharp/blob/d7be25b4c5946c426920d0aef539fccd4979d5a9/src/TorchVision/dsets/CIFAR.cs#L86
+				// Note: At the time of writing this comment, commit
+				//   d7be25b4c5946c426920d0aef539fccd4979d5a9 is the most recent
+				//   commit on the `main` branch of TorchSharp. Commit
+				//   66f58fc5ab629df6ad28d8427f3a8a0a06bf7502 is the commit
+				//   that TorchSharp v0.100.4 is based on.
+				"mnist"
+			);
+
+			// Move the downloaded files to the proper location
+			foreach (var file in DOWNLOADED_FILES)
+			{
+				var srcPath = Path.Combine(srcFolder, file);
+				var dstPath = Path.Combine(dstFolder, file);
+
+				// If the file already exists, delete it
+				if (File.Exists(dstPath))
+				{
+					File.Delete(dstPath);
+				}
+
+				// Move the file to the proper location
+				File.Move(srcPath, dstPath);
+			}
+		}
+		finally
+		{
+			// `download: true` is needed here so that the download process is
+			//   retried. The files will be re-downloaded into the wrong
+			//   location a second time, but the rest of the code will work
+			//   because the first set of downloaded files were moved to the
+			//   proper location.
+			_trainDataset = torchvision.datasets.MNIST(
+				SaveLocation,
+				train: true,
+				download: true,
+				target_transform: normImage
+			);
+			_testDataset = torchvision.datasets.MNIST(
+				SaveLocation,
+				train: false,
+				download: true,
+				target_transform: normImage
+			);
+
+			// Delete the downloaded files that were placed in the current
+			//   working directory
+			foreach (var file in DOWNLOADED_FILES)
+			{
+				var path = Path.Combine(Directory.GetCurrentDirectory(), file);
+				if (File.Exists(path))
+				{
+					File.Delete(path);
+				}
+			}
+		}
 
 		LoadData();
 		OnDownloaded?.Invoke(this, EventArgs.Empty);

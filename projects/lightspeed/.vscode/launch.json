@@ -25,7 +25,7 @@
 			},
 			"sourceFileMap": {
 				"/Views": "${workspaceFolder:Lightspeed}/src/Lightspeed/Views"
-			},
+			}
 		}
 	]
 }

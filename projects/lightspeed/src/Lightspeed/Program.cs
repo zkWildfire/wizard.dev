@@ -9,7 +9,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<IDatasetService, TorchDatasetsService>(
 	sp => new TorchDatasetsService(
-		Path.Combine(sp.GetService<IWebHostEnvironment>()!.ContentRootPath, "datasets")
+		Path.Combine(sp.GetService<IWebHostEnvironment>()!.ContentRootPath, ".datasets")
 	)
 );
 

@@ -673,9 +673,3 @@ $RECYCLE.BIN/
 # Checking in the .code-workspace file is desirable since it sets up the in-IDE
 #   layout of the repository and specifies repo-wide settings
 !wizard.code-workspace
-
-# Ignore the downloaded `code` binary used to run code-server
-scripts/download-code-server/code
-
-# Ignore the data folder created for the MNIST project
-projects/mnist/data/

@@ -1,0 +1,2 @@
+# Ignore the data folder created for the MNIST project
+data/

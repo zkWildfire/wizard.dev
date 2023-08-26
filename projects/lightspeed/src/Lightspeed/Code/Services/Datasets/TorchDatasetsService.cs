@@ -55,7 +55,9 @@ public sealed class TorchDatasetsService : IDatasetService
 
 		// Set up the MNIST dataset.
 		var mnistDataset = new MnistDataset(
-			Path.Combine(saveLocation, MnistDataset.DATASET_ID)
+			// Torch will append the name of the dataset to the path passed to
+			//   it, so it isn't necessary to do so here
+			saveLocation
 		);
 		mnistDataset.OnDownloaded +=
 			(_, _) => NotifyDatasetDownloaded(mnistDataset);

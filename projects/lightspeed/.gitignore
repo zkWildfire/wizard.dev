@@ -1,0 +1,2 @@
+# Ignore the folder that datasets are downloaded into
+src/Lightspeed/.datasets

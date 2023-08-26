@@ -16,19 +16,30 @@ public readonly record struct DatasetInfo
 	public required string Name { get; init; }
 
 	/// <summary>
-	/// Address of the image to display for the dataset.
+	/// ID of the dataset.
 	/// </summary>
-	public required Uri Image { get; init; }
-
-	/// <summary>
-	/// Address of the dataset information page for the dataset.
-	/// </summary>
-	public required Uri Address { get; init; }
+	public required string Id { get; init; }
 
 	/// <summary>
 	/// Description of the dataset.
 	/// </summary>
 	public required string Description { get; init; }
+
+	/// <summary>
+	/// Address of the image to display for the dataset.
+	/// </summary>
+	public Uri Image => new(
+		$"/img/datasets/{MnistDataset.DATASET_ID}.png",
+		UriKind.Relative
+	);
+
+	/// <summary>
+	/// Address of the dataset information page for the dataset.
+	/// </summary>
+	public Uri Address => new(
+		$"/datasets/{MnistDataset.DATASET_ID}",
+		UriKind.Relative
+	);
 }
 
 /// <summary>
@@ -51,14 +62,7 @@ public partial class DatasetsHome : ComponentBase
 			new DatasetInfo
 			{
 				Name = "MNIST",
-				Image = new Uri(
-					$"/img/datasets/{MnistDataset.DATASET_ID}.png",
-					UriKind.Relative
-				),
-				Address = new Uri(
-					$"/datasets/{MnistDataset.DATASET_ID}",
-					UriKind.Relative
-				),
+				Id = MnistDataset.DATASET_ID,
 				Description="A large database of handwritten digits created " +
 					"by the National Institute of Standards and Technology. " +
 					"The dataset consists of 60,000 training images and " +

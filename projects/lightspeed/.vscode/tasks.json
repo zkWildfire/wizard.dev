@@ -21,7 +21,7 @@
 				"/property:GenerateFullPaths=true",
 				"/consoleloggerparameters:NoSummary"
 			],
-			"problemMatcher": "$msCompile"
+			"problemMatcher": "$msCompile",
 		},
 		{
 			"label": "Run Lightspeed (Debug)",
