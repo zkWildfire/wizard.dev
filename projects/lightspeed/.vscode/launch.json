@@ -6,11 +6,11 @@
 			// Use hover for the description of the existing attributes
 			// For further information:
 			// https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
-			"name": ".NET Core Launch (web)",
+			"name": "Debug Lightspeed",
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "Build Lightspeed (Debug)",
-			"program": "${workspaceFolder:Lightspeed}/src/Lightspeed/bin/Debug/net7.0/WebUi.dll",
+			"program": "${workspaceFolder:Lightspeed}/src/Lightspeed/bin/Debug/net7.0/Lightspeed.dll",
 			"args": [],
 			"cwd": "${workspaceFolder:Lightspeed}/src/Lightspeed",
 			"stopAtEntry": false,
