@@ -2,10 +2,10 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Lightspeed.Datasets.Generic;
+using Lightspeed.Classification.Generic;
 using TorchSharp;
 using static TorchSharp.torch.utils.data;
-namespace Lightspeed.Datasets.Mnist;
+namespace Lightspeed.Classification.Mnist;
 
 /// Dataset implementation that provides access to the MNIST dataset.
 public sealed class MnistDataset : IDataset
@@ -41,7 +41,7 @@ public sealed class MnistDataset : IDataset
 	/// Gets the number of elements in the dataset.
 	/// If the dataset hasn't been downloaded yet, this will be -1.
 	/// </summary>
-	public int Count => _data.Count == 0 ? -1 : _data.Count;
+	public int Count => _elements.Count == 0 ? -1 : _elements.Count;
 
 	/// <summary>
 	/// Path to the folder on disk containing the dataset's files.
@@ -99,9 +99,10 @@ public sealed class MnistDataset : IDataset
 	private Dataset? _testDataset;
 
 	/// <summary>
-	/// List of all tensors in the slice.
+	/// List of dataset elements for the dataset.
 	/// </summary>
-	private IReadOnlyList<torch.Tensor> _data;
+	private IReadOnlyList<GrayscaleImageDatasetElement> _elements =
+		new List<GrayscaleImageDatasetElement>();
 
 	/// <summary>
 	/// Whether the dataset has been disposed.
@@ -123,7 +124,6 @@ public sealed class MnistDataset : IDataset
 	{
 		DisplayName = displayName;
 		SaveLocation = saveLocation;
-		_data = new List<torch.Tensor>();
 
 		// If the dataset is downloaded, load the dataset from disk
 		try
@@ -199,7 +199,7 @@ public sealed class MnistDataset : IDataset
 					"not downloaded."
 				);
 			}
-			else if (id < 0 || id >= _data.Count)
+			else if (id < 0 || id >= _elements.Count)
 			{
 				throw new ArgumentOutOfRangeException(
 					nameof(id),
@@ -208,11 +208,7 @@ public sealed class MnistDataset : IDataset
 				);
 			}
 
-			return new GrayscaleImageDatasetElement(
-				this,
-				id,
-				_data[id]
-			);
+			return _elements[id];
 		}
 	}
 
@@ -248,13 +244,9 @@ public sealed class MnistDataset : IDataset
 		Debug.Assert(_trainDataset != null);
 		Debug.Assert(_testDataset != null);
 
-		for (var i = 0; i < _data.Count; i++)
+		for (var i = 0; i < _elements.Count; i++)
 		{
-			yield return new GrayscaleImageDatasetElement(
-				this,
-				i,
-				_data[i]
-			);
+			yield return _elements[i];
 		}
 	}
 
@@ -417,28 +409,36 @@ public sealed class MnistDataset : IDataset
 	{
 		Debug.Assert(_trainDataset != null);
 		Debug.Assert(_testDataset != null);
-		var tensors = new List<torch.Tensor>();
+		var elements = new List<GrayscaleImageDatasetElement>();
 
 		// Add the tensors from each dataset into a single list
 		for (var i = 0; i < _trainDataset.Count; i++)
 		{
 			var dict = _trainDataset.GetTensor(i);
-			foreach (var (_, tensor) in dict)
-			{
-				tensors.Add(tensor);
-			}
+			var tensor = dict["data"];
+			var labels = dict["label"];
+			elements.Add(new GrayscaleImageDatasetElement(
+				this,
+				i,
+				tensor,
+				labels
+			));
 		}
 
 		for (var i = 0; i < _testDataset.Count; i++)
 		{
 			var dict = _testDataset.GetTensor(i);
-			foreach (var (_, tensor) in dict)
-			{
-				tensors.Add(tensor);
-			}
+			var tensor = dict["data"];
+			var labels = dict["label"];
+			elements.Add(new GrayscaleImageDatasetElement(
+				this,
+				_trainDataset.Count + i,
+				tensor,
+				labels
+			));
 		}
 
-		_data = tensors;
+		_elements = elements;
 
 		// Calculate and save the size of the dataset on disk
 		SizeOnDiskBytes = Directory.GetFiles(

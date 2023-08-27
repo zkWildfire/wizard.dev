@@ -2,8 +2,8 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Lightspeed.Datasets;
-using Lightspeed.Datasets.Mnist;
+using Lightspeed.Classification;
+using Lightspeed.Classification.Mnist;
 namespace Lightspeed.Services.Datasets;
 
 /// <summary>

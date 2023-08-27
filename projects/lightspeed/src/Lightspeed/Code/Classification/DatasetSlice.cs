@@ -4,9 +4,11 @@
  */
 using static TorchSharp.torch;
 using static TorchSharp.torch.utils.data;
-namespace Lightspeed.Datasets;
+namespace Lightspeed.Classification;
 
+/// <summary>
 /// Represents a subset of elements in a dataset.
+/// </summary>
 public interface IDatasetSlice : IDisposable, IEnumerable<IDatasetElement>
 {
 	/// <summary>

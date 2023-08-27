@@ -1,0 +1,28 @@
+@page "/datasets/mnist"
+@page "/datasets/mnist/{StartIndex:int}/{Count:int}"
+@using Lightspeed.Classification.Generic
+@using Lightspeed.Components.Datasets
+
+<div class="container flex-fill">
+	<!-- Title bar -->
+	<div class="row">
+		<h1 class="col mb-0">MNIST Dataset</h1>
+		<div class="col-2 vcenter-inner">
+			<span>
+				@_dataset.Count Elements
+			</span>
+		</div>
+	</div>
+	<hr />
+
+	<!-- Grid -->
+	<div class="row">
+		@for (var i = StartIndex; i < EndIndex; i++)
+		{
+			var element = (GrayscaleImageDatasetElement)_dataset[i];
+			<GrayscaleImageElement
+				Element="@element"
+			/>
+		}
+	</div>
+</div>

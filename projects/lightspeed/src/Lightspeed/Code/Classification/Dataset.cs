@@ -2,9 +2,11 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-namespace Lightspeed.Datasets;
+namespace Lightspeed.Classification;
 
+/// <summary>
 /// Represents a dataset used for training and evaluation.
+/// </summary>
 public interface IDataset : IDisposable, IEnumerable<IDatasetElement>
 {
 	/// <summary>

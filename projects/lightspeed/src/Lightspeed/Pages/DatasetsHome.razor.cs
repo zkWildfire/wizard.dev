@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Lightspeed.Datasets.Mnist;
+using Lightspeed.Classification.Mnist;
 namespace Lightspeed.Pages;
 
 /// <summary>

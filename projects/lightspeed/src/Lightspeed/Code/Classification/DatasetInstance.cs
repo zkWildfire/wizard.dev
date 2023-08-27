@@ -3,8 +3,9 @@
  *   All rights reserved.
  */
 using static TorchSharp.torch;
-namespace Lightspeed.Datasets;
+namespace Lightspeed.Classification;
 
+/// <summary>
 /// Represents a transient instance of a dataset.
 /// A dataset instance is used to keep track of metadata for a dataset that
 ///   needs to persist for some time, but is not inherently part of the dataset.
@@ -12,6 +13,7 @@ namespace Lightspeed.Datasets;
 ///   elements into a training, validation, and test set. This split needs to
 ///   persist until all model training and evaluation is complete, but it is
 ///   not part of the dataset itself.
+/// </summary>
 public interface IDatasetInstance : IDisposable, IEnumerable<IDatasetElement>
 {
 	/// <summary>

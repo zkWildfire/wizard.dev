@@ -4,7 +4,7 @@
  */
 using static TorchSharp.torch;
 using static TorchSharp.torch.utils.data;
-namespace Lightspeed.Datasets;
+namespace Lightspeed.Classification.Generic;
 
 /// Dataset slice implementation that works with most dataset types.
 public sealed class GenericDatasetSlice : IDatasetSlice

@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using Lightspeed.Datasets;
+using Lightspeed.Classification;
 using Lightspeed.Services.Datasets;
 namespace Lightspeed.Components.Datasets;
 

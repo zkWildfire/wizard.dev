@@ -4,7 +4,7 @@
  */
 using static TorchSharp.torch;
 
-namespace Lightspeed.Datasets.Generic;
+namespace Lightspeed.Classification.Generic;
 
 /// <summary>
 /// Generic implementation of the `IDatasetInstance` interface.
