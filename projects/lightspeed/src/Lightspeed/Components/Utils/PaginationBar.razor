@@ -1,0 +1,46 @@
+<nav class="d-flex justify-content-center mt-2" aria-label="Pagination">
+	<ul class="pagination">
+		<li class="page-item">
+			<a class="page-link bg-dark rounded-0" href="@RootUrl/0"
+				aria-label="First">
+				<span aria-hidden="true">&larrb;</span>
+			</a>
+		</li>
+		@if (Index > 0)
+		{
+			<li class="page-item">
+				<a class="page-link bg-dark rounded-0"
+					href="@RootUrl/@PreviousPaginationIndex"
+					aria-label="Previous">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+			</li>
+		}
+		@for (var i = _startIndex; i < _endIndex; i++)
+		{
+			<li class="page-item">
+				<a class="@GetPaginationCss(i)"
+					href="@RootUrl/@i">
+					@(i + 1)
+				</a>
+			</li>
+		}
+		@if (Index < Count - 1)
+		{
+			<li class="page-item">
+				<a class="page-link bg-dark rounded-0"
+					href="@RootUrl/@NextPaginationIndex"
+					aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+			</li>
+		}
+		<li class="page-item">
+			<a class="page-link bg-dark rounded-0"
+				href="@RootUrl/@(Count - 1)"
+				aria-label="Last">
+				<span aria-hidden="true">&rarrb;</span>
+			</a>
+		</li>
+	</ul>
+</nav>

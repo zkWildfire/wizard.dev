@@ -33,9 +33,6 @@
 			"options": {
 				"cwd": "${workspaceFolder:Lightspeed}/src/Lightspeed"
 			},
-			"dependsOn": [
-				"Build Lightspeed (Debug)"
-			],
 			"isBackground": true,
 			"problemMatcher": "$msCompile"
 		}

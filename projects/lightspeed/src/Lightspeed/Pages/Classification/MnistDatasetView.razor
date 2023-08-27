@@ -1,7 +1,8 @@
 @page "/datasets/mnist"
-@page "/datasets/mnist/{StartIndex:int}/{Count:int}"
+@page "/datasets/mnist/{StartIndex:int}"
 @using Lightspeed.Classification.Generic
 @using Lightspeed.Components.Datasets
+@using Lightspeed.Components.Utils
 
 <div class="container flex-fill">
 	<!-- Title bar -->
@@ -14,6 +15,14 @@
 		</div>
 	</div>
 	<hr />
+
+	<!-- Pagination -->
+	<PaginationBar
+		Index="@StartIndex"
+		Count="@PAGINATION_PAGES"
+		Width="@PAGINATION_BAR_SIZE"
+		RootUrl="@PAGE_URL"
+	/>
 
 	<!-- Grid -->
 	<div class="row">
