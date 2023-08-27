@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using static TorchSharp.torch;
 namespace Lightspeed.Classification;
 
 /// <summary>
@@ -21,4 +22,19 @@ public interface IDatasetElement
 	/// ID of the element within the dataset.
 	/// </summary>
 	long Id { get; }
+
+	/// <summary>
+	/// Tensor containing the input data for the element.
+	/// </summary>
+	Tensor DataTensor { get; }
+
+	/// <summary>
+	/// Tensor containing the label data for the element.
+	/// </summary>
+	Tensor LabelsTensor { get; }
+
+	/// <summary>
+	/// String to display as the label of the element.
+	/// </summary>
+	string Label { get; }
 }

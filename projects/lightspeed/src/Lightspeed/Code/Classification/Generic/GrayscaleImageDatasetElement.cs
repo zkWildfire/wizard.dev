@@ -30,6 +30,11 @@ public class GrayscaleImageDatasetElement : IDatasetImageElement
 	public Tensor LabelsTensor { get; }
 
 	/// <summary>
+	/// String to display as the label of the element.
+	/// </summary>
+	public string Label { get; }
+
+	/// <summary>
 	/// Gets the image data for the element as a base64 encoded string.
 	/// </summary>
 	public string ImageDataBase64 { get; }
@@ -54,6 +59,7 @@ public class GrayscaleImageDatasetElement : IDatasetImageElement
 		Id = id;
 		DataTensor = data;
 		LabelsTensor = labels;
+		Label = labels.data<long>()[0].ToString(CultureInfo.InvariantCulture);
 
 		// Input tensors are expected to be 3D tensors of the format
 		//   [channels, height, width]

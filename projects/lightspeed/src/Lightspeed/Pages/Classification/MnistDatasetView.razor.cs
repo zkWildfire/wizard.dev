@@ -13,11 +13,6 @@ namespace Lightspeed.Pages.Classification;
 public partial class MnistDatasetView : ComponentBase
 {
 	/// <summary>
-	/// Default number of elements to display per page.
-	/// </summary>
-	public const int DEFAULT_ELEMENTS_PER_PAGE = 20;
-
-	/// <summary>
 	/// Index in the dataset to start displaying elements from.
 	/// </summary>
 	[Parameter]
@@ -40,6 +35,11 @@ public partial class MnistDatasetView : ComponentBase
 	/// </summary>
 	[Inject]
 	private NavigationManager NavigationManager { get; set; } = null!;
+
+	/// <summary>
+	/// Default number of elements to display per page.
+	/// </summary>
+	private const int DEFAULT_ELEMENTS_PER_PAGE = 100;
 
 	/// <summary>
 	/// Past-the-end index for the range of elements to display.

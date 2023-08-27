@@ -1,5 +1,6 @@
 # Custom Dictionary Words
 Akihabara
+argmax
 arity
 Asakusa
 asan

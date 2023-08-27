@@ -1,0 +1,9 @@
+/*
+ *   Copyright (c) 2023 Zach Wilson
+ *   All rights reserved.
+ */
+
+.dataset-element {
+	/* 10 elements per row */
+	width: 10%;
+}

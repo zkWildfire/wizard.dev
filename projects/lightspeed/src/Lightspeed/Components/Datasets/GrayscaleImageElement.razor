@@ -1,8 +1,11 @@
-<div class="card col-3 bg-dark pt-2 border-light rounded-0">
+<div class="card bg-dark pt-2 border-light rounded-0 dataset-element">
 	<!-- Dataset image -->
 	<div class="card-img-top d-flex justify-content-center">
 		<img src="@ImageData" class="img-thumbnail rounded-0"
 			alt="Dataset element #{@Element.Id}">
 	</div>
-	<span>Element #@(Element.Id + 1)</span>
+	<div class="d-flex justify-content-between">
+		<span>#@(Element.Id + 1)</span>
+		<span>L: @(Element.Label)</span>
+	</div>
 </div>

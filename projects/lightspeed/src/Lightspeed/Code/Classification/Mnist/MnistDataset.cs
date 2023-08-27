@@ -41,7 +41,14 @@ public sealed class MnistDataset : IDataset
 	/// Gets the number of elements in the dataset.
 	/// If the dataset hasn't been downloaded yet, this will be -1.
 	/// </summary>
-	public int Count => _elements.Count == 0 ? -1 : _elements.Count;
+	public int Count => (_trainDataset, _testDataset) switch
+	{
+		(null, null) => -1,
+		(Dataset train, Dataset test) => (int)(train.Count + test.Count),
+		_ => throw new InvalidOperationException(
+			"Dataset is in an invalid state."
+		)
+	};
 
 	/// <summary>
 	/// Path to the folder on disk containing the dataset's files.
@@ -89,6 +96,16 @@ public sealed class MnistDataset : IDataset
 	private const double MNIST_STDDEV = 0.3081;
 
 	/// <summary>
+	/// Key that input tensors are stored under in the dataset's dictionary.
+	/// </summary>
+	private const string KEY_INPUT = "data";
+
+	/// <summary>
+	/// Key that label tensors are stored under in the dataset's dictionary.
+	/// </summary>
+	private const string KEY_LABELS = "label";
+
+	/// <summary>
 	/// Training dataset for the MNIST dataset.
 	/// </summary>
 	private Dataset? _trainDataset;
@@ -97,12 +114,6 @@ public sealed class MnistDataset : IDataset
 	/// Test dataset for the MNIST dataset.
 	/// </summary>
 	private Dataset? _testDataset;
-
-	/// <summary>
-	/// List of dataset elements for the dataset.
-	/// </summary>
-	private IReadOnlyList<GrayscaleImageDatasetElement> _elements =
-		new List<GrayscaleImageDatasetElement>();
 
 	/// <summary>
 	/// Whether the dataset has been disposed.
@@ -199,7 +210,7 @@ public sealed class MnistDataset : IDataset
 					"not downloaded."
 				);
 			}
-			else if (id < 0 || id >= _elements.Count)
+			else if (id < 0 || id >= Count)
 			{
 				throw new ArgumentOutOfRangeException(
 					nameof(id),
@@ -208,7 +219,24 @@ public sealed class MnistDataset : IDataset
 				);
 			}
 
-			return _elements[id];
+			// These should be true if `IsDownloaded` is true
+			Debug.Assert(_trainDataset != null);
+			Debug.Assert(_testDataset != null);
+
+			// Get the dataset that the element is in
+			var dataset = id < _trainDataset.Count
+				? _trainDataset
+				: _testDataset;
+			var elementId = id < _trainDataset.Count
+				? id
+				: id - _trainDataset.Count;
+			var dict = dataset.GetTensor(elementId);
+			return new GrayscaleImageDatasetElement(
+				this,
+				id,
+				dict[KEY_INPUT],
+				dict[KEY_LABELS]
+			);
 		}
 	}
 
@@ -244,9 +272,9 @@ public sealed class MnistDataset : IDataset
 		Debug.Assert(_trainDataset != null);
 		Debug.Assert(_testDataset != null);
 
-		for (var i = 0; i < _elements.Count; i++)
+		for (var i = 0; i < Count; i++)
 		{
-			yield return _elements[i];
+			yield return this[i];
 		}
 	}
 
@@ -409,36 +437,6 @@ public sealed class MnistDataset : IDataset
 	{
 		Debug.Assert(_trainDataset != null);
 		Debug.Assert(_testDataset != null);
-		var elements = new List<GrayscaleImageDatasetElement>();
-
-		// Add the tensors from each dataset into a single list
-		for (var i = 0; i < _trainDataset.Count; i++)
-		{
-			var dict = _trainDataset.GetTensor(i);
-			var tensor = dict["data"];
-			var labels = dict["label"];
-			elements.Add(new GrayscaleImageDatasetElement(
-				this,
-				i,
-				tensor,
-				labels
-			));
-		}
-
-		for (var i = 0; i < _testDataset.Count; i++)
-		{
-			var dict = _testDataset.GetTensor(i);
-			var tensor = dict["data"];
-			var labels = dict["label"];
-			elements.Add(new GrayscaleImageDatasetElement(
-				this,
-				_trainDataset.Count + i,
-				tensor,
-				labels
-			));
-		}
-
-		_elements = elements;
 
 		// Calculate and save the size of the dataset on disk
 		SizeOnDiskBytes = Directory.GetFiles(
