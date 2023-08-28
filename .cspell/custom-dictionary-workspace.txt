@@ -31,6 +31,7 @@ gtest
 Hana
 Harajuku
 helgrind
+hyperparameters
 idempotency
 implib
 interprocedural
@@ -50,6 +51,7 @@ msvc
 Nakayama
 NAND
 omnisharp
+optim
 plantuml
 ponens
 Posix
