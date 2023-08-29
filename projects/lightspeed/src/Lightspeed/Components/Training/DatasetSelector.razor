@@ -1,0 +1,33 @@
+<div class="row p-2">
+	<!-- Dataset Info -->
+	<div class="col d-flex">
+		<div class="vcenter-inner me-4">
+			<img src="@Dataset.IconPath"
+				class="img-thumbnail dataset-icon"
+				alt="@Dataset.DisplayName Icon" />
+		</div>
+
+		<div class="vcenter-inner align-items-stretch flex-fill">
+			<h3 class="m-0 text-start">@Dataset.DisplayName</h3>
+			<span class="text-muted">@Dataset.BriefDescription</span>
+		</div>
+
+		<div class="vcenter-inner align-items-end">
+			<span class="text-end">
+				Training Set Size: @Dataset.TrainingCount
+			</span>
+			<span class="text-end">
+				Test Set Size: @Dataset.TestCount
+			</span>
+		</div>
+	</div>
+
+	<!-- Buttons -->
+	<div class="col-auto d-flex justify-content-end">
+		<button type="button"
+			class="btn @ButtonCss px-4 rounded-0"
+			@onclick="OnSelectClicked">
+			Select
+		</button>
+	</div>
+</div>

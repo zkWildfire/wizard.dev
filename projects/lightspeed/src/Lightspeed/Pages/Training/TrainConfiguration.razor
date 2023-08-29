@@ -1,2 +1,34 @@
 @page "/train"
+@using Lightspeed.Components.Training
 
+<div class="container">
+	<!-- Title Bar -->
+	<div class="row">
+		<h1>
+			Training Configuration
+		</h1>
+	</div>
+	<hr />
+
+	<!-- Dataset Selection -->
+	<div class="row">
+		<h2>
+			Select a Dataset
+		</h2>
+	</div>
+	@foreach (var (_, dataset) in DatasetService.DownloadedDatasets)
+	{
+		<DatasetSelector
+			@ref="DatasetSelectors"
+			Dataset="@dataset"
+			IsSelected="@IsSelectedDataset(dataset)" />
+	}
+
+	<!-- Model Selection -->
+	<div class="row mt-4">
+		<h2>
+			Select a Model
+		</h2>
+	</div>
+
+</div>

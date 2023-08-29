@@ -44,7 +44,7 @@ public partial class MnistDatasetView : ComponentBase
 	/// Total number of pages that may be displayed.
 	/// </summary>
 	private int PAGINATION_PAGES => (int)Math.Ceiling(
-		_dataset.Count / (double)ELEMENTS_PER_PAGE
+		_dataset.TotalCount / (double)ELEMENTS_PER_PAGE
 	);
 
 	/// <summary>
@@ -60,7 +60,7 @@ public partial class MnistDatasetView : ComponentBase
 	/// </summary>
 	private int EndIndex => Math.Min(
 		StartIndex + ELEMENTS_PER_PAGE,
-		_dataset.Count
+		_dataset.TotalCount
 	);
 
 	/// <summary>
@@ -81,7 +81,8 @@ public partial class MnistDatasetView : ComponentBase
 		// If the dataset isn't downloaded or any parameters are invalid,
 		//   redirect to the dataset selection page
 		if (!_dataset.IsDownloaded ||
-			StartIndex < 0 || StartIndex >= _dataset.Count / ELEMENTS_PER_PAGE)
+			StartIndex < 0 ||
+			StartIndex >= _dataset.TotalCount / ELEMENTS_PER_PAGE)
 		{
 			NavigationManager.NavigateTo("/datasets");
 			return;

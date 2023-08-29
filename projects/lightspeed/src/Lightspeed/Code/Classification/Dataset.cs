@@ -32,10 +32,37 @@ public interface IDataset : IDisposable, IEnumerable<IDatasetElement>
 	string DisplayName { get; }
 
 	/// <summary>
-	/// Gets the number of elements in the dataset.
+	/// Path to the image to display as the dataset's icon.
+	/// </summary>
+	Uri IconPath { get; }
+
+	/// <summary>
+	/// Brief description of the dataset.
+	/// </summary>
+	string BriefDescription { get; }
+
+	/// <summary>
+	/// Detailed description of the dataset.
+	/// </summary>
+	string DetailedDescription { get; }
+
+	/// <summary>
+	/// Gets the total number of elements in the dataset.
 	/// If the dataset hasn't been downloaded yet, this will be -1.
 	/// </summary>
-	int Count { get; }
+	int TotalCount { get; }
+
+	/// <summary>
+	/// Gets the total number of elements in the dataset's training set.
+	/// If the dataset hasn't been downloaded yet, this will be -1.
+	/// </summary>
+	int TrainingCount { get; }
+
+	/// <summary>
+	/// Gets the total number of elements in the dataset's test set.
+	/// If the dataset hasn't been downloaded yet, this will be -1.
+	/// </summary>
+	int TestCount { get; }
 
 	/// <summary>
 	/// Path to the folder on disk containing the dataset's files.

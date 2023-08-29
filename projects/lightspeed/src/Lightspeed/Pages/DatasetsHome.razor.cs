@@ -3,6 +3,7 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification.Mnist;
+using Lightspeed.Services.Datasets;
 namespace Lightspeed.Pages;
 
 /// <summary>
@@ -21,17 +22,14 @@ public readonly record struct DatasetInfo
 	public required string Id { get; init; }
 
 	/// <summary>
+	/// Path to the icon for the dataset.
+	/// </summary>
+	public required Uri Icon { get; init; }
+
+	/// <summary>
 	/// Description of the dataset.
 	/// </summary>
 	public required string Description { get; init; }
-
-	/// <summary>
-	/// Address of the image to display for the dataset.
-	/// </summary>
-	public Uri Image => new(
-		$"/img/datasets/{MnistDataset.DATASET_ID}.png",
-		UriKind.Relative
-	);
 
 	/// <summary>
 	/// Address of the dataset information page for the dataset.
@@ -48,26 +46,34 @@ public readonly record struct DatasetInfo
 public partial class DatasetsHome : ComponentBase
 {
 	/// <summary>
+	/// Service used to get all available datasets.
+	/// </summary>
+	[Inject]
+	private IDatasetService DatasetsService { get; set; } = null!;
+
+	/// <summary>
 	/// Information about all available datasets.
 	/// </summary>
-	private readonly IReadOnlyList<DatasetInfo> _datasets;
+	private IReadOnlyList<DatasetInfo> _datasets = null!;
 
 	/// <summary>
 	/// Initializes the page.
 	/// </summary>
-	public DatasetsHome()
+	protected override void OnInitialized()
 	{
-		_datasets = new List<DatasetInfo>
+		base.OnInitialized();
+		var datasets = new List<DatasetInfo>();
+		foreach (var (_, dataset) in DatasetsService.AvailableDatasets)
 		{
-			new DatasetInfo
+			datasets.Add(new DatasetInfo
 			{
-				Name = "MNIST",
-				Id = MnistDataset.DATASET_ID,
-				Description="A large database of handwritten digits created " +
-					"by the National Institute of Standards and Technology. " +
-					"The dataset consists of 60,000 training images and " +
-					"10,000 testing images."
-			}
-		};
+				Name = dataset.DisplayName,
+				Id = dataset.Id,
+				Icon = dataset.IconPath,
+				Description = dataset.DetailedDescription
+			});
+		}
+
+		_datasets = datasets;
 	}
 }

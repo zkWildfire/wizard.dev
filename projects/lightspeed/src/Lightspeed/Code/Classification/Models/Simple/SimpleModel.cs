@@ -52,14 +52,28 @@ public class SimpleModel : IClassificationModel
 	/// <summary>
 	/// Size to use for the model's hidden layer.
 	/// </summary>
-	private const int HIDDEN_LAYER_SIZE = 50;
+	private const string PARAMETER_HIDDEN_LAYER_SIZE = "hidden-layer-size";
 
 	/// <summary>
 	/// Initializes the model instance.
 	/// </summary>
 	public SimpleModel()
 	{
-		Hyperparameters = new List<IHyperparameterValidator>();
+		Hyperparameters = new List<IHyperparameterValidator>()
+		{
+			new IntHyperparameterValidator(
+				PARAMETER_HIDDEN_LAYER_SIZE,
+				"Hidden Layer Size",
+				"Size of the model's hidden layer.",
+				new List<Func<int, bool>>()
+				{
+					x => x > 0
+				},
+				"Must be greater than 0.",
+				50,
+				false
+			)
+		};
 	}
 
 	/// <summary>
@@ -96,9 +110,14 @@ public class SimpleModel : IClassificationModel
 		string saveFolder,
 		IReadOnlyDictionary<string, string> hyperparameters)
 	{
+		var hiddenLayerSize = int.Parse(
+			hyperparameters[PARAMETER_HIDDEN_LAYER_SIZE],
+			CultureInfo.InvariantCulture
+		);
+
 		return new SimpleModelInstance(
 			inputSize,
-			HIDDEN_LAYER_SIZE,
+			hiddenLayerSize,
 			outputSize,
 			device,
 			saveFolder

@@ -34,7 +34,9 @@
 				"cwd": "${workspaceFolder:Lightspeed}/src/Lightspeed"
 			},
 			"isBackground": true,
-			"problemMatcher": "$msCompile"
+			// Don't use a problem matcher for this task or else errors will persist
+			//   even after the error is fixed
+			"problemMatcher": []
 		}
 	]
 }

@@ -16,6 +16,34 @@ public sealed class MnistDataset : IDataset
 	public const string DATASET_ID = "mnist";
 
 	/// <summary>
+	/// Name to display for the dataset on the UI.
+	/// </summary>
+	public const string DISPLAY_NAME = "MNIST";
+
+	/// <summary>
+	/// Brief description of the dataset.
+	/// </summary>
+	public const string BRIEF_DESCRIPTION =
+		"MNIST dataset of handwritten digits.";
+
+	/// <summary>
+	/// Detailed description of the dataset.
+	/// </summary>
+	public const string DETAILED_DESCRIPTION =
+		"A large database of handwritten digits created " +
+		"by the National Institute of Standards and Technology. " +
+		"The dataset consists of 60,000 training images and " +
+		"10,000 testing images.";
+
+	/// <summary>
+	/// Path to the dataset's icon.
+	/// </summary>
+	public static readonly Uri DATASET_ICON = new(
+		$"/img/datasets/{DATASET_ID}.png",
+		UriKind.Relative
+	);
+
+	/// <summary>
 	/// Event broadcast to when the dataset has been downloaded.
 	/// The sender of the event will be the dataset object for which the
 	///   underlying data has been downloaded.
@@ -35,13 +63,28 @@ public sealed class MnistDataset : IDataset
 	/// <summary>
 	/// Name to display for the dataset on the UI.
 	/// </summary>
-	public string DisplayName { get; }
+	public string DisplayName => DISPLAY_NAME;
+
+	/// <summary>
+	/// Path to the image to display as the dataset's icon.
+	/// </summary>
+	public Uri IconPath => DATASET_ICON;
+
+	/// <summary>
+	/// Brief description of the dataset.
+	/// </summary>
+	public string BriefDescription => BRIEF_DESCRIPTION;
+
+	/// <summary>
+	/// Detailed description of the dataset.
+	/// </summary>
+	public string DetailedDescription => DETAILED_DESCRIPTION;
 
 	/// <summary>
 	/// Gets the number of elements in the dataset.
 	/// If the dataset hasn't been downloaded yet, this will be -1.
 	/// </summary>
-	public int Count => (_trainDataset, _testDataset) switch
+	public int TotalCount => (_trainDataset, _testDataset) switch
 	{
 		(null, null) => -1,
 		(Dataset train, Dataset test) => (int)(train.Count + test.Count),
@@ -49,6 +92,18 @@ public sealed class MnistDataset : IDataset
 			"Dataset is in an invalid state."
 		)
 	};
+
+	/// <summary>
+	/// Gets the total number of elements in the dataset's training set.
+	/// If the dataset hasn't been downloaded yet, this will be -1.
+	/// </summary>
+	public int TrainingCount => (int)(_trainDataset?.Count ?? -1);
+
+	/// <summary>
+	/// Gets the total number of elements in the dataset's test set.
+	/// If the dataset hasn't been downloaded yet, this will be -1.
+	/// </summary>
+	public int TestCount => (int)(_testDataset?.Count ?? -1);
 
 	/// <summary>
 	/// Path to the folder on disk containing the dataset's files.
@@ -126,14 +181,8 @@ public sealed class MnistDataset : IDataset
 	/// <param name="saveLocation">
 	/// Path to the folder on disk that the dataset's files should be saved to.
 	/// </param>
-	/// <param name="displayName">
-	/// Name to display on the UI for the dataset.
-	/// </param>
-	public MnistDataset(
-		string saveLocation,
-		string displayName = "MNIST")
+	public MnistDataset(string saveLocation)
 	{
-		DisplayName = displayName;
 		SaveLocation = saveLocation;
 
 		// If the dataset is downloaded, load the dataset from disk
@@ -210,12 +259,12 @@ public sealed class MnistDataset : IDataset
 					"not downloaded."
 				);
 			}
-			else if (id < 0 || id >= Count)
+			else if (id < 0 || id >= TotalCount)
 			{
 				throw new ArgumentOutOfRangeException(
 					nameof(id),
 					id,
-					$"ID must be in the range [0, {Count})."
+					$"ID must be in the range [0, {TotalCount})."
 				);
 			}
 
@@ -272,7 +321,7 @@ public sealed class MnistDataset : IDataset
 		Debug.Assert(_trainDataset != null);
 		Debug.Assert(_testDataset != null);
 
-		for (var i = 0; i < Count; i++)
+		for (var i = 0; i < TotalCount; i++)
 		{
 			yield return this[i];
 		}

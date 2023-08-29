@@ -51,19 +51,32 @@ public sealed class TorchDatasetsService : IDatasetService
 	/// </param>
 	public TorchDatasetsService(string saveLocation)
 	{
-		var allDatasets = new Dictionary<string, IDataset>();
+		AvailableDatasets = new Dictionary<string, IDataset>()
+		{
+			// Torch will append the name of the dataset to the path passed
+			//   to it, so it isn't necessary to add the dataset name to the
+			//   save path for each dataset
+			{
+				MnistDataset.DATASET_ID,
+				new MnistDataset(
+					saveLocation
+				)
+			}
+		};
 
-		// Set up the MNIST dataset.
-		var mnistDataset = new MnistDataset(
-			// Torch will append the name of the dataset to the path passed to
-			//   it, so it isn't necessary to do so here
-			saveLocation
-		);
-		mnistDataset.OnDownloaded +=
-			(_, _) => NotifyDatasetDownloaded(mnistDataset);
-		allDatasets.Add(mnistDataset.Id, mnistDataset);
-
-		AvailableDatasets = allDatasets;
+		// If any dataset is already downloaded, add it to the downloaded
+		//   datasets dictionary
+		foreach (var dataset in AvailableDatasets.Values)
+		{
+			// Also bind to the dataset's `OnDownloaded` event so that the
+			//   if the dataset is deleted, it will be re-added to the
+			//   downloaded datasets dictionary when it is downloaded again
+			dataset.OnDownloaded += (_, _) => NotifyDatasetDownloaded(dataset);
+			if (dataset.IsDownloaded)
+			{
+				_downloadedDatasets.Add(dataset.Id, dataset);
+			}
+		}
 	}
 
 	/// <summary>
