@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using Lightspeed.Classification.Validators;
 using static TorchSharp.torch;
 namespace Lightspeed.Classification.Models.Simple;
 
@@ -44,9 +45,22 @@ public class SimpleModel : IClassificationModel
 		"to be used for learning purposes.";
 
 	/// <summary>
+	/// List of hyperparameters in the order they should appear on the UI.
+	/// </summary>
+	public IReadOnlyList<IHyperparameterValidator> Hyperparameters { get; }
+
+	/// <summary>
 	/// Size to use for the model's hidden layer.
 	/// </summary>
 	private const int HIDDEN_LAYER_SIZE = 50;
+
+	/// <summary>
+	/// Initializes the model instance.
+	/// </summary>
+	public SimpleModel()
+	{
+		Hyperparameters = new List<IHyperparameterValidator>();
+	}
 
 	/// <summary>
 	/// Constructs a new instance of the model type.
@@ -64,12 +78,23 @@ public class SimpleModel : IClassificationModel
 	/// Folder to save the model to. If the folder already exists and has data,
 	///   the saved data will be used to initialize the model.
 	/// </param>
+	/// <param name="hyperparameters">
+	/// Hyperparameters specified on the UI. Each hyperparameter will be indexed
+	///   by the unique ID provided by the hyperparameter validator the value
+	///   corresponds to. All string values provided will have been validated
+	///   by the corresponding hyperparameter validator.
+	/// With the exception of string hyperparameters, all values will be
+	///   provided as numbers in string form. Boolean parameters will always
+	///   be provided as either "0" or "1". Enum parameters will be provided
+	///   as the index of the enum value in string form.
+	/// </param>
 	/// <returns>A new model instance.</returns>
 	public IClassificationModelInstance CreateInstance(
 		Size inputSize,
 		Size outputSize,
 		Device device,
-		string saveFolder)
+		string saveFolder,
+		IReadOnlyDictionary<string, string> hyperparameters)
 	{
 		return new SimpleModelInstance(
 			inputSize,

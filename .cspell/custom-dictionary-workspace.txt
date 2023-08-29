@@ -27,6 +27,7 @@ elim
 endianness
 Flurl
 frontends
+funcs
 gtest
 Hana
 Harajuku
