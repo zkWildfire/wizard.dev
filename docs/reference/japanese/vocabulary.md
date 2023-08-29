@@ -479,6 +479,7 @@ one or more Kanji characters.
 | make sure to | ちゃんと | | Section 2 Unit 5 |
 | Malaysia | マレーシア | | Section 2 Unit 3 |
 | man | おとこ | <span class="kanji">男</span> | Section 3 Unit 3 |
+| man | だんせい | <span class="kanji">男性</span> | Section 3 Unit 3 |
 | man | おとこのひと | <span class="kanji">男の人</span> | Section 3 Unit 3 |
 | manager | マネージャー | | Section 2 Unit 9 |
 | manga | まんが | | Section 1 Unit 7 |
