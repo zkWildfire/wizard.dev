@@ -3,7 +3,7 @@
 <div class="row px-4">
 	@if (Validator.ParameterType == typeof(int))
 	{
-		<IntModelHyperparameter
+		<IntHyperparameter
 			Validator="@(Validator as IntHyperparameterValidator)"
 		/>
 	}

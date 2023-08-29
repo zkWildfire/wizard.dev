@@ -3,12 +3,12 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification.Validators;
-namespace Lightspeed.Components.Training;
+namespace Lightspeed.Components.Validators;
 
 /// <summary>
 /// Allows a model-specific integer hyperparameter to be specified.
 /// </summary>
-public partial class IntModelHyperparameter : ComponentBase
+public partial class IntHyperparameter : ComponentBase
 {
 	/// <summary>
 	/// Event broadcast to when the hyperparameter value is set.

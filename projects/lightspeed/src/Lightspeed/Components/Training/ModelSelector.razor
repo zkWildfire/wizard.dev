@@ -1,3 +1,5 @@
+@using Lightspeed.Components.Validators
+
 <div class="row p-2">
 	<!-- Model Info -->
 	<div class="col d-flex">
@@ -36,7 +38,7 @@
 
 	@foreach (var validator in Model.Hyperparameters)
 	{
-		<ModelHyperparameter
+		<Hyperparameter
 			Validator="@validator"
 		/>
 	}

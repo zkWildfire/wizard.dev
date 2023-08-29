@@ -3,7 +3,7 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification.Validators;
-namespace Lightspeed.Components.Training;
+namespace Lightspeed.Components.Validators;
 
 /// <summary>
 /// Event args type broadcast when a hyperparameter is set.
@@ -24,7 +24,7 @@ public class OnHyperparameterSetEventArgs : EventArgs
 /// <summary>
 /// Allows a model-specific hyperparameter to be specified.
 /// </summary>
-public partial class ModelHyperparameter : ComponentBase
+public partial class Hyperparameter : ComponentBase
 {
 	/// <summary>
 	/// Event broadcast to when the hyperparameter value is set.
