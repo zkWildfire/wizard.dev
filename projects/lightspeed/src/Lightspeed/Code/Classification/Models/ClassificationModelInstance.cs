@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using static TorchSharp.torch;
 namespace Lightspeed.Classification.Models;
 
 /// <summary>
@@ -50,6 +51,11 @@ public interface IClassificationModelInstance
 	/// Event that is fired when an epoch is completed.
 	/// </summary>
 	event EventHandler<OnEpochCompleteEventArgs>? OnEpochComplete;
+
+	/// <summary>
+	/// Device that the model is using.
+	/// </summary>
+	Device Device { get; }
 
 	/// <summary>
 	/// Resets the model's internal data using the data previously saved to disk.

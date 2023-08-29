@@ -1,3 +1,4 @@
+using Lightspeed.Services.Models;
 using Lightspeed.Services.Datasets;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,7 +12,7 @@ builder.Services.AddSingleton<IDatasetService, TorchDatasetsService>(
 	sp => new TorchDatasetsService(
 		Path.Combine(sp.GetService<IWebHostEnvironment>()!.ContentRootPath, ".datasets")
 	)
-);
+).AddSingleton<IModelsService, LightspeedModelsService>();
 
 var app = builder.Build();
 
