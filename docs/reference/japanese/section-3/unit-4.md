@@ -3,6 +3,15 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| cool | すずしい | 涼しい |
+| hot | あつい | 暑い |
+| however | しかし | |
+| night | よる | 夜 |
+| not cold | さむくない | 寒くない |
+| not cool | すずしくない | 涼しくない |
+| not hot | あつくない | 暑くない |
+| tonight | こんや | 今夜 |
+| to put up | さします | 差します |
 
 ### Examples
 | English | Japanese |

@@ -7,7 +7,7 @@
 | those | それら | |
 | my | わたしの | 私の |
 | hat | ぼうし | 帽子 |
-| umbrella | かさ | |
+| umbrella | かさ | 傘 |
 | shoe(s) | くつ | 靴 |
 | coat | コート | |
 | red | あかい | 赤い |

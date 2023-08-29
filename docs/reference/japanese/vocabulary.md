@@ -167,7 +167,7 @@ one or more Kanji characters.
 | cocoa | ココア | | Section 2 Unit 5 |
 | coffee | コーヒー | | Section 1 Unit 7 |
 | cola | コーラ | | Section 2 Unit 8 |
-| cold | さむい | | Section 2 Unit 5 |
+| cold | さむい | <span class="kanji">寒い</span> | Section 2 Unit 5 |
 | cold | つめたい | <span class="kanji">冷たい</span> | Section 2 Unit 15 |
 | college student | だいがくせい | <span class="kanji">大学生</span> | Section 1 Unit 6 |
 | color | いろ | <span class="kanji">色</span> | Section 3 Unit 3 |
@@ -181,6 +181,7 @@ one or more Kanji characters.
 | cookie | クッキー | | Section 2 Unit 8 |
 | cooking | りょうり | <span class="kanji">料理</span> | Section 2 Unit 6 |
 | cool | かっこいい | | Section 1 Unit 1 |
+| cool | すずしい | <span class="kanji">涼しい</span> | Section 3 Unit 4 |
 | corner | かたすみ | <span class="kanji">片隅</span> | Section 2 Unit 17 |
 | cousin | いとこ | | Section 2 Unit 18 |
 | coworker(s) | どうりょう | | Section 2 Unit 9 |
@@ -385,6 +386,7 @@ one or more Kanji characters.
 | horror | ホラー | | Section 2 Unit 3 |
 | hospital | びょういん | <span class="kanji">病院</span> | Section 2 Unit 5 |
 | hot | あつい | <span class="kanji">熱い</span> | Section 2 Unit 5 |
+| hot | あつい | <span class="kanji">暑い</span> | Section 3 Unit 4 |
 | hot spring | おんせん | | Section 2 Unit 5 |
 | hotel | ホテル | | Section 1 Unit 3 |
 | hour | じかん | <span class="kanji">時間</span> | Section 2 Unit 4 |
@@ -400,6 +402,7 @@ one or more Kanji characters.
 | how many people | なんにん | <span class="kanji">何人</span> | Section 3 Unit 3 |
 | how much | いくら | | Section 1 Unit 8 |
 | how old | おいくつ | | Section 2 Unit 18 |
+| however | しかし | | Section 3 Unit 4 |
 | hundred | ひゃく | <span class="kanji">百</span> | Section 1 Unit 8 |
 | husband | おっと | <span class="kanji">夫</span> | Section 1 Unit 6 |
 | I | わたし | <span class="kanji">私</span> | Section 1 Unit 5 |
@@ -540,6 +543,7 @@ one or more Kanji characters.
 | nice | いい | | Section 1 Unit 8 |
 | nice to meet you | どうぞよろしく | | Section 1 Unit 2 |
 | nice to meet you | はじめまして | | Section 1 Unit 6 |
+| night | よる | <span class="kanji">夜</span> | Section 3 Unit 4 |
 | nine | きゅう | <span class="kanji">九</span> | Section 1 Unit 7 |
 | nine (birds, rabbits) | きゅうば | <span class="kanji">九羽</span> | Section 2 Unit 14 |
 | nine (books) | きゅうさつ | <span class="kanji">九冊</span> | Section 2 Unit 16 |
@@ -567,6 +571,8 @@ one or more Kanji characters.
 | not bright | あかるくない | <span class="kanji">明るくない</span> | Section 2 Unit 20 |
 | not busy | いそがしくない | <span class="kanji">忙しくない</span> | Section 2 Unit 20 |
 | not close | ちかくない | <span class="kanji">近くない</span> | Section 2 Unit 19 |
+| not cold | さむくない | <span class="kanji">寒くない</span> | Section 3 Unit 4 |
+| not cool | すずしくない | <span class="kanji">涼しくない</span> | Section 3 Unit 4 |
 | not dark | くらくない | <span class="kanji">暗くない</span> | Section 2 Unit 20 |
 | not delicious | おいしくない | | Section 3 Unit 1 |
 | not dirty | きたなくない | <span class="kanji">汚くない</span> | Section 2 Unit 19 |
@@ -574,6 +580,7 @@ one or more Kanji characters.
 | not fast | はやくない | <span class="kanji">速くない</span> | Section 2 Unit 19 |
 | not good | よくない | | Section 2 Unit 20 |
 | not heavy | かるくない | <span class="kanji">軽くない</span> | Section 3 Unit 3 |
+| not hot | あつくない | <span class="kanji">暑くない</span> | Section 3 Unit 4 |
 | not late | おそくない | <span class="kanji">遅くない</span> | Section 2 Unit 19 |
 | not lightweight | かるくない | <span class="kanji">軽くない</span> | Section 3 Unit 3 |
 | not much | すくない | <span class="kanji">少ない</span> | Section 3 Unit 1 |
@@ -606,7 +613,7 @@ one or more Kanji characters.
 | one (objects) | いっこ | <span class="kanji">一個</span> | Section 2 Unit 14 |
 | one (person) | ひとり | <span class="kanji">一人</span> | Section 2 Unit 18 |
 | one (picture) | いちまい | <span class="kanji">一枚</span> | Section 2 Unit 18 |
-| one day | いちにち | <span class="kanji">一日</span> | Section 3 Unit 2 |
+| one day | ついたち | <span class="kanji">一日</span> | Section 3 Unit 2 |
 | one minute | いっぷん | <span class="kanji">一分</span> | Section 2 Unit 5 |
 | one month | いっかげつ | <span class="kanji">一ヶ月</span> | Section 3 Unit 2 |
 | one o'clock | いちじ | <span class="kanji">一時</span> | Section 1 Unit 5 |
@@ -955,6 +962,7 @@ one or more Kanji characters.
 | to practice | れんしゅうします | <span class="kanji">練習します</span> | Section 2 Unit 20 |
 | to put in | いれます | <span class="kanji">入れます</span> | Section 3 Unit 3 |
 | to put on (feet) | はきます | <span class="kanji">履きます</span> | Section 2 Unit 19 |
+| to put up | さします | <span class="kanji">差します</span> | Section 3 Unit 4 |
 | to rain | あめがふります | <span class="kanji">雨が降ります</span> | Section 2 Unit 20 |
 | to read | よみます | <span class="kanji">読みます</span> | Section 1 Unit 7 |
 | to receive | もらいます | | Section 3 Unit 3 |
@@ -995,6 +1003,7 @@ one or more Kanji characters.
 | Tokyo | とうきょう | <span class="kanji">東京</span> | Section 1 Unit 6 |
 | tomorrow | あした | <span class="kanji">明日</span> | Section 2 Unit 5 |
 | tonight | こんや | | Section 2 Unit 11 |
+| tonight | こんや | <span class="kanji">今夜</span> | Section 3 Unit 4 |
 | Toronto | トロント | | Section 1 Unit 6 |
 | tough | たいへん | | Section 2 Unit 6 |
 | town | まち | | Section 1 Unit 6 |
@@ -1027,7 +1036,7 @@ one or more Kanji characters.
 | udon | うどん | | Section 2 Unit 1 |
 | Ueno Park | うえのこうえん | | Section 2 Unit 4 |
 | um | ええと | | Section 2 Unit 1 |
-| umbrella | かさ | | Section 1 Unit 4 |
+| umbrella | かさ | <span class="kanji">傘</span> | Section 1 Unit 4 |
 | uncle | おじ | | Section 2 Unit 18 |
 | underground | ちか | | Section 2 Unit 2 |
 | underwear | パンツ | | Section 2 Unit 19 |
@@ -1047,7 +1056,7 @@ one or more Kanji characters.
 | walks | さんぽ | <span class="kanji">散歩</span> | Section 2 Unit 18 |
 | wallet | さいふ | <span class="kanji">財布</span> | Section 1 Unit 8 |
 | want | ほしい | | Section 1 Unit 8 |
-| warm | あたたかい | | Section 2 Unit 5 |
+| warm | あたたかい | <span class="kanji">暖かい</span> | Section 2 Unit 5 |
 | washing machine | せんたくき | | Section 2 Unit 3 |
 | watch | うでどけい | <span class="kanji">腕時計</span> | Section 3 Unit 3 |
 | water | みず | <span class="kanji">水</span> | Section 1 Unit 1 |
