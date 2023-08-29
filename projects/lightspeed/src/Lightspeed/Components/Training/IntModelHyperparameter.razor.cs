@@ -20,4 +20,23 @@ public partial class IntModelHyperparameter : ComponentBase
 	/// </summary>
 	[Parameter]
 	public IntHyperparameterValidator Validator { get; set; } = null!;
+
+	/// <summary>
+	/// Value set for the hyperparameter on the UI.
+	/// This value may or may not be a valid value. Parameter validation is only
+	///   done once the user clicks the "Train" button.
+	/// </summary>
+	private int Value { get; set; }
+
+	/// <summary>
+	/// Initializes the component.
+	/// </summary>
+	protected override void OnInitialized()
+	{
+		base.OnInitialized();
+		Value = int.Parse(
+			Validator.DefaultValue ?? "0",
+			CultureInfo.InvariantCulture
+		);
+	}
 }

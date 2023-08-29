@@ -1,0 +1,9 @@
+<div class="col vcenter-inner align-items-start">
+	<h5 class="mb-0">@Validator.DisplayName</h5>
+	<span class="text-muted">@Validator.Description</span>
+</div>
+<div class="col-2 vcenter-inner align-items-end">
+	<InputNumber @bind-Value="@Value"
+		class="form-control rounded-0 text-end" />
+	<span>@Validator.Constraints</span>
+</div>

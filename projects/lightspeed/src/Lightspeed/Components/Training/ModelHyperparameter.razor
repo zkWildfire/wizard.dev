@@ -1,0 +1,10 @@
+@using Lightspeed.Classification.Validators
+
+<div class="row px-4">
+	@if (Validator.ParameterType == typeof(int))
+	{
+		<IntModelHyperparameter
+			Validator="@(Validator as IntHyperparameterValidator)"
+		/>
+	}
+</div>
