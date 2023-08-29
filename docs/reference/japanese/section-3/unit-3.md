@@ -55,6 +55,7 @@
 | girl | おんなのこ | 女の子 |
 | magnificent | りっぱ | 立派 |
 | man | おとこ | 男 |
+| man | だんせい | 男性 |
 | man | おとこのひと | 男の人 |
 | marriage | けっこん | 結婚 |
 | how many people | なんにん | 何人 |
