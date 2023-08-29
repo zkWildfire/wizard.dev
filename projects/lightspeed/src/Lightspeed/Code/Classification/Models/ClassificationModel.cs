@@ -27,6 +27,11 @@ public interface IClassificationModel
 	string DisplayName { get; }
 
 	/// <summary>
+	/// Path to the icon to display on the UI for the model type.
+	/// </summary>
+	Uri IconPath { get; }
+
+	/// <summary>
 	/// Brief description to display on the UI for the model type.
 	/// This will be shown on the UI in the model selection list and on the
 	///   model's detailed information page.

@@ -17,6 +17,14 @@ public class SimpleModel : IClassificationModel
 	public const string MODEL_ID = "classification-simple";
 
 	/// <summary>
+	/// Path to the icon to display on the UI for the model type.
+	/// </summary>
+	public static readonly Uri ICON_PATH = new(
+		"/img/models/classification/simple.png",
+		UriKind.Relative
+	);
+
+	/// <summary>
 	/// Internal unique identifier for the model type.
 	/// </summary>
 	public string Id => MODEL_ID;
@@ -25,6 +33,11 @@ public class SimpleModel : IClassificationModel
 	/// Name to display on the UI for the model type.
 	/// </summary>
 	public string DisplayName => "Simple 2-Layer Classification Model";
+
+	/// <summary>
+	/// Path to the icon to display on the UI for the model type.
+	/// </summary>
+	public Uri IconPath => ICON_PATH;
 
 	/// <summary>
 	/// Brief description to display on the UI for the model type.

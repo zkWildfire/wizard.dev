@@ -3,6 +3,7 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification;
+using Lightspeed.Classification.Models;
 using Lightspeed.Components.Training;
 using Lightspeed.Services.Datasets;
 using Lightspeed.Services.Models;
@@ -40,9 +41,26 @@ public partial class TrainConfiguration : ComponentBase
 	}
 
 	/// <summary>
+	/// Helper property used to bind to model selector events.
+	/// </summary>
+	private ModelSelector? ModelSelectors
+	{
+		set
+		{
+			Debug.Assert(value != null);
+			value.OnModelSelected += OnModelSelected;
+		}
+	}
+
+	/// <summary>
 	/// Dataset currently selected by the user.
 	/// </summary>
 	private IDataset? _selectedDataset;
+
+	/// <summary>
+	/// Model currently selected by the user.
+	/// </summary>
+	private IClassificationModel? _selectedModel;
 
 	/// <summary>
 	/// Whether the dataset is the currently selected dataset.
@@ -57,6 +75,18 @@ public partial class TrainConfiguration : ComponentBase
 	}
 
 	/// <summary>
+	/// Whether the model is the currently selected model.
+	/// </summary>
+	/// <param name="model">Model to check.</param>
+	/// <returns>
+	/// Whether the model is the currently selected model.
+	/// </returns>
+	private bool IsSelectedModel(IClassificationModel model)
+	{
+		return _selectedModel == model;
+	}
+
+	/// <summary>
 	/// Callback invoked when a dataset is selected.
 	/// </summary>
 	/// <param name="sender">Object that broadcast the event.</param>
@@ -66,6 +96,19 @@ public partial class TrainConfiguration : ComponentBase
 		OnDatasetSelectedEventArgs e)
 	{
 		_selectedDataset = e.Dataset;
+		StateHasChanged();
+	}
+
+	/// <summary>
+	/// Callback invoked when a model is selected.
+	/// </summary>
+	/// <param name="sender">Object that broadcast the event.</param>
+	/// <param name="e">Arguments for the event.</param>
+	private void OnModelSelected(
+		object? sender,
+		OnModelSelectedEventArgs e)
+	{
+		_selectedModel = e.Model;
 		StateHasChanged();
 	}
 }

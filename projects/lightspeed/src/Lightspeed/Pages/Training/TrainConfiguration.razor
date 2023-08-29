@@ -30,5 +30,12 @@
 			Select a Model
 		</h2>
 	</div>
+	@foreach (var (_, model) in ModelsService.Models)
+	{
+		<ModelSelector
+			@ref="ModelSelectors"
+			Model="@model"
+			IsSelected="@IsSelectedModel(model)" />
+	}
 
 </div>

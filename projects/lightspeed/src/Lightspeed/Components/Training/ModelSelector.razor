@@ -1,0 +1,24 @@
+<div class="row p-2">
+	<!-- Model Info -->
+	<div class="col d-flex">
+		<div class="vcenter-inner me-4">
+			<img src="@Model.IconPath"
+				class="img-thumbnail model-icon"
+				alt="@Model.DisplayName Icon" />
+		</div>
+
+		<div class="vcenter-inner align-items-stretch flex-fill">
+			<h3 class="m-0 text-start">@Model.DisplayName</h3>
+			<span class="text-muted">@Model.BriefDescription</span>
+		</div>
+	</div>
+
+	<!-- Buttons -->
+	<div class="col-auto d-flex justify-content-end">
+		<button type="button"
+			class="btn @ButtonCss px-4 rounded-0"
+			@onclick="OnSelectClicked">
+			Select
+		</button>
+	</div>
+</div>
