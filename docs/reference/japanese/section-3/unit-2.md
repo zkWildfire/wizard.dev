@@ -37,7 +37,7 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| one day | いちにち | 一日 |
+| one day | ついたち | 一日 |
 | two days | ふつか | 二日 |
 | three days | みっか | 三日 |
 | four days | よっか | 四日 |
