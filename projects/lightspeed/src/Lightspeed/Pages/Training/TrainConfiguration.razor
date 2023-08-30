@@ -48,6 +48,7 @@
 	@foreach (var validator in _genericHyperparameters)
 	{
 		<Hyperparameter
+			@ref="HyperparameterComponent"
 			Validator="@validator"
 		/>
 	}

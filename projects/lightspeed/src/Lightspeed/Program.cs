@@ -14,10 +14,8 @@ builder.Services.AddSingleton<IDatasetService, TorchDatasetsService>(
 		Path.Combine(sp.GetService<IWebHostEnvironment>()!.ContentRootPath, ".datasets")
 	)
 ).AddSingleton<IModelsService, LightspeedModelsService>()
-.AddHostedService<IHostedTrainingService>(
-	sp => new BackgroundTrainingService()
-)
-.AddSingleton(
+.AddSingleton<IHostedTrainingService, BackgroundTrainingService>()
+.AddHostedService(
 	sp => sp.GetRequiredService<IHostedTrainingService>()
 );
 
