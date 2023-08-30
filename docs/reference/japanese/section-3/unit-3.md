@@ -60,6 +60,7 @@
 | marriage | けっこん | 結婚 |
 | how many people | なんにん | 何人 |
 | person | かた | 方 |
+| romantic partner | こいびと | 恋人 |
 | single | どくしん | 独身 |
 | splendid | りっぱ | 立派 |
 | to be born | うまれます | 生まれます |

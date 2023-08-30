@@ -706,6 +706,7 @@ one or more Kanji characters.
 | rock | ロック | | Section 1 Unit 7 |
 | rollercoaster | ジェットコースター | | Section 2 Unit 10 |
 | romance | れんあい | | Section 2 Unit 3 |
+| romantic partner | こいびと | <span class="kanji">恋人</span> | Section 3 Unit 3 |
 | room | へや | <span class="kanji">部屋</span> | Section 2 Unit 13 |
 | salad | サラダ | | Section 2 Unit 1 |
 | sale | セール | | Section 2 Unit 10 |
