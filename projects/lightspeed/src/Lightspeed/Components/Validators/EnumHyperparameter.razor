@@ -5,7 +5,12 @@
 	<span class="text-muted">@Validator.Description</span>
 </div>
 <div class="col-auto vcenter-inner align-items-end">
-	<InputNumber @bind-Value="@Value" id="@Validator.Id"
-		class="form-control rounded-0 text-end" />
+	<InputSelect @bind-Value="@Value" id="@Validator.Id"
+		class="form-control rounded-0 text-end">
+		@foreach (var value in Validator.OrderedValues)
+		{
+			<option value="@value">@value</option>
+		}
+	</InputSelect>
 	<span class="text-muted">@Validator.Constraints</span>
 </div>

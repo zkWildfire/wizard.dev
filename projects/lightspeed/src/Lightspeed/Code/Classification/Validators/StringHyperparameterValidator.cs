@@ -5,9 +5,7 @@
 namespace Lightspeed.Classification.Validators;
 
 /// <summary>
-/// Interface for code that validates hyperparameters specified on the UI.
-/// Hyperparameter validators are required to be stateless, allowing a single
-///   validator instance to be used any number of times.
+/// Hyperparameter validator used for string hyperparameters.
 /// </summary>
 public class StringHyperparameterValidator
 	: IRefTypeHyperparameterValidator<string>

@@ -5,10 +5,11 @@
 namespace Lightspeed.Classification.Validators;
 
 /// <summary>
-/// Hyperparameter validator used for floating point hyperparameters.
+/// Hyperparameter validator used for enum hyperparameters.
 /// </summary>
-public class FloatHyperparameterValidator
-	: IValueTypeHyperparameterValidator<float>
+public class EnumHyperparameterValidator<T>
+	: StringSetHyperparameterValidator
+	where T : struct, Enum
 {
 	/// <summary>
 	/// Initializes the hyperparameter validator.
@@ -23,41 +24,33 @@ public class FloatHyperparameterValidator
 	/// <param name="description">
 	/// Description to display for the hyperparameter.
 	/// </param>
-	/// <param name="constraintFuncs">
-	/// Functions to invoke to validate the hyperparameter. Each function will
-	///   be passed the value specified on the UI and should return `true` if
-	///   the value is valid or `false` if the value is invalid.
+	/// <param name="enumValues">
+	/// List of valid enum values and their display names. Only enum values
+	///   specified in this list will be considered valid. If an enum value
+	///   appears more than once in this list, the display name provided by
+	///   the last entry will be used. Must contain at least one value.
 	/// </param>
 	/// <param name="constraints">
 	/// Description to display for constraints on the hyperparameter.
 	/// </param>
-	/// <param name="defaultValue">
-	/// Optional default value to use for the hyperparameter.
-	/// </param>
 	/// <param name="isOptional">
 	/// Whether the hyperparameter is optional.
 	/// </param>
-	public FloatHyperparameterValidator(
+	public EnumHyperparameterValidator(
 		string id,
 		string displayName,
 		string description,
-		IReadOnlyList<Func<float, bool>>? constraintFuncs = null,
+		IReadOnlyList<Tuple<T, string>> enumValues,
 		string? constraints = null,
-		float? defaultValue = null,
 		bool isOptional = false)
 		: base(
 			id,
 			displayName,
 			description,
-			x =>
-			{
-				return float.TryParse(x, out var floatValue)
-					? floatValue
-					: throw new ArgumentException("Value must be a float.");
-			},
-			constraintFuncs,
+			new List<string>(enumValues.Select(x => x.Item2)),
+			typeof(T),
 			constraints,
-			defaultValue,
+			enumValues[0].Item2,
 			isOptional
 		)
 	{
