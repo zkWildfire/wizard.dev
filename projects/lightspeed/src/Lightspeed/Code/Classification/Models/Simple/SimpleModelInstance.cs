@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using Lightspeed.Classification.Events;
 using TorchSharp.Modules;
 using static TorchSharp.torch;
 namespace Lightspeed.Classification.Models.Simple;
@@ -114,7 +115,12 @@ public class SimpleModelInstance : IClassificationModelInstance
 	/// <param name="hyperparameters">
 	/// Hyperparameters to use for training the model.
 	/// </param>
-	public Task Train(Hyperparameters hyperparameters)
+	/// <param name="cancellationToken">
+	/// Token allowing training to be cancelled early.
+	/// </param>
+	public Task Train(
+		Hyperparameters hyperparameters,
+		CancellationToken cancellationToken)
 	{
 		throw new NotImplementedException();
 	}
