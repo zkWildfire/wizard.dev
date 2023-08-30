@@ -63,8 +63,8 @@
 | to move | ひっこします | |
 | this week | こんしゅう | 今週 |
 | still | まだ | |
-| cramped | せまい | |
-| spacious | ひろい | |
+| cramped | せまい | 狭い |
+| spacious | ひろい | 広い |
 | well-lit | あかるい | |
 | when | いつ | |
 

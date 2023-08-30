@@ -183,9 +183,10 @@ one or more Kanji characters.
 | cool | かっこいい | | Section 1 Unit 1 |
 | cool | すずしい | <span class="kanji">涼しい</span> | Section 3 Unit 4 |
 | corner | かたすみ | <span class="kanji">片隅</span> | Section 2 Unit 17 |
+| corner | かど | <span class="kanji">角</span> | Section 3 Unit 4 |
 | cousin | いとこ | | Section 2 Unit 18 |
 | coworker(s) | どうりょう | | Section 2 Unit 9 |
-| cramped | せまい | | Section 2 Unit 3 |
+| cramped | せまい | <span class="kanji">狭い</span> | Section 2 Unit 3 |
 | cup | コップ | | Section 3 Unit 2 |
 | cupcake | カップケーキ | | Section 2 Unit 8 |
 | curry | カレー | | Section 1 Unit 2 |
@@ -352,6 +353,7 @@ one or more Kanji characters.
 | girlfriend | かのじょ | <span class="kanji">彼女</span> | Section 2 Unit 3 |
 | glass | グラス | | Section 3 Unit 2 |
 | go home | かえて | <span class="kanji">帰って</span> | Section 2 Unit 17 |
+| go straight | まっすぐすすみます | <span class="kanji">まっすぐ進みます</span> | Section 3 Unit 4 |
 | go-cart | ゴーカート | | Section 2 Unit 10 |
 | good evening | こんばんは | | Section 1 Unit 2 |
 | good morning (formal) | おはようございます | | Section 1 Unit 6 |
@@ -376,6 +378,7 @@ one or more Kanji characters.
 | heavy | おもい | <span class="kanji">重い</span> | Section 3 Unit 3 |
 | hello | こんにちは | | Section 1 Unit 2 |
 | here | ここ | | Section 1 Unit 3 |
+| here | こっち | | Section 3 Unit 4 |
 | hideous | ダサい | | Section 1 Unit 8 |
 | high school student | こうこうせい | <span class="kanji">高校生</span> | Section 2 Unit 14 |
 | high school students | こうこうせいたち | <span class="kanji">高校生たち</span> | Section 2 Unit 14 |
@@ -529,12 +532,13 @@ one or more Kanji characters.
 | Nakayama | なかやま | <span class="kanji">中山</span> | Section 1 Unit 4 |
 | name | なまえ | <span class="kanji">名前</span> | Section 2 Unit 15 |
 | Naomi | なおみ | <span class="kanji">直美</span> | Section 1 Unit 2 |
+| narrow | せまい | <span class="kanji">狭い</span> | Section 3 Unit 4 |
 | near | ちかい | <span class="kanji">近い</span> | Section 2 Unit 2 |
 | nearby | ちかく | | Section 2 Unit 5 |
 | necktie | ネクタイ | | Section 1 Unit 8 |
 | new | あたらしい | <span class="kanji">新しい</span> | Section 1 Unit 8 |
 | New York | ニューヨーク | | Section 1 Unit 6 |
-| next | つぎ | | Section 2 Unit 4 |
+| next | つぎ | <span class="kanji">次</span> | Section 2 Unit 4 |
 | next door | となり | <span class="kanji">隣</span> | Section 2 Unit 16 |
 | next month | らいげつ | <span class="kanji">来月</span> | Section 2 Unit 7 |
 | next to | よこ | <span class="kanji">横</span> | Section 2 Unit 16 |
@@ -792,7 +796,7 @@ one or more Kanji characters.
 | South Korea | かんこく | <span class="kanji">韓国</span> | Section 2 Unit 3 |
 | souvenir | おみやげ | <span class="kanji">お土産</span> | Section 2 Unit 4 |
 | soy sauce | しょうゆ | <span class="kanji">醤油</span> | Section 2 Unit 8 |
-| spacious | ひろい | | Section 2 Unit 3 |
+| spacious | ひろい | <span class="kanji">広い</span> | Section 2 Unit 3 |
 | Spanish (language) | スペインご | | Section 2 Unit 9 |
 | spicy | からい | | Section 2 Unit 15 |
 | splendid | りっぱ | <span class="kanji">立派</span> | Section 3 Unit 3 |
@@ -861,12 +865,16 @@ one or more Kanji characters.
 | that over there | あの | | Section 1 Unit 8 |
 | that over there | あれ | | Section 2 Unit 4 |
 | that way | そちら | | Section 3 Unit 1 |
+| that way | そっち | | Section 3 Unit 4 |
+| that way | あっち | | Section 3 Unit 4 |
 | the day after tomorrow | あさって | <span class="kanji">明後日</span> | Section 2 Unit 16 |
 | the week after next | さらいしゅう | <span class="kanji">再来週</span> | Section 2 Unit 20 |
 | the year before last | おととし | <span class="kanji">一昨年</span> | Section 3 Unit 2 |
 | theme park | ゆうえんち | | Section 2 Unit 10 |
 | then | そして | | Section 2 Unit 6 |
 | there | そこ | | Section 1 Unit 3 |
+| there | そっち | | Section 3 Unit 4 |
+| there | あっち | | Section 3 Unit 4 |
 | there (direction) | そちら | | Section 3 Unit 1 |
 | these | これら | | Section 1 Unit 4 |
 | they | かれら | <span class="kanji">彼ら</span> | Section 2 Unit 15 |
@@ -878,6 +886,7 @@ one or more Kanji characters.
 | this month | こんげつ | <span class="kanji">今月</span> | Section 2 Unit 20 |
 | this morning | けさ | <span class="kanji">今朝</span> | Section 2 Unit 20 |
 | this way | こちら | | Section 2 Unit 15 |
+| this way | こっち | | Section 3 Unit 4 |
 | this week | こんしゅう | <span class="kanji">今週</span> | Section 2 Unit 3 |
 | this year | ことし | <span class="kanji">今年</span> | Section 3 Unit 2 |
 | those | それら | | Section 1 Unit 4 |
@@ -987,6 +996,7 @@ one or more Kanji characters.
 | to talk | はなします | <span class="kanji">話します</span> | Section 2 Unit 1 |
 | to teach | おしえます | <span class="kanji">教えます</span> | Section 2 Unit 20 |
 | to translate | ほんやくします | | Section 2 Unit 9 |
+| to turn | まがります | <span class="kanji">曲がります</span> | Section 3 Unit 4 |
 | to turn on | つけます | | Section 2 Unit 17 |
 | to use | つかいます | <span class="kanji">使います</span> | Section 2 Unit 8 |
 | to wait for | まちます | | Section 2 Unit 7 |
@@ -1081,6 +1091,7 @@ one or more Kanji characters.
 | when | いつ | | Section 2 Unit 3 |
 | where | どこ | | Section 1 Unit 3 |
 | which | どの | | Section 2 Unit 8 |
+| which (one, way) | どっち | | Section 3 Unit 4 |
 | which one | どれ | | Section 2 Unit 12 |
 | which way | どちら | | Section 3 Unit 1 |
 | white | しろい | <span class="kanji">白い</span> | Section 1 Unit 4 |

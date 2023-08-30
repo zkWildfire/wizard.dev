@@ -26,6 +26,17 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| corner | かど | 角 |
+| go straight | まっすぐすすみます | まっすぐ進みます |
+| here | こっち | |
+| narrow | せまい | 狭い |
+| this way | こっち | |
+| that way | そっち | |
+| that way | あっち | |
+| there | そっち | |
+| there | あっち | |
+| to turn | まがります | 曲がります |
+| which (one, way) | どっち | |
 
 ### Examples
 | English | Japanese |
