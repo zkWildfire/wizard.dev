@@ -15,6 +15,11 @@ public readonly record struct MetricsSnapshot
 	public required int Epoch { get; init; }
 
 	/// <summary>
+	/// Time taken to complete the epoch.
+	/// </summary>
+	public required TimeSpan Duration { get; init; }
+
+	/// <summary>
 	/// Accuracy of the model during the epoch.
 	/// </summary>
 	public required float Accuracy { get; init; }

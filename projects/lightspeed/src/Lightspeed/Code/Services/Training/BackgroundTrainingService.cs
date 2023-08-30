@@ -3,6 +3,7 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification.Models;
+using Lightspeed.Classification.Training;
 namespace Lightspeed.Services.Training;
 
 /// <summary>
@@ -11,15 +12,9 @@ namespace Lightspeed.Services.Training;
 public class BackgroundTrainingService : IHostedTrainingService
 {
 	/// <summary>
-	/// Stores callbacks allowing training to be cancelled.
+	/// Set of all active sessions.
 	/// </summary>
-	private readonly ConcurrentDictionary<int, Action>
-		_cancellationCallbacks = new();
-
-	/// <summary>
-	/// Next ID to assign to a training task.
-	/// </summary>
-	private int _nextId = 1;
+	private readonly ConcurrentBag<ITrainingSession> _sessions = new();
 
 	/// <summary>
 	/// Initializes the service.
@@ -42,10 +37,15 @@ public class BackgroundTrainingService : IHostedTrainingService
 	/// <returns>A task set once the service has been stopped.</returns>
 	public Task StopAsync(CancellationToken cancellationToken)
 	{
-		foreach (var (_, callback) in _cancellationCallbacks)
+		foreach (var session in _sessions)
 		{
-			callback();
+			session.Cancel();
 		}
+
+		Task.WaitAll(
+			_sessions.Select(s => s.WaitAsync()).ToArray(),
+			cancellationToken
+		);
 		return Task.CompletedTask;
 	}
 
@@ -58,32 +58,17 @@ public class BackgroundTrainingService : IHostedTrainingService
 	/// <param name="hyperparameters">
 	/// Hyperparameters to pass to the model.
 	/// </param>
-	/// <param name="cancellationCallback">
-	/// Callback that allows the service to cancel training of the model.
-	/// </param>
-	/// <param name="cancellationToken">
-	/// Token passed to the model allowing for cancellation of the training.
-	/// </param>
-	/// <returns>A task set once training is complete.</returns>
-	public Task TrainModel(
+	/// <returns>
+	/// An object that allows the training session to be monitored and
+	///   controlled.
+	/// </returns>
+	public ITrainingSession TrainModel(
 		IClassificationModelInstance model,
-		Hyperparameters hyperparameters,
-		Action cancellationCallback,
-		CancellationToken cancellationToken)
+		Hyperparameters hyperparameters)
 	{
-		// Save the cancellation callback so that it can be called if the
-		//   service is stopped
-		var id = _nextId++;
-		_cancellationCallbacks[id] = cancellationCallback;
-
-		// Start training the model on a background thread
-		return Task.Run(async () =>
-		{
-			await model.Train(hyperparameters, cancellationToken)
-				.ConfigureAwait(false);
-
-			// Remove the cancellation callback once training is complete
-			_ = _cancellationCallbacks.TryRemove(id, out _);
-		}, cancellationToken);
+		return new BackgroundTrainingSession(
+			model,
+			hyperparameters
+		);
 	}
 }

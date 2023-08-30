@@ -3,6 +3,7 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification.Models;
+using Lightspeed.Classification.Training;
 namespace Lightspeed.Services.Training;
 
 /// <summary>
@@ -19,17 +20,12 @@ public interface IHostedTrainingService : IHostedService
 	/// <param name="hyperparameters">
 	/// Hyperparameters to pass to the model.
 	/// </param>
-	/// <param name="cancellationCallback">
-	/// Callback that allows the service to cancel training of the model.
-	/// </param>
-	/// <param name="cancellationToken">
-	/// Token passed to the model allowing for cancellation of the training.
-	/// </param>
-	/// <returns>A task set once training is complete.</returns>
-	Task TrainModel(
+	/// <returns>
+	/// An object that allows the training session to be monitored and
+	///   controlled.
+	/// </returns>
+	ITrainingSession TrainModel(
 		IClassificationModelInstance model,
-		Hyperparameters hyperparameters,
-		Action cancellationCallback,
-		CancellationToken cancellationToken
+		Hyperparameters hyperparameters
 	);
 }

@@ -8,12 +8,17 @@ namespace Lightspeed.Classification.Training;
 /// <summary>
 /// Interface that provides thread safe access to a training session.
 /// </summary>
-public interface ITrainingSession
+public interface ITrainingSession : IDisposable
 {
 	/// <summary>
 	/// Event that is fired when an epoch is completed.
 	/// </summary>
 	event EventHandler<OnEpochCompleteEventArgs>? OnEpochComplete;
+
+	/// <summary>
+	/// Whether or not the training session is currently running.
+	/// </summary>
+	bool IsActive { get; }
 
 	/// <summary>
 	/// Epoch that the training session is currently on.
