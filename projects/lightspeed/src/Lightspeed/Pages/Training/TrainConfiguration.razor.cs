@@ -6,8 +6,12 @@ using Lightspeed.Classification;
 using Lightspeed.Classification.Models;
 using Lightspeed.Classification.Validators;
 using Lightspeed.Components.Training;
+using Lightspeed.Components.Validators;
 using Lightspeed.Services.Datasets;
 using Lightspeed.Services.Models;
+using Lightspeed.Services.Training;
+using TorchSharp;
+using static Lightspeed.Classification.Models.GenericHyperparameterStatics;
 namespace Lightspeed.Pages.Training;
 
 /// <summary>
@@ -30,6 +34,18 @@ public partial class TrainConfiguration : ComponentBase
 	private IModelsService ModelsService { get; set; } = null!;
 
 	/// <summary>
+	/// Navigation manager for the app.
+	/// </summary>
+	[Inject]
+	private NavigationManager NavigationManager { get; set; } = null!;
+
+	/// <summary>
+	/// Service that manages all training sessions.
+	/// </summary>
+	[Inject]
+	private IHostedTrainingService TrainingService { get; set; } = null!;
+
+	/// <summary>
 	/// Helper property used to bind to dataset selector events.
 	/// </summary>
 	private DatasetSelector? DatasetSelectors
@@ -50,6 +66,169 @@ public partial class TrainConfiguration : ComponentBase
 		{
 			Debug.Assert(value != null);
 			value.OnModelSelected += OnModelSelected;
+			if (IsSelectedModel(value.Model))
+			{
+				_modelSelector = value;
+			}
+		}
+	}
+
+	/// <summary>
+	/// Helper property used to bind to hyperparameter components.
+	/// </summary>
+	private Hyperparameter HyperparameterComponent
+	{
+		set
+		{
+			_genericHyperparameterValues[value.Validator.Id] = value.Value;
+			value.OnHyperparameterSet += (sender, args) =>
+			{
+				_genericHyperparameterValues[args.Validator.Id] = args.Value;
+			};
+		}
+	}
+
+	/// <summary>
+	/// Whether dataset shuffling should be enabled.
+	/// </summary>
+	private bool Shuffle
+	{
+		get
+		{
+			// Get the string representing the shuffle value
+			var shuffleStr = _genericHyperparameterValues[
+				_shuffleHyperparameter.Id
+			];
+			Debug.Assert(shuffleStr != null);
+			return shuffleStr == "1";
+		}
+	}
+
+	/// <summary>
+	/// Gets the selected optimizer type.
+	/// </summary>
+	private EOptimizerType OptimizerType
+	{
+		get
+		{
+			// Get the string representing the optimizer type
+			var displayName = _genericHyperparameterValues[
+				_optimizerTypeHyperparameter.Id
+			];
+			Debug.Assert(displayName != null);
+			return _optimizerTypeHyperparameter.EnumValues[
+				displayName
+			];
+		}
+	}
+
+	/// <summary>
+	/// Gets the selected loss function.
+	/// </summary>
+	private ELossType LossType
+	{
+		get
+		{
+			// Get the string representing the loss type
+			var displayName = _genericHyperparameterValues[
+				_lossTypeHyperparameter.Id
+			];
+			Debug.Assert(displayName != null);
+			return _lossTypeHyperparameter.EnumValues[
+				displayName
+			];
+		}
+	}
+
+	/// <summary>
+	/// Gets the selected learning rate.
+	/// </summary>
+	private float LearningRate
+	{
+		get
+		{
+			// Get the string representing the learning rate
+			var learningRateStr = _genericHyperparameterValues[
+				_learningRateHyperparameter.Id
+			];
+			Debug.Assert(learningRateStr != null);
+			return float.Parse(
+				learningRateStr,
+				CultureInfo.InvariantCulture
+			);
+		}
+	}
+
+	/// <summary>
+	/// Gets the selected number of epochs.
+	/// </summary>
+	private int Epochs
+	{
+		get
+		{
+			// Get the string representing the number of epochs
+			var epochsStr = _genericHyperparameterValues[
+				_epochsHyperparameter.Id
+			];
+			Debug.Assert(epochsStr != null);
+			return int.Parse(
+				epochsStr,
+				CultureInfo.InvariantCulture
+			);
+		}
+	}
+
+	/// <summary>
+	/// Gets the selected batch size.
+	/// </summary>
+	private int BatchSize
+	{
+		get
+		{
+			// Get the string representing the batch size
+			var batchSizeStr = _genericHyperparameterValues[
+				_batchSizeHyperparameter.Id
+			];
+			Debug.Assert(batchSizeStr != null);
+			return int.Parse(
+				batchSizeStr,
+				CultureInfo.InvariantCulture
+			);
+		}
+	}
+
+	/// <summary>
+	/// Gets the selected number of epochs between saves.
+	/// </summary>
+	private int SaveEpochs
+	{
+		get
+		{
+			// Get the string representing the number of epochs between saves
+			var saveEpochsStr = _genericHyperparameterValues[
+				_saveEpochsHyperparameter.Id
+			];
+			Debug.Assert(saveEpochsStr != null);
+			return int.Parse(
+				saveEpochsStr,
+				CultureInfo.InvariantCulture
+			);
+		}
+	}
+
+	/// <summary>
+	/// Gets the path to save the model data to.
+	/// </summary>
+	private string SavePath
+	{
+		get
+		{
+			// Get the string representing the save path
+			var savePath = _genericHyperparameterValues[
+				_savePathHyperparameter.Id
+			];
+			Debug.Assert(savePath != null);
+			return savePath;
 		}
 	}
 
@@ -64,12 +243,22 @@ public partial class TrainConfiguration : ComponentBase
 	private IClassificationModel? _selectedModel;
 
 	/// <summary>
+	/// Model selector corresponding to the selected model.
+	/// </summary>
+	private ModelSelector? _modelSelector;
+
+	/// <summary>
 	/// List of hyperparameter validators for generic hyperparameters.
 	/// Hyperparameters are added to this list in the order they should appear
 	///   on the UI.
 	/// </summary>
 	private readonly IReadOnlyList<IHyperparameterValidator>
 		_genericHyperparameters;
+
+	/// <summary>
+	/// Hyperparameter validator for the shuffle hyperparameter.
+	/// </summary>
+	private readonly BoolHyperparameterValidator _shuffleHyperparameter;
 
 	/// <summary>
 	/// Hyperparameter validator for the optimizer hyperparameter.
@@ -109,31 +298,47 @@ public partial class TrainConfiguration : ComponentBase
 	private readonly StringHyperparameterValidator _savePathHyperparameter;
 
 	/// <summary>
+	/// Dictionary storing the value of each generic hyperparameter.
+	/// Each key will be the unique ID of the hyperparameter and the value will
+	///   be the stringified value of the hyperparameter.
+	/// </summary>
+	private readonly Dictionary<string, string?> _genericHyperparameterValues =
+		new();
+
+	/// <summary>
 	/// Initializes the component.
 	/// </summary>
 	public TrainConfiguration()
 	{
-		_optimizerTypeHyperparameter = new EnumHyperparameterValidator<EOptimizerType>(
-			"optimizer",
-			"Optimizer",
-			"Optimizer to use for training the model.",
+		_shuffleHyperparameter = new BoolHyperparameterValidator(
+			PARAMETER_SHUFFLE,
+			NAME_SHUFFLE,
+			DESCRIPTION_SHUFFLE,
+			defaultValue: true,
+			isOptional: true
+		);
+		_optimizerTypeHyperparameter =
+			new EnumHyperparameterValidator<EOptimizerType>(
+			PARAMETER_OPTIMIZER_TYPE,
+			NAME_OPTIMIZER_TYPE,
+			DESCRIPTION_OPTIMIZER_TYPE,
 			Enum.GetValues<EOptimizerType>()
 				.Select(x => new Tuple<EOptimizerType, string>(x, x.ToString()))
 				.ToList()
 		);
 		_lossTypeHyperparameter = new EnumHyperparameterValidator<ELossType>(
-			"loss",
-			"Loss Function",
-			"Loss function to use for training the model.",
+			PARAMETER_LOSS_TYPE,
+			NAME_LOSS_TYPE,
+			DESCRIPTION_LOSS_TYPE,
 			new List<Tuple<ELossType, string>>()
 			{
 				new(ELossType.CrossEntropy, "Cross Entropy"),
 			}
 		);
 		_learningRateHyperparameter = new FloatHyperparameterValidator(
-			"learning_rate",
-			"Learning Rate",
-			"Learning rate to use for training the model.",
+			PARAMETER_LEARNING_RATE,
+			NAME_LEARNING_RATE,
+			DESCRIPTION_LEARNING_RATE,
 			constraints: "Must be a positive number.",
 			constraintFuncs: new List<Func<float, bool>>()
 			{
@@ -142,9 +347,9 @@ public partial class TrainConfiguration : ComponentBase
 			defaultValue: 0.001f
 		);
 		_epochsHyperparameter = new IntHyperparameterValidator(
-			"epochs",
-			"Epochs",
-			"Number of epochs to train the model for.",
+			PARAMETER_EPOCHS,
+			NAME_EPOCHS,
+			DESCRIPTION_EPOCHS,
 			constraints: "Must be a positive number.",
 			constraintFuncs: new List<Func<int, bool>>()
 			{
@@ -153,9 +358,9 @@ public partial class TrainConfiguration : ComponentBase
 			defaultValue: 10
 		);
 		_batchSizeHyperparameter = new IntHyperparameterValidator(
-			"batch_size",
-			"Batch Size",
-			"Size to use for each batch of data.",
+			PARAMETER_BATCH_SIZE,
+			NAME_BATCH_SIZE,
+			DESCRIPTION_BATCH_SIZE,
 			constraints: "Must be a positive number.",
 			constraintFuncs: new List<Func<int, bool>>()
 			{
@@ -164,9 +369,9 @@ public partial class TrainConfiguration : ComponentBase
 			defaultValue: 64
 		);
 		_saveEpochsHyperparameter = new IntHyperparameterValidator(
-			"save_epochs",
-			"Save Epochs",
-			"Number of epochs between saves of the model data. If this is `0`, the model data will not be saved during training.",
+			PARAMETER_SAVE_INTERVAL,
+			NAME_SAVE_INTERVAL,
+			DESCRIPTION_SAVE_INTERVAL,
 			constraints: "Must be a non-negative number.",
 			constraintFuncs: new List<Func<int, bool>>()
 			{
@@ -176,14 +381,9 @@ public partial class TrainConfiguration : ComponentBase
 			isOptional: true
 		);
 		_savePathHyperparameter = new StringHyperparameterValidator(
-			"save_path",
-			"Save Path",
-			"Path to save the model data to. Relative paths will be " +
-			"interpreted relative to the server's current working directory. " +
-			"If the path already exists and the saved data is compatible with " +
-			"the selected model, the model will be initialized with the saved " +
-			"data. If this is not specified, the model data will not be saved " +
-			"during training.",
+			PARAMETER_SAVE_PATH,
+			NAME_SAVE_PATH,
+			DESCRIPTION_SAVE_PATH,
 			constraints: "Must be a valid file path.",
 			constraintFuncs: new List<Func<string, bool>>()
 			{
@@ -195,6 +395,7 @@ public partial class TrainConfiguration : ComponentBase
 
 		_genericHyperparameters = new List<IHyperparameterValidator>()
 		{
+			_shuffleHyperparameter,
 			_optimizerTypeHyperparameter,
 			_lossTypeHyperparameter,
 			_learningRateHyperparameter,
@@ -253,5 +454,57 @@ public partial class TrainConfiguration : ComponentBase
 	{
 		_selectedModel = e.Model;
 		StateHasChanged();
+	}
+
+	/// <summary>
+	/// Callback invoked when the "Train" button is clicked.
+	/// </summary>
+	private void OnTrainClicked()
+	{
+		// TODO: Display an error message if any of these checks fail
+		if (_selectedDataset == null)
+		{
+			return;
+		}
+		if (_selectedModel == null)
+		{
+			return;
+		}
+
+		// It shouldn't be possible for this to be null if `_selectedModel` is
+		//   not null
+		Debug.Assert(_modelSelector != null);
+
+		// TODO: Validate the hyperparameters
+
+		// Set up the hyperparameter objects
+		var hyperparameters = new Hyperparameters()
+		{
+			Optimizer = OptimizerType,
+			Loss = LossType,
+			Dataset = _selectedDataset.CreateTrainingInstance(
+				Shuffle
+			),
+			LearningRate = LearningRate,
+			Epochs = Epochs,
+			BatchSize = BatchSize,
+			SaveInterval = SaveEpochs
+		};
+		var modelHyperparameters = _modelSelector.Hyperparameters;
+
+		// Create the training session
+		var trainingSession = TrainingService.TrainModel(
+			_selectedModel.CreateInstance(
+				hyperparameters.Dataset.InputSize,
+				hyperparameters.Dataset.OutputSize,
+				torch.CUDA,
+				SavePath,
+				modelHyperparameters
+			),
+			hyperparameters
+		);
+		NavigationManager.NavigateTo(
+			$"/train/session/{trainingSession.SessionId}"
+		);
 	}
 }

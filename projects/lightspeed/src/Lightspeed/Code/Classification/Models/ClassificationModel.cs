@@ -82,6 +82,6 @@ public interface IClassificationModel
 		Size outputSize,
 		Device device,
 		string saveFolder,
-		IReadOnlyDictionary<string, string> hyperparameters
+		IReadOnlyDictionary<string, string?> hyperparameters
 	);
 }

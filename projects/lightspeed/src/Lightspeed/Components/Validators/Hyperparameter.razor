@@ -4,30 +4,35 @@
 	@if (Validator.ParameterType == typeof(bool))
 	{
 		<BoolHyperparameter
+			@ref="BoolComponent"
 			Validator="@(Validator as BoolHyperparameterValidator)"
 		/>
 	}
 	else if (Validator.ParameterType == typeof(int))
 	{
 		<IntHyperparameter
+			@ref="IntComponent"
 			Validator="@(Validator as IntHyperparameterValidator)"
 		/>
 	}
 	else if (Validator.ParameterType == typeof(float))
 	{
 		<FloatHyperparameter
+			@ref="FloatComponent"
 			Validator="@(Validator as FloatHyperparameterValidator)"
 		/>
 	}
 	else if (Validator.ParameterType == typeof(string))
 	{
 		<StringHyperparameter
+			@ref="StringComponent"
 			Validator="@(Validator as StringHyperparameterValidator)"
 		/>
 	}
 	else if (Validator.ParameterType.IsEnum)
 	{
 		<EnumHyperparameter
+			@ref="EnumComponent"
 			Validator="@(Validator as StringSetHyperparameterValidator)"
 		/>
 	}

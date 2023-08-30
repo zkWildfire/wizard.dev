@@ -26,7 +26,27 @@ public partial class IntHyperparameter : ComponentBase
 	/// This value may or may not be a valid value. Parameter validation is only
 	///   done once the user clicks the "Train" button.
 	/// </summary>
-	private int Value { get; set; }
+	public int Value
+	{
+		get => _value;
+		private set
+		{
+			_value = value;
+			OnHyperparameterSet?.Invoke(
+				this,
+				new OnHyperparameterSetEventArgs()
+				{
+					Validator = Validator,
+					Value = value.ToString(CultureInfo.InvariantCulture)
+				}
+			);
+		}
+	}
+
+	/// <summary>
+	/// Field backing the <see cref="Value"/> property.
+	/// </summary>
+	private int _value;
 
 	/// <summary>
 	/// Initializes the component.

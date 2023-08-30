@@ -27,6 +27,16 @@ public sealed class GenericDatasetInstance : IDatasetInstance
 	public int Count => TrainingSet.Count + ValidationSet.Count + TestSet.Count;
 
 	/// <summary>
+	/// Size of each input tensor in the dataset.
+	/// </summary>
+	public Size InputSize { get; }
+
+	/// <summary>
+	/// Size that each output tensor from the model should be.
+	/// </summary>
+	public Size OutputSize { get; }
+
+	/// <summary>
 	/// Gets the data to use for training.
 	/// </summary>
 	/// <remarks>
@@ -61,20 +71,40 @@ public sealed class GenericDatasetInstance : IDatasetInstance
 	/// <summary>
 	/// Initializes the dataset instance.
 	/// </summary>
-	/// <param name="dataset">Dataset that the instance was created by.</param>
-	/// <param name="device">Device to place the dataset slice's data on.</param>
-	/// <param name="trainingSet">Slice to use for training.</param>
-	/// <param name="validationSet">Slice to use for validation.</param>
-	/// <param name="testSet">Slice to use for testing.</param>
+	/// <param name="dataset">
+	/// Dataset that the instance was created by.
+	/// </param>
+	/// <param name="device">
+	/// Device to place the dataset slice's data on.
+	/// </param>
+	/// <param name="inputSize">
+	/// Size of each input tensor in the dataset.
+	/// </param>
+	/// <param name="outputSize">
+	/// Size that each output tensor from the model should be.
+	/// </param>
+	/// <param name="trainingSet">
+	/// Slice to use for training.
+	/// </param>
+	/// <param name="validationSet">
+	/// Slice to use for validation.
+	/// </param>
+	/// <param name="testSet">
+	/// Slice to use for testing.
+	/// </param>
 	public GenericDatasetInstance(
 		IDataset dataset,
 		Device device,
 		IDatasetSlice trainingSet,
 		IDatasetSlice validationSet,
-		IDatasetSlice testSet)
+		IDatasetSlice testSet,
+		Size inputSize,
+		Size outputSize)
 	{
 		Dataset = dataset;
 		Device = device;
+		InputSize = inputSize;
+		OutputSize = outputSize;
 		TrainingSet = trainingSet;
 		ValidationSet = validationSet;
 		TestSet = testSet;

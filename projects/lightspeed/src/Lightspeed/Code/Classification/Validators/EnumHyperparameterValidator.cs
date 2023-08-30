@@ -12,6 +12,11 @@ public class EnumHyperparameterValidator<T>
 	where T : struct, Enum
 {
 	/// <summary>
+	/// Map of enum display names to their corresponding enum values.
+	/// </summary>
+	public IReadOnlyDictionary<string, T> EnumValues { get; }
+
+	/// <summary>
 	/// Initializes the hyperparameter validator.
 	/// </summary>
 	/// <param name="id">
@@ -54,5 +59,8 @@ public class EnumHyperparameterValidator<T>
 			isOptional
 		)
 	{
+		EnumValues = new Dictionary<string, T>(
+			enumValues.Select(x => new KeyValuePair<string, T>(x.Item2, x.Item1))
+		);
 	}
 }

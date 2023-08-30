@@ -63,11 +63,6 @@ public class SimpleModel : IClassificationModel
 	public IReadOnlyList<IHyperparameterValidator> Hyperparameters { get; }
 
 	/// <summary>
-	/// Size to use for the model's hidden layer.
-	/// </summary>
-	private const string PARAMETER_HIDDEN_LAYER_SIZE = "hidden-layer-size";
-
-	/// <summary>
 	/// Initializes the model instance.
 	/// </summary>
 	public SimpleModel()
@@ -75,8 +70,8 @@ public class SimpleModel : IClassificationModel
 		Hyperparameters = new List<IHyperparameterValidator>()
 		{
 			new IntHyperparameterValidator(
-				PARAMETER_HIDDEN_LAYER_SIZE,
-				"Hidden Layer Size",
+				SimpleModelStatics.PARAMETER_HIDDEN_LAYER_SIZE,
+				SimpleModelStatics.NAME_HIDDEN_LAYER_SIZE,
 				"Size of the model's hidden layer.",
 				new List<Func<int, bool>>()
 				{
@@ -121,10 +116,10 @@ public class SimpleModel : IClassificationModel
 		Size outputSize,
 		Device device,
 		string saveFolder,
-		IReadOnlyDictionary<string, string> hyperparameters)
+		IReadOnlyDictionary<string, string?> hyperparameters)
 	{
 		var hiddenLayerSize = int.Parse(
-			hyperparameters[PARAMETER_HIDDEN_LAYER_SIZE],
+			hyperparameters[SimpleModelStatics.PARAMETER_HIDDEN_LAYER_SIZE]!,
 			CultureInfo.InvariantCulture
 		);
 

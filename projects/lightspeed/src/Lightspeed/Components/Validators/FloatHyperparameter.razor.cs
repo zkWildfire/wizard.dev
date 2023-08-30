@@ -26,7 +26,27 @@ public partial class FloatHyperparameter : ComponentBase
 	/// This value may or may not be a valid value. Parameter validation is only
 	///   done once the user clicks the "Train" button.
 	/// </summary>
-	private float Value { get; set; }
+	public float Value
+	{
+		get => _value;
+		private set
+		{
+			_value = value;
+			OnHyperparameterSet?.Invoke(
+				this,
+				new OnHyperparameterSetEventArgs()
+				{
+					Validator = Validator,
+					Value = value.ToString(CultureInfo.InvariantCulture)
+				}
+			);
+		}
+	}
+
+	/// <summary>
+	/// Field backing the <see cref="Value"/> property.
+	/// </summary>
+	private float _value;
 
 	/// <summary>
 	/// Initializes the component.

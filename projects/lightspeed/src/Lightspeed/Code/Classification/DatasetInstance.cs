@@ -32,6 +32,16 @@ public interface IDatasetInstance : IDisposable, IEnumerable<IDatasetElement>
 	int Count { get; }
 
 	/// <summary>
+	/// Size of each input tensor in the dataset.
+	/// </summary>
+	Size InputSize { get; }
+
+	/// <summary>
+	/// Size that each output tensor from the model should be.
+	/// </summary>
+	Size OutputSize { get; }
+
+	/// <summary>
 	/// Gets the data to use for training.
 	/// </summary>
 	/// <remarks>

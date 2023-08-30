@@ -26,7 +26,27 @@ public partial class EnumHyperparameter : ComponentBase
 	/// This value may or may not be a valid value. Parameter validation is only
 	///   done once the user clicks the "Train" button.
 	/// </summary>
-	private string Value { get; set; } = string.Empty;
+	public string Value
+	{
+		get => _value;
+		private set
+		{
+			_value = value;
+			OnHyperparameterSet?.Invoke(
+				this,
+				new OnHyperparameterSetEventArgs()
+				{
+					Validator = Validator,
+					Value = value
+				}
+			);
+		}
+	}
+
+	/// <summary>
+	/// Field backing the <see cref="Value"/> property.
+	/// </summary>
+	private string _value = string.Empty;
 
 	/// <summary>
 	/// Initializes the component.

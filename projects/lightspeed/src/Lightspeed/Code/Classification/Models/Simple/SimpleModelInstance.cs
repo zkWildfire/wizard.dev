@@ -23,6 +23,13 @@ public class SimpleModelInstance : IClassificationModelInstance
 	public Device Device { get; }
 
 	/// <summary>
+	/// Model-specific hyperparameters used for the model.
+	/// Each key-value pair in this dictionary will be the display name for the
+	///   hyperparameter and the value for the hyperparameter.
+	/// </summary>
+	public IReadOnlyDictionary<string, string> ModelHyperparameters { get; }
+
+	/// <summary>
 	/// First layer of the model.
 	/// </summary>
 	private readonly Linear _layer1;
@@ -64,6 +71,13 @@ public class SimpleModelInstance : IClassificationModelInstance
 		string saveFolder)
 	{
 		Device = device;
+		ModelHyperparameters = new Dictionary<string, string>()
+		{
+			{
+				SimpleModelStatics.NAME_HIDDEN_LAYER_SIZE,
+				hiddenSize.ToString(CultureInfo.InvariantCulture)
+			}
+		};
 		var flattenedInputSize = inputSize.Aggregate(1L, (a, b) => a * b);
 		var flattenedOutputSize = outputSize.Aggregate(1L, (a, b) => a * b);
 

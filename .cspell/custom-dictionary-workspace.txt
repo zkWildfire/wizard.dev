@@ -17,6 +17,7 @@ copyrighter
 cppcheck
 cpplint
 ctest
+CUDA
 customizability
 DEPFILE
 devcontainer

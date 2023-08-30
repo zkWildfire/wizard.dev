@@ -22,6 +22,11 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 	public event EventHandler? OnTrainingCompleted;
 
 	/// <summary>
+	/// Unique ID assigned to the session.
+	/// </summary>
+	public Guid SessionId { get; }
+
+	/// <summary>
 	/// Whether or not the training session is currently running.
 	/// </summary>
 	public bool IsActive => !_trainingComplete;
@@ -34,7 +39,7 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 	/// <summary>
 	/// Total number of epochs that will be completed.
 	/// </summary>
-	public int TotalEpochs => _hyperparameters.Epochs;
+	public int TotalEpochs => Hyperparameters.Epochs;
 
 	/// <summary>
 	/// Average time spent per completed epoch.
@@ -72,6 +77,19 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 	}
 
 	/// <summary>
+	/// Hyperparameters used for the training session.
+	/// </summary>
+	public Hyperparameters Hyperparameters { get; }
+
+	/// <summary>
+	/// Model-specific hyperparameters used for the model.
+	/// Each key-value pair in this dictionary will be the display name for the
+	///   hyperparameter and the value for the hyperparameter.
+	/// </summary>
+	public IReadOnlyDictionary<string, string> ModelHyperparameters =>
+		_model.ModelHyperparameters;
+
+	/// <summary>
 	/// Gets the metrics for each epoch that has been completed.
 	/// </summary>
 	/// <remarks>
@@ -86,11 +104,6 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 	/// Model being trained.
 	/// </summary>
 	private readonly IClassificationModelInstance _model;
-
-	/// <summary>
-	/// Hyperparameters for the model.
-	/// </summary>
-	private readonly Hyperparameters _hyperparameters;
 
 	/// <summary>
 	/// Task set once the training session has completed or been cancelled.
@@ -142,10 +155,14 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		IClassificationModelInstance model,
 		Hyperparameters hyperparameters)
 	{
+		SessionId = Guid.NewGuid();
+		Hyperparameters = hyperparameters;
 		_model = model;
-		_hyperparameters = hyperparameters;
 		_trainingStartTime = DateTime.UtcNow;
 		_epochStartTime = _trainingStartTime;
+
+		// Hook into events
+		_model.OnEpochComplete += NotifyOnEpochComplete;
 
 		// Start training the model on a background thread
 		_trainingTask = Task.Run(async () =>
@@ -211,7 +228,7 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		});
 
 		// Update internal state
-		var isLastEpoch = args.CompletedEpoch == _hyperparameters.Epochs;
+		var isLastEpoch = args.CompletedEpoch == Hyperparameters.Epochs;
 		_epochStartTime = DateTime.UtcNow;
 		if (isLastEpoch)
 		{

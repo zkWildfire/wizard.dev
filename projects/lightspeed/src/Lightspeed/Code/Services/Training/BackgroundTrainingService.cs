@@ -12,9 +12,27 @@ namespace Lightspeed.Services.Training;
 public class BackgroundTrainingService : IHostedTrainingService
 {
 	/// <summary>
+	/// Collection of all sessions, indexed by session ID.
+	/// </summary>
+	public IReadOnlyDictionary<Guid, ITrainingSession> Sessions => _sessions;
+
+	/// <summary>
+	/// Collection of all active sessions, indexed by session ID.
+	/// </summary>
+	public IReadOnlyDictionary<Guid, ITrainingSession> ActiveSessions =>
+		_activeSessions;
+
+	/// <summary>
+	/// Set of all sessions.
+	/// </summary>
+	private readonly ConcurrentDictionary<Guid, ITrainingSession> _sessions =
+		new();
+
+	/// <summary>
 	/// Set of all active sessions.
 	/// </summary>
-	private readonly ConcurrentBag<ITrainingSession> _sessions = new();
+	private readonly ConcurrentDictionary<Guid, ITrainingSession>
+		_activeSessions = new();
 
 	/// <summary>
 	/// Initializes the service.
@@ -37,13 +55,13 @@ public class BackgroundTrainingService : IHostedTrainingService
 	/// <returns>A task set once the service has been stopped.</returns>
 	public Task StopAsync(CancellationToken cancellationToken)
 	{
-		foreach (var session in _sessions)
+		foreach (var session in _activeSessions.Values)
 		{
 			session.Cancel();
 		}
 
 		Task.WaitAll(
-			_sessions.Select(s => s.WaitAsync()).ToArray(),
+			_activeSessions.Values.Select(s => s.WaitAsync()).ToArray(),
 			cancellationToken
 		);
 		return Task.CompletedTask;
@@ -66,9 +84,29 @@ public class BackgroundTrainingService : IHostedTrainingService
 		IClassificationModelInstance model,
 		Hyperparameters hyperparameters)
 	{
-		return new BackgroundTrainingSession(
+		var session = new BackgroundTrainingSession(
 			model,
 			hyperparameters
 		);
+
+		// Save the session
+		var result = _sessions.TryAdd(session.SessionId, session);
+		result &= _activeSessions.TryAdd(session.SessionId, session);
+		Debug.Assert(result);
+
+		// Remove the session from the active sessions once it completes
+		session.OnTrainingCompleted += (sender, args) =>
+		{
+			_ = _activeSessions.TryRemove(session.SessionId, out _);
+		};
+
+		// In case the session already completed for some reason, check its
+		//   status and remove it from the active sessions if necessary
+		if (!session.IsActive)
+		{
+			_ = _activeSessions.TryRemove(session.SessionId, out _);
+		}
+
+		return session;
 	}
 }

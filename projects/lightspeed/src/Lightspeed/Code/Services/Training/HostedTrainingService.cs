@@ -12,6 +12,16 @@ namespace Lightspeed.Services.Training;
 public interface IHostedTrainingService : IHostedService
 {
 	/// <summary>
+	/// Collection of all sessions, indexed by session ID.
+	/// </summary>
+	IReadOnlyDictionary<Guid, ITrainingSession> Sessions { get; }
+
+	/// <summary>
+	/// Collection of all active sessions, indexed by session ID.
+	/// </summary>
+	IReadOnlyDictionary<Guid, ITrainingSession> ActiveSessions { get; }
+
+	/// <summary>
 	/// Trains the model using the given hyperparameters.
 	/// </summary>
 	/// <param name="model">

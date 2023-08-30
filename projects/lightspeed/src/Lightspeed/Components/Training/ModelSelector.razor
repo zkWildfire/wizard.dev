@@ -39,6 +39,7 @@
 	@foreach (var validator in Model.Hyperparameters)
 	{
 		<Hyperparameter
+			@ref="HyperparameterComponent"
 			Validator="@validator"
 		/>
 	}

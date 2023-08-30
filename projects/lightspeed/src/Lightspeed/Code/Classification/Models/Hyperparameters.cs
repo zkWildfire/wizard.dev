@@ -2,10 +2,6 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using TorchSharp;
-using static TorchSharp.torch;
-using static TorchSharp.torch.optim;
-using static TorchSharp.torch.utils.data;
 namespace Lightspeed.Classification.Models;
 
 /// <summary>
@@ -23,29 +19,24 @@ namespace Lightspeed.Classification.Models;
 public record class Hyperparameters
 {
 	/// <summary>
-	/// Optimizer to use for training the model.
+	/// Type of optimizer to use when training the model.
 	/// </summary>
-	public required Optimizer Optimizer { get; init; }
+	public required EOptimizerType Optimizer { get; init; }
 
 	/// <summary>
-	/// Loss function to use for training the model.
+	/// Type of loss function to use when training the model.
 	/// </summary>
-	public required Loss<Tensor, Tensor, Tensor> Loss { get; init; }
+	public required ELossType Loss { get; init; }
+
+	/// <summary>
+	/// Dataset to use when training.
+	/// </summary>
+	public required IDatasetInstance Dataset { get; init; }
 
 	/// <summary>
 	/// Learning rate to use for training the model.
 	/// </summary>
 	public required float LearningRate { get; init; }
-
-	/// <summary>
-	/// Data loader to use for training the model.
-	/// </summary>
-	public required DataLoader TrainDataloader { get; init; }
-
-	/// <summary>
-	/// Data loader to use when validating the model.
-	/// </summary>
-	public required DataLoader ValidationDataloader { get; init; }
 
 	/// <summary>
 	/// Number of epochs to train the model for.

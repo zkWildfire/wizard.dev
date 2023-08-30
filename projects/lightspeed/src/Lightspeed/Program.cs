@@ -16,6 +16,9 @@ builder.Services.AddSingleton<IDatasetService, TorchDatasetsService>(
 ).AddSingleton<IModelsService, LightspeedModelsService>()
 .AddHostedService<IHostedTrainingService>(
 	sp => new BackgroundTrainingService()
+)
+.AddSingleton(
+	sp => sp.GetRequiredService<IHostedTrainingService>()
 );
 
 var app = builder.Build();

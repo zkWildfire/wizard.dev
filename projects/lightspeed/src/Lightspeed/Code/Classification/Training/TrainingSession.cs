@@ -3,6 +3,8 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification.Events;
+using Lightspeed.Classification.Models;
+
 namespace Lightspeed.Classification.Training;
 
 /// <summary>
@@ -14,6 +16,11 @@ public interface ITrainingSession : IDisposable
 	/// Event that is fired when an epoch is completed.
 	/// </summary>
 	event EventHandler<OnEpochCompleteEventArgs>? OnEpochComplete;
+
+	/// <summary>
+	/// Unique ID assigned to the session.
+	/// </summary>
+	Guid SessionId { get; }
 
 	/// <summary>
 	/// Whether or not the training session is currently running.
@@ -39,6 +46,18 @@ public interface ITrainingSession : IDisposable
 	/// Time since the model began training.
 	/// </summary>
 	TimeSpan TotalDuration { get; }
+
+	/// <summary>
+	/// Hyperparameters used for the training session.
+	/// </summary>
+	Hyperparameters Hyperparameters { get; }
+
+	/// <summary>
+	/// Model-specific hyperparameters used for the model.
+	/// Each key-value pair in this dictionary will be the display name for the
+	///   hyperparameter and the value for the hyperparameter.
+	/// </summary>
+	IReadOnlyDictionary<string, string> ModelHyperparameters { get; }
 
 	/// <summary>
 	/// Gets the metrics for each epoch that has been completed.

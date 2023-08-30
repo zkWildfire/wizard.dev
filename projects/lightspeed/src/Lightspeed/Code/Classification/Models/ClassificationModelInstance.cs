@@ -22,6 +22,13 @@ public interface IClassificationModelInstance
 	Device Device { get; }
 
 	/// <summary>
+	/// Model-specific hyperparameters used for the model.
+	/// Each key-value pair in this dictionary will be the display name for the
+	///   hyperparameter and the value for the hyperparameter.
+	/// </summary>
+	IReadOnlyDictionary<string, string> ModelHyperparameters { get; }
+
+	/// <summary>
 	/// Resets the model's internal data using the data previously saved to disk.
 	/// </summary>
 	/// <param name="loadBest">

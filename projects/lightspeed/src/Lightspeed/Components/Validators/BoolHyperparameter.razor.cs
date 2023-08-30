@@ -26,7 +26,27 @@ public partial class BoolHyperparameter : ComponentBase
 	/// This value may or may not be a valid value. Parameter validation is only
 	///   done once the user clicks the "Train" button.
 	/// </summary>
-	private bool Value { get; set; }
+	public bool Value
+	{
+		get => _value;
+		private set
+		{
+			_value = value;
+			OnHyperparameterSet?.Invoke(
+				this,
+				new OnHyperparameterSetEventArgs()
+				{
+					Validator = Validator,
+					Value = value ? "1" : "0"
+				}
+			);
+		}
+	}
+
+	/// <summary>
+	/// Field backing the <see cref="Value"/> property.
+	/// </summary>
+	private bool _value;
 
 	/// <summary>
 	/// Initializes the component.
