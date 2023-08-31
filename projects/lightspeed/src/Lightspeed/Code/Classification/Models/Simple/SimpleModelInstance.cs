@@ -3,15 +3,97 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification.Events;
-using TorchSharp.Modules;
+using TorchSharp;
 using static TorchSharp.torch;
+using static TorchSharp.torch.nn;
+using static TorchSharp.torch.optim;
+using static TorchSharp.torch.utils.data;
 namespace Lightspeed.Classification.Models.Simple;
 
 /// <summary>
 /// Instance class for the simple model.
 /// </summary>
-public class SimpleModelInstance : IClassificationModelInstance
+public sealed class SimpleModelInstance : IClassificationModelInstance
 {
+	/// <summary>
+	/// TorchSharp module that represents the model.
+	/// </summary>
+	private sealed class Model : Module<Tensor, Tensor>
+	{
+		/// <summary>
+		/// First layer of the model.
+		/// </summary>
+		private readonly Module<Tensor, Tensor> _layer1;
+
+		/// <summary>
+		/// ReLU layer for the first layer of the model.
+		/// </summary>
+		private readonly Module<Tensor, Tensor> _relu1;
+
+		/// <summary>
+		/// Second layer of the model.
+		/// </summary>
+		private readonly Module<Tensor, Tensor> _layer2;
+
+		/// <summary>
+		/// LogSoftmax layer used to process the final model output.
+		/// </summary>
+		private readonly Module<Tensor, Tensor> _logsm;
+
+		/// <summary>
+		/// Initializes the model.
+		/// </summary>
+		/// <param name="inputSize">Size to use for the input layer.</param>
+		/// <param name="hiddenSize">Size to use for the hidden layer.</param>
+		/// <param name="outputSize">Size to use for the output layer.</param>
+		/// <param name="device">Device that the model should use.</param>
+		public Model(
+			long inputSize,
+			long hiddenSize,
+			long outputSize,
+			Device device)
+			: base("simple")
+		{
+			_layer1 = Linear(inputSize, hiddenSize);
+			_relu1 = ReLU();
+			_layer2 = Linear(hiddenSize, outputSize);
+			_logsm = LogSoftmax(1);
+
+			RegisterComponents();
+			_ = this.to(device);
+		}
+
+		/// <summary>
+		/// Cleans up the model.
+		/// </summary>
+		protected override void Dispose(bool disposing)
+		{
+			base.Dispose(disposing);
+
+			if (disposing)
+			{
+				_layer1.Dispose();
+				_relu1.Dispose();
+				_layer2.Dispose();
+				_logsm.Dispose();
+				ClearModules();
+			}
+		}
+
+		/// <summary>
+		/// Runs a forward pass of the model.
+		/// </summary>
+		/// <param name="input">Tensor to feed through the model.</param>
+		/// <returns>The output tensor from the model.</returns>
+		public override Tensor forward(Tensor input)
+		{
+			var x = _layer1.forward(input);
+			x = _relu1.forward(x);
+			x = _layer2.forward(x);
+			return _logsm.forward(x);
+		}
+	}
+
 	/// <summary>
 	/// Event that is fired when an epoch is completed.
 	/// </summary>
@@ -30,19 +112,19 @@ public class SimpleModelInstance : IClassificationModelInstance
 	public IReadOnlyDictionary<string, string> ModelHyperparameters { get; }
 
 	/// <summary>
-	/// First layer of the model.
+	/// Model instance being trained.
 	/// </summary>
-	private readonly Linear _layer1;
-
-	/// <summary>
-	/// Second layer of the model.
-	/// </summary>
-	private readonly Linear _layer2;
+	private readonly Model _model;
 
 	/// <summary>
 	/// Folder to save model data to.
 	/// </summary>
 	private readonly string _saveFolder;
+
+	/// <summary>
+	/// Whether or not the model has been disposed.
+	/// </summary>
+	private bool _isDisposed;
 
 	/// <summary>
 	/// Initializes the model.
@@ -78,12 +160,32 @@ public class SimpleModelInstance : IClassificationModelInstance
 				hiddenSize.ToString(CultureInfo.InvariantCulture)
 			}
 		};
+		_saveFolder = saveFolder;
+
+		// Set up the model
 		var flattenedInputSize = inputSize.Aggregate(1L, (a, b) => a * b);
 		var flattenedOutputSize = outputSize.Aggregate(1L, (a, b) => a * b);
+		_model = new(
+			flattenedInputSize,
+			hiddenSize,
+			flattenedOutputSize,
+			device
+		);
+	}
 
-		_layer1 = nn.Linear(flattenedInputSize, hiddenSize);
-		_layer2 = nn.Linear(hiddenSize, flattenedOutputSize);
-		_saveFolder = saveFolder;
+	/// <summary>
+	/// Cleans up the model.
+	/// </summary>
+	public void Dispose()
+	{
+		if (_isDisposed)
+		{
+			return;
+		}
+
+		_model.Dispose();
+		GC.SuppressFinalize(this);
+		_isDisposed = true;
 	}
 
 	/// <summary>
@@ -105,7 +207,8 @@ public class SimpleModelInstance : IClassificationModelInstance
 	/// </exception>
 	public Task Load(bool loadBest = true)
 	{
-		throw new NotImplementedException();
+		// TODO: Check if the model is currently being trained
+		return Task.Run(() => _model.load(_saveFolder));
 	}
 
 	/// <summary>
@@ -120,7 +223,8 @@ public class SimpleModelInstance : IClassificationModelInstance
 	/// </exception>
 	public Task Save()
 	{
-		throw new NotImplementedException();
+		// TODO: Check if the model is currently being trained
+		return Task.Run(() => _model.save(_saveFolder));
 	}
 
 	/// <summary>
@@ -135,6 +239,80 @@ public class SimpleModelInstance : IClassificationModelInstance
 	public Task Train(
 		Hyperparameters hyperparameters,
 		CancellationToken cancellationToken)
+	{
+		// Create the optimizer
+		Optimizer optimizer = hyperparameters.Optimizer switch
+		{
+			EOptimizerType.Adam => Adam(
+				_model.parameters(),
+				hyperparameters.LearningRate
+			),
+			_ => throw new UnreachableException()
+		};
+
+		// Create the loss function
+		Loss<Tensor, Tensor, Tensor> loss = hyperparameters.Loss switch
+		{
+			ELossType.CrossEntropy => CrossEntropyLoss(),
+			_ => throw new UnreachableException()
+		};
+
+		var startTime = DateTime.UtcNow;
+		for (var i = 0; i < hyperparameters.Epochs; i++)
+		{
+			// Check if the training has been cancelled
+			if (cancellationToken.IsCancellationRequested)
+			{
+				break;
+			}
+
+			// Train the model for a single epoch
+			var epochStartTime = DateTime.UtcNow;
+			TrainEpoch(
+				optimizer,
+				loss,
+				hyperparameters.Dataset.TrainingSet.GetDataLoader(
+					hyperparameters.BatchSize
+				)
+			);
+			var epochEndTime = DateTime.UtcNow;
+			var epochDuration = epochEndTime - epochStartTime;
+
+			// Fire the epoch complete event
+			OnEpochComplete?.Invoke(
+				this,
+				new OnEpochCompleteEventArgs()
+				{
+					CompletedEpoch = i + 1,
+					TotalEpochs = hyperparameters.Epochs,
+					// TODO
+					Accuracy = 0,
+					Loss = 0,
+					EpochDuration = epochDuration,
+					TotalDuration = DateTime.UtcNow - startTime
+				}
+			);
+		}
+
+		return Task.CompletedTask;
+	}
+
+	/// <summary>
+	/// Trains the model for a single epoch.
+	/// </summary>
+	/// <param name="optimizer">
+	/// Optimizer to use when training the model.
+	/// </param>
+	/// <param name="loss">
+	/// Loss function to use when training the model.
+	/// </param>
+	/// <param name="dataloader">
+	/// Dataloader to get training data from.
+	/// </param>
+	private void TrainEpoch(
+		Optimizer optimizer,
+		Loss<Tensor, Tensor, Tensor> loss,
+		DataLoader dataloader)
 	{
 		throw new NotImplementedException();
 	}

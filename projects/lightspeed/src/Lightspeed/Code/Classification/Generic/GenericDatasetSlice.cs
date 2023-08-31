@@ -15,19 +15,19 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 	public IDataset Dataset { get; }
 
 	/// <summary>
-	/// Dataset instance that the slice is from.
-	/// </summary>
-	public IDatasetInstance DatasetInstance { get; }
-
-	/// <summary>
 	/// Device that the dataset slice's data is on.
 	/// </summary>
-	public Device Device => DatasetInstance.Device;
+	public Device Device { get; }
 
 	/// <summary>
 	/// Number of elements in the slice.
 	/// </summary>
-	public int Count => _data.Count;
+	public int Count => (int)_dataset.Count;
+
+	/// <summary>
+	/// Whether data should be shuffled when getting data from the dataset.
+	/// </summary>
+	public bool Shuffle { get; }
 
 	/// <summary>
 	/// Gets the dataset element at the given ID.
@@ -44,8 +44,11 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 		get
 		{
 			Debug.Assert(!_isDisposed);
-			var tensor = _data[id];
-			return _elementFactory(this, id, tensor);
+			var data = _dataset.GetTensor(id);
+			// TODO: Get these in a more generic way
+			var input = data["data"];
+			var label = data["label"];
+			return _elementFactory(this, id, input, label);
 		}
 	}
 
@@ -53,17 +56,15 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 	private readonly Dataset _dataset;
 
 	/// <summary>
-	/// List of all tensors in the slice.
-	/// </summary>
-	private readonly IReadOnlyList<Tensor> _data;
-
-	/// <summary>
 	/// Method to invoke to convert tensors from the slice into dataset
-	///   elements.
+	///   elements. The method will be passed the slice instance invoking the
+	///   method, the ID of the element, and the tensors containing input data
+	///   and label data, respectively.
 	/// </summary>
 	private readonly Func<
 		IDatasetSlice,
 		long,
+		Tensor,
 		Tensor,
 		IDatasetElement
 	> _elementFactory;
@@ -76,39 +77,36 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 	/// <summary>
 	/// Initializes the slice.
 	/// </summary>
-	/// <param name="parentDataset">Dataset that the slice is from.</param>
-	/// <param name="parentDatasetInstance">
-	/// Dataset instance that the slice is from.
+	/// <param name="parentDataset">
+	/// Dataset that the slice is from.
 	/// </param>
-	/// <param name="dataset">Torch dataset object for the slice.</param>
+	/// <param name="device">
+	/// Device that the dataset data is on.
+	/// </param>
+	/// <param name="dataset">
+	/// Torch dataset object for the slice.
+	/// </param>
 	/// <param name="elementFactory">
 	/// Method to invoke to convert tensors from the slice into dataset
 	///   elements. The method will be passed the slice instance invoking the
-	///   method, the ID of the element, and the tensor containing the element
-	///   data.
+	///   method, the ID of the element, and the tensors containing input data
+	///   and label data, respectively.
+	/// </param>
+	/// <param name="shuffle">
+	/// Whether data should be shuffled when getting data from the dataset.
 	/// </param>
 	public GenericDatasetSlice(
 		IDataset parentDataset,
-		IDatasetInstance parentDatasetInstance,
+		Device device,
 		Dataset dataset,
-		Func<IDatasetSlice, long, Tensor, IDatasetElement> elementFactory)
+		Func<IDatasetSlice, long, Tensor, Tensor, IDatasetElement> elementFactory,
+		bool shuffle)
 	{
 		Dataset = parentDataset;
-		DatasetInstance = parentDatasetInstance;
+		Device = device;
+		Shuffle = shuffle;
 		_dataset = dataset;
 		_elementFactory = elementFactory;
-
-		// Add all tensors into a single list for quick access
-		var tensors = new List<Tensor>();
-		for (var i = 0; i < dataset.Count; i++)
-		{
-			var dict = dataset.GetTensor(i);
-			foreach (var (_, tensor) in dict)
-			{
-				tensors.Add(tensor);
-			}
-		}
-		_data = tensors;
 	}
 
 	/// <summary>
@@ -130,17 +128,15 @@ public sealed class GenericDatasetSlice : IDatasetSlice
 	/// Creates a new dataloader instance for the slice's data.
 	/// </summary>
 	/// <param name="batchSize">Number of elements per batch.</param>
-	/// <param name="shuffle">Whether to shuffle the data.</param>
 	/// <returns>A new dataloader instance.</returns>
 	public DataLoader GetDataLoader(
-		int batchSize,
-		bool shuffle)
+		int batchSize)
 	{
 		return new DataLoader(
 			_dataset,
 			batchSize,
 			device: Device,
-			shuffle: shuffle
+			shuffle: Shuffle
 		);
 	}
 

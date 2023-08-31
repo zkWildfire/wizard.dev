@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
+using static TorchSharp.torch;
 namespace Lightspeed.Classification;
 
 /// <summary>
@@ -134,10 +135,19 @@ public interface IDataset : IDisposable, IEnumerable<IDatasetElement>
 	/// This will create a dataset instance where the dataset elements are
 	///   divided between training, validation, and test sets.
 	/// </summary>
+	/// <param name="device">
+	/// Device to create the dataset instance on.
+	/// </param>
 	/// <param name="shuffle">
 	/// Whether to shuffle the dataset elements before creating the training,
 	///   validation, and test sets.
 	/// </param>
 	/// <returns>A new dataset instance.</returns>
-	IDatasetInstance CreateTrainingInstance(bool shuffle = true);
+	/// <exception cref="InvalidOperationException">
+	/// Thrown if the dataset is not downloaded.
+	/// </exception>
+	IDatasetInstance CreateTrainingInstance(
+		Device device,
+		bool shuffle = true
+	);
 }

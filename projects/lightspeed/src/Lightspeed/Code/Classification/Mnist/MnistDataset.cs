@@ -4,6 +4,7 @@
  */
 using Lightspeed.Classification.Generic;
 using TorchSharp;
+using static TorchSharp.torch;
 using static TorchSharp.torch.utils.data;
 namespace Lightspeed.Classification.Mnist;
 
@@ -467,14 +468,81 @@ public sealed class MnistDataset : IDataset
 	/// This will create a dataset instance where the dataset elements are
 	///   divided between training, validation, and test sets.
 	/// </summary>
+	/// <param name="device">
+	/// Device to create the dataset instance on.
+	/// </param>
 	/// <param name="shuffle">
 	/// Whether to shuffle the dataset elements before creating the training,
 	///   validation, and test sets.
 	/// </param>
 	/// <returns>A new dataset instance.</returns>
-	public IDatasetInstance CreateTrainingInstance(bool shuffle = true)
+	/// <exception cref="InvalidOperationException">
+	/// Thrown if the dataset is not downloaded.
+	/// </exception>
+	public IDatasetInstance CreateTrainingInstance(
+		Device device,
+		bool shuffle = true)
 	{
-		throw new NotImplementedException();
+		if (!IsDownloaded)
+		{
+			throw new InvalidOperationException(
+				"Cannot create a dataset instance from a dataset that is " +
+				"not downloaded."
+			);
+		}
+
+		// These should be true if `IsDownloaded` is true
+		Debug.Assert(_trainDataset != null);
+		Debug.Assert(_testDataset != null);
+
+		return new GenericDatasetInstance(
+			this,
+			device,
+			new GenericDatasetSlice(
+				this,
+				device,
+				_trainDataset,
+				(slice, id, input, label) => new GrayscaleImageDatasetElement(
+					slice.Dataset,
+					id,
+					input,
+					label
+				),
+				shuffle
+			),
+			// TODO: Figure out how to divide the training dataset into train
+			//   and validation sets
+			new GenericDatasetSlice(
+				this,
+				device,
+				_testDataset,
+				(slice, id, input, label) => new GrayscaleImageDatasetElement(
+					slice.Dataset,
+					id,
+					input,
+					label
+				),
+				shuffle
+			),
+			new GenericDatasetSlice(
+				this,
+				device,
+				_testDataset,
+				(slice, id, input, label) => new GrayscaleImageDatasetElement(
+					slice.Dataset,
+					id,
+					input,
+					label
+				),
+				shuffle
+			),
+			new Size(new int[]
+				{ 1, 28, 28 }
+			),
+			new Size(new int[]
+				{ 10 }
+			)
+		);
 	}
 
 	/// <summary>

@@ -483,6 +483,8 @@ public partial class TrainConfiguration : ComponentBase
 			Optimizer = OptimizerType,
 			Loss = LossType,
 			Dataset = _selectedDataset.CreateTrainingInstance(
+				// TODO: Expose this as a generic hyperparameter
+				torch.CUDA,
 				Shuffle
 			),
 			LearningRate = LearningRate,

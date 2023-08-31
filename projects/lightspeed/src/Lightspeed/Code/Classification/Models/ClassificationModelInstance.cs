@@ -9,7 +9,7 @@ namespace Lightspeed.Classification.Models;
 /// <summary>
 /// Interface for models that perform image classification.
 /// </summary>
-public interface IClassificationModelInstance
+public interface IClassificationModelInstance : IDisposable
 {
 	/// <summary>
 	/// Event that is fired when an epoch is completed.
