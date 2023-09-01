@@ -78,14 +78,7 @@ public partial class TrainConfiguration : ComponentBase
 	/// </summary>
 	private Hyperparameter HyperparameterComponent
 	{
-		set
-		{
-			_genericHyperparameterValues[value.Validator.Id] = value.Value;
-			value.OnHyperparameterSet += (sender, args) =>
-			{
-				_genericHyperparameterValues[args.Validator.Id] = args.Value;
-			};
-		}
+		set => _hyperparameterComponents[value.Validator.Id] = value;
 	}
 
 	/// <summary>
@@ -96,9 +89,9 @@ public partial class TrainConfiguration : ComponentBase
 		get
 		{
 			// Get the string representing the shuffle value
-			var shuffleStr = _genericHyperparameterValues[
+			var shuffleStr = _hyperparameterComponents[
 				_shuffleHyperparameter.Id
-			];
+			].Value;
 			Debug.Assert(shuffleStr != null);
 			return shuffleStr == "1";
 		}
@@ -112,9 +105,9 @@ public partial class TrainConfiguration : ComponentBase
 		get
 		{
 			// Get the string representing the optimizer type
-			var displayName = _genericHyperparameterValues[
+			var displayName = _hyperparameterComponents[
 				_optimizerTypeHyperparameter.Id
-			];
+			].Value;
 			Debug.Assert(displayName != null);
 			return _optimizerTypeHyperparameter.EnumValues[
 				displayName
@@ -130,9 +123,9 @@ public partial class TrainConfiguration : ComponentBase
 		get
 		{
 			// Get the string representing the loss type
-			var displayName = _genericHyperparameterValues[
+			var displayName = _hyperparameterComponents[
 				_lossTypeHyperparameter.Id
-			];
+			].Value;
 			Debug.Assert(displayName != null);
 			return _lossTypeHyperparameter.EnumValues[
 				displayName
@@ -148,9 +141,9 @@ public partial class TrainConfiguration : ComponentBase
 		get
 		{
 			// Get the string representing the learning rate
-			var learningRateStr = _genericHyperparameterValues[
+			var learningRateStr = _hyperparameterComponents[
 				_learningRateHyperparameter.Id
-			];
+			].Value;
 			Debug.Assert(learningRateStr != null);
 			return float.Parse(
 				learningRateStr,
@@ -167,9 +160,9 @@ public partial class TrainConfiguration : ComponentBase
 		get
 		{
 			// Get the string representing the number of epochs
-			var epochsStr = _genericHyperparameterValues[
+			var epochsStr = _hyperparameterComponents[
 				_epochsHyperparameter.Id
-			];
+			].Value;
 			Debug.Assert(epochsStr != null);
 			return int.Parse(
 				epochsStr,
@@ -186,9 +179,9 @@ public partial class TrainConfiguration : ComponentBase
 		get
 		{
 			// Get the string representing the batch size
-			var batchSizeStr = _genericHyperparameterValues[
+			var batchSizeStr = _hyperparameterComponents[
 				_batchSizeHyperparameter.Id
-			];
+			].Value;
 			Debug.Assert(batchSizeStr != null);
 			return int.Parse(
 				batchSizeStr,
@@ -205,9 +198,9 @@ public partial class TrainConfiguration : ComponentBase
 		get
 		{
 			// Get the string representing the number of epochs between saves
-			var saveEpochsStr = _genericHyperparameterValues[
+			var saveEpochsStr = _hyperparameterComponents[
 				_saveEpochsHyperparameter.Id
-			];
+			].Value;
 			Debug.Assert(saveEpochsStr != null);
 			return int.Parse(
 				saveEpochsStr,
@@ -224,9 +217,9 @@ public partial class TrainConfiguration : ComponentBase
 		get
 		{
 			// Get the string representing the save path
-			var savePath = _genericHyperparameterValues[
+			var savePath = _hyperparameterComponents[
 				_savePathHyperparameter.Id
-			];
+			].Value;
 			Debug.Assert(savePath != null);
 			return savePath;
 		}
@@ -298,11 +291,12 @@ public partial class TrainConfiguration : ComponentBase
 	private readonly StringHyperparameterValidator _savePathHyperparameter;
 
 	/// <summary>
-	/// Dictionary storing the value of each generic hyperparameter.
+	/// Dictionary containing each hyperparameter component.
 	/// Each key will be the unique ID of the hyperparameter and the value will
-	///   be the stringified value of the hyperparameter.
+	///   be the component that allows the hyperparameter to be specified on
+	///   the UI.
 	/// </summary>
-	private readonly Dictionary<string, string?> _genericHyperparameterValues =
+	private readonly Dictionary<string, Hyperparameter> _hyperparameterComponents =
 		new();
 
 	/// <summary>
@@ -452,6 +446,8 @@ public partial class TrainConfiguration : ComponentBase
 		object? sender,
 		OnModelSelectedEventArgs e)
 	{
+		Debug.Assert(sender != null);
+		_modelSelector = (ModelSelector)sender;
 		_selectedModel = e.Model;
 		StateHasChanged();
 	}

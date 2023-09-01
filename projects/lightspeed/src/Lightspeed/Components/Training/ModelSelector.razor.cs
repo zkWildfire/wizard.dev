@@ -38,8 +38,18 @@ public partial class ModelSelector : ComponentBase
 	/// Each key will be the unique ID of the hyperparameter and the value will
 	///   be the stringified value of the hyperparameter.
 	/// </summary>
-	public IReadOnlyDictionary<string, string?> Hyperparameters =>
-		_hyperparameters;
+	public IReadOnlyDictionary<string, string?> Hyperparameters
+	{
+		get
+		{
+			var hyperparameters = new Dictionary<string, string?>();
+			foreach (var (id, component) in _hyperparameters)
+			{
+				hyperparameters[id] = component.Value;
+			}
+			return hyperparameters;
+		}
+	}
 
 	/// <summary>
 	/// Whether the model is currently selected.
@@ -54,16 +64,7 @@ public partial class ModelSelector : ComponentBase
 	/// </summary>
 	private Hyperparameter HyperparameterComponent
 	{
-		set
-		{
-			// Note that this setter will be invoked *after* `OnParametersSet()`
-			//   gets called
-			_hyperparameters[value.Validator.Id] = value.Value;
-			value.OnHyperparameterSet += (sender, args) =>
-			{
-				_hyperparameters[args.Validator.Id] = args.Value;
-			};
-		}
+		set => _hyperparameters[value.Validator.Id] = value;
 	}
 
 	/// <summary>
@@ -74,11 +75,12 @@ public partial class ModelSelector : ComponentBase
 		: "btn-outline-success";
 
 	/// <summary>
-	/// Dictionary storing the value of each model-specific hyperparameter.
+	/// Dictionary containing each hyperparameter component.
 	/// Each key will be the unique ID of the hyperparameter and the value will
-	///   be the stringified value of the hyperparameter.
+	///   be the component that allows the hyperparameter to be specified on
+	///   the UI.
 	/// </summary>
-	private readonly Dictionary<string, string?> _hyperparameters = new();
+	private readonly Dictionary<string, Hyperparameter> _hyperparameters = new();
 
 	/// <summary>
 	/// Updates the component after parameters are set.
