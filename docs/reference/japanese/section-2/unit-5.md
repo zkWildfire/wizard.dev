@@ -55,10 +55,10 @@
 | warm | あたたかい | 暖かい |
 | cold | さむい | 寒い |
 | days | ひ | 日 |
-| spring | はる | |
-| summer | なつ | |
-| fall | あき | |
-| winter | ふゆ | |
+| spring | はる | 春 |
+| summer | なつ | 夏 |
+| autumn | あき | 秋 |
+| winter | ふゆ | 冬 |
 | July | しちがつ | 七月 |
 | September | くがつ | 九月 |
 | today | きょう | 今日 |

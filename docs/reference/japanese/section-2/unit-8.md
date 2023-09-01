@@ -16,7 +16,7 @@
 | Tuesday | かようび | 火曜日 |
 | Wednesday | すいようび | 水曜日 |
 | Thursday | もくようび | 木曜日 |
-| green | みどり | |
+| green | みどり | 緑 |
 | your | あなたの | |
 
 ### Examples
