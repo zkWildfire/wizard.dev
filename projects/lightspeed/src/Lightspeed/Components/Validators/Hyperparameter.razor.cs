@@ -49,6 +49,7 @@ public partial class Hyperparameter : ComponentBase
 	{
 		set
 		{
+			// Convert to the "1" and "0" form expected by models
 			Value = value.Value ? "1" : "0";
 			value.OnHyperparameterSet += (sender, args) =>
 			{

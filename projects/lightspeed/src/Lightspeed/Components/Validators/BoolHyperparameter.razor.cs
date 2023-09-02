@@ -37,6 +37,7 @@ public partial class BoolHyperparameter : ComponentBase
 				new OnHyperparameterSetEventArgs()
 				{
 					Validator = Validator,
+					// Convert to the "1" and "0" form expected by models
 					Value = value ? "1" : "0"
 				}
 			);
@@ -54,6 +55,6 @@ public partial class BoolHyperparameter : ComponentBase
 	protected override void OnInitialized()
 	{
 		base.OnInitialized();
-		Value = Validator.DefaultValue == "1";
+		Value = Validator.DefaultValue == "True";
 	}
 }

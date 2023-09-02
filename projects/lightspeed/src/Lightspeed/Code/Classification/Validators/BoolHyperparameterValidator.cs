@@ -6,6 +6,8 @@ namespace Lightspeed.Classification.Validators;
 
 /// <summary>
 /// Hyperparameter validator used for boolean hyperparameters.
+/// Boolean hyperparameters will always be specified as "True" or "False" when
+///   in string form.
 /// </summary>
 public class BoolHyperparameterValidator
 	: IValueTypeHyperparameterValidator<bool>
