@@ -23,12 +23,12 @@ public class OnEpochCompleteEventArgs : EventArgs
 	/// <summary>
 	/// Accuracy of the model for the most recent epoch.
 	/// </summary>
-	public required float Accuracy { get; init; }
+	public required double Accuracy { get; init; }
 
 	/// <summary>
 	/// Loss of the model for the most recent epoch.
 	/// </summary>
-	public required float Loss { get; init; }
+	public required double Loss { get; init; }
 
 	/// <summary>
 	/// Time taken to complete the most recent epoch.

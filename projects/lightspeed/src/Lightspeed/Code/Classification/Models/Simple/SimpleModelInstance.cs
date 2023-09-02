@@ -87,6 +87,7 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 		/// <returns>The output tensor from the model.</returns>
 		public override Tensor forward(Tensor input)
 		{
+			input = input.reshape(-1, 784);
 			var x = _layer1.forward(input);
 			x = _relu1.forward(x);
 			x = _layer2.forward(x);
@@ -267,30 +268,15 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 			}
 
 			// Train the model for a single epoch
-			var epochStartTime = DateTime.UtcNow;
 			TrainEpoch(
 				optimizer,
 				loss,
 				hyperparameters.Dataset.TrainingSet.GetDataLoader(
 					hyperparameters.BatchSize
-				)
-			);
-			var epochEndTime = DateTime.UtcNow;
-			var epochDuration = epochEndTime - epochStartTime;
-
-			// Fire the epoch complete event
-			OnEpochComplete?.Invoke(
-				this,
-				new OnEpochCompleteEventArgs()
-				{
-					CompletedEpoch = i + 1,
-					TotalEpochs = hyperparameters.Epochs,
-					// TODO
-					Accuracy = 0,
-					Loss = 0,
-					EpochDuration = epochDuration,
-					TotalDuration = DateTime.UtcNow - startTime
-				}
+				),
+				i + 1,
+				hyperparameters.Epochs,
+				startTime
 			);
 		}
 
@@ -306,14 +292,70 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 	/// <param name="loss">
 	/// Loss function to use when training the model.
 	/// </param>
-	/// <param name="dataloader">
-	/// Dataloader to get training data from.
+	/// <param name="dataLoader">
+	/// Data Loader to get training data from.
+	/// </param>
+	/// <param name="epoch">
+	/// Index of the epoch this particular training loop is for. This should
+	///   be a value in the range `(0, totalEpochs]`.
+	/// </param>
+	/// <param name="totalEpochs">
+	/// Total number of epochs that will be trained.
+	/// </param>
+	/// <param name="trainingStartTime">
+	/// Time that the training started at.
 	/// </param>
 	private void TrainEpoch(
 		Optimizer optimizer,
 		Loss<Tensor, Tensor, Tensor> loss,
-		DataLoader dataloader)
+		DataLoader dataLoader,
+		int epoch,
+		int totalEpochs,
+		DateTime trainingStartTime)
 	{
-		throw new NotImplementedException();
+		using var scope = NewDisposeScope();
+
+		// Keep track of metrics for the epoch
+		var startTime = DateTime.UtcNow;
+		var totalCount = 0;
+		var correctCount = 0;
+		var totalLoss = 0.0;
+
+		// Run the training loop
+		foreach (var data in dataLoader)
+		{
+			optimizer.zero_grad();
+
+			// Invoke the model and loss function
+			var target = data["label"];
+			var prediction = _model.call(data["data"]);
+			var output = loss.call(prediction, target);
+
+			// Backpropagate the loss
+			output.backward();
+			_ = optimizer.step();
+
+			// Update metrics
+			totalCount++;
+			totalLoss += output.flatten().cumsum(0).data<float>().First();
+			var results = prediction.argmax(1) == target;
+			correctCount += results.sum().data<int>().First();
+
+			scope.DisposeEverything();
+		}
+
+		var endTime = DateTime.UtcNow;
+		OnEpochComplete?.Invoke(
+			this,
+			new()
+			{
+				CompletedEpoch = epoch,
+				TotalEpochs = totalEpochs,
+				Accuracy = correctCount / (double)totalCount,
+				Loss = totalLoss,
+				EpochDuration = endTime - startTime,
+				TotalDuration = endTime - trainingStartTime
+			}
+		);
 	}
 }
