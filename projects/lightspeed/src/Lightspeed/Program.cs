@@ -17,7 +17,8 @@ builder.Services.AddSingleton<IDatasetService, TorchDatasetsService>(
 .AddSingleton<IHostedTrainingService, BackgroundTrainingService>()
 .AddHostedService(
 	sp => sp.GetRequiredService<IHostedTrainingService>()
-);
+)
+.AddBlazorBootstrap();
 
 var app = builder.Build();
 
