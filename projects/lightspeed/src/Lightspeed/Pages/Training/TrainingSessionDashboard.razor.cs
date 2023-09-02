@@ -10,7 +10,7 @@ namespace Lightspeed.Pages.Training;
 /// Page that displays status information about a training session.
 /// This page handles both completed and active training sessions.
 /// </summary>
-public partial class TrainingSession : ComponentBase
+public partial class TrainingSessionDashboard : ComponentBase
 {
 	/// <summary>
 	/// ID of the training session that this page displays.
