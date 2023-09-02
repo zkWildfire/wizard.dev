@@ -28,24 +28,15 @@ public interface ITrainingSession : IDisposable
 	bool IsActive { get; }
 
 	/// <summary>
-	/// Epoch that the training session is currently on.
+	/// Metrics for the last completed epoch.
+	/// If the training session has not completed an epoch yet, the snapshot
+	///   will have most fields set to 0.
 	/// </summary>
-	int CurrentEpoch { get; }
-
-	/// <summary>
-	/// Total number of epochs that will be completed.
-	/// </summary>
-	int TotalEpochs { get; }
-
-	/// <summary>
-	/// Average time spent per completed epoch.
-	/// </summary>
-	TimeSpan AverageEpochDuration { get; }
-
-	/// <summary>
-	/// Time since the model began training.
-	/// </summary>
-	TimeSpan TotalDuration { get; }
+	/// <remarks>
+	/// Retrieving this data is thread safe. All data in the snapshot will be
+	///   consistent with each other.
+	/// </remarks>
+	MetricsSnapshot CurrentMetrics { get; }
 
 	/// <summary>
 	/// Hyperparameters used for the training session.

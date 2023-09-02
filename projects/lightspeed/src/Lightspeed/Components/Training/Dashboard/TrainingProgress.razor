@@ -1,0 +1,54 @@
+@{
+	// Capture the current state of the component so that if the training
+	//   session broadcasts new data, the UI doesn't display some new and some
+	//   old data
+	State? temp = null;
+	lock(_lock)
+	{
+		temp = _state;
+	}
+
+	// Helper used to avoid having to use `.Value` every time a property is
+	//   accessed from the state struct
+	State state = temp.Value;
+}
+
+<!-- Progress Bar -->
+<div class="row">
+	<div class="col-12">
+		<div class="progress">
+			<div class="@state.ProgressBarCss"
+				role="progressbar"
+				style="width: @state.ProgressBarWidth%;"
+				aria-valuenow="@state.ProgressBarWidth"
+				aria-valuemin="0"
+				aria-valuemax="100"
+				title="Training Session Progress">
+				@state.CurrentEpoch / @state.TotalEpochs Epochs
+			</div>
+	</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-6 d-flex justify-content-start">
+		<span class="mb-0 text-info text-start">Elapsed: </span>
+	</div>
+	<div class="col-6 d-flex justify-content-end">
+		<span class="mb-0 text-info text-end">Remaining: </span>
+	</div>
+</div>
+
+<hr />
+
+<!-- Metrics -->
+<div class="row">
+	<!-- Accuracy graph -->
+	<div class="col-6">
+		<h4 class="mb-0 text-info text-start">Accuracy: </h4>
+	</div>
+
+	<!-- Loss graph -->
+	<div class="col-6">
+		<h4 class="mb-0 text-info text-end">Remaining: </h4>
+	</div>
+</div>

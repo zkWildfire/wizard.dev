@@ -317,8 +317,8 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 
 		// Keep track of metrics for the epoch
 		var startTime = DateTime.UtcNow;
-		var totalCount = 0;
-		var correctCount = 0;
+		var totalCount = 0L;
+		var correctCount = 0L;
 		var totalLoss = 0.0;
 
 		// Run the training loop
@@ -337,24 +337,26 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 
 			// Update metrics
 			totalCount++;
-			totalLoss += output.flatten().cumsum(0).data<float>().First();
+			totalLoss += output.flatten().sum().data<float>().First();
 			var results = prediction.argmax(1) == target;
-			correctCount += results.sum().data<int>().First();
+			correctCount += results.sum().data<long>().First();
 
 			scope.DisposeEverything();
 		}
 
 		var endTime = DateTime.UtcNow;
+		var totalDuration = endTime - trainingStartTime;
 		OnEpochComplete?.Invoke(
 			this,
 			new()
 			{
-				CompletedEpoch = epoch,
+				CurrentEpoch = epoch,
 				TotalEpochs = totalEpochs,
-				Accuracy = correctCount / (double)totalCount,
-				Loss = totalLoss,
 				EpochDuration = endTime - startTime,
-				TotalDuration = endTime - trainingStartTime
+				TotalDuration = totalDuration,
+				AverageEpochDuration = totalDuration / epoch,
+				Accuracy = correctCount / (double)totalCount,
+				Loss = totalLoss
 			}
 		);
 	}

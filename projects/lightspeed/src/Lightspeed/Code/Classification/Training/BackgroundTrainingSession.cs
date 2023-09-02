@@ -32,49 +32,26 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 	public bool IsActive => !_trainingComplete;
 
 	/// <summary>
-	/// Epoch that the training session is currently on.
+	/// Metrics for the last completed epoch.
+	/// If the training session has not completed an epoch yet, the snapshot
+	///   will have most fields set to 0.
 	/// </summary>
-	public int CurrentEpoch => _metrics.Count;
-
-	/// <summary>
-	/// Total number of epochs that will be completed.
-	/// </summary>
-	public int TotalEpochs => Hyperparameters.Epochs;
-
-	/// <summary>
-	/// Average time spent per completed epoch.
-	/// </summary>
-	public TimeSpan AverageEpochDuration
-	{
-		get
+	/// <remarks>
+	/// Retrieving this data is thread safe. All data in the snapshot will be
+	///   consistent with each other.
+	/// </remarks>
+	public MetricsSnapshot CurrentMetrics => _metrics.Any()
+		? _metrics.Last()
+		: new MetricsSnapshot()
 		{
-			var totalDuration = TimeSpan.Zero;
-			var count = 0;
-
-			foreach (var metrics in _metrics)
-			{
-				totalDuration += metrics.Duration;
-				count++;
-			}
-
-			return count > 0
-				? totalDuration / count
-				: TimeSpan.Zero;
-		}
-	}
-
-	/// <summary>
-	/// Time since the model began training.
-	/// </summary>
-	public TimeSpan TotalDuration
-	{
-		get
-		{
-			return _trainingEndTime.HasValue
-				? _trainingEndTime.Value - _trainingStartTime
-				: DateTime.UtcNow - _trainingStartTime;
-		}
-	}
+			CurrentEpoch = 0,
+			TotalEpochs = Hyperparameters.Epochs,
+			EpochDuration = TimeSpan.Zero,
+			AverageEpochDuration = TimeSpan.Zero,
+			TotalDuration = DateTime.UtcNow - _trainingStartTime,
+			Accuracy = 0,
+			Loss = 0
+		};
 
 	/// <summary>
 	/// Hyperparameters used for the training session.
@@ -221,14 +198,17 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		// Update the stored metrics
 		_metrics.Enqueue(new()
 		{
-			Epoch = args.CompletedEpoch,
-			Loss = args.Loss,
+			CurrentEpoch = args.CurrentEpoch,
+			TotalEpochs = Hyperparameters.Epochs,
+			EpochDuration = DateTime.UtcNow - _epochStartTime,
+			AverageEpochDuration = args.AverageEpochDuration,
+			TotalDuration = DateTime.UtcNow - _trainingStartTime,
 			Accuracy = args.Accuracy,
-			Duration = DateTime.UtcNow - _epochStartTime
+			Loss = args.Loss
 		});
 
 		// Update internal state
-		var isLastEpoch = args.CompletedEpoch == Hyperparameters.Epochs;
+		var isLastEpoch = args.CurrentEpoch == Hyperparameters.Epochs;
 		_epochStartTime = DateTime.UtcNow;
 		if (isLastEpoch)
 		{

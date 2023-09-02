@@ -1,7 +1,13 @@
 @page "/train/session/{SessionId:guid}"
+@using Lightspeed.Components.Training.Dashboard
+
 <div class="container">
 	<!-- Title Bar -->
 	<div class="row">
 		<h1 class="mb-0">Training Session @SessionId</h1>
 	</div>
+
+	<TrainingProgress
+		TrainingSession="@_trainingSession"
+	/>
 </div>

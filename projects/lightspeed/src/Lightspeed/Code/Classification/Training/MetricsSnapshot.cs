@@ -11,13 +11,29 @@ public readonly record struct MetricsSnapshot
 {
 	/// <summary>
 	/// Epoch that the snapshot was taken at.
+	/// This will be a value in the range `(0, TotalEpochs]`.
 	/// </summary>
-	public required int Epoch { get; init; }
+	public required int CurrentEpoch { get; init; }
+
+	/// <summary>
+	/// Total number of epochs that will be completed.
+	/// </summary>
+	public required int TotalEpochs { get; init; }
 
 	/// <summary>
 	/// Time taken to complete the epoch.
 	/// </summary>
-	public required TimeSpan Duration { get; init; }
+	public required TimeSpan EpochDuration { get; init; }
+
+	/// <summary>
+	/// Average time spent per completed epoch.
+	/// </summary>
+	public required TimeSpan AverageEpochDuration { get; init; }
+
+	/// <summary>
+	/// Total time spent training so far.
+	/// </summary>
+	public required TimeSpan TotalDuration { get; init; }
 
 	/// <summary>
 	/// Accuracy of the model during the epoch.
