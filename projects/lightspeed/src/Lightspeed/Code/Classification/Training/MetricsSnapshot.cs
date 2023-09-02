@@ -22,10 +22,10 @@ public readonly record struct MetricsSnapshot
 	/// <summary>
 	/// Accuracy of the model during the epoch.
 	/// </summary>
-	public required float Accuracy { get; init; }
+	public required double Accuracy { get; init; }
 
 	/// <summary>
 	/// Loss of the model during the epoch.
 	/// </summary>
-	public required float Loss { get; init; }
+	public required double Loss { get; init; }
 }

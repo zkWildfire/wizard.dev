@@ -4,7 +4,7 @@
  */
 using Lightspeed.Classification.Models;
 using Lightspeed.Components.Validators;
-namespace Lightspeed.Components.Training;
+namespace Lightspeed.Components.Training.Configuration;
 
 /// <summary>
 /// Event arguments for when a model is selected.

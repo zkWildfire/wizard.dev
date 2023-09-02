@@ -3,7 +3,7 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification;
-namespace Lightspeed.Components.Training;
+namespace Lightspeed.Components.Training.Configuration;
 
 /// <summary>
 /// Event arguments for when a dataset is selected.

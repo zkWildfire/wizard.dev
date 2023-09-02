@@ -5,7 +5,7 @@
 using Lightspeed.Classification;
 using Lightspeed.Classification.Models;
 using Lightspeed.Classification.Validators;
-using Lightspeed.Components.Training;
+using Lightspeed.Components.Training.Configuration;
 using Lightspeed.Components.Validators;
 using Lightspeed.Services.Datasets;
 using Lightspeed.Services.Models;
