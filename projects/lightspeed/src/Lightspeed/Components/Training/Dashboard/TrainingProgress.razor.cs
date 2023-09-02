@@ -55,6 +55,16 @@ public partial class TrainingProgress : ComponentBase
 		public required int CurrentEpoch { get; init; }
 
 		/// <summary>
+		/// Time since the training session started.
+		/// </summary>
+		public required TimeSpan ElapsedTime { get; init; }
+
+		/// <summary>
+		/// Estimated time remaining for the training session.
+		/// </summary>
+		public required TimeSpan EstimatedTimeRemaining { get; init; }
+
+		/// <summary>
 		/// CSS classes to apply to the progress bar.
 		/// </summary>
 		public string ProgressBarCss => IsActive
@@ -105,7 +115,9 @@ public partial class TrainingProgress : ComponentBase
 	private State _state = new()
 	{
 		TotalEpochs = 0,
-		CurrentEpoch = 0
+		CurrentEpoch = 0,
+		ElapsedTime = TimeSpan.Zero,
+		EstimatedTimeRemaining = TimeSpan.Zero
 	};
 
 	/// <summary>
@@ -148,10 +160,14 @@ public partial class TrainingProgress : ComponentBase
 				return;
 			}
 
+			var remainingEpochs = data.TotalEpochs - data.CurrentEpoch;
 			_state = new()
 			{
 				TotalEpochs = data.TotalEpochs,
-				CurrentEpoch = data.CurrentEpoch
+				CurrentEpoch = data.CurrentEpoch,
+				ElapsedTime = data.TotalDuration,
+				EstimatedTimeRemaining =
+					data.AverageEpochDuration * remainingEpochs
 			};
 
 			// This could be called from the training thread, so it has to be

@@ -336,7 +336,7 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 			_ = optimizer.step();
 
 			// Update metrics
-			totalCount++;
+			totalCount += prediction.shape[0];
 			totalLoss += output.flatten().sum().data<float>().First();
 			var results = prediction.argmax(1) == target;
 			correctCount += results.sum().data<long>().First();

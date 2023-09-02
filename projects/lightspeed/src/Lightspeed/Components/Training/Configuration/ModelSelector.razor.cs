@@ -83,15 +83,6 @@ public partial class ModelSelector : ComponentBase
 	private readonly Dictionary<string, Hyperparameter> _hyperparameters = new();
 
 	/// <summary>
-	/// Updates the component after parameters are set.
-	/// </summary>
-	protected override void OnParametersSet()
-	{
-		base.OnParametersSet();
-		_hyperparameters.Clear();
-	}
-
-	/// <summary>
 	/// Callback invoked when the "Select" button is clicked.
 	/// </summary>
 	private void OnSelectClicked()

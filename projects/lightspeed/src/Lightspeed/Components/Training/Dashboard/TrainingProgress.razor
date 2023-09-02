@@ -31,24 +31,15 @@
 </div>
 <div class="row">
 	<div class="col-6 d-flex justify-content-start">
-		<span class="mb-0 text-info text-start">Elapsed: </span>
+		<span class="mb-0 text-info text-start">
+			Elapsed: @state.ElapsedTime.ToString("hh\\:mm\\:ss")
+		</span>
 	</div>
 	<div class="col-6 d-flex justify-content-end">
-		<span class="mb-0 text-info text-end">Remaining: </span>
+		<span class="mb-0 text-info text-end">
+			Remaining: @state.EstimatedTimeRemaining.ToString("hh\\:mm\\:ss")
+		</span>
 	</div>
 </div>
 
 <hr />
-
-<!-- Metrics -->
-<div class="row">
-	<!-- Accuracy graph -->
-	<div class="col-6">
-		<h4 class="mb-0 text-info text-start">Accuracy: </h4>
-	</div>
-
-	<!-- Loss graph -->
-	<div class="col-6">
-		<h4 class="mb-0 text-info text-end">Remaining: </h4>
-	</div>
-</div>

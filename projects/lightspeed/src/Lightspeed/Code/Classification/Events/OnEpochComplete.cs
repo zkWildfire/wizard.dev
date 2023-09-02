@@ -39,6 +39,7 @@ public class OnEpochCompleteEventArgs : EventArgs
 
 	/// <summary>
 	/// Accuracy of the model during the epoch.
+	/// This will be a value in the range `[0, 1]`.
 	/// </summary>
 	public required double Accuracy { get; init; }
 
