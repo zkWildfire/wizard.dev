@@ -141,6 +141,7 @@ one or more Kanji characters.
 | card game | カードゲーム | | Section 2 Unit 10 |
 | castle | しろ | | Section 2 Unit 7 |
 | cat | ねこ | <span class="kanji">猫</span> | Section 2 Unit 13 |
+| cell phone | けいたいでんわ | <span class="kanji">携帯電話</span> | Section 3 Unit 6 |
 | chair | いす | <span class="kanji">椅子</span> | Section 2 Unit 3 |
 | cheap | やすい | <span class="kanji">安い</span> | Section 1 Unit 8 |
 | cheerful | あかるい | <span class="kanji">明るい</span> | Section 1 Unit 4 |
@@ -226,17 +227,20 @@ one or more Kanji characters.
 | don't really | あまり | | Section 2 Unit 10 |
 | don't really like | はちょっと | | Section 1 Unit 8 |
 | donuts | ドーナツ | | Section 2 Unit 8 |
+| door | ドア | | Section 3 Unit 6 |
 | drama | ドラマ | | Section 1 Unit 7 |
 | dress | ドレス | | Section 1 Unit 8 |
 | driver | うんてんしゅ | | Section 2 Unit 9 |
 | durable | じょうぶ | <span class="kanji">丈夫</span> | Section 3 Unit 3 |
 | early | はやく | | Section 2 Unit 9 |
+| early | はやく | <span class="kanji">早く</span> | Section 3 Unit 6 |
 | east | ひがし | <span class="kanji">東</span> | Section 3 Unit 1 |
 | easy | やさしい | | Section 2 Unit 6 |
 | eggs | たまご | <span class="kanji">卵</span> | Section 2 Unit 8 |
 | eight | はち | <span class="kanji">八</span> | Section 1 Unit 7 |
 | eight (birds, rabbits) | はちば | <span class="kanji">八羽</span> | Section 2 Unit 14 |
 | eight (books) | はっさつ | <span class="kanji">八冊</span> | Section 2 Unit 16 |
+| eight (furniture, machines) | はちだい | <span class="kanji">八台</span> | Section 3 Unit 6 |
 | eight (objects) | はっこ | <span class="kanji">八個</span> | Section 2 Unit 14 |
 | eight (objects, generic) | やっつ | <span class="kanji">八つ</span> | Section 2 Unit 14 |
 | eight (people) | はちにん | <span class="kanji">八人</span> | Section 2 Unit 18 |
@@ -302,6 +306,7 @@ one or more Kanji characters.
 | five | ご | <span class="kanji">五</span> | Section 1 Unit 6 |
 | five (birds, rabbits) | ごば | <span class="kanji">五羽</span> | Section 2 Unit 14 |
 | five (books) | ごさつ | <span class="kanji">五冊</span> | Section 2 Unit 16 |
+| five (furniture, machines) | ごだい | <span class="kanji">五台</span> | Section 3 Unit 6 |
 | five (objects) | ごこ | <span class="kanji">五個</span> | Section 2 Unit 14 |
 | five (objects, generic) | いつつ | <span class="kanji">五つ</span> | Section 2 Unit 9 |
 | five (people) | ごにん | <span class="kanji">五人</span> | Section 2 Unit 18 |
@@ -324,6 +329,7 @@ one or more Kanji characters.
 | four | よん | <span class="kanji">四</span> | Section 1 Unit 6 |
 | four (birds, rabbits) | よんば | <span class="kanji">四羽</span> | Section 2 Unit 14 |
 | four (books) | よんさつ | <span class="kanji">四冊</span> | Section 2 Unit 16 |
+| four (furniture, machines) | よんだい | <span class="kanji">四台</span> | Section 3 Unit 6 |
 | four (objects) | よんこ | <span class="kanji">四個</span> | Section 2 Unit 14 |
 | four (objects, generic) | よっつ | <span class="kanji">四つ</span> | Section 2 Unit 1 |
 | four (people) | よにん | <span class="kanji">四人</span> | Section 2 Unit 18 |
@@ -564,6 +570,7 @@ one or more Kanji characters.
 | nine | きゅう | <span class="kanji">九</span> | Section 1 Unit 7 |
 | nine (birds, rabbits) | きゅうば | <span class="kanji">九羽</span> | Section 2 Unit 14 |
 | nine (books) | きゅうさつ | <span class="kanji">九冊</span> | Section 2 Unit 16 |
+| nine (furniture, machines) | きゅうだい | <span class="kanji">九台</span> | Section 3 Unit 6 |
 | nine (objects) | きゅうこ | <span class="kanji">九個</span> | Section 2 Unit 14 |
 | nine (objects, generic) | ここのつ | <span class="kanji">九つ</span> | Section 2 Unit 14 |
 | nine (people) | きゅうにん | <span class="kanji">九人</span> | Section 2 Unit 18 |
@@ -629,6 +636,7 @@ one or more Kanji characters.
 | one | いち | <span class="kanji">一</span> | Section 1 Unit 5 |
 | one (birds, rabbits, etc) | いちわ | <span class="kanji">一羽</span> | Section 2 Unit 13 |
 | one (book) | いっさつ | <span class="kanji">一冊</span> | Section 2 Unit 16 |
+| one (furniture, machine) | いちだい | <span class="kanji">一台</span> | Section 3 Unit 6 |
 | one (object, generic) | ひとつ | <span class="kanji">一つ</span> | Section 2 Unit 1 |
 | one (objects) | いっこ | <span class="kanji">一個</span> | Section 2 Unit 14 |
 | one (person) | ひとり | <span class="kanji">一人</span> | Section 2 Unit 18 |
@@ -750,6 +758,7 @@ one or more Kanji characters.
 | seven | なな | <span class="kanji">七</span> | Section 1 Unit 6 |
 | seven (birds, rabbits) | ななば | <span class="kanji">七羽</span> | Section 2 Unit 14 |
 | seven (books) | ななさつ | <span class="kanji">七冊</span> | Section 2 Unit 16 |
+| seven (furniture, machines) | ななだい | <span class="kanji">七台</span> | Section 3 Unit 6 |
 | seven (objects) | ななこ | <span class="kanji">七個</span> | Section 2 Unit 14 |
 | seven (objects, generic) | ななつ | <span class="kanji">七つ</span> | Section 2 Unit 9 |
 | seven (people) | しちにん | <span class="kanji">七人</span> | Section 2 Unit 18 |
@@ -780,6 +789,7 @@ one or more Kanji characters.
 | six | ろく | <span class="kanji">六</span> | Section 1 Unit 6 |
 | six (birds, rabbits) | ろくば | <span class="kanji">六羽</span> | Section 2 Unit 14 |
 | six (books) | ろくさつ | <span class="kanji">六冊</span> | Section 2 Unit 16 |
+| six (furniture, machines) | ろくだい | <span class="kanji">六台</span> | Section 3 Unit 6 |
 | six (objects) | ろっこ | <span class="kanji">六個</span> | Section 2 Unit 14 |
 | six (objects, generic) | むっつ | <span class="kanji">六つ</span> | Section 2 Unit 9 |
 | six (people) | ろくにん | <span class="kanji">六人</span> | Section 2 Unit 18 |
@@ -796,6 +806,7 @@ one or more Kanji characters.
 | skirt | スカート | | Section 1 Unit 8 |
 | sky | そら | <span class="kanji">空</span> | Section 2 Unit 20 |
 | slow | おそい | <span class="kanji">遅い</span> | Section 2 Unit 19 |
+| slowly | ゆっくり | | Section 3 Unit 6 |
 | small | ちいさい | <span class="kanji">小さい</span> | Section 1 Unit 3 |
 | small | Sサイズ | | Section 2 Unit 10 |
 | small | ちいさな | <span class="kanji">小さな</span> | Section 3 Unit 1 |
@@ -871,6 +882,7 @@ one or more Kanji characters.
 | ten | じゅう | <span class="kanji">十</span> | Section 1 Unit 7 |
 | ten (birds, rabbits) | じゅうば | <span class="kanji">十羽</span> | Section 2 Unit 14 |
 | ten (books) | じゅっさつ | <span class="kanji">十冊</span> | Section 2 Unit 16 |
+| ten (furniture, machines) | じゅうだい | <span class="kanji">十台</span> | Section 3 Unit 6 |
 | ten (objects) | じゅっこ | <span class="kanji">十個</span> | Section 2 Unit 14 |
 | ten (people) | じゅうにん | <span class="kanji">十人</span> | Section 2 Unit 18 |
 | ten (pictures) | じゅうまい | <span class="kanji">十枚</span> | Section 2 Unit 18 |
@@ -922,6 +934,7 @@ one or more Kanji characters.
 | three | さん | <span class="kanji">三</span> | Section 1 Unit 5 |
 | three (birds, rabbits, etc) | さんば | <span class="kanji">三羽</span> | Section 2 Unit 13 |
 | three (books) | さんさつ | <span class="kanji">三冊</span> | Section 2 Unit 16 |
+| three (furniture, machines) | さんだい | <span class="kanji">三台</span> | Section 3 Unit 6 |
 | three (objects) | さんこ | <span class="kanji">三個</span> | Section 2 Unit 14 |
 | three (objects, generic) | みっつ | <span class="kanji">三つ</span> | Section 2 Unit 1 |
 | three (people) | さんにん | <span class="kanji">三人</span> | Section 2 Unit 18 |
@@ -981,6 +994,7 @@ one or more Kanji characters.
 | to hang out | あそびます | <span class="kanji">遊びます</span> | Section 2 Unit 1 |
 | to have | あります | | Section 2 Unit 2 |
 | to have | います | | Section 2 Unit 13 |
+| to have | もっています | <span class="kanji">持っています</span> | Section 3 Unit 6 |
 | to help with | てつだいます | | Section 2 Unit 6 |
 | to hold | もちます | <span class="kanji">持ちます</span> | Section 3 Unit 3 |
 | to know | ができます | | Section 2 Unit 7 |
@@ -1027,9 +1041,10 @@ one or more Kanji characters.
 | to teach | おしえます | <span class="kanji">教えます</span> | Section 2 Unit 20 |
 | to translate | ほんやくします | | Section 2 Unit 9 |
 | to turn | まがります | <span class="kanji">曲がります</span> | Section 3 Unit 4 |
+| to turn off | けします | <span class="kanji">消します</span> | Section 3 Unit 6 |
 | to turn on | つけます | | Section 2 Unit 17 |
 | to use | つかいます | <span class="kanji">使います</span> | Section 2 Unit 8 |
-| to wait for | まちます | | Section 2 Unit 7 |
+| to wait for | まちます | <span class="kanji">待ちます</span> | Section 2 Unit 7 |
 | to walk | あるくます | <span class="kanji">歩くます</span> | Section 2 Unit 19 |
 | to wash | あらいます | <span class="kanji">洗います</span> | Section 2 Unit 9 |
 | to watch | みます | <span class="kanji">見ます</span> | Section 1 Unit 7 |
@@ -1037,6 +1052,7 @@ one or more Kanji characters.
 | to wear (torso) | きます | <span class="kanji">着ます</span> | Section 2 Unit 19 |
 | to work | しごとします | | Section 2 Unit 9 |
 | to work | はたらきます | <span class="kanji">働きます</span> | Section 2 Unit 16 |
+| to work as | つとめます | <span class="kanji">勤めます</span> | Section 3 Unit 6 |
 | to write | かきます | <span class="kanji">書きます</span> | Section 2 Unit 11 |
 | today | きょう | <span class="kanji">今日</span> | Section 2 Unit 5 |
 | tofu | とうふ | | Section 2 Unit 8 |
@@ -1064,6 +1080,7 @@ one or more Kanji characters.
 | two | に | <span class="kanji">二</span> | Section 1 Unit 5 |
 | two (birds, rabbits, etc) | にわ | <span class="kanji">二羽</span> | Section 2 Unit 13 |
 | two (books) | にさつ | <span class="kanji">二冊</span> | Section 2 Unit 16 |
+| two (furniture, machines) | にだい | <span class="kanji">二台</span> | Section 3 Unit 6 |
 | two (objects) | にこ | <span class="kanji">二個</span> | Section 2 Unit 14 |
 | two (objects, generic) | ふたつ | <span class="kanji">二つ</span> | Section 2 Unit 1 |
 | two (people) | ふたり | <span class="kanji">二人</span> | Section 2 Unit 18 |

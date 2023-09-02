@@ -52,7 +52,7 @@
 | to meet | あいます | 会います |
 | to take (a photo) | とります | 撮ります |
 | to ride | のります | 乗ります |
-| to wait for | まちます | |
+| to wait for | まちます | 待ちます |
 | who | だれ | 誰 |
 
 ### Examples

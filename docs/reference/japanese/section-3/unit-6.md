@@ -3,6 +3,23 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| cell phone | けいたいでんわ | 携帯電話 |
+| door | ドア | |
+| early | はやく | 早く |
+| slowly | ゆっくり | |
+| to have | もっています | 持っています |
+| to turn off | けします | 消します |
+| to work as | つとめます | 勤めます |
+| one (furniture, machine) | いちだい | 一台 |
+| two (furniture, machines) | にだい | 二台 |
+| three (furniture, machines) | さんだい | 三台 |
+| four (furniture, machines) | よんだい | 四台 |
+| five (furniture, machines) | ごだい | 五台 |
+| six (furniture, machines) | ろくだい | 六台 |
+| seven (furniture, machines) | ななだい | 七台 |
+| eight (furniture, machines) | はちだい | 八台 |
+| nine (furniture, machines) | きゅうだい | 九台 |
+| ten (furniture, machines) | じゅうだい | 十台 |
 
 ### Examples
 | English | Japanese |
