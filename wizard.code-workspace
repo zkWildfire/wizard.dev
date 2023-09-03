@@ -45,7 +45,7 @@
 				"scope": "workspace"
 			}
 		},
-		"dotnet.defaultSolution": "Lightspeed/Lightspeed.sln",
+		"dotnet.defaultSolution": "projects/lightspeed/Lightspeed.sln",
 		"dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
 		"dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
 		"editor.renderWhitespace": "boundary",
