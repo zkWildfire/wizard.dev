@@ -90,6 +90,18 @@ public partial class LineGraph : ComponentBase
 	private int DatasetsCount => LineLabels.Count;
 
 	/// <summary>
+	/// Options to use for the chart.
+	/// </summary>
+	private readonly LineChartOptions _chartOptions = new()
+	{
+		Responsive = true,
+		Interaction = new()
+		{
+			Mode = InteractionMode.Index
+		}
+	};
+
+	/// <summary>
 	/// Data to display on the chart.
 	/// </summary>
 	private ChartData _chartData = null!;
@@ -260,16 +272,4 @@ public partial class LineGraph : ComponentBase
 		_chartData.Datasets = newDatasets;
 		return Chart.UpdateAsync(_chartData, _chartOptions);
 	}
-
-	/// <summary>
-	/// Options to use for the chart.
-	/// </summary>
-	private readonly LineChartOptions _chartOptions = new()
-	{
-		Responsive = true,
-		Interaction = new()
-		{
-			Mode = InteractionMode.Index,
-		}
-	};
 }
