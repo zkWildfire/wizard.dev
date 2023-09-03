@@ -61,6 +61,17 @@ public interface ITrainingSession : IDisposable
 	IReadOnlyList<MetricsSnapshot> Metrics { get; }
 
 	/// <summary>
+	/// Time at which the training session was started.
+	/// </summary>
+	DateTime StartTime { get; }
+
+	/// <summary>
+	/// Time at which the training session finished or was stopped.
+	/// If the training session is still running, this will be `null`.
+	/// </summary>
+	DateTime? EndTime { get; }
+
+	/// <summary>
 	/// Stops the training session.
 	/// Most training sessions will not stop immediately, but will instead
 	///   stop at the end of the current epoch.

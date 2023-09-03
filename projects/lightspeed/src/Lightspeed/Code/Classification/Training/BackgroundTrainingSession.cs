@@ -46,7 +46,7 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		{
 			CurrentEpoch = 0,
 			TotalEpochs = Hyperparameters.Epochs,
-			TotalDuration = DateTime.UtcNow - _trainingStartTime,
+			TotalDuration = DateTime.UtcNow - StartTime,
 			TrainingMetrics = default,
 			ValidationMetrics = default
 		};
@@ -76,6 +76,17 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		new List<MetricsSnapshot>(_metrics);
 
 	/// <summary>
+	/// Time at which the training session was started.
+	/// </summary>
+	public DateTime StartTime { get; private set; }
+
+	/// <summary>
+	/// Time at which the training session finished or was stopped.
+	/// If the training session is still running, this will be `null`.
+	/// </summary>
+	public DateTime? EndTime { get; private set; }
+
+	/// <summary>
 	/// Model being trained.
 	/// </summary>
 	private readonly IClassificationModelInstance _model;
@@ -97,19 +108,9 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		new();
 
 	/// <summary>
-	/// Time that the training session started.
-	/// </summary>
-	private readonly DateTime _trainingStartTime;
-
-	/// <summary>
 	/// Time that the current epoch started.
 	/// </summary>
 	private DateTime _epochStartTime;
-
-	/// <summary>
-	/// Time at which training completed.
-	/// </summary>
-	private DateTime? _trainingEndTime;
 
 	/// <summary>
 	/// Whether or not the training session has completed.
@@ -133,8 +134,8 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		SessionId = Guid.NewGuid();
 		Hyperparameters = hyperparameters;
 		_model = model;
-		_trainingStartTime = DateTime.UtcNow;
-		_epochStartTime = _trainingStartTime;
+		StartTime = DateTime.UtcNow;
+		_epochStartTime = StartTime;
 
 		// Hook into events
 		_model.OnEpochComplete += NotifyOnEpochComplete;
@@ -201,7 +202,7 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		_epochStartTime = DateTime.UtcNow;
 		if (isLastEpoch)
 		{
-			_trainingEndTime = _epochStartTime;
+			EndTime = _epochStartTime;
 		}
 
 		// Broadcast to events

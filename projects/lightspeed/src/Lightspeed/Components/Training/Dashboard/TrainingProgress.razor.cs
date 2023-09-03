@@ -110,6 +110,18 @@ public partial class TrainingProgress : ComponentBase
 	private const string PROGRESS_BAR_CSS_INACTIVE = "bg-success";
 
 	/// <summary>
+	/// Time at which the training session was started.
+	/// </summary>
+	private string StartTime => ToDateString(TrainingSession.StartTime);
+
+	/// <summary>
+	/// Time at which the training session ended.
+	/// </summary>
+	private string EndTime => TrainingSession.EndTime.HasValue
+		? ToDateString(TrainingSession.EndTime.Value)
+		: "N/A";
+
+	/// <summary>
 	/// State data for the component.
 	/// </summary>
 	private State _state = new()
@@ -174,5 +186,22 @@ public partial class TrainingProgress : ComponentBase
 			//   invoked using `InvokeAsync()`
 			_ = InvokeAsync(StateHasChanged);
 		}
+	}
+
+	/// <summary>
+	/// Converts a `DateTime` object to a string.
+	/// </summary>
+	/// <param name="dateTime">
+	/// `DateTime` object to convert.
+	/// </param>
+	/// <returns>
+	/// The string representation of the `DateTime` object.
+	/// </returns>
+	private static string ToDateString(DateTime dateTime)
+	{
+		var localTime = dateTime.ToLocalTime();
+		var timeZone = TimeZoneInfo.Local;
+		return localTime.ToString(CultureInfo.CurrentCulture) + " " +
+			$"({timeZone.StandardName})";
 	}
 }
