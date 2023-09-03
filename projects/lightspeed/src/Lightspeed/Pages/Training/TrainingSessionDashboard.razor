@@ -11,9 +11,18 @@
 	<TrainingProgress
 		TrainingSession="@_trainingSession"
 	/>
+	<hr />
 
 	<!-- Metrics -->
 	<TrainingMetrics
 		TrainingSession="@_trainingSession"
 	/>
+	<hr />
+
+	<!-- Hyperparameters -->
+	<TrainingHyperparameters
+		GenericHyperparameters="@_trainingSession.Hyperparameters"
+		ModelHyperparameters="@_trainingSession.ModelHyperparameters"
+	/>
+
 </div>

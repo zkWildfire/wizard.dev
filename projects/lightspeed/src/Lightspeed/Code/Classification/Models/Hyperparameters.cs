@@ -53,4 +53,47 @@ public record class Hyperparameters
 	///   model data will not be saved during training.
 	/// </summary>
 	public required int SaveInterval { get; init; }
+
+	/// <summary>
+	/// Dictionary of all hyperparameters in string form.
+	/// The key for each entry will be the display name for the hyperparameter.
+	///   The value for each entry will be the value of the hyperparameter.
+	/// </summary>
+	public IReadOnlyDictionary<string, string> Parameters
+	{
+		get
+		{
+			return new Dictionary<string, string>()
+			{
+				{
+					"Optimizer",
+					Optimizer.ToString()
+				},
+				{
+					"Loss",
+					Loss.ToString()
+				},
+				{
+					"Dataset",
+					Dataset.Dataset.DisplayName
+				},
+				{
+					"Learning Rate",
+					LearningRate.ToString(CultureInfo.InvariantCulture)
+				},
+				{
+					"Epochs",
+					Epochs.ToString(CultureInfo.InvariantCulture)
+				},
+				{
+					"Batch Size",
+					BatchSize.ToString(CultureInfo.InvariantCulture)
+				},
+				{
+					"Save Interval",
+					SaveInterval.ToString(CultureInfo.InvariantCulture)
+				}
+			};
+		}
+	}
 }
