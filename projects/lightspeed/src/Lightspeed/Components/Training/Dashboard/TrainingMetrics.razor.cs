@@ -28,6 +28,41 @@ public partial class TrainingMetrics : ComponentBase
 	private LineGraph LossGraph { get; set; } = null!;
 
 	/// <summary>
+	/// Chart that displays the model's overall true positives rate over time.
+	/// </summary>
+	private LineGraph TruePositivesGraph { get; set; } = null!;
+
+	/// <summary>
+	/// Chart that displays the model's overall false positives rate over time.
+	/// </summary>
+	private LineGraph FalsePositivesGraph { get; set; } = null!;
+
+	/// <summary>
+	/// Chart that displays the model's overall true negatives rate over time.
+	/// </summary>
+	private LineGraph TrueNegativesGraph { get; set; } = null!;
+
+	/// <summary>
+	/// Chart that displays the model's overall false negatives rate over time.
+	/// </summary>
+	private LineGraph FalseNegativesGraph { get; set; } = null!;
+
+	/// <summary>
+	/// Chart that displays the model's overall precision over time.
+	/// </summary>
+	private LineGraph PrecisionGraph { get; set; } = null!;
+
+	/// <summary>
+	/// Chart that displays the model's overall recall over time.
+	/// </summary>
+	private LineGraph RecallGraph { get; set; } = null!;
+
+	/// <summary>
+	/// Chart that displays the model's overall F1 score over time.
+	/// </summary>
+	private LineGraph F1Graph { get; set; } = null!;
+
+	/// <summary>
 	/// Lock used to synchronize access to the component's internal state.
 	/// In general, this lock will only be acquired by the training thread as
 	///   a result of broadcasting to the `OnEpochComplete` event. However,
@@ -43,21 +78,55 @@ public partial class TrainingMetrics : ComponentBase
 	/// Labels displayed for each line in the accuracy graph.
 	/// </summary>
 	private readonly IReadOnlyList<string> _accuracyGraphLabels =
-		new List<string>()
-		{
-			"Training Accuracy",
-			"Validation Accuracy"
-		};
+		GetLabels("Accuracy");
 
 	/// <summary>
 	/// Labels displayed for each line in the loss graph.
 	/// </summary>
 	private readonly IReadOnlyList<string> _lossGraphLabels =
-		new List<string>()
-		{
-			"Training Loss",
-			"Validation Loss"
-		};
+		GetLabels("Loss");
+
+	/// <summary>
+	/// Labels displayed for each line in the true positives graph.
+	/// </summary>
+	private readonly IReadOnlyList<string> _tpGraphLabels =
+		GetLabels("True Positive Rate");
+
+	/// <summary>
+	/// Labels displayed for each line in the false positives graph.
+	/// </summary>
+	private readonly IReadOnlyList<string> _fpGraphLabels =
+		GetLabels("False Positive Rate");
+
+	/// <summary>
+	/// Labels displayed for each line in the true negatives graph.
+	/// </summary>
+	private readonly IReadOnlyList<string> _tnGraphLabels =
+		GetLabels("True Negative Rate");
+
+	/// <summary>
+	/// Labels displayed for each line in the false negatives graph.
+	/// </summary>
+	private readonly IReadOnlyList<string> _fnGraphLabels =
+		GetLabels("False Negative Rate");
+
+	/// <summary>
+	/// Labels displayed for each line in the precision graph.
+	/// </summary>
+	private readonly IReadOnlyList<string> _precisionGraphLabels =
+		GetLabels("Precision");
+
+	/// <summary>
+	/// Labels displayed for each line in the recall graph.
+	/// </summary>
+	private readonly IReadOnlyList<string> _recallGraphLabels =
+		GetLabels("Recall");
+
+	/// <summary>
+	/// Labels displayed for each line in the F1 graph.
+	/// </summary>
+	private readonly IReadOnlyList<string> _f1GraphLabels =
+		GetLabels("F1 Score");
 
 	/// <summary>
 	/// Metrics that are currently being displayed by the component.
@@ -124,50 +193,53 @@ public partial class TrainingMetrics : ComponentBase
 		//   epoch completes. Having this code outside the `lock()` block is
 		//   necessary to allow async calls to Blazor Charts methods to be
 		//   made.
-		var accuracyTask = UpdateAccuracyGraph();
-		var lossTask = UpdateLossGraph();
-		await accuracyTask.ConfigureAwait(true);
-		await lossTask.ConfigureAwait(true);
+		var tasks = new List<Task>()
+		{
+			UpdateGraph(
+				AccuracyGraph,
+				m => m.Accuracy * 100.0
+			),
+			UpdateGraph(
+				LossGraph,
+				m => m.Loss * 1000 / m.Count
+			),
+			UpdateGraph(
+				TruePositivesGraph,
+				m => m.TruePositiveRate * 100.0
+			),
+			UpdateGraph(
+				FalsePositivesGraph,
+				m => m.FalsePositiveRate * 100.0
+			),
+			UpdateGraph(
+				TrueNegativesGraph,
+				m => m.TrueNegativeRate * 100.0
+			),
+			UpdateGraph(
+				FalseNegativesGraph,
+				m => m.FalseNegativeRate * 100.0
+			),
+			UpdateGraph(
+				PrecisionGraph,
+				m => m.Precision * 100.0
+			),
+			UpdateGraph(
+				RecallGraph,
+				m => m.Recall * 100.0
+			),
+			UpdateGraph(
+				F1Graph,
+				m => m.F1Score * 100.0
+			)
+		};
+		foreach (var task in tasks)
+		{
+			await task.ConfigureAwait(true);
+		}
 
 		// This could be called from the training thread, so it has to be
 		//   invoked using `InvokeAsync()`
 		_ = InvokeAsync(StateHasChanged);
-	}
-
-	/// <summary>
-	/// Updates the accuracy graph to match the current stored metrics.
-	/// </summary>
-	/// <returns>
-	/// A task set once the graph has been updated.
-	/// </returns>
-	private Task UpdateAccuracyGraph()
-	{
-		return UpdateGraph(
-			AccuracyGraph,
-			new List<Func<MetricsSnapshot, double>>()
-			{
-				m => m.TrainingMetrics.Accuracy * 100.0,
-				m => m.ValidationMetrics.Accuracy * 100.0
-			}
-		);
-	}
-
-	/// <summary>
-	/// Updates the loss graph to match the current stored metrics.
-	/// </summary>
-	/// <returns>
-	/// A task set once the graph has been updated.
-	/// </returns>
-	private Task UpdateLossGraph()
-	{
-		return UpdateGraph(
-			LossGraph,
-			new List<Func<MetricsSnapshot, double>>()
-			{
-				m => m.TrainingMetrics.Loss * 1000 / m.TrainingMetrics.Count,
-				m => m.ValidationMetrics.Loss * 1000 / m.ValidationMetrics.Count
-			}
-		);
 	}
 
 	/// <summary>
@@ -176,31 +248,28 @@ public partial class TrainingMetrics : ComponentBase
 	/// <param name="graph">
 	/// Graph to update.
 	/// </param>
-	/// <param name="selectors">
-	/// List of functions that select the data to add to the graph from the
-	///   metric objects. These functions must be specified in the same order
-	///   as the line labels in the graph, e.g. the data returned by
-	///   `selectors[n]` will be used to update the line with index `n` in the
-	///   graph.
+	/// <param name="selector">
+	/// Functor that selects the data to add to the graph from the metrics.
 	/// </param>
 	/// <returns>
 	/// A task set once the graph has been updated.
 	/// </returns>
 	private async Task UpdateGraph(
 		LineGraph graph,
-		IReadOnlyList<Func<MetricsSnapshot, double>> selectors)
+		Func<ModelMetrics, double> selector)
 	{
 		// Figure out how many new data points need to be added
-		var currentDataPointsCount = _currentMetrics.Count;
 		var graphDataPointsCount = graph.DataPointsCount;
 		var metrics = _currentMetrics.Skip(graphDataPointsCount);
 
 		foreach (var metric in metrics)
 		{
 			// Generate the list of data to add to the graph
-			var data = selectors.Select(
-				f => f(metric)
-			).ToList();
+			var data = new List<double>()
+			{
+				selector(metric.TrainingMetrics),
+				selector(metric.ValidationMetrics)
+			};
 
 			// Update the graph
 			await graph.AddDataAsync(
@@ -208,5 +277,23 @@ public partial class TrainingMetrics : ComponentBase
 				data
 			).ConfigureAwait(true);
 		}
+	}
+
+	/// <summary>
+	/// Gets the labels to use for the graph's lines.
+	/// </summary>
+	/// <param name="metric">
+	/// Metric that the graph is displaying.
+	/// </param>
+	/// <returns>
+	/// A list of labels that the graph should use.
+	/// </returns>
+	private static IReadOnlyList<string> GetLabels(string metric)
+	{
+		return new List<string>()
+		{
+			$"Training {metric}",
+			$"Validation {metric}"
+		};
 	}
 }

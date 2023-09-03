@@ -1,7 +1,7 @@
 @using Lightspeed.Components.Utils
 
-<!-- Row 1: General info -->
-<div class="row">
+<!-- Row 1: General Info -->
+<div class="row mb-3">
 	<!-- Accuracy graph -->
 	<div class="col-6">
 		<LineGraph
@@ -17,6 +17,78 @@
 			@ref="LossGraph"
 			ChartTitle="Loss (Scaled, Normalized)"
 			LineLabels="@_lossGraphLabels"
+		/>
+	</div>
+</div>
+
+<!-- Row 2: Aggregate Statistics -->
+<div class="row mb-3">
+	<!-- Precision graph -->
+	<div class="col-4">
+		<LineGraph
+			@ref="PrecisionGraph"
+			ChartTitle="Precision"
+			LineLabels="@_precisionGraphLabels"
+		/>
+	</div>
+
+	<!-- Recall graph -->
+	<div class="col-4">
+		<LineGraph
+			@ref="RecallGraph"
+			ChartTitle="Recall"
+			LineLabels="@_recallGraphLabels"
+		/>
+	</div>
+
+	<!-- F1 Score graph -->
+	<div class="col-4">
+		<LineGraph
+			@ref="F1Graph"
+			ChartTitle="F1 Score"
+			LineLabels="@_f1GraphLabels"
+		/>
+	</div>
+</div>
+
+<!-- Row 3: True/False Positive Rates -->
+<div class="row mb-3">
+	<!-- True Positives graph -->
+	<div class="col-6">
+		<LineGraph
+			@ref="TruePositivesGraph"
+			ChartTitle="True Positives Rate"
+			LineLabels="@_tpGraphLabels"
+		/>
+	</div>
+
+	<!-- False Positives graph -->
+	<div class="col-6">
+		<LineGraph
+			@ref="FalsePositivesGraph"
+			ChartTitle="False Positives Rate"
+			LineLabels="@_fpGraphLabels"
+		/>
+	</div>
+</div>
+
+<!-- Row 4: True/False Negative Rates -->
+<div class="row mb-3">
+	<!-- True Negatives graph -->
+	<div class="col-6">
+		<LineGraph
+			@ref="TrueNegativesGraph"
+			ChartTitle="True Negatives Rate"
+			LineLabels="@_tnGraphLabels"
+		/>
+	</div>
+
+	<!-- False Negatives graph -->
+	<div class="col-6">
+		<LineGraph
+			@ref="FalseNegativesGraph"
+			ChartTitle="False Negatives Rate"
+			LineLabels="@_fnGraphLabels"
 		/>
 	</div>
 </div>
