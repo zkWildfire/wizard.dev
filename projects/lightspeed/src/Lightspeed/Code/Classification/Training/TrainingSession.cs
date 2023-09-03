@@ -28,6 +28,11 @@ public interface ITrainingSession : IDisposable
 	bool IsActive { get; }
 
 	/// <summary>
+	/// Number of classes being classified.
+	/// </summary>
+	int ClassCount { get; }
+
+	/// <summary>
 	/// Metrics for the last completed epoch.
 	/// If the training session has not completed an epoch yet, the snapshot
 	///   will have most fields set to 0.

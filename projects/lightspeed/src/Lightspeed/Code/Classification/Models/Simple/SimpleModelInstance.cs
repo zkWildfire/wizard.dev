@@ -102,6 +102,11 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 	public event EventHandler<OnEpochCompleteEventArgs>? OnEpochComplete;
 
 	/// <summary>
+	/// Number of classes that the model can classify.
+	/// </summary>
+	public int ClassCount { get; }
+
+	/// <summary>
 	/// Device that the model is using.
 	/// </summary>
 	public Device Device { get; }
@@ -117,11 +122,6 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 	/// Model instance being trained.
 	/// </summary>
 	private readonly Model _model;
-
-	/// <summary>
-	/// Number of classes that the model is classifying.
-	/// </summary>
-	private readonly int _numClasses;
 
 	/// <summary>
 	/// Folder to save model data to.
@@ -177,7 +177,7 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 		// Set up the model
 		var flattenedInputSize = inputSize.Aggregate(1L, (a, b) => a * b);
 		var flattenedOutputSize = outputSize.Aggregate(1L, (a, b) => a * b);
-		_numClasses = (int)flattenedOutputSize;
+		ClassCount = (int)flattenedOutputSize;
 		_model = new(
 			flattenedInputSize,
 			hiddenSize,
@@ -388,7 +388,7 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 		bool isTraining)
 	{
 		using var scope = NewDisposeScope();
-		var _metrics = new MetricsHelper(_numClasses);
+		var _metrics = new MetricsHelper(ClassCount);
 
 		// Run the training loop
 		foreach (var data in dataloader)

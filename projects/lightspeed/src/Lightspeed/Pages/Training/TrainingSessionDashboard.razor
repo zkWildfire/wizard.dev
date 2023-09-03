@@ -13,9 +13,40 @@
 	/>
 	<hr />
 
-	<!-- Metrics -->
-	<TrainingMetrics
+	<!-- Overall Metrics -->
+	<div class="row">
+		<h2 class="text-info text-center">
+			Overall Metrics
+		</h2>
+	</div>
+	<GeneralTrainingMetrics
 		TrainingSession="@_trainingSession"
+	/>
+	<hr />
+
+	<!-- Class Specific Metrics -->
+	<div class="row">
+		<h2 class="text-info text-center">
+			Class Specific Metrics
+		</h2>
+	</div>
+	<nav class="d-flex justify-content-center mt-2" aria-label="Pagination">
+		<ul class="pagination">
+			@for (var i = 0; i < ClassCount; i++)
+			{
+				var classIndex = i;
+				<li class="page-item">
+					<button class="@GetPaginationCss(classIndex)"
+						@onclick=@(() => OnClassSelected(classIndex))>
+						@(i + 1)
+					</button>
+				</li>
+			}
+		</ul>
+	</nav>
+	<ClassTrainingMetrics
+		TrainingSession="@_trainingSession"
+		ClassIndex="@_selectedClassIndex"
 	/>
 	<hr />
 

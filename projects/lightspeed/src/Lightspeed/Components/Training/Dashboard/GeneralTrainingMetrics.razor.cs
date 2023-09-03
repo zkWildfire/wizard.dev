@@ -7,9 +7,9 @@ using Lightspeed.Components.Utils;
 namespace Lightspeed.Components.Training.Dashboard;
 
 /// <summary>
-/// Component that displays the training metrics for a model.
+/// Component that displays the overall training metrics for a model.
 /// </summary>
-public partial class TrainingMetrics : ComponentBase
+public partial class GeneralTrainingMetrics : ComponentBase
 {
 	/// <summary>
 	/// Session that the component displays the progress of.

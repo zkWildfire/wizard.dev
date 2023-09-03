@@ -235,6 +235,33 @@ public partial class LineGraph : ComponentBase
 	}
 
 	/// <summary>
+	/// Replaces the existing data with a new set of data.
+	/// </summary>
+	/// <param name="data">
+	/// New data to display on the graph. Each internal list must be the same
+	///   length. The number of internal lists must be equal to the number of
+	///   lines on the graph.
+	/// </param>
+	/// <returns>
+	/// A task set once the chart has been cleared.
+	/// </returns>
+	public Task ReplaceDataAsync(
+		IReadOnlyList<List<double>> data)
+	{
+		Debug.Assert(_chartData.Datasets != null);
+		var newDatasets = new List<IChartDataset>();
+		for (var i = 0; i < _chartData.Datasets.Count; i++)
+		{
+			var dataset = (LineChartDataset)_chartData.Datasets[i];
+			dataset.Data = data[i];
+			newDatasets.Add(dataset);
+		}
+
+		_chartData.Datasets = newDatasets;
+		return Chart.UpdateAsync(_chartData, _chartOptions);
+	}
+
+	/// <summary>
 	/// Options to use for the chart.
 	/// </summary>
 	private readonly LineChartOptions _chartOptions = new()

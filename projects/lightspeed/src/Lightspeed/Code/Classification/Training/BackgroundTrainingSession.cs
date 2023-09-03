@@ -32,6 +32,11 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 	public bool IsActive => !_trainingComplete;
 
 	/// <summary>
+	/// Number of classes being classified.
+	/// </summary>
+	public int ClassCount => _model.ClassCount;
+
+	/// <summary>
 	/// Metrics for the last completed epoch.
 	/// If the training session has not completed an epoch yet, the snapshot
 	///   will have most fields set to 0.

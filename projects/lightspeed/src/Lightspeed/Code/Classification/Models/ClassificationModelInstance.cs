@@ -17,6 +17,11 @@ public interface IClassificationModelInstance : IDisposable
 	event EventHandler<OnEpochCompleteEventArgs>? OnEpochComplete;
 
 	/// <summary>
+	/// Number of classes that the model can classify.
+	/// </summary>
+	int ClassCount { get; }
+
+	/// <summary>
 	/// Device that the model is using.
 	/// </summary>
 	Device Device { get; }
