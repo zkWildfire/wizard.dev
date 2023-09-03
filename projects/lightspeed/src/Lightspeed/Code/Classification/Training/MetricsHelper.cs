@@ -98,10 +98,6 @@ public class MetricsHelper
 
 			// Calculate macro-averaged metrics
 			var numClasses = _classData.Length;
-			var macroAccuracy = SafeDivide(
-				sumAccuracy,
-				numClasses
-			);
 			var macroTruePositiveRate = SafeDivide(
 				sumTruePositiveRate,
 				numClasses
@@ -134,7 +130,8 @@ public class MetricsHelper
 			return new ModelMetrics
 			{
 				ClassMetrics = classMetricsList,
-				Accuracy = macroAccuracy,
+				Accuracy = (double)_totalCorrect / _totalSamples,
+				Count = _totalSamples,
 				TruePositiveRate = macroTruePositiveRate,
 				FalsePositiveRate = macroFalsePositiveRate,
 				TrueNegativeRate = macroTrueNegativeRate,
@@ -223,6 +220,16 @@ public class MetricsHelper
 	private readonly ClassData[] _classData;
 
 	/// <summary>
+	/// Total number of samples that have been added to the helper.
+	/// </summary>
+	private long _totalSamples;
+
+	/// <summary>
+	/// Total number of correct predictions that have been added to the helper.
+	/// </summary>
+	private long _totalCorrect;
+
+	/// <summary>
 	/// Total loss for the model over the epoch.
 	/// </summary>
 	private double _loss;
@@ -288,6 +295,10 @@ public class MetricsHelper
 		{
 			var predicted = predictedArray[i];
 			var actual = targetArray[i];
+
+			// Update total samples and total correct
+			_totalSamples++;
+			_totalCorrect += predicted == actual ? 1 : 0;
 
 			// Update True Positives and False Negatives
 			for (var j = 0; j < NumClasses; j++)

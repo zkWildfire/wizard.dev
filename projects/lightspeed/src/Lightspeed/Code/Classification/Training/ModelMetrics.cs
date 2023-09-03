@@ -21,6 +21,11 @@ public readonly record struct ModelMetrics
 	public required double Accuracy { get; init; }
 
 	/// <summary>
+	/// Total number of samples that were used to compute the metrics.
+	/// </summary>
+	public required long Count { get; init; }
+
+	/// <summary>
 	/// Average rate of true positives across all classes.
 	/// This will be a value in the range `[0, 1]`. This value will be computed
 	///   as a macro-average, not a micro-average.

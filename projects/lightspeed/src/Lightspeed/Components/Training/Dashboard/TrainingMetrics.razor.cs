@@ -164,8 +164,8 @@ public partial class TrainingMetrics : ComponentBase
 			LossGraph,
 			new List<Func<MetricsSnapshot, double>>()
 			{
-				m => m.TrainingMetrics.Loss,
-				m => m.ValidationMetrics.Loss
+				m => m.TrainingMetrics.Loss * 1000 / m.TrainingMetrics.Count,
+				m => m.ValidationMetrics.Loss * 1000 / m.ValidationMetrics.Count
 			}
 		);
 	}
