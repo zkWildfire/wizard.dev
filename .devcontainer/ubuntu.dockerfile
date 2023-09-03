@@ -5,6 +5,7 @@ ARG USERNAME
 ARG USER_UID
 ARG USER_GID
 
+ARG TIMEZONE=US/Arizona
 ARG CLANG_VERSION=15
 ARG CMAKE_VERSION=3.26.4
 ARG CMAKE_VERSION_SHORT=3.26
@@ -14,6 +15,7 @@ ARG PYTHON_VERSION=3.11
 
 # Install apt packages
 RUN apt-get update -y && \
+	DEBIAN_FRONTEND=noninteractive TZ=${TIMEZONE} \
 	apt-get install -y \
 	 	clang-${CLANG_VERSION} \
 		curl \
@@ -30,6 +32,7 @@ RUN apt-get update -y && \
 		sudo \
 		tar \
 		tree \
+		tzdata \
 		unzip \
 		valgrind \
 		vim \
@@ -90,3 +93,10 @@ RUN dotnet dev-certs https
 # Note that using `${PATH}` and `$PATH` may have different behavior according
 #   to https://github.com/moby/moby/issues/42863. For safety, prefer `$PATH`.
 ENV PATH="$PATH:/home/$USERNAME/.local/bin"
+
+# Set up time zone information
+USER root
+ENV TZ=${TIMEZONE}
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+USER $USERNAME
+ENV TZ=${TIMEZONE}
