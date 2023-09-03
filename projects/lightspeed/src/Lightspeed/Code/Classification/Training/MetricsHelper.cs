@@ -141,7 +141,8 @@ public class MetricsHelper
 				FalseNegativeRate = macroFalseNegativeRate,
 				Precision = macroPrecision,
 				Recall = macroRecall,
-				F1Score = macroF1Score
+				F1Score = macroF1Score,
+				Loss = _loss
 			};
 		}
 	}
@@ -212,14 +213,19 @@ public class MetricsHelper
 	}
 
 	/// <summary>
+	/// The number of classes that the model is classifying.
+	/// </summary>
+	private int NumClasses => _classData.Length;
+
+	/// <summary>
 	/// Per-class data required to calculate per-class model metrics.
 	/// </summary>
 	private readonly ClassData[] _classData;
 
 	/// <summary>
-	/// The number of classes that the model is classifying.
+	/// Total loss for the model over the epoch.
 	/// </summary>
-	private readonly int _numClasses;
+	private double _loss;
 
 	/// <summary>
 	/// Initializes the helper.
@@ -232,7 +238,6 @@ public class MetricsHelper
 		_classData = Enumerable.Range(0, classes)
 			.Select(_ => new ClassData())
 			.ToArray();
-		_numClasses = classes;
 	}
 
 	/// <summary>
@@ -248,8 +253,13 @@ public class MetricsHelper
 	///   where N is the number of samples in the batch. The tensor's data type
 	///   must be `long` (`int64` in TorchSharp).
 	/// </param>
-	public void AddData(Tensor predictions, Tensor targets)
+	/// <param name="loss">
+	/// Loss for the batch.
+	/// </param>
+	public void AddData(Tensor predictions, Tensor targets, double loss)
 	{
+		_loss += loss;
+
 		// Validate the tensor shapes and data types
 		Debug.Assert(predictions.Dimensions == 2);
 		Debug.Assert(predictions.dtype == ScalarType.Float32);
@@ -258,16 +268,16 @@ public class MetricsHelper
 
 		var batchSize = predictions.shape[0];
 		Debug.Assert(targets.shape[0] == batchSize);
-		Debug.Assert(predictions.shape[1] == _numClasses);
+		Debug.Assert(predictions.shape[1] == NumClasses);
 
 		// Check which class was predicted for each sample
 		var predictedClasses = predictions.argmax(1);
 
 		// Initialize temporary counters for each class
-		var tp = new int[_numClasses];
-		var fp = new int[_numClasses];
-		var tn = new int[_numClasses];
-		var fn = new int[_numClasses];
+		var tp = new int[NumClasses];
+		var fp = new int[NumClasses];
+		var tn = new int[NumClasses];
+		var fn = new int[NumClasses];
 
 		// Convert TorchSharp tensors to arrays for easier manipulation
 		var predictedArray = predictedClasses.data<long>().ToArray();
@@ -280,7 +290,7 @@ public class MetricsHelper
 			var actual = targetArray[i];
 
 			// Update True Positives and False Negatives
-			for (var j = 0; j < _numClasses; j++)
+			for (var j = 0; j < NumClasses; j++)
 			{
 				if (actual != j)
 				{
@@ -298,7 +308,7 @@ public class MetricsHelper
 			}
 
 			// Update True Negatives and False Positives
-			for (var j = 0; j < _numClasses; j++)
+			for (var j = 0; j < NumClasses; j++)
 			{
 				if (actual == j)
 				{
@@ -317,7 +327,7 @@ public class MetricsHelper
 		}
 
 		// Update the _classData array
-		for (var i = 0; i < _numClasses; i++)
+		for (var i = 0; i < NumClasses; i++)
 		{
 			_classData[i].UpdateMetrics(
 				isTruePositive: tp[i] > 0,

@@ -68,4 +68,9 @@ public readonly record struct ModelMetrics
 	///   as a macro-average, not a micro-average.
 	/// </summary>
 	public required double F1Score { get; init; }
+
+	/// <summary>
+	/// Total loss over the epoch.
+	/// </summary>
+	public required double Loss { get; init; }
 }

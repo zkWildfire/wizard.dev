@@ -3,6 +3,7 @@
  *   All rights reserved.
  */
 using Lightspeed.Classification.Events;
+using Lightspeed.Classification.Training;
 using TorchSharp;
 using static TorchSharp.torch;
 using static TorchSharp.torch.nn;
@@ -118,6 +119,11 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 	private readonly Model _model;
 
 	/// <summary>
+	/// Number of classes that the model is classifying.
+	/// </summary>
+	private readonly int _numClasses;
+
+	/// <summary>
 	/// Folder to save model data to.
 	/// </summary>
 	private readonly string _saveFolder;
@@ -130,11 +136,16 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 	/// <summary>
 	/// Initializes the model.
 	/// </summary>
-	/// <param name="inputSize">Size of each input tensor.</param>
+	/// <param name="inputSize">
+	/// Size of each input tensor.
+	/// </param>
 	/// <param name="hiddenSize">
 	/// Size of the 1D tensors used by the hidden layer.
 	/// </param>
-	/// <param name="outputSize">Size of each output tensor.</param>
+	/// <param name="outputSize">
+	/// Size of each output tensor. If this is not a 1D tensor, the output from
+	///   the model will need to be reshaped before it can be used.
+	/// </param>
 	/// <param name="device">Device that the model should use.</param>
 	/// <param name="saveFolder">
 	/// Folder to write model data to. If this folder already exists and has
@@ -166,6 +177,7 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 		// Set up the model
 		var flattenedInputSize = inputSize.Aggregate(1L, (a, b) => a * b);
 		var flattenedOutputSize = outputSize.Aggregate(1L, (a, b) => a * b);
+		_numClasses = (int)flattenedOutputSize;
 		_model = new(
 			flattenedInputSize,
 			hiddenSize,
@@ -274,6 +286,9 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 				hyperparameters.Dataset.TrainingSet.GetDataLoader(
 					hyperparameters.BatchSize
 				),
+				hyperparameters.Dataset.ValidationSet.GetDataLoader(
+					hyperparameters.BatchSize
+				),
 				i + 1,
 				hyperparameters.Epochs,
 				startTime
@@ -292,8 +307,11 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 	/// <param name="loss">
 	/// Loss function to use when training the model.
 	/// </param>
-	/// <param name="dataLoader">
-	/// Data Loader to get training data from.
+	/// <param name="trainDataloader">
+	/// Dataloader to get training data from.
+	/// </param>
+	/// <param name="validationDataloader">
+	/// Dataloader to get validation data from.
 	/// </param>
 	/// <param name="epoch">
 	/// Index of the epoch this particular training loop is for. This should
@@ -308,56 +326,97 @@ public sealed class SimpleModelInstance : IClassificationModelInstance
 	private void TrainEpoch(
 		Optimizer optimizer,
 		Loss<Tensor, Tensor, Tensor> loss,
-		DataLoader dataLoader,
+		DataLoader trainDataloader,
+		DataLoader validationDataloader,
 		int epoch,
 		int totalEpochs,
 		DateTime trainingStartTime)
 	{
 		using var scope = NewDisposeScope();
 
-		// Keep track of metrics for the epoch
-		var startTime = DateTime.UtcNow;
-		var totalCount = 0L;
-		var correctCount = 0L;
-		var totalLoss = 0.0;
+		// Run the training loop, then run the model on the validation data
+		var trainingStopwatch = Stopwatch.StartNew();
+		var trainingMetrics = RunEpoch(
+			optimizer,
+			loss,
+			trainDataloader,
+			true
+		);
+		trainingStopwatch.Stop();
 
-		// Run the training loop
-		foreach (var data in dataLoader)
-		{
-			optimizer.zero_grad();
+		var validationStopwatch = Stopwatch.StartNew();
+		var validationMetrics = RunEpoch(
+			optimizer,
+			loss,
+			validationDataloader,
+			false
+		);
+		validationStopwatch.Stop();
 
-			// Invoke the model and loss function
-			var target = data["label"];
-			var prediction = _model.call(data["data"]);
-			var output = loss.call(prediction, target);
-
-			// Backpropagate the loss
-			output.backward();
-			_ = optimizer.step();
-
-			// Update metrics
-			totalCount += prediction.shape[0];
-			totalLoss += output.flatten().sum().data<float>().First();
-			var results = prediction.argmax(1) == target;
-			correctCount += results.sum().data<long>().First();
-
-			scope.DisposeEverything();
-		}
-
-		var endTime = DateTime.UtcNow;
-		var totalDuration = endTime - trainingStartTime;
 		OnEpochComplete?.Invoke(
 			this,
 			new()
 			{
 				CurrentEpoch = epoch,
 				TotalEpochs = totalEpochs,
-				EpochDuration = endTime - startTime,
-				TotalDuration = totalDuration,
-				AverageEpochDuration = totalDuration / epoch,
-				Accuracy = correctCount / (double)totalCount,
-				Loss = totalLoss
+				TotalDuration = DateTime.UtcNow - trainingStartTime,
+				TrainingMetrics = trainingMetrics,
+				ValidationMetrics = validationMetrics
 			}
 		);
+	}
+
+	/// <summary>
+	/// Runs a single epoch on the given data.
+	/// </summary>
+	/// <param name="optimizer">
+	/// Optimizer to use when training the model.
+	/// </param>
+	/// <param name="loss">
+	/// Loss function to use when training the model.
+	/// </param>
+	/// <param name="dataloader">
+	/// Dataloader to get data from.
+	/// </param>
+	/// <param name="isTraining">
+	/// Whether or not the model is being trained.
+	/// </param>
+	private ModelMetrics RunEpoch(
+		Optimizer optimizer,
+		Loss<Tensor, Tensor, Tensor> loss,
+		DataLoader dataloader,
+		bool isTraining)
+	{
+		using var scope = NewDisposeScope();
+		var _metrics = new MetricsHelper(_numClasses);
+
+		// Run the training loop
+		foreach (var data in dataloader)
+		{
+			if (isTraining)
+			{
+				optimizer.zero_grad();
+			}
+
+			// Invoke the model and loss function
+			var target = data["label"];
+			var prediction = _model.call(data["data"]);
+			var output = loss.call(prediction, target);
+
+			// If the model is currently being trained, backpropagate the loss
+			if (isTraining)
+			{
+				output.backward();
+				_ = optimizer.step();
+			}
+
+			// Update metrics
+			var epochLoss = output.flatten().sum().data<float>().First();
+			_metrics.AddData(prediction, target, epochLoss);
+
+			scope.DisposeEverything();
+		}
+
+		return _metrics.Metrics;
 	}
 }

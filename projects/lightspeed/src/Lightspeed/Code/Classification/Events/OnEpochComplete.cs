@@ -23,46 +23,17 @@ public class OnEpochCompleteEventArgs : EventArgs
 	public required int TotalEpochs { get; init; }
 
 	/// <summary>
-	/// Time taken to complete the epoch.
-	/// </summary>
-	public required TimeSpan EpochDuration { get; init; }
-
-	/// <summary>
-	/// Average time spent per completed epoch.
-	/// </summary>
-	public required TimeSpan AverageEpochDuration { get; init; }
-
-	/// <summary>
 	/// Total time spent training so far.
 	/// </summary>
 	public required TimeSpan TotalDuration { get; init; }
 
 	/// <summary>
-	/// Accuracy of the model during the epoch.
-	/// This will be a value in the range `[0, 1]`.
+	/// Metrics from the epoch for the training dataset.
 	/// </summary>
-	public required double Accuracy { get; init; }
+	public required ModelMetrics TrainingMetrics { get; init; }
 
 	/// <summary>
-	/// Loss of the model during the epoch.
+	/// Metrics from the epoch for the validation dataset.
 	/// </summary>
-	public required double Loss { get; init; }
-
-	/// <summary>
-	/// Converts the event args to a metrics snapshot.
-	/// </summary>
-	/// <returns></returns>
-	public MetricsSnapshot ToMetricsSnapshot()
-	{
-		return new()
-		{
-			CurrentEpoch = CurrentEpoch,
-			TotalEpochs = TotalEpochs,
-			EpochDuration = EpochDuration,
-			AverageEpochDuration = AverageEpochDuration,
-			TotalDuration = TotalDuration,
-			Accuracy = Accuracy,
-			Loss = Loss
-		};
-	}
+	public required ModelMetrics ValidationMetrics { get; init; }
 }
