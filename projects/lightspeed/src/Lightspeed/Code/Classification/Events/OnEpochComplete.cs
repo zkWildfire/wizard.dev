@@ -36,4 +36,22 @@ public class OnEpochCompleteEventArgs : EventArgs
 	/// Metrics from the epoch for the validation dataset.
 	/// </summary>
 	public required ModelMetrics ValidationMetrics { get; init; }
+
+	/// <summary>
+	/// Converts the event args to a metrics snapshot.
+	/// </summary>
+	/// <returns>
+	/// A metrics snapshot that contains the same data as the event args.
+	/// </returns>
+	public MetricsSnapshot ToMetricsSnapshot()
+	{
+		return new MetricsSnapshot()
+		{
+			CurrentEpoch = CurrentEpoch,
+			TotalEpochs = TotalEpochs,
+			TotalDuration = TotalDuration,
+			TrainingMetrics = TrainingMetrics,
+			ValidationMetrics = ValidationMetrics
+		};
+	}
 }

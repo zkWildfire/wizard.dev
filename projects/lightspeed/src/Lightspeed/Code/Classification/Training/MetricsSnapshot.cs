@@ -21,28 +21,30 @@ public readonly record struct MetricsSnapshot
 	public required int TotalEpochs { get; init; }
 
 	/// <summary>
-	/// Time taken to complete the epoch.
-	/// </summary>
-	public required TimeSpan EpochDuration { get; init; }
-
-	/// <summary>
-	/// Average time spent per completed epoch.
-	/// </summary>
-	public required TimeSpan AverageEpochDuration { get; init; }
-
-	/// <summary>
 	/// Total time spent training so far.
 	/// </summary>
 	public required TimeSpan TotalDuration { get; init; }
 
 	/// <summary>
-	/// Accuracy of the model during the epoch.
-	/// This will be a value in the range `[0, 1]`.
+	/// Metrics from the epoch for the training dataset.
 	/// </summary>
-	public required double Accuracy { get; init; }
+	public required ModelMetrics TrainingMetrics { get; init; }
 
 	/// <summary>
-	/// Loss of the model during the epoch.
+	/// Metrics from the epoch for the validation dataset.
 	/// </summary>
-	public required double Loss { get; init; }
+	public required ModelMetrics ValidationMetrics { get; init; }
+
+	/// <summary>
+	/// Average duration of an epoch.
+	/// </summary>
+	public TimeSpan AverageEpochDuration
+	{
+		get
+		{
+			return CurrentEpoch == 0
+				? TimeSpan.Zero
+				: TotalDuration / CurrentEpoch;
+		}
+	}
 }

@@ -46,11 +46,9 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		{
 			CurrentEpoch = 0,
 			TotalEpochs = Hyperparameters.Epochs,
-			EpochDuration = TimeSpan.Zero,
-			AverageEpochDuration = TimeSpan.Zero,
 			TotalDuration = DateTime.UtcNow - _trainingStartTime,
-			Accuracy = 0,
-			Loss = 0
+			TrainingMetrics = default,
+			ValidationMetrics = default
 		};
 
 	/// <summary>
@@ -145,7 +143,7 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		_trainingTask = Task.Run(async () =>
 		{
 			await model.Train(hyperparameters, _cts.Token)
-				.ConfigureAwait(false);
+				.ConfigureAwait(true);
 			_trainingComplete = true;
 		}, _cts.Token);
 	}
@@ -196,16 +194,7 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 		OnEpochCompleteEventArgs args)
 	{
 		// Update the stored metrics
-		_metrics.Enqueue(new()
-		{
-			CurrentEpoch = args.CurrentEpoch,
-			TotalEpochs = Hyperparameters.Epochs,
-			EpochDuration = DateTime.UtcNow - _epochStartTime,
-			AverageEpochDuration = args.AverageEpochDuration,
-			TotalDuration = DateTime.UtcNow - _trainingStartTime,
-			Accuracy = args.Accuracy,
-			Loss = args.Loss
-		});
+		_metrics.Enqueue(args.ToMetricsSnapshot());
 
 		// Update internal state
 		var isLastEpoch = args.CurrentEpoch == Hyperparameters.Epochs;

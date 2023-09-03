@@ -76,7 +76,7 @@ public partial class DatasetGridElement : ComponentBase
 	private async Task OnDownloadClicked()
 	{
 		_isDownloading = true;
-		await _dataset.DownloadAsync().ConfigureAwait(false);
+		await _dataset.DownloadAsync().ConfigureAwait(true);
 	}
 
 	/// <summary>

@@ -2,8 +2,8 @@
  *   Copyright (c) 2023 Zach Wilson
  *   All rights reserved.
  */
-using BlazorBootstrap;
 using Lightspeed.Classification.Training;
+using Lightspeed.Components.Utils;
 namespace Lightspeed.Components.Training.Dashboard;
 
 /// <summary>
@@ -18,6 +18,16 @@ public partial class TrainingMetrics : ComponentBase
 	public ITrainingSession TrainingSession { get; set; } = null!;
 
 	/// <summary>
+	/// Graph that displays the model's accuracy over time.
+	/// </summary>
+	private LineGraph AccuracyGraph { get; set; } = null!;
+
+	/// <summary>
+	/// Chart that displays the model's loss over time.
+	/// </summary>
+	private LineGraph LossGraph { get; set; } = null!;
+
+	/// <summary>
 	/// Lock used to synchronize access to the component's internal state.
 	/// In general, this lock will only be acquired by the training thread as
 	///   a result of broadcasting to the `OnEpochComplete` event. However,
@@ -30,212 +40,58 @@ public partial class TrainingMetrics : ComponentBase
 	private readonly object _lock = new();
 
 	/// <summary>
+	/// Labels displayed for each line in the accuracy graph.
+	/// </summary>
+	private readonly IReadOnlyList<string> _accuracyGraphLabels =
+		new List<string>()
+		{
+			"Training Accuracy",
+			"Validation Accuracy"
+		};
+
+	/// <summary>
+	/// Labels displayed for each line in the loss graph.
+	/// </summary>
+	private readonly IReadOnlyList<string> _lossGraphLabels =
+		new List<string>()
+		{
+			"Training Loss",
+			"Validation Loss"
+		};
+
+	/// <summary>
 	/// Metrics that are currently being displayed by the component.
 	/// </summary>
 	private IReadOnlyList<MetricsSnapshot> _currentMetrics =
 		new List<MetricsSnapshot>();
 
 	/// <summary>
-	/// Chart that displays the model's accuracy over time.
-	/// </summary>
-	private LineChart AccuracyChart { get; set; } = null!;
-
-	/// <summary>
-	/// Chart that displays the model's loss over time.
-	/// </summary>
-	private LineChart LossChart { get; set; } = null!;
-
-	/// <summary>
-	/// Options to use for the accuracy chart.
-	/// </summary>
-	private readonly LineChartOptions _accuracyChartOptions = new()
-	{
-		Responsive = true,
-		Interaction = new()
-		{
-			Mode = InteractionMode.Index,
-		}
-	};
-
-	/// <summary>
-	/// Options to use for the accuracy chart.
-	/// </summary>
-	private readonly LineChartOptions _lossChartOptions = new()
-	{
-		Responsive = true,
-		Interaction = new()
-		{
-			Mode = InteractionMode.Index,
-		}
-	};
-
-	/// <summary>
-	/// Data to display on the accuracy chart.
-	/// </summary>
-	private ChartData _accuracyChartData;
-
-	/// <summary>
-	/// Data to display on the accuracy chart.
-	/// </summary>
-	private ChartData _lossChartData;
-
-	/// <summary>
 	/// Initializes the component.
-	/// </summary>
-	public TrainingMetrics()
-	{
-		const double LINE_BORDER_WIDTH = 2;
-		const double LINE_HOVER_BORDER_WIDTH = 4;
-		// Hide points by default
-		const int POINT_RADIUS = 0;
-		const int POINT_HOVER_RADIUS = 4;
-
-		// Colors defined by the charts theme (by index):
-		// 0. Teal
-		// 1. Indigo
-		// 2. Orange
-		// 3. Pink
-		// 4. Lavender
-		// 5. Lime
-		// 6. Blue
-		// 7. Purple
-		// 8. Yellow
-		// 9. Dark Orange
-		// 10. Sea Green
-		// 11. Chartreuse Green
-		var accuracyLineColor = ColorBuilder.CategoricalTwelveColors[1]
-			.ToColor()
-			.ToRgbString();
-		var lossLineColor = ColorBuilder.CategoricalTwelveColors[1]
-			.ToColor()
-			.ToRgbString();
-
-		_accuracyChartData = new()
-		{
-			Labels = new List<string>(),
-			Datasets = new List<IChartDataset>()
-			{
-				new LineChartDataset
-				{
-					Label = "Model Accuracy (Train)",
-					Data = new(),
-					BackgroundColor = new List<string>
-					{
-						accuracyLineColor
-					},
-					BorderColor = new List<string>
-					{
-						accuracyLineColor
-					},
-					BorderWidth = new List<double>
-					{
-						LINE_BORDER_WIDTH
-					},
-					HoverBorderWidth = new List<double>
-					{
-						LINE_HOVER_BORDER_WIDTH
-					},
-					PointBackgroundColor = new List<string>
-					{
-						accuracyLineColor
-					},
-					PointRadius = new List<int>
-					{
-						POINT_RADIUS
-					},
-					PointHoverRadius = new List<int>
-					{
-						POINT_HOVER_RADIUS
-					}
-				}
-			}
-		};
-		_lossChartData = new()
-		{
-			Labels = new List<string>(),
-			Datasets = new List<IChartDataset>()
-			{
-				new LineChartDataset
-				{
-					Label = "Loss",
-					Data = new(),
-					BackgroundColor = new List<string>
-					{
-						lossLineColor
-					},
-					BorderColor = new List<string>
-					{
-						lossLineColor
-					},
-					BorderWidth = new List<double>
-					{
-						LINE_BORDER_WIDTH
-					},
-					HoverBorderWidth = new List<double>
-					{
-						LINE_HOVER_BORDER_WIDTH
-					},
-					PointBackgroundColor = new List<string>
-					{
-						lossLineColor
-					},
-					PointRadius = new List<int>
-					{
-						POINT_RADIUS
-					},
-					PointHoverRadius = new List<int>
-					{
-						POINT_HOVER_RADIUS
-					}
-				}
-			}
-		};
-	}
-
-	/// <summary>
-	/// Initializes the component.
-	/// </summary>
-	protected override async Task OnInitializedAsync()
-	{
-		base.OnInitialized();
-
-		// Bind to the training session's `OnEpochComplete` event so that the
-		//   component updates over time
-		TrainingSession.OnEpochComplete +=
-			async (_, args) => await UpdateState(TrainingSession.Metrics)
-				.ConfigureAwait(false);
-
-		// Force an update of the component's internal state so that it matches
-		//   the training session state immediately, rather than only matching
-		//   after the first epoch completion event is fired
-		await UpdateState(TrainingSession.Metrics)
-			.ConfigureAwait(false);
-	}
-
-	/// <summary>
-	/// Initializes the component's graphs.
 	/// </summary>
 	/// <param name="firstRender">
-	/// Whether this is the first time the component is being rendered.
+	/// Whether or not this is the first time that the component is being
+	///   rendered.
 	/// </param>
-	/// <returns></returns>
 	protected override async Task OnAfterRenderAsync(bool firstRender)
 	{
 		await base.OnAfterRenderAsync(firstRender)
-			.ConfigureAwait(false);
+			.ConfigureAwait(true);
 		if (!firstRender)
 		{
 			return;
 		}
 
-		await AccuracyChart.InitializeAsync(
-			_accuracyChartData,
-			_accuracyChartOptions)
-			.ConfigureAwait(false);
-		await LossChart.InitializeAsync(
-			_lossChartData,
-			_lossChartOptions)
-			.ConfigureAwait(false);
+		// Bind to the training session's `OnEpochComplete` event so that the
+		//   component updates over time
+		TrainingSession.OnEpochComplete +=
+			async (_, args) => await UpdateState(TrainingSession.Metrics)
+				.ConfigureAwait(true);
+
+		// Force an update of the component's internal state so that it matches
+		//   the training session state immediately, rather than only matching
+		//   after the first epoch completion event is fired
+		await UpdateState(TrainingSession.Metrics)
+			.ConfigureAwait(true);
 	}
 
 	/// <summary>
@@ -268,10 +124,10 @@ public partial class TrainingMetrics : ComponentBase
 		//   epoch completes. Having this code outside the `lock()` block is
 		//   necessary to allow async calls to Blazor Charts methods to be
 		//   made.
-		var accuracyTask = UpdateAccuracyChart();
-		var lossTask = UpdateLossChart();
-		await accuracyTask.ConfigureAwait(false);
-		await lossTask.ConfigureAwait(false);
+		var accuracyTask = UpdateAccuracyGraph();
+		var lossTask = UpdateLossGraph();
+		await accuracyTask.ConfigureAwait(true);
+		await lossTask.ConfigureAwait(true);
 
 		// This could be called from the training thread, so it has to be
 		//   invoked using `InvokeAsync()`
@@ -279,71 +135,78 @@ public partial class TrainingMetrics : ComponentBase
 	}
 
 	/// <summary>
-	/// Updates the accuracy chart to match the current stored metrics.
+	/// Updates the accuracy graph to match the current stored metrics.
 	/// </summary>
 	/// <returns>
-	/// A task set once the chart has been updated.
+	/// A task set once the graph has been updated.
 	/// </returns>
-	private async Task UpdateAccuracyChart()
+	private Task UpdateAccuracyGraph()
 	{
-		// Get the number of data points currently displayed in the chart
-		Debug.Assert(_accuracyChartData.Datasets != null);
-		var dataset = (LineChartDataset)_accuracyChartData.Datasets.Single();
-		var dataPointsCount = dataset.Data?.Count ?? 0;
-
-		// Iterate over the metrics that have not yet been displayed in the
-		//   chart and add them to the chart
-		var metrics = _currentMetrics.Skip(dataPointsCount);
-		foreach (var metric in metrics)
-		{
-			var data = new List<IChartDatasetData>()
+		return UpdateGraph(
+			AccuracyGraph,
+			new List<Func<MetricsSnapshot, double>>()
 			{
-				new LineChartDatasetData(
-					dataset.Label,
-					// Scale the accuracy to the range `[0, 100]`
-					metric.Accuracy * 100.0
-				)
-			};
-
-			_accuracyChartData = await AccuracyChart.AddDataAsync(
-				_accuracyChartData,
-				$"Epoch {metric.CurrentEpoch}",
-				data
-			).ConfigureAwait(false);
-		}
+				m => m.TrainingMetrics.Accuracy * 100.0,
+				m => m.ValidationMetrics.Accuracy * 100.0
+			}
+		);
 	}
 
 	/// <summary>
-	/// Updates the loss chart to match the current stored metrics.
+	/// Updates the loss graph to match the current stored metrics.
 	/// </summary>
 	/// <returns>
-	/// A task set once the chart has been updated.
+	/// A task set once the graph has been updated.
 	/// </returns>
-	private async Task UpdateLossChart()
+	private Task UpdateLossGraph()
 	{
-		// Get the number of data points currently displayed in the chart
-		Debug.Assert(_lossChartData.Datasets != null);
-		var dataset = (LineChartDataset)_lossChartData.Datasets.Single();
-		var dataPointsCount = dataset.Data?.Count ?? 0;
+		return UpdateGraph(
+			LossGraph,
+			new List<Func<MetricsSnapshot, double>>()
+			{
+				m => m.TrainingMetrics.Loss,
+				m => m.ValidationMetrics.Loss
+			}
+		);
+	}
 
-		// Iterate over the metrics that have not yet been displayed in the
-		//   chart and add them to the chart
-		var metrics = _currentMetrics.Skip(dataPointsCount);
+	/// <summary>
+	/// Updates a graph with the new metrics.
+	/// </summary>
+	/// <param name="graph">
+	/// Graph to update.
+	/// </param>
+	/// <param name="selectors">
+	/// List of functions that select the data to add to the graph from the
+	///   metric objects. These functions must be specified in the same order
+	///   as the line labels in the graph, e.g. the data returned by
+	///   `selectors[n]` will be used to update the line with index `n` in the
+	///   graph.
+	/// </param>
+	/// <returns>
+	/// A task set once the graph has been updated.
+	/// </returns>
+	private async Task UpdateGraph(
+		LineGraph graph,
+		IReadOnlyList<Func<MetricsSnapshot, double>> selectors)
+	{
+		// Figure out how many new data points need to be added
+		var currentDataPointsCount = _currentMetrics.Count;
+		var graphDataPointsCount = graph.DataPointsCount;
+		var metrics = _currentMetrics.Skip(graphDataPointsCount);
+
 		foreach (var metric in metrics)
 		{
-			var data = new List<IChartDatasetData>()
-			{
-				new LineChartDatasetData(
-					dataset.Label,
-					metric.Loss
-				)
-			};
+			// Generate the list of data to add to the graph
+			var data = selectors.Select(
+				f => f(metric)
+			).ToList();
 
-			_lossChartData = await LossChart.AddDataAsync(
-				_lossChartData,
+			// Update the graph
+			await graph.AddDataAsync(
 				$"Epoch {metric.CurrentEpoch}",
 				data
-			).ConfigureAwait(false);
+			).ConfigureAwait(true);
 		}
 	}
 }

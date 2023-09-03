@@ -460,7 +460,7 @@ public sealed class MnistDataset : IDataset
 	public async Task DownloadAsync()
 	{
 		await Task.Run(Download)
-			.ConfigureAwait(false);
+			.ConfigureAwait(true);
 	}
 
 	/// <summary>

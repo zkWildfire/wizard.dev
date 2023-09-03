@@ -1,13 +1,22 @@
+@using Lightspeed.Components.Utils
+
+<!-- Row 1: General info -->
 <div class="row">
 	<!-- Accuracy graph -->
-	<div class="col-6 d-flex flex-column align-items-stretch">
-		<h4 class="text-info text-start">Accuracy:</h4>
-		<LineChart @ref="AccuracyChart" Class="mb-4 bg-light"/>
+	<div class="col-6">
+		<LineGraph
+			@ref="AccuracyGraph"
+			ChartTitle="Accuracy"
+			LineLabels="@_accuracyGraphLabels"
+		/>
 	</div>
 
 	<!-- Loss graph -->
-	<div class="col-6 d-flex flex-column align-items-stretch">
-		<h4 class="text-info">Loss:</h4>
-		<LineChart @ref="LossChart" Class="mb-4 bg-light"/>
+	<div class="col-6">
+		<LineGraph
+			@ref="LossGraph"
+			ChartTitle="Loss"
+			LineLabels="@_lossGraphLabels"
+		/>
 	</div>
 </div>
