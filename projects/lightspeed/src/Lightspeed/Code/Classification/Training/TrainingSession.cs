@@ -33,6 +33,11 @@ public interface ITrainingSession : IDisposable
 	int ClassCount { get; }
 
 	/// <summary>
+	/// Names of the classes being classified.
+	/// </summary>
+	IReadOnlyList<string> ClassNames { get; }
+
+	/// <summary>
 	/// Metrics for the last completed epoch.
 	/// If the training session has not completed an epoch yet, the snapshot
 	///   will have most fields set to 0.

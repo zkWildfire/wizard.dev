@@ -34,7 +34,13 @@ public sealed class BackgroundTrainingSession : ITrainingSession
 	/// <summary>
 	/// Number of classes being classified.
 	/// </summary>
-	public int ClassCount => _model.ClassCount;
+	public int ClassCount => Hyperparameters.Dataset.Dataset.ClassCount;
+
+	/// <summary>
+	/// Names of the classes being classified.
+	/// </summary>
+	public IReadOnlyList<string> ClassNames =>
+		Hyperparameters.Dataset.Dataset.ClassNames;
 
 	/// <summary>
 	/// Metrics for the last completed epoch.

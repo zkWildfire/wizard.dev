@@ -51,6 +51,12 @@ public partial class TrainingSessionDashboard : ComponentBase
 	private int ClassCount => _trainingSession.ClassCount;
 
 	/// <summary>
+	/// Name of the class whose metrics are being displayed.
+	/// </summary>
+	private string SelectedClassName =>
+		_trainingSession.ClassNames[_selectedClassIndex];
+
+	/// <summary>
 	/// Training session that this page displays.
 	/// </summary>
 	private ITrainingSession _trainingSession = null!;

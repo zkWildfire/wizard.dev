@@ -82,6 +82,18 @@ public sealed class MnistDataset : IDataset
 	public string DetailedDescription => DETAILED_DESCRIPTION;
 
 	/// <summary>
+	/// Number of classes in the dataset.
+	/// </summary>
+	public int ClassCount => 10;
+
+	/// <summary>
+	/// Names of the classes in the dataset.
+	/// </summary>
+	public IReadOnlyList<string> ClassNames => Enumerable.Range(0, 10)
+		.Select(i => i.ToString(CultureInfo.InvariantCulture))
+		.ToList();
+
+	/// <summary>
 	/// Gets the number of elements in the dataset.
 	/// If the dataset hasn't been downloaded yet, this will be -1.
 	/// </summary>

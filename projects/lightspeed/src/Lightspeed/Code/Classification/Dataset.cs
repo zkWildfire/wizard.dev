@@ -48,6 +48,16 @@ public interface IDataset : IDisposable, IEnumerable<IDatasetElement>
 	string DetailedDescription { get; }
 
 	/// <summary>
+	/// Number of classes in the dataset.
+	/// </summary>
+	int ClassCount { get; }
+
+	/// <summary>
+	/// Names of the classes in the dataset.
+	/// </summary>
+	IReadOnlyList<string> ClassNames { get; }
+
+	/// <summary>
 	/// Gets the total number of elements in the dataset.
 	/// If the dataset hasn't been downloaded yet, this will be -1.
 	/// </summary>

@@ -24,6 +24,12 @@ public partial class ClassTrainingMetrics : ComponentBase
 	public int ClassIndex { get; set; }
 
 	/// <summary>
+	/// Name to display for the classification class.
+	/// </summary>
+	[Parameter]
+	public string ClassName { get; set; } = string.Empty;
+
+	/// <summary>
 	/// Chart that displays the model's overall true positives rate over time.
 	/// </summary>
 	private LineGraph TruePositivesGraph { get; set; } = null!;
