@@ -65,7 +65,6 @@
 | tomorrow | あした | 明日 |
 | this evening | こんばん | 今晩 |
 | summer break | なつやすみ | |
-| beach | うみ | |
 | concert | コンサート | |
 | fireworks | はなび | |
 | hot spring | おんせん | |

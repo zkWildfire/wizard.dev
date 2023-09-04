@@ -9,8 +9,8 @@
 | Tokyo | とうきょう | 東京 |
 | New York | ニューヨーク | |
 | Toronto | トロント | |
-| lively | にぎやか | |
-| quiet | しずか | |
+| lively | にぎやか | 賑やか |
+| quiet | しずか | 静か |
 | town | まち | |
 | city | とし | |
 | nice to meet you | はじめまして | |

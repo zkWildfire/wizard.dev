@@ -18,7 +18,7 @@
 | short | みじかい | |
 | ticket | チケット | |
 | trip | りょこう | 旅行 |
-| zoo | どうぶつえん | |
+| zoo | どうぶつえん | 動物園 |
 
 ### Examples
 | English | Japanese |

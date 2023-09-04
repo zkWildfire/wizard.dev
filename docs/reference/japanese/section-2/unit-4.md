@@ -17,7 +17,7 @@
 | Mt Fuji | ふじさん | |
 | Osaka | おおさか | 大阪 |
 | Shibuya | しぶや | |
-| Ueno Park | うえのこうえん | |
+| Ueno Park | うえのこうえん | 上野公園 |
 | Yokohama | よこはま | |
 | final stop | しゅうてん | |
 | bus | バス | |

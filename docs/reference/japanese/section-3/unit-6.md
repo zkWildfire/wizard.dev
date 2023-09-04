@@ -33,6 +33,39 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| animals | どうぶつ | 動物 |
+| bear | くま | 熊 |
+| cow | うし | 牛 |
+| deer | しか | 鹿 |
+| fox | きつね | 狐 |
+| good | よかった | |
+| horse | うま | 馬 |
+| monkey | サル | 猿 |
+| ocean | うみ | 海 |
+| okay | へえ | |
+| over there | むこうに | 向こうに |
+| pigeon | ハト | 鳩 |
+| pond | いけ | 池 |
+| river | かわ | 川 |
+| sea | うみ | 海 |
+| to bloom | さきます | 咲きます |
+| to climb | のぼります | 登ります |
+| to chirp | なきます | 鳴きます |
+| to fly | とびます | 飛びます |
+| singing (of a bird) | こえ | 声 |
+| tree | き | 木 |
+| Ueno | うえの | 上野 |
+| voice | こえ | 声 |
+| one (small animal) | いっぴき | 一匹 |
+| two (small animals) | にひき | 二匹 |
+| three (small animals) | さんびき | 三匹 |
+| four (small animals) | よんひき | 四匹 |
+| five (small animals) | ごひき | 五匹 |
+| six (small animals) | ろっぴき | 六匹 |
+| seven (small animals) | ななひき | 七匹 |
+| eight (small animals) | はっぴき | 八匹 |
+| nine (small animals) | きゅうひき | 九匹 |
+| ten (small animals) | じゅっぴき | 十匹 |
 
 ### Examples
 | English | Japanese |
