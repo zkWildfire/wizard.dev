@@ -3,7 +3,7 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
-| class(es) | じゅぎょう | |
+| class(es) | じゅぎょう | 授業 |
 | classroom | きょうしつ | |
 | deadline | しめきり | |
 | early | はやく | |
@@ -18,7 +18,7 @@
 | Spanish (language) | スペインご | |
 | test | テスト | |
 | to ask | ききます | |
-| to end | おわります | |
+| to end | おわります | 終わります |
 | to exercise | うんどうします | |
 | what day | なんようび | 何曜日 |
 | Yamada | やまだ | 山田 |
@@ -44,7 +44,7 @@
 | p.m. | ごご | 午後 |
 | camera | カメラ | |
 | coworker(s) | どうりょう | |
-| dictionary | じしょ | |
+| dictionary | じしょ | 辞書 |
 | driver | うんてんしゅ | |
 | event | イベント | |
 | GPS | ナビ | |

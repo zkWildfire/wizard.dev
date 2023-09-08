@@ -34,12 +34,12 @@
 | cleaning | そうじ | 掃除 |
 | cooking | りょうり | 料理 |
 | days off | やすみのひ | 休みの日 |
-| easy | やさしい | |
+| easy | やさしい | 易しい |
 | English (language) | えいご | 英語 |
 | fun | たのしい | |
 | gardening | ガーデニング | |
 | home | うち | |
-| homework | しゅくだい | |
+| homework | しゅくだい | 宿題 |
 | laundry | せんたく | 洗濯 |
 | school | がっこう | 学校 |
 | shopping | かいもの | 買い物 |

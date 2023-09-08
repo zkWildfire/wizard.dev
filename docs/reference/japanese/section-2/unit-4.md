@@ -50,7 +50,7 @@
 | shrine | じんじゃ | |
 | temple | おてら | |
 | postcard | ポストカード | |
-| snack | おかし | |
+| snack | おかし | お菓子 |
 | souvenir | おみやげ | お土産 |
 | pretty | きれい | |
 | tall | たかい | 高い |

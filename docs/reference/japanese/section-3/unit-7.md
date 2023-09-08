@@ -3,6 +3,22 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| already | もう | |
+| anymore | もう | |
+| kanji | かんじ | 漢字 |
+| like this | こう | |
+| meaning | いみ | 意味 |
+| not easy | やさしくない | 易しくない |
+| not difficult | むずかしくない | 難しくない |
+| other | ほかの | |
+| slightly | もうすこし | もう少し |
+| textbook | きょうかしょ | 教科書 |
+| to consult | ひきます | 引きます |
+| to memorize | おぼえます | 覚えます |
+| to start | はじまります | 始まります |
+| to tell | おしえます | 教えます |
+| word | ことば | 言葉 |
+| you cannot | いけません | |
 
 ### Examples
 | English | Japanese |
@@ -18,6 +34,17 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| a bit | しょうしょう | 少々 |
+| bags | ふくろ | 袋 |
+| fried chicken | からあげ | 唐揚げ |
+| in the store | てんない | 店内 |
+| receipt | レシート | |
+| shopping bag | レジぶくろ | レジ袋 |
+| to heat up | あたためます | 温めます |
+| to need | いります | 要ります |
+| will have it to go | もちかえります | 持ち帰ります |
+| will be eating | めしあがります | 召し上がります |
+| you may | よろしい | |
 
 ### Examples
 | English | Japanese |

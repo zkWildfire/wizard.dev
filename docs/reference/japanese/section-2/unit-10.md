@@ -43,7 +43,7 @@
 | band | バンド | |
 | bookstore | ほんや | |
 | card game | カードゲーム | |
-| difficult | むずかしい | |
+| difficult | むずかしい | 難しい |
 | documentary | ドキュメンタリー | |
 | don't really | あまり | |
 | karaoke | カラオケ | |
