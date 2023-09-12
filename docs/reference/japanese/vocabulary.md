@@ -161,8 +161,9 @@ one or more Kanji characters.
 | chores | かじ | | Section 2 Unit 6 |
 | cinema | えいがかん | <span class="kanji">映画館</span> | Section 2 Unit 20 |
 | city | とし | | Section 1 Unit 6 |
+| class | クラス | | Section 3 Unit 8 |
 | class(es) | じゅぎょう | <span class="kanji">授業</span> | Section 2 Unit 9 |
-| classroom | きょうしつ | | Section 2 Unit 9 |
+| classroom | きょうしつ | <span class="kanji">教室</span> | Section 2 Unit 9 |
 | cleaning | そうじ | <span class="kanji">掃除</span> | Section 2 Unit 6 |
 | clear | はれ | <span class="kanji">晴れ</span> | Section 2 Unit 20 |
 | clock | とけい | <span class="kanji">時計</span> | Section 3 Unit 3 |
@@ -243,6 +244,7 @@ one or more Kanji characters.
 | early | はやく | <span class="kanji">早く</span> | Section 3 Unit 6 |
 | east | ひがし | <span class="kanji">東</span> | Section 3 Unit 1 |
 | easy | やさしい | <span class="kanji">易しい</span> | Section 2 Unit 6 |
+| easy | かんたん | <span class="kanji">簡単</span> | Section 3 Unit 8 |
 | eggs | たまご | <span class="kanji">卵</span> | Section 2 Unit 8 |
 | eight | はち | <span class="kanji">八</span> | Section 1 Unit 7 |
 | eight (birds, rabbits) | はちば | <span class="kanji">八羽</span> | Section 2 Unit 14 |
@@ -253,6 +255,7 @@ one or more Kanji characters.
 | eight (people) | はちにん | <span class="kanji">八人</span> | Section 2 Unit 18 |
 | eight (pictures) | はちまい | <span class="kanji">八枚</span> | Section 2 Unit 18 |
 | eight (small animals) | はっぴき | <span class="kanji">八匹</span> | Section 3 Unit 6 |
+| eight books | はっぽん | <span class="kanji">八本</span> | Section 3 Unit 8 |
 | eight days | ようか | <span class="kanji">八日</span> | Section 3 Unit 2 |
 | eight minutes | はっぷん | <span class="kanji">八分</span> | Section 2 Unit 5 |
 | eight months | はっかげつ | <span class="kanji">八ヶ月</span> | Section 3 Unit 2 |
@@ -320,6 +323,7 @@ one or more Kanji characters.
 | five (people) | ごにん | <span class="kanji">五人</span> | Section 2 Unit 18 |
 | five (pictures) | ごまい | <span class="kanji">五枚</span> | Section 2 Unit 18 |
 | five (small animals) | ごひき | <span class="kanji">五匹</span> | Section 3 Unit 6 |
+| five books | ごほん | <span class="kanji">五本</span> | Section 3 Unit 8 |
 | five days | いつか | <span class="kanji">五日</span> | Section 3 Unit 2 |
 | five minutes | ごふん | <span class="kanji">五分</span> | Section 2 Unit 5 |
 | five months | ごかげつ | <span class="kanji">五ヶ月</span> | Section 3 Unit 2 |
@@ -344,6 +348,7 @@ one or more Kanji characters.
 | four (people) | よにん | <span class="kanji">四人</span> | Section 2 Unit 18 |
 | four (pictures) | よんまい | <span class="kanji">四枚</span> | Section 2 Unit 18 |
 | four (small animals) | よんひき | <span class="kanji">四匹</span> | Section 3 Unit 6 |
+| four books | よんぼん | <span class="kanji">四本</span> | Section 3 Unit 8 |
 | four days | よっか | <span class="kanji">四日</span> | Section 3 Unit 2 |
 | four minutes | よんぷん | <span class="kanji">四分</span> | Section 2 Unit 5 |
 | four months | よんかげつ | <span class="kanji">四ヶ月</span> | Section 3 Unit 2 |
@@ -474,6 +479,7 @@ one or more Kanji characters.
 | kanji | かんじ | <span class="kanji">漢字</span> | Section 3 Unit 7 |
 | karaoke | カラオケ | | Section 2 Unit 10 |
 | karate | からて | | Section 2 Unit 1 |
+| katakana | カタカナ | | Section 3 Unit 8 |
 | Ken | けん | | Section 1 Unit 2 |
 | Kenta | けんた | <span class="kanji">健太</span> | Section 2 Unit 14 |
 | kid(s) | こども | | Section 2 Unit 6 |
@@ -595,6 +601,7 @@ one or more Kanji characters.
 | nine (people) | きゅうにん | <span class="kanji">九人</span> | Section 2 Unit 18 |
 | nine (pictures) | きゅうまい | <span class="kanji">九枚</span> | Section 2 Unit 18 |
 | nine (small animals) | きゅうひき | <span class="kanji">九匹</span> | Section 3 Unit 6 |
+| nine books | きゅうほん | <span class="kanji">九本</span> | Section 3 Unit 8 |
 | nine days | ここのか | <span class="kanji">九日</span> | Section 3 Unit 2 |
 | nine minutes | きゅうふん | <span class="kanji">九分</span> | Section 2 Unit 5 |
 | nine months | きゅうかげつ | <span class="kanji">九ヶ月</span> | Section 3 Unit 2 |
@@ -666,9 +673,11 @@ one or more Kanji characters.
 | one (person) | ひとり | <span class="kanji">一人</span> | Section 2 Unit 18 |
 | one (picture) | いちまい | <span class="kanji">一枚</span> | Section 2 Unit 18 |
 | one (small animal) | いっぴき | <span class="kanji">一匹</span> | Section 3 Unit 6 |
+| one book | いっぽん | <span class="kanji">一本</span> | Section 3 Unit 8 |
 | one day | ついたち | <span class="kanji">一日</span> | Section 3 Unit 2 |
 | one minute | いっぷん | <span class="kanji">一分</span> | Section 2 Unit 5 |
 | one month | いっかげつ | <span class="kanji">一ヶ月</span> | Section 3 Unit 2 |
+| one more time | もういちど | <span class="kanji">もう一度</span> | Section 3 Unit 8 |
 | one o'clock | いちじ | <span class="kanji">一時</span> | Section 1 Unit 5 |
 | one pair (feet) | いっそく | <span class="kanji">一足</span> | Section 3 Unit 5 |
 | one pair (general) | いっくみ | <span class="kanji">一組</span> | Section 3 Unit 5 |
@@ -695,6 +704,8 @@ one or more Kanji characters.
 | pasta | パスタ | | Section 2 Unit 2 |
 | pastry shop | おかしや | | Section 2 Unit 8 |
 | path | みち | <span class="kanji">道</span> | Section 3 Unit 1 |
+| pen | ペン | | Section 3 Unit 8 |
+| pencil | えんぴつ | <span class="kanji">鉛筆</span> | Section 3 Unit 8 |
 | performance | パフォーマンス | | Section 2 Unit 11 |
 | person | ひと | <span class="kanji">人</span> | Section 1 Unit 1 |
 | person | かた | <span class="kanji">方</span> | Section 3 Unit 3 |
@@ -733,12 +744,13 @@ one or more Kanji characters.
 | pro | プロ | | Section 2 Unit 9 |
 | pro sports team | プロのスポーツチーム | | Section 2 Unit 9 |
 | probably | たぶん | | Section 2 Unit 3 |
+| problem | もんだい | <span class="kanji">問題</span> | Section 3 Unit 8 |
 | professor | せんせい | <span class="kanji">先生</span> | Section 2 Unit 9 |
 | project | プロジェクト | | Section 2 Unit 9 |
 | puppy | こいぬ | <span class="kanji">子犬</span> | Section 2 Unit 13 |
 | purple | むらさきいろ | <span class="kanji">紫色</span> | Section 3 Unit 5 |
 | puzzle | パズル | | Section 2 Unit 10 |
-| question(s) | しつもん | | Section 2 Unit 9 |
+| question(s) | しつもん | <span class="kanji">質問</span> | Section 2 Unit 9 |
 | quiet | しずか | <span class="kanji">静か</span> | Section 1 Unit 6 |
 | quite | けっこう | <span class="kanji">結構</span> | Section 3 Unit 1 |
 | radio | ラジオ | | Section 2 Unit 2 |
@@ -769,6 +781,7 @@ one or more Kanji characters.
 | romance | れんあい | | Section 2 Unit 3 |
 | romantic partner | こいびと | <span class="kanji">恋人</span> | Section 3 Unit 3 |
 | room | へや | <span class="kanji">部屋</span> | Section 2 Unit 13 |
+| ruler | じょうぎ | <span class="kanji">定規</span> | Section 3 Unit 8 |
 | salad | サラダ | | Section 2 Unit 1 |
 | sale | セール | | Section 2 Unit 10 |
 | salt | しお | <span class="kanji">塩</span> | Section 2 Unit 8 |
@@ -796,6 +809,7 @@ one or more Kanji characters.
 | seven (people) | しちにん | <span class="kanji">七人</span> | Section 2 Unit 18 |
 | seven (pictures) | ななまい | <span class="kanji">七枚</span> | Section 2 Unit 18 |
 | seven (small animals) | ななひき | <span class="kanji">七匹</span> | Section 3 Unit 6 |
+| seven books | ななほん | <span class="kanji">七本</span> | Section 3 Unit 8 |
 | seven days | なのか | <span class="kanji">七日</span> | Section 3 Unit 2 |
 | seven minutes | ななふん | <span class="kanji">七分</span> | Section 2 Unit 5 |
 | seven months | ななかげつ | <span class="kanji">七ヶ月</span> | Section 3 Unit 2 |
@@ -830,6 +844,7 @@ one or more Kanji characters.
 | six (people) | ろくにん | <span class="kanji">六人</span> | Section 2 Unit 18 |
 | six (pictures) | ろくまい | <span class="kanji">六枚</span> | Section 2 Unit 18 |
 | six (small animals) | ろっぴき | <span class="kanji">六匹</span> | Section 3 Unit 6 |
+| six books | ろっぽん | <span class="kanji">六本</span> | Section 3 Unit 8 |
 | six days | むいか | <span class="kanji">六日</span> | Section 3 Unit 2 |
 | six minutes | ろっぷん | <span class="kanji">六分</span> | Section 2 Unit 5 |
 | six months | ろっかげつ | <span class="kanji">六ヶ月</span> | Section 3 Unit 2 |
@@ -924,6 +939,7 @@ one or more Kanji characters.
 | ten (people) | じゅうにん | <span class="kanji">十人</span> | Section 2 Unit 18 |
 | ten (pictures) | じゅうまい | <span class="kanji">十枚</span> | Section 2 Unit 18 |
 | ten (small animals) | じゅっぴき | <span class="kanji">十匹</span> | Section 3 Unit 6 |
+| ten books | じゅっぽん | <span class="kanji">十本</span> | Section 3 Unit 8 |
 | ten days | とおか | <span class="kanji">十日</span> | Section 3 Unit 2 |
 | ten minutes | じゅっぷん | <span class="kanji">十分</span> | Section 2 Unit 5 |
 | ten months | じゅっかげつ | <span class="kanji">十ヶ月</span> | Section 3 Unit 2 |
@@ -963,6 +979,7 @@ one or more Kanji characters.
 | this evening | こんばん | <span class="kanji">今晩</span> | Section 2 Unit 5 |
 | this month | こんげつ | <span class="kanji">今月</span> | Section 2 Unit 20 |
 | this morning | けさ | <span class="kanji">今朝</span> | Section 2 Unit 20 |
+| this time | こんど | <span class="kanji">今度</span> | Section 3 Unit 8 |
 | this way | こちら | | Section 2 Unit 15 |
 | this way | こっち | | Section 3 Unit 4 |
 | this week | こんしゅう | <span class="kanji">今週</span> | Section 2 Unit 3 |
@@ -979,6 +996,7 @@ one or more Kanji characters.
 | three (people) | さんにん | <span class="kanji">三人</span> | Section 2 Unit 18 |
 | three (pictures) | さんまい | <span class="kanji">三枚</span> | Section 2 Unit 18 |
 | three (small animals) | さんびき | <span class="kanji">三匹</span> | Section 3 Unit 6 |
+| three books | さんぼん | <span class="kanji">三本</span> | Section 3 Unit 8 |
 | three days | みっか | <span class="kanji">三日</span> | Section 3 Unit 2 |
 | three minutes | さんぷん | <span class="kanji">三分</span> | Section 2 Unit 5 |
 | three months | さんかげつ | <span class="kanji">三ヶ月</span> | Section 3 Unit 2 |
@@ -997,6 +1015,7 @@ one or more Kanji characters.
 | time | じかん | <span class="kanji">時間</span> | Section 2 Unit 16 |
 | to | へ | | Section 2 Unit 13 |
 | to | にとって | | Section 3 Unit 3 |
+| to answer | こたえます | <span class="kanji">答えます</span> | Section 3 Unit 8 |
 | to ask | ききます | | Section 2 Unit 9 |
 | to be at | にいます | | Section 2 Unit 13 |
 | to be born | うまれます | <span class="kanji">生まれます</span> | Section 3 Unit 3 |
@@ -1044,6 +1063,7 @@ one or more Kanji characters.
 | to help with | てつだいます | | Section 2 Unit 6 |
 | to hold | もちます | <span class="kanji">持ちます</span> | Section 3 Unit 3 |
 | to know | ができます | | Section 2 Unit 7 |
+| to know | しります | <span class="kanji">知ります</span> | Section 3 Unit 8 |
 | to learn | ならいます | <span class="kanji">習います</span> | Section 2 Unit 18 |
 | to leave | でます | <span class="kanji">出ます</span> | Section 3 Unit 1 |
 | to like | すき | <span class="kanji">好き</span> | Section 2 Unit 3 |
@@ -1073,6 +1093,8 @@ one or more Kanji characters.
 | to return | かえります | <span class="kanji">帰ります</span> | Section 2 Unit 6 |
 | to ride | のります | <span class="kanji">乗ります</span> | Section 2 Unit 7 |
 | to run | はしります | <span class="kanji">走ります</span> | Section 2 Unit 1 |
+| to say | いいます | <span class="kanji">言います</span> | Section 3 Unit 8 |
+| to show | みせます | <span class="kanji">見せます</span> | Section 3 Unit 8 |
 | to sing | うたいます | | Section 2 Unit 11 |
 | to sing | うたいます | <span class="kanji">歌います</span> | Section 2 Unit 18 |
 | to sit (down) | すわります | <span class="kanji">座ります</span> | Section 2 Unit 5 |
@@ -1137,6 +1159,7 @@ one or more Kanji characters.
 | two (people) | ふたり | <span class="kanji">二人</span> | Section 2 Unit 18 |
 | two (pictures) | にまい | <span class="kanji">二枚</span> | Section 2 Unit 18 |
 | two (small animals) | にひき | <span class="kanji">二匹</span> | Section 3 Unit 6 |
+| two books | にほん | <span class="kanji">二本</span> | Section 3 Unit 8 |
 | two days | ふつか | <span class="kanji">二日</span> | Section 3 Unit 2 |
 | two minutes | にふん | <span class="kanji">二分</span> | Section 2 Unit 5 |
 | two months | にかげつ | <span class="kanji">二ヶ月</span> | Section 3 Unit 2 |

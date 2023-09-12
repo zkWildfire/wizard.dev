@@ -4,7 +4,7 @@
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
 | class(es) | じゅぎょう | 授業 |
-| classroom | きょうしつ | |
+| classroom | きょうしつ | 教室 |
 | deadline | しめきり | |
 | early | はやく | |
 | gym | ジム | |
@@ -13,7 +13,7 @@
 | Chinese (language) | ちゅうごくご | |
 | Japanese (language) | にほんご | 日本語 |
 | professor | せんせい | 先生 |
-| question(s) | しつもん | |
+| question(s) | しつもん | 質問 |
 | Smith | スミス | |
 | Spanish (language) | スペインご | |
 | test | テスト | |

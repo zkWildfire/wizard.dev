@@ -3,6 +3,29 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| class | クラス | |
+| easy | かんたん | 簡単 |
+| katakana | カタカナ | |
+| one more time | もういちど | もう一度 |
+| pen | ペン | |
+| pencil | えんぴつ | 鉛筆 |
+| problem | もんだい | 問題 |
+| ruler | じょうぎ | 定規 |
+| this time | こんど | 今度 |
+| to answer | こたえます | 答えます |
+| to know | しります | 知ります |
+| to say | いいます | 言います |
+| to show | みせます | 見せます |
+| one book | いっぽん | 一本 |
+| two books | にほん | 二本 |
+| three books | さんぼん | 三本 |
+| four books | よんぼん | 四本 |
+| five books | ごほん | 五本 |
+| six books | ろっぽん | 六本 |
+| seven books | ななほん | 七本 |
+| eight books | はっぽん | 八本 |
+| nine books | きゅうほん | 九本 |
+| ten books | じゅっぽん | 十本 |
 
 ### Examples
 | English | Japanese |
