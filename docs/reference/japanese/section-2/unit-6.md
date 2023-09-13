@@ -36,7 +36,7 @@
 | days off | やすみのひ | 休みの日 |
 | easy | やさしい | 易しい |
 | English (language) | えいご | 英語 |
-| fun | たのしい | |
+| fun | たのしい | 楽しい |
 | gardening | ガーデニング | |
 | home | うち | |
 | homework | しゅくだい | 宿題 |
@@ -45,7 +45,7 @@
 | shopping | かいもの | 買い物 |
 | stretches | ストレッチ | |
 | then | そして | |
-| tough | たいへん | |
+| tough | たいへん | 大変 |
 | to help with | てつだいます | |
 | to return | かえります | 帰ります |
 | to take a | にはいります | |

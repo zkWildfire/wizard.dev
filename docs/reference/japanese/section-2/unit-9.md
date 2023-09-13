@@ -9,7 +9,7 @@
 | early | はやく | |
 | gym | ジム | |
 | library | としょかん | |
-| interesting | おもしろい | |
+| interesting | おもしろい | 面白い |
 | Chinese (language) | ちゅうごくご | |
 | Japanese (language) | にほんご | 日本語 |
 | professor | せんせい | 先生 |

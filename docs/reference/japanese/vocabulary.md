@@ -92,6 +92,7 @@ one or more Kanji characters.
 | bath | おふろ | | Section 2 Unit 6 |
 | bathtub | ふろ | <span class="kanji">風呂</span> | Section 2 Unit 13 |
 | bear | くま | <span class="kanji">熊</span> | Section 3 Unit 6 |
+| because | から | | Section 3 Unit 8 |
 | bed | ベッド | | Section 2 Unit 3 |
 | bedroom | しんしつ | <span class="kanji">寝室</span> | Section 2 Unit 13 |
 | beef bowls | ぎゅうどん | | Section 2 Unit 8 |
@@ -226,6 +227,7 @@ one or more Kanji characters.
 | dirty | きたない | <span class="kanji">汚い</span> | Section 2 Unit 17 |
 | divorce | りこん | <span class="kanji">離婚</span> | Section 3 Unit 3 |
 | do not like | きらい | <span class="kanji">嫌い</span> | Section 2 Unit 15 |
+| do not like | いや | <span class="kanji">嫌</span> | Section 3 Unit 8 |
 | do not live in | にはすんでいません | <span class="kanji">には住んでいません</span> | Section 2 Unit 14 |
 | do not want | ほしくない | <span class="kanji">欲しくない</span> | Section 2 Unit 19 |
 | doctor | いしゃ | | Section 1 Unit 1 |
@@ -304,7 +306,9 @@ one or more Kanji characters.
 | favorite | すき | | Section 2 Unit 10 |
 | favorite food | こうぶつ | <span class="kanji">好物</span> | Section 3 Unit 2 |
 | February | にがつ | <span class="kanji">二月</span> | Section 3 Unit 2 |
+| feel | きぶん | <span class="kanji">気分</span> | Section 3 Unit 8 |
 | feeling sick | ぐあいがわるい | | Section 2 Unit 5 |
+| feelings | きもち | <span class="kanji">気持ち</span> | Section 3 Unit 8 |
 | few | すこし | <span class="kanji">少し</span> | Section 3 Unit 3 |
 | fiction | フィクション | | Section 2 Unit 10 |
 | final stop | しゅうてん | | Section 2 Unit 4 |
@@ -361,6 +365,7 @@ one or more Kanji characters.
 | fox | きつね | <span class="kanji">狐</span> | Section 3 Unit 6 |
 | France | フランス | | Section 2 Unit 7 |
 | free (not busy) | ひま | | Section 2 Unit 8 |
+| free (time) | ひま | <span class="kanji">暇</span> | Section 3 Unit 8 |
 | French food | フランスりょうり | | Section 2 Unit 7 |
 | french fries | フライドポテト | | Section 2 Unit 11 |
 | Friday | きんようび | <span class="kanji">金曜日</span> | Section 2 Unit 7 |
@@ -371,8 +376,8 @@ one or more Kanji characters.
 | from | から | | Section 2 Unit 11 |
 | front desk | うけつけ | | Section 2 Unit 11 |
 | fruit | くだもの | <span class="kanji">果物</span> | Section 3 Unit 1 |
-| fun | たのしい | | Section 2 Unit 6 |
-| funny | おもしろい | | Section 1 Unit 4 |
+| fun | たのしい | <span class="kanji">楽しい</span> | Section 2 Unit 6 |
+| funny | おもしろい | <span class="kanji">面白い</span> | Section 1 Unit 4 |
 | futon | ふとん | <span class="kanji">布団</span> | Section 2 Unit 3 |
 | game | ゲーム | | Section 1 Unit 7 |
 | game | しあい | | Section 2 Unit 11 |
@@ -405,6 +410,7 @@ one or more Kanji characters.
 | gym | ジム | | Section 2 Unit 9 |
 | half | はんぶん | <span class="kanji">半分</span> | Section 3 Unit 2 |
 | Hana | はな | | Section 1 Unit 2 |
+| happy | うれしい | <span class="kanji">嬉しい</span> | Section 3 Unit 8 |
 | happy birthday | おたんじょうびおめでとう | <span class="kanji">誕生日おめでとう</span> | Section 3 Unit 2 |
 | Harajuku | はらじゅく | | Section 2 Unit 4 |
 | hard | きつい | | Section 3 Unit 5 |
@@ -454,7 +460,7 @@ one or more Kanji characters.
 | in the store | てんない | <span class="kanji">店内</span> | Section 3 Unit 7 |
 | inside | なか | <span class="kanji">中</span> | Section 2 Unit 16 |
 | instrument | がっき | | Section 2 Unit 11 |
-| interesting | おもしろい | | Section 2 Unit 9 |
+| interesting | おもしろい | <span class="kanji">面白い</span> | Section 2 Unit 9 |
 | is in/at | にあります | | Section 2 Unit 13 |
 | is not right/correct | ちがいます | <span class="kanji">違います</span> | Section 2 Unit 14 |
 | isn't it | ですね | | Section 1 Unit 8 |
@@ -483,6 +489,7 @@ one or more Kanji characters.
 | Ken | けん | | Section 1 Unit 2 |
 | Kenta | けんた | <span class="kanji">健太</span> | Section 2 Unit 14 |
 | kid(s) | こども | | Section 2 Unit 6 |
+| kind | しんせつ | <span class="kanji">親切</span> | Section 3 Unit 8 |
 | kitchen | キッチン | | Section 2 Unit 3 |
 | kitchen | だいどころ | <span class="kanji">台所</span> | Section 2 Unit 13 |
 | kitten | こねこ | <span class="kanji">子猫</span> | Section 2 Unit 13 |
@@ -512,6 +519,7 @@ one or more Kanji characters.
 | looking forward to | たのしみです | | Section 2 Unit 7 |
 | loose | ゆるい | | Section 3 Unit 5 |
 | loud | うるさい | | Section 2 Unit 18 |
+| love | あい | <span class="kanji">愛</span> | Section 3 Unit 8 |
 | lovely | すてき | | Section 1 Unit 8 |
 | low | ひくい | <span class="kanji">低い</span> | Section 2 Unit 17 |
 | luggage | にもつ | <span class="kanji">荷物</span> | Section 3 Unit 3 |
@@ -728,6 +736,7 @@ one or more Kanji characters.
 | platforms | ホーム | | Section 2 Unit 2 |
 | player | せんしゅ | | Section 2 Unit 9 |
 | plaza | ひろば | | Section 2 Unit 7 |
+| pleasant | きもちいい | <span class="kanji">気持ちいい</span> | Section 3 Unit 8 |
 | please | ください | | Section 1 Unit 1 |
 | police | けいさつ | | Section 2 Unit 5 |
 | pond | いけ | <span class="kanji">池</span> | Section 3 Unit 6 |
@@ -782,6 +791,8 @@ one or more Kanji characters.
 | romantic partner | こいびと | <span class="kanji">恋人</span> | Section 3 Unit 3 |
 | room | へや | <span class="kanji">部屋</span> | Section 2 Unit 13 |
 | ruler | じょうぎ | <span class="kanji">定規</span> | Section 3 Unit 8 |
+| sad | かなしい | <span class="kanji">悲しい</span> | Section 3 Unit 8 |
+| sadly | かなしそうに | <span class="kanji">悲しそうに</span> | Section 3 Unit 8 |
 | salad | サラダ | | Section 2 Unit 1 |
 | sale | セール | | Section 2 Unit 10 |
 | salt | しお | <span class="kanji">塩</span> | Section 2 Unit 8 |
@@ -790,7 +801,7 @@ one or more Kanji characters.
 | sandwich | サンドイッチ | | Section 2 Unit 1 |
 | Saturday | どようび | <span class="kanji">土曜日</span> | Section 2 Unit 1 |
 | sauce | ソース | | Section 2 Unit 8 |
-| scary | こわい | | Section 2 Unit 10 |
+| scary | こわい | <span class="kanji">怖い</span> | Section 2 Unit 10 |
 | school | がっこう | <span class="kanji">学校</span> | Section 2 Unit 6 |
 | sea | うみ | <span class="kanji">海</span> | Section 3 Unit 6 |
 | seat | せき | | Section 2 Unit 7 |
@@ -1022,6 +1033,8 @@ one or more Kanji characters.
 | to be clear | はれます | <span class="kanji">晴れます</span> | Section 2 Unit 20 |
 | to be cloudy | くもります | <span class="kanji">曇ります</span> | Section 2 Unit 20 |
 | to be sunny | はれます | <span class="kanji">晴れます</span> | Section 2 Unit 20 |
+| to be tired | つかれます | <span class="kanji">疲れます</span> | Section 3 Unit 8 |
+| to be troubled | こまります | <span class="kanji">困ります</span> | Section 3 Unit 8 |
 | to begin | はじまります | | Section 2 Unit 11 |
 | to bloom | さきます | <span class="kanji">咲きます</span> | Section 3 Unit 6 |
 | to blow | ふきます | <span class="kanji">吹きます</span> | Section 2 Unit 20 |
@@ -1046,6 +1059,7 @@ one or more Kanji characters.
 | to enter | はいります | <span class="kanji">入ります</span> | Section 3 Unit 1 |
 | to exercise | うんどうします | | Section 2 Unit 9 |
 | to exit | でます | <span class="kanji">出ます</span> | Section 3 Unit 1 |
+| to feel unwell | きぶんがわるい | <span class="kanji">気分が悪い</span> | Section 3 Unit 8 |
 | to fly | とびます | <span class="kanji">飛びます</span> | Section 3 Unit 6 |
 | to get divorced | りこんします | <span class="kanji">離婚します</span> | Section 3 Unit 3 |
 | to get off | おります | <span class="kanji">降ります</span> | Section 3 Unit 1 |
@@ -1070,6 +1084,7 @@ one or more Kanji characters.
 | to listen | ききます | <span class="kanji">聞きます</span> | Section 1 Unit 7 |
 | to live in | にすんでいます | <span class="kanji">に住んでいます</span> | Section 1 Unit 6 |
 | to love | だいすき | <span class="kanji">大好き</span> | Section 2 Unit 8 |
+| to love | あいします | <span class="kanji">愛します</span> | Section 3 Unit 8 |
 | to make | つくります | <span class="kanji">作ります</span> | Section 2 Unit 2 |
 | to meet | あいます | <span class="kanji">会います</span> | Section 2 Unit 7 |
 | to memorize | おぼえます | <span class="kanji">覚えます</span> | Section 3 Unit 7 |
@@ -1115,6 +1130,7 @@ one or more Kanji characters.
 | to turn | まがります | <span class="kanji">曲がります</span> | Section 3 Unit 4 |
 | to turn off | けします | <span class="kanji">消します</span> | Section 3 Unit 6 |
 | to turn on | つけます | | Section 2 Unit 17 |
+| to understand | わかります | <span class="kanji">分かります</span> | Section 3 Unit 8 |
 | to use | つかいます | <span class="kanji">使います</span> | Section 2 Unit 8 |
 | to wait for | まちます | <span class="kanji">待ちます</span> | Section 2 Unit 7 |
 | to walk | あるくます | <span class="kanji">歩くます</span> | Section 2 Unit 19 |
@@ -1135,7 +1151,7 @@ one or more Kanji characters.
 | tonight | こんや | | Section 2 Unit 11 |
 | tonight | こんや | <span class="kanji">今夜</span> | Section 3 Unit 4 |
 | Toronto | トロント | | Section 1 Unit 6 |
-| tough | たいへん | | Section 2 Unit 6 |
+| tough | たいへん | <span class="kanji">大変</span> | Section 2 Unit 6 |
 | town | まち | | Section 1 Unit 6 |
 | train | でんしゃ | <span class="kanji">電車</span> | Section 2 Unit 4 |
 | train station | えき | <span class="kanji">駅</span> | Section 1 Unit 3 |
@@ -1195,6 +1211,12 @@ one or more Kanji characters.
 | wallet | さいふ | <span class="kanji">財布</span> | Section 1 Unit 8 |
 | want | ほしい | | Section 1 Unit 8 |
 | warm | あたたかい | <span class="kanji">暖かい</span> | Section 2 Unit 5 |
+| was boring | つまらなかったです | | Section 3 Unit 8 |
+| was delicious | おいしかったです | <span class="kanji">美味しかったです</span> | Section 3 Unit 8 |
+| was expensive | たかかったです | <span class="kanji">高かったです</span> | Section 3 Unit 8 |
+| was interesting | おもしろかったです | <span class="kanji">面白かったです</span> | Section 3 Unit 8 |
+| was not delicious | おいしくなかったです | <span class="kanji">美味しくなかったです</span> | Section 3 Unit 8 |
+| was scary | こわかったです | <span class="kanji">怖かったです</span> | Section 3 Unit 8 |
 | washing machine | せんたくき | | Section 2 Unit 3 |
 | watch | うでどけい | <span class="kanji">腕時計</span> | Section 3 Unit 3 |
 | water | みず | <span class="kanji">水</span> | Section 1 Unit 1 |
@@ -1224,6 +1246,8 @@ one or more Kanji characters.
 | white wine | しろワイン | <span class="kanji">白ワイン</span> | Section 3 Unit 2 |
 | who | だれ | <span class="kanji">誰</span> | Section 2 Unit 7 |
 | who | どなた | | Section 3 Unit 3 |
+| why | なぜ | | Section 3 Unit 8 |
+| why | どうして | | Section 3 Unit 8 |
 | wife | つま | <span class="kanji">妻</span> | Section 1 Unit 6 |
 | will be eating | めしあがります | <span class="kanji">召し上がります</span> | Section 3 Unit 7 |
 | will have it to go | もちかえります | <span class="kanji">持ち帰ります</span> | Section 3 Unit 7 |

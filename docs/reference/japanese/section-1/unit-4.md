@@ -29,7 +29,7 @@
 | Nakayama | なかやま | 中山 |
 | Yamaguchi | やまぐち | 山口 |
 | cheerful | あかるい | 明るい |
-| funny | おもしろい | |
+| funny | おもしろい | 面白い |
 
 ### Examples
 | English | Japanese |

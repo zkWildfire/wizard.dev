@@ -16,7 +16,7 @@
 | mint chocolate chip | チョコミント | |
 | museum | はくぶつかん | |
 | rollercoaster | ジェットコースター | |
-| scary | こわい | |
+| scary | こわい | 怖い |
 | show | ショー | |
 | vanilla | バニラ | |
 | yellow | きいろい | 黄色い |

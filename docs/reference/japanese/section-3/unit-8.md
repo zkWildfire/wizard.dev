@@ -40,6 +40,30 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| because | から | |
+| do not like | いや | 嫌 |
+| feel | きぶん | 気分 |
+| feelings | きもち | 気持ち |
+| free (time) | ひま | 暇 |
+| kind | しんせつ | 親切 |
+| happy | うれしい | 嬉しい |
+| love | あい | 愛 |
+| pleasant | きもちいい | 気持ちいい |
+| sad | かなしい | 悲しい |
+| sadly | かなしそうに | 悲しそうに |
+| to be tired | つかれます | 疲れます |
+| to be troubled | こまります | 困ります |
+| to feel unwell | きぶんがわるい | 気分が悪い |
+| to love | あいします | 愛します |
+| to understand | わかります | 分かります |
+| was boring | つまらなかったです | |
+| was delicious | おいしかったです | 美味しかったです |
+| was not delicious | おいしくなかったです | 美味しくなかったです |
+| was expensive | たかかったです | 高かったです |
+| was interesting | おもしろかったです | 面白かったです |
+| was scary | こわかったです | 怖かったです |
+| why | なぜ | |
+| why | どうして | |
 
 ### Examples
 | English | Japanese |
