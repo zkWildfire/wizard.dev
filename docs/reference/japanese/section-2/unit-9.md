@@ -8,7 +8,7 @@
 | deadline | しめきり | |
 | early | はやく | |
 | gym | ジム | |
-| library | としょかん | |
+| library | としょかん | 図書館 |
 | interesting | おもしろい | 面白い |
 | Chinese (language) | ちゅうごくご | |
 | Japanese (language) | にほんご | 日本語 |
@@ -45,7 +45,7 @@
 | camera | カメラ | |
 | coworker(s) | どうりょう | |
 | dictionary | じしょ | 辞書 |
-| driver | うんてんしゅ | |
+| driver | うんてんしゅ | 運転手 |
 | event | イベント | |
 | GPS | ナビ | |
 | manager | マネージャー | |

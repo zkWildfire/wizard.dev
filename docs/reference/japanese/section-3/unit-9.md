@@ -3,6 +3,25 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| anyone | だれにも | 誰にも |
+| anything | なんでも | 何でも |
+| automobile | じどうしゃ | 自動車 |
+| bridge | はし | 橋 |
+| entranceway | げんかん | 玄関 |
+| everything | なんでも | 何でも |
+| floor | かい | 階 |
+| gate | もん | 門 |
+| hallway | ろうか | 廊下 |
+| kilometer | キロ | |
+| kilometer | キロメートル | |
+| meter | メートル | |
+| nothing | なにも | 何も |
+| police box | こうばん | 交番 |
+| sliding door | と | 戸 |
+| somewhere | どこか | |
+| to climb up | のぼります | 上ります |
+| to stop | とまります | 止まります |
+| village | むら | 村 |
 
 ### Examples
 | English | Japanese |

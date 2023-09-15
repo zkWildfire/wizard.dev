@@ -15,7 +15,7 @@
 | not near | ちかくない | 近くない |
 | not slow | おそくない | 遅くない |
 | slow | おそい | 遅い |
-| to walk | あるくます | 歩くます |
+| to walk | あるきます | 歩きます |
 
 ### Examples
 | English | Japanese |

@@ -8,15 +8,15 @@
 | near | ちかい | 近い |
 | far | とおい | 遠い |
 | underground | ちか | |
-| first floor | いっかい | |
-| second floor | にかい | |
+| first floor | いっかい | 一階 |
+| second floor | にかい | 二階 |
 | elevator | エレベーター | |
 | exit | でぐち | 出口 |
 | cafe | カフェ | |
 | outlet | コンセント | |
 | platforms | ホーム | |
-| restroom | おてあらい | |
-| stairs | かいだん | |
+| restroom | おてあらい | お手洗い |
+| stairs | かいだん | 階段 |
 | storage locker | コインロッカー | |
 | taxi | タクシー | |
 | ticket gate | かいさつ | |

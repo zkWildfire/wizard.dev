@@ -6,7 +6,7 @@
 | allergy | アレルギー | |
 | alright/okay | だいじょうぶ | |
 | ambulance | きゅうきゅうしゃ | |
-| dangerous | あぶない | |
+| dangerous | あぶない | 危ない |
 | feeling sick | ぐあいがわるい | |
 | hospital | びょういん | 病院 |
 | make sure to | ちゃんと | |

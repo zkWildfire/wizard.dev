@@ -11,7 +11,7 @@
 | Toronto | トロント | |
 | lively | にぎやか | 賑やか |
 | quiet | しずか | 静か |
-| town | まち | |
+| town | まち | 町 |
 | city | とし | |
 | nice to meet you | はじめまして | |
 | what is your name? | おなまえは？ | |

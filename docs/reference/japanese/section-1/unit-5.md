@@ -34,7 +34,7 @@
 | bag | かばん | 鞄 |
 | passport | パスポート | |
 | smartphone | スマホ | |
-| ticket | きっぷ | |
+| ticket | きっぷ | 切符 |
 | I | わたし | 私 |
 | not | じゃない | |
 

@@ -45,7 +45,7 @@
 | flower | はな | 花 |
 | mountain | やま | 山 |
 | pizza shop | ピザや | |
-| place | ところ | |
+| place | ところ | 所 |
 | ramen shop | ラーメンや | |
 | shrine | じんじゃ | |
 | temple | おてら | |
