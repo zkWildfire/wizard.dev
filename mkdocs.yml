@@ -86,12 +86,12 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   # KaTeX
   - js/katex.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js
 
 # Stylesheets
 extra_css:
   # Custom CSS
   - css/mkdocs_theme.css
   # KaTeX
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
