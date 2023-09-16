@@ -8,6 +8,7 @@ backpropagate
 biconditional
 biconditionals
 Blazor
+bmatrix
 chainload
 classlib
 codegen
