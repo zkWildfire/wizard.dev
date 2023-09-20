@@ -27,6 +27,7 @@ $$
     \end{bmatrix}
 \end{equation}
 $$
+
 $$
 \begin{equation}
 \vec{w} = \begin{bmatrix}
@@ -320,3 +321,76 @@ matrices being multiplied. The second matrix must always have the same number
 of vertical elements (rows) as the first matrix has horizontal elements
 (columns). If this requirement is not met, then it won't be possible to "slide"
 the vectors down the first matrix since they'll be too long or too short.
+
+## Determinant
+The determinant of a matrix is a value that describes how much a unit of space
+in the original vector space is scaled by the linear transformation described
+by the matrix. For example, consider a matrix for the standard 2D vector space.
+The area of the unit square in the original vector space is 1. If the
+determinant of the matrix is 2, then the area of the unit square after the
+transformation described by the matrix has been applied will be 2. This also
+applies to higher dimensions, such as 3D vector space, where the value being
+scaled becomes volume instead of area.
+
+If the determinant of a matrix is negative, then the transformation described
+by the matrix will also flip the orientation of the vector space. For example,
+in 3D space, a matrix with a negative determinant will flip the orientation of
+the vector space from right-handed to left-handed.
+
+If the determinant of a matrix is 0, then the transformation described by the
+matrix will collapse the vector space into a lower dimension. For example, in
+2D space, a matrix with a determinant of 0 will collapse the vector space into
+a line or a point. In 3D space, a matrix with a determinant of 0 will collapse
+the vector space into a plane, a line, or a point.
+
+To calculate the determinant of a 2x2 matrix, you can use the following formula:
+
+$$
+\begin{equation}
+\text{det}(\begin{bmatrix}
+    a & b \\
+    c & d
+\end{bmatrix})
+= a d - b c
+\end{equation}
+$$
+
+The determinant of a 3x3 matrix requires significantly more calculations and is
+given by the following formula:
+
+$$
+\begin{equation}
+\text{det}(\begin{bmatrix}
+    a & b & c \\
+    d & e & f \\
+    g & h & i
+\end{bmatrix})
+= a \text{det}(\begin{vmatrix}
+    e & f \\
+    h & i
+\end{vmatrix})
+- b \text{det}(\begin{vmatrix}
+    d & f \\
+    g & i
+\end{vmatrix})
++ c \text{det}(\begin{vmatrix}
+    d & e \\
+    g & h
+\end{vmatrix})
+\end{equation}
+$$
+
+Notice that the 2x2 matrices that appear in the formula for the determinant of
+a 3x3 matrix are taken from the lower two rows of the original 3x3 matrix. When
+simplified, the formula for the determinant of a 3x3 matrix is
+
+$$
+\begin{equation}
+\text{det}(\begin{bmatrix}
+    a & b & c \\
+    d & e & f \\
+    g & h & i
+\end{bmatrix})
+= a e i + b f g + c d h - c e g - b d i - a f h
+\end{equation}
+$$
