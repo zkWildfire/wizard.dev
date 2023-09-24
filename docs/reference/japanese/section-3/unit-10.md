@@ -3,6 +3,12 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| not thick | あつくない | 厚くない |
+| not thin | うすくない | 薄くない |
+| thick (flat objects) | あつい | 厚い |
+| thick (cylindrical objects) | ふとい | 太い |
+| thin (cylindrical objects) | ほそい | 細い |
+| thin (flat objects) | うすい | 薄い |
 
 ### Examples
 | English | Japanese |

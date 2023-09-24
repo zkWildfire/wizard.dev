@@ -665,6 +665,8 @@ one or more Kanji characters.
 | not near | ちかくない | <span class="kanji">近くない</span> | Section 2 Unit 19 |
 | not slow | おそくない | <span class="kanji">遅くない</span> | Section 2 Unit 19 |
 | not strong | つよくない | <span class="kanji">強くない</span> | Section 2 Unit 20 |
+| not thick | あつくない | <span class="kanji">厚くない</span> | Section 3 Unit 10 |
+| not thin | うすくない | <span class="kanji">薄くない</span> | Section 3 Unit 10 |
 | not very | あまり | | Section 2 Unit 18 |
 | not very strong | あまりつよくない | <span class="kanji">あまり強くない</span> | Section 2 Unit 20 |
 | not weak | よわくない | <span class="kanji">弱くない</span> | Section 2 Unit 20 |
@@ -999,6 +1001,10 @@ one or more Kanji characters.
 | there (direction) | そちら | | Section 3 Unit 1 |
 | these | これら | | Section 1 Unit 4 |
 | they | かれら | <span class="kanji">彼ら</span> | Section 2 Unit 15 |
+| thick (cylindrical objects) | ふとい | <span class="kanji">太い</span> | Section 3 Unit 10 |
+| thick (flat objects) | あつい | <span class="kanji">厚い</span> | Section 3 Unit 10 |
+| thin (cylindrical objects) | ほそい | <span class="kanji">細い</span> | Section 3 Unit 10 |
+| thin (flat objects) | うすい | <span class="kanji">薄い</span> | Section 3 Unit 10 |
 | thirty/half (time) | はん | <span class="kanji">半</span> | Section 1 Unit 5 |
 | this | これ | | Section 1 Unit 2 |
 | this | こちら | | Section 2 Unit 3 |
