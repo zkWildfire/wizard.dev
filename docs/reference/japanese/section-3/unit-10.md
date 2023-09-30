@@ -3,12 +3,28 @@
 ### Vocabulary
 | English | Kana | Kanji |
 |:-------:|:----:|:-----:|
+| box | はこ | 箱 |
+| button | ボタン | |
+| cigarette | タバコ | |
+| circle | まる | 丸 |
+| cup | カップ | |
+| key | かぎ | 鍵 |
 | not thick | あつくない | 厚くない |
 | not thin | うすくない | 薄くない |
+| paper | かみ | 紙 |
+| pocket | ポケット | |
+| round | まるい | 丸い |
+| soap | せっけん | 石鹼 |
 | thick (flat objects) | あつい | 厚い |
 | thick (cylindrical objects) | ふとい | 太い |
 | thin (cylindrical objects) | ほそい | 細い |
 | thin (flat objects) | うすい | 薄い |
+| to cut | きります | 切ります |
+| to forget | わすれます | 忘れます |
+| to lose | なくします | |
+| to press | おします | 押します |
+| to put | おきます | 置きます |
+| to smoke | すいます | 吸います |
 
 ### Examples
 | English | Japanese |

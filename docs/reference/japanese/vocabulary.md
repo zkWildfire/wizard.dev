@@ -119,6 +119,7 @@ one or more Kanji characters.
 | boring | つまらない | | Section 2 Unit 10 |
 | bottom | した | <span class="kanji">下</span> | Section 2 Unit 16 |
 | bowl | ボウル | | Section 3 Unit 2 |
+| box | はこ | <span class="kanji">箱</span> | Section 3 Unit 10 |
 | boxed lunch | べんとう | <span class="kanji">弁当</span> | Section 2 Unit 1 |
 | boy | おとこのこ | <span class="kanji">男の子</span> | Section 3 Unit 3 |
 | boyfriend | かれし | <span class="kanji">彼氏</span> | Section 2 Unit 3 |
@@ -138,6 +139,7 @@ one or more Kanji characters.
 | bus | バス | | Section 2 Unit 4 |
 | bus stop | バスてい | | Section 1 Unit 3 |
 | busy | いそがしい | <span class="kanji">忙しい</span> | Section 1 Unit 6 |
+| button | ボタン | | Section 3 Unit 10 |
 | by myself | ひとりで | | Section 2 Unit 1 |
 | by/next to | そば | | Section 3 Unit 1 |
 | bye | じゃあね | | Section 1 Unit 2 |
@@ -164,7 +166,9 @@ one or more Kanji characters.
 | chocolate | チョコレート | | Section 2 Unit 8 |
 | chopsticks | はし | <span class="kanji">箸</span> | Section 3 Unit 2 |
 | chores | かじ | | Section 2 Unit 6 |
+| cigarette | タバコ | | Section 3 Unit 10 |
 | cinema | えいがかん | <span class="kanji">映画館</span> | Section 2 Unit 20 |
+| circle | まる | <span class="kanji">丸</span> | Section 3 Unit 10 |
 | city | とし | | Section 1 Unit 6 |
 | class | クラス | | Section 3 Unit 8 |
 | class(es) | じゅぎょう | <span class="kanji">授業</span> | Section 2 Unit 9 |
@@ -202,6 +206,7 @@ one or more Kanji characters.
 | coworker(s) | どうりょう | | Section 2 Unit 9 |
 | cramped | せまい | <span class="kanji">狭い</span> | Section 2 Unit 3 |
 | cup | コップ | | Section 3 Unit 2 |
+| cup | カップ | | Section 3 Unit 10 |
 | cupcake | カップケーキ | | Section 2 Unit 8 |
 | curry | カレー | | Section 1 Unit 2 |
 | cute | かわいい | | Section 1 Unit 8 |
@@ -497,6 +502,7 @@ one or more Kanji characters.
 | katakana | カタカナ | | Section 3 Unit 8 |
 | Ken | けん | | Section 1 Unit 2 |
 | Kenta | けんた | <span class="kanji">健太</span> | Section 2 Unit 14 |
+| key | かぎ | <span class="kanji">鍵</span> | Section 3 Unit 10 |
 | kid(s) | こども | | Section 2 Unit 6 |
 | kilometer | キロ | | Section 3 Unit 9 |
 | kilometer | キロメートル | | Section 3 Unit 9 |
@@ -720,6 +726,7 @@ one or more Kanji characters.
 | p.m. | ごご | <span class="kanji">午後</span> | Section 2 Unit 9 |
 | painting | え | | Section 2 Unit 7 |
 | pants | ズボン | | Section 2 Unit 19 |
+| paper | かみ | <span class="kanji">紙</span> | Section 3 Unit 10 |
 | parents | りょうしん | <span class="kanji">両親</span> | Section 2 Unit 5 |
 | park | こうえん | <span class="kanji">公園</span> | Section 2 Unit 5 |
 | party | パーティー | | Section 2 Unit 16 |
@@ -753,6 +760,7 @@ one or more Kanji characters.
 | plaza | ひろば | | Section 2 Unit 7 |
 | pleasant | きもちいい | <span class="kanji">気持ちいい</span> | Section 3 Unit 8 |
 | please | ください | | Section 1 Unit 1 |
+| pocket | ポケット | | Section 3 Unit 10 |
 | police | けいさつ | | Section 2 Unit 5 |
 | police box | こうばん | <span class="kanji">交番</span> | Section 3 Unit 9 |
 | pond | いけ | <span class="kanji">池</span> | Section 3 Unit 6 |
@@ -806,6 +814,7 @@ one or more Kanji characters.
 | romance | れんあい | | Section 2 Unit 3 |
 | romantic partner | こいびと | <span class="kanji">恋人</span> | Section 3 Unit 3 |
 | room | へや | <span class="kanji">部屋</span> | Section 2 Unit 13 |
+| round | まるい | <span class="kanji">丸い</span> | Section 3 Unit 10 |
 | ruler | じょうぎ | <span class="kanji">定規</span> | Section 3 Unit 8 |
 | sad | かなしい | <span class="kanji">悲しい</span> | Section 3 Unit 8 |
 | sadly | かなしそうに | <span class="kanji">悲しそうに</span> | Section 3 Unit 8 |
@@ -895,6 +904,7 @@ one or more Kanji characters.
 | Smith | スミス | | Section 2 Unit 9 |
 | snack | おかし | <span class="kanji">お菓子</span> | Section 2 Unit 4 |
 | snowy | ゆき | <span class="kanji">雪</span> | Section 2 Unit 5 |
+| soap | せっけん | <span class="kanji">石鹼</span> | Section 3 Unit 10 |
 | soba | そば | | Section 2 Unit 1 |
 | soccer | サッカー | | Section 1 Unit 7 |
 | socks | くつした | <span class="kanji">靴下</span> | Section 3 Unit 5 |
@@ -1072,6 +1082,7 @@ one or more Kanji characters.
 | to close | しめます | <span class="kanji">閉めます</span> | Section 2 Unit 17 |
 | to come | きます | <span class="kanji">来ます</span> | Section 2 Unit 4 |
 | to consult | ひきます | <span class="kanji">引きます</span> | Section 3 Unit 7 |
+| to cut | きります | <span class="kanji">切ります</span> | Section 3 Unit 10 |
 | to dance | おどります | | Section 2 Unit 11 |
 | to die | しにます | <span class="kanji">死にます</span> | Section 3 Unit 3 |
 | to draw | かきます | <span class="kanji">描きます</span> | Section 2 Unit 18 |
@@ -1084,6 +1095,7 @@ one or more Kanji characters.
 | to exit | でます | <span class="kanji">出ます</span> | Section 3 Unit 1 |
 | to feel unwell | きぶんがわるい | <span class="kanji">気分が悪い</span> | Section 3 Unit 8 |
 | to fly | とびます | <span class="kanji">飛びます</span> | Section 3 Unit 6 |
+| to forget | わすれます | <span class="kanji">忘れます</span> | Section 3 Unit 10 |
 | to get divorced | りこんします | <span class="kanji">離婚します</span> | Section 3 Unit 3 |
 | to get off | おります | <span class="kanji">降ります</span> | Section 3 Unit 1 |
 | to get up | おきます | <span class="kanji">起きます</span> | Section 2 Unit 2 |
@@ -1106,6 +1118,7 @@ one or more Kanji characters.
 | to like | すき | <span class="kanji">好き</span> | Section 2 Unit 3 |
 | to listen | ききます | <span class="kanji">聞きます</span> | Section 1 Unit 7 |
 | to live in | にすんでいます | <span class="kanji">に住んでいます</span> | Section 1 Unit 6 |
+| to lose | なくします | | Section 3 Unit 10 |
 | to love | だいすき | <span class="kanji">大好き</span> | Section 2 Unit 8 |
 | to love | あいします | <span class="kanji">愛します</span> | Section 3 Unit 8 |
 | to make | つくります | <span class="kanji">作ります</span> | Section 2 Unit 2 |
@@ -1121,6 +1134,8 @@ one or more Kanji characters.
 | to play | します | | Section 1 Unit 7 |
 | to play (an instrument) | ひきます | <span class="kanji">弾きます</span> | Section 2 Unit 11 |
 | to practice | れんしゅうします | <span class="kanji">練習します</span> | Section 2 Unit 20 |
+| to press | おします | <span class="kanji">押します</span> | Section 3 Unit 10 |
+| to put | おきます | <span class="kanji">置きます</span> | Section 3 Unit 10 |
 | to put in | いれます | <span class="kanji">入れます</span> | Section 3 Unit 3 |
 | to put on (feet) | はきます | <span class="kanji">履きます</span> | Section 2 Unit 19 |
 | to put up | さします | <span class="kanji">差します</span> | Section 3 Unit 4 |
@@ -1137,6 +1152,7 @@ one or more Kanji characters.
 | to sing | うたいます | <span class="kanji">歌います</span> | Section 2 Unit 18 |
 | to sit (down) | すわります | <span class="kanji">座ります</span> | Section 2 Unit 5 |
 | to sleep | ねます | <span class="kanji">寝ます</span> | Section 2 Unit 2 |
+| to smoke | すいます | <span class="kanji">吸います</span> | Section 3 Unit 10 |
 | to snow | ゆきがふります | <span class="kanji">雪が降ります</span> | Section 2 Unit 20 |
 | to stand up | たちます | <span class="kanji">立ちます</span> | Section 2 Unit 17 |
 | to start | はじまります | <span class="kanji">始まります</span> | Section 3 Unit 7 |
